@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cursor (keep scratchpad tracked)
+.cursor/**
+!.cursor/scratchpad.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*.local

@@ -86,6 +86,7 @@ You purchased a domain and created a local folder for the website, but nothing i
 - Vercel production deployed: `https://blouapp-website.vercel.app`
 - Hosting chosen: Vercel
 - Domain/DNS provider: GoDaddy
+- Domain added in Vercel: `tryblou.com`, `www.tryblou.com` (awaiting GoDaddy DNS records / propagation)
 
 # Executor's Feedback or Assistance Requests
 
