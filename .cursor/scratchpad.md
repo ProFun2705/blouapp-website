@@ -82,6 +82,8 @@ You purchased a domain and created a local folder for the website, but nothing i
 
 - Next.js app initialized in `/Users/macgeorge/Downloads/Blou/BlouApp_Website`.
 - `npm run build` succeeded locally.
+- GitHub repo created and pushed: `https://github.com/ProFun2705/blouapp-website`
+- Vercel production deployed: `https://blouapp-website.vercel.app`
 - Hosting chosen: Vercel
 - Domain/DNS provider: GoDaddy
 
@@ -92,6 +94,21 @@ You purchased a domain and created a local folder for the website, but nothing i
   - Access to your GoDaddy DNS settings (you’ll do the clicks; I’ll tell you exactly what to add)
 - For Step 2/3, we’ll need:
   - Whether you already have a GitHub account and are logged in on this machine
+
+## GoDaddy DNS records to add (for tryblou.com)
+
+- In GoDaddy → Domain → DNS → Records:
+  - Add/Update **A** record:
+    - **Type**: A
+    - **Name/Host**: `@`
+    - **Value**: `76.76.21.21`
+    - **TTL**: default
+  - Add/Update **CNAME** record:
+    - **Type**: CNAME
+    - **Name/Host**: `www`
+    - **Value**: `cname.vercel-dns.com`
+    - **TTL**: default
+- If GoDaddy already has conflicting `@` A-records or `www` CNAME/A-records, remove/replace them so only the above targets remain.
 
 # Lessons
 
