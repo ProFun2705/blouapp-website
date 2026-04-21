@@ -77,6 +77,7 @@ You purchased a domain and created a local folder for the website, but nothing i
 - [ ] Step 3: Deploy on Vercel
 - [ ] Step 4: Connect GoDaddy domain to Vercel
 - [ ] Step 5: Content workflow in Cursor (pages and optional MDX posts)
+- [x] Install Google tag (GA4) on all pages
 
 # Current Status / Progress Tracking
 
@@ -87,9 +88,13 @@ You purchased a domain and created a local folder for the website, but nothing i
 - Hosting chosen: Vercel
 - Domain/DNS provider: GoDaddy
 - Domain added in Vercel: `tryblou.com`, `www.tryblou.com` (awaiting GoDaddy DNS records / propagation)
+- Google tag installed site-wide in `src/app/layout.tsx` (Measurement ID: `G-L5RLBSF7KK`). Confirmed `npm run build` still succeeds.
 
 # Executor's Feedback or Assistance Requests
 
+- Please verify analytics is receiving events:
+  - Open your live site, then in Google Analytics → Realtime, confirm you see an active user within ~1–2 minutes.
+  - Optional: in your browser DevTools Console, you can run `window.dataLayer` and confirm it exists (array with events).
 - When we reach Step 4 (DNS), we’ll need:
   - Your exact domain name (e.g., `example.com`)
   - Access to your GoDaddy DNS settings (you’ll do the clicks; I’ll tell you exactly what to add)
