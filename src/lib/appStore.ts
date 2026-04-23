@@ -1,5 +1,6 @@
-export const APP_STORE_CANONICAL_URL =
-  "https://apps.apple.com/us/app/quit-smoking-tracker-blou/id6758997298";
+import { APP_STORE_CANONICAL_URL } from "@/lib/site";
+
+export { APP_STORE_CANONICAL_URL };
 
 type AppStoreCampaign = string;
 
