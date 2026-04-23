@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { APP_STORE_CANONICAL_URL } from "@/lib/appStore";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,6 +19,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TryBlou",
   description: "TryBlou website",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "TryBlou",
+  url: "https://tryblou.com",
+  sameAs: [APP_STORE_CANONICAL_URL],
 };
 
 export default function RootLayout({
@@ -38,22 +49,11 @@ export default function RootLayout({
         gtag('js', new Date());
         gtag('config', 'G-L5RLBSF7KK');
       `}</Script>
-      <body className="min-h-full flex flex-col">
-        <header className="border-b border-black/10 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/60">
-          <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-            <a href="/" className="text-sm font-semibold tracking-tight">
-              TryBlou
-            </a>
-            <nav className="flex items-center gap-4 text-sm text-zinc-700 dark:text-zinc-200">
-              <a className="hover:underline" href="/about">
-                About
-              </a>
-              <a className="hover:underline" href="/content">
-                Content
-              </a>
-            </nav>
-          </div>
-        </header>
+      <Script id="org-json-ld" type="application/ld+json">
+        {JSON.stringify(organizationJsonLd)}
+      </Script>
+      <body className="flex min-h-full flex-col">
+        <SiteHeader />
 
         <main className="flex-1">
           <div className="mx-auto w-full max-w-5xl px-6 py-10">
@@ -61,11 +61,7 @@ export default function RootLayout({
           </div>
         </main>
 
-        <footer className="border-t border-black/10 py-8 text-center text-sm text-zinc-600 dark:border-white/10 dark:text-zinc-400">
-          <div className="mx-auto w-full max-w-5xl px-6">
-            © {new Date().getFullYear()} TryBlou
-          </div>
-        </footer>
+        <SiteFooter />
       </body>
     </html>
   );

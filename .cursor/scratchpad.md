@@ -88,6 +88,7 @@ You purchased a domain and created a local folder for the website, but nothing i
 - Hosting chosen: Vercel
 - Domain/DNS provider: GoDaddy
 - Domain added in Vercel: `tryblou.com`, `www.tryblou.com` (awaiting GoDaddy DNS records / propagation)
+- DNS updated in GoDaddy; domain is serving the latest production deployment on HTTPS.
 - Google tag installed site-wide in `src/app/layout.tsx` (Measurement ID: `G-L5RLBSF7KK`). Confirmed `npm run build` still succeeds.
 
 # Executor's Feedback or Assistance Requests
@@ -120,3 +121,4 @@ You purchased a domain and created a local folder for the website, but nothing i
 
 - Always run `npm run build` after meaningful changes before proceeding to the next step.
 - If you see `npm warn EBADENGINE` during installs, prefer using an LTS Node version (usually Node 22) to avoid tooling incompatibilities.
+- If Vercel deploys fail with a team access / git author error, create a new commit using your GitHub `users.noreply.github.com` email and redeploy.
