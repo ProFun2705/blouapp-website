@@ -11,7 +11,8 @@ type AppStoreBadgePlacement =
   | "tool_money_calculator"
   | "tool_lung_recovery"
   | "tools_index"
-  | "calculators_index";
+  | "calculators_index"
+  | `country_calculator_${string}`;
 
 type AppStoreBadgeLinkProps = {
   campaign: string;
@@ -78,4 +79,3 @@ export function AppStoreBadgeLink({
   );
 }
 
-//this is a test

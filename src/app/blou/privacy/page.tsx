@@ -6,17 +6,25 @@ export const metadata: Metadata = {
   description: "Privacy policy for the bloü application.",
 };
 
-const sections = [
+type Section = {
+  title: string;
+  paragraphs: string[];
+  bullets?: string[];
+};
+
+const sections: Section[] = [
   {
     title: "Nature of the service",
     paragraphs: [
-      'The Application is a general wellness and motivation app. The tips, insights, and other content it provides are for informational and motivational support only and are not medical or professional health advice. If you have health concerns or need support with quitting, you should consult a qualified healthcare provider. This policy describes how we collect and use data in providing that wellness support.',
+      "The Application is a general wellness and motivation app. The tips, insights, and other content it provides are for informational and motivational support only and are not medical or professional health advice. If you have health concerns or need support with quitting, you should consult a qualified healthcare provider. This policy describes how we collect and use data in providing that wellness support.",
     ],
   },
   {
     title: "1. Information We Collect",
     paragraphs: [
       "The Application collects information when you download and use it. This information may include:",
+      "The Application does not gather precise information about the location of your mobile device.",
+      "For a better experience, the Service Provider may require you to provide certain personally identifiable information, including but not limited to: name, age range, sex, and face photos. The information that the Service Provider requests will be retained and used as described in this privacy policy.",
     ],
     bullets: [
       "Your device's Internet Protocol address (e.g. IP address)",
@@ -25,10 +33,6 @@ const sections = [
       "The operating system you use on your mobile device",
       "Crash logs (via Apple's diagnostics tools)",
       "App usage data (via Apple and Superwall)",
-    ],
-    trailingParagraphs: [
-      "The Application does not gather precise information about the location of your mobile device.",
-      "For a better experience, the Service Provider may require you to provide certain personally identifiable information, including but not limited to: name, age range, sex, and face photos. The information that the Service Provider requests will be retained and used as described in this privacy policy.",
     ],
   },
   {
@@ -42,14 +46,12 @@ const sections = [
     paragraphs: [
       "Only aggregated, anonymized data is periodically transmitted to external services to help the Service Provider improve the Application and the service. The Service Provider may share your information with third parties in the ways described in this privacy statement.",
       "The Application relies on the following third-party tools:",
+      "These providers may collect anonymized data according to their own privacy practices. No personally identifiable information is intentionally transmitted to them.",
     ],
     bullets: [
-      "Apple App Store & Analytics - for purchases and usage insights",
-      "Superwall - to manage subscriptions",
-      "Gemini API (Google) - to generate AI-altered images and AI-based quitting tips",
-    ],
-    trailingParagraphs: [
-      "These providers may collect anonymized data according to their own privacy practices. No personally identifiable information is intentionally transmitted to them.",
+      "Apple App Store & Analytics – for purchases and usage insights",
+      "Superwall – to manage subscriptions",
+      "Gemini API (Google) – to generate AI-altered images and AI-based quitting tips",
     ],
   },
   {
@@ -104,7 +106,7 @@ const sections = [
       "If you have any questions regarding privacy while using the Application, or about the practices described here, please contact the Service Provider via email at hello.blou.app@gmail.com.",
     ],
   },
-] as const;
+];
 
 export default function BlouPrivacyPage() {
   return (
@@ -118,8 +120,8 @@ export default function BlouPrivacyPage() {
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/85">
           This privacy policy applies to the bloü app (the &quot;Application&quot;) for
-          mobile devices, created by Heorhi Talochka (the &quot;Service Provider&quot;)
-          as a commercial service. This service is intended for use &quot;AS IS&quot;.
+          mobile devices, created by Heorhi Talochka (the &quot;Service Provider&quot;) as
+          a commercial service. This service is intended for use &quot;AS IS&quot;.
         </p>
       </header>
 
@@ -134,20 +136,13 @@ export default function BlouPrivacyPage() {
               {paragraph}
             </p>
           ))}
-          {"bullets" in section && section.bullets ? (
+          {section.bullets ? (
             <ul className="mt-3 space-y-2 text-sm leading-7 text-teal-900/85">
               {section.bullets.map((bullet) => (
                 <li key={bullet}>- {bullet}</li>
               ))}
             </ul>
           ) : null}
-          {"trailingParagraphs" in section && section.trailingParagraphs
-            ? section.trailingParagraphs.map((paragraph) => (
-                <p key={paragraph} className="mt-3 text-sm leading-7 text-teal-900/85">
-                  {paragraph}
-                </p>
-              ))
-            : null}
         </section>
       ))}
 
