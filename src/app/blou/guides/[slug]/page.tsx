@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { blouGuideBySlug, blouGuides } from "@/lib/blouGuides";
 
@@ -88,6 +89,11 @@ export default async function BlouGuideDetailPage({ params }: GuidePageProps) {
           ))}
         </ul>
       </section>
+
+      <MoneySavedCalculator
+        title="Stay on track after you read this"
+        description="Translate your smoke-free progress into clear savings milestones."
+      />
 
       <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">FAQ</h2>

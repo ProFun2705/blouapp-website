@@ -63,6 +63,16 @@ export function SiteFooter() {
                 Content
               </Link>
             </li>
+            <li>
+              <Link className={footerLinkClass} href="/blou/privacy">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link className={footerLinkClass} href="/blou/terms">
+                Terms of Service
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,45 +1,53 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
 
-export const metadata: Metadata = {
-  title: "Money saved calculator",
-  description:
-    "Estimate money saved when you quit smoking with a simple interactive calculator.",
+type CountryMoneyCalculatorPageProps = {
+  countryName: string;
+  currencyCode: string;
+  currencySymbol: string;
+  defaultPackPrice: number;
 };
 
-export default function MoneySavedCalculatorPage() {
+export function CountryMoneyCalculatorPage({
+  countryName,
+  currencyCode,
+  currencySymbol,
+  defaultPackPrice,
+}: CountryMoneyCalculatorPageProps) {
   return (
     <article className="flex flex-col gap-8">
       <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking money saved calculator
+          Quit smoking money saved calculator ({countryName})
         </h1>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-teal-900/85">
-          See immediate and long-term financial gains from staying smoke-free.
-          Adjust your inputs to match your actual smoking history.
+          Use local pricing assumptions in {currencyCode} to estimate your
+          smoke-free savings and keep momentum with Bloü.
         </p>
       </header>
 
-      <MoneySavedCalculator />
+      <MoneySavedCalculator
+        defaultPackPrice={defaultPackPrice}
+        currencySymbol={currencySymbol}
+      />
 
       <div className="flex flex-wrap items-center gap-3">
         <Link
-          href="/blou/tools"
+          href="/blou/calculators"
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
-          ← All tools
+          ← Calculators by country
         </Link>
         <Link
-          href="/blou"
+          href="/blou/tools/money-saved"
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
-          Bloü
+          Global calculator
         </Link>
         <AppStoreBadgeLink
-          campaign="tool_money_calculator"
-          placement="tool_money_calculator"
+          campaign={`country_calculator_${countryName.toLowerCase().replaceAll(" ", "_")}`}
+          placement={`country_calculator_${countryName.toLowerCase().replaceAll(" ", "_")}`}
         />
       </div>
     </article>

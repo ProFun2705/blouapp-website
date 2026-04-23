@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { CountryMoneyCalculatorPage } from "@/components/blou/CountryMoneyCalculatorPage";
 
 export const metadata: Metadata = {
   title: "Indonesia",
-  description: "Quit smoking calculators for Indonesia.",
+  description: "Quit smoking money saved calculator with Indonesia defaults.",
 };
 
 export default function IndonesiaCalculatorsPage() {
   return (
-    <article className="prose prose-zinc max-w-none dark:prose-invert">
-      <h1>Indonesia</h1>
-      <p>
-        Placeholder for Indonesia-specific quit calculators (IDR and local
-        context).
-      </p>
-      <p>
-        <Link href="/blou/calculators">← Calculators by country</Link>
-      </p>
-    </article>
+    <CountryMoneyCalculatorPage
+      countryName="Indonesia"
+      currencyCode="IDR"
+      currencySymbol="Rp"
+      defaultPackPrice={35000}
+    />
   );
 }

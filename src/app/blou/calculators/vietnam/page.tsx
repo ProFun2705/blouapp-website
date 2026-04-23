@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { CountryMoneyCalculatorPage } from "@/components/blou/CountryMoneyCalculatorPage";
 
 export const metadata: Metadata = {
   title: "Vietnam",
-  description: "Quit smoking calculators for Vietnam.",
+  description: "Quit smoking money saved calculator with Vietnam defaults.",
 };
 
 export default function VietnamCalculatorsPage() {
   return (
-    <article className="prose prose-zinc max-w-none dark:prose-invert">
-      <h1>Vietnam</h1>
-      <p>
-        Placeholder for Vietnam-specific quit calculators (VND and local
-        context).
-      </p>
-      <p>
-        <Link href="/blou/calculators">← Calculators by country</Link>
-      </p>
-    </article>
+    <CountryMoneyCalculatorPage
+      countryName="Vietnam"
+      currencyCode="VND"
+      currencySymbol="₫"
+      defaultPackPrice={25000}
+    />
   );
 }
