@@ -3,6 +3,7 @@ import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import type { CountryCalculator } from "@/lib/countryData";
 
 type CountryMoneyCalculatorPageProps = {
@@ -71,17 +72,32 @@ export function CountryMoneyCalculatorPage({
         </p>
       </header>
 
-      <MoneySavedCalculator
-        defaultPackPrice={country.defaultPackPrice}
-        currencyCode={country.currencyCode}
-        locale={country.locale}
-        instanceId={`country_${country.slug}`}
-        title={`${country.name} money saved calculator`}
-        description={`Local pricing in ${country.currencyCode}. Adjust inputs to reflect your actual spend.`}
+      <TableOfContents
+        items={[
+          { id: "calculator", label: "Money saved calculator" },
+          { id: "local-context", label: "Local context" },
+          { id: "quit-help", label: `Free quit help in ${country.name}` },
+          { id: "faq", label: "Frequently asked questions" },
+          { id: "next-steps", label: "More tools & download" },
+        ]}
       />
 
+      <section id="calculator" className="scroll-mt-24">
+        <MoneySavedCalculator
+          defaultPackPrice={country.defaultPackPrice}
+          currencyCode={country.currencyCode}
+          locale={country.locale}
+          instanceId={`country_${country.slug}`}
+          title={`${country.name} money saved calculator`}
+          description={`Local pricing in ${country.currencyCode}. Adjust inputs to reflect your actual spend.`}
+        />
+      </section>
+
       <section className="grid gap-4 md:grid-cols-2">
-        <article className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+        <article
+          id="local-context"
+          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        >
           <h2 className="text-xl font-semibold text-teal-950">
             Local context
           </h2>
@@ -117,7 +133,10 @@ export function CountryMoneyCalculatorPage({
           </ul>
         </article>
 
-        <article className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+        <article
+          id="quit-help"
+          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        >
           <h2 className="text-xl font-semibold text-teal-950">
             Free quit help in {country.name}
           </h2>
@@ -149,13 +168,15 @@ export function CountryMoneyCalculatorPage({
         </article>
       </section>
 
-      <FaqSection
-        items={faqItems}
-        jsonLdId={`faq-json-ld-${country.slug}`}
-        title={`Frequently asked questions – ${country.name}`}
-      />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection
+          items={faqItems}
+          jsonLdId={`faq-json-ld-${country.slug}`}
+          title={`Frequently asked questions – ${country.name}`}
+        />
+      </section>
 
-      <div className="flex flex-wrap items-center gap-3">
+      <div id="next-steps" className="scroll-mt-24 flex flex-wrap items-center gap-3">
         <Link
           href="/calculators"
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
@@ -167,6 +188,12 @@ export function CountryMoneyCalculatorPage({
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Global calculator
+        </Link>
+        <Link
+          href="/how-to-quit-smoking"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+        >
+          Quit plan
         </Link>
         <AppStoreBadgeLink
           campaign={campaignSlug}

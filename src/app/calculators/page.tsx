@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { buildMetadata } from "@/lib/seo";
 import { countries } from "@/lib/countryData";
@@ -62,7 +63,18 @@ export default function CalculatorsIndexPage() {
         </div>
       </header>
 
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <TableOfContents
+        items={[
+          { id: "country-grid", label: "All countries" },
+          { id: "global-fallback", label: "Global calculator" },
+          { id: "faq", label: "FAQ" },
+        ]}
+      />
+
+      <section
+        id="country-grid"
+        className="scroll-mt-24 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {countries.map((c) => (
           <Link
             key={c.slug}
@@ -84,7 +96,10 @@ export default function CalculatorsIndexPage() {
         ))}
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="global-fallback"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Country not listed?
         </h2>
@@ -99,7 +114,9 @@ export default function CalculatorsIndexPage() {
         </Link>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-calculators-index" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-calculators-index" />
+      </section>
     </div>
   );
 }

@@ -945,6 +945,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-06",
     dateModified: "2026-04-20",
     relatedSlugs: [
+      "i-smoked-one-cigarette",
       "what-happens-after-3-days",
       "what-happens-after-1-week",
       "anxiety",

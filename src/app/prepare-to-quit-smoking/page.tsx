@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
@@ -12,6 +13,7 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
+import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-03-05";
@@ -151,16 +153,30 @@ export default function PrepareToQuitPage() {
         </div>
       </header>
 
-      <QuickAnswerBox
-        answer="Prepare to quit smoking in 7 days: set a fixed quit date, choose NRT or medication, map your top three smoking cues with pre-planned replacements, and line up one support channel (quitline, app, or accountability partner)."
-        facts={[
-          "A fixed quit date within 7–14 days roughly doubles success over open-ended 'someday' attempts.",
-          "Cleaning your car and home of smoking cues reduces craving intensity in the first week.",
-          "Scheduling your quit date on a Monday — or the start of a calmer week — correlates with higher 7-day abstinence.",
+      <TableOfContents
+        items={[
+          { id: "quick-answer", label: "Quick answer" },
+          { id: "prep-checklist", label: "The 7-day prep checklist" },
+          { id: "faq", label: "Frequently asked questions" },
+          { id: "related-guides", label: "Related reading" },
         ]}
       />
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="quick-answer" className="scroll-mt-24">
+        <QuickAnswerBox
+          answer="Prepare to quit smoking in 7 days: set a fixed quit date, choose NRT or medication, map your top three smoking cues with pre-planned replacements, and line up one support channel (quitline, app, or accountability partner)."
+          facts={[
+            "A fixed quit date within 7–14 days roughly doubles success over open-ended 'someday' attempts.",
+            "Cleaning your car and home of smoking cues reduces craving intensity in the first week.",
+            "Scheduling your quit date on a Monday — or the start of a calmer week — correlates with higher 7-day abstinence.",
+          ]}
+        />
+      </section>
+
+      <section
+        id="prep-checklist"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           The 7-day prep checklist
         </h2>
@@ -174,16 +190,21 @@ export default function PrepareToQuitPage() {
         </ol>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-prepare" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-prepare" />
+      </section>
 
-      <RelatedGuides
-        slugs={[
-          "how-to-quit-smoking",
-          "what-happens-after-1-day",
-          "cravings",
-          "tools/money-saved",
-        ]}
-      />
+      <section id="related-guides" className="scroll-mt-24">
+        <RelatedGuides
+          slugs={[
+            "how-to-quit-smoking",
+            RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
+            "what-happens-after-1-day",
+            "cravings",
+            "tools/money-saved",
+          ]}
+        />
+      </section>
 
       <p className="text-[11px] text-teal-900/60">
         Canonical: <code>{SITE_URL}/prepare-to-quit-smoking</code>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { EmbedCalculatorSnippet } from "@/components/blou/EmbedCalculatorSnippet";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
@@ -130,9 +131,25 @@ export default function MoneySavedToolPage() {
         </div>
       </header>
 
-      <MoneySavedCalculator instanceId="global" />
+      <TableOfContents
+        items={[
+          { id: "calculator", label: "Money saved calculator" },
+          { id: "how-to-use", label: "How to use this calculator" },
+          { id: "methodology", label: "Methodology & assumptions" },
+          { id: "country-versions", label: "Localized country calculators" },
+          { id: "embed", label: "Embed on your site" },
+          { id: "faq", label: "Frequently asked questions" },
+        ]}
+      />
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="calculator" className="scroll-mt-24">
+        <MoneySavedCalculator instanceId="global" />
+      </section>
+
+      <section
+        id="how-to-use"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           How to use this calculator
         </h2>
@@ -154,7 +171,10 @@ export default function MoneySavedToolPage() {
         </ol>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="methodology"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Methodology & assumptions
         </h2>
@@ -191,7 +211,10 @@ export default function MoneySavedToolPage() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="country-versions"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Localized versions
         </h2>
@@ -213,9 +236,13 @@ export default function MoneySavedToolPage() {
         </ul>
       </section>
 
-      <EmbedCalculatorSnippet code={embedCode} />
+      <section id="embed" className="scroll-mt-24">
+        <EmbedCalculatorSnippet code={embedCode} />
+      </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-tool-money-saved" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-tool-money-saved" />
+      </section>
 
       <p className="text-[11px] text-teal-900/60">
         Canonical: <code>{SITE_URL}/tools/money-saved</code>

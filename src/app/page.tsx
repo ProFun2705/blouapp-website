@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { MobileStickyBadge } from "@/components/marketing/MobileStickyBadge";
@@ -166,9 +167,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SocialProof />
+      <TableOfContents
+        items={[
+          { id: "social-proof", label: "Reviews & proof" },
+          { id: "why-tracker", label: "Why a tracker works" },
+          { id: "pillars", label: "Start where you are" },
+          { id: "tools", label: "Free tools" },
+          { id: "calculators", label: "Calculators by country" },
+          { id: "android-waitlist", label: "Android waitlist" },
+          { id: "faq", label: "FAQ" },
+        ]}
+      />
 
-      <section>
+      <section id="social-proof" className="scroll-mt-24">
+        <SocialProof />
+      </section>
+
+      <section id="why-tracker" className="scroll-mt-24">
         <div className="mb-6">
           <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
             Why a tracker works when willpower doesn&apos;t
@@ -196,7 +211,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
+      <section id="pillars" className="scroll-mt-24">
         <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
           Start where you are
         </h2>
@@ -218,7 +233,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid gap-5 lg:grid-cols-2">
+      <section id="tools" className="scroll-mt-24 grid gap-5 lg:grid-cols-2">
         {tools.map((tool) => (
           <article
             key={tool.href}
@@ -248,7 +263,10 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm md:p-10">
+      <section
+        id="calculators"
+        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm md:p-10"
+      >
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
@@ -279,9 +297,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <AndroidWaitlistCard />
+      <section id="android-waitlist" className="scroll-mt-24">
+        <AndroidWaitlistCard />
+      </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-home" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-home" />
+      </section>
 
       <MobileStickyBadge campaign="landing_sticky_mobile" />
     </div>

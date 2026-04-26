@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { buildMetadata } from "@/lib/seo";
 import { countries } from "@/lib/countryData";
@@ -88,7 +89,18 @@ export default function ToolsIndexPage() {
         </div>
       </header>
 
-      <section className="grid gap-4 md:grid-cols-3">
+      <TableOfContents
+        items={[
+          { id: "tool-cards", label: "Tools" },
+          { id: "country-calculators", label: "Country calculators" },
+          { id: "faq", label: "FAQ" },
+        ]}
+      />
+
+      <section
+        id="tool-cards"
+        className="scroll-mt-24 grid gap-4 md:grid-cols-3"
+      >
         {tools.map((tool) => (
           <Link
             key={tool.href}
@@ -108,7 +120,10 @@ export default function ToolsIndexPage() {
         ))}
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="country-calculators"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Country calculators
         </h2>
@@ -130,7 +145,9 @@ export default function ToolsIndexPage() {
         </ul>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-tools-index" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-tools-index" />
+      </section>
     </div>
   );
 }

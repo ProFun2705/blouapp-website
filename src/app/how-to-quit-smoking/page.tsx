@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
@@ -13,6 +14,7 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
+import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-03-01";
@@ -153,16 +155,35 @@ export default function HowToQuitSmokingPage() {
         </div>
       </header>
 
-      <QuickAnswerBox
-        answer="The most effective quit plans combine a specific quit date with one form of evidence-based support (NRT, varenicline, or bupropion) and pre-planned responses for your top three cues. Most successful quitters report 3–5 attempts before staying stopped."
-        facts={[
-          "Combination NRT (patch + gum/lozenge) roughly doubles quit success versus willpower alone.",
-          "Physical nicotine withdrawal peaks on days 2–3 and mostly fades over 2–4 weeks.",
-          "Free quitlines (US 1-800-QUIT-NOW; UK 0300 123 1044) add structured behavioral support at no cost.",
+      <TableOfContents
+        items={[
+          { id: "quick-answer", label: "Quick answer" },
+          { id: "seven-step-plan", label: "The 7-step quit plan" },
+          { id: "if-you-had-a-slip", label: "If you had a slip" },
+          { id: "social-proof", label: "App Store reviews" },
+          { id: "quit-day", label: "What to do on quit day" },
+          { id: "quit-help-by-country", label: "Free quit help by country" },
+          { id: "faq", label: "Frequently asked questions" },
+          { id: "related-guides", label: "Related reading" },
+          { id: "sources", label: "Sources & further reading" },
         ]}
       />
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="quick-answer" className="scroll-mt-24">
+        <QuickAnswerBox
+          answer="The most effective quit plans combine a specific quit date with one form of evidence-based support (NRT, varenicline, or bupropion) and pre-planned responses for your top three cues. Most successful quitters report 3–5 attempts before staying stopped."
+          facts={[
+            "Combination NRT (patch + gum/lozenge) roughly doubles quit success versus willpower alone.",
+            "Physical nicotine withdrawal peaks on days 2–3 and mostly fades over 2–4 weeks.",
+            "Free quitlines (US 1-800-QUIT-NOW; UK 0300 123 1044) add structured behavioral support at no cost.",
+          ]}
+        />
+      </section>
+
+      <section
+        id="seven-step-plan"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           The 7-step quit plan
         </h2>
@@ -170,15 +191,54 @@ export default function HowToQuitSmokingPage() {
           {steps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
-              <p className="mt-1">{step.text}</p>
+              <p className="mt-1">
+                {step.text}
+                {step.name.startsWith("7.") ? (
+                  <>
+                    {" "}
+                    <Link
+                      className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+                      href={`/${RELATED_PILLAR_SLUGS.iSmokedOneCigarette}`}
+                    >
+                      After one cigarette, use this first-hour playbook
+                    </Link>
+                    .
+                  </>
+                ) : null}
+              </p>
             </li>
           ))}
         </ol>
       </section>
 
-      <SocialProof compact />
+      <section
+        id="if-you-had-a-slip"
+        className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          If you had a slip
+        </h2>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          A single cigarette is a slip, not permission to return to full-time
+          smoking. Read{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href={`/${RELATED_PILLAR_SLUGS.iSmokedOneCigarette}`}
+          >
+            what to do in the first hour
+          </Link>
+          , then come back to this plan and update your top cue the same day.
+        </p>
+      </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="social-proof" className="scroll-mt-24">
+        <SocialProof compact />
+      </section>
+
+      <section
+        id="quit-day"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           What to do on quit day
         </h2>
@@ -191,7 +251,10 @@ export default function HowToQuitSmokingPage() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="quit-help-by-country"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Free quit help by country
         </h2>
@@ -202,20 +265,28 @@ export default function HowToQuitSmokingPage() {
         </ul>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-how-to-quit" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-how-to-quit" />
+      </section>
 
-      <RelatedGuides
-        slugs={[
-          "prepare-to-quit-smoking",
-          "what-happens-after-1-day",
-          "what-happens-after-3-days",
-          "what-happens-after-1-week",
-          "cravings",
-          "tools/money-saved",
-        ]}
-      />
+      <section id="related-guides" className="scroll-mt-24">
+        <RelatedGuides
+          slugs={[
+            "prepare-to-quit-smoking",
+            RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
+            "what-happens-after-1-day",
+            "what-happens-after-3-days",
+            "what-happens-after-1-week",
+            "cravings",
+            "tools/money-saved",
+          ]}
+        />
+      </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="sources"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources & further reading
         </h2>

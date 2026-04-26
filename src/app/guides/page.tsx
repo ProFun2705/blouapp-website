@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { buildMetadata } from "@/lib/seo";
@@ -47,7 +48,20 @@ export default function GuidesIndexPage() {
     <div className="flex flex-col gap-10">
       <Breadcrumbs items={[{ name: "Guides", path: "/guides" }]} />
 
-      <article className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+      <TableOfContents
+        items={[
+          { id: "intro", label: "Overview" },
+          { id: "download-blou", label: "Get the app" },
+          { id: "milestones", label: "Milestone guides" },
+          { id: "symptoms", label: "Symptom guides" },
+          { id: "faq", label: "FAQ" },
+        ]}
+      />
+
+      <article
+        id="intro"
+        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm"
+      >
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           Quit smoking guides & timelines
         </h1>
@@ -74,9 +88,14 @@ export default function GuidesIndexPage() {
         </div>
       </article>
 
-      <StayOnTrackCard campaign="guides_index" placement="article_intro" />
+      <section id="download-blou" className="scroll-mt-24">
+        <StayOnTrackCard campaign="guides_index" placement="article_intro" />
+      </section>
 
-      <section className="rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm">
+      <section
+        id="milestones"
+        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Milestones (1 day → 10 years)
         </h2>
@@ -100,7 +119,10 @@ export default function GuidesIndexPage() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm">
+      <section
+        id="symptoms"
+        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Symptoms (how long & when to seek help)
         </h2>
@@ -124,7 +146,9 @@ export default function GuidesIndexPage() {
         </ul>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-guides" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-guides" />
+      </section>
     </div>
   );
 }

@@ -3,11 +3,13 @@ import Link from "next/link";
 import Script from "next/script";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
+import { slugifyForSection } from "@/lib/slugify";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-03-10";
@@ -132,6 +134,11 @@ const faqItems = [
 ] as const;
 
 export default function BestQuitSmokingAppsPage() {
+  const appReviewToc = apps.map((app) => ({
+    id: `app-${slugifyForSection(app.name)}`,
+    label: app.name,
+  }));
+
   const articleJsonLd = buildArticleJsonLd({
     title: "Best quit smoking apps in 2026: honest comparison",
     description:
@@ -176,22 +183,37 @@ export default function BestQuitSmokingAppsPage() {
         </div>
       </header>
 
-      <QuickAnswerBox
-        answer="The best quit smoking app depends on how you quit: Blou for visual daily progress on iPhone, Smoke Free for cross-platform NRT tracking, QuitNow! for peer community, and Quit Genius for structured clinical support. All four are free to start."
-        facts={[
-          "Blou is iPhone-only in 2026; an Android waitlist is open at /.",
-          "Smoke Free and QuitNow! both offer free Android support with optional Pro tiers.",
-          "Quit Genius access is typically gated through employer or insurer benefits in the US.",
+      <TableOfContents
+        items={[
+          { id: "quick-answer", label: "Quick answer" },
+          { id: "social-proof", label: "App Store reviews" },
+          ...appReviewToc,
+          { id: "how-we-picked", label: "How we picked these" },
+          { id: "faq", label: "Frequently asked questions" },
         ]}
       />
 
-      <SocialProof compact />
+      <section id="quick-answer" className="scroll-mt-24">
+        <QuickAnswerBox
+          answer="The best quit smoking app depends on how you quit: Blou for visual daily progress on iPhone, Smoke Free for cross-platform NRT tracking, QuitNow! for peer community, and Quit Genius for structured clinical support. All four are free to start."
+          facts={[
+            "Blou is iPhone-only in 2026; an Android waitlist is open at /.",
+            "Smoke Free and QuitNow! both offer free Android support with optional Pro tiers.",
+            "Quit Genius access is typically gated through employer or insurer benefits in the US.",
+          ]}
+        />
+      </section>
+
+      <section id="social-proof" className="scroll-mt-24">
+        <SocialProof compact />
+      </section>
 
       <section className="space-y-6">
         {apps.map((app) => (
           <article
+            id={`app-${slugifyForSection(app.name)}`}
             key={app.name}
-            className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+            className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
           >
             <div className="flex flex-wrap items-start justify-between gap-2">
               <div>
@@ -241,7 +263,10 @@ export default function BestQuitSmokingAppsPage() {
         ))}
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="how-we-picked"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           How we picked these
         </h2>
@@ -257,9 +282,11 @@ export default function BestQuitSmokingAppsPage() {
         </p>
       </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-best-apps" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-best-apps" />
+      </section>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="scroll-mt-24 flex flex-wrap gap-3">
         <Link
           href="/how-to-quit-smoking"
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"

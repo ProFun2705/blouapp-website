@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { blouGuideBySlug } from "@/lib/blouGuides";
+import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 
 type RelatedGuidesProps = {
   slugs: string[];
   title?: string;
 };
 
+/** Pillar tool URLs: add entries here; slug constants live in `@/lib/relatedPillarSlugs`. */
 const RELATED_LINK_MAP: Record<
   string,
   { title: string; href: string; category: string }
@@ -34,6 +36,11 @@ const RELATED_LINK_MAP: Record<
     title: "Lung recovery timeline",
     href: "/tools/lung-recovery",
     category: "Tool",
+  },
+  [RELATED_PILLAR_SLUGS.iSmokedOneCigarette]: {
+    title: "I smoked one cigarette—what to do next",
+    href: "/i-smoked-one-cigarette",
+    category: "Relapse & maintenance",
   },
 };
 

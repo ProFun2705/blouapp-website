@@ -9,7 +9,9 @@ import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { blouGuideBySlug, blouGuides } from "@/lib/blouGuides";
+import { makeSectionId } from "@/lib/slugify";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
@@ -73,6 +75,22 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
   const guide = blouGuideBySlug[slug];
   if (!guide) notFound();
 
+  const tocItems = [
+    { id: "quick-answer", label: "Quick answer" },
+    ...guide.articleSections.map((s, i) => ({
+      id: makeSectionId(i, s.heading),
+      label: s.heading,
+    })),
+    ...(guide.typicalDuration
+      ? [{ id: "at-a-glance", label: "At a glance" } as const]
+      : []),
+    { id: "what-to-expect-next", label: "What to expect next" },
+    { id: "stay-on-track", label: "Stay on track" },
+    { id: "faq", label: "Frequently asked questions" },
+    { id: "related-guides", label: "Related reading" },
+    { id: "sources", label: "Sources & further reading" },
+  ] as const;
+
   const articleJsonLd = buildArticleJsonLd({
     title: guide.title,
     description: guide.summary,
@@ -130,15 +148,20 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         </div>
       </header>
 
-      <QuickAnswerBox
-        answer={guide.quickAnswer}
-        facts={guide.quickFacts}
-      />
+      <TableOfContents items={[...tocItems]} />
 
-      {guide.articleSections.map((section) => (
+      <section id="quick-answer" className="scroll-mt-24">
+        <QuickAnswerBox
+          answer={guide.quickAnswer}
+          facts={guide.quickFacts}
+        />
+      </section>
+
+      {guide.articleSections.map((section, index) => (
         <section
+          id={makeSectionId(index, section.heading)}
           key={section.heading}
-          className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
         >
           <h2 className="text-xl font-semibold text-teal-950">
             {section.heading}
@@ -162,7 +185,10 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
       ))}
 
       {guide.typicalDuration ? (
-        <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+        <section
+          id="at-a-glance"
+          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        >
           <h2 className="text-xl font-semibold text-teal-950">At-a-glance</h2>
           <dl className="mt-4 grid gap-4 text-sm md:grid-cols-3">
             <div className="rounded-xl border border-teal-200 bg-teal-50/40 p-4">
@@ -187,7 +213,10 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         </section>
       ) : null}
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="what-to-expect-next"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           What to expect next
         </h2>
@@ -201,20 +230,29 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         </ul>
       </section>
 
-      <StayOnTrackCard
-        campaign="article_footer_card"
-        placement="article_footer_card"
-      />
+      <section id="stay-on-track" className="scroll-mt-24">
+        <StayOnTrackCard
+          campaign="article_footer_card"
+          placement="article_footer_card"
+        />
+      </section>
 
-      <FaqSection
-        items={guide.faq}
-        jsonLdId={`faq-${guide.slug}`}
-        title="Frequently asked questions"
-      />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection
+          items={guide.faq}
+          jsonLdId={`faq-${guide.slug}`}
+          title="Frequently asked questions"
+        />
+      </section>
 
-      <RelatedGuides slugs={guide.relatedSlugs} />
+      <section id="related-guides" className="scroll-mt-24">
+        <RelatedGuides slugs={guide.relatedSlugs} />
+      </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="sources"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources & further reading
         </h2>

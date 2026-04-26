@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { buildMetadata } from "@/lib/seo";
 import { AUTHOR, CONTACT_EMAIL, MEDICAL_REVIEWER, SITE_NAME } from "@/lib/site";
 
@@ -27,7 +28,19 @@ export default function AboutPage() {
         </p>
       </header>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <TableOfContents
+        items={[
+          { id: "mission", label: "Our mission" },
+          { id: "editorial", label: "Editorial process" },
+          { id: "people", label: "People behind Blou" },
+          { id: "corrections", label: "Corrections & feedback" },
+        ]}
+      />
+
+      <section
+        id="mission"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">Our mission</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/85">
           Most people quit smoking multiple times before it sticks. We don&apos;t
@@ -44,7 +57,7 @@ export default function AboutPage() {
 
       <section
         id="editorial"
-        className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Editorial process (E-E-A-T)
@@ -74,7 +87,10 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="people"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           People behind Blou
         </h2>
@@ -114,7 +130,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="corrections"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Corrections & feedback
         </h2>

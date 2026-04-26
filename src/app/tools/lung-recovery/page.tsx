@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { LungRecoveryTimeline } from "@/components/blou/LungRecoveryTimeline";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
@@ -121,9 +122,24 @@ export default function LungRecoveryToolPage() {
         </div>
       </header>
 
-      <LungRecoveryTimeline />
+      <TableOfContents
+        items={[
+          { id: "timeline", label: "Lung recovery visualizer" },
+          { id: "how-to-use", label: "How to use this visualizer" },
+          { id: "sources", label: "Source references" },
+          { id: "related-guides", label: "Related guides" },
+          { id: "faq", label: "Frequently asked questions" },
+        ]}
+      />
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="timeline" className="scroll-mt-24">
+        <LungRecoveryTimeline />
+      </section>
+
+      <section
+        id="how-to-use"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           How to use this visualizer
         </h2>
@@ -145,7 +161,10 @@ export default function LungRecoveryToolPage() {
         </ol>
       </section>
 
-      <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section
+        id="sources"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
         <h2 className="text-xl font-semibold text-teal-950">
           Source references
         </h2>
@@ -186,18 +205,22 @@ export default function LungRecoveryToolPage() {
         </ul>
       </section>
 
-      <RelatedGuides
-        slugs={[
-          "what-happens-after-1-day",
-          "what-happens-after-3-days",
-          "what-happens-after-1-week",
-          "what-happens-after-1-month",
-          "what-happens-after-1-year",
-          "cough",
-        ]}
-      />
+      <section id="related-guides" className="scroll-mt-24">
+        <RelatedGuides
+          slugs={[
+            "what-happens-after-1-day",
+            "what-happens-after-3-days",
+            "what-happens-after-1-week",
+            "what-happens-after-1-month",
+            "what-happens-after-1-year",
+            "cough",
+          ]}
+        />
+      </section>
 
-      <FaqSection items={faqItems} jsonLdId="faq-tool-lung-recovery" />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} jsonLdId="faq-tool-lung-recovery" />
+      </section>
 
       <div className="flex flex-wrap gap-3">
         <Link
