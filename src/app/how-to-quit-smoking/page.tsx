@@ -227,7 +227,22 @@ export default function HowToQuitSmokingPage() {
           >
             what to do in the first hour
           </Link>
-          , then come back to this plan and update your top cue the same day.
+          , then come back to this plan and update your top cue the same day. If
+          smoking has already crept back for several days, use{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href={`/${RELATED_PILLAR_SLUGS.howToStopARelapse}`}
+          >
+            how to stop a relapse
+          </Link>
+          . If alcohol is part of the pattern, read{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href={`/${RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking}`}
+          >
+            alcohol and quitting smoking
+          </Link>{" "}
+          before your next high-risk night.
         </p>
       </section>
 

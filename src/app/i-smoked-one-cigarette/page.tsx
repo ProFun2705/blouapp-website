@@ -243,7 +243,16 @@ export default function ISmokedOneCigarettePage() {
           <li>Slips are clustering (several in a week) and feel out of your control.</li>
           <li>You are using smoking to manage depression, anxiety, or trauma symptoms.</li>
           <li>You are pregnant, nursing, or have heart or lung disease and smoked again.</li>
-          <li>Alcohol is almost always in the room when you slip (see a future page on alcohol and quitting, or ask your clinician for a plan).</li>
+          <li>
+            Alcohol is often in the room when you slip—see{" "}
+            <Link
+              className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+              href="/alcohol-and-quitting-smoking"
+            >
+              alcohol and quitting smoking
+            </Link>{" "}
+            or ask your clinician for a plan.
+          </li>
         </ul>
         <p className="mt-4 text-sm leading-7 text-teal-900/90">
           In the U.S., <strong>1-800-QUIT-NOW</strong> connects to free
@@ -260,7 +269,8 @@ export default function ISmokedOneCigarettePage() {
         <RelatedGuides
           slugs={[
             "how-to-quit-smoking",
-            "prepare-to-quit-smoking",
+            "alcohol-and-quitting-smoking",
+            "how-to-stop-a-relapse",
             "cravings",
             "what-happens-after-1-day",
           ]}

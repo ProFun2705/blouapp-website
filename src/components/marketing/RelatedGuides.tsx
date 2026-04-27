@@ -42,6 +42,31 @@ const RELATED_LINK_MAP: Record<
     href: "/i-smoked-one-cigarette",
     category: "Relapse & maintenance",
   },
+  [RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking]: {
+    title: "Alcohol and quitting smoking",
+    href: "/alcohol-and-quitting-smoking",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.quittingSmokingAfter40]: {
+    title: "Quitting smoking after 40",
+    href: "/quitting-smoking-after-40",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.quittingSmokingAfter50]: {
+    title: "Quitting smoking in your 50s",
+    href: "/quitting-smoking-after-50",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.howToStopARelapse]: {
+    title: "How to stop a relapse and recover your quit",
+    href: "/how-to-stop-a-relapse",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.socialSmoking]: {
+    title: "Social smoking: am I addicted?",
+    href: "/social-smoking",
+    category: "Relapse & maintenance",
+  },
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {

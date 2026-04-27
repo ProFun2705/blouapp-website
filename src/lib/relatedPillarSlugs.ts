@@ -9,6 +9,11 @@
  */
 export const RELATED_PILLAR_SLUGS = {
   iSmokedOneCigarette: "i-smoked-one-cigarette",
+  alcoholAndQuittingSmoking: "alcohol-and-quitting-smoking",
+  quittingSmokingAfter40: "quitting-smoking-after-40",
+  quittingSmokingAfter50: "quitting-smoking-after-50",
+  howToStopARelapse: "how-to-stop-a-relapse",
+  socialSmoking: "social-smoking",
 } as const;
 
 export type RelatedPillarSlug =

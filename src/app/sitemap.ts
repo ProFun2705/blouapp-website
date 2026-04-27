@@ -18,6 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/prepare-to-quit-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/best-quit-smoking-apps`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/i-smoked-one-cigarette`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/alcohol-and-quitting-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE_URL}/quitting-smoking-after-40`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE_URL}/quitting-smoking-after-50`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE_URL}/how-to-stop-a-relapse`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE_URL}/social-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${SITE_URL}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
