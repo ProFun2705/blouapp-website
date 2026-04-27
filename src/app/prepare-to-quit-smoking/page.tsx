@@ -13,6 +13,7 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
+import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
@@ -157,6 +158,7 @@ export default function PrepareToQuitPage() {
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "prep-checklist", label: "The 7-day prep checklist" },
+          { id: "relapse-maintenance", label: "Relapse & maintenance links" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
         ]}
@@ -190,6 +192,33 @@ export default function PrepareToQuitPage() {
         </ol>
       </section>
 
+      <section
+        id="relapse-maintenance"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          Which page should you use if you slip?
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+          Keep these pages nearby before quit day so your response is pre-decided
+          if alcohol, social settings, or stress trigger a lapse.
+        </p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
+            (item) => (
+              <li key={item.slug}>
+                <Link
+                  href={item.href}
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                >
+                  <span className="block font-medium">{item.title}</span>
+                </Link>
+              </li>
+            ),
+          )}
+        </ul>
+      </section>
+
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} jsonLdId="faq-prepare" />
       </section>
@@ -199,6 +228,8 @@ export default function PrepareToQuitPage() {
           slugs={[
             "how-to-quit-smoking",
             RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
+            RELATED_PILLAR_SLUGS.howToStopARelapse,
+            RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking,
             "what-happens-after-1-day",
             "cravings",
             "tools/money-saved",

@@ -6,6 +6,7 @@ import { FaqSection } from "@/components/blou/FaqSection";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { MobileStickyBadge } from "@/components/marketing/MobileStickyBadge";
 import { AndroidWaitlistCard } from "@/components/marketing/AndroidWaitlistCard";
+import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
 
@@ -172,6 +173,7 @@ export default function HomePage() {
           { id: "social-proof", label: "Reviews & proof" },
           { id: "why-tracker", label: "Why a tracker works" },
           { id: "pillars", label: "Start where you are" },
+          { id: "relapse-maintenance", label: "Relapse support" },
           { id: "tools", label: "Free tools" },
           { id: "calculators", label: "Calculators by country" },
           { id: "android-waitlist", label: "Android waitlist" },
@@ -230,6 +232,32 @@ export default function HomePage() {
               <p className="mt-1 text-sm text-teal-900/80">{pillar.description}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section
+        id="relapse-maintenance"
+        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm"
+      >
+        <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
+          Relapse support library
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm leading-6 text-teal-900/80">
+          These pages are for real-world trigger moments: one-cigarette slips,
+          alcohol nights, social smoking, and getting back on plan after relapse.
+        </p>
+        <div className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
+            (item) => (
+              <Link
+                key={item.slug}
+                href={item.href}
+                className="rounded-xl border border-teal-200 px-4 py-3 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+              >
+                {item.title}
+              </Link>
+            ),
+          )}
         </div>
       </section>
 

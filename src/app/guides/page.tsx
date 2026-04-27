@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
+import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { buildMetadata } from "@/lib/seo";
 import { milestoneGuides, symptomGuides } from "@/lib/blouGuides";
 
@@ -54,6 +55,7 @@ export default function GuidesIndexPage() {
           { id: "download-blou", label: "Get the app" },
           { id: "milestones", label: "Milestone guides" },
           { id: "symptoms", label: "Symptom guides" },
+          { id: "relapse", label: "Relapse & maintenance" },
           { id: "faq", label: "FAQ" },
         ]}
       />
@@ -143,6 +145,36 @@ export default function GuidesIndexPage() {
               </Link>
             </li>
           ))}
+        </ul>
+      </section>
+
+      <section
+        id="relapse"
+        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          Relapse &amp; maintenance
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+          If you already slipped or expect high-risk triggers, use these support
+          pages alongside timeline and symptom guides.
+        </p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
+            (item) => (
+              <li key={item.slug}>
+                <Link
+                  href={item.href}
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                >
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                    Relapse guide
+                  </span>
+                  <span className="mt-1 block font-medium">{item.title}</span>
+                </Link>
+              </li>
+            ),
+          )}
         </ul>
       </section>
 

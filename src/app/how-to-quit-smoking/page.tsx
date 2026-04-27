@@ -14,6 +14,7 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
+import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
@@ -163,6 +164,7 @@ export default function HowToQuitSmokingPage() {
           { id: "social-proof", label: "App Store reviews" },
           { id: "quit-day", label: "What to do on quit day" },
           { id: "quit-help-by-country", label: "Free quit help by country" },
+          { id: "relapse-maintenance", label: "Relapse & maintenance" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
@@ -280,6 +282,44 @@ export default function HowToQuitSmokingPage() {
         </ul>
       </section>
 
+      <section
+        id="relapse-maintenance"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          Relapse & maintenance pages
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+          Use this cluster when your quit gets shaky after day one. Published
+          pages are linked below; planned pages are listed so we can switch them
+          live without forgetting internal links.
+        </p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {RELAPSE_MAINTENANCE_LINKS.map((item) => (
+            <li key={item.slug}>
+              {item.status === "live" ? (
+                <Link
+                  href={item.href}
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                >
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                    Live
+                  </span>
+                  <span className="mt-1 block font-medium">{item.title}</span>
+                </Link>
+              ) : (
+                <div className="rounded-xl border border-dashed border-teal-200 px-4 py-3 text-sm text-teal-900/75">
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700/80">
+                    Planned
+                  </span>
+                  <span className="mt-1 block font-medium">{item.title}</span>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} jsonLdId="faq-how-to-quit" />
       </section>
@@ -289,6 +329,9 @@ export default function HowToQuitSmokingPage() {
           slugs={[
             "prepare-to-quit-smoking",
             RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
+            RELATED_PILLAR_SLUGS.howToStopARelapse,
+            RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking,
+            RELATED_PILLAR_SLUGS.socialSmoking,
             "what-happens-after-1-day",
             "what-happens-after-3-days",
             "what-happens-after-1-week",
