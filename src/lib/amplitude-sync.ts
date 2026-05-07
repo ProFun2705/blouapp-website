@@ -1,16 +1,29 @@
+"use client";
+
 import {
   ANALYTICS_CONSENT_DENIED,
   ANALYTICS_CONSENT_GRANTED,
   ANALYTICS_CONSENT_STORAGE_KEY,
 } from "./analytics-consent";
 
-let amplitudeInitStarted = false;
-let amplitudeLoad: Promise<typeof import("@amplitude/analytics-browser")> | null =
-  null;
+let initAllCompleted = false;
+let unifiedLoad: Promise<typeof import("@amplitude/unified")> | null = null;
 
-function loadAmplitude() {
-  amplitudeLoad ??= import("@amplitude/analytics-browser");
-  return amplitudeLoad;
+function loadUnified() {
+  unifiedLoad ??= import("@amplitude/unified");
+  return unifiedLoad;
+}
+
+function getApiKey(): string | undefined {
+  return process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
+}
+
+function getSessionReplaySampleRate(): number {
+  const raw = process.env.NEXT_PUBLIC_AMPLITUDE_SESSION_REPLAY_SAMPLE_RATE;
+  if (raw === undefined || raw === "") return 1;
+  const n = Number(raw);
+  if (!Number.isFinite(n)) return 1;
+  return Math.min(1, Math.max(0, n));
 }
 
 export function readAnalyticsConsent():
@@ -32,23 +45,28 @@ export function readAnalyticsConsent():
 export async function syncAmplitudeWithConsent(
   consent: ReturnType<typeof readAnalyticsConsent>,
 ) {
-  const apiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
+  if (typeof window === "undefined") return;
+
+  const apiKey = getApiKey();
   if (!apiKey) return;
 
-  const amp = await loadAmplitude();
+  const amplitude = await loadUnified();
 
   if (consent === ANALYTICS_CONSENT_DENIED) {
-    if (amplitudeInitStarted) amp.setOptOut(true);
+    if (initAllCompleted) amplitude.setOptOut(true);
     return;
   }
 
   if (consent !== ANALYTICS_CONSENT_GRANTED) return;
 
-  if (!amplitudeInitStarted) {
-    amp.init(apiKey);
-    amplitudeInitStarted = true;
+  if (!initAllCompleted) {
+    await amplitude.initAll(apiKey, {
+      analytics: { autocapture: true },
+      sessionReplay: { sampleRate: getSessionReplaySampleRate() },
+    });
+    initAllCompleted = true;
   } else {
-    amp.setOptOut(false);
+    amplitude.setOptOut(false);
   }
 }
 
@@ -56,10 +74,11 @@ export async function trackAmplitudeEvent(
   name: string,
   properties?: Record<string, unknown>,
 ) {
+  if (typeof window === "undefined") return;
   if (readAnalyticsConsent() !== ANALYTICS_CONSENT_GRANTED) return;
-  const apiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
-  if (!apiKey) return;
-  const amp = await loadAmplitude();
-  if (amp.getOptOut() === true) return;
-  void amp.track(name, properties);
+  if (!getApiKey()) return;
+
+  const amplitude = await loadUnified();
+  if (amplitude.getOptOut() === true) return;
+  void amplitude.track(name, properties);
 }

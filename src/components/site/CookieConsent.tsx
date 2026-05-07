@@ -61,9 +61,9 @@ export function CookieConsent() {
       className="fixed inset-x-3 bottom-3 z-50 rounded-2xl border border-teal-200 bg-white/95 p-4 shadow-lg backdrop-blur md:inset-x-auto md:right-4 md:max-w-md"
     >
       <p className="text-sm leading-6 text-teal-950">
-        We use privacy-friendly analytics (Google Analytics with IP anonymization
-        and Amplitude) to understand which pages help people quit. No ads, no
-        cross-site tracking.
+        We use privacy-friendly analytics (Google Analytics with IP anonymization)
+        and Amplitude (including optional session replay when you accept) to
+        understand which pages help people quit. No ads, no cross-site tracking.
       </p>
       <p className="mt-1 text-xs text-teal-900/70">
         See our{" "}
