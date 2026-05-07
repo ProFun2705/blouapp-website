@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const STORAGE_KEY = "blou_consent_v1";
-const GRANTED = "granted";
-const DENIED = "denied";
+import {
+  ANALYTICS_CONSENT_CHANGED_EVENT,
+  ANALYTICS_CONSENT_DENIED as DENIED,
+  ANALYTICS_CONSENT_GRANTED as GRANTED,
+  ANALYTICS_CONSENT_STORAGE_KEY as STORAGE_KEY,
+} from "@/lib/analytics-consent";
 
 type Decision = typeof GRANTED | typeof DENIED | null;
 
@@ -47,6 +49,7 @@ export function CookieConsent() {
     }
     applyConsent(value);
     setDecision(value);
+    window.dispatchEvent(new CustomEvent(ANALYTICS_CONSENT_CHANGED_EVENT));
   }
 
   if (decision !== null) return null;
@@ -58,9 +61,9 @@ export function CookieConsent() {
       className="fixed inset-x-3 bottom-3 z-50 rounded-2xl border border-teal-200 bg-white/95 p-4 shadow-lg backdrop-blur md:inset-x-auto md:right-4 md:max-w-md"
     >
       <p className="text-sm leading-6 text-teal-950">
-        We use privacy-friendly analytics (Google Analytics with IP anonymization)
-        to understand which pages help people quit. No ads, no cross-site
-        tracking.
+        We use privacy-friendly analytics (Google Analytics with IP anonymization
+        and Amplitude) to understand which pages help people quit. No ads, no
+        cross-site tracking.
       </p>
       <p className="mt-1 text-xs text-teal-900/70">
         See our{" "}

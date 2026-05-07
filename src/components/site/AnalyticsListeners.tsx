@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { trackAmplitudeEvent } from "@/lib/amplitude-sync";
 
 type GtagFn = (...args: unknown[]) => void;
 
@@ -12,6 +13,7 @@ function getGtag(): GtagFn | undefined {
 function sendEvent(name: string, params: Record<string, unknown>) {
   const gtag = getGtag();
   if (typeof gtag === "function") gtag("event", name, params);
+  void trackAmplitudeEvent(name, params);
 }
 
 function isOutboundLink(anchor: HTMLAnchorElement): boolean {

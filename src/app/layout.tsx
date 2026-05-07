@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AmplitudeAnalytics } from "@/components/site/AmplitudeAnalytics";
 import { AnalyticsListeners } from "@/components/site/AnalyticsListeners";
 import { CookieConsent } from "@/components/site/CookieConsent";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -94,7 +95,12 @@ export const metadata: Metadata = {
     capable: true,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/logos/blou-logo.png", type: "image/png" },
+      { url: "/logos/blou-logo-black-name.png", type: "image/png" },
+    ],
+    shortcut: "/logos/blou-logo.png",
+    apple: "/logos/blou-logo.png",
   },
 };
 
@@ -154,6 +160,7 @@ export default function RootLayout({
         </main>
 
         <SiteFooter />
+        <AmplitudeAnalytics />
         <AnalyticsListeners />
         <CookieConsent />
       </body>
