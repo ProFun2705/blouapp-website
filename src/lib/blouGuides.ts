@@ -1125,6 +1125,215 @@ export const blouGuides: BlouGuide[] = [
     medicalConditionName: "Insomnia",
   },
   {
+    slug: "dreams-and-sleep",
+    title: "How long do vivid dreams last after quitting smoking?",
+    shortTitle: "Vivid dreams",
+    category: "symptom",
+    targetKeyword: "vivid dreams after quitting smoking",
+    quickAnswer:
+      "Vivid dreams are common in the first 1–3 weeks after quitting and usually fade by week 4. They’re often linked to nicotine withdrawal, lighter sleep, and (for some people) varenicline.",
+    quickFacts: [
+      "Dream vividness is most noticeable in the first 1–2 weeks, then trends down.",
+      "Nicotine withdrawal can fragment sleep, which makes dreams easier to remember.",
+      "Severe nightmares plus mood changes or thoughts of self-harm need clinical support.",
+    ],
+    summary:
+      "Vivid dreams after quitting are usually a short-lived sleep-adjustment effect. Most people notice them for days to a few weeks, then return to normal dream patterns.",
+    detail:
+      "A useful reframing: you are not suddenly “dreaming more” — you’re waking more often in lighter sleep, so you remember more of what you always dreamed. That changes as sleep stabilizes.",
+    articleSections: [
+      {
+        heading: "Why vivid dreams happen after you quit",
+        paragraphs: [
+          "Nicotine is a stimulant that changes sleep architecture. When you remove it, your nervous system recalibrates and sleep can become lighter and more fragmented for a short period.",
+          "Waking briefly during REM (even for a few seconds) makes dreams feel more vivid because your brain has a chance to store them as memories. That’s why many quitters report “movie-like” dreams early on.",
+          "If you’re taking varenicline, vivid dreams are a known side effect. That doesn’t mean it’s unsafe — but it does mean you should track severity and talk to your prescriber if it affects mood or functioning.",
+        ],
+        bullets: [
+          "More awakenings → more dream recall.",
+          "Nicotine withdrawal peaks early and then fades.",
+          "Caffeine hits harder after quitting; late coffee can amplify dream intensity.",
+        ],
+      },
+      {
+        heading: "What a normal timeline looks like",
+        paragraphs: [
+          "Days 2–7: dreams can be unusually vivid, emotional, or repetitive. Sleep may feel less restorative.",
+          "Weeks 2–3: dreams often continue but feel less intense; waking frequency drops.",
+          "Week 4+: most quitters report “back to normal,” even if occasional vivid dreams still happen after stressful days.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "How to reduce vivid dreams without risking relapse",
+        paragraphs: [
+          "The goal is calmer sleep, not perfect sleep. Keep the interventions simple and consistent for two weeks before changing anything.",
+          "Move caffeine earlier. Nicotine previously sped up caffeine metabolism; after quitting, the same coffee can linger longer and increase nighttime arousal.",
+          "Use a short wind-down: dim lights, warm shower, and a 2-minute breathing pattern (in 4, out 6). This reduces the adrenaline spike that makes REM awakenings feel intense.",
+        ],
+        bullets: [
+          "No caffeine after lunch for 2 weeks.",
+          "Avoid alcohol in the first month (it fragments REM and is a relapse trigger).",
+          "Write down the dream in one sentence and stop—don’t ruminate in bed.",
+        ],
+      },
+      {
+        heading: "When vivid dreams are a red flag",
+        paragraphs: [
+          "Seek urgent help for thoughts of self-harm. Contact a clinician if vivid dreams are paired with severe anxiety, new depression symptoms, panic attacks, or daytime impairment that isn’t improving after two to four weeks.",
+          "If you’re on varenicline or bupropion and notice mood changes, agitation, or severe nightmares, call your prescriber. Dose timing adjustments can help (for example, taking a dose earlier in the day).",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Usually 1–3 weeks; most people improve by week 4.",
+    commonTriggers: "Late caffeine, alcohol, irregular bedtimes, varenicline, stress.",
+    whenToSeekCare:
+      "Seek urgent help for thoughts of self-harm. See a clinician if nightmares are severe, mood worsens, or symptoms don’t improve by week 4.",
+    whatToExpectNext: [
+      "Dream intensity usually peaks early, then fades week by week.",
+      "Sleep becomes more restorative as awakenings decrease.",
+      "Caffeine sensitivity increases after quitting—adjust timing.",
+    ],
+    faq: [
+      {
+        question: "How long do vivid dreams last after quitting smoking?",
+        answer:
+          "Most people notice vivid dreams for 1–3 weeks, with improvement by week 4 as withdrawal and sleep fragmentation settle.",
+      },
+      {
+        question: "Are vivid dreams a sign quitting is harming my sleep?",
+        answer:
+          "Usually no. They’re commonly caused by lighter sleep and more brief awakenings, which makes dreams easier to remember. The pattern typically resolves within weeks.",
+      },
+      {
+        question: "Does varenicline cause vivid dreams?",
+        answer:
+          "Yes, it can. Vivid dreams are a known side effect. If dreams become severe or you notice mood changes, contact your prescriber—dose timing adjustments can help.",
+      },
+      {
+        question: "What helps vivid dreams the fastest?",
+        answer:
+          "Move caffeine earlier, avoid alcohol, keep consistent wake times, and use a short wind-down routine. Most improvements come from stabilizing sleep, not from forcing yourself to ‘sleep harder.’",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "insomnia",
+      "anxiety",
+      "what-happens-after-3-days",
+      "what-happens-after-1-week",
+      "how-to-quit-smoking",
+    ],
+    medicalConditionName: "Sleep disturbance",
+  },
+  {
+    slug: "constipation",
+    title: "How long does constipation last after quitting smoking?",
+    shortTitle: "Constipation",
+    category: "symptom",
+    targetKeyword: "constipation after quitting smoking",
+    quickAnswer:
+      "Constipation after quitting is common in the first 1–2 weeks and usually improves within 2–4 weeks as nicotine withdrawal settles and gut motility normalizes.",
+    quickFacts: [
+      "Nicotine stimulates the gut; stopping can temporarily slow bowel movements.",
+      "Most people improve with water, fiber, and walking within 1–3 weeks.",
+      "Severe abdominal pain, vomiting, blood in stool, or no gas/stool needs medical review.",
+    ],
+    summary:
+      "Many quitters get constipated because nicotine used to stimulate bowel activity. The fix is usually simple—hydration, fiber, and movement—while the body recalibrates.",
+    detail:
+      "This symptom feels personal, but it’s one of the most predictable withdrawal side effects. Treat it like a short systems problem: give your gut the inputs nicotine used to replace.",
+    articleSections: [
+      {
+        heading: "Why quitting can cause constipation",
+        paragraphs: [
+          "Nicotine affects acetylcholine receptors and can increase gut motility in the short term. When you stop smoking, that stimulation disappears and bowel movements can slow for a while.",
+          "Quit week often changes routine: less morning coffee, different meal timing, more snacking, and less walking—each of which can contribute to constipation on its own.",
+          "Some people also swallow more air or eat more low-fiber “hand snacks” to replace cigarettes, which can increase bloating and discomfort.",
+        ],
+        bullets: [
+          "Loss of nicotine’s gut stimulation is temporary.",
+          "Routine changes (food, caffeine, movement) often explain most of the effect.",
+          "Bloating can happen alongside constipation early on.",
+        ],
+      },
+      {
+        heading: "A 7-day constipation plan that won’t threaten your quit",
+        paragraphs: [
+          "Aim for consistent inputs for one week before adding medications. Most quit-related constipation improves with routine fixes.",
+          "Start with water and walking. Movement is one of the fastest, lowest-risk ways to restore motility—especially a 10-minute walk after meals.",
+          "Add fiber gradually. A sudden fiber spike without added water can worsen bloating. Think ‘slow and steady’ for 7 days.",
+        ],
+        bullets: [
+          "Water: drink a glass with each meal and after each craving wave.",
+          "Walking: 10 minutes after meals for 7 days.",
+          "Fiber: add one high-fiber food per day (oats, beans, berries, chia).",
+          "Toilet routine: sit after breakfast for 5 minutes—no straining.",
+        ],
+      },
+      {
+        heading: "What to do if you need faster relief",
+        paragraphs: [
+          "If you’re uncomfortable after several days, a pharmacist can guide short-term options. Osmotic laxatives (like polyethylene glycol) are commonly used; stimulant laxatives are usually for short-term rescue only.",
+          "Avoid turning constipation into a relapse trigger. If discomfort is making you think about smoking, prioritize safe relief and ask for help—this is exactly the kind of problem support is for.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When constipation is not normal and needs care",
+        paragraphs: [
+          "Constipation is common. Red flags are not. Seek medical review for severe or worsening abdominal pain, vomiting, fever, black/tarry stools, blood in stool, unexplained weight loss, or if you cannot pass gas.",
+          "If you have inflammatory bowel disease, prior bowel surgery, are pregnant, or take constipating medications (opioids, some antidepressants, iron), talk to a clinician early rather than waiting weeks.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 3–14 days; usually improves within 2–4 weeks.",
+    commonTriggers: "Low fiber, dehydration, low movement, routine changes, iron supplements.",
+    whenToSeekCare:
+      "Seek care for severe abdominal pain, vomiting, fever, blood in stool, black stools, inability to pass gas, or constipation lasting >4 weeks.",
+    whatToExpectNext: [
+      "Bowel movements usually normalize as withdrawal settles.",
+      "Walking after meals often helps within days.",
+      "Fiber and water work best together—add both gradually.",
+    ],
+    faq: [
+      {
+        question: "How long does constipation last after quitting smoking?",
+        answer:
+          "For most quitters it improves within 1–2 weeks and is largely resolved by week 4. If you’re not improving by 4 weeks, get medical advice.",
+      },
+      {
+        question: "Why did I get constipated when I quit smoking?",
+        answer:
+          "Nicotine can stimulate gut motility. When you stop, your gut briefly slows while your nervous system recalibrates. Routine changes (diet, caffeine, movement) also contribute.",
+      },
+      {
+        question: "What’s the safest way to fix constipation while quitting?",
+        answer:
+          "Water, fiber (gradually), and daily walking are the safest first steps. If you need medication, ask a pharmacist or clinician for a short-term option that fits your health history.",
+      },
+      {
+        question: "When should I worry about constipation after quitting?",
+        answer:
+          "Seek care for severe pain, vomiting, fever, black or bloody stools, inability to pass gas, or if constipation persists beyond 4 weeks.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "what-happens-after-3-days",
+      "what-happens-after-1-week",
+      "weight-gain",
+      "cravings",
+      "tools/money-saved",
+      "how-to-quit-smoking",
+    ],
+    medicalConditionName: "Constipation",
+  },
+  {
     slug: "headaches",
     title: "How long do headaches last after quitting smoking?",
     shortTitle: "Headaches",
@@ -1804,6 +2013,1193 @@ export const blouGuides: BlouGuide[] = [
       "what-happens-after-1-month",
     ],
     medicalConditionName: "Mood instability (post-cessation)",
+  },
+  {
+    slug: "dizziness",
+    title: "How long does dizziness last after quitting smoking?",
+    shortTitle: "Dizziness",
+    category: "symptom",
+    targetKeyword: "dizziness after quitting smoking",
+    quickAnswer:
+      "Lightheadedness or dizziness is common in the first few days after quitting as blood pressure and heart rate stabilize. For most quitters it improves within several days and is usually gone within 2–4 weeks.",
+    quickFacts: [
+      "Nicotine stimulates the cardiovascular system; stopping can briefly change cerebral blood flow sensations.",
+      "Dehydration, standing up quickly, caffeine on an empty stomach, and anxiety amplify dizzy spells.",
+      "Fainting, chest pain with dizziness, severe headache, or one-sided neurological symptoms need urgent care.",
+    ],
+    summary:
+      "Post-quit dizziness is usually benign and tied to nicotine withdrawal plus routine changes—not brain damage from quitting. Hydration, slow position changes, and steady routines usually fix it fastest.",
+    detail:
+      "Your brain learns to normalize without repeated nicotine pulses. Temporary orthostatic lightheadedness and ‘spacey’ spells are withdrawal-adjacent, not confirmation that quitting was a mistake.",
+    articleSections: [
+      {
+        heading: "Why quitting can trigger dizziness",
+        paragraphs: [
+          "Smoking pushes heart rate and blood pressure up transiently—then they fall when you quit. That shift can feel like lightheadedness, especially mornings or after caffeine.",
+          "Hyperventilation from stress or nicotine cravings lowers carbon dioxide briefly and mimics dizziness. Many ‘spells’ correlate with urges, not with standing still calmly.",
+          "If you vape or used high-nicotine products, the sympathetic rebound can feel sharper in days 2–7 than after low-nicotine smoking.",
+        ],
+        bullets: [
+          "Hydrate steadily (pale-yellow urine guideline).",
+          "Stand up slowly; flex calf muscles before standing.",
+          "Keep caffeine predictable—after quitting it can linger longer.",
+        ],
+      },
+      {
+        heading: "What a normal timeline looks like",
+        paragraphs: [
+          "Days 1–3: short bursts of lightheadedness, often mornings or during cravings.",
+          "Week 2: spells usually shorter and less frequent as sleep and hydration routines stabilize.",
+          "Week 3–4: most quitters no longer worry about dizziness day to day.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps dizziness without risking relapse",
+        paragraphs: [
+          "Structure beats improvisation: regular meals + water + daylight walk often resolves more than guessing each spell.",
+          "If anxiety drives symptoms, pairing slow breathing with a timer (three slow breath cycles) works better than pacing.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When dizziness is urgent",
+        paragraphs: [
+          "Call emergency services if dizziness comes with crushing chest pain, trouble speaking or walking, facial droop, sudden worst headache of your life, fainting without warning, or new rapid irregular heartbeat.",
+          "See a clinician soon for dizziness that persists beyond 4 weeks without improvement.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often peaks days 2–10; improves over 2–4 weeks.",
+    commonTriggers:
+      "Hot showers, dehydration, fasting, abrupt standing, caffeine, anxiety, irregular sleep.",
+    whenToSeekCare:
+      "Urgent care for fainting with injury, neurologic deficits, crushing chest pain, or sudden severe headache. Routine review if dizziness persists >4 weeks.",
+    whatToExpectNext: [
+      "Hydration and slow position changes help within days.",
+      "Dizziness overlapping with urges usually fades after week 3.",
+      "Stable wake/sleep anchors calm autonomic swings.",
+    ],
+    faq: [
+      {
+        question: "How long does dizziness last after quitting smoking?",
+        answer:
+          "Most dizziness or lightheadedness settles within days and is largely gone within 2–4 weeks as withdrawal settles and routines stabilize.",
+      },
+      {
+        question: "Is dizziness normal when you quit smoking?",
+        answer:
+          "Yes—it is common. Short spells tied to cravings, dehydration, caffeine, or stress are typical. Symptoms with chest pain, fainting, or neurologic deficits are not.",
+      },
+      {
+        question: "Can quitting smoking cause vertigo?",
+        answer:
+          "Some people interpret inner-ear–type spinning as ‘vertigo,’ but quitting itself does not create true BPPV Ménière diagnoses. Persistent spinning warrants medical evaluation.",
+      },
+      {
+        question: "Does drinking more water really help dizziness after quitting?",
+        answer:
+          "Often yes—withdrawal overlaps with poorer fluid intake and more coffee; correcting hydration and electrolytes via food usually reduces lightheaded spells quickly.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "headaches",
+      "anxiety",
+      "fatigue",
+      "what-happens-after-3-days",
+      "how-to-quit-smoking",
+    ],
+    medicalConditionName: "Orthostatic lightheadedness (post-cessation)",
+  },
+  {
+    slug: "sore-throat",
+    title: "How long does a sore throat last after quitting smoking?",
+    shortTitle: "Sore throat",
+    category: "symptom",
+    targetKeyword: "sore throat after quitting smoking",
+    quickAnswer:
+      "A scratchy sore throat commonly appears in week 1 as dry airways and clearing mucus irritate tissues. Most cases improve within 1–3 weeks alongside the post-quit cough settling.",
+    quickFacts: [
+      "Healing mucosa can feel raw before numbness fully reverses.",
+      "Hydration plus humid air often helps more than numbing sprays alone.",
+      "High fever, drooling difficulty, noisy breathing with stridor are red flags—not routine quit throat.",
+    ],
+    summary:
+      "Your throat notices healing before it celebrates it—irritated tissue plus productive cough reflexes can coexist. Hydration and gentle coughing hygiene usually shorten misery.",
+    detail:
+      "This is cue for tracking symptoms in Blou: note morning vs afternoon pain intensity to separate allergic dryness from reflux versus pure recovery mucus shear.",
+    articleSections: [
+      {
+        heading: "Why throats ache after quitting",
+        paragraphs: [
+          "Smoke paralyzes cilia while thickening airway mucus. When you quit, tissues rehydrate, nerves wake up, and mucus mobilizes—all of which can feel like abrasion.",
+          "Many quitters switch to louder talking, coffees, vaping residue clearing, or drier climates—those amplify scratching sensations.",
+        ],
+        bullets: [
+          "Honey in warm—not scalding—water can soothe (not under age 1).",
+          "Salt-water gargle twice daily can ease inflammation short term.",
+          "Avoid yelling and whisper extremes; strain prolongs ache.",
+        ],
+      },
+      {
+        heading: "Timeline patterns",
+        paragraphs: [
+          "Days 3–10: ache often overlaps with louder cough bursts.",
+          "Weeks 2–3: tenderness trends down unless reflux or allergens superimposed.",
+          "Past week 6 daily sore throat without cough needs evaluation.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Comfort steps that do not stall recovery",
+        paragraphs: [
+          "Prioritize moist air, warm fluids, and nasal saline if post-nasal drip contributes.",
+          "Use nicotine replacement as directed if prescribed—do not skip evidence-based quit aids because of throat scratchiness unless a clinician advises changes.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When sore throat needs medical review",
+        paragraphs: [
+          "See a clinician for trouble swallowing liquids, muffled ‘hot potato’ voice, one-sided severe pain, neck swelling, persistent fever, or breathing difficulty.",
+          "If you have immunosuppression or recent strep exposures, escalate earlier.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Most noticeable 5–21 days.",
+    commonTriggers:
+      "Dry heat, dehydration, coughing fits, GERD reflux, yelling, allergens.",
+    whenToSeekCare:
+      "Urgent evaluation for airway compromise, inability to swallow, high fever >48h one-sided swelling. Routine visit if throat pain lasts >6 weeks.",
+    whatToExpectNext: [
+      "Humid sleep environment cuts morning scratch.",
+      "Cough trending down parallels throat tenderness falling.",
+      "Soft voice pacing speeds healing.",
+    ],
+    faq: [
+      {
+        question: "How long does sore throat last after quitting smoking?",
+        answer:
+          "Typically 1–3 weeks. Improvement tracks with coughing frequency—most quitters taper soreness sharply by week three.",
+      },
+      {
+        question: "Is a sore throat a sign quitting is working?",
+        answer:
+          "Often yes—it lines up with airway nerve recovery and mucus mobilization. It is not proof alone, but it is biologically plausible and usually temporary.",
+      },
+      {
+        question: "Can nicotine gum worsen sore throat?",
+        answer:
+          "Local irritation can occur. If discomfort is severe, rotate product types (patch versus oral dose) with clinician or pharmacist guidance.",
+      },
+      {
+        question: "When is sore throat not from quitting?",
+        answer:
+          "High fever airway obstruction voice change suggesting abscess rash with sore throat—all warrant medical assessment rather than assuming withdrawal.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "cough",
+      "dreams-and-sleep",
+      "what-happens-after-1-week",
+      "headaches",
+    ],
+    medicalConditionName: "Pharyngitis (post-cessation irritative)",
+  },
+  {
+    slug: "nausea",
+    title: "How long does nausea last after quitting smoking?",
+    shortTitle: "Nausea",
+    category: "symptom",
+    targetKeyword: "nausea after quitting smoking",
+    quickAnswer:
+      "Nicotine withdrawal nausea often peaks early—especially days 3–10—and fades for many people within 1–2 weeks. Persistent vomiting or dehydration needs medical attention.",
+    quickFacts: [
+      "Nicotine interacts with digestive tract receptors; cessation can transiently skew gut motility and appetite signaling.",
+      "Stress arousal overlaps with gastric upset—not every wave is poisoning.",
+      "If you restarted or changed NRT dosing timing nausea may track product use discuss with pharmacist clinician.",
+    ],
+    summary:
+      "Short-lived queasiness is a known withdrawal accompaniment Plan small frequent meals bland foods ginger tea and pacing NRT dosing rather than starving the quit.",
+    detail:
+      "Track nausea alongside craving intensity in Blou—correlation exposes anxiety-driven gastric patterns versus nicotine pharmacology adjustments.",
+    articleSections: [
+      {
+        heading: "Mechanisms tying nausea to quitting",
+        paragraphs: [
+          "Nicotine directly influences nicotinic receptors in the GI tract cessation changes motility secretion and visceral hypersensitivity transiently.",
+          "Acute sympathetic swing during cravings can slam stomach acid churn causing sick feeling spikes.",
+          "Starting or stopping cessation medications—including varenicline or bupropion—requires professional guidance if vomiting dominates.",
+        ],
+        bullets: [
+          "Eat every 3–4 hours even if bites are small.",
+          "Sip oral rehydration or diluted juice if solids repel temporarily.",
+          "Avoid NSAIDs empty-stomach they worsen gastric lining irritation.",
+        ],
+      },
+      {
+        heading: "Typical nausea arc",
+        paragraphs: [
+          "Days 1–3 intermittent waves often mild.",
+          "Days 4–14 intensity variable many notice fewer episodes after establishing meal rhythm.",
+          "Beyond three weeks recurrent vomiting is not baseline withdrawal investigate.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Non-drug comforts",
+        paragraphs: [
+          "Cool airflow slow diaphragmatic breathing and wrist acupressure bands help subjective nausea for some evidenced modestly behavioral literature.",
+          "Ginger capsules or candies may soothe consult clinician if pregnant or on thinners medication interactions rare but possible.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Red flags vomiting beyond withdrawal",
+        paragraphs: [
+          "Seek urgent care for coffee-ground vomit green bile dehydration unable to retain fluids abdominal rigidity pancreatitis suspicion pregnancy with severe vomiting severe headache stiff neck fever with GI symptoms.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Most improvement within 7–14 days severe cases evaluate earlier.",
+    commonTriggers:
+      "Empty stomach stress waves strong coffee alcohol certain NRT forms.",
+    whenToSeekCare:
+      "Urgent if cannot keep fluids down >8 hours signs dehydration severe pain coffee-ground vomiting. Routine review if nausea lasts >21 days interfering nutrition.",
+    whatToExpectNext: [
+      "Small meals flatten peaks.",
+      "Hydration ladders intensity down.",
+      "Sleep regularity lowers stress-nausea overlap.",
+    ],
+    faq: [
+      {
+        question: "How long does nausea last after quitting smoking?",
+        answer:
+          "Many quitters feel mostly better within two weeks Waves past that point merit medical review especially if interfering with hydration.",
+      },
+      {
+        question: "Can quitting smoking upset your stomach?",
+        answer:
+          "Yes gastrointestinal symptoms can flare briefly during nicotine withdrawal—they usually correlate with cessation intensity and stabilize with structured eating hydration.",
+      },
+      {
+        question: "Does NRT cause nausea?",
+        answer:
+          "Oral nicotine can irritate empty stomach mucosa patch dosing changes also matter always follow labeling and ask professionals to adjust dosing schedule if sick feeling persists.",
+      },
+      {
+        question: "Is nausea anxiety or withdrawal?",
+        answer:
+          "Often both Anxiety amplifies visceral sensations logging timing versus cravings clarifies overlap without replacing clinician assessment if worried.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "constipation",
+      "headaches",
+      "cravings",
+      "anxiety",
+      "prepare-to-quit-smoking",
+    ],
+    medicalConditionName: "Nausea (post-cessation)",
+  },
+  {
+    slug: "heart-palpitations",
+    title: "How long do heart palpitations last after quitting smoking?",
+    shortTitle: "Heart palpitations",
+    category: "symptom",
+    targetKeyword: "heart palpitations after quitting smoking",
+    quickAnswer:
+      "Brief racing or pounding sensations can spike in early withdrawal—often worst days 3–14—and settle over 2–6 weeks as autonomic nervous system tone stabilizes. Any chest pain spreading to arm jaw back fainting severe shortness of breath warrants emergency care—not a webpage.",
+    quickFacts: [
+      "Nicotine abruptly removed changes sympathetic drive perception of heartbeat heightens—even when objectively normal.",
+      "Caffeine after quitting behaves stronger sensory mismatch magnifies pounding feeling.",
+      "Palpitations with syncope cyanosis crushing pain are never ‘just withdrawal’ assumptions.",
+    ],
+    summary:
+      "We treat palpitations as real sensations AND as something that merges anxiety caffeine sleep debt and nicotine pharmacology escalate fast if red flags appear.",
+    detail:
+      "Use Blou to note duration seconds vs minutes triggers sitting vs standing associated anxiety—data helps clinicians triage if you need assessment.",
+    articleSections: [
+      {
+        heading: "Why palpitations show up when you quit",
+        paragraphs: [
+          "Smoking chronically modulates catecholamine tone withdrawal produces rebounds some people feel as skipped beats thumps or racing.",
+          "Sleep fragmentation from insomnia multiplies cardiac awareness at night.",
+          "Do not self-diagnose arrhythmia from sensations alone objective tests matter when risk features exist.",
+        ],
+        bullets: [
+          "Cut evening caffeine test for one week.",
+          "Prioritize 7+ hours sleep even if fragmented early quit.",
+          "Limit alcohol—arrhythmogenic and relapse-linked.",
+        ],
+      },
+      {
+        heading: "Expected duration pattern",
+        paragraphs: [
+          "Week one awareness spikes intermittent moments minutes not hours typically.",
+          "Weeks three to six diminishing frequency correlated with craving reduction.",
+          "Persistent daily symptomatic pounding beyond eight weeks warrants cardiology referral especially if exertional.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Supportive coping without ignoring risk",
+        paragraphs: [
+          "Grounding drills plus gentle aerobic walking—as cleared by clinician—often lowers ectopic sensations faster than vigilance scrolling.",
+          "If using bupropion or varenicline report alarming chest symptoms clinician balances benefit risk never stop abruptly solo.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Emergency thresholds",
+        paragraphs: [
+          "Call EMS crushing substernal pain radiating pain syncope cyanosis sustained rapid uncontrolled tachypnea neurologic deficits sudden collapse.",
+          "Same-day clinic if new sustained resting heart rate >120 without anxiety trigger dehydration or identifiable cause.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Peaks weeks 1–2 often improving by weeks 4–6.",
+    commonTriggers: "Stress caffeine dehydration poor sleep nicotine gum excess alcohol asthma meds.",
+    whenToSeekCare:
+      "Emergency for chest pain fainting cyanosis neurologic deficits uncontrolled tachycardia at rest. Prompt clinic for pounding lasting hours recurrent syncope new leg swelling calf pain clot concern.",
+    whatToExpectNext: [
+      "Caffeine half-life awareness.",
+      "Sleep gains quiet cardiac vigilance.",
+      "Clarity on when sensations justify testing.",
+    ],
+    faq: [
+      {
+        question: "How long do heart palpitations last after quitting smoking?",
+        answer:
+          "Many quitters feel episodic pounding for several weeks improving as nicotine withdrawal settles Any concerning pattern needs medical—not internet—evaluation.",
+      },
+      {
+        question: "Are heart palpitations normal after quitting smoking?",
+        answer:
+          "Increased heartbeat awareness during early withdrawal is commonly reported—it is not universally harmless reassurance cannot replace clinician assessment when red flags occur.",
+      },
+      {
+        question: "Can anxiety cause palpitations when quitting?",
+        answer:
+          "Yes anxiety magnifies benign ectopy perception breathing drills therapy and sometimes medication help layering medical screening when symptoms escalate.",
+      },
+      {
+        question: "Should I go to the ER for palpitations after quitting?",
+        answer:
+          "Go immediately if chest pain fainting breathing failure stroke signs or resting sustained racing heart unsure—err on the safe side clinically.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "anxiety",
+      "insomnia",
+      "shortness-of-breath",
+      "best-quit-smoking-apps",
+    ],
+    medicalConditionName: "Palpitations (post-cessation awareness)",
+  },
+  {
+    slug: "night-sweats",
+    title: "How long do night sweats last after quitting smoking?",
+    shortTitle: "Night sweats",
+    category: "symptom",
+    targetKeyword: "night sweats after quitting smoking",
+    quickAnswer:
+      "Some people soak the sheets briefly in early withdrawal as sleep fragments and nicotine stimulation drops—not everyone. Many improve over 2–4 weeks. Fever, unintentional weight loss, or drenching sweats unrelated to heavy blankets merit medical evaluation.",
+    quickFacts: [
+      "Nicotine interacts with pathways that tune stress and arousal; withdrawal can amplify night-time autonomic spikes.",
+      "Alcohol is both a relapse trigger and a notorious night-sweats driver overlapping early quit timelines.",
+      "Infection hormonal illness and malignancy mimic withdrawal—context and red flags matter.",
+    ],
+    summary:
+      "Treat night sweats as context plus pattern: occasional early episodes that shrink as sleep returns often fit withdrawal. Fever, cachexia, months of drenching, or daytime sweats need clinicians—not guesses.",
+    detail:
+      "Track bedroom temperature, blanket weight, alcohol timing, and medication changes in Blou so you can distinguish withdrawal noise from illness patterns worth escalating.",
+    articleSections: [
+      {
+        heading: "Why quitting may cause night sweating",
+        paragraphs: [
+          "Withdrawal increases sympathetic arousal while sleep is already lighter many people wake between cycles feeling clammy even if the room is cool.",
+          "Dehydration caffeine sensitivity and hot bedrooms stack on top of normal temperature regulation noise.",
+          "Hormonal shifts concurrent illness or new medications can overlap with quit week always disclose full context to a clinician if symptoms drag on.",
+        ],
+        bullets: [
+          "Moisture-wicking base layer lighter blanket ladder.",
+          "Cool bedroom airflow when safe and comfortable.",
+          "Limit alcohol for the first month it fragments sleep regulation.",
+        ],
+      },
+      {
+        heading: "Expected duration",
+        paragraphs: [
+          "Nights 3–14 see the most sporadic sweating for those who notice it.",
+          "Improvement often tracks insomnia easing commonly 2–4 weeks.",
+          "Drenching episodes beyond ~6 weeks without another explanation merit routine medical review.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Low-risk self-care",
+        paragraphs: [
+          "Consistent bedtime earlier hydration taper late heavy dinners if reflux contributes.",
+          "If patch adhesive fails from sweat clinicians and pharmacists can suggest timing or formulation tweaks do not abandon NRT abruptly without guidance.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When sweats are not ‘just quitting’",
+        paragraphs: [
+          "Seek urgent care for fevers with rigors confusion rapid breathing or signs of sepsis.",
+          "Book soon for persistent fever unintended weight loss drenching daytime sweats weeks of soaking sheets or coughing blood especially with travel or TB risk factors.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 1–4 weeks episodes decline as sleep steadies.",
+    commonTriggers: "Alcohol heavy blankets anxiety hot bedroom late meals illness onset.",
+    whenToSeekCare:
+      "Urgent if fevers rigors confusion rapid breathing signs sepsis. Prompt clinic for drenching sweats >6 weeks unintentional weight loss persistent fever.",
+    whatToExpectNext: [
+      "Cooler sleep microclimate.",
+      "Alcohol reduction biggest lever beyond nicotine.",
+      "Sleep improvement dampens autonomic swings.",
+    ],
+    faq: [
+      {
+        question: "How long do night sweats last after quitting smoking?",
+        answer:
+          "Many people notice improvement within two to four weeks as nicotine withdrawal mellows. Persistent or systemic symptoms deserve medical screening.",
+      },
+      {
+        question: "Are night sweats a nicotine withdrawal symptom?",
+        answer:
+          "They can be especially early quitting alongside sleep fragmentation—but not every case is benign. Context and associated symptoms dictate next steps.",
+      },
+      {
+        question: "Can medications cause night sweats while quitting?",
+        answer:
+          "Yes. Antidepressants hypoglycemic agents hormone therapies and others can contribute. Bring a full medication list so clinicians cross-check timelines with your quit date.",
+      },
+      {
+        question: "Do night sweats mean I should restart smoking?",
+        answer:
+          "No. Smoking does not safely treat fever infection or unintended weight loss. If systemic signs appear escalate medical care restarting cigarettes is not a remedy.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "insomnia",
+      "dreams-and-sleep",
+      "anxiety",
+      "what-happens-after-1-week",
+      "how-to-stop-a-relapse",
+    ],
+    medicalConditionName: "Night sweats (post-cessation)",
+  },
+  {
+    slug: "chest-tightness",
+    title: "How long does chest tightness last after quitting smoking?",
+    shortTitle: "Chest tightness",
+    category: "symptom",
+    targetKeyword: "chest tightness after quitting smoking",
+    quickAnswer:
+      "A mild tight or “heavy” chest can happen in early quitting (days to weeks) from airway irritation, anxiety, or cough changes. It should trend down. Chest tightness with severe pain, fainting, or breathlessness at rest needs urgent evaluation.",
+    quickFacts: [
+      "Early quitting can change breathing patterns; anxiety can mimic tightness.",
+      "Cough and mucus shifts can irritate chest wall muscles for a week or two.",
+      "Red flags: crushing pain, sweating, blue lips, fainting, or one-sided weakness.",
+    ],
+    summary:
+      "Chest tightness is common enough in early quitting to be a known worry, but it is also a symptom you should not minimize if it’s severe or worsening. The safest rule: expect gradual improvement—escalate quickly for red flags.",
+    detail:
+      "If you track tightness (0–10), time of day, and triggers (caffeine, stress, exercise) in Blou, you can see whether it follows cravings/anxiety or persists independently—useful if a clinician needs to assess.",
+    articleSections: [
+      {
+        heading: "Common reasons your chest feels tight after quitting",
+        paragraphs: [
+          "Airways can be more reactive in the first weeks as cilia wake up and mucus moves. That can feel like “tightness,” especially with cold air or exercise.",
+          "Anxiety is a major overlap: shallow breathing and chest wall tension create a real sensation of tightness even when oxygen levels are normal.",
+          "If you’re coughing more, chest wall muscles can become sore and tight the way they do after a cold.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What a normal timeline looks like",
+        paragraphs: [
+          "Days 1–7: tightness often clusters around cravings, stress, or caffeine.",
+          "Weeks 2–4: most people notice fewer episodes as cough and sleep stabilize.",
+          "Month 2+: persistent or worsening tightness should be assessed—do not assume withdrawal.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When to seek urgent care",
+        paragraphs: [
+          "Call emergency services for crushing or spreading chest pain, severe shortness of breath at rest, fainting, new confusion, blue lips, or stroke symptoms.",
+          "Same-day evaluation is wise if you have chest tightness plus new wheeze at rest, leg swelling, or a sustained resting heart rate that feels abnormal.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often days to a few weeks; should trend down over 2–6 weeks.",
+    commonTriggers: "Anxiety, caffeine, cold air, cough, exertion, reflux.",
+    whenToSeekCare:
+      "Emergency for crushing/spreading pain, fainting, blue lips, severe breathlessness, or neurologic symptoms. Prompt visit if symptoms persist beyond 4–6 weeks or worsen.",
+    whatToExpectNext: [
+      "Cough and airway irritation typically settle over weeks.",
+      "Anxiety-linked tightness improves with breathing routines and structure.",
+      "If tightness isn’t improving, a clinician can rule out non-withdrawal causes.",
+    ],
+    faq: [
+      {
+        question: "How long does chest tightness last after quitting smoking?",
+        answer:
+          "For many quitters it’s intermittent and improves over days to weeks, typically trending down by weeks 2–6. Severe, persistent, or worsening tightness should be medically assessed.",
+      },
+      {
+        question: "Is chest tightness normal during nicotine withdrawal?",
+        answer:
+          "It can happen, often from anxiety or airway irritation, but “normal” doesn’t mean ignore it. Red-flag symptoms require urgent care regardless of quitting.",
+      },
+      {
+        question: "Can coughing after quitting cause chest tightness?",
+        answer:
+          "Yes. More coughing can strain chest wall muscles and irritate airways, creating a tight or sore feeling that improves as cough settles.",
+      },
+      {
+        question: "When should I worry about chest tightness after quitting?",
+        answer:
+          "Worry—and seek urgent care—if pain is crushing/spreading, you faint, you’re breathless at rest, your lips turn blue, or you have stroke symptoms.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: [
+      "shortness-of-breath",
+      "cough",
+      "anxiety",
+      "heart-palpitations",
+      "what-happens-after-1-week",
+    ],
+    medicalConditionName: "Chest tightness (post-cessation)",
+  },
+  {
+    slug: "dry-mouth",
+    title: "How long does dry mouth last after quitting smoking?",
+    shortTitle: "Dry mouth",
+    category: "symptom",
+    targetKeyword: "dry mouth after quitting smoking",
+    quickAnswer:
+      "Dry mouth after quitting is usually temporary—often most noticeable in the first 1–2 weeks—and improves as hydration, sleep, and mouth tissues recover. Persistent dry mouth beyond a month should be discussed with a dentist or clinician.",
+    quickFacts: [
+      "Smoking reduces salivary protection; recovery can feel “weird” before it feels better.",
+      "More coffee or mouth-breathing during anxiety can worsen dryness.",
+      "Persistent dryness plus ulcers, thrush, or dental pain needs evaluation.",
+    ],
+    summary:
+      "Dry mouth is uncomfortable but fixable. Most relief comes from simple routines: water, sugar-free gum, and reducing late caffeine while your mouth’s natural defenses rebound.",
+    detail:
+      "Dry mouth can be a relapse trigger (“a cigarette would fix this”). Track it and treat it directly—your saliva and oral health usually improve after quitting.",
+    articleSections: [
+      {
+        heading: "Why your mouth feels dry after quitting",
+        paragraphs: [
+          "Nicotine and smoke change oral blood flow and saliva composition. When you stop, your mouth is recalibrating—some people notice dryness before salivary balance normalizes.",
+          "Anxiety can increase mouth-breathing, and many quitters drink more coffee or soda early on; both dry the mouth.",
+        ],
+        bullets: [
+          "Sip water often (don’t chug a full bottle at once).",
+          "Chew sugar-free gum or use xylitol lozenges if tolerated.",
+          "Use a humidifier if you wake with a dry mouth.",
+        ],
+      },
+      {
+        heading: "Timeline expectations",
+        paragraphs: [
+          "Days 1–7: dryness often correlates with cravings, caffeine, and sleep disruption.",
+          "Weeks 2–4: most people see steady improvement with basic oral hydration habits.",
+          "Beyond week 4: consider medication side effects, sleep apnea, or dental issues.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When to seek care",
+        paragraphs: [
+          "See a dentist or clinician for persistent dryness with mouth sores, white patches (possible thrush), gum bleeding, or tooth pain.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 1–2 weeks; improving by weeks 2–4 for most.",
+    commonTriggers: "Caffeine, alcohol, mouth-breathing, dehydration, antihistamines.",
+    whenToSeekCare:
+      "Dental/medical review if dryness persists >4 weeks, is severe, or comes with sores/white patches/tooth pain.",
+    whatToExpectNext: [
+      "Dry mouth usually improves as sleep and hydration normalize.",
+      "Sugar-free gum often provides fast symptom relief.",
+      "Long-term oral health usually improves after quitting.",
+    ],
+    faq: [
+      {
+        question: "How long does dry mouth last after quitting smoking?",
+        answer:
+          "Most people improve within 1–2 weeks, with continued improvement over the first month. Persistent dryness beyond 4 weeks should be evaluated.",
+      },
+      {
+        question: "Is dry mouth a nicotine withdrawal symptom?",
+        answer:
+          "It can be, especially when combined with anxiety, mouth-breathing, and more caffeine. It usually responds well to hydration and sugar-free gum.",
+      },
+      {
+        question: "Can nicotine gum cause dry mouth?",
+        answer:
+          "It can in some people. If it’s bothersome, ask a pharmacist about adjusting the product type or timing rather than stopping evidence-based quit support abruptly.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["sore-throat", "anxiety", "what-happens-after-1-week", "cravings"],
+    medicalConditionName: "Xerostomia (post-cessation)",
+  },
+  {
+    slug: "mouth-ulcers",
+    title: "How long do mouth ulcers last after quitting smoking?",
+    shortTitle: "Mouth ulcers",
+    category: "symptom",
+    targetKeyword: "mouth ulcers after quitting smoking",
+    quickAnswer:
+      "Small mouth ulcers can appear in the first 1–3 weeks after quitting and usually heal within 7–14 days. Ulcers that last longer than 2–3 weeks, recur often, or come with fever or weight loss should be assessed.",
+    quickFacts: [
+      "Oral tissues and immune responses change quickly after quitting.",
+      "Stress, acidic foods, and dry mouth can trigger ulcers during quit week.",
+      "Persistent sores, hard lumps, or unexplained bleeding need a dentist.",
+    ],
+    summary:
+      "Mouth ulcers are a common early-quit annoyance. Most resolve with gentle care, but persistent or unusual sores deserve a dentist’s evaluation—especially if you have a long smoking history.",
+    detail:
+      "Treat ulcers as a symptom to manage, not a reason to relapse. The long-term oral-health trajectory after quitting is usually strongly positive.",
+    articleSections: [
+      {
+        heading: "Why ulcers can show up after quitting",
+        paragraphs: [
+          "Smoking alters oral mucosa and local immunity. When you stop, tissues heal and immune signaling shifts; in some people that transition coincides with canker sores.",
+          "Stress and sleep disruption also make ulcers more likely, and early quit diets can include more acidic snacks that irritate the mouth.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps ulcers heal faster",
+        paragraphs: [
+          "Keep it simple: avoid acidic/spicy foods temporarily, use a soft toothbrush, and consider salt-water rinses.",
+          "A pharmacist can suggest topical protective gels or anesthetic products if pain disrupts eating.",
+        ],
+        bullets: [
+          "Salt-water rinse 1–2×/day.",
+          "Avoid citrus, vinegar, and very spicy foods for 7 days.",
+          "Focus on hydration if ulcers overlap with dry mouth.",
+        ],
+      },
+      {
+        heading: "When ulcers are not from quitting",
+        paragraphs: [
+          "See a dentist or clinician for ulcers lasting >2–3 weeks, large or worsening sores, hard lumps, unexplained bleeding, or systemic symptoms like fever or weight loss.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Most heal in 7–14 days.",
+    commonTriggers: "Stress, acidic foods, dry mouth, poor sleep, mouth trauma.",
+    whenToSeekCare:
+      "Dental/medical evaluation for ulcers lasting >2–3 weeks, recurrent severe ulcers, hard lumps, bleeding, or systemic symptoms.",
+    whatToExpectNext: [
+      "Most ulcers are short-lived and resolve within 2 weeks.",
+      "Pain improves as inflammation settles—protective gels can help.",
+      "Oral health tends to improve after quitting over months.",
+    ],
+    faq: [
+      {
+        question: "How long do mouth ulcers last after quitting smoking?",
+        answer:
+          "Most heal within 7–14 days. If a sore lasts longer than 2–3 weeks or keeps recurring, seek dental or medical advice.",
+      },
+      {
+        question: "Are mouth ulcers a nicotine withdrawal symptom?",
+        answer:
+          "They can occur during early quitting, likely from stress plus tissue changes. They’re usually temporary and treatable.",
+      },
+      {
+        question: "When should I worry about a mouth sore after quitting?",
+        answer:
+          "If it lasts >2–3 weeks, is getting bigger, feels hard, bleeds easily, or you have fever/weight loss, get it checked.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["dry-mouth", "sore-throat", "what-happens-after-1-week", "anxiety"],
+    medicalConditionName: "Aphthous stomatitis (post-cessation)",
+  },
+  {
+    slug: "increased-appetite",
+    title: "How long does increased appetite last after quitting smoking?",
+    shortTitle: "Increased appetite",
+    category: "symptom",
+    targetKeyword: "increased appetite after quitting smoking",
+    quickAnswer:
+      "Increased appetite is most noticeable in the first 2–6 weeks after quitting and usually settles as nicotine withdrawal fades and eating routines stabilize. Weight changes can continue longer, but appetite spikes often calm by month 2.",
+    quickFacts: [
+      "Nicotine suppresses appetite and boosts dopamine; quitting removes both effects at once.",
+      "Taste and smell return quickly, making food more rewarding in week 1–2.",
+      "Planning snacks reduces weight gain more than trying to “eat nothing.”",
+    ],
+    summary:
+      "Hunger after quitting is expected and manageable. The winning strategy is structure: planned snacks, protein/fiber, and replacing “hand-to-mouth” smoking moments intentionally.",
+    detail:
+      "Most cravings for food and cravings for nicotine share cues (breaks, driving, boredom). Treat them as patterns and you can manage both without white-knuckling.",
+    articleSections: [
+      {
+        heading: "Why you feel hungrier after quitting",
+        paragraphs: [
+          "Nicotine suppresses appetite and changes reward signaling. When you quit, your brain looks for replacement dopamine sources, and food is an easy substitute.",
+          "Taste and smell often rebound within days, making snacks feel unusually intense and satisfying at first.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "A 2-week plan to control appetite without fighting your quit",
+        paragraphs: [
+          "Do not rely on willpower. Pre-decide what you’ll eat during your old smoking times (after meals, breaks, evening).",
+          "Aim for steady blood sugar: protein + fiber at meals and planned snacks.",
+        ],
+        bullets: [
+          "Protein at breakfast (eggs, yogurt, tofu, beans).",
+          "A planned crunchy snack (carrots, nuts portioned, popcorn).",
+          "A 10-minute walk after dinner (also reduces cravings).",
+        ],
+      },
+      {
+        heading: "When appetite changes need medical support",
+        paragraphs: [
+          "If appetite swings come with severe depression, disordered eating, or rapid unintentional weight change, get clinical support early.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 2–6 weeks; typically calmer by month 2.",
+    commonTriggers: "Boredom, driving, alcohol, after meals, stress, poor sleep.",
+    whenToSeekCare:
+      "Seek support for disordered eating, severe depression, or rapid unintentional weight change.",
+    whatToExpectNext: [
+      "Hunger spikes fade as withdrawal eases.",
+      "Taste/smell normalize—food becomes less “intense.”",
+      "Planned snacks beat unplanned grazing.",
+    ],
+    faq: [
+      {
+        question: "How long does increased appetite last after quitting smoking?",
+        answer:
+          "Most people notice the biggest appetite increase in the first 2–6 weeks, with improvement by month 2 as withdrawal fades and routines stabilize.",
+      },
+      {
+        question: "Is increased appetite a sign my metabolism is broken?",
+        answer:
+          "Usually no. It’s a predictable mix of nicotine withdrawal, improved taste/smell, and reward-system recalibration—manageable with structure.",
+      },
+      {
+        question: "How can I avoid weight gain when quitting smoking?",
+        answer:
+          "Plan snacks, prioritize protein and fiber, reduce alcohol, and add light daily movement. Trying to restrict too hard can backfire and increase relapse risk.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["weight-gain", "cravings", "what-happens-after-1-week", "tools/money-saved"],
+    medicalConditionName: "Increased appetite (post-cessation)",
+  },
+  {
+    slug: "diarrhea",
+    title: "How long does diarrhea last after quitting smoking?",
+    shortTitle: "Diarrhea",
+    category: "symptom",
+    targetKeyword: "diarrhea after quitting smoking",
+    quickAnswer:
+      "Some people get loose stools in early quitting from stress, diet changes, or nicotine withdrawal effects on gut motility. Mild diarrhea often improves within a few days to 2 weeks. Blood in stool, high fever, or dehydration needs medical care.",
+    quickFacts: [
+      "Diet and caffeine often change abruptly during quit week.",
+      "Anxiety can speed gut motility and mimic “withdrawal diarrhea.”",
+      "Red flags: blood/black stools, severe pain, persistent fever, dehydration.",
+    ],
+    summary:
+      "Diarrhea can happen when quitting, but it’s not always caused by withdrawal. Treat it like a short GI episode: hydration, simple foods, and a low threshold to seek care for red flags.",
+    detail:
+      "Track timing relative to caffeine, stress peaks, and NRT dosing. If it correlates strongly, a pharmacist can help adjust without harming quit success.",
+    articleSections: [
+      {
+        heading: "Why diarrhea can show up after quitting",
+        paragraphs: [
+          "Quitting changes routines quickly: more coffee, sugar-free gum, or new snacks can irritate the gut.",
+          "Stress and cravings can activate the gut-brain axis and increase motility.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most",
+        paragraphs: [
+          "Focus on hydration and bland foods while your gut settles. Avoid alcohol, greasy foods, and high caffeine for a few days.",
+          "If you feel dizzy, very thirsty, or your urine is dark, prioritize oral rehydration.",
+        ],
+        bullets: [
+          "Water + salty foods (or oral rehydration solution).",
+          "BRAT-style bland foods temporarily (bananas, rice, toast).",
+          "Pause sugar alcohols (some sugar-free products worsen diarrhea).",
+        ],
+      },
+      {
+        heading: "When diarrhea needs medical evaluation",
+        paragraphs: [
+          "Get urgent care for blood in stool, black stools, severe abdominal pain, persistent high fever, or inability to keep fluids down.",
+          "See a clinician if diarrhea lasts beyond 2 weeks without improvement.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Usually a few days; improving within 1–2 weeks for mild cases.",
+    commonTriggers: "Stress, caffeine, diet changes, sugar alcohols, infection.",
+    whenToSeekCare:
+      "Urgent for blood/black stools, severe pain, high fever, dehydration, or persistent vomiting. Routine visit if >2 weeks without improvement.",
+    whatToExpectNext: [
+      "Hydration improves symptoms and prevents dizziness.",
+      "As stress drops, gut motility often normalizes.",
+      "If symptoms persist, rule out infection or medication effects.",
+    ],
+    faq: [
+      {
+        question: "How long does diarrhea last after quitting smoking?",
+        answer:
+          "Mild diarrhea often improves within a few days to 2 weeks. If it persists beyond 2 weeks or includes red flags like blood or high fever, seek medical advice.",
+      },
+      {
+        question: "Is diarrhea a nicotine withdrawal symptom?",
+        answer:
+          "It can be, but stress and diet changes are also common causes. Treat symptoms and get evaluated if severe or persistent.",
+      },
+      {
+        question: "When should I worry about diarrhea while quitting?",
+        answer:
+          "Worry if there’s blood or black stools, severe pain, persistent fever, dehydration, or you can’t keep fluids down.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["constipation", "nausea", "dizziness", "what-happens-after-3-days", "anxiety"],
+    medicalConditionName: "Diarrhea (post-cessation)",
+  },
+  {
+    slug: "bloating-and-gas",
+    title: "How long does bloating and gas last after quitting smoking?",
+    shortTitle: "Bloating & gas",
+    category: "symptom",
+    targetKeyword: "bloating after quitting smoking",
+    quickAnswer:
+      "Bloating and gas can happen in the first 1–3 weeks after quitting as diet, swallowing patterns, and gut motility change. Most people improve by weeks 2–4. Severe pain, persistent vomiting, or blood in stool needs care.",
+    quickFacts: [
+      "More snacking and more swallowing (air) during cravings increases gas.",
+      "Constipation early on often coexists with bloating.",
+      "Persistent severe symptoms need evaluation—not assumed withdrawal forever.",
+    ],
+    summary:
+      "Bloating after quitting is usually a routine-change symptom: snacks, gum, carbonation, and constipation. The fastest fix is reducing gas-promoting inputs while adding walking and hydration.",
+    detail:
+      "Track what you eat during cravings. If bloating maps to specific “replacement snacks,” you can swap them without sacrificing your quit.",
+    articleSections: [
+      {
+        heading: "Why bloating happens after quitting",
+        paragraphs: [
+          "Many people snack more and chew gum more, which increases swallowed air and fermentation in the gut.",
+          "Constipation can slow transit and make you feel more bloated even when food intake is modest.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps quickly",
+        paragraphs: [
+          "Remove common culprits for 7 days and see what changes. Add gentle movement—walking after meals is a high-leverage fix.",
+        ],
+        bullets: [
+          "Reduce carbonated drinks for a week.",
+          "Limit sugar-free gum/candies if they worsen symptoms.",
+          "Walk 10 minutes after meals.",
+        ],
+      },
+      {
+        heading: "When to seek medical review",
+        paragraphs: [
+          "Seek care for severe or worsening abdominal pain, persistent vomiting, blood in stool, black stools, or inability to pass gas.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 1–3 weeks; improving by weeks 2–4.",
+    commonTriggers: "Carbonation, sugar alcohols, gum, constipation, anxiety.",
+    whenToSeekCare:
+      "Urgent for severe pain, persistent vomiting, blood/black stools, inability to pass gas, or fever. Routine review if symptoms persist >4 weeks.",
+    whatToExpectNext: [
+      "Bloating often improves when constipation improves.",
+      "Walking after meals can help within days.",
+      "Food swaps are usually enough—no heroics required.",
+    ],
+    faq: [
+      {
+        question: "How long does bloating last after quitting smoking?",
+        answer:
+          "Most people improve within 2–4 weeks as routines stabilize and constipation resolves. Severe or persistent symptoms should be assessed.",
+      },
+      {
+        question: "Why am I gassy after quitting smoking?",
+        answer:
+          "Common reasons include more snacking, more swallowed air during cravings, gum or carbonated drinks, and constipation early in withdrawal.",
+      },
+      {
+        question: "Can constipation cause bloating after quitting?",
+        answer:
+          "Yes. Constipation and bloating often show up together early on. Improving hydration, fiber gradually, and daily walking often helps both.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["constipation", "nausea", "increased-appetite", "what-happens-after-1-week"],
+    medicalConditionName: "Bloating (post-cessation)",
+  },
+  {
+    slug: "sore-gums",
+    title: "How long do sore gums last after quitting smoking?",
+    shortTitle: "Sore gums",
+    category: "symptom",
+    targetKeyword: "sore gums after quitting smoking",
+    quickAnswer:
+      "Sore or bleeding gums can appear after quitting as blood flow and inflammation patterns change. Mild soreness often improves within 1–3 weeks, but ongoing bleeding or pain should be checked by a dentist.",
+    quickFacts: [
+      "Smoking masks gum inflammation by constricting blood vessels; symptoms can become more noticeable after quitting.",
+      "Oral hygiene changes and dry mouth can worsen gum tenderness.",
+      "Persistent bleeding, loose teeth, or swelling need dental care.",
+    ],
+    summary:
+      "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a ‘get ahead of dental health’ moment, not a failure.",
+    detail:
+      "If you haven’t had a dental check in a while, quitting is a great time—periodontal health improves when smoking stops, especially with cleaning and consistent brushing/flossing.",
+    articleSections: [
+      {
+        heading: "Why gums can hurt more after quitting",
+        paragraphs: [
+          "Smoking constricts blood vessels and can hide gum bleeding. After quitting, circulation improves and you may notice tenderness or bleeding that was already there.",
+          "Early quitting can also include more snacking and dry mouth—both irritate gums.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps (and what to avoid)",
+        paragraphs: [
+          "Use a soft toothbrush and gentle technique. Flossing can be tender at first but often improves quickly when done consistently.",
+          "Avoid aggressive brushing, which can worsen bleeding and recession.",
+        ],
+        bullets: ["Soft brush, gentle circles.", "Floss daily (gently).", "Consider alcohol-free mouthwash."],
+      },
+      {
+        heading: "When to see a dentist",
+        paragraphs: [
+          "See a dentist for persistent bleeding beyond 2–3 weeks, significant swelling, pus, loose teeth, or severe pain.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often improves within 1–3 weeks; dental issues can persist without treatment.",
+    commonTriggers: "Gum disease, aggressive brushing, dry mouth, frequent snacking.",
+    whenToSeekCare:
+      "Dental care for persistent bleeding >2–3 weeks, swelling, pus, loose teeth, or severe pain.",
+    whatToExpectNext: [
+      "Tenderness often improves as oral routines stabilize.",
+      "Dental cleaning can accelerate improvement.",
+      "Long-term gum outcomes are better after quitting.",
+    ],
+    faq: [
+      {
+        question: "How long do sore gums last after quitting smoking?",
+        answer:
+          "Mild soreness often improves within 1–3 weeks. Ongoing bleeding or pain beyond 2–3 weeks should be evaluated by a dentist.",
+      },
+      {
+        question: "Why are my gums bleeding after I quit smoking?",
+        answer:
+          "Smoking can mask gum inflammation by reducing blood flow. After quitting, bleeding may become more noticeable—often revealing gum disease that needs dental care.",
+      },
+      {
+        question: "Does quitting smoking improve gum health?",
+        answer:
+          "Yes. Gum and bone health generally improve after quitting, especially when combined with dental cleaning and consistent hygiene.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["dry-mouth", "mouth-ulcers", "what-happens-after-1-week", "prepare-to-quit-smoking"],
+    medicalConditionName: "Gingivitis/periodontal symptoms (post-cessation)",
+  },
+  {
+    slug: "tingling-hands-and-feet",
+    title: "How long does tingling in hands and feet last after quitting smoking?",
+    shortTitle: "Tingling",
+    category: "symptom",
+    targetKeyword: "tingling after quitting smoking",
+    quickAnswer:
+      "Mild tingling can occur during early quitting from anxiety, hyperventilation, or circulation changes and often improves within days to a few weeks. Sudden one-sided numbness, weakness, or trouble speaking is an emergency.",
+    quickFacts: [
+      "Hyperventilation during panic can cause tingling in fingers and lips.",
+      "Cold hands/feet can feel different as circulation stabilizes after quitting.",
+      "One-sided symptoms, facial droop, or severe headache require urgent care.",
+    ],
+    summary:
+      "Tingling is commonly anxiety-linked during quitting, but it’s important to know emergency thresholds. Expect improvement with calmer breathing and stable routines—escalate fast if neurologic red flags appear.",
+    detail:
+      "If tingling tracks directly with cravings or panic sensations, breathing work helps. If it’s constant, worsening, or one-sided, a clinician should evaluate.",
+    articleSections: [
+      {
+        heading: "Why tingling can happen after quitting",
+        paragraphs: [
+          "Stress and panic can increase breathing rate, changing blood carbon dioxide and causing tingling sensations.",
+          "Circulation and nerve sensitivity can feel “different” after quitting as your body normalizes without nicotine pulses.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most",
+        paragraphs: [
+          "Slow breathing (in 4, out 6) and grounding (sit, feet on the floor) often reduces tingling quickly if anxiety-driven.",
+          "Warmth, hydration, and steady meals also help prevent stress spikes.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When tingling is urgent",
+        paragraphs: [
+          "Call emergency services for one-sided weakness or numbness, facial droop, trouble speaking, sudden severe headache, or confusion.",
+          "See a clinician if tingling is persistent beyond 4 weeks or progressively worsening.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often minutes to days if anxiety-linked; improving over 1–4 weeks for mild cases.",
+    commonTriggers: "Anxiety, hyperventilation, caffeine, poor sleep, cold exposure.",
+    whenToSeekCare:
+      "Emergency for stroke-like symptoms (one-sided weakness/numbness, speech trouble). Routine evaluation if persistent >4 weeks or worsening.",
+    whatToExpectNext: [
+      "Anxiety-linked tingling improves with slower breathing.",
+      "Circulation continues normalizing over weeks.",
+      "Persistent symptoms deserve medical assessment.",
+    ],
+    faq: [
+      {
+        question: "How long does tingling last after quitting smoking?",
+        answer:
+          "If it’s tied to anxiety or hyperventilation, it can improve quickly (minutes to days). Mild intermittent tingling often improves over 1–4 weeks. Persistent or one-sided symptoms need medical evaluation.",
+      },
+      {
+        question: "Can quitting smoking cause numbness or tingling?",
+        answer:
+          "Some people notice tingling during early quitting, often from anxiety and breathing changes. It should improve, not worsen—worsening or one-sided symptoms need urgent care.",
+      },
+      {
+        question: "When should I worry about tingling after quitting?",
+        answer:
+          "Worry if it’s one-sided, paired with weakness or speech trouble, or sudden and severe. Those are emergency signs.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["anxiety", "dizziness", "headaches", "what-happens-after-3-days"],
+    medicalConditionName: "Paresthesia (post-cessation)",
+  },
+  {
+    slug: "skin-rash",
+    title: "How long does a skin rash last after quitting smoking?",
+    shortTitle: "Skin rash",
+    category: "symptom",
+    targetKeyword: "skin rash after quitting smoking",
+    quickAnswer:
+      "A new rash after quitting is usually from unrelated triggers (stress, new products, adhesives, illness) rather than “toxins leaving.” Mild rashes often improve within days to 2 weeks once the trigger is removed. Facial swelling, breathing trouble, or widespread blistering needs urgent care.",
+    quickFacts: [
+      "Nicotine patches and adhesives can cause local irritation or allergy.",
+      "Stress and sleep loss can flare eczema or hives.",
+      "Severe blistering, mucosal sores, or breathing issues are emergencies.",
+    ],
+    summary:
+      "Don’t assume every rash is withdrawal. Identify triggers (new lotions, detergents, NRT adhesives) and treat symptoms. Escalate quickly if it’s severe, spreading fast, or associated with swelling or breathing symptoms.",
+    detail:
+      "If you use nicotine patches, take photos of the rash boundary and rotate sites. Persistent or severe reactions mean you should switch products with professional guidance.",
+    articleSections: [
+      {
+        heading: "Common causes of rash during quit week",
+        paragraphs: [
+          "New quit routines often include new products: patches, gum, soaps, detergents, or stress-sweating—any can trigger a rash.",
+          "Stress can trigger hives (urticaria) and flare eczema. Sleep disruption also worsens inflammation perception.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps and what to avoid",
+        paragraphs: [
+          "Stop the suspected new product if safe to do so, and use gentle fragrance-free moisturizer. A pharmacist can advise antihistamines or mild topical steroids when appropriate.",
+          "Do not keep re-applying the same adhesive on an inflamed area.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When rash needs urgent care",
+        paragraphs: [
+          "Seek urgent care for facial/lip swelling, wheeze or breathing trouble, widespread blistering, painful skin, or rash with high fever.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often days to 2 weeks once triggers are addressed.",
+    commonTriggers: "Adhesives (patch), new detergents/soaps, stress hives, illness.",
+    whenToSeekCare:
+      "Urgent for swelling of lips/face, breathing difficulty, blistering rash, mucosal sores, or high fever. Routine visit if rash persists >2 weeks or recurs frequently.",
+    whatToExpectNext: [
+      "Many rashes resolve once triggers are removed.",
+      "Patch reactions improve when you rotate sites or switch products.",
+      "If rash persists, a clinician can identify dermatitis vs allergy vs infection.",
+    ],
+    faq: [
+      {
+        question: "How long does a rash last after quitting smoking?",
+        answer:
+          "Many mild rashes improve within days to 2 weeks once the trigger is removed. Severe or persistent rashes should be evaluated.",
+      },
+      {
+        question: "Can nicotine patches cause a rash?",
+        answer:
+          "Yes. Adhesive irritation is common, and true allergy can happen. Rotate sites and discuss switching products with a pharmacist or clinician if reactions are significant.",
+      },
+      {
+        question: "When is a rash an emergency?",
+        answer:
+          "Facial swelling, breathing trouble, widespread blistering, painful skin, or rash with high fever are urgent—seek emergency care.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["anxiety", "night-sweats", "what-happens-after-1-week", "prepare-to-quit-smoking"],
+    medicalConditionName: "Dermatitis/rash (post-cessation context)",
   },
 ];
 

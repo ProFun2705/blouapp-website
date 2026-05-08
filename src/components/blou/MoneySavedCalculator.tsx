@@ -60,8 +60,8 @@ export function MoneySavedCalculator({
     const params = new URLSearchParams(window.location.search);
     const qCpd = Number(params.get("cpd"));
     const qPp = Number(params.get("pp"));
-    if (Number.isFinite(qCpd) && qCpd > 0) setCigarettesPerDay(qCpd);
-    if (Number.isFinite(qPp) && qPp > 0) setPackPrice(qPp);
+    if (Number.isFinite(qCpd) && qCpd > 0) queueMicrotask(() => setCigarettesPerDay(qCpd));
+    if (Number.isFinite(qPp) && qPp > 0) queueMicrotask(() => setPackPrice(qPp));
   }, [shareable]);
 
   const safeCigarettesPerDay = Number.isFinite(cigarettesPerDay)

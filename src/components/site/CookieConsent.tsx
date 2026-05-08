@@ -31,13 +31,13 @@ export function CookieConsent() {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored === GRANTED || stored === DENIED) {
-        setDecision(stored);
+        queueMicrotask(() => setDecision(stored));
         applyConsent(stored);
       } else {
-        setDecision(null);
+        queueMicrotask(() => setDecision(null));
       }
     } catch {
-      setDecision(null);
+      queueMicrotask(() => setDecision(null));
     }
   }, []);
 

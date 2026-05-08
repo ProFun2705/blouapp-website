@@ -169,7 +169,7 @@ export default function BestQuitSmokingAppsPage() {
         </h1>
         <p className="mt-4 text-base leading-7 text-teal-900/90">
           Short, honest comparison of five quit-smoking apps people actually
-          use. We make Blou, so we are not neutral — we've tried to be clear
+          use. We make Blou, so we are not neutral — we&apos;ve tried to be clear
           about when another app fits you better.
         </p>
         <div className="mt-5">

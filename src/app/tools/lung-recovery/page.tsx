@@ -109,7 +109,7 @@ export default function LungRecoveryToolPage() {
           Lung recovery timeline visualizer
         </h1>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-teal-900/85">
-          Enter smoke-free days to see which recovery milestones you've
+          Enter smoke-free days to see which recovery milestones you&apos;ve
           reached. Milestones summarize public-health narratives from the US
           Surgeon General, CDC, and NHS — use them alongside, not instead of,
           medical advice.
