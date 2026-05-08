@@ -3201,6 +3201,755 @@ export const blouGuides: BlouGuide[] = [
     relatedSlugs: ["anxiety", "night-sweats", "what-happens-after-1-week", "prepare-to-quit-smoking"],
     medicalConditionName: "Dermatitis/rash (post-cessation context)",
   },
+  {
+    slug: "sneezing",
+    title: "How long does sneezing last after quitting smoking?",
+    shortTitle: "Sneezing",
+    category: "symptom",
+    targetKeyword: "sneezing after quitting smoking",
+    quickAnswer:
+      "Sneezing after quitting is usually temporary—often a few days to 2–3 weeks—as airway lining rehydrates and cilia activity returns. Persistent sneezing with fever, facial pain, or symptoms beyond a month is more likely allergies or infection than withdrawal.",
+    quickFacts: [
+      "Smoke dulls nasal sensation; quitting can make irritation feel more noticeable at first.",
+      "Dry indoor air, dust, and seasonal allergies often overlap quit week.",
+      "High fever, severe one-sided facial pain, or swelling around the eyes warrants medical review.",
+    ],
+    summary:
+      "A sneeze streak after quitting is common and usually benign. Treat it like upper-airway recovery plus allergy exposure: humid air, saline, and trigger control.",
+    detail:
+      "If sneezing is worse indoors or after cleaning, it’s often environment-driven. If it follows a cold with fever or facial pain, think infection rather than “toxins leaving.”",
+    articleSections: [
+      {
+        heading: "Why sneezing can show up after you quit",
+        paragraphs: [
+          "Smoke exposure irritates and dries nasal lining while also blunting sensation. When you stop, rehydration and nerve sensitivity can make dust and dry air feel more intense.",
+          "Many people change routines in week 1 (more time indoors, different cleaners, new bedding habits) and uncover allergy triggers.",
+        ],
+        bullets: [
+          "Use nasal saline once or twice daily.",
+          "Humidify dry bedrooms if you wake congested.",
+          "Reduce dust exposure (wash bedding, vacuum).",
+        ],
+      },
+      {
+        heading: "Timeline expectations",
+        paragraphs: [
+          "Days 1–7: sneezing often comes in bursts, especially mornings.",
+          "Weeks 2–3: tends to settle if it’s recovery/allergy overlap.",
+          "Beyond 4 weeks: evaluate for allergies, sinusitis, or irritant exposure.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "When to seek care",
+        paragraphs: [
+          "Seek care for high fever, severe facial pain, swelling around the eyes, or symptoms that worsen after an initial improvement.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often a few days to 2–3 weeks.",
+    commonTriggers: "Dry air, dust, seasonal allergies, cleaning products, recent cold.",
+    whenToSeekCare:
+      "See a clinician for fever, severe facial pain, eye swelling, thick foul drainage, or symptoms lasting >4 weeks.",
+    whatToExpectNext: [
+      "Nasal sensitivity often normalizes over a couple of weeks.",
+      "Humid air and saline can reduce symptoms quickly.",
+      "If it persists, allergy treatment can help without affecting your quit.",
+    ],
+    faq: [
+      {
+        question: "How long does sneezing last after quitting smoking?",
+        answer:
+          "Most people improve within days to a few weeks. If sneezing persists beyond a month, it’s more likely allergies or another trigger than withdrawal alone.",
+      },
+      {
+        question: "Is sneezing a nicotine withdrawal symptom?",
+        answer:
+          "It can happen during early quitting, but it’s often due to airway recovery plus allergies or dry air. The expected pattern is gradual improvement.",
+      },
+      {
+        question: "When should I worry about sneezing after quitting?",
+        answer:
+          "High fever, severe facial pain, swelling around the eyes, or worsening after initial improvement suggest infection or another condition—seek medical care.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["sore-throat", "cough", "what-happens-after-1-week", "prepare-to-quit-smoking"],
+    medicalConditionName: "Rhinitis (post-cessation context)",
+  },
+  {
+    slug: "sinus-congestion",
+    title: "How long does sinus congestion last after quitting smoking?",
+    shortTitle: "Sinus congestion",
+    category: "symptom",
+    targetKeyword: "sinus congestion after quitting smoking",
+    quickAnswer:
+      "Congestion and pressure can occur in the first 1–3 weeks after quitting as nasal tissues rehydrate and inflammation patterns shift. It should gradually improve. One-sided severe facial pain, high fever, or thick foul discharge suggests sinus infection and needs care.",
+    quickFacts: [
+      "Dry air, allergies, and recent colds often overlap quit week.",
+      "Hydration and saline rinses are first-line, low-risk helpers.",
+      "Eye swelling, severe headache, or neurologic symptoms are urgent red flags.",
+    ],
+    summary:
+      "Sinus congestion after quitting is usually a short recovery/allergy overlap rather than a dangerous detox. Expect gradual improvement—escalate if you see infection red flags.",
+    detail:
+      "Track congestion severity and triggers (dust, pets, humidity, colds). Pattern clarity helps you choose the right fix and avoid unnecessary worry.",
+    articleSections: [
+      {
+        heading: "Why congestion can feel worse before it feels better",
+        paragraphs: [
+          "Smoke exposure dries and irritates nasal lining; quitting changes inflammation and fluid balance. Some people notice more “stuffiness” as tissues rehydrate.",
+          "If you had a recent cold, quitting can coincide with the tail end of post-viral congestion.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most (low-risk)",
+        paragraphs: [
+          "Use humid air, saline, and consistent hydration. If you use decongestant sprays, limit them to avoid rebound congestion.",
+        ],
+        bullets: [
+          "Saline rinse or spray daily.",
+          "Humidifier at night if air is dry.",
+          "Warm shower steam + gentle nose blowing.",
+        ],
+      },
+      {
+        heading: "When congestion is likely infection",
+        paragraphs: [
+          "High fever, severe one-sided facial pain, thick foul drainage, or symptoms that worsen after initial improvement can indicate bacterial sinusitis or another problem—seek care.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 1–3 weeks; longer if allergies or infection are present.",
+    commonTriggers: "Dry air, allergens, recent viral illness, reflux, smoke exposure.",
+    whenToSeekCare:
+      "Seek care for high fever, severe one-sided facial pain, eye swelling, worsening after initial improvement, or symptoms lasting >4 weeks.",
+    whatToExpectNext: [
+      "Congestion often eases as nasal tissues normalize.",
+      "If allergies are the driver, targeted treatment helps quickly.",
+      "Avoid relapse: congestion relief is possible without smoking.",
+    ],
+    faq: [
+      {
+        question: "How long does sinus congestion last after quitting smoking?",
+        answer:
+          "Many people improve within 1–3 weeks. If symptoms persist beyond 4 weeks or include fever/severe facial pain, get evaluated for allergies or sinus infection.",
+      },
+      {
+        question: "Can quitting smoking cause sinus pressure?",
+        answer:
+          "It can coincide with recovery and tissue rehydration, but pressure is also common with allergies and colds. Improvement over time is the expected pattern.",
+      },
+      {
+        question: "When should I worry about sinus symptoms after quitting?",
+        answer:
+          "High fever, severe one-sided facial pain, eye swelling, or worsening after initial improvement are reasons to seek medical care.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["sneezing", "sore-throat", "cough", "what-happens-after-1-week"],
+    medicalConditionName: "Sinus congestion (post-cessation context)",
+  },
+  {
+    slug: "heartburn-and-reflux",
+    title: "How long does heartburn last after quitting smoking?",
+    shortTitle: "Heartburn",
+    category: "symptom",
+    targetKeyword: "heartburn after quitting smoking",
+    quickAnswer:
+      "Heartburn can flare in early quitting (days to weeks) due to stress, diet changes, or weight/appetite shifts. Many improve within 2–4 weeks with routine changes. Chest pain with breathlessness, sweating, or radiating pain is an emergency—don’t assume reflux.",
+    quickFacts: [
+      "Quitting changes routines: more snacking, caffeine timing, and stress can worsen reflux.",
+      "Avoid late meals and alcohol early in quitting—both raise reflux and relapse risk.",
+      "Severe chest pain requires urgent evaluation regardless of quitting.",
+    ],
+    summary:
+      "Reflux after quitting is manageable and often temporary, but chest pain safety rules matter. Use simple reflux hygiene first; escalate if symptoms are severe or persistent.",
+    detail:
+      "Track triggers (late meals, coffee, alcohol, spicy foods). If a clinician needs to evaluate, having data beats guessing.",
+    articleSections: [
+      {
+        heading: "Why heartburn can flare after quitting",
+        paragraphs: [
+          "Stress increases reflux sensitivity, and early quitting often increases snacking and late-night eating—both worsen heartburn.",
+          "If appetite rises and weight shifts, abdominal pressure can increase reflux symptoms temporarily.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most in 14 days",
+        paragraphs: [
+          "Small changes are high-leverage: earlier dinner, smaller late snacks, and a consistent caffeine cutoff.",
+        ],
+        bullets: [
+          "Stop eating 2–3 hours before bed.",
+          "Elevate the head of the bed if nighttime reflux dominates.",
+          "Reduce alcohol during the first month.",
+        ],
+      },
+      {
+        heading: "When symptoms need medical care",
+        paragraphs: [
+          "Seek urgent care for crushing chest pain, pain radiating to arm/jaw/back, fainting, or severe breathlessness.",
+          "See a clinician for difficulty swallowing, vomiting blood/coffee-ground material, black stools, or reflux persisting beyond 4–6 weeks.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often improves within 2–4 weeks with reflux hygiene.",
+    commonTriggers: "Late meals, alcohol, caffeine, spicy foods, stress, weight gain.",
+    whenToSeekCare:
+      "Emergency for crushing/spreading chest pain, fainting, severe breathlessness. Prompt review for swallowing difficulty, GI bleeding, or symptoms lasting >6 weeks.",
+    whatToExpectNext: [
+      "Reflux often improves with earlier meals and less alcohol.",
+      "As stress and sleep stabilize, symptoms usually calm.",
+      "Persistent reflux warrants evaluation and targeted treatment.",
+    ],
+    faq: [
+      {
+        question: "How long does heartburn last after quitting smoking?",
+        answer:
+          "Many people improve within 2–4 weeks with routine changes. If heartburn is severe or persists beyond 4–6 weeks, seek medical advice.",
+      },
+      {
+        question: "Can quitting smoking cause acid reflux?",
+        answer:
+          "It can coincide with stress and diet changes that worsen reflux. The expected pattern is gradual improvement as routines stabilize.",
+      },
+      {
+        question: "When is chest pain not heartburn?",
+        answer:
+          "Crushing pain, sweating, breathlessness, fainting, or pain radiating to arm/jaw/back are emergency signs—seek urgent care.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["chest-tightness", "nausea", "what-happens-after-1-week", "how-to-stop-a-relapse"],
+    medicalConditionName: "GERD symptoms (post-cessation context)",
+  },
+  {
+    slug: "caffeine-sensitivity",
+    title: "How long does caffeine sensitivity last after quitting smoking?",
+    shortTitle: "Caffeine sensitivity",
+    category: "symptom",
+    targetKeyword: "caffeine sensitivity after quitting smoking",
+    quickAnswer:
+      "After quitting, the same coffee can feel stronger because smoking speeds up caffeine metabolism. Sensitivity is often most noticeable in the first 2–4 weeks, and many people need a longer-term dose adjustment (less caffeine or earlier timing).",
+    quickFacts: [
+      "Smoking induces enzymes that clear caffeine faster; quitting reverses that effect.",
+      "Too much caffeine can worsen insomnia, anxiety, palpitations, and reflux—common quit symptoms.",
+      "A simple fix: reduce dose and move caffeine earlier for 2 weeks.",
+    ],
+    summary:
+      "Caffeine “hits harder” after quitting for a real pharmacology reason. Adjusting coffee is one of the fastest ways to improve sleep, anxiety, and palpitations during quitting.",
+    detail:
+      "If you’re jittery, nauseated, or can’t sleep, don’t assume quitting is failing—often it’s coffee. Treat caffeine as a variable you can control.",
+    articleSections: [
+      {
+        heading: "Why caffeine feels stronger after quitting",
+        paragraphs: [
+          "Tobacco smoke increases activity of enzymes that metabolize caffeine. When you stop smoking, caffeine stays in your system longer.",
+          "That means your “normal” number of coffees can suddenly cause jitters, nausea, anxiety, and insomnia in week 1–2.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "A 2-week caffeine reset plan",
+        paragraphs: [
+          "Cut dose first, then cut timing. Many people feel better within 48–72 hours of moving caffeine earlier and reducing total intake.",
+        ],
+        bullets: [
+          "Reduce intake by ~25–50% for 2 weeks.",
+          "No caffeine after lunch.",
+          "Swap one drink for decaf or tea.",
+        ],
+      },
+      {
+        heading: "When to seek help",
+        paragraphs: [
+          "If you have severe palpitations, chest pain, fainting, or panic that does not settle, get medical help. Caffeine may contribute, but safety comes first.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often most noticeable in the first 2–4 weeks.",
+    commonTriggers: "High-dose coffee/energy drinks, late caffeine, empty stomach caffeine.",
+    whenToSeekCare:
+      "Seek urgent care for chest pain, fainting, severe breathlessness, or sustained racing heart. Routine review if anxiety/insomnia remain severe despite caffeine reduction.",
+    whatToExpectNext: [
+      "Less caffeine often improves sleep within a week.",
+      "Palpitations and anxiety often calm when caffeine is reduced.",
+      "You may need a lower long-term caffeine baseline post-quit.",
+    ],
+    faq: [
+      {
+        question: "How long does caffeine sensitivity last after quitting smoking?",
+        answer:
+          "It’s often strongest in the first 2–4 weeks. Many people feel better quickly after reducing dose and moving caffeine earlier, and some need a permanent reduction.",
+      },
+      {
+        question: "Why does coffee feel stronger after quitting smoking?",
+        answer:
+          "Smoking makes your body clear caffeine faster. When you quit, caffeine stays in your system longer, so the same amount feels stronger.",
+      },
+      {
+        question: "Should I stop caffeine when quitting smoking?",
+        answer:
+          "You don’t have to, but reducing intake and avoiding late caffeine is often a high-impact way to reduce insomnia, anxiety, and palpitations during quitting.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["insomnia", "anxiety", "heart-palpitations", "nausea", "what-happens-after-1-week"],
+    medicalConditionName: "Caffeine sensitivity (post-cessation pharmacology)",
+  },
+  {
+    slug: "sugar-cravings",
+    title: "How long do sugar cravings last after quitting smoking?",
+    shortTitle: "Sugar cravings",
+    category: "symptom",
+    targetKeyword: "sugar cravings after quitting smoking",
+    quickAnswer:
+      "Sugar cravings are most common in the first 2–6 weeks after quitting because your brain seeks fast dopamine and your taste improves. For most people they ease by month 2 as nicotine withdrawal fades and eating routines stabilize.",
+    quickFacts: [
+      "Taste and smell rebound quickly, making sweet foods feel more intense.",
+      "Craving waves often mirror nicotine cues (breaks, driving, stress).",
+      "Planned snacks reduce weight gain more than strict restriction.",
+    ],
+    summary:
+      "Sugar cravings are predictable and beatable. The goal is not perfection—it’s having planned alternatives so sweet cravings don’t become a relapse trigger.",
+    detail:
+      "If you can’t tell whether you want sugar or nicotine, treat both: drink water, change location, then eat a planned snack if needed.",
+    articleSections: [
+      {
+        heading: "Why sugar cravings happen after quitting",
+        paragraphs: [
+          "Nicotine provides frequent reward-system stimulation. When you remove it, your brain looks for quick substitutes—and sugar is the easiest one.",
+          "Improved taste and smell make sweets feel more rewarding in the first weeks.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "A practical 2-week strategy",
+        paragraphs: [
+          "Replace, don’t “white-knuckle.” Planned snacks reduce bingeing and reduce relapse risk.",
+        ],
+        bullets: [
+          "Pair sweet with protein (fruit + yogurt/nuts).",
+          "Keep gum or mints for the hand-to-mouth cue.",
+          "Walk 5–10 minutes when cravings hit.",
+        ],
+      },
+      {
+        heading: "When cravings need extra support",
+        paragraphs: [
+          "If cravings are paired with severe depression, binge eating, or alcohol use, get support early. These are common relapse clusters and respond well to structured help.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 2–6 weeks; usually calmer by month 2.",
+    commonTriggers: "Stress, boredom, driving, after meals, poor sleep, alcohol.",
+    whenToSeekCare:
+      "Seek support for disordered eating patterns, severe depression, or cravings that drive unsafe behaviors.",
+    whatToExpectNext: [
+      "Cravings fade as nicotine withdrawal eases.",
+      "Planned snacks reduce intensity and prevent grazing.",
+      "Reducing alcohol helps both sugar cravings and relapse risk.",
+    ],
+    faq: [
+      {
+        question: "How long do sugar cravings last after quitting smoking?",
+        answer:
+          "Most people see the strongest sugar cravings in the first 2–6 weeks, with improvement by month 2 as withdrawal fades and routines stabilize.",
+      },
+      {
+        question: "Are sugar cravings a nicotine withdrawal symptom?",
+        answer:
+          "They’re a common early-quit experience because the brain is seeking quick reward. They usually ease over weeks.",
+      },
+      {
+        question: "How do I stop sugar cravings when quitting smoking?",
+        answer:
+          "Use planned snacks, pair carbs with protein/fiber, drink water, and move your body briefly. Trying to restrict too hard can backfire and increase relapse risk.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["increased-appetite", "weight-gain", "cravings", "what-happens-after-1-week", "tools/money-saved"],
+    medicalConditionName: "Sugar cravings (post-cessation)",
+  },
+  {
+    slug: "restlessness",
+    title: "How long does restlessness last after quitting smoking?",
+    shortTitle: "Restlessness",
+    category: "symptom",
+    targetKeyword: "restlessness after quitting smoking",
+    quickAnswer:
+      "Restlessness is common in the first 1–3 weeks after quitting and often improves over 2–6 weeks as nicotine withdrawal and sleep normalize. Severe agitation, inability to sleep for days, or mood escalation needs clinical support.",
+    quickFacts: [
+      "Nicotine withdrawal can feel like internal “antsy” energy.",
+      "Restlessness overlaps with insomnia and anxiety—often improved by routine and movement.",
+      "Severe agitation or suicidal thoughts require urgent help.",
+    ],
+    summary:
+      "Restlessness is your nervous system recalibrating without nicotine. The fastest relief usually comes from scheduled movement, earlier caffeine cutoff, and predictable daily structure.",
+    detail:
+      "Treat restlessness as energy that needs a channel: walking, stretching, chores—anything that changes state quickly during craving waves.",
+    articleSections: [
+      {
+        heading: "Why you feel restless after quitting",
+        paragraphs: [
+          "Nicotine is a stimulant and a coping tool. When it’s removed, your body can produce a “need to move” sensation—especially at the times you used to smoke.",
+          "Sleep disruption and caffeine sensitivity amplify restlessness, especially evenings.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most (without willpower)",
+        paragraphs: [
+          "Schedule movement and sleep anchors rather than waiting to feel better. A short walk is often more effective than sitting with the sensation.",
+        ],
+        bullets: ["Walk 10 minutes twice daily.", "No caffeine after lunch.", "Same wake time 7 days/week."],
+      },
+      {
+        heading: "When to get help",
+        paragraphs: [
+          "Seek urgent help for suicidal thoughts. Contact a clinician if agitation is extreme, you can’t function, or symptoms are worsening beyond week 4.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often strongest in weeks 1–3; improving over 2–6 weeks.",
+    commonTriggers: "Evenings, caffeine, alcohol, boredom, high-stress days, poor sleep.",
+    whenToSeekCare:
+      "Urgent help for suicidal thoughts. Clinical support for severe agitation, inability to function, or worsening symptoms beyond 4 weeks.",
+    whatToExpectNext: [
+      "Restlessness usually fades as sleep stabilizes.",
+      "Movement breaks reduce intensity quickly.",
+      "Reducing alcohol lowers both restlessness and relapse risk.",
+    ],
+    faq: [
+      {
+        question: "How long does restlessness last after quitting smoking?",
+        answer:
+          "Many people improve within a few weeks, with continued improvement over 2–6 weeks as withdrawal and sleep normalize.",
+      },
+      {
+        question: "Is restlessness a nicotine withdrawal symptom?",
+        answer:
+          "Yes. It’s a common early-quit sensation, especially at old smoking times. It should improve over time.",
+      },
+      {
+        question: "What helps restlessness the fastest when quitting?",
+        answer:
+          "Short movement (walking), earlier caffeine cutoff, and consistent wake/sleep anchors are usually the fastest levers.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["insomnia", "anxiety", "cravings", "what-happens-after-3-days", "how-to-stop-a-relapse"],
+    medicalConditionName: "Restlessness (post-cessation)",
+  },
+  {
+    slug: "muscle-aches",
+    title: "How long do muscle aches last after quitting smoking?",
+    shortTitle: "Muscle aches",
+    category: "symptom",
+    targetKeyword: "muscle aches after quitting smoking",
+    quickAnswer:
+      "Body aches can show up in early quitting from stress, poor sleep, and withdrawal. Mild aches often improve within 1–3 weeks. Fever, severe weakness, or aches with rash or shortness of breath may indicate illness and needs medical evaluation.",
+    quickFacts: [
+      "Sleep loss and anxiety amplify pain sensitivity.",
+      "Changing activity levels during quitting can cause normal soreness.",
+      "Fever, chest symptoms, or rapidly worsening pain warrants care.",
+    ],
+    summary:
+      "Aches during quitting are usually short-lived and respond to sleep, hydration, and gentle movement. Persistent or systemic symptoms should not be blamed on withdrawal indefinitely.",
+    detail:
+      "If aches cluster with insomnia and anxiety, treat those root drivers. If they start with fever or respiratory symptoms, treat it like infection until ruled out.",
+    articleSections: [
+      {
+        heading: "Why your body can ache after quitting",
+        paragraphs: [
+          "Withdrawal and stress can heighten pain perception, especially when sleep is disrupted.",
+          "Many people change routines—more sitting, different exercise, more chores—which can create normal soreness.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps most",
+        paragraphs: [
+          "Gentle walking, hydration, and consistent sleep timing often reduce aches within days.",
+          "If you use over-the-counter pain relief, follow labeling and consider asking a pharmacist if you have medical conditions.",
+        ],
+        bullets: ["Daily light movement.", "Hydration + regular meals.", "Warm shower or heat pack for sore areas."],
+      },
+      {
+        heading: "When aches need medical review",
+        paragraphs: [
+          "Seek care for fever, severe weakness, shortness of breath, chest pain, new rash, swelling of joints, or pain that is rapidly worsening.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often 1–3 weeks for mild withdrawal-related aches.",
+    commonTriggers: "Poor sleep, anxiety, inactivity, sudden new exercise, illness.",
+    whenToSeekCare:
+      "Urgent care for chest pain, severe breathlessness, confusion, or high fever. Routine evaluation if aches persist >4 weeks or worsen.",
+    whatToExpectNext: [
+      "Aches often ease as sleep improves.",
+      "Light movement can help within days.",
+      "Persistent systemic symptoms need evaluation.",
+    ],
+    faq: [
+      {
+        question: "How long do muscle aches last after quitting smoking?",
+        answer:
+          "Mild aches often improve within 1–3 weeks. If aches persist beyond 4 weeks or come with fever or breathing symptoms, seek medical advice.",
+      },
+      {
+        question: "Are body aches a nicotine withdrawal symptom?",
+        answer:
+          "They can be, often through stress and sleep disruption, but body aches can also signal infection. Improvement over time is expected for withdrawal-related aches.",
+      },
+      {
+        question: "What helps body aches when quitting smoking?",
+        answer:
+          "Hydration, gentle movement, and consistent sleep are the biggest levers. A pharmacist can advise safe over-the-counter options if needed.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["fatigue", "insomnia", "anxiety", "what-happens-after-1-week"],
+    medicalConditionName: "Myalgia (post-cessation context)",
+  },
+  {
+    slug: "depression",
+    title: "Depression after quitting smoking: how long does it last?",
+    shortTitle: "Depression",
+    category: "symptom",
+    targetKeyword: "depression after quitting smoking",
+    quickAnswer:
+      "Low mood can occur during quitting and often improves within 2–6 weeks as withdrawal settles. But depression is not something to “wait out” if it is severe, worsening, or includes thoughts of self-harm—seek urgent help.",
+    quickFacts: [
+      "Withdrawal can temporarily lower mood by removing frequent nicotine-driven dopamine spikes.",
+      "Long-term mental health after quitting is often better than during smoking in large studies.",
+      "Thoughts of self-harm are an emergency—get help immediately.",
+    ],
+    summary:
+      "Depression symptoms deserve respect. Some low mood is short-term withdrawal; severe or persistent depression needs clinical support. You can quit and get help at the same time.",
+    detail:
+      "Do not change psychiatric medications based on a webpage. If you are using varenicline or bupropion, report mood changes to your prescriber promptly.",
+    articleSections: [
+      {
+        heading: "Why mood can drop after quitting",
+        paragraphs: [
+          "Nicotine repeatedly stimulates reward pathways. When it’s removed, your brain recalibrates; that can feel like flat mood, irritability, or sadness for a period.",
+          "Sleep disruption, caffeine sensitivity, and stress also push mood down in the first month.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "A 2-week plan for mood support",
+        paragraphs: [
+          "Structure beats willpower: consistent wake time, daylight, meals, and short walks are evidence-based mood levers.",
+          "Reduce alcohol. It worsens mood and is a relapse trigger.",
+        ],
+        bullets: ["Same wake time daily.", "10–20 minutes daylight walk.", "Two social check-ins per week."],
+      },
+      {
+        heading: "When to seek urgent help",
+        paragraphs: [
+          "Seek urgent help for thoughts of self-harm, inability to care for yourself, or severe worsening depression.",
+          "Contact a clinician if low mood persists beyond 2–4 weeks or is interfering with daily life.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often improves within 2–6 weeks, but severe symptoms need earlier care.",
+    commonTriggers: "Sleep loss, alcohol, isolation, high stress, prior depression.",
+    whenToSeekCare:
+      "Urgent help for suicidal thoughts. Clinical review for severe depression, panic, or symptoms lasting >2–4 weeks.",
+    whatToExpectNext: [
+      "Mood often improves as sleep stabilizes.",
+      "Routine and social support are powerful levers.",
+      "Medication and therapy support can increase quit success.",
+    ],
+    faq: [
+      {
+        question: "How long does depression last after quitting smoking?",
+        answer:
+          "Some people feel low for a few weeks, often improving over 2–6 weeks. Severe, worsening, or unsafe symptoms need immediate clinical help.",
+      },
+      {
+        question: "Is depression a nicotine withdrawal symptom?",
+        answer:
+          "Low mood can be part of withdrawal, but depression can also be a separate condition. Treat safety and function as the priority, not the calendar.",
+      },
+      {
+        question: "Should I stop quitting if I feel depressed?",
+        answer:
+          "No—get support. Quitting and treating depression can happen together. If you feel unsafe or overwhelmed, contact a clinician urgently.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["mood-swings", "anxiety", "insomnia", "how-to-stop-a-relapse"],
+    medicalConditionName: "Depressive symptoms (post-cessation)",
+  },
+  {
+    slug: "bad-breath",
+    title: "How long does bad breath last after quitting smoking?",
+    shortTitle: "Bad breath",
+    category: "symptom",
+    targetKeyword: "bad breath after quitting smoking",
+    quickAnswer:
+      "Bad breath often improves within days to 2 weeks after quitting as saliva and mouth bacteria balance recover. If bad breath persists beyond a month, dental issues, dry mouth, reflux, or sinus problems are common causes.",
+    quickFacts: [
+      "Quitting usually improves oral health, but dry mouth can temporarily worsen breath.",
+      "Tongue coating and gum disease are frequent drivers—dental care helps.",
+      "Persistent bad breath with bleeding gums or tooth pain needs a dentist.",
+    ],
+    summary:
+      "Most people get better breath quickly after quitting. If you don’t, it’s usually a fixable oral-health or reflux issue—not a reason to relapse.",
+    detail:
+      "Treat breath like a system: hydration + tongue cleaning + gum care. If you used nicotine gum, check if it’s drying your mouth.",
+    articleSections: [
+      {
+        heading: "Why breath can be weird right after quitting",
+        paragraphs: [
+          "Saliva and oral bacteria change quickly after quitting. Some people notice a temporary “stale” taste as tissues heal and routines shift.",
+          "Dry mouth from anxiety, caffeine, or mouth-breathing can worsen breath even as smoke smell fades.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Fast fixes",
+        paragraphs: [
+          "Hydration, sugar-free gum, and tongue cleaning often help within days. Dental cleaning is high-leverage if you haven’t had one recently.",
+        ],
+        bullets: ["Brush tongue gently.", "Floss daily.", "Consider alcohol-free mouthwash."],
+      },
+      {
+        heading: "When to seek dental/medical help",
+        paragraphs: [
+          "See a dentist for persistent bad breath with bleeding gums, tooth pain, swelling, or sores.",
+          "If breath issues correlate with reflux or sinus congestion, treat those drivers.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often improves within days to 2 weeks.",
+    commonTriggers: "Dry mouth, gum disease, tongue coating, reflux, sinus congestion.",
+    whenToSeekCare:
+      "Dental review for tooth pain, bleeding/swollen gums, sores, or bad breath lasting >4 weeks.",
+    whatToExpectNext: [
+      "Breath typically improves quickly after quitting.",
+      "If not, dental cleaning often resolves the root cause.",
+      "Treat dry mouth and reflux to prevent recurrence.",
+    ],
+    faq: [
+      {
+        question: "How long does bad breath last after quitting smoking?",
+        answer:
+          "Many people improve within days to 2 weeks. If bad breath lasts beyond a month, dental issues, dry mouth, reflux, or sinus problems are common causes.",
+      },
+      {
+        question: "Why do I still have bad breath after I quit smoking?",
+        answer:
+          "Dry mouth, gum disease, tongue coating, reflux, and sinus congestion can all cause bad breath even after smoke smell is gone.",
+      },
+      {
+        question: "What helps bad breath after quitting?",
+        answer:
+          "Hydration, tongue cleaning, flossing, and dental cleaning are the biggest levers. Alcohol-free mouthwash can help if dryness is an issue.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["dry-mouth", "sore-gums", "heartburn-and-reflux", "sinus-congestion"],
+    medicalConditionName: "Halitosis (post-cessation context)",
+  },
+  {
+    slug: "taste-and-smell",
+    title: "How long does it take for taste and smell to return after quitting smoking?",
+    shortTitle: "Taste & smell",
+    category: "symptom",
+    targetKeyword: "taste and smell return after quitting smoking",
+    quickAnswer:
+      "Taste and smell often start improving within 48 hours and continue improving over 2–4 weeks as nerve function and nasal lining recover. Some people notice ongoing improvement for months.",
+    quickFacts: [
+      "Many people notice food tastes stronger within the first week.",
+      "Improved taste can increase appetite and sugar cravings early on.",
+      "Persistent loss of smell with fever or severe sinus pain needs medical evaluation.",
+    ],
+    summary:
+      "Taste and smell recovery is one of the fastest benefits of quitting. The main downside is increased appetite—plan for it so it doesn’t become a relapse trigger.",
+    detail:
+      "If you feel “too hungry” after quitting, this is often taste recovery plus withdrawal. Managing it is easier than fighting it.",
+    articleSections: [
+      {
+        heading: "Why taste and smell improve after quitting",
+        paragraphs: [
+          "Smoke dulls smell receptors and inflames nasal lining. Quitting reduces irritation and allows nerve function and mucosa to recover.",
+          "As smell improves, taste improves too (much of taste perception is smell).",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "Timeline",
+        paragraphs: [
+          "48 hours: many people notice a change in smell and taste intensity.",
+          "Weeks 1–4: steady improvement, with food flavors becoming clearer.",
+          "Months: gradual continued improvement for some.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "How to handle the appetite side-effect",
+        paragraphs: [
+          "Plan snacks and meals so improved taste doesn’t become constant grazing. Pair carbs with protein/fiber.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "Often noticeable within 48 hours; big gains in weeks 1–4.",
+    commonTriggers: "Sinus congestion, allergies, recent viral illness.",
+    whenToSeekCare:
+      "Seek care for persistent complete loss of smell, severe sinus pain, high fever, or neurologic symptoms.",
+    whatToExpectNext: [
+      "Food often tastes stronger quickly.",
+      "Appetite can increase—plan ahead.",
+      "Smell continues improving with time smoke-free.",
+    ],
+    faq: [
+      {
+        question: "How long does it take for taste to return after quitting smoking?",
+        answer:
+          "Many people notice improvement within 48 hours, with continued gains over the first 2–4 weeks.",
+      },
+      {
+        question: "Why am I hungrier after my taste returns?",
+        answer:
+          "Food becomes more rewarding as taste and smell recover, and withdrawal can also increase appetite. Planning meals/snacks helps.",
+      },
+      {
+        question: "When should I worry about smell loss after quitting?",
+        answer:
+          "If smell is completely absent for weeks or is paired with severe sinus pain, high fever, or neurologic symptoms, seek medical evaluation.",
+      },
+    ],
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    relatedSlugs: ["increased-appetite", "sugar-cravings", "sinus-congestion", "what-happens-after-3-days"],
+    medicalConditionName: "Olfactory/gustatory recovery (post-cessation)",
+  },
 ];
 
 export const milestoneGuides = blouGuides.filter((g) => g.category === "milestone");
