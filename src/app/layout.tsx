@@ -16,6 +16,21 @@ import {
 } from "@/lib/site";
 import "./globals.css";
 
+/**
+ * Reads webmaster-tools verification codes from env so values are not committed.
+ * Set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION (GSC → Settings → Ownership → HTML
+ * tag → copy `content`) and NEXT_PUBLIC_BING_SITE_VERIFICATION (Bing Webmaster
+ * → Settings → Add → Meta tag) in Vercel Project Settings.
+ */
+function buildVerification(): Metadata["verification"] {
+  const google = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+  const bing = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
+  const verification: NonNullable<Metadata["verification"]> = {};
+  if (google) verification.google = google;
+  if (bing) verification.other = { "msvalidate.01": bing };
+  return Object.keys(verification).length > 0 ? verification : undefined;
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -63,20 +78,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} – Quit Smoking Tracker (iOS)`,
     description: SITE_DESCRIPTION,
-    images: [
-      {
-        url: "/og/og-default.png",
-        width: 1200,
-        height: 630,
-        alt: `${SITE_NAME} – Quit Smoking Tracker`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} – Quit Smoking Tracker (iOS)`,
     description: SITE_DESCRIPTION,
-    images: ["/og/og-default.png"],
   },
   robots: {
     index: true,
@@ -94,6 +100,7 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     capable: true,
   },
+  verification: buildVerification(),
   icons: {
     icon: [
       { url: "/logos/blou-logo.png", type: "image/png" },

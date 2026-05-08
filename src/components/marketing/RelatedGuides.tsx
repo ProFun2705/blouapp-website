@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { blouGuideBySlug } from "@/lib/blouGuides";
+import { blouGuideBySlug, isPublishedGuide } from "@/lib/blouGuides";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 
 type RelatedGuidesProps = {
@@ -95,7 +95,7 @@ export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuide
           }
 
           const guide = blouGuideBySlug[slug];
-          if (!guide) return null;
+          if (!guide || !isPublishedGuide(guide)) return null;
 
           return (
             <li key={slug}>

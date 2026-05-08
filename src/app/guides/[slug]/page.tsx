@@ -10,7 +10,11 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { blouGuideBySlug, blouGuides } from "@/lib/blouGuides";
+import {
+  blouGuideBySlug,
+  isPublishedGuide,
+  publishedGuides,
+} from "@/lib/blouGuides";
 import { makeSectionId } from "@/lib/slugify";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -43,7 +47,7 @@ const references = [
 ] as const;
 
 export async function generateStaticParams() {
-  return blouGuides.map((guide) => ({ slug: guide.slug }));
+  return publishedGuides.map((guide) => ({ slug: guide.slug }));
 }
 
 export async function generateMetadata({
@@ -52,7 +56,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const guide = blouGuideBySlug[slug];
 
-  if (!guide) return {};
+  if (!guide || !isPublishedGuide(guide)) return {};
 
   return buildMetadata({
     title: guide.title,
@@ -73,7 +77,7 @@ export async function generateMetadata({
 export default async function GuideDetailPage({ params }: GuidePageProps) {
   const { slug } = await params;
   const guide = blouGuideBySlug[slug];
-  if (!guide) notFound();
+  if (!guide || !isPublishedGuide(guide)) notFound();
 
   const tocItems = [
     { id: "quick-answer", label: "Quick answer" },
@@ -97,6 +101,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
     path: `/guides/${guide.slug}`,
     datePublished: guide.datePublished,
     dateModified: guide.dateModified,
+    dateReviewed: guide.dateReviewed,
     author: { name: AUTHOR.name, url: AUTHOR.url },
     reviewer: { name: MEDICAL_REVIEWER.name, url: MEDICAL_REVIEWER.url },
     isMedical: true,

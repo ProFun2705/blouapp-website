@@ -1,45 +1,58 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
-import { blouGuides } from "@/lib/blouGuides";
+import { isPublishedGuide, blouGuides } from "@/lib/blouGuides";
 import { countries } from "@/lib/countryData";
+import { staticRoutes } from "@/lib/staticRoutes";
+
+/**
+ * Notes:
+ * - `lastModified` is intentionally per-route. Bumping it on every deploy is
+ *   noise to search engines.
+ * - `changeFrequency` and `priority` are intentionally omitted: Google has
+ *   confirmed it ignores both. Removing them keeps the sitemap honest.
+ * - Each country calculator advertises its locale via hreflang to the others.
+ */
+
+const SITEMAP_GENERATED_AT = new Date().toISOString();
+
+/**
+ * Map a country to a unique BCP-47 hreflang. We use `en-{REGION}` because all
+ * pages are written in English but geo-targeted (currency, hotlines, prices).
+ * Avoids hreflang collisions where two countries both fall back to plain "en".
+ */
+const countryHreflang = (slug: string, locale: string): string => {
+  const region = locale.includes("-") ? locale.split("-")[1] : "";
+  return region ? `en-${region}` : `en-${slug.toUpperCase()}`;
+};
+
+const countryLanguageMap = Object.fromEntries(
+  countries.map((c) => [
+    countryHreflang(c.slug, c.locale),
+    `${SITE_URL}/calculators/${c.slug}`,
+  ]),
+);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${SITE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE_URL}/tools`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/tools/money-saved`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/tools/lung-recovery`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/calculators`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${SITE_URL}/how-to-quit-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/prepare-to-quit-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/best-quit-smoking-apps`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/i-smoked-one-cigarette`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE_URL}/alcohol-and-quitting-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${SITE_URL}/quitting-smoking-after-40`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${SITE_URL}/quitting-smoking-after-50`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${SITE_URL}/how-to-stop-a-relapse`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${SITE_URL}/social-smoking`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${SITE_URL}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
-    { url: `${SITE_URL}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
-  ];
-
-  const guideRoutes: MetadataRoute.Sitemap = blouGuides.map((g) => ({
-    url: `${SITE_URL}/guides/${g.slug}`,
-    lastModified: new Date(g.dateModified),
-    changeFrequency: "monthly",
-    priority: g.category === "milestone" ? 0.85 : 0.8,
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((r) => ({
+    url: `${SITE_URL}${r.path}`,
+    lastModified: r.lastModified,
   }));
 
-  const countryRoutes: MetadataRoute.Sitemap = countries.map((c) => ({
+  const guideEntries: MetadataRoute.Sitemap = blouGuides
+    .filter(isPublishedGuide)
+    .map((g) => ({
+      url: `${SITE_URL}/guides/${g.slug}`,
+      lastModified: g.dateModified,
+      images: [`${SITE_URL}/guides/${g.slug}/opengraph-image`],
+    }));
+
+  const countryEntries: MetadataRoute.Sitemap = countries.map((c) => ({
     url: `${SITE_URL}/calculators/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.7,
+    // Anchor lastmod to the price-data vintage so the sitemap doesn't shift on
+    // every deploy. Falls back to the build timestamp if `priceAsOf` is empty.
+    lastModified: c.priceAsOf ? `${c.priceAsOf}-01-01` : SITEMAP_GENERATED_AT,
+    alternates: { languages: countryLanguageMap },
   }));
 
-  return [...staticRoutes, ...guideRoutes, ...countryRoutes];
+  return [...staticEntries, ...guideEntries, ...countryEntries];
 }

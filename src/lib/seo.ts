@@ -5,6 +5,11 @@ type BuildMetadataInput = {
   title: string;
   description: string;
   path: string;
+  /**
+   * Optional custom OG/Twitter image. If omitted, the route inherits the
+   * dynamically-generated image from `app/opengraph-image.tsx` (and any
+   * per-segment override colocated with the page).
+   */
   image?: string;
   type?: "website" | "article";
   publishedTime?: string;
@@ -19,7 +24,7 @@ export function buildMetadata({
   title,
   description,
   path,
-  image = "/og/og-default.png",
+  image,
   type = "website",
   publishedTime,
   modifiedTime,
@@ -28,7 +33,11 @@ export function buildMetadata({
   languages,
 }: BuildMetadataInput): Metadata {
   const url = `${SITE_URL}${path}`;
-  const ogImage = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+  const ogImage = image
+    ? image.startsWith("http")
+      ? image
+      : `${SITE_URL}${image}`
+    : undefined;
 
   const languageAlternates = languages
     ? Object.fromEntries(
@@ -56,7 +65,9 @@ export function buildMetadata({
       siteName: SITE_NAME,
       title,
       description,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      ...(ogImage
+        ? { images: [{ url: ogImage, width: 1200, height: 630, alt: title }] }
+        : {}),
       locale: "en_US",
       publishedTime,
       modifiedTime,
@@ -65,7 +76,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }
@@ -106,9 +117,19 @@ type ArticleJsonLdInput = {
   title: string;
   description: string;
   path: string;
+  /**
+   * If omitted, Article JSON-LD references the route's auto-generated OG
+   * image (`<route>/opengraph-image`). Pass an absolute URL or site-relative
+   * path to override.
+   */
   image?: string;
   datePublished: string;
   dateModified: string;
+  /**
+   * ISO date of the most recent editorial / medical review. Surfaces as
+   * `lastReviewed` in JSON-LD per Google's E-E-A-T guidance for YMYL pages.
+   */
+  dateReviewed?: string;
   author: { name: string; url: string };
   reviewer?: { name: string; url: string };
   about?: Record<string, unknown>;
@@ -120,9 +141,10 @@ export function buildArticleJsonLd({
   title,
   description,
   path,
-  image = "/og/og-default.png",
+  image,
   datePublished,
   dateModified,
+  dateReviewed,
   author,
   reviewer,
   about,
@@ -130,7 +152,11 @@ export function buildArticleJsonLd({
   isMedical = false,
 }: ArticleJsonLdInput) {
   const url = `${SITE_URL}${path}`;
-  const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+  const resolvedImage = image
+    ? image.startsWith("http")
+      ? image
+      : `${SITE_URL}${image}`
+    : `${url}/opengraph-image`;
   const type = isMedical ? ["MedicalWebPage", "Article"] : ["Article"];
 
   const base: Record<string, unknown> = {
@@ -140,7 +166,7 @@ export function buildArticleJsonLd({
     description,
     mainEntityOfPage: url,
     url,
-    image: imageUrl,
+    image: resolvedImage,
     datePublished,
     dateModified,
     inLanguage: "en",
@@ -159,6 +185,8 @@ export function buildArticleJsonLd({
       },
     },
   };
+
+  if (dateReviewed) base.lastReviewed = dateReviewed;
 
   if (reviewer) {
     base.reviewedBy = {

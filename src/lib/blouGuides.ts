@@ -30,7 +30,20 @@ export type BlouGuide = {
   targetKeyword: string;
   /** Optional MedicalCondition subject for MedicalWebPage schema. */
   medicalConditionName?: string;
+  /**
+   * Defaults to true. Set to false to keep an in-progress guide out of the
+   * sitemap and the /guides index without removing the entry.
+   */
+  published?: boolean;
+  /**
+   * ISO date of the most recent editorial review (separate from
+   * `dateModified`, which can change due to typo/formatting fixes).
+   * Surfaces as `lastReviewed` in Article/MedicalWebPage JSON-LD.
+   */
+  dateReviewed?: string;
 };
+
+export const isPublishedGuide = (g: BlouGuide): boolean => g.published !== false;
 
 export const blouGuides: BlouGuide[] = [
   // ─────────────────────────── MILESTONES ───────────────────────────
@@ -3952,8 +3965,14 @@ export const blouGuides: BlouGuide[] = [
   },
 ];
 
-export const milestoneGuides = blouGuides.filter((g) => g.category === "milestone");
-export const symptomGuides = blouGuides.filter((g) => g.category === "symptom");
+export const publishedGuides = blouGuides.filter(isPublishedGuide);
+
+export const milestoneGuides = publishedGuides.filter(
+  (g) => g.category === "milestone",
+);
+export const symptomGuides = publishedGuides.filter(
+  (g) => g.category === "symptom",
+);
 
 export const blouGuideBySlug = Object.fromEntries(
   blouGuides.map((g) => [g.slug, g]),
