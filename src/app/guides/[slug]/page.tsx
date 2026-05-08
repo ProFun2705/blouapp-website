@@ -16,7 +16,7 @@ import {
   publishedGuides,
 } from "@/lib/blouGuides";
 import { makeSectionId } from "@/lib/slugify";
-import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
+import { buildArticleJsonLd, buildMetadata, buildSpeakableJsonLd } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 type GuidePageProps = {
@@ -118,6 +118,12 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
     })),
   });
 
+  const speakableJsonLd = buildSpeakableJsonLd({
+    name: guide.title,
+    path: `/guides/${guide.slug}`,
+    selectors: ["#quick-answer"],
+  });
+
   return (
     <article className="flex flex-col gap-8">
       <Script
@@ -125,6 +131,9 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         type="application/ld+json"
       >
         {JSON.stringify(articleJsonLd)}
+      </Script>
+      <Script id={`speakable-json-ld-${guide.slug}`} type="application/ld+json">
+        {JSON.stringify(speakableJsonLd)}
       </Script>
 
       <Breadcrumbs
@@ -289,6 +298,12 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
           className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← All guides
+        </Link>
+        <Link
+          href="/best-quit-smoking-apps"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 bg-white px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+        >
+          Compare the best quit apps
         </Link>
         <Link
           href="/tools"

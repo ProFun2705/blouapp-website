@@ -8,6 +8,10 @@ type CountryPageProps = {
   params: Promise<{ country: string }>;
 };
 
+function toOpenGraphLocale(locale: string) {
+  return locale.replace("-", "_");
+}
+
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
 }
@@ -35,6 +39,7 @@ export async function generateMetadata({
       "smoking cost calculator",
     ],
     languages,
+    ogLocale: toOpenGraphLocale(country.locale),
   });
 }
 

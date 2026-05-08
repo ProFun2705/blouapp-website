@@ -12,6 +12,8 @@ type BuildMetadataInput = {
    */
   image?: string;
   type?: "website" | "article";
+  /** OpenGraph locale, e.g. "en_US" or "en_GB". */
+  ogLocale?: string;
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
@@ -26,6 +28,7 @@ export function buildMetadata({
   path,
   image,
   type = "website",
+  ogLocale = "en_US",
   publishedTime,
   modifiedTime,
   noindex,
@@ -68,7 +71,7 @@ export function buildMetadata({
       ...(ogImage
         ? { images: [{ url: ogImage, width: 1200, height: 630, alt: title }] }
         : {}),
-      locale: "en_US",
+      locale: ogLocale,
       publishedTime,
       modifiedTime,
     },
@@ -235,6 +238,27 @@ export function buildHowToJsonLd({
       name: step.name,
       text: step.text,
     })),
+  };
+}
+
+export function buildSpeakableJsonLd({
+  name,
+  path,
+  selectors,
+}: {
+  name: string;
+  path: string;
+  selectors: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    url: `${SITE_URL}${path}`,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: selectors,
+    },
   };
 }
 
