@@ -80,6 +80,7 @@ You purchased a domain and created a local folder for the website, but nothing i
 - [x] Install Google tag (GA4) on all pages
 - [x] Sitemap & SEO improvements (code) — see "SEO improvement workstream" below
 - [ ] Sitemap & SEO improvements (manual one-time actions) — see "SEO improvement workstream" below
+- [x] SEO growth workstream: create 10 new high-converting organic pages (Executor)
 
 ## SEO improvement workstream (May 2026)
 
@@ -119,6 +120,10 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
 - Domain added in Vercel: `tryblou.com`, `www.tryblou.com` (awaiting GoDaddy DNS records / propagation)
 - DNS updated in GoDaddy; domain is serving the latest production deployment on HTTPS.
 - Google tag installed site-wide in `src/app/layout.tsx` (Measurement ID: `G-L5RLBSF7KK`). Confirmed `npm run build` still succeeds.
+- SEO growth workstream kicked off: selecting 10 new high-intent page targets and will implement as new `src/app/<slug>/page.tsx` routes, then verify with `npm run build`.
+- SEO growth workstream done:
+  - Added 10 new routes under `src/app/*/page.tsx` and registered them in `src/lib/staticRoutes.ts` so they appear in the sitemap.
+  - Verified `npm run build` succeeds and the routes are included in the build output.
 
 # Executor's Feedback or Assistance Requests
 
@@ -130,6 +135,10 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
   - Access to your GoDaddy DNS settings (you’ll do the clicks; I’ll tell you exactly what to add)
 - For Step 2/3, we’ll need:
   - Whether you already have a GitHub account and are logged in on this machine
+
+- For the 10 new pages workstream:
+  - I’m using the existing page template/style (Metadata + JSON-LD + QuickAnswer + TOC + FAQ + strong App Store CTA).
+  - Next step is to implement the 10 recommended slugs as routes, then run `npm run build` and ask you to spot-check the pages in the browser.
 
 ## GoDaddy DNS records to add (for tryblou.com)
 
