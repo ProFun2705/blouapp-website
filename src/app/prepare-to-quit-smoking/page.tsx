@@ -158,6 +158,7 @@ export default function PrepareToQuitPage() {
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "prep-checklist", label: "The 7-day prep checklist" },
+          { id: "med-and-app", label: "Medication & app primers" },
           { id: "relapse-maintenance", label: "Relapse & maintenance links" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
@@ -190,6 +191,53 @@ export default function PrepareToQuitPage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section
+        id="med-and-app"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          Medication & app primers
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+          Day -5 mentions choosing support—read these if you are deciding among
+          NRT, varenicline, bupropion, or how a tracker fits.
+        </p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          <li>
+            <Link
+              href="/quit-smoking-with-varenicline"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block font-medium">Varenicline overview</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/quit-smoking-with-bupropion"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block font-medium">Bupropion overview</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/quit-smoking-with-nicotine-lozenge"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block font-medium">Nicotine lozenge plan</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block font-medium">NRT + quit app</span>
+            </Link>
+          </li>
+        </ul>
       </section>
 
       <section
@@ -230,6 +278,10 @@ export default function PrepareToQuitPage() {
             RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
             RELATED_PILLAR_SLUGS.howToStopARelapse,
             RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking,
+            RELATED_PILLAR_SLUGS.quitSmokingBeforeSurgery,
+            RELATED_PILLAR_SLUGS.quitSmokingWhilePregnant,
+            "quit-smoking-with-varenicline",
+            "quit-smoking-with-nicotine-lozenge",
             "what-happens-after-1-day",
             "cravings",
             "tools/money-saved",

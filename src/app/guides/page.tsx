@@ -74,7 +74,7 @@ export default function GuidesIndexPage() {
           durations, practical relief, and red flags that warrant medical
           review.
         </p>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             href="/how-to-quit-smoking"
             className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
@@ -86,6 +86,30 @@ export default function GuidesIndexPage() {
             className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
           >
             Tool: Money saved calculator
+          </Link>
+          <Link
+            href="/quit-vaping"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            How to quit vaping
+          </Link>
+          <Link
+            href="/motivation-to-quit-smoking"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            Motivation to quit
+          </Link>
+          <Link
+            href="/trying-to-quit-smoking-again"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            Trying to quit again
+          </Link>
+          <Link
+            href="/best-quit-smoking-apps"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            Best quit smoking apps
           </Link>
         </div>
       </article>

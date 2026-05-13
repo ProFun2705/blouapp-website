@@ -165,6 +165,7 @@ export default function HowToQuitSmokingPage() {
           { id: "quit-day", label: "What to do on quit day" },
           { id: "quit-help-by-country", label: "Free quit help by country" },
           { id: "relapse-maintenance", label: "Relapse & maintenance" },
+          { id: "more-high-intent", label: "More guides" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
@@ -320,6 +321,91 @@ export default function HowToQuitSmokingPage() {
         </ul>
       </section>
 
+      <section
+        id="more-high-intent"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">More guides</h2>
+        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+          Vaping, apps, medications, and motivation—same evidence-based posture
+          as this plan, written for specific searches.
+        </p>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.quitVaping}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Vaping
+              </span>
+              <span className="mt-1 block font-medium">How to quit vaping</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.vapingAndSmokingTogether}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Vaping
+              </span>
+              <span className="mt-1 block font-medium">
+                Vaping and smoking together
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.smokingCessationApp}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">Smoking cessation app</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">NRT and a quit app</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/why-cant-i-quit-smoking"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Mindset
+              </span>
+              <span className="mt-1 block font-medium">
+                Why can’t I quit smoking?
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/trying-to-quit-smoking-again"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Mindset
+              </span>
+              <span className="mt-1 block font-medium">
+                Trying to quit smoking again
+              </span>
+            </Link>
+          </li>
+        </ul>
+      </section>
+
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} jsonLdId="faq-how-to-quit" />
       </section>
@@ -332,6 +418,10 @@ export default function HowToQuitSmokingPage() {
             RELATED_PILLAR_SLUGS.howToStopARelapse,
             RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking,
             RELATED_PILLAR_SLUGS.socialSmoking,
+            RELATED_PILLAR_SLUGS.quitVaping,
+            RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp,
+            RELATED_PILLAR_SLUGS.motivationToQuitSmoking,
+            "trying-to-quit-smoking-again",
             "what-happens-after-1-day",
             "what-happens-after-3-days",
             "what-happens-after-1-week",

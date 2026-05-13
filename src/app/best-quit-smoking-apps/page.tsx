@@ -181,6 +181,41 @@ export default function BestQuitSmokingAppsPage() {
             placement="article_intro"
           />
         </div>
+        <div className="mt-6 flex flex-wrap gap-2 border-t border-teal-100 pt-6 text-sm">
+          <span className="w-full text-xs font-semibold uppercase tracking-wide text-teal-700">
+            Deep dives
+          </span>
+          <Link
+            href="/blou-vs-flamy"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Blou vs Flamy
+          </Link>
+          <Link
+            href="/blou-vs-quit-genius"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Blou vs Quit Genius
+          </Link>
+          <Link
+            href="/quit-smoking-app-android"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Android apps
+          </Link>
+          <Link
+            href="/smoking-cessation-app"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Cessation apps
+          </Link>
+          <Link
+            href="/nrt-and-quit-smoking-app"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            NRT + app
+          </Link>
+        </div>
       </header>
 
       <TableOfContents

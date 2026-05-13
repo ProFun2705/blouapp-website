@@ -67,6 +67,81 @@ const RELATED_LINK_MAP: Record<
     href: "/social-smoking",
     category: "Relapse & maintenance",
   },
+  [RELATED_PILLAR_SLUGS.quitVaping]: {
+    title: "How to quit vaping",
+    href: "/quit-vaping",
+    category: "Vaping",
+  },
+  [RELATED_PILLAR_SLUGS.vapingAndSmokingTogether]: {
+    title: "Vaping and smoking together (dual use)",
+    href: "/vaping-and-smoking-together",
+    category: "Vaping",
+  },
+  [RELATED_PILLAR_SLUGS.smokingCessationApp]: {
+    title: "Smoking cessation app: what it should do",
+    href: "/smoking-cessation-app",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingAppAndroid]: {
+    title: "Quit smoking app for Android",
+    href: "/quit-smoking-app-android",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp]: {
+    title: "NRT and a quit smoking app",
+    href: "/nrt-and-quit-smoking-app",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingBeforeSurgery]: {
+    title: "Quit smoking before surgery",
+    href: "/quit-smoking-before-surgery",
+    category: "Clinical contexts",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingWhilePregnant]: {
+    title: "Quit smoking while pregnant (clinician-first)",
+    href: "/quit-smoking-while-pregnant",
+    category: "Clinical contexts",
+  },
+  [RELATED_PILLAR_SLUGS.motivationToQuitSmoking]: {
+    title: "Motivation to quit smoking",
+    href: "/motivation-to-quit-smoking",
+    category: "Mindset",
+  },
+  "trying-to-quit-smoking-again": {
+    title: "Trying to quit smoking again",
+    href: "/trying-to-quit-smoking-again",
+    category: "Mindset",
+  },
+  "why-cant-i-quit-smoking": {
+    title: "Why can’t I quit smoking?",
+    href: "/why-cant-i-quit-smoking",
+    category: "Mindset",
+  },
+  "quit-smoking-with-nicotine-lozenge": {
+    title: "Quit smoking with nicotine lozenges",
+    href: "/quit-smoking-with-nicotine-lozenge",
+    category: "NRT",
+  },
+  "quit-smoking-with-varenicline": {
+    title: "Quit smoking with varenicline (Chantix / Champix)",
+    href: "/quit-smoking-with-varenicline",
+    category: "Medication",
+  },
+  "quit-smoking-with-bupropion": {
+    title: "Quit smoking with bupropion (Zyban)",
+    href: "/quit-smoking-with-bupropion",
+    category: "Medication",
+  },
+  "blou-vs-flamy": {
+    title: "Blou vs Flamy",
+    href: "/blou-vs-flamy",
+    category: "Comparison",
+  },
+  "blou-vs-quit-genius": {
+    title: "Blou vs Quit Genius",
+    href: "/blou-vs-quit-genius",
+    category: "Comparison",
+  },
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {

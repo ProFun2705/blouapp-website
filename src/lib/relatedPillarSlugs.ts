@@ -3,7 +3,7 @@
  *
  * **When you add a new page:** (1) Add a constant here. (2) Register title, href, and
  * category in `RELATED_LINK_MAP` in `@/components/marketing/RelatedGuides`. (3) Add the
- * URL in `src/app/sitemap.ts`. (4) Link from relevant hubs (`/how-to-quit-smoking`,
+ * URL in `src/lib/staticRoutes.ts` (consumed by `sitemap.ts`). (4) Link from relevant hubs (`/how-to-quit-smoking`,
  * `/prepare-to-quit-smoking`, tools, etc.) and optionally from `relatedSlugs` in
  * `blouGuides.ts` for topic-specific guides.
  */
@@ -14,6 +14,14 @@ export const RELATED_PILLAR_SLUGS = {
   quittingSmokingAfter50: "quitting-smoking-after-50",
   howToStopARelapse: "how-to-stop-a-relapse",
   socialSmoking: "social-smoking",
+  quitVaping: "quit-vaping",
+  vapingAndSmokingTogether: "vaping-and-smoking-together",
+  smokingCessationApp: "smoking-cessation-app",
+  quitSmokingAppAndroid: "quit-smoking-app-android",
+  nrtAndQuitSmokingApp: "nrt-and-quit-smoking-app",
+  quitSmokingBeforeSurgery: "quit-smoking-before-surgery",
+  quitSmokingWhilePregnant: "quit-smoking-while-pregnant",
+  motivationToQuitSmoking: "motivation-to-quit-smoking",
 } as const;
 
 export type RelatedPillarSlug =
