@@ -215,6 +215,24 @@ export default function BestQuitSmokingAppsPage() {
           >
             NRT + app
           </Link>
+          <Link
+            href="/first-week-quit-smoking"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Week 1 playbook
+          </Link>
+          <Link
+            href="/best-quit-smoking-app-for-beginners"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Beginner apps
+          </Link>
+          <Link
+            href="/quit-smoking-on-a-budget"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+          >
+            Quit on a budget
+          </Link>
         </div>
       </header>
 

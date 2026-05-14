@@ -403,6 +403,61 @@ export default function HowToQuitSmokingPage() {
               </span>
             </Link>
           </li>
+          <li>
+            <Link
+              href="/first-week-quit-smoking"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Playbook
+              </span>
+              <span className="mt-1 block font-medium">First week quit smoking</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/stop-smoking-today"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Playbook
+              </span>
+              <span className="mt-1 block font-medium">Stop smoking today</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/nicotine-patch-vs-gum"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                NRT
+              </span>
+              <span className="mt-1 block font-medium">Nicotine patch vs gum</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/nicotine-withdrawal-symptoms"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Symptoms
+              </span>
+              <span className="mt-1 block font-medium">Withdrawal symptoms hub</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/best-quit-smoking-app-for-beginners"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">Best app for beginners</span>
+            </Link>
+          </li>
         </ul>
       </section>
 
@@ -422,6 +477,9 @@ export default function HowToQuitSmokingPage() {
             RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp,
             RELATED_PILLAR_SLUGS.motivationToQuitSmoking,
             "trying-to-quit-smoking-again",
+            "first-week-quit-smoking",
+            "nicotine-withdrawal-symptoms",
+            "best-quit-smoking-app-for-beginners",
             "what-happens-after-1-day",
             "what-happens-after-3-days",
             "what-happens-after-1-week",

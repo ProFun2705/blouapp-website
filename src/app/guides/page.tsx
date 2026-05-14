@@ -111,6 +111,24 @@ export default function GuidesIndexPage() {
           >
             Best quit smoking apps
           </Link>
+          <Link
+            href="/first-week-quit-smoking"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            First week quit smoking
+          </Link>
+          <Link
+            href="/nicotine-withdrawal-symptoms"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            Withdrawal symptoms
+          </Link>
+          <Link
+            href="/is-it-too-late-to-quit-smoking"
+            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+          >
+            Is it too late to quit?
+          </Link>
         </div>
       </article>
 

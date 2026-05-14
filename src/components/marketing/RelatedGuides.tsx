@@ -142,6 +142,81 @@ const RELATED_LINK_MAP: Record<
     href: "/blou-vs-quit-genius",
     category: "Comparison",
   },
+  "first-week-quit-smoking": {
+    title: "First week quit smoking",
+    href: "/first-week-quit-smoking",
+    category: "Playbook",
+  },
+  "nicotine-patch-vs-gum": {
+    title: "Nicotine patch vs gum",
+    href: "/nicotine-patch-vs-gum",
+    category: "NRT",
+  },
+  "how-to-help-someone-quit-smoking": {
+    title: "How to help someone quit smoking",
+    href: "/how-to-help-someone-quit-smoking",
+    category: "Support",
+  },
+  "quit-smoking-without-nrt": {
+    title: "Quit smoking without NRT",
+    href: "/quit-smoking-without-nrt",
+    category: "Plan",
+  },
+  "stop-smoking-today": {
+    title: "Stop smoking today",
+    href: "/stop-smoking-today",
+    category: "Playbook",
+  },
+  "quit-smoking-on-a-budget": {
+    title: "Quit smoking on a budget",
+    href: "/quit-smoking-on-a-budget",
+    category: "Plan",
+  },
+  "stress-smoking-quit-plan": {
+    title: "Stress smoking quit plan",
+    href: "/stress-smoking-quit-plan",
+    category: "Plan",
+  },
+  "driving-and-quitting-smoking": {
+    title: "Driving and quitting smoking",
+    href: "/driving-and-quitting-smoking",
+    category: "Cues",
+  },
+  "living-with-a-smoker-while-quitting": {
+    title: "Living with a smoker while quitting",
+    href: "/living-with-a-smoker-while-quitting",
+    category: "Support",
+  },
+  "nicotine-withdrawal-symptoms": {
+    title: "Nicotine withdrawal symptoms",
+    href: "/nicotine-withdrawal-symptoms",
+    category: "Symptoms",
+  },
+  "combination-nrt-quit-smoking": {
+    title: "Combination NRT to quit smoking",
+    href: "/combination-nrt-quit-smoking",
+    category: "NRT",
+  },
+  "stay-quit-after-one-month": {
+    title: "Stay quit after one month",
+    href: "/stay-quit-after-one-month",
+    category: "Maintenance",
+  },
+  "best-quit-smoking-app-for-beginners": {
+    title: "Best quit smoking app for beginners",
+    href: "/best-quit-smoking-app-for-beginners",
+    category: "Apps",
+  },
+  "is-it-too-late-to-quit-smoking": {
+    title: "Is it too late to quit smoking?",
+    href: "/is-it-too-late-to-quit-smoking",
+    category: "Mindset",
+  },
+  "coffee-and-quitting-smoking": {
+    title: "Coffee and quitting smoking",
+    href: "/coffee-and-quitting-smoking",
+    category: "Cues",
+  },
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {
