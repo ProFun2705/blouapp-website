@@ -3963,6 +3963,672 @@ export const blouGuides: BlouGuide[] = [
     relatedSlugs: ["increased-appetite", "sugar-cravings", "sinus-congestion", "what-happens-after-3-days"],
     medicalConditionName: "Olfactory/gustatory recovery (post-cessation)",
   },
+  // ─── NEW SYMPTOM GUIDES ─────────────────────────────────────────────────────
+  {
+    slug: "anger",
+    title: "Anger after quitting smoking: why it happens and how long it lasts",
+    shortTitle: "Anger",
+    category: "symptom",
+    targetKeyword: "anger after quitting smoking",
+    quickAnswer:
+      "Intense anger and rage are common in the first 1–2 weeks after quitting. Nicotine withdrawal disrupts dopamine and norepinephrine signaling, lowering your stress threshold. For most people, anger noticeably eases by week 2–3.",
+    quickFacts: [
+      "Anger and irritability are among the most commonly reported nicotine withdrawal symptoms.",
+      "The anger typically peaks in the first 72 hours and steadily declines by week 2.",
+      "Physical movement is one of the fastest ways to discharge anger energy during withdrawal.",
+    ],
+    summary:
+      "Anger after quitting smoking is a nicotine withdrawal symptom, not a personality change. The nervous system is adjusting to the absence of a substance it depended on for mood regulation.",
+    detail:
+      "Nicotine raises dopamine and norepinephrine levels. When it's removed, these neurotransmitters drop, lowering your ability to regulate frustration and emotional spikes. The result is that small irritants feel overwhelming—traffic, noise, minor delays. Knowing this is chemical and temporary is the first step to managing it.",
+    articleSections: [
+      {
+        heading: "Why quitting smoking causes anger",
+        paragraphs: [
+          "Nicotine activates nicotinic acetylcholine receptors in the brain, which trigger the release of dopamine and norepinephrine. These neurotransmitters regulate reward, attention, and emotional reactivity. Without nicotine, levels of both drop temporarily, raising stress sensitivity and lowering the threshold for frustration.",
+          "This is not a personality flaw or a sign of weakness. It is a predictable neurochemical response. Every person who quits after significant dependence experiences some version of it—the intensity varies but the mechanism is the same.",
+        ],
+        bullets: [
+          "Anger typically peaks in the first 48–72 hours alongside other peak withdrawal symptoms.",
+          "It is distinct from irritability (constant low-level friction) and tends to come in sudden, intense surges.",
+          "Stress cues that previously led to a cigarette now have no practiced response—the anger can be the brain looking for a missing signal.",
+        ],
+      },
+      {
+        heading: "Strategies for managing anger during withdrawal",
+        paragraphs: [
+          "Physical movement is the fastest discharge mechanism for anger. A brisk 5-minute walk, push-ups, or any movement that raises the heart rate can interrupt the surge before it escalates. Pre-decide the movement before the anger arrives.",
+          "Label the feeling before you react: 'This is withdrawal, not the situation.' Externalizing the cause gives you cognitive distance and reduces the likelihood of saying or doing something you'll regret.",
+          "Cold water on the face or wrists activates the dive reflex, which slows the heart rate rapidly. Keep a glass of water nearby for the first week.",
+        ],
+        bullets: [
+          "Plan your response before the anger hits: movement → cold water → label it.",
+          "Warn people you're close to that you may be short-tempered for 1–2 weeks.",
+          "Avoid high-conflict situations (arguments, difficult calls) in the first 72 hours if you can.",
+        ],
+      },
+      {
+        heading: "When anger might be more than withdrawal",
+        paragraphs: [
+          "If anger is accompanied by thoughts of harming yourself or others, persistent dark mood, or is not improving after 3–4 weeks of being smoke-free, discuss it with a clinician. These may not be withdrawal-related.",
+          "People using varenicline or bupropion should flag any new or intensifying mood changes to their prescriber—dose adjustment is sometimes needed.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "1–3 weeks (most intense in the first 72 hours)",
+    commonTriggers: "Stress, frustration, disrupted sleep, cue-based craving moments",
+    whenToSeekCare: "Seek care if anger involves thoughts of harm, or does not improve after 3–4 weeks smoke-free.",
+    whatToExpectNext: [
+      "Anger intensity typically drops sharply after day 3.",
+      "By week 2–3, most people report emotional regulation returning toward normal.",
+      "Mood and stress resilience generally improve to better than smoking-baseline by month 2.",
+    ],
+    faq: [
+      {
+        question: "Why am I so angry after quitting smoking?",
+        answer:
+          "Anger is a classic nicotine withdrawal symptom. Your brain's dopamine and norepinephrine systems are recalibrating without the nicotine input they adapted to. This is temporary—it peaks in the first 72 hours and steadily eases over 2–3 weeks.",
+      },
+      {
+        question: "How long does the anger last when quitting smoking?",
+        answer:
+          "For most people, the intense anger and irritability of withdrawal is worst in the first 3–7 days and significantly better by week 2–3. Some residual emotional sensitivity can continue for a month but generally continues improving.",
+      },
+      {
+        question: "Will I always be this angry after quitting?",
+        answer:
+          "No. Long-term ex-smokers consistently report lower stress and anger levels than when they were smoking. The first weeks are the adjustment period—things do get better.",
+      },
+      {
+        question: "What's the fastest way to calm down during a rage spike?",
+        answer:
+          "Physical movement (a brisk walk, push-ups), cold water on your face or wrists, and labeling the experience as withdrawal rather than the situation in front of you. All three can interrupt the spike within minutes.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["irritability", "mood-swings", "anxiety", "restlessness", "what-happens-after-3-days"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "crying",
+    title: "Crying after quitting smoking: why you feel so emotional",
+    shortTitle: "Crying",
+    category: "symptom",
+    targetKeyword: "crying after quitting smoking",
+    quickAnswer:
+      "Crying and emotional sensitivity after quitting smoking are withdrawal symptoms caused by disrupted dopamine and serotonin regulation. Most people find this eases significantly by week 2–3.",
+    quickFacts: [
+      "Emotional sensitivity and tearfulness are well-documented nicotine withdrawal symptoms.",
+      "Nicotine affects serotonin signaling; its removal can cause temporary emotional instability.",
+      "Crying spells are most common in the first 1–2 weeks and generally resolve without treatment.",
+    ],
+    summary:
+      "Feeling unexpectedly emotional or tearful after quitting smoking is common and is driven by the brain adjusting to the loss of nicotine's mood-regulating effects.",
+    detail:
+      "Nicotine influences several mood-regulating neurotransmitters—dopamine, serotonin, and norepinephrine. During withdrawal, all of these fluctuate, which can produce unpredictable emotional swings including sudden tearfulness, low mood, and a feeling of emotional rawness that seems disproportionate to the situation.",
+    articleSections: [
+      {
+        heading: "Why quitting smoking can make you cry",
+        paragraphs: [
+          "Nicotine stimulates the release of serotonin and dopamine, both of which regulate mood and emotional stability. Without nicotine input, these systems fluctuate unpredictably in the first weeks of cessation. The result can be tears that appear without obvious cause, or emotional reactions that feel much larger than the situation warrants.",
+          "This is a recognized withdrawal phenomenon, not a sign of depression developing or of making the wrong decision. For most people it is temporary and resolves as the nervous system finds a new baseline.",
+        ],
+        bullets: [
+          "Emotional peaks are most intense in the first 72 hours, parallel to other withdrawal symptoms.",
+          "Crying is more common in people who smoked heavily and in those with a history of mood sensitivity.",
+          "Sleep deprivation from withdrawal insomnia amplifies all emotional symptoms.",
+        ],
+      },
+      {
+        heading: "What helps with emotional sensitivity during withdrawal",
+        paragraphs: [
+          "Acknowledge the feeling without fighting it. Resisting emotional surges often prolongs them—letting them pass naturally (they usually do within minutes) is more effective than suppressing them.",
+          "Sleep is the single most powerful regulator of emotional sensitivity. Protecting sleep quality in the first two weeks significantly reduces the intensity of mood symptoms. See the insomnia guide for practical strategies.",
+          "Regular exercise—even short walks—raises baseline serotonin and dopamine, which partially compensates for the nicotine-withdrawal dip.",
+        ],
+        bullets: [
+          "Expect emotional peaks around days 2–4 and have a low-demand plan for those days.",
+          "Stay connected to supportive people—isolation amplifies emotional swings.",
+          "Track smoke-free progress: each milestone represents real progress even when it doesn't feel like it.",
+        ],
+      },
+      {
+        heading: "When to get support",
+        paragraphs: [
+          "If tearfulness or low mood is accompanied by inability to function, thoughts of self-harm, or does not improve after 2–3 weeks, speak to a clinician. This may indicate a depressive episode that needs assessment, separate from standard withdrawal.",
+        ],
+        bullets: [],
+      },
+    ],
+    typicalDuration: "1–3 weeks (peaks in the first 72 hours)",
+    commonTriggers: "Sleep disruption, stress, emotional cues that previously paired with smoking",
+    whenToSeekCare: "Seek care if symptoms persist beyond 3 weeks, are severe, or are accompanied by thoughts of self-harm.",
+    whatToExpectNext: [
+      "Emotional stability generally returns by week 2–3.",
+      "Many ex-smokers report better overall mood by month 2 than when they were smoking.",
+      "Sleep quality improving is often the clearest sign that the emotional phase is passing.",
+    ],
+    faq: [
+      {
+        question: "Is it normal to cry a lot after quitting smoking?",
+        answer:
+          "Yes. Tearfulness and emotional sensitivity are recognized nicotine withdrawal symptoms caused by fluctuations in dopamine, serotonin, and norepinephrine as the brain adjusts. It is most intense in the first few days and typically resolves within 2–3 weeks.",
+      },
+      {
+        question: "How long does the emotional sensitivity last when quitting smoking?",
+        answer:
+          "For most people, the most intense emotional phase lasts 3–14 days. Residual mood sensitivity can continue for a month, but the acute crying spells and emotional surges generally pass much sooner.",
+      },
+      {
+        question: "Can quitting smoking cause depression?",
+        answer:
+          "Mild, temporary low mood is common during withdrawal and is not the same as clinical depression. However, people with a history of depression have higher risk of a depressive episode after quitting—if this applies to you, quit with clinical support. See quitting with depression.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["depression", "mood-swings", "anxiety", "insomnia", "what-happens-after-3-days"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "hair-loss",
+    title: "Hair loss after quitting smoking: what's happening and what to expect",
+    shortTitle: "Hair loss",
+    category: "symptom",
+    targetKeyword: "hair loss after quitting smoking",
+    quickAnswer:
+      "Some people notice temporary increased hair shedding in the weeks after quitting smoking. This is typically telogen effluvium—a stress-related shedding triggered by the physiological change of cessation. Hair normally regrows within 3–6 months.",
+    quickFacts: [
+      "Hair shedding after quitting is usually telogen effluvium, a temporary and reversible condition.",
+      "Smoking long-term impairs scalp circulation and hair follicle health; quitting improves both over time.",
+      "Most quit-related hair shedding resolves within 3–6 months and hair regrows.",
+    ],
+    summary:
+      "A temporary increase in hair shedding sometimes follows quitting smoking. It is usually caused by the body's physiological stress response to cessation and is not a sign of long-term hair loss.",
+    detail:
+      "The relationship between smoking and hair is two-directional. Long-term smoking impairs scalp microcirculation, reduces follicle oxygenation, and is associated with androgenic alopecia progression. When you quit, the sudden change in hormones and circulation can shift some hair follicles into a temporary shedding phase (telogen effluvium), which is reversible. The longer-term trajectory after quitting is almost always toward improved hair health.",
+    articleSections: [
+      {
+        heading: "Why hair may shed after quitting smoking",
+        paragraphs: [
+          "Telogen effluvium is a common, reversible form of hair shedding triggered by significant physiological changes—illness, surgery, major weight loss, or the stress of quitting a substance your body depended on. In this condition, a higher-than-normal proportion of hair follicles shift into the resting (telogen) phase simultaneously, then shed 6–12 weeks later.",
+          "Quitting smoking can also temporarily affect hormone levels (including testosterone and DHT in some people), which may contribute to follicle changes in the short term. This typically self-corrects within months as the body stabilizes.",
+        ],
+        bullets: [
+          "Telogen effluvium appears 6–12 weeks after the triggering event, so shedding typically peaks 1–3 months after quitting.",
+          "It is diffuse—thinning across the whole scalp, not patchy—and is different from male- or female-pattern hair loss.",
+          "It resolves on its own once the underlying trigger (in this case, cessation adjustment) passes.",
+        ],
+      },
+      {
+        heading: "Long-term smoking and hair health",
+        paragraphs: [
+          "Chronic smoking restricts blood flow to hair follicles via vasoconstriction, impairs the delivery of nutrients and oxygen, and increases free radical damage to follicle cells. Research associates smoking with accelerated androgenic alopecia and premature greying in some people.",
+          "Quitting smoking improves scalp microcirculation as blood vessels recover. Within months, follicles receive better oxygenation and nutrient delivery. This is why long-term hair health after quitting is generally better than during smoking—even after a temporary post-cessation shed.",
+        ],
+        bullets: [
+          "Circulation to scalp measurably improves within months of quitting.",
+          "Antioxidant status improves after cessation, reducing oxidative damage to follicles.",
+          "If hair density was already affected by years of smoking, regrowth can take 6–18 months.",
+        ],
+      },
+      {
+        heading: "Supporting hair during and after quitting",
+        paragraphs: [
+          "Adequate protein intake (hair is made of keratin, a protein) is important during the recovery phase. Nutritional deficiencies—particularly iron, zinc, vitamin D, and biotin—can compound shedding. Eating well during cessation supports both withdrawal recovery and follicle health.",
+          "Gentle hair care during the shed phase reduces additional mechanical stress. Avoid tight hairstyles and harsh chemical treatments while the follicles are cycling.",
+        ],
+        bullets: [
+          "Eat adequate protein at each meal—70–100g per day is a reasonable target for most adults.",
+          "Consider a blood test for ferritin, vitamin D, and zinc if shedding is significant.",
+          "Most telogen effluvium resolves within 6 months without treatment.",
+        ],
+      },
+    ],
+    typicalDuration: "Shedding phase: 3–6 months post-cessation; regrowth follows naturally",
+    whenToSeekCare: "See a dermatologist if shedding is severe, patchy, or does not begin improving after 6 months smoke-free.",
+    whatToExpectNext: [
+      "Shedding typically peaks 1–3 months after quitting and then slows.",
+      "Regrowth begins within the same follicle after the telogen phase ends.",
+      "Scalp circulation continues improving, supporting long-term hair health.",
+    ],
+    faq: [
+      {
+        question: "Does quitting smoking cause hair loss?",
+        answer:
+          "Quitting can trigger a temporary hair shedding phase called telogen effluvium in some people. This is reversible and is not the same as permanent hair loss. Long-term, quitting improves scalp circulation and follicle health compared to continued smoking.",
+      },
+      {
+        question: "How long does hair loss last after quitting smoking?",
+        answer:
+          "Telogen effluvium typically resolves within 3–6 months. Shedding is usually most noticeable 1–3 months after quitting as follicles that shifted to the resting phase during cessation begin shedding. Regrowth follows naturally.",
+      },
+      {
+        question: "Will my hair grow back after quitting smoking?",
+        answer:
+          "Yes, in most cases. Telogen effluvium is temporary and self-resolving. The same follicles that shed will regrow hair in the normal growth cycle. Supporting nutrition and avoiding further hair stress helps recovery.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["skin-changes", "what-happens-after-3-months", "what-happens-after-1-month"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "libido",
+    title: "Libido after quitting smoking: sex drive changes explained",
+    shortTitle: "Libido changes",
+    category: "symptom",
+    targetKeyword: "libido after quitting smoking",
+    quickAnswer:
+      "Sex drive and libido often improve over the months after quitting smoking as circulation, hormone regulation, and energy levels recover. A temporary dip is possible in the first weeks during acute withdrawal.",
+    quickFacts: [
+      "Smoking impairs circulation to sexual organs and is associated with erectile dysfunction and reduced arousal.",
+      "Quitting smoking is associated with improved sexual function in both men and women over 3–6 months.",
+      "A temporary short-term dip in libido during acute withdrawal is possible but typically brief.",
+    ],
+    summary:
+      "Long-term, quitting smoking improves libido, sexual function, and physical confidence. Short-term withdrawal may produce a temporary dip in sex drive due to hormonal and neurochemical fluctuations, but this passes.",
+    detail:
+      "The relationship between smoking and sexual health is well established. Nicotine and other smoke compounds cause vasoconstriction, which reduces blood flow to sexual organs. Over time this contributes to erectile dysfunction in men and reduced genital sensitivity and arousal response in women. Quitting reverses much of this through improved circulation and hormonal balance—though it takes months, not days.",
+    articleSections: [
+      {
+        heading: "How smoking affects sex drive and sexual function",
+        paragraphs: [
+          "Nicotine causes vasoconstriction—narrowing of blood vessels. This reduces blood flow to the genitals, which is important for both erection (men) and arousal lubrication (women). Long-term smoking is a significant independent risk factor for erectile dysfunction; studies suggest smokers have roughly twice the risk of ED compared to non-smokers.",
+          "Smoking also affects testosterone metabolism and is associated with lower testosterone levels in some studies. It increases oxidative stress, which affects sperm quality and motility, and impairs vaginal blood flow and sensitivity.",
+        ],
+        bullets: [
+          "Erectile dysfunction risk is roughly twice as high in smokers vs non-smokers.",
+          "Carbon monoxide from smoke reduces oxygen delivery to all tissues including genital ones.",
+          "Smoking is associated with lower overall energy and confidence, both of which affect libido.",
+        ],
+      },
+      {
+        heading: "What happens to libido when you quit",
+        paragraphs: [
+          "In the short term (first 1–4 weeks), some people experience a temporary reduction in libido. This is partly a withdrawal effect—neurochemical fluctuations, sleep disruption, and mood changes all reduce sexual desire temporarily. This is a withdrawal symptom, not a permanent change.",
+          "Over the medium term (1–6 months), most people report improving sexual function as circulation recovers, energy levels rise, and mood stabilizes. Men who had smoking-related erectile dysfunction often notice significant improvement within 3–6 months of quitting. Women may notice improved arousal and genital sensitivity.",
+        ],
+        bullets: [
+          "Most libido changes are temporary; the long-term trajectory after quitting is positive.",
+          "Circulation improvement begins within weeks and continues over months.",
+          "Sleep and energy—both disrupted by withdrawal—are major libido factors; they recover.",
+        ],
+      },
+      {
+        heading: "Managing the short-term dip",
+        paragraphs: [
+          "The first weeks of quitting involve significant neurochemical and physiological adjustment. Reduced libido during this period is normal and temporary. Focus on the behaviors that support recovery—sleep, exercise, nutrition, and craving management—and libido naturally follows as the system stabilizes.",
+        ],
+        bullets: [
+          "Sleep quality improving is often one of the first signs the acute withdrawal phase is ending.",
+          "Regular exercise (even walks) improves circulation and hormone balance, supporting libido recovery.",
+          "If libido does not improve after 2–3 months smoke-free, discuss it with a clinician.",
+        ],
+      },
+    ],
+    typicalDuration: "Short-term dip: 1–4 weeks. Long-term improvement: 1–6 months",
+    whenToSeekCare: "Consult a clinician if erectile dysfunction or significant sexual dysfunction persists beyond 3–6 months smoke-free.",
+    whatToExpectNext: [
+      "Circulation continues improving over the first 3 months.",
+      "Energy and sleep—both linked to libido—continue recovering.",
+      "Many people report better sexual function at 3–6 months smoke-free than while smoking.",
+    ],
+    faq: [
+      {
+        question: "Does quitting smoking increase sex drive?",
+        answer:
+          "For most people, yes—over time. Quitting improves circulation, energy, and hormone regulation, all of which support libido. There may be a brief dip during acute withdrawal in the first weeks, but the long-term trajectory is improvement.",
+      },
+      {
+        question: "Why is my sex drive low after quitting smoking?",
+        answer:
+          "Low libido in the first weeks is a withdrawal symptom caused by neurochemical fluctuations, disrupted sleep, and mood changes. It is temporary and typically resolves within 2–4 weeks as the body adjusts.",
+      },
+      {
+        question: "Does quitting smoking help erectile dysfunction?",
+        answer:
+          "Yes, in many cases. Smoking-related ED is largely circulation-based, and quitting allows blood vessels to recover. Studies show significant improvement in erectile function within 3–6 months of quitting in men with smoking-related ED.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["fatigue", "insomnia", "mood-swings", "what-happens-after-3-months"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "joint-pain",
+    title: "Joint pain after quitting smoking: causes and what to expect",
+    shortTitle: "Joint pain",
+    category: "symptom",
+    targetKeyword: "joint pain after quitting smoking",
+    quickAnswer:
+      "Some people experience joint or muscle aches in the first 2–3 weeks after quitting smoking. This is linked to nicotine withdrawal affecting pain perception and inflammation pathways. It typically resolves as the body adjusts.",
+    quickFacts: [
+      "Nicotine has mild analgesic (pain-reducing) properties; withdrawal removes this effect temporarily.",
+      "Joint aches during quitting are usually transient and part of broader withdrawal symptoms.",
+      "Long-term, quitting smoking reduces inflammation and is associated with improved joint and bone health.",
+    ],
+    summary:
+      "Joint and muscle pain during nicotine withdrawal is real and documented. It results from the removal of nicotine's mild analgesic effect and changes in inflammation pathways. It is temporary, and joint health improves long-term after quitting.",
+    detail:
+      "Nicotine binds to nicotinic receptors in peripheral pain pathways, producing a mild analgesic effect. When nicotine is withdrawn, pain sensitivity temporarily increases—this is sometimes called hyperalgesia. Combined with the inflammatory signaling changes during cessation, some people notice their joints and muscles feel more sore than usual in the first weeks of quitting.",
+    articleSections: [
+      {
+        heading: "Why joints and muscles ache when you quit smoking",
+        paragraphs: [
+          "Nicotine acts on nicotinic acetylcholine receptors in pain pathways and has a mild, temporary pain-reducing effect. Chronic smokers adapt to this effect, meaning their pain threshold is slightly elevated while smoking. When nicotine is removed, pain sensitivity temporarily returns to (or briefly exceeds) normal baseline—a phenomenon called hyperalgesia during withdrawal.",
+          "Separately, withdrawal involves changes in how inflammatory cytokines are regulated. Paradoxically, some immune and inflammatory markers shift during the first weeks of cessation before stabilizing at healthier long-term levels. This transitional phase can produce generalized aches.",
+        ],
+        bullets: [
+          "Joint pain during quitting is most common in the first 1–3 weeks and gradually eases.",
+          "It is more pronounced in heavy smokers who had the largest analgesic effect to withdraw from.",
+          "It is part of a broader pattern of muscle and body aches that many quitters experience.",
+        ],
+      },
+      {
+        heading: "Managing joint pain during withdrawal",
+        paragraphs: [
+          "Low-impact movement such as walking, stretching, or gentle yoga maintains joint mobility without aggravating inflammation. Prolonged inactivity tends to worsen aching.",
+          "Anti-inflammatory foods (rich in omega-3 fatty acids, colorful vegetables, adequate hydration) support the immune system's recalibration during cessation. Staying well-hydrated also helps tissue recovery.",
+          "Over-the-counter pain relief can be used as directed on the packaging for significant discomfort. If pain is severe, asymmetric (one joint only), accompanied by swelling or redness, or doesn't improve within 4 weeks of quitting, see a clinician.",
+        ],
+        bullets: [
+          "Walk 10–15 minutes daily to maintain circulation and reduce stiffness.",
+          "Stay hydrated—dehydration amplifies musculoskeletal aches.",
+          "Warm baths or heat packs can help with generalized muscle aches in the first week.",
+        ],
+      },
+      {
+        heading: "Long-term: quitting improves joint and bone health",
+        paragraphs: [
+          "Long-term smoking is associated with reduced bone density, increased risk of osteoporosis, and impaired joint healing. Smoking restricts blood flow to bone tissue and interferes with calcium absorption and collagen synthesis. Quitting halts this progressive damage and allows gradual recovery.",
+          "People with inflammatory conditions like rheumatoid arthritis consistently show lower disease activity after quitting smoking. Smoking is an independent risk factor for worse outcomes in many musculoskeletal conditions.",
+        ],
+        bullets: [
+          "Bone density decline from smoking slows and can partially reverse after quitting.",
+          "Quitting reduces systemic inflammation markers within 3–6 months.",
+          "People with arthritis often report fewer flares after extended smoke-free periods.",
+        ],
+      },
+    ],
+    typicalDuration: "1–4 weeks (most intense in the first 2 weeks)",
+    commonTriggers: "Withdrawal, reduced physical activity, sleep disruption",
+    whenToSeekCare: "See a clinician if joint pain is severe, involves swelling or redness, is only in one joint, or does not improve after 4 weeks smoke-free.",
+    whatToExpectNext: [
+      "Aching gradually eases as the nervous system adjusts to nicotine's absence.",
+      "Long-term inflammation levels drop, improving joint health.",
+      "Physical activity becomes noticeably easier as lung function and circulation improve.",
+    ],
+    faq: [
+      {
+        question: "Is joint pain a withdrawal symptom from quitting smoking?",
+        answer:
+          "Yes. Joint and muscle aches are documented nicotine withdrawal symptoms. Nicotine has mild analgesic properties and withdrawal temporarily heightens pain sensitivity. This is temporary and typically resolves within 2–4 weeks.",
+      },
+      {
+        question: "How long does joint pain last after quitting smoking?",
+        answer:
+          "Most quit-related joint and muscle aches resolve within 1–4 weeks. If pain is significant, localized to one joint, or accompanied by swelling or redness, it may be unrelated to quitting and should be evaluated.",
+      },
+      {
+        question: "Does quitting smoking help arthritis?",
+        answer:
+          "Yes. Smoking is an independent risk factor for worse outcomes in rheumatoid arthritis and is associated with accelerated joint damage. Quitting reduces systemic inflammation and many people with arthritis report fewer and less severe flares after quitting.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["muscle-aches", "fatigue", "restlessness", "what-happens-after-3-months"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "concentration",
+    title: "Can't concentrate after quitting smoking: what's happening",
+    shortTitle: "Poor concentration",
+    category: "symptom",
+    targetKeyword: "can't concentrate after quitting smoking",
+    quickAnswer:
+      "Difficulty concentrating is one of the most frequently reported nicotine withdrawal symptoms. Nicotine boosts acetylcholine and dopamine in attention circuits; without it, focus temporarily suffers. For most people this improves significantly within 2–4 weeks.",
+    quickFacts: [
+      "Concentration problems are among the most common withdrawal symptoms, affecting up to 60% of quitters.",
+      "Nicotine acts as a cognitive enhancer by boosting acetylcholine and dopamine in prefrontal attention circuits.",
+      "Concentration typically returns to normal or better than baseline within 4–8 weeks.",
+    ],
+    summary:
+      "Poor concentration after quitting smoking is a direct withdrawal symptom—nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
+    detail:
+      "Nicotine has genuine, measurable cognitive effects. It boosts attention, reaction time, and working memory via acetylcholine receptor activation and increased dopamine in prefrontal circuits. Chronic smokers adapt to this enhancement—meaning their attentional performance while not smoking becomes below their 'normal.' When they quit, the gap between where they were and where they are feels like cognitive decline, but it is actually withdrawal adjustment.",
+    articleSections: [
+      {
+        heading: "Why nicotine affects concentration",
+        paragraphs: [
+          "Nicotinic acetylcholine receptors are densely distributed in the prefrontal cortex—the region responsible for attention, working memory, and executive function. When nicotine activates these receptors, it enhances attentional focus and reduces cognitive errors. This is why many smokers feel they 'think better' with a cigarette.",
+          "The catch is that chronic use creates dependence. Over time, the brain downregulates its own acetylcholine receptor density to compensate for the constant nicotine input. The smoker's baseline attentional performance actually declines to below non-smoker norms while smoking, because their system requires nicotine to reach 'normal.' Quitting reverses this—but only after the receptor density normalizes, which takes weeks.",
+        ],
+        bullets: [
+          "During withdrawal, reaction time, working memory, and sustained attention can all temporarily worsen.",
+          "This is most pronounced in the first 48–72 hours and steadily improves.",
+          "By 4–8 weeks smoke-free, most people show attentional performance at or above their pre-quitting levels.",
+        ],
+      },
+      {
+        heading: "Practical strategies for the concentration dip",
+        paragraphs: [
+          "Work in shorter focused blocks. During withdrawal, 20–25 minutes of focused work followed by a 5-minute break is more effective than trying to sustain 90-minute sessions that your depleted attention can't support.",
+          "Remove distractions actively. Your attentional filtering is weaker during withdrawal. Social media, notifications, and background noise create more interference than usual. Closing tabs and putting the phone in another room is not optional during this phase—it's necessary.",
+          "Hydration, protein at breakfast, and a 10-minute walk before demanding cognitive work each measurably improve attention during withdrawal.",
+        ],
+        bullets: [
+          "Use the 25-min focused work / 5-min break cycle for demanding tasks.",
+          "Schedule your hardest mental work for the time of day when concentration naturally peaks (often mid-morning for most people).",
+          "Reduce caffeine slightly if you were using it to compensate—caffeine sensitivity increases after quitting.",
+        ],
+      },
+    ],
+    typicalDuration: "1–4 weeks (most pronounced in the first 72 hours)",
+    commonTriggers: "Sleep disruption, stress, high-demand cognitive tasks",
+    whenToSeekCare: "Seek assessment if concentration problems are severe or do not improve after 4 weeks smoke-free.",
+    whatToExpectNext: [
+      "Attention and focus typically begin improving noticeably by day 7.",
+      "By week 4, most people report concentration at or above pre-quit levels.",
+      "Brain fog (a related but distinct symptom) also improves in parallel.",
+    ],
+    faq: [
+      {
+        question: "Why can't I concentrate after quitting smoking?",
+        answer:
+          "Nicotine enhances attention via acetylcholine and dopamine in the prefrontal cortex. During withdrawal, these systems are recalibrating, causing temporary attentional impairment. It is a well-documented withdrawal symptom that resolves within weeks.",
+      },
+      {
+        question: "How long does the concentration problem last when quitting smoking?",
+        answer:
+          "For most people, the worst of the concentration dip occurs in the first 3–7 days and improves significantly by week 2. Full recovery to normal or above-normal focus typically occurs within 4–8 weeks.",
+      },
+      {
+        question: "Will I ever focus as well without nicotine as with it?",
+        answer:
+          "Yes—and likely better. Chronic smokers actually have lower attentional performance than non-smokers once the receptor downregulation is accounted for. Long-term ex-smokers show attentional performance that meets or exceeds their smoking baseline.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["brain-fog", "fatigue", "insomnia", "restlessness", "what-happens-after-1-week"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "skin-changes",
+    title: "Skin changes after quitting smoking: what to expect",
+    shortTitle: "Skin changes",
+    category: "symptom",
+    targetKeyword: "skin after quitting smoking",
+    quickAnswer:
+      "Most skin changes after quitting smoking are positive over the medium and long term—improved circulation brings better color and texture. Some people experience a temporary acne flare or skin dryness in the first few weeks as hormones and oil production adjust.",
+    quickFacts: [
+      "Improved blood flow after quitting delivers more oxygen and nutrients to skin cells.",
+      "Collagen breakdown slows significantly after quitting, reducing wrinkle formation.",
+      "A temporary acne flare or skin changes in the first weeks is reported by some quitters and typically self-resolves.",
+    ],
+    summary:
+      "Skin tends to improve significantly after quitting smoking as circulation recovers and oxidative damage decreases. Short-term skin fluctuations (acne, dryness) can occur as the body adjusts.",
+    detail:
+      "Smoking damages skin in multiple ways: it causes vasoconstriction that starves skin cells of oxygen and nutrients, accelerates collagen breakdown via free radicals, and impairs wound healing. All of these mechanisms begin reversing after cessation. The result over months is visibly improved skin tone, texture, and elasticity. However, the transition phase can involve temporary skin fluctuations as hormones, oil glands, and circulation recalibrate.",
+    articleSections: [
+      {
+        heading: "How smoking damages skin",
+        paragraphs: [
+          "Each cigarette causes acute vasoconstriction in skin blood vessels, reducing oxygen and nutrient delivery. Over years, this produces the characteristic 'smoker's complexion'—greyish, dull tone with early wrinkling, particularly around the mouth and eyes.",
+          "Tobacco smoke contains over 4,000 chemicals including free radicals that directly attack collagen and elastin—the structural proteins that keep skin firm and smooth. Smoking is estimated to age skin by 10–20 years relative to non-smoking peers by midlife.",
+        ],
+        bullets: [
+          "Smokers have significantly lower skin collagen content than non-smokers of the same age.",
+          "Skin oxygen delivery improves within hours of the last cigarette as CO clears.",
+          "The 'smoker's face' can begin improving visibly within weeks to months after quitting.",
+        ],
+      },
+      {
+        heading: "Temporary skin changes during cessation",
+        paragraphs: [
+          "Some people notice increased acne or skin breakouts in the first few weeks after quitting. This may be related to hormonal shifts during nicotine withdrawal, changes in skin oil production as circulation and sebaceous gland function adjust, or improved immune activity that processes more skin-related inflammation.",
+          "Skin dryness is also possible temporarily as the body adjusts hydration and circulation. Staying well-hydrated and using a basic moisturizer helps during this phase.",
+        ],
+        bullets: [
+          "Temporary acne or skin texture changes typically resolve within 4–8 weeks.",
+          "Consistent gentle cleansing and moisturizing supports skin during the adjustment phase.",
+          "Any breakout during early cessation is a short-term transition, not permanent skin change.",
+        ],
+      },
+      {
+        heading: "Long-term skin improvements after quitting",
+        paragraphs: [
+          "Within 4–8 weeks, improved circulation typically produces noticeably better skin color and a healthier glow as oxygen delivery increases. Collagen production recovers as oxidative stress decreases—this slows the formation of new wrinkles and can modestly improve existing ones.",
+          "Skin wound healing improves significantly, which also matters for surgical recovery. See quitting before surgery for more on this.",
+        ],
+        bullets: [
+          "Skin color and vibrancy often improve noticeably within 4–12 weeks.",
+          "Wrinkle formation slows as collagen and elastin damage rate decreases.",
+          "Reduced under-eye bags and improved skin tone are commonly reported by people who quit.",
+        ],
+      },
+    ],
+    typicalDuration: "Short-term fluctuations: 2–8 weeks. Positive improvements: 1–6 months and ongoing",
+    whenToSeekCare: "See a dermatologist if you develop severe acne, a skin rash that spreads, or any unexplained skin lesion that persists.",
+    whatToExpectNext: [
+      "Skin color and tone typically begin improving within 4–8 weeks.",
+      "Collagen recovery is gradual but measurable over 3–12 months.",
+      "Many people notice their most visible skin improvement between months 2 and 6 smoke-free.",
+    ],
+    faq: [
+      {
+        question: "Does your skin get better after quitting smoking?",
+        answer:
+          "Yes, for most people. Improved circulation, reduced oxidative damage, and slower collagen breakdown produce noticeably better skin tone, texture, and color over 2–6 months. The degree of improvement depends on how long and heavily you smoked.",
+      },
+      {
+        question: "Why does my skin look worse after quitting smoking?",
+        answer:
+          "Some people experience a temporary flare of acne or skin dryness in the first weeks as hormones and circulation recalibrate. This is a short-term adjustment, not permanent. Skin typically improves significantly once the adjustment phase passes.",
+      },
+      {
+        question: "How long does it take for skin to improve after quitting smoking?",
+        answer:
+          "Skin color can begin improving within weeks as oxygen delivery recovers. More significant improvements in texture and tone typically develop over 2–6 months. Collagen-level recovery is a longer process that continues for a year or more.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["hair-loss", "what-happens-after-1-month", "what-happens-after-3-months"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
+    slug: "flu-like-symptoms",
+    title: "Flu-like symptoms when quitting smoking: what's normal",
+    shortTitle: "Flu-like symptoms",
+    category: "symptom",
+    targetKeyword: "flu symptoms after quitting smoking",
+    quickAnswer:
+      "Feeling flu-like in the first week of quitting smoking is common. Aches, fatigue, headaches, sore throat, and a general sense of being unwell are all documented nicotine withdrawal symptoms that typically resolve within 1–2 weeks.",
+    quickFacts: [
+      "Flu-like symptoms during cessation reflect the immune system and nervous system adjusting to nicotine's absence.",
+      "A productive cough increasing in the first 1–2 weeks is normal and a sign the airways are healing.",
+      "Symptoms typically peak around days 2–4 alongside peak withdrawal and ease steadily from there.",
+    ],
+    summary:
+      "Many quitters feel like they have a mild flu in the first week. This is a combination of nicotine withdrawal symptoms—body aches, fatigue, headache, sore throat, and sometimes a productive cough—not an actual infection. It passes.",
+    detail:
+      "The overlap between flu symptoms and nicotine withdrawal is substantial. Both conditions disrupt similar systems: the immune response, the cardiovascular system, and the nervous system. During cessation, the body is essentially detoxifying and recalibrating across multiple organs simultaneously—something that naturally feels unwell, even though it is a sign of positive change.",
+    articleSections: [
+      {
+        heading: "What causes flu-like symptoms during nicotine withdrawal",
+        paragraphs: [
+          "Nicotine affects multiple physiological systems simultaneously: the nervous system (via nicotinic receptors), the cardiovascular system (via adrenergic stimulation), and the immune system (via nicotinic receptors on immune cells). When nicotine is withdrawn, all of these systems shift simultaneously, producing a constellation of symptoms that resembles an immune response—even though no pathogen is involved.",
+          "The cough that develops in the first 1–2 weeks is slightly different from flu cough. In quitters, cough increases because the cilia lining the airways (suppressed by smoke) begin recovering and actively clearing mucus and debris. This is a positive sign, not an infection.",
+        ],
+        bullets: [
+          "Body aches, headache, fatigue, and sore throat can all appear within 24–48 hours of quitting.",
+          "Symptoms peak around days 2–4 alongside peak nicotine withdrawal and then decline.",
+          "Productive cough can persist for 1–4 weeks as airways clear, but fever and green mucus suggest actual infection.",
+        ],
+      },
+      {
+        heading: "Managing flu-like symptoms during withdrawal",
+        paragraphs: [
+          "Rest is legitimate during this period. Your body is undergoing significant physiological change, and demanding productivity from yourself during peak withdrawal adds unnecessary stress that can trigger relapse.",
+          "Drink plenty of water, eat easily digestible protein-rich foods, and sleep as much as your body wants. These aren't just comfort measures—they support the metabolic and immune recalibration happening during cessation.",
+          "Over-the-counter remedies for specific symptoms (paracetamol or ibuprofen for headaches and aches, throat lozenges for sore throat, saline nasal rinse for congestion) can be used safely. Check packaging and interactions with any cessation medication you're taking.",
+        ],
+        bullets: [
+          "Hydration, rest, and sleep are the most important interventions.",
+          "Treat specific symptoms (headache, aches) with standard OTC remedies as needed.",
+          "Reduce demands on yourself in the first week—this is a real physiological adjustment, not weakness.",
+        ],
+      },
+      {
+        heading: "When is it actually the flu and not withdrawal?",
+        paragraphs: [
+          "Key differentiating features of actual influenza vs withdrawal: flu typically involves a fever (38°C/100.4°F or higher), onset within hours rather than gradually over days, and—after the first week of quitting—withdrawal symptoms should be clearly improving, not worsening.",
+          "Seek medical attention if you develop a fever over 38°C, worsening shortness of breath or chest pain, green/blood-streaked sputum, or any symptom that feels disproportionately severe or is rapidly worsening.",
+        ],
+        bullets: [
+          "Withdrawal: no fever, gradual onset, peaks day 2–4, improves steadily thereafter.",
+          "Flu: fever, rapid onset, may include chills and sweats, can persist beyond a week.",
+          "Bacterial infection: persistent high fever, localized pain, yellow/green mucus—see a doctor.",
+        ],
+      },
+    ],
+    typicalDuration: "1–2 weeks (most intense days 2–4)",
+    commonTriggers: "Nicotine withdrawal, disrupted sleep, immune system adjustment",
+    whenToSeekCare: "Seek care if you develop a fever over 38°C, cough blood, have severe or rapidly worsening shortness of breath, or symptoms do not improve after 2 weeks.",
+    whatToExpectNext: [
+      "Flu-like symptoms typically begin easing by day 5–7.",
+      "Cough may persist for 2–4 weeks as airways heal, but becomes less disruptive.",
+      "Energy and general wellbeing noticeably improve in weeks 2–3.",
+    ],
+    faq: [
+      {
+        question: "Is it normal to feel sick when quitting smoking?",
+        answer:
+          "Yes. Feeling like you have a mild flu is very common in the first 1–2 weeks of quitting. It reflects the body adjusting to nicotine's absence across the nervous, cardiovascular, and immune systems simultaneously. It is temporary and peaks around days 2–4.",
+      },
+      {
+        question: "How long do flu-like symptoms last when quitting smoking?",
+        answer:
+          "Most flu-like withdrawal symptoms resolve within 1–2 weeks. A productive cough may continue for up to 4 weeks as airways clear. If symptoms are severe, worsening, or accompanied by fever, see a doctor.",
+      },
+      {
+        question: "Could I actually have the flu after quitting smoking?",
+        answer:
+          "It's possible but uncommon to coincidentally catch the flu at the same time as quitting. Key differences: actual flu usually involves a fever, comes on rapidly, and doesn't correlate with your quit start date. Withdrawal symptoms build gradually and should be improving by day 5–7.",
+      },
+    ],
+    datePublished: "2026-05-20",
+    dateModified: "2026-05-20",
+    relatedSlugs: ["cough", "fatigue", "headaches", "sore-throat", "what-happens-after-1-week"],
+    medicalConditionName: "Nicotine withdrawal",
+  },
 ];
 
 export const publishedGuides = blouGuides.filter(isPublishedGuide);

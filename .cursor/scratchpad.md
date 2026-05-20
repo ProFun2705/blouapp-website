@@ -125,6 +125,41 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
   - Added 10 new routes under `src/app/*/page.tsx` and registered them in `src/lib/staticRoutes.ts` so they appear in the sitemap.
   - Verified `npm run build` succeeds and the routes are included in the build output.
 
+## SEO growth batch 2 (May 2026) — 15 new pages
+
+### 7 new static pages (`src/app/<slug>/page.tsx` + `staticRoutes.ts`)
+
+| URL | Type | Primary intent |
+|---|---|---|
+| `/blou-vs-kwit` | Competitor comparison | Bottom-funnel: app-shopping users comparing Blou to Kwit |
+| `/blou-vs-quitstart` | Competitor comparison | Bottom-funnel: comparing Blou to CDC's quitSTART app |
+| `/quit-smoking-with-anxiety` | Audience-specific guide | "how to quit smoking with anxiety disorder" |
+| `/quit-smoking-with-depression` | Audience-specific guide | "how to quit smoking when depressed" |
+| `/quit-smoking-with-asthma` | Audience-specific guide | "how to quit smoking with asthma" |
+| `/best-quit-smoking-app-for-heavy-smokers` | Best-of guide | Heavy smokers looking for an app recommendation |
+| `/health-benefits-of-quitting-smoking` | Benefits timeline | High-volume top-funnel query; converts via milestone/motivation |
+| `/how-long-does-nicotine-stay-in-your-system` | Informational | Very high volume; converts via withdrawal milestone framing |
+
+### 8 new guide entries in `src/lib/blouGuides.ts`
+
+All are `category: "symptom"` guides targeting missing withdrawal symptom searches:
+
+| Slug | Target keyword |
+|---|---|
+| `anger` | anger after quitting smoking |
+| `crying` | crying after quitting smoking |
+| `hair-loss` | hair loss after quitting smoking |
+| `libido` | libido after quitting smoking |
+| `joint-pain` | joint pain after quitting smoking |
+| `concentration` | can't concentrate after quitting smoking |
+| `skin-changes` | skin after quitting smoking |
+| `flu-like-symptoms` | flu symptoms after quitting smoking |
+
+### Build result
+- `npm run build` passes with exit code 0.
+- 189 static pages generated (up from ~173).
+- All 15 new pages appear in the build output.
+
 # Executor's Feedback or Assistance Requests
 
 - Please verify analytics is receiving events:
@@ -160,3 +195,4 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
 - Always run `npm run build` after meaningful changes before proceeding to the next step.
 - If you see `npm warn EBADENGINE` during installs, prefer using an LTS Node version (usually Node 22) to avoid tooling incompatibilities.
 - If Vercel deploys fail with a team access / git author error, create a new commit using your GitHub `users.noreply.github.com` email and redeploy.
+- `AppStoreBadgePlacement` type only accepts specific string literals: `"landing_hero"`, `"landing_sticky_mobile"`, `"article_intro"`, `"article_footer_card"`, `"tool_money_calculator"`, `"tool_lung_recovery"`, `"tools_index"`, `"calculators_index"`, and the template literal `` `country_calculator_${string}` ``. Do not use `"article_mid"` or other ad-hoc strings—they'll fail TypeScript checking.
