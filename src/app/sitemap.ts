@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { isPublishedGuide, blouGuides } from "@/lib/blouGuides";
 import { countries } from "@/lib/countryData";
+import { calculatorLanguageAlternates } from "@/lib/countryHreflang";
 import { staticRoutes } from "@/lib/staticRoutes";
 
 /**
@@ -15,20 +16,10 @@ import { staticRoutes } from "@/lib/staticRoutes";
 
 const SITEMAP_GENERATED_AT = new Date().toISOString();
 
-/**
- * Map a country to a unique BCP-47 hreflang. We use `en-{REGION}` because all
- * pages are written in English but geo-targeted (currency, hotlines, prices).
- * Avoids hreflang collisions where two countries both fall back to plain "en".
- */
-const countryHreflang = (slug: string, locale: string): string => {
-  const region = locale.includes("-") ? locale.split("-")[1] : "";
-  return region ? `en-${region}` : `en-${slug.toUpperCase()}`;
-};
-
 const countryLanguageMap = Object.fromEntries(
-  countries.map((c) => [
-    countryHreflang(c.slug, c.locale),
-    `${SITE_URL}/calculators/${c.slug}`,
+  Object.entries(calculatorLanguageAlternates(countries)).map(([lang, path]) => [
+    lang,
+    `${SITE_URL}${path}`,
   ]),
 );
 

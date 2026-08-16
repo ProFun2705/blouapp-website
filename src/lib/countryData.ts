@@ -12,7 +12,6 @@ export type CountryCalculator = {
   hotlines: Array<{ name: string; detail: string; url?: string }>;
   localContext: string[];
   popularBrands?: string[];
-  hreflang: string;
 };
 
 export const countries: CountryCalculator[] = [
@@ -49,7 +48,6 @@ export const countries: CountryCalculator[] = [
       "Most U.S. health insurance plans must cover cessation counseling and FDA-approved medication without cost-sharing under ACA.",
     ],
     popularBrands: ["Marlboro", "Newport", "Camel"],
-    hreflang: "en-US",
   },
   {
     slug: "united-kingdom",
@@ -83,7 +81,6 @@ export const countries: CountryCalculator[] = [
       "NHS stop-smoking services remain free to access in England, Scotland, Wales, and Northern Ireland.",
     ],
     popularBrands: ["Benson & Hedges", "Mayfair", "Lambert & Butler"],
-    hreflang: "en-GB",
   },
   {
     slug: "australia",
@@ -117,7 +114,6 @@ export const countries: CountryCalculator[] = [
       "Nicotine vaping products now require a pharmacy prescription under the Therapeutic Goods Administration framework.",
     ],
     popularBrands: ["Winfield", "Marlboro", "Peter Jackson"],
-    hreflang: "en-AU",
   },
   {
     slug: "vietnam",
@@ -151,7 +147,6 @@ export const countries: CountryCalculator[] = [
       "Vietnam has joined the WHO Framework Convention on Tobacco Control and is tightening advertising, promotion, and sponsorship rules.",
     ],
     popularBrands: ["Vinataba", "Craven A", "Marlboro"],
-    hreflang: "en",
   },
   {
     slug: "indonesia",
@@ -185,7 +180,6 @@ export const countries: CountryCalculator[] = [
       "Smoke-free rules exist in some provinces and cities (e.g. Jakarta, Bogor) but enforcement varies.",
     ],
     popularBrands: ["Gudang Garam", "Djarum", "Sampoerna"],
-    hreflang: "en",
   },
 ];
 

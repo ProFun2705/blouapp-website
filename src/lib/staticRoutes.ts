@@ -80,6 +80,4 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/best-quit-smoking-app-for-heavy-smokers", lastModified: "2026-05-20" },
   { path: "/health-benefits-of-quitting-smoking", lastModified: "2026-05-20" },
   { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: "2026-05-20" },
-  { path: "/privacy", lastModified: "2025-04-23" },
-  { path: "/terms", lastModified: "2025-04-23" },
 ];

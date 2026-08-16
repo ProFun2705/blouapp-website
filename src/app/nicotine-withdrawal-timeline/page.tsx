@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
@@ -163,6 +164,12 @@ export default function NicotineWithdrawalTimelinePage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
+      <SpeakableJsonLd
+        name="Nicotine withdrawal timeline (days 1–30): what to expect"
+        path="/nicotine-withdrawal-timeline"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

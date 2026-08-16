@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
@@ -120,6 +121,12 @@ export default function QuitSmokingWithoutGainingWeightPage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
+      <SpeakableJsonLd
+        name="Quit smoking without gaining weight: a realistic plan"
+        path="/quit-smoking-without-gaining-weight"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

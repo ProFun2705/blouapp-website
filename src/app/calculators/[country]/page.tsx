@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CountryMoneyCalculatorPage } from "@/components/blou/CountryMoneyCalculatorPage";
+import { calculatorLanguageAlternates } from "@/lib/countryHreflang";
 import { buildMetadata } from "@/lib/seo";
 import { countries, countryBySlug } from "@/lib/countryData";
 
@@ -23,9 +24,7 @@ export async function generateMetadata({
   const country = countryBySlug[slug];
   if (!country) return {};
 
-  const languages = Object.fromEntries(
-    countries.map((c) => [c.hreflang, `/calculators/${c.slug}`]),
-  );
+  const languages = calculatorLanguageAlternates(countries);
   languages["x-default"] = `/calculators/${country.slug}`;
 
   return buildMetadata({

@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import {
@@ -171,6 +172,12 @@ export default function HowToQuitSmokingPage() {
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
+      <SpeakableJsonLd
+        name="How to quit smoking: step-by-step plan (2026)"
+        path="/how-to-quit-smoking"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

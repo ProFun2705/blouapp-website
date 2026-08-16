@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -115,6 +116,12 @@ export default function QuitVapingPage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
+      <SpeakableJsonLd
+        name="How to quit vaping: a practical plan (2026)"
+        path="/quit-vaping"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

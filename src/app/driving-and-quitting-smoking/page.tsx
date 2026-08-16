@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -108,6 +109,12 @@ export default function DrivingAndQuittingSmokingPage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
+      <SpeakableJsonLd
+        name="Driving and quitting smoking: replace car cigarettes"
+        path="/driving-and-quitting-smoking"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

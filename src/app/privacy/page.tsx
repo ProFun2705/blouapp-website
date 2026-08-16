@@ -9,6 +9,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Privacy policy for the Blou quit smoking tracker app and tryblou.com website.",
   path: "/privacy",
+  noindex: true,
 });
 
 type Section = {

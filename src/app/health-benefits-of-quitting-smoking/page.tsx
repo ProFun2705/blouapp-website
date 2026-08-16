@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -132,6 +133,12 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
+      <SpeakableJsonLd
+        name="Health benefits of quitting smoking: what happens to your body"
+        path="/health-benefits-of-quitting-smoking"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

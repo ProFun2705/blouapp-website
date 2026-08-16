@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
+import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -143,6 +144,12 @@ export default function SocialSmokingPage() {
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
+      <SpeakableJsonLd
+        name="Social smoking: am I addicted if I only smoke sometimes?"
+        path="/social-smoking"
+      />
+
+
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
