@@ -26,7 +26,7 @@ export function EmbedCalculatorSnippet({
   }
 
   return (
-    <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+    <section className="section-block">
       <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
       <p className="mt-2 text-sm leading-6 text-teal-900/80">{description}</p>
       <pre className="mt-4 overflow-x-auto rounded-xl bg-slate-900 p-4 text-xs text-slate-50">

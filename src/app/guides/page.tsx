@@ -62,7 +62,7 @@ export default function GuidesIndexPage() {
 
       <article
         id="intro"
-        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm"
+        className="scroll-mt-24 masthead"
       >
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           Quit smoking guides & timelines
@@ -138,7 +138,7 @@ export default function GuidesIndexPage() {
 
       <section
         id="milestones"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Milestones (1 day → 10 years)
@@ -165,7 +165,7 @@ export default function GuidesIndexPage() {
 
       <section
         id="symptoms"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Symptoms (how long & when to seek help)
@@ -192,7 +192,7 @@ export default function GuidesIndexPage() {
 
       <section
         id="relapse"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Relapse &amp; maintenance

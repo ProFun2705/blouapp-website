@@ -11,7 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { slugifyForSection } from "@/lib/slugify";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-03-10";
 const MODIFIED = "2026-04-20";
@@ -161,8 +161,8 @@ export default function BestQuitSmokingAppsPage() {
         items={[{ name: "Best quit smoking apps", path: "/best-quit-smoking-apps" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Comparison pillar
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -183,7 +183,7 @@ export default function BestQuitSmokingAppsPage() {
           />
         </div>
         <div className="mt-6 flex flex-wrap gap-2 border-t border-teal-100 pt-6 text-sm">
-          <span className="w-full text-xs font-semibold uppercase tracking-wide text-teal-700">
+          <span className="w-full text-sm font-medium text-teal-700">
             Deep dives
           </span>
           <Link
@@ -273,7 +273,7 @@ export default function BestQuitSmokingAppsPage() {
           <article
             id={`app-${slugifyForSection(app.name)}`}
             key={app.name}
-            className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+            className="scroll-mt-24 section-block"
           >
             <div className="flex flex-wrap items-start justify-between gap-2">
               <div>
@@ -293,7 +293,7 @@ export default function BestQuitSmokingAppsPage() {
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+                <p className="text-sm font-medium text-teal-700">
                   Strengths
                 </p>
                 <ul className="mt-2 space-y-1 text-sm text-teal-900/90">
@@ -306,7 +306,7 @@ export default function BestQuitSmokingAppsPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+                <p className="text-sm font-medium text-teal-700">
                   Trade-offs
                 </p>
                 <ul className="mt-2 space-y-1 text-sm text-teal-900/90">
@@ -325,7 +325,7 @@ export default function BestQuitSmokingAppsPage() {
 
       <section
         id="how-we-picked"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How we picked these
@@ -360,10 +360,6 @@ export default function BestQuitSmokingAppsPage() {
           Open quit tools
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/best-quit-smoking-apps</code>
-      </p>
-    </div>
+</div>
   );
 }

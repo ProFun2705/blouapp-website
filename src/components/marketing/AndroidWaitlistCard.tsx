@@ -39,7 +39,7 @@ export function AndroidWaitlistCard() {
         body: JSON.stringify({ email, list: "android" }),
       });
 
-      if (!res.ok && res.status !== 404) {
+      if (!res.ok) {
         throw new Error("Something went wrong. Please try again.");
       }
 
@@ -52,20 +52,22 @@ export function AndroidWaitlistCard() {
   }
 
   return (
-    <div className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
-      <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-        Android waitlist
-      </p>
+    <div className="section-block">
+      <p className="text-sm font-medium text-teal-700">Android waitlist</p>
       <h3 className="mt-1 text-xl font-semibold text-teal-950">
         Want Blou on Android?
       </h3>
-      <p className="mt-2 text-sm leading-6 text-teal-900/80">
+      <p className="mt-2 max-w-[65ch] text-base leading-6 text-teal-900/80">
         We&apos;re building an Android version next. Drop your email and we&apos;ll
-        let you know the day it launches — no spam, unsubscribe anytime.
+        let you know the day it launches. No spam, unsubscribe anytime.
       </p>
 
       {status === "success" ? (
-        <p className="mt-4 rounded-xl bg-teal-100 px-4 py-3 text-sm text-teal-900">
+        <p
+          className="mt-4 border border-teal-200 bg-teal-50 px-4 py-3 text-sm text-teal-900"
+          role="status"
+          aria-live="polite"
+        >
           You&apos;re on the list. Keep an eye on your inbox.
         </p>
       ) : (
@@ -82,19 +84,19 @@ export function AndroidWaitlistCard() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-xl border border-teal-200 bg-white px-4 py-2.5 text-sm text-teal-950 placeholder:text-teal-700/50 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-200"
+            className="h-11 w-full rounded-sm border border-teal-200 bg-white px-4 text-sm text-teal-950 placeholder:text-teal-700/50"
           />
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="rounded-xl bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-800 disabled:opacity-60"
+            className="pressable h-11 rounded-sm bg-teal-700 px-5 text-sm font-semibold text-white transition hover:bg-teal-800 disabled:opacity-60"
           >
             {status === "submitting" ? "Joining…" : "Join waitlist"}
           </button>
         </form>
       )}
       {error ? (
-        <p className="mt-3 text-xs text-red-700" role="alert">
+        <p className="mt-3 text-sm text-red-700" role="alert">
           {error}
         </p>
       ) : null}

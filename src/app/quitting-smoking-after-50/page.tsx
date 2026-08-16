@@ -13,7 +13,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { PILLAR_ARTICLE_REFERENCES } from "@/lib/pillarArticleReferences";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-04-27";
 const MODIFIED = "2026-04-27";
@@ -93,8 +93,8 @@ export default function QuittingSmokingAfter50Page() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Relapse &amp; maintenance
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -172,7 +172,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="why-fifties-matter"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Why do your 50s matter for quitting smoking?
@@ -215,7 +215,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="heart-and-circulation"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What happens to heart and circulation risk after you quit?
@@ -243,7 +243,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="lungs-screening"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What should you know about lungs and screening?
@@ -273,7 +273,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="medications-safety"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How do you choose cessation medications safely?
@@ -302,7 +302,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="when-to-seek-medical-care"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
@@ -347,7 +347,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources &amp; further reading
@@ -386,10 +386,6 @@ export default function QuittingSmokingAfter50Page() {
           placement="article_footer_card"
         />
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quitting-smoking-after-50</code>
-      </p>
-    </div>
+</div>
   );
 }

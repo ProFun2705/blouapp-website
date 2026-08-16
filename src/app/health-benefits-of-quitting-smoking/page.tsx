@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-20";
 const MODIFIED = "2026-05-20";
@@ -94,8 +94,8 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Why quit
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -153,7 +153,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="hours"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Minutes to 24 hours: immediate changes
@@ -193,7 +193,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="days"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Days 1–7: senses and airways
@@ -249,7 +249,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="weeks"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Weeks 2–12: lung and circulation recovery
@@ -305,7 +305,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="months-years"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Months to 15 years: long-term disease risk
@@ -381,7 +381,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="mental-health"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Mental health benefits
@@ -431,7 +431,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="financial"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Financial benefits
@@ -474,10 +474,6 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
           Withdrawal timeline →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/health-benefits-of-quitting-smoking</code>
-      </p>
-    </div>
+</div>
   );
 }

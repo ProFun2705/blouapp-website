@@ -20,20 +20,17 @@ export function StayOnTrackCard({
   className,
 }: StayOnTrackCardProps) {
   return (
-    <section
-      className={
-        className ??
-        "rounded-3xl border border-teal-200 bg-white p-8 shadow-sm"
-      }
-    >
-      <h2 className="text-3xl font-semibold tracking-tight text-teal-950">{title}</h2>
-      <p className="mt-3 max-w-3xl text-base leading-8 text-teal-900/80">
+    <section className={className ?? "section-block"}>
+      <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
+        {title}
+      </h2>
+      <p className="mt-3 max-w-[65ch] text-base leading-8 text-teal-900/80">
         {description}
       </p>
       <AppStoreBadgeLink
         campaign={campaign}
         placement={placement}
-        className="mt-6 inline-flex items-center rounded-lg shadow-sm ring-1 ring-black/5 transition motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"
+        className="mt-6 inline-flex items-center"
       />
     </section>
   );

@@ -46,14 +46,14 @@ export function CountryMoneyCalculatorPage({
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Quit smoking calculator · {country.name}
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
           Quit smoking money saved calculator ({country.name})
         </h1>
-        <p className="mt-3 max-w-3xl text-sm leading-7 text-teal-900/85">
+        <p className="mt-4 text-base leading-7 text-teal-900/90">
           Estimate how much you would keep by quitting smoking in {country.name},
           using a default pack price of{" "}
           <strong>
@@ -88,6 +88,7 @@ export function CountryMoneyCalculatorPage({
           currencyCode={country.currencyCode}
           locale={country.locale}
           instanceId={`country_${country.slug}`}
+          countrySlug={country.slug}
           title={`${country.name} money saved calculator`}
           description={`Local pricing in ${country.currencyCode}. Adjust inputs to reflect your actual spend.`}
         />
@@ -96,7 +97,7 @@ export function CountryMoneyCalculatorPage({
       <section className="grid gap-4 md:grid-cols-2">
         <article
           id="local-context"
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="section-block scroll-mt-24"
         >
           <h2 className="text-xl font-semibold text-teal-950">
             Local context
@@ -135,7 +136,7 @@ export function CountryMoneyCalculatorPage({
 
         <article
           id="quit-help"
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="section-block scroll-mt-24"
         >
           <h2 className="text-xl font-semibold text-teal-950">
             Free quit help in {country.name}

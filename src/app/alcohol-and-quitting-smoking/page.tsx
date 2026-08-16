@@ -17,7 +17,7 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-04-27";
 const MODIFIED = "2026-04-27";
@@ -130,8 +130,8 @@ export default function AlcoholAndQuittingSmokingPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Relapse &amp; maintenance
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -208,7 +208,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="why-alcohol-triggers-cravings"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Why does alcohol trigger cigarette cravings?
@@ -240,7 +240,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="can-you-drink-while-quitting"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Can you drink while you are quitting smoking?
@@ -271,7 +271,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="plan-nights-out"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How should you plan nights out in early quit?
@@ -316,7 +316,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="friends-and-partners"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How can friends help without nagging?
@@ -353,7 +353,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="when-to-seek-medical-care"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
@@ -415,7 +415,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources &amp; further reading
@@ -454,10 +454,6 @@ export default function AlcoholAndQuittingSmokingPage() {
           placement="article_footer_card"
         />
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/alcohol-and-quitting-smoking</code>
-      </p>
-    </div>
+</div>
   );
 }

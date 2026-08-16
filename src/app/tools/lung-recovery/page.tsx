@@ -12,7 +12,6 @@ import {
   buildMetadata,
   buildWebApplicationJsonLd,
 } from "@/lib/seo";
-import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Lung recovery timeline visualizer (free)",
@@ -101,8 +100,8 @@ export default function LungRecoveryToolPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Timeline
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -138,7 +137,7 @@ export default function LungRecoveryToolPage() {
 
       <section
         id="how-to-use"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How to use this visualizer
@@ -163,7 +162,7 @@ export default function LungRecoveryToolPage() {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Source references
@@ -236,10 +235,6 @@ export default function LungRecoveryToolPage() {
           Read milestone guides
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/tools/lung-recovery</code>
-      </p>
-    </div>
+</div>
   );
 }

@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -80,8 +80,8 @@ export default function NicotineWithdrawalSymptomsPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Symptom hub
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -127,7 +127,7 @@ export default function NicotineWithdrawalSymptomsPage() {
         />
       </section>
 
-      <section id="common" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="common" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Common symptoms (jump links)</h2>
         <ul className="mt-4 grid gap-2 text-sm text-teal-900 sm:grid-cols-2">
           <li><Link className="font-medium text-teal-800 underline" href="/guides/anxiety">Anxiety</Link></li>
@@ -155,10 +155,6 @@ export default function NicotineWithdrawalSymptomsPage() {
           Week one playbook →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/nicotine-withdrawal-symptoms</code>
-      </p>
-    </div>
+</div>
   );
 }

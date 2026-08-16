@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -145,7 +145,7 @@ export default function QuitSmokingWhilePregnantPage() {
 
       <section
         id="ask-clinician"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Questions for your clinician
@@ -168,7 +168,7 @@ export default function QuitSmokingWhilePregnantPage() {
 
       <section
         id="support"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Support channels</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
@@ -192,7 +192,7 @@ export default function QuitSmokingWhilePregnantPage() {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Trusted sources</h2>
         <ul className="mt-4 space-y-2 text-sm text-teal-900">
@@ -239,10 +239,6 @@ export default function QuitSmokingWhilePregnantPage() {
           Quitting before surgery →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-while-pregnant</code>
-      </p>
-    </div>
+</div>
   );
 }

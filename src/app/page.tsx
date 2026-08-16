@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -6,6 +7,7 @@ import { FaqSection } from "@/components/blou/FaqSection";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { MobileStickyBadge } from "@/components/marketing/MobileStickyBadge";
 import { AndroidWaitlistCard } from "@/components/marketing/AndroidWaitlistCard";
+import { QuitCalendar } from "@/components/marketing/QuitCalendar";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
@@ -23,16 +25,10 @@ export const metadata: Metadata = buildMetadata({
   ],
 });
 
-const heroHighlights = [
-  "Visual streaks & milestones",
-  "Money saved & lung recovery",
-  "Craving timer with short actions",
-] as const;
-
-const featureCards = [
+const featureRows = [
   {
     title: "See progress you can feel",
-    body: "Turn abstract commitment into a visible streak. Every day smoke-free is a specific number — savings, cravings avoided, milestones reached.",
+    body: "Turn abstract commitment into a visible streak. Every day smoke-free is a specific number: savings, cravings avoided, milestones reached.",
   },
   {
     title: "Plan, don't willpower",
@@ -40,7 +36,7 @@ const featureCards = [
   },
   {
     title: "Recovery timeline, not vague promises",
-    body: "Know what's typically happening in your body day 1, day 3, week 1, and beyond — backed by NHS, CDC, and Surgeon General public guidance.",
+    body: "Know what's typically happening in your body day 1, day 3, week 1, and beyond, backed by NHS, CDC, and Surgeon General public guidance.",
   },
 ] as const;
 
@@ -48,22 +44,12 @@ const tools = [
   {
     href: "/tools/money-saved",
     title: "Money saved calculator",
-    subtitle: "What does your habit cost — and what does quitting return?",
-    points: [
-      "Localized prices in 5 countries",
-      "Savings from 1 day to 10 years",
-      "Shareable link with your numbers",
-    ],
+    subtitle: "What does your habit cost, and what does quitting return?",
   },
   {
     href: "/tools/lung-recovery",
     title: "Lung recovery timeline",
-    subtitle: "Visualize what typically improves, and when",
-    points: [
-      "Short-term symptom milestones",
-      "Long-term health checkpoints",
-      "Links to original source guidance",
-    ],
+    subtitle: "Visualize what typically improves, and when.",
   },
 ] as const;
 
@@ -129,18 +115,14 @@ const faqItems = [
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-16">
-      <section className="relative overflow-hidden rounded-3xl border border-teal-200/80 bg-gradient-to-br from-teal-50 via-white to-emerald-50 p-8 shadow-sm md:p-12">
-        <div className="relative z-10 max-w-3xl">
-          <p className="inline-flex rounded-full border border-teal-200 bg-white/80 px-3 py-1 text-xs font-medium uppercase tracking-wide text-teal-800">
-            Quit smoking tracker · iPhone
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-teal-950 md:text-5xl">
+      <section className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="max-w-xl">
+          <h1 className="text-4xl font-semibold tracking-tight text-teal-950 md:text-5xl">
             Quit smoking, tracked simply.
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-teal-900/80">
-            Blou turns your quit into something you can see — streak, savings,
-            cravings, and recovery milestones — so you stop relying on willpower
-            alone. Free on the App Store.
+          <p className="mt-4 max-w-[65ch] text-base leading-7 text-teal-900/80">
+            See each smoke-free day. Track savings and ride out the 3-minute
+            craving. Free on the App Store.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <AppStoreBadgeLink
@@ -150,33 +132,34 @@ export default function HomePage() {
             />
             <Link
               href="/how-to-quit-smoking"
-              className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+              className="pressable inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50"
             >
               Read the quit plan
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-3">
-          {heroHighlights.map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl border border-teal-200 bg-white/85 px-4 py-3 text-sm text-teal-900/80"
-            >
-              {item}
-            </div>
-          ))}
+        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-start">
+          <div className="hidden md:block">
+            <QuitCalendar />
+          </div>
+          <div className="relative mx-auto w-full max-w-[220px]">
+            <Image
+              src="/product/blou-phone-streak.jpg"
+              alt="Blou on iPhone showing a smoke-free streak and a month calendar with days marked off"
+              width={900}
+              height={1600}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
         </div>
       </section>
 
       <TableOfContents
         items={[
-          { id: "social-proof", label: "Reviews & proof" },
           { id: "why-tracker", label: "Why a tracker works" },
-          { id: "pillars", label: "Start where you are" },
-          { id: "relapse-maintenance", label: "Relapse support" },
           { id: "tools", label: "Free tools" },
-          { id: "calculators", label: "Calculators by country" },
-          { id: "android-waitlist", label: "Android waitlist" },
+          { id: "plan", label: "Start a plan" },
           { id: "faq", label: "FAQ" },
         ]}
       />
@@ -186,104 +169,80 @@ export default function HomePage() {
       </section>
 
       <section id="why-tracker" className="scroll-mt-24">
-        <div className="mb-6">
-          <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
-            Why a tracker works when willpower doesn&apos;t
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm leading-6 text-teal-900/80">
-            Most quit attempts fail in the first two weeks — not because people
-            lack motivation, but because the craving-response loop is invisible.
-            Blou makes it visible so you can interrupt it.
-          </p>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {featureCards.map((feature) => (
-            <article
-              key={feature.title}
-              className="rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
-            >
-              <h3 className="text-lg font-semibold text-teal-950">
-                {feature.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-teal-900/80">
-                {feature.body}
-              </p>
-            </article>
+        <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
+          Why a tracker works when willpower doesn&apos;t
+        </h2>
+        <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
+          Most quit attempts fail in the first two weeks, not because people
+          lack motivation, but because the craving-response loop is invisible.
+          Blou makes it visible so you can interrupt it.
+        </p>
+        <ol className="mt-8 divide-y divide-teal-200 border-y border-teal-200">
+          {featureRows.map((feature, index) => (
+            <li key={feature.title} className="grid gap-3 py-5 md:grid-cols-[4rem_1fr]">
+              <span className="tabular text-sm font-medium text-teal-700">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <h3 className="text-lg font-semibold text-teal-950">
+                  {feature.title}
+                </h3>
+                <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
+                  {feature.body}
+                </p>
+              </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
 
-      <section id="pillars" className="scroll-mt-24">
+      <section id="plan" className="scroll-mt-24">
         <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
           Start where you are
         </h2>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-teal-900/80">
-          Three step-by-step playbooks for the most common points in the quit
-          journey.
-        </p>
-        <div className="mt-6 grid gap-3 md:grid-cols-3">
+        <ul className="mt-6 divide-y divide-teal-200 border-y border-teal-200">
           {pillarLinks.map((pillar) => (
-            <Link
-              key={pillar.href}
-              href={pillar.href}
-              className="block rounded-2xl border border-teal-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-            >
-              <p className="text-sm font-semibold text-teal-950">{pillar.label}</p>
-              <p className="mt-1 text-sm text-teal-900/80">{pillar.description}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="relapse-maintenance"
-        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm"
-      >
-        <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
-          Relapse support library
-        </h2>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-teal-900/80">
-          These pages are for real-world trigger moments: one-cigarette slips,
-          alcohol nights, social smoking, and getting back on plan after relapse.
-        </p>
-        <div className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
-            (item) => (
+            <li key={pillar.href}>
               <Link
-                key={item.slug}
-                href={item.href}
-                className="rounded-xl border border-teal-200 px-4 py-3 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+                href={pillar.href}
+                className="flex flex-col gap-1 py-4 hover:text-teal-950"
               >
-                {item.title}
+                <span className="font-semibold text-teal-950">{pillar.label}</span>
+                <span className="text-sm text-teal-900/80">{pillar.description}</span>
               </Link>
-            ),
-          )}
+            </li>
+          ))}
+        </ul>
+        <div className="mt-6">
+          <p className="text-sm font-medium text-teal-800">If you slipped</p>
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live")
+              .slice(0, 4)
+              .map((item) => (
+                <Link
+                  key={item.slug}
+                  href={item.href}
+                  className="text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+                >
+                  {item.title}
+                </Link>
+              ))}
+          </div>
         </div>
       </section>
 
-      <section id="tools" className="scroll-mt-24 grid gap-5 lg:grid-cols-2">
+      <section id="tools" className="scroll-mt-24 grid gap-8 md:grid-cols-2">
         {tools.map((tool) => (
-          <article
-            key={tool.href}
-            className="rounded-2xl border border-teal-200/90 bg-white p-7 shadow-sm"
-          >
-            <p className="text-xs font-medium uppercase tracking-wide text-teal-700">
-              Tool
-            </p>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tight text-teal-950">
+          <article key={tool.href} className="section-block md:border-t-0 md:pt-0">
+            <h3 className="text-2xl font-semibold tracking-tight text-teal-950">
               {tool.title}
             </h3>
-            <p className="mt-2 text-sm leading-6 text-teal-900/80">
+            <p className="mt-2 text-base leading-6 text-teal-900/80">
               {tool.subtitle}
             </p>
-            <ul className="mt-4 space-y-2 text-sm text-teal-900/80">
-              {tool.points.map((point) => (
-                <li key={point}>• {point}</li>
-              ))}
-            </ul>
             <Link
               href={tool.href}
-              className="mt-6 inline-flex h-10 items-center justify-center rounded-full border border-teal-200 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+              className="pressable mt-6 inline-flex h-10 items-center justify-center rounded-sm border border-teal-200 px-4 text-sm font-medium text-teal-900 hover:bg-teal-50"
             >
               Open tool
             </Link>
@@ -291,33 +250,30 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section
-        id="calculators"
-        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm md:p-10"
-      >
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <section id="calculators" className="section-block scroll-mt-24">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
               Calculators by country
             </h2>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-teal-900/80">
-              Start from a locally sourced pack price — tax-adjusted, referenced
-              — and see your real savings in your currency.
+            <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
+              Start from a locally sourced pack price and see savings in your
+              currency.
             </p>
           </div>
           <Link
             href="/calculators"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
+            className="pressable inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white hover:bg-teal-700"
           >
             View all countries
           </Link>
         </div>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-6 flex flex-wrap gap-2">
           {countryLinks.map((country) => (
             <Link
               key={country.href}
               href={country.href}
-              className="rounded-xl border border-teal-200 px-4 py-3 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+              className="pressable inline-flex h-10 items-center rounded-sm border border-teal-200 px-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
             >
               {country.label}
             </Link>

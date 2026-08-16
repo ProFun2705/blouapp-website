@@ -8,9 +8,10 @@ import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
+import { ComparisonChoices, ComparisonTable, TextLink } from "@/components/marketing/ComparisonChoices";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -76,8 +77,8 @@ export default function BlouVsSmokeFreePage() {
         items={[{ name: "Blou vs Smoke Free", path: "/blou-vs-smoke-free" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Comparison
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -129,104 +130,50 @@ export default function BlouVsSmokeFreePage() {
         />
       </section>
 
-      <section
-        id="choose-blou"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
-      >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Choose Blou if…
-        </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>You’re on iPhone and want a clean, visual tracker.</span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              You want cravings support that’s quick (timer + action) and easy to
-              repeat.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
+      <ComparisonChoices
+        left={{
+          id: "choose-blou",
+          title: "Choose Blou if…",
+          items: [
+            "You’re on iPhone and want a clean, visual tracker.",
+            "You want cravings support that’s quick (timer + action) and easy to repeat.",
+            <>
               You’re motivated by tangible progress like{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/tools/money-saved"
-              >
-                money saved
-              </Link>{" "}
-              and milestone timelines.
-            </span>
-          </li>
-        </ul>
-      </section>
+              <TextLink href="/tools/money-saved">money saved</TextLink> and
+              milestone timelines.
+            </>,
+          ],
+        }}
+        right={{
+          id: "choose-smoke-free",
+          title: "Choose Smoke Free if…",
+          items: [
+            "You need Android support today.",
+            "You like missions and gamified tasks.",
+            "You prefer a dense dashboard with many options (even if it’s less “minimal”).",
+          ],
+        }}
+      />
 
-      <section
-        id="choose-smoke-free"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
-      >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Choose Smoke Free if…
-        </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>You need Android support today.</span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>You like missions and gamified tasks.</span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              You prefer a dense dashboard with many options (even if it’s less
-              “minimal”).
-            </span>
-          </li>
-        </ul>
-      </section>
-
-      <section
+      <ComparisonTable
         id="feature-differences"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
-      >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Feature differences (simple)
-        </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Platforms</strong>: Blou (iOS). Smoke Free (iOS + Android).
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Style</strong>: Blou is visual + lightweight. Smoke Free is
-              feature-rich + mission-based.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Support loop</strong>: both work best when you combine them
-              with a plan and cravings strategy (see{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/how-to-quit-smoking"
-              >
-                the quit plan
-              </Link>
-              ).
-            </span>
-          </li>
-        </ul>
-      </section>
+        title="Feature differences"
+        columnA="Blou"
+        columnB="Smoke Free"
+        rows={[
+          { label: "Platforms", a: "iOS", b: "iOS and Android" },
+          {
+            label: "Style",
+            a: "Visual, lightweight tracker",
+            b: "Feature-rich, mission-based",
+          },
+          {
+            label: "Support loop",
+            a: "Works with a quit plan and craving timer",
+            b: "Works with a quit plan and missions",
+          },
+        ]}
+      />
 
       <section id="social-proof" className="scroll-mt-24">
         <SocialProof compact />
@@ -248,11 +195,7 @@ export default function BlouVsSmokeFreePage() {
           Use a quit tracker →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/blou-vs-smoke-free</code>
-      </p>
-    </div>
+</div>
   );
 }
 

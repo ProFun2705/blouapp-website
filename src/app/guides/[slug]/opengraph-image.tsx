@@ -35,9 +35,8 @@ export default async function Image({
           display: "flex",
           flexDirection: "column",
           padding: "72px",
-          background:
-            "linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%)",
-          color: "white",
+          background: "#eef1ea",
+          color: "#141714",
           fontFamily: "system-ui, -apple-system, sans-serif",
         }}
       >
@@ -57,8 +56,8 @@ export default async function Image({
               width: 48,
               height: 48,
               borderRadius: 12,
-              background: "white",
-              color: "#0f766e",
+              background: "#141714",
+              color: "#eef1ea",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -75,7 +74,7 @@ export default async function Image({
           style={{
             marginTop: 48,
             fontSize: 24,
-            opacity: 0.9,
+            color: "#5c635c",
             letterSpacing: "0.02em",
             textTransform: "uppercase",
           }}

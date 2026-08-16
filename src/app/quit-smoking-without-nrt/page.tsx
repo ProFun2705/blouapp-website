@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -78,8 +78,8 @@ export default function QuitSmokingWithoutNrtPage() {
         items={[{ name: "Quit smoking without NRT", path: "/quit-smoking-without-nrt" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Non-NRT path
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -128,7 +128,7 @@ export default function QuitSmokingWithoutNrtPage() {
         />
       </section>
 
-      <section id="stack" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="stack" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Stack these supports</h2>
         <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Fixed quit date + /prepare-to-quit-smoking checklist.</li>
@@ -137,7 +137,7 @@ export default function QuitSmokingWithoutNrtPage() {
         </ol>
       </section>
 
-      <section id="reconsider" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
+      <section id="reconsider" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">When to reconsider NRT</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If withdrawal dominates life or lapses repeat, read{" "}
@@ -166,10 +166,6 @@ export default function QuitSmokingWithoutNrtPage() {
           Withdrawal timeline →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-without-nrt</code>
-      </p>
-    </div>
+</div>
   );
 }

@@ -17,7 +17,8 @@ import {
 } from "@/lib/blouGuides";
 import { makeSectionId } from "@/lib/slugify";
 import { buildArticleJsonLd, buildMetadata, buildSpeakableJsonLd } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { ArticleShell } from "@/components/site/ArticleShell";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 type GuidePageProps = {
   params: Promise<{ slug: string }>;
@@ -125,7 +126,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
   });
 
   return (
-    <article className="flex flex-col gap-8">
+    <ArticleShell>
       <Script
         id={`article-json-ld-${guide.slug}`}
         type="application/ld+json"
@@ -143,8 +144,8 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           {guide.category === "milestone" ? "Milestone guide" : "Symptom guide"}
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -175,21 +176,23 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         <section
           id={makeSectionId(index, section.heading)}
           key={section.heading}
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="section-block scroll-mt-24"
         >
           <h2 className="text-xl font-semibold text-teal-950">
             {section.heading}
           </h2>
-          <div className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+          <div className="mt-4 max-w-[65ch] space-y-3 text-base leading-7 text-teal-900/90">
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
           {section.bullets.length ? (
-            <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+            <ul className="mt-4 max-w-[65ch] space-y-2 text-base leading-7 text-teal-900/90">
               {section.bullets.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span aria-hidden className="mt-1 text-teal-600">•</span>
+                  <span aria-hidden className="cal-x">
+                    ×
+                  </span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -201,7 +204,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
       {guide.typicalDuration ? (
         <section
           id="at-a-glance"
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="section-block scroll-mt-24"
         >
           <h2 className="text-xl font-semibold text-teal-950">At-a-glance</h2>
           <dl className="mt-4 grid gap-4 text-sm md:grid-cols-3">
@@ -229,7 +232,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
 
       <section
         id="what-to-expect-next"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="section-block scroll-mt-24"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What to expect next
@@ -265,7 +268,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="section-block scroll-mt-24"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources & further reading
@@ -317,9 +320,6 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         />
       </div>
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/guides/{guide.slug}</code>
-      </p>
-    </article>
+    </ArticleShell>
   );
 }

@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -78,8 +78,8 @@ export default function QuitSmokingTrackerPage() {
         items={[{ name: "Quit smoking tracker", path: "/quit-smoking-tracker" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Quit tool guide
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -134,12 +134,12 @@ export default function QuitSmokingTrackerPage() {
 
       <section
         id="four-metrics"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">The 4 metrics</h2>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border border-teal-200 bg-teal-50/60 p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+            <p className="text-sm font-medium text-teal-700">
               1) Smoke-free time
             </p>
             <p className="mt-2 text-sm leading-7 text-teal-900/90">
@@ -154,7 +154,7 @@ export default function QuitSmokingTrackerPage() {
             </p>
           </div>
           <div className="rounded-2xl border border-teal-200 bg-teal-50/60 p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+            <p className="text-sm font-medium text-teal-700">
               2) Cravings
             </p>
             <p className="mt-2 text-sm leading-7 text-teal-900/90">
@@ -170,7 +170,7 @@ export default function QuitSmokingTrackerPage() {
             </p>
           </div>
           <div className="rounded-2xl border border-teal-200 bg-teal-50/60 p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+            <p className="text-sm font-medium text-teal-700">
               3) Cues
             </p>
             <p className="mt-2 text-sm leading-7 text-teal-900/90">
@@ -186,7 +186,7 @@ export default function QuitSmokingTrackerPage() {
             </p>
           </div>
           <div className="rounded-2xl border border-teal-200 bg-teal-50/60 p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+            <p className="text-sm font-medium text-teal-700">
               4) Money saved
             </p>
             <p className="mt-2 text-sm leading-7 text-teal-900/90">
@@ -206,7 +206,7 @@ export default function QuitSmokingTrackerPage() {
 
       <section
         id="first-14-days"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How to track (first 14 days)
@@ -267,11 +267,7 @@ export default function QuitSmokingTrackerPage() {
           Read the quit plan →
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-tracker</code>
-      </p>
-    </div>
+</div>
   );
 }
 

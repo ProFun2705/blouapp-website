@@ -14,11 +14,8 @@ export default function Image() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          padding: "80px",
-          background:
-            "linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%)",
-          color: "white",
+          background: "#eef1ea",
+          color: "#141714",
           fontFamily: "system-ui, -apple-system, sans-serif",
         }}
       >
@@ -26,66 +23,57 @@ export default function Image() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
-            fontSize: 32,
+            justifyContent: "space-between",
+            background: "#141714",
+            color: "#eef1ea",
+            padding: "28px 80px",
+            fontSize: 28,
             fontWeight: 600,
-            letterSpacing: "-0.02em",
-            opacity: 0.95,
+          }}
+        >
+          <span>{SITE_NAME}</span>
+          <span style={{ color: "#4cba68" }}>×</span>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: "64px 80px",
+            flex: 1,
           }}
         >
           <div
             style={{
-              width: 56,
-              height: 56,
-              borderRadius: 14,
-              background: "white",
-              color: "#0f766e",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 36,
+              fontSize: 72,
               fontWeight: 700,
+              letterSpacing: "-0.03em",
+              lineHeight: 1.05,
+              maxWidth: 940,
             }}
           >
-            B
+            Quit smoking, tracked simply.
           </div>
-          {SITE_NAME}
-        </div>
-        <div
-          style={{
-            marginTop: 60,
-            fontSize: 88,
-            fontWeight: 700,
-            letterSpacing: "-0.03em",
-            lineHeight: 1.05,
-            maxWidth: 940,
-          }}
-        >
-          Quit smoking, tracked simply.
-        </div>
-        <div
-          style={{
-            marginTop: 28,
-            fontSize: 32,
-            fontWeight: 400,
-            opacity: 0.92,
-            maxWidth: 940,
-            lineHeight: 1.35,
-          }}
-        >
-          Cravings, savings, and recovery — visualized for iPhone.
-        </div>
-        <div
-          style={{
-            marginTop: "auto",
-            fontSize: 24,
-            opacity: 0.85,
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-          }}
-        >
-          tryblou.com
+          <div
+            style={{
+              marginTop: 24,
+              fontSize: 28,
+              color: "#5c635c",
+              maxWidth: 860,
+              lineHeight: 1.35,
+            }}
+          >
+            Mark the day. See the streak. Free on iPhone.
+          </div>
+          <div
+            style={{
+              marginTop: 48,
+              fontSize: 22,
+              color: "#5c635c",
+            }}
+          >
+            tryblou.com
+          </div>
         </div>
       </div>
     ),
