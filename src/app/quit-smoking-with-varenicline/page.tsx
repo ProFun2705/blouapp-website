@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking with varenicline (Chantix / Champix) + behavioral support",
+  title: "Quit smoking with varenicline (Chantix)",
   description:
     "What varenicline is for, how it fits a quit plan, side effects to discuss with a clinician, and how a quit app supports cravings and routines—not dosing.",
   path: "/quit-smoking-with-varenicline",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingWithVareniclinePage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking with varenicline (Chantix / Champix) + behavioral support",
+    title: "Quit smoking with varenicline (Chantix)",
     description:
       "Educational overview of varenicline within a quit plan; not medical advice.",
     path: "/quit-smoking-with-varenicline",
@@ -107,7 +108,7 @@ export default function QuitSmokingWithVareniclinePage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Behavioral plan →
           </Link>
@@ -125,7 +126,7 @@ export default function QuitSmokingWithVareniclinePage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking with varenicline (Chantix / Champix) + behavioral support"
+        name="Quit smoking with varenicline (Chantix)"
         path="/quit-smoking-with-varenicline"
       />
 
@@ -147,7 +148,7 @@ export default function QuitSmokingWithVareniclinePage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Role in a quit plan</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Medications address nicotine receptor dynamics; you still need a plan
           for triggers, alcohol, and high-risk social settings. Read{" "}
           <Link
@@ -174,7 +175,7 @@ export default function QuitSmokingWithVareniclinePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Where a quit app fits
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Apps shine for the 3–5 minute craving window and for logging slips
           without shame. See also{" "}
           <Link
@@ -234,11 +235,13 @@ export default function QuitSmokingWithVareniclinePage() {
         />
         <Link
           href="/quit-smoking-with-bupropion"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Bupropion overview →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-with-varenicline_footer" />
+
 </div>
   );
 }

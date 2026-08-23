@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking with nicotine gum: how to handle cravings",
+  title: "Quit smoking with nicotine gum",
   description:
     "How to quit smoking with nicotine gum: what it’s for, how to handle cue-based cravings, and how to use tracking to stay consistent in weeks 1–4.",
   path: "/quit-smoking-with-nicotine-gum",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingWithNicotineGumPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking with nicotine gum: how to handle cravings",
+    title: "Quit smoking with nicotine gum",
     description:
       "A practical plan for quitting with nicotine gum, focusing on cravings, cues, and consistency.",
     path: "/quit-smoking-with-nicotine-gum",
@@ -102,7 +103,7 @@ export default function QuitSmokingWithNicotineGumPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/guides/cravings"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Read the cravings playbook →
           </Link>
@@ -120,7 +121,7 @@ export default function QuitSmokingWithNicotineGumPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking with nicotine gum: how to handle cravings"
+        name="Quit smoking with nicotine gum"
         path="/quit-smoking-with-nicotine-gum"
       />
 
@@ -144,7 +145,7 @@ export default function QuitSmokingWithNicotineGumPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           A simple gum plan (weeks 1–4)
         </h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>
             Set a quit date and prep your top cues using{" "}
             <Link
@@ -173,7 +174,7 @@ export default function QuitSmokingWithNicotineGumPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Cue-based cravings (the real long game)
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Even with NRT, cues can trigger urges: coffee, driving, finishing a
           meal, stress, alcohol. The fix is not more willpower—it’s a replacement
           routine you do automatically. Start with the strategies in{" "}
@@ -199,7 +200,7 @@ export default function QuitSmokingWithNicotineGumPage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Contain it quickly and return to plan. Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -226,11 +227,13 @@ export default function QuitSmokingWithNicotineGumPage() {
         />
         <Link
           href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Withdrawal timeline →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-with-nicotine-gum_footer" />
+
 </div>
   );
 }

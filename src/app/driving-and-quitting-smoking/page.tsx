@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -95,7 +96,7 @@ export default function DrivingAndQuittingSmokingPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_driving" placement="article_intro" />
-          <Link href="/guides/cravings" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/guides/cravings" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Cravings guide →
           </Link>
         </div>
@@ -128,7 +129,7 @@ export default function DrivingAndQuittingSmokingPage() {
 
       <section id="tactics" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Tactics</h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>First week: add one extra stop midway on habitual routes.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Keep water and crunchy snacks reachable (parked use).</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Review /first-week-quit-smoking timing for withdrawal surprises.</span></li>
@@ -145,10 +146,12 @@ export default function DrivingAndQuittingSmokingPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_driving" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Full plan →
         </Link>
       </div>
+<ArticleConversionFooter campaign="driving-and-quitting-smoking_footer" />
+
 </div>
   );
 }

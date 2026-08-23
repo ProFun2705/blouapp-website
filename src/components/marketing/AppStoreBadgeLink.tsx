@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { buildAppStoreUrl } from "@/lib/appStore";
+import { trackEvent } from "@/lib/track-event";
 
 type AppStoreBadgePlacement =
   | "landing_hero"
@@ -44,16 +45,7 @@ export function AppStoreBadgeLink({
   const handleClick = () => {
     const payload = { placement, destination: href };
     onClickTrack?.(payload);
-
-    if (typeof window !== "undefined" && "gtag" in window) {
-      type GtagFn = (
-        command: "event",
-        eventName: string,
-        params: Record<string, string>,
-      ) => void;
-      const gtag = window.gtag as GtagFn | undefined;
-      gtag?.("event", "app_store_badge_click", payload);
-    }
+    trackEvent("app_store_badge_click", payload);
   };
 
   return (
@@ -64,7 +56,7 @@ export function AppStoreBadgeLink({
       aria-label="Download on the App Store"
       className={
         className ??
-        "inline-flex items-center rounded-lg shadow-sm ring-1 ring-black/5 transition motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"
+        "inline-flex items-center"
       }
       onClick={handleClick}
     >

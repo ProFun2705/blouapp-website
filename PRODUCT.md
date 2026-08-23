@@ -45,9 +45,8 @@ Marketing and SEO site at tryblou.com. Next.js App Router. App Store listing: Qu
 ## Evidence on Hand
 
 - Author: Heorhi Talochka (Founder). Medical reviewer field currently “Blou editorial team.”
-- App Store rating claimed in UI: 4.8 from 420+ reviews. Star UI currently draws 5 filled stars.
-- Testimonials in `SocialProof.tsx` (Ethan / Marta / Takeshi) are not sourced in-repo. Do not invent additional quotes.
-- Product screenshots and app icon raster for the sticky bar are **absent** from `public/` (logo + App Store badge only).
+- App Store listing does not yet have enough ratings for a public overview. The site must not invent star ratings or review quotes.
+- Product proof on the homepage: `public/product/blou-phone-streak.jpg` is a labeled example until official App Store screenshots are added. App icon: `public/logos/blou-logo.png`.
 
 ## Product Principles
 

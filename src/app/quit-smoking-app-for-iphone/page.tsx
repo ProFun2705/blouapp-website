@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking app for iPhone: what works (and what doesn’t)",
+  title: "Quit smoking app for iPhone: what works",
   description:
     "The best quit smoking app for iPhone is the one you use during cravings. Here’s what to look for: fast craving tool, savings, milestones, and a simple plan.",
   path: "/quit-smoking-app-for-iphone",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingAppForIphonePage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking app for iPhone: what works (and what doesn’t)",
+    title: "Quit smoking app for iPhone: what works",
     description:
       "How to choose and use a quit smoking app on iPhone for higher odds of staying smoke-free.",
     path: "/quit-smoking-app-for-iphone",
@@ -102,7 +103,7 @@ export default function QuitSmokingAppForIphonePage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Compare quit apps →
           </Link>
@@ -120,7 +121,7 @@ export default function QuitSmokingAppForIphonePage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking app for iPhone: what works (and what doesn’t)"
+        name="Quit smoking app for iPhone: what works"
         path="/quit-smoking-app-for-iphone"
       />
 
@@ -144,7 +145,7 @@ export default function QuitSmokingAppForIphonePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Features that matter (for conversion and quitting)
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -195,7 +196,7 @@ export default function QuitSmokingAppForIphonePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How to use an iPhone quit app (simple daily routine)
         </h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>
             Pick a quit date and set up your week using{" "}
             <Link
@@ -222,7 +223,7 @@ export default function QuitSmokingAppForIphonePage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Common mistakes</h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-amber-600">•</span>
             <span>
@@ -261,11 +262,13 @@ export default function QuitSmokingAppForIphonePage() {
         />
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Read the quit plan →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-app-for-iphone_footer" />
+
 </div>
   );
 }

@@ -104,20 +104,20 @@ export function CountryMoneyCalculatorPage({
           </h2>
           <dl className="mt-4 space-y-3 text-sm leading-6 text-teal-900/90">
             <div>
-              <dt className="text-xs font-medium uppercase tracking-wide text-teal-700">
+              <dt className="text-sm font-medium text-teal-700">
                 Smoking prevalence
               </dt>
               <dd className="mt-1">{country.smokingPrevalence}</dd>
             </div>
             <div>
-              <dt className="text-xs font-medium uppercase tracking-wide text-teal-700">
+              <dt className="text-sm font-medium text-teal-700">
                 Legal purchase age
               </dt>
               <dd className="mt-1">{country.legalAgePurchase}</dd>
             </div>
             {country.popularBrands?.length ? (
               <div>
-                <dt className="text-xs font-medium uppercase tracking-wide text-teal-700">
+                <dt className="text-sm font-medium text-teal-700">
                   Commonly sold brands
                 </dt>
                 <dd className="mt-1">{country.popularBrands.join(", ")}</dd>
@@ -180,19 +180,19 @@ export function CountryMoneyCalculatorPage({
       <div id="next-steps" className="scroll-mt-24 flex flex-wrap items-center gap-3">
         <Link
           href="/calculators"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← All country calculators
         </Link>
         <Link
           href="/tools/money-saved"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Global calculator
         </Link>
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Quit plan
         </Link>

@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -99,7 +100,7 @@ export default function QuitVapingPage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Core quit plan →
           </Link>
@@ -139,7 +140,7 @@ export default function QuitVapingPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">7-day setup</h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>
             Name the stop date and tell one person who will check in on days 1,
             3, and 7 (same playbook as{" "}
@@ -173,7 +174,7 @@ export default function QuitVapingPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">When an urge hits</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Start a 3-minute timer, stand up, drink water, and do one pre-chosen
           action (walk around the block, brush teeth, text your check-in person).
           After the timer, decide whether you still need{" "}
@@ -194,7 +195,7 @@ export default function QuitVapingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Still smoking cigarettes sometimes?
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Dual use keeps nicotine reinforcement high. Read{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -221,11 +222,13 @@ export default function QuitVapingPage() {
         />
         <Link
           href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           NRT + quit app →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-vaping_footer" />
+
 </div>
   );
 }

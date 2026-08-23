@@ -107,13 +107,13 @@ export default function TermsPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← Back to home
         </Link>
         <Link
           href="/privacy"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Privacy Policy
         </Link>

@@ -13,7 +13,7 @@ const links = [
   { href: "/how-to-quit-smoking", label: "Quit plan" },
   { href: "/guides", label: "Guides" },
   { href: "/tools", label: "Tools" },
-  { href: "/best-quit-smoking-apps", label: "Compare" },
+  { href: "/compare", label: "Compare" },
 ] as const;
 
 const navAppStoreHref = buildAppStoreUrl({

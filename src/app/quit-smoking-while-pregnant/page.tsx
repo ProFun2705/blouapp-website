@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking while pregnant: safety-first guide (see your clinician)",
+  title: "Quit smoking while pregnant: safety-first",
   description:
     "Why quitting smoking in pregnancy matters, what to ask your obstetric clinician, how quitlines help, and how apps support cravings—this is not personalized medical advice.",
   path: "/quit-smoking-while-pregnant",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingWhilePregnantPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking while pregnant: safety-first guide (see your clinician)",
+    title: "Quit smoking while pregnant: safety-first",
     description:
       "Pregnancy smoking cessation overview emphasizing obstetric guidance.",
     path: "/quit-smoking-while-pregnant",
@@ -83,8 +84,8 @@ export default function QuitSmokingWhilePregnantPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-rose-200/90 bg-rose-50/40 p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-rose-800">
+      <header className="masthead">
+        <p className="text-sm font-medium text-teal-700">
           Pregnancy — clinician-first
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -108,7 +109,7 @@ export default function QuitSmokingWhilePregnantPage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Behavioral quit plan →
           </Link>
@@ -126,7 +127,7 @@ export default function QuitSmokingWhilePregnantPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking while pregnant: safety-first guide (see your clinician)"
+        name="Quit smoking while pregnant: safety-first"
         path="/quit-smoking-while-pregnant"
       />
 
@@ -150,7 +151,7 @@ export default function QuitSmokingWhilePregnantPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Questions for your clinician
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>What is the safest cessation pathway for me this trimester?</span>
@@ -171,7 +172,7 @@ export default function QuitSmokingWhilePregnantPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Support channels</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Pair clinical guidance with{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -234,11 +235,13 @@ export default function QuitSmokingWhilePregnantPage() {
         />
         <Link
           href="/quit-smoking-before-surgery"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Quitting before surgery →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-while-pregnant_footer" />
+
 </div>
   );
 }

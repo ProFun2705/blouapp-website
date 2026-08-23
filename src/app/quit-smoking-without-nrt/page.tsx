@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -95,7 +96,7 @@ export default function QuitSmokingWithoutNrtPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_no_nrt" placement="article_intro" />
-          <Link href="/quit-smoking-cold-turkey" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/quit-smoking-cold-turkey" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Cold turkey guide →
           </Link>
         </div>
@@ -130,7 +131,7 @@ export default function QuitSmokingWithoutNrtPage() {
 
       <section id="stack" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Stack these supports</h2>
-        <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 list-decimal space-y-2 pl-5 text-base leading-7 text-teal-900/90">
           <li>Fixed quit date + /prepare-to-quit-smoking checklist.</li>
           <li>Daily craving logging (app) + /guides/cravings tactics.</li>
           <li>Stress plan: /stress-smoking-quit-plan.</li>
@@ -139,7 +140,7 @@ export default function QuitSmokingWithoutNrtPage() {
 
       <section id="reconsider" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">When to reconsider NRT</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           If withdrawal dominates life or lapses repeat, read{" "}
           <Link className="font-medium text-teal-800 underline" href="/nicotine-patch-vs-gum">
             patch vs gum
@@ -162,10 +163,12 @@ export default function QuitSmokingWithoutNrtPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_no_nrt" placement="article_footer_card" />
-        <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Withdrawal timeline →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-without-nrt_footer" />
+
 </div>
   );
 }

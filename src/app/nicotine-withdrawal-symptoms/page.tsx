@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -96,7 +97,7 @@ export default function NicotineWithdrawalSymptomsPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_withdrawal_symptoms" placement="article_intro" />
-          <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Withdrawal timeline →
           </Link>
         </div>
@@ -151,10 +152,12 @@ export default function NicotineWithdrawalSymptomsPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_withdrawal_symptoms" placement="article_footer_card" />
-        <Link href="/first-week-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/first-week-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Week one playbook →
         </Link>
       </div>
+<ArticleConversionFooter campaign="nicotine-withdrawal-symptoms_footer" />
+
 </div>
   );
 }

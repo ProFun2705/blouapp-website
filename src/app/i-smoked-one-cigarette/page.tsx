@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { buildArticleJsonLd, buildHowToJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-04-24";
 const MODIFIED = "2026-04-24";
@@ -132,7 +133,7 @@ export default function ISmokedOneCigarettePage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Revisit the full quit plan →
           </Link>
@@ -175,7 +176,7 @@ export default function ISmokedOneCigarettePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Slip vs. relapse
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           In quit research, a <strong>slip</strong> is often one or a few
           smoking episodes you interrupt before daily smoking restarts. A{" "}
           <strong>relapse</strong> is when smoking becomes regular again for a
@@ -200,7 +201,7 @@ export default function ISmokedOneCigarettePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What to do in the first hour
         </h2>
-        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
           {firstHourSteps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -217,14 +218,14 @@ export default function ISmokedOneCigarettePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Shame, guilt, and the next day
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           It is normal to feel disappointed. What usually hurts recovery is
           not the slip but hiding it. If you can, tell one person (or your app
           community) the truth: “I had one, I am back on plan.”
           Self-compassion in smoking cessation is associated with more adaptive
           coping, not with being “soft.”
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Tonight, do not negotiate with “I will quit again Monday.” The
           research-backed move is: sleep, then execute your first two hours
           of quit day the way you did before—this time with one new note on
@@ -246,7 +247,7 @@ export default function ISmokedOneCigarettePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When to get extra help
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
           <li>Slips are clustering (several in a week) and feel out of your control.</li>
           <li>You are using smoking to manage depression, anxiety, or trauma symptoms.</li>
           <li>You are pregnant, nursing, or have heart or lung disease and smoked again.</li>
@@ -261,7 +262,7 @@ export default function ISmokedOneCigarettePage() {
             or ask your clinician for a plan.
           </li>
         </ul>
-        <p className="mt-4 text-sm leading-7 text-teal-900/90">
+        <p className="mt-4 text-base leading-7 text-teal-900/90">
           In the U.S., <strong>1-800-QUIT-NOW</strong> connects to free
           coaching; in the U.K. call <strong>0300 123 1044</strong>. A doctor
           can adjust NRT, varenicline, or bupropion if you are eligible.
@@ -283,6 +284,8 @@ export default function ISmokedOneCigarettePage() {
           ]}
         />
       </section>
+<ArticleConversionFooter campaign="i-smoked-one-cigarette_footer" />
+
 </div>
   );
 }

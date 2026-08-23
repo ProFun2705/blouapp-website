@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -102,7 +103,7 @@ export default function QuitSmokingWithNicotinePatchPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Prep checklist →
           </Link>
@@ -144,7 +145,7 @@ export default function QuitSmokingWithNicotinePatchPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           A simple patch plan (weeks 1–4)
         </h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>
             Choose a quit date and prep your cues using{" "}
             <Link
@@ -183,12 +184,12 @@ export default function QuitSmokingWithNicotinePatchPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Breakthrough cravings (what to do)
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Even with the patch, cravings can hit because cues are learned. Your
           goal is to make your response automatic: timer → change location →
           water → one 2‑minute action (walk, teeth, stretch, text someone).
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           If cravings feel unmanageable or you’re unsure about dosing, ask a
           pharmacist or clinician for personalized guidance.
         </p>
@@ -199,7 +200,7 @@ export default function QuitSmokingWithNicotinePatchPage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           A slip is common. Contain it and return to plan the same day. Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -226,11 +227,13 @@ export default function QuitSmokingWithNicotinePatchPage() {
         />
         <Link
           href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Withdrawal timeline →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-with-nicotine-patch_footer" />
+
 </div>
   );
 }

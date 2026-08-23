@@ -40,7 +40,7 @@ export const AUTHOR = {
 
 export const MEDICAL_REVIEWER = {
   name: "Blou editorial team",
-  role: "Reviewed against NHS, CDC, and WHO public guidance",
+  role: "Health content reviewed against NHS, CDC, WHO, and US Surgeon General public guidance",
   url: `${SITE_URL}/about#editorial`,
 } as const;
 

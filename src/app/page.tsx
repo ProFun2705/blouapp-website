@@ -5,7 +5,6 @@ import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { SocialProof } from "@/components/marketing/SocialProof";
-import { MobileStickyBadge } from "@/components/marketing/MobileStickyBadge";
 import { AndroidWaitlistCard } from "@/components/marketing/AndroidWaitlistCard";
 import { QuitCalendar } from "@/components/marketing/QuitCalendar";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
@@ -71,6 +70,11 @@ const pillarLinks = [
     href: "/prepare-to-quit-smoking",
     label: "Prepare to quit smoking",
     description: "The 7-day checklist before your quit date.",
+  },
+  {
+    href: "/compare",
+    label: "Compare quit apps",
+    description: "Blou vs Kwit, Smoke Free, and head-to-head matchups.",
   },
   {
     href: "/best-quit-smoking-apps",
@@ -143,14 +147,20 @@ export default function HomePage() {
             <QuitCalendar />
           </div>
           <div className="relative mx-auto w-full max-w-[220px]">
-            <Image
-              src="/product/blou-phone-streak.jpg"
-              alt="Blou on iPhone showing a smoke-free streak and a month calendar with days marked off"
-              width={900}
-              height={1600}
-              priority
-              className="h-auto w-full"
-            />
+            <figure>
+              <Image
+                src="/product/blou-phone-streak.jpg"
+                alt="Example iPhone view of Blou: a smoke-free streak and a month calendar with days marked off"
+                width={900}
+                height={1600}
+                priority
+                className="h-auto w-full"
+              />
+              <figcaption className="mt-2 text-xs text-teal-900/70">
+                Example product view. Replace with App Store screenshots when
+                they land.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -288,8 +298,6 @@ export default function HomePage() {
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} jsonLdId="faq-home" />
       </section>
-
-      <MobileStickyBadge campaign="landing_sticky_mobile" />
     </div>
   );
 }

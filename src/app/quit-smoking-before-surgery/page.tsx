@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking before surgery: timeline, risks, and support",
+  title: "Quit smoking before surgery: timeline",
   description:
     "Why quitting before surgery matters, typical anesthesia team expectations, how far ahead to plan, and how apps and quitlines help—always follow your surgical team.",
   path: "/quit-smoking-before-surgery",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingBeforeSurgeryPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking before surgery: timeline, risks, and support",
+    title: "Quit smoking before surgery: timeline",
     description:
       "Preoperative smoking cessation overview with emphasis on clinician guidance.",
     path: "/quit-smoking-before-surgery",
@@ -106,7 +107,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
           />
           <Link
             href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             7-day prep checklist →
           </Link>
@@ -124,7 +125,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking before surgery: timeline, risks, and support"
+        name="Quit smoking before surgery: timeline"
         path="/quit-smoking-before-surgery"
       />
 
@@ -146,7 +147,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Why teams care</h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Smoking affects circulation, airway reactivity, and healing. Your team
           may connect you with hospital-based cessation resources—take them.
           General education:{" "}
@@ -167,7 +168,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Build a simple plan</h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>Write down your surgery date and the team’s nicotine rules.</li>
           <li>
             Use{" "}
@@ -226,11 +227,13 @@ export default function QuitSmokingBeforeSurgeryPage() {
         />
         <Link
           href="/motivation-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Motivation toolkit →
         </Link>
       </div>
+<ArticleConversionFooter campaign="quit-smoking-before-surgery_footer" />
+
 </div>
   );
 }

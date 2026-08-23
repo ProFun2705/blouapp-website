@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Motivation to quit smoking: turn feelings into a dated plan",
+  title: "Motivation to quit smoking: dated plan",
   description:
     "Motivation spikes and fades—use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
   path: "/motivation-to-quit-smoking",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function MotivationToQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Motivation to quit smoking: turn feelings into a dated plan",
+    title: "Motivation to quit smoking: dated plan",
     description:
       "How to convert motivation into a quit plan with dates, support, and tracking.",
     path: "/motivation-to-quit-smoking",
@@ -99,7 +100,7 @@ export default function MotivationToQuitSmokingPage() {
           <AppStoreBadgeLink campaign="pillar_motivation" placement="article_intro" />
           <Link
             href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             7-day prep →
           </Link>
@@ -116,7 +117,7 @@ export default function MotivationToQuitSmokingPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Motivation to quit smoking: turn feelings into a dated plan"
+        name="Motivation to quit smoking: dated plan"
         path="/motivation-to-quit-smoking"
       />
 
@@ -140,7 +141,7 @@ export default function MotivationToQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Write reasons that survive cravings
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -177,7 +178,7 @@ export default function MotivationToQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Stack systems, not slogans
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Follow{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -218,11 +219,13 @@ export default function MotivationToQuitSmokingPage() {
         />
         <Link
           href="/best-quit-smoking-apps"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Compare apps →
         </Link>
       </div>
+<ArticleConversionFooter campaign="motivation-to-quit-smoking_footer" />
+
 </div>
   );
 }

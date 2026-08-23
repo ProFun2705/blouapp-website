@@ -126,6 +126,21 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
   - Added 10 new routes under `src/app/*/page.tsx` and registered them in `src/lib/staticRoutes.ts` so they appear in the sitemap.
   - Verified `npm run build` succeeds and the routes are included in the build output.
 
+## Visual overhaul (August 2026)
+
+Direction: Wall calendar X-out (Impeccable seed `935e98d8`, assigned index 3). Your pick still beats the roll; this is the locked world.
+
+Shipped:
+- Semantic tokens in `src/app/globals.css` (paper/ink/mark; teal utilities remapped). Skip link, `#main`, focus ring, dark tokens, reduced-motion kill switch.
+- Header: 64px ink bar, overflow menu, no wrap. Cookie then sticky download. Custom `not-found`.
+- Homepage: split hero (copy + calendar + labeled example phone). Numbered feature list, 2-up tools, TOC of 4. No invented ratings.
+- Article shell: `.masthead` / `.section-block` / `ArticleShell`. Related links capped at 4. Canonical debug stripped. Comparisons use choose-if + `<table>`.
+- Tools: tabular nums, `aria-live`, country switcher, lung × + “reached”.
+- Waitlist fails closed on non-OK. Cookie consent starts `unknown`.
+- `PRODUCT.md` (init) and `DESIGN.md` + `.impeccable/design.json` (from the built world).
+
+Asset still needed from you: real iPhone screenshots (streak, craving timer, savings) to replace `public/product/blou-phone-streak.jpg`.
+
 ## SEO growth batch 2 (May 2026) — 15 new pages
 
 ### 7 new static pages (`src/app/<slug>/page.tsx` + `staticRoutes.ts`)
@@ -161,9 +176,26 @@ All are `category: "symptom"` guides targeting missing withdrawal symptom search
 - 189 static pages generated (up from ~173).
 - All 15 new pages appear in the build output.
 
-## SEO skill audit (August 2026)
+## Marketing skills audit (August 2026)
 
-Executor implemented the from-scratch audit plan. Code changes:
+Executor implemented the full marketing-skills plan:
+
+- Installed 49 skills from `coreyhaines31/marketingskills` into `.agents/skills/`
+- Created `.agents/product-marketing.md` (canonical v2 context)
+- Created `src/lib/track-event.ts` — GA4 + Amplitude parity for badge, waitlist, calculator events
+- `ContentPageStickyBadge` in root layout (site-wide sticky CTA; decoupled from cookie consent)
+- `ArticleConversionFooter` on ~53 pillar pages + `ArticleShell` footer on `/how-to-quit-smoking`
+- Trimmed all over-long title tags (`npm run seo:check` — zero warnings)
+- `src/lib/competitors.ts` + refactored 6 `/blou-vs-*` pages to shared `BlouVsPageContent`
+- New `/compare` hub + 3 competitor-pair pages (`/kwit-vs-smoke-free`, etc.)
+- `public/llms.txt` + `public/llms-full.txt`
+- About page App Store CTA + expanded editorial review copy
+- `.agents/tracking-plan.md` with GA4 conversion marking checklist
+
+Verified: `npm run seo:check` passes (70 static routes); `npm run build` succeeds (193 pages).
+
+Pending (manual / assets): official App Store screenshots for homepage; live social profiles for `SOCIAL_PROFILE_URLS`; GSC/Bing/IndexNow ops per tracking-plan checklist.
+
 
 - Added `src/components/marketing/SpeakableJsonLd.tsx` so ~55 pillar pages that already imported it can compile.
 - Shared `src/lib/countryHreflang.ts` used by sitemap and calculator metadata (Vietnam/Indonesia no longer collide on `"en"`). Removed the redundant `hreflang` field from `countryData.ts`.
@@ -195,6 +227,13 @@ Verified: `npm run seo:check` passes (title-length warnings only); `npm run buil
   - Please spot-check `/calculators/vietnam` and `/calculators/indonesia` hreflang tags, and that `/privacy` / `/terms` show `noindex`.
   - Please confirm this workstream can be marked complete.
 
+## Visual overhaul — Executor notes
+
+- Completed all plan phases 0–5 in this pass (user asked to finish every to-do). Latest `npm run build` passed (189 pages).
+- Please spot-check on a phone: header stays one row; accept/decline cookies, then confirm the sticky download appears and does not stack with the cookie sheet.
+- Please replace the labeled example product image with real App Store screenshots when you have them.
+- Planner confirmation still required before calling the overhaul “done” in the project status board (Executor does not mark the workstream complete).
+
 ## GoDaddy DNS records to add (for tryblou.com)
 
 - In GoDaddy → Domain → DNS → Records:
@@ -218,4 +257,8 @@ Verified: `npm run seo:check` passes (title-length warnings only); `npm run buil
 - `AppStoreBadgePlacement` type only accepts specific string literals: `"landing_hero"`, `"landing_sticky_mobile"`, `"article_intro"`, `"article_footer_card"`, `"tool_money_calculator"`, `"tool_lung_recovery"`, `"tools_index"`, `"calculators_index"`, and the template literal `` `country_calculator_${string}` ``. Do not use `"article_mid"` or other ad-hoc strings—they'll fail TypeScript checking.
 - Do not import `@/components/marketing/SpeakableJsonLd` without creating that file; a missing component breaks `npm run build` across every pillar page.
 - Country calculator hreflang must go through `countryHreflang()` / `calculatorLanguageAlternates()`. Hand-set `"en"` on two countries silently drops one alternate in `<head>`.
-- `.cursor/**` is gitignored; new Cursor rules must be allow-listed (see `.gitignore` `!.cursor/rules/`) or they will not ship with the repo.
+- Remap Tailwind `teal-*` in `@theme` to restyle 68 pages; do not rewrite class names one file at a time.
+- Write `DESIGN.md` after the visual world ships, not before. Cookie consent must initialize as `"unknown"`, not `GRANTED`. Waitlist must throw when `!res.ok`.
+- Do not drop `AUTHOR` / `MEDICAL_REVIEWER` imports when wrapping guides in `ArticleShell` — JSON-LD still needs them.
+- Do not invent App Store ratings or testimonials; the listing has no public overview.
+

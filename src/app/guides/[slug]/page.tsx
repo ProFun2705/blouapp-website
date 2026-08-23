@@ -237,7 +237,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         <h2 className="text-xl font-semibold text-teal-950">
           What to expect next
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           {guide.whatToExpectNext.map((item) => (
             <li key={item} className="flex gap-2">
               <span aria-hidden className="mt-1 text-teal-600">•</span>
@@ -298,19 +298,19 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/guides"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← All guides
         </Link>
         <Link
           href="/best-quit-smoking-apps"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 bg-white px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 bg-white px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Compare the best quit apps
         </Link>
         <Link
           href="/tools"
-          className="inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
+          className="inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
         >
           Open quit tools
         </Link>

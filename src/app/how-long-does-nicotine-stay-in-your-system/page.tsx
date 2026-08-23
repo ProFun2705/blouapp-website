@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
 const MODIFIED = "2026-05-20";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How long does nicotine stay in your system? (blood, urine, saliva)",
+  title: "How long does nicotine stay in your system?",
   description:
     "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
   path: "/how-long-does-nicotine-stay-in-your-system",
@@ -67,7 +68,7 @@ const faqItems = [
 
 export default function HowLongDoesNicotineStayInSystemPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How long does nicotine stay in your system? (blood, urine, saliva)",
+    title: "How long does nicotine stay in your system?",
     description:
       "A detailed breakdown of nicotine and cotinine detection times by test type, with a quitting timeline.",
     path: "/how-long-does-nicotine-stay-in-your-system",
@@ -113,7 +114,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Withdrawal timeline →
           </Link>
@@ -132,7 +133,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="How long does nicotine stay in your system? (blood, urine, saliva)"
+        name="How long does nicotine stay in your system?"
         path="/how-long-does-nicotine-stay-in-your-system"
       />
 
@@ -156,14 +157,14 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Nicotine vs cotinine: why the distinction matters
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           When you smoke, your liver converts most nicotine into cotinine within
           hours. Nicotine itself has a short half-life (about 1–2 hours), so
           direct nicotine levels fall quickly. Cotinine, however, has a half-life
           of 16–19 hours, which is why it remains detectable long after nicotine
           has cleared.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Most drug tests for "nicotine" actually measure cotinine because it
           stays in the system longer and is a more reliable indicator of recent
           tobacco or nicotine product use. Important: cotinine from NRT (patches,
@@ -179,7 +180,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Detection windows by test type
         </h2>
-        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">Blood:</span>
             <span>
@@ -225,12 +226,12 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Nicotine clearance and the withdrawal connection
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           The timeline of nicotine clearing from your body maps directly onto
           withdrawal symptoms. Understanding this helps you anticipate what
           you&apos;ll feel and when:
         </p>
-        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">Hours 1–8:</span>
             <span>
@@ -291,7 +292,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Factors that affect how long nicotine stays in your system
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -354,11 +355,13 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         />
         <Link
           href="/guides/what-happens-after-3-days"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Day 3 milestone guide →
         </Link>
       </div>
+<ArticleConversionFooter campaign="how-long-does-nicotine-stay-in-your-system_footer" />
+
 </div>
   );
 }

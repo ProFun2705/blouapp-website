@@ -11,12 +11,13 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Free quit smoking app (actually usable): what to look for",
+  title: "Free quit smoking app: what to look for",
   description:
     "Looking for a free quit smoking app? Here’s what “free” should include (tracker, cravings, savings, milestones) and the red flags that make quitting harder.",
   path: "/free-quit-smoking-app",
@@ -61,7 +62,7 @@ const faqItems = [
 
 export default function FreeQuitSmokingAppPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Free quit smoking app (actually usable): what to look for",
+    title: "Free quit smoking app: what to look for",
     description:
       "How to choose a genuinely free quit smoking app that supports cravings, tracking, and long-term quitting.",
     path: "/free-quit-smoking-app",
@@ -102,7 +103,7 @@ export default function FreeQuitSmokingAppPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Read the step-by-step quit plan →
           </Link>
@@ -120,7 +121,7 @@ export default function FreeQuitSmokingAppPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Free quit smoking app (actually usable): what to look for"
+        name="Free quit smoking app: what to look for"
         path="/free-quit-smoking-app"
       />
 
@@ -144,7 +145,7 @@ export default function FreeQuitSmokingAppPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What a free quit app should include
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -197,7 +198,7 @@ export default function FreeQuitSmokingAppPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Red flags (avoid these)
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-amber-600">•</span>
             <span>
@@ -236,7 +237,7 @@ export default function FreeQuitSmokingAppPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How to use a free app to quit (simple loop)
         </h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>
             <strong>Set a quit date</strong> within 7–14 days and prepare with{" "}
             <Link
@@ -280,11 +281,13 @@ export default function FreeQuitSmokingAppPage() {
         />
         <Link
           href="/best-quit-smoking-apps"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Compare the best quit apps →
         </Link>
       </div>
+<ArticleConversionFooter campaign="free-quit-smoking-app_footer" />
+
 </div>
   );
 }

@@ -11,6 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -99,7 +100,7 @@ export default function NrtAndQuitSmokingAppPage() {
           <AppStoreBadgeLink campaign="pillar_nrt_app" placement="article_intro" />
           <Link
             href="/quit-smoking-with-nicotine-patch"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Patch plan →
           </Link>
@@ -138,7 +139,7 @@ export default function NrtAndQuitSmokingAppPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Who does what</h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -167,7 +168,7 @@ export default function NrtAndQuitSmokingAppPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Daily loop (week 1)</h2>
-        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
           <li>Morning: confirm NRT per label + open app for the day counter.</li>
           <li>During cravings: timer → move → water → replacement.</li>
           <li>
@@ -205,11 +206,13 @@ export default function NrtAndQuitSmokingAppPage() {
         />
         <Link
           href="/smoking-cessation-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Cessation app guide →
         </Link>
       </div>
+<ArticleConversionFooter campaign="nrt-and-quit-smoking-app_footer" />
+
 </div>
   );
 }

@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { LungRecoveryTimeline } from "@/components/blou/LungRecoveryTimeline";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
+import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 import {
   buildHowToJsonLd,
   buildMetadata,
@@ -147,7 +148,7 @@ export default function LungRecoveryToolPage() {
             <li key={step.name} className="flex gap-3">
               <span
                 aria-hidden
-                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full border border-teal-300 text-xs font-semibold text-teal-900"
+                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-sm border border-teal-300 text-xs font-semibold text-teal-900"
               >
                 {index + 1}
               </span>
@@ -224,17 +225,19 @@ export default function LungRecoveryToolPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/tools"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← All tools
         </Link>
         <Link
           href="/guides"
-          className="inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
+          className="inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
         >
           Read milestone guides
         </Link>
       </div>
+<ArticleConversionFooter campaign="tools_lung-recovery_footer" />
+
 </div>
   );
 }

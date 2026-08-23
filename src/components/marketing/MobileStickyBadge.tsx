@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
-import { ANALYTICS_CONSENT_STORAGE_KEY } from "@/lib/analytics-consent";
 
 type Props = {
   campaign: string;
@@ -12,21 +11,10 @@ type Props = {
 const STORAGE_KEY = "blou_sticky_badge_dismissed_at";
 const DISMISS_TTL_MS = 1000 * 60 * 60 * 24 * 7;
 
-function cookieIsPending() {
-  try {
-    return !window.localStorage.getItem(ANALYTICS_CONSENT_STORAGE_KEY);
-  } catch {
-    return true;
-  }
-}
-
 export function MobileStickyBadge({ campaign }: Props) {
   const [visible, setVisible] = useState(false);
-  const [cookieBlocked, setCookieBlocked] = useState(true);
 
   useEffect(() => {
-    setCookieBlocked(cookieIsPending());
-
     try {
       const value = window.localStorage.getItem(STORAGE_KEY);
       if (value) {
@@ -47,12 +35,8 @@ export function MobileStickyBadge({ campaign }: Props) {
     };
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    const onConsent = () => setCookieBlocked(cookieIsPending());
-    window.addEventListener("blou:analytics-consent-changed", onConsent);
-
     return () => {
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("blou:analytics-consent-changed", onConsent);
     };
   }, []);
 
@@ -65,7 +49,7 @@ export function MobileStickyBadge({ campaign }: Props) {
     setVisible(false);
   }
 
-  if (!visible || cookieBlocked) return null;
+  if (!visible) return null;
 
   return (
     <div

@@ -115,7 +115,7 @@ export default function QuittingSmokingAfter40Page() {
           />
           <Link
             href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             7-day prep checklist →
           </Link>
@@ -176,7 +176,7 @@ export default function QuittingSmokingAfter40Page() {
         <h2 className="text-xl font-semibold text-teal-950">
           Is quitting smoking after 40 still worth it?
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Quitting smoking after 40 is still worth it because the major killers
           tied to tobacco—heart disease, stroke, and several cancers—are driven
           by continued exposure. The{" "}
@@ -191,7 +191,7 @@ export default function QuittingSmokingAfter40Page() {
           is explicit that timelines for recovery begin at cessation, not at
           some younger birthday you missed.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           That does not mean risk snaps back to “never smoked.” It means each
           smoke-free year buys probability: fewer acute events, slower lung
           decline than continued smoking, and more room for exercise, sleep,
@@ -206,14 +206,14 @@ export default function QuittingSmokingAfter40Page() {
         <h2 className="text-xl font-semibold text-teal-950">
           What changes first in your body when you quit?
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Within hours to days, carbon monoxide clears and circulation improves
           for many people—often before you emotionally “feel” like a non-smoker.
           Over weeks, cough and airway irritation can fluctuate as cilia wake
           back up; that paradoxical “worse before better” phase surprises some
           midlife quitters who read it as failure instead of repair.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -242,14 +242,14 @@ export default function QuittingSmokingAfter40Page() {
         <h2 className="text-xl font-semibold text-teal-950">
           How do NRT and prescription medications fit midlife?
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Combination nicotine replacement (patch plus fast-acting gum or
           lozenge) is a first-line strategy for many adults. Varenicline and
           bupropion can outperform placebo substantially, but both deserve a
           medication review when you take blood pressure drugs, psychiatric
           medicines, or anything that affects the liver.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -272,14 +272,14 @@ export default function QuittingSmokingAfter40Page() {
         <h2 className="text-xl font-semibold text-teal-950">
           How do you quit when life is already stressful?
         </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           Waiting for a calm month is a trap—there is always a deadline, a kid
           event, or a boss crisis. Instead, lower the difficulty bar: shrink the
           first week’s goals to “no cigarettes” rather than also remaking diet,
           sleep, and exercise perfectly. Stack support: quitline, clinician, app
           check-ins, and one friend who will answer a text at craving o’clock.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           If your smoking is tightly braided with alcohol or social nights, read{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -290,7 +290,7 @@ export default function QuittingSmokingAfter40Page() {
           before quit day so you are not improvising that pattern while
           nicotine is leaving your system.
         </p>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+        <p className="mt-3 text-base leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -313,7 +313,7 @@ export default function QuittingSmokingAfter40Page() {
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
           <li>
             Chest pain, fainting, severe shortness of breath, or coughing blood
             when you change smoking habits—get urgent care; do not assume it is
@@ -385,7 +385,7 @@ export default function QuittingSmokingAfter40Page() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← Full quit plan
         </Link>

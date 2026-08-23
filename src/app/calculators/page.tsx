@@ -79,9 +79,9 @@ export default function CalculatorsIndexPage() {
           <Link
             key={c.slug}
             href={`/calculators/${c.slug}`}
-            className="flex flex-col section-block transition hover:-translate-y-0.5 hover:shadow-md"
+            className="flex flex-col section-block"
           >
-            <p className="text-[11px] font-semibold uppercase tracking-wide text-teal-700">
+            <p className="text-sm font-medium text-teal-700">
               Calculator
             </p>
             <h2 className="mt-1 text-lg font-semibold text-teal-950">{c.name}</h2>
@@ -108,7 +108,7 @@ export default function CalculatorsIndexPage() {
         </p>
         <Link
           href="/tools/money-saved"
-          className="mt-4 inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
+          className="mt-4 inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
         >
           Open global calculator
         </Link>
