@@ -1,5 +1,5 @@
 ---
-description: Blou SEO agent playbook for organic pages, sitemap, hreflang, and IndexNow
+description: Blou SEO agent playbook for organic pages, sitemap, and hreflang
 alwaysApply: true
 ---
 
@@ -50,11 +50,8 @@ Do **not** add `/privacy` or `/terms` to the sitemap; those pages are `noindex`.
 
 1. Run `npm run seo:check` (must pass; title-length notes are warnings).
 2. Run `npm run build` (must succeed).
-3. After production deploy, IndexNow runs from `.github/workflows/indexnow.yml` on push to `main`. Manual trigger:
-   - All URLs: `curl -X POST -H "x-indexnow-secret: $INDEXNOW_SECRET" https://tryblou.com/api/indexnow`
-   - Or specific: body `{ "urls": ["https://tryblou.com/your-slug"] }`
-4. Spot-check structured data in [Google Rich Results Test](https://search.google.com/test/rich-results).
-5. Confirm the URL appears in `https://tryblou.com/sitemap.xml` (unless `noindex`).
+3. Spot-check structured data in [Google Rich Results Test](https://search.google.com/test/rich-results).
+4. Confirm the URL appears in `https://tryblou.com/sitemap.xml` (unless `noindex`).
 
 ## Title / description guidelines
 

@@ -81,7 +81,7 @@ You purchased a domain and created a local folder for the website, but nothing i
 - [x] Sitemap & SEO improvements (code) — see "SEO improvement workstream" below
 - [x] Sitemap & SEO improvements (manual one-time actions) — see "SEO improvement workstream" below
 - [x] SEO growth workstream: create 10 new high-converting organic pages (Executor)
-- [x] SEO skill audit (Aug 2026): SpeakableJsonLd, hreflang helper, noindex legal pages, seo:check, IndexNow Action, related-pillar map
+- [x] SEO skill audit (Aug 2026): SpeakableJsonLd, hreflang helper, noindex legal pages, seo:check, related-pillar map
 
 ## SEO improvement workstream (May 2026)
 
@@ -93,7 +93,6 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
 - `src/app/sitemap.ts` now uses stable per-route `lastModified`, drops `changeFrequency`/`priority` (Google ignores them), adds image entries pointing to per-guide OG, and adds hreflang `alternates.languages` across all country calculators (each derived from `country.locale`).
 - New `published?: boolean` and `dateReviewed?: string` fields on `BlouGuide` (default published). Drafts are now excluded from the sitemap, the `/guides` index, `RelatedGuides`, and `generateStaticParams` for `/guides/[slug]`.
 - `metadata.verification` in `src/app/layout.tsx` reads `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` and `NEXT_PUBLIC_BING_SITE_VERIFICATION`.
-- IndexNow plumbing: `/indexnow` (key file route, reads `INDEXNOW_KEY`), `POST /api/indexnow` (gated by `x-indexnow-secret` header; defaults to `INDEXNOW_KEY` if `INDEXNOW_SECRET` is unset). Submits all canonical URLs by default, or a custom list via JSON body.
 - `ORG_JSON_LD.sameAs` now accepts a `SOCIAL_PROFILE_URLS` list in `src/lib/site.ts` (currently empty; uncomment entries as profiles go live).
 - `buildArticleJsonLd` accepts `dateReviewed` → emitted as `lastReviewed` for YMYL pages. Wired through `src/app/guides/[slug]/page.tsx` so a guide can declare its own review date.
 
@@ -104,11 +103,7 @@ Plan source: `.cursor/plans/sitemap_and_seo_improvements_3922ab44.plan.md`.
    - `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` — copy the `content` value from GSC → Settings → Ownership → "HTML tag" method.
    - `NEXT_PUBLIC_BING_SITE_VERIFICATION` — copy the `content` value from Bing → Settings → "Add a site" → Meta tag.
    - Redeploy after setting.
-4. **IndexNow env vars in Vercel**:
-   - `INDEXNOW_KEY` — generate with `openssl rand -hex 16` in a terminal (any random hex string ≥ 8 chars works). Paste the output here.
-   - `INDEXNOW_SECRET` — optional. If unset, `INDEXNOW_KEY` doubles as the API gate.
-   - After deploy, verify the key file is live: `curl https://tryblou.com/indexnow` → should print the key. Then submit all URLs once with: `curl -X POST -H "x-indexnow-secret: <YOUR_KEY>" https://tryblou.com/api/indexnow`.
-5. **Drafts**: when starting a new guide that isn't ready, set `published: false` on the entry in `src/lib/blouGuides.ts`. Remove the field (or set `true`) when ready to ship.
+4. **Drafts**: when starting a new guide that isn't ready, set `published: false` on the entry in `src/lib/blouGuides.ts`. Remove the field (or set `true`) when ready to ship.
 
 # Current Status / Progress Tracking
 
@@ -194,7 +189,7 @@ Executor implemented the full marketing-skills plan:
 
 Verified: `npm run seo:check` passes (70 static routes); `npm run build` succeeds (193 pages).
 
-Pending (manual / assets): official App Store screenshots for homepage; live social profiles for `SOCIAL_PROFILE_URLS`; GSC/Bing/IndexNow ops per tracking-plan checklist.
+Pending (manual / assets): official App Store screenshots for homepage; live social profiles for `SOCIAL_PROFILE_URLS`; GSC/Bing ops per tracking-plan checklist.
 
 
 - Added `src/components/marketing/SpeakableJsonLd.tsx` so ~55 pillar pages that already imported it can compile.
@@ -203,7 +198,6 @@ Pending (manual / assets): official App Store screenshots for homepage; live soc
 - `.cursor/rules/blou-seo.mdc` is tracked (gitignore allow-list for `.cursor/rules/`).
 - `npm run seo:check` (`scripts/seo-check.mjs`) validates routes, noindex, unique hreflang, guide fields, related-pillar map.
 - `RELATED_PILLAR_SLUGS` + `RELATED_LINK_MAP` cover all shipped content pillars.
-- `.github/workflows/indexnow.yml` POSTs to `/api/indexnow` after `main` deploys.
 
 Verified: `npm run seo:check` passes (title-length warnings only); `npm run build` succeeds (189 pages).
 
@@ -223,7 +217,6 @@ Verified: `npm run seo:check` passes (title-length warnings only); `npm run buil
   - Next step is to implement the 10 recommended slugs as routes, then run `npm run build` and ask you to spot-check the pages in the browser.
 
 - SEO skill audit (please confirm):
-  - Please add GitHub Actions secret `INDEXNOW_SECRET` with the same value as Vercel `INDEXNOW_SECRET` (or `INDEXNOW_KEY` if that is what gates `/api/indexnow`). Without it the new workflow will fail on push to `main`.
   - Please spot-check `/calculators/vietnam` and `/calculators/indonesia` hreflang tags, and that `/privacy` / `/terms` show `noindex`.
   - Please confirm this workstream can be marked complete.
 
