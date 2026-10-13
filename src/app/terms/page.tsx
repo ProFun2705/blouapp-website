@@ -7,7 +7,6 @@ export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
   description: "Terms of service for the Blou quit smoking tracker app and tryblou.com website.",
   path: "/terms",
-  noindex: true,
 });
 
 export default function TermsPage() {

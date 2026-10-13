@@ -7,7 +7,6 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -111,12 +110,6 @@ export default function BestQuitSmokingAppForBeginnersPage() {
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Best quit smoking app for beginners: what to download first"
-        path="/best-quit-smoking-app-for-beginners"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

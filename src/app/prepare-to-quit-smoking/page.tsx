@@ -7,7 +7,6 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import {
   buildArticleJsonLd,
@@ -165,12 +164,6 @@ export default function PrepareToQuitPage() {
           { id: "related-guides", label: "Related reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="How to prepare to quit smoking: 7-day checklist"
-        path="/prepare-to-quit-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

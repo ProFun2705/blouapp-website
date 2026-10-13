@@ -79,9 +79,8 @@ You purchased a domain and created a local folder for the website, but nothing i
 - [ ] Step 5: Content workflow in Cursor (pages and optional MDX posts)
 - [x] Install Google tag (GA4) on all pages
 - [x] Sitemap & SEO improvements (code) — see "SEO improvement workstream" below
-- [x] Sitemap & SEO improvements (manual one-time actions) — see "SEO improvement workstream" below
+- [ ] Sitemap & SEO improvements (manual one-time actions) — see "SEO improvement workstream" below
 - [x] SEO growth workstream: create 10 new high-converting organic pages (Executor)
-- [x] SEO skill audit (Aug 2026): SpeakableJsonLd, hreflang helper, noindex legal pages, seo:check, IndexNow Action, related-pillar map
 
 ## SEO improvement workstream (May 2026)
 
@@ -161,20 +160,6 @@ All are `category: "symptom"` guides targeting missing withdrawal symptom search
 - 189 static pages generated (up from ~173).
 - All 15 new pages appear in the build output.
 
-## SEO skill audit (August 2026)
-
-Executor implemented the from-scratch audit plan. Code changes:
-
-- Added `src/components/marketing/SpeakableJsonLd.tsx` so ~55 pillar pages that already imported it can compile.
-- Shared `src/lib/countryHreflang.ts` used by sitemap and calculator metadata (Vietnam/Indonesia no longer collide on `"en"`). Removed the redundant `hreflang` field from `countryData.ts`.
-- `/privacy` and `/terms` are `noindex` and removed from `staticRoutes.ts` / sitemap.
-- `.cursor/rules/blou-seo.mdc` is tracked (gitignore allow-list for `.cursor/rules/`).
-- `npm run seo:check` (`scripts/seo-check.mjs`) validates routes, noindex, unique hreflang, guide fields, related-pillar map.
-- `RELATED_PILLAR_SLUGS` + `RELATED_LINK_MAP` cover all shipped content pillars.
-- `.github/workflows/indexnow.yml` POSTs to `/api/indexnow` after `main` deploys.
-
-Verified: `npm run seo:check` passes (title-length warnings only); `npm run build` succeeds (189 pages).
-
 # Executor's Feedback or Assistance Requests
 
 - Please verify analytics is receiving events:
@@ -189,11 +174,6 @@ Verified: `npm run seo:check` passes (title-length warnings only); `npm run buil
 - For the 10 new pages workstream:
   - I’m using the existing page template/style (Metadata + JSON-LD + QuickAnswer + TOC + FAQ + strong App Store CTA).
   - Next step is to implement the 10 recommended slugs as routes, then run `npm run build` and ask you to spot-check the pages in the browser.
-
-- SEO skill audit (please confirm):
-  - Please add GitHub Actions secret `INDEXNOW_SECRET` with the same value as Vercel `INDEXNOW_SECRET` (or `INDEXNOW_KEY` if that is what gates `/api/indexnow`). Without it the new workflow will fail on push to `main`.
-  - Please spot-check `/calculators/vietnam` and `/calculators/indonesia` hreflang tags, and that `/privacy` / `/terms` show `noindex`.
-  - Please confirm this workstream can be marked complete.
 
 ## GoDaddy DNS records to add (for tryblou.com)
 
@@ -216,6 +196,3 @@ Verified: `npm run seo:check` passes (title-length warnings only); `npm run buil
 - If you see `npm warn EBADENGINE` during installs, prefer using an LTS Node version (usually Node 22) to avoid tooling incompatibilities.
 - If Vercel deploys fail with a team access / git author error, create a new commit using your GitHub `users.noreply.github.com` email and redeploy.
 - `AppStoreBadgePlacement` type only accepts specific string literals: `"landing_hero"`, `"landing_sticky_mobile"`, `"article_intro"`, `"article_footer_card"`, `"tool_money_calculator"`, `"tool_lung_recovery"`, `"tools_index"`, `"calculators_index"`, and the template literal `` `country_calculator_${string}` ``. Do not use `"article_mid"` or other ad-hoc strings—they'll fail TypeScript checking.
-- Do not import `@/components/marketing/SpeakableJsonLd` without creating that file; a missing component breaks `npm run build` across every pillar page.
-- Country calculator hreflang must go through `countryHreflang()` / `calculatorLanguageAlternates()`. Hand-set `"en"` on two countries silently drops one alternate in `<head>`.
-- `.cursor/**` is gitignored; new Cursor rules must be allow-listed (see `.gitignore` `!.cursor/rules/`) or they will not ship with the repo.

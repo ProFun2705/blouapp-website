@@ -7,7 +7,6 @@ import { TableOfContents } from "@/components/site/TableOfContents";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { buildArticleJsonLd, buildHowToJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
@@ -150,12 +149,6 @@ export default function ISmokedOneCigarettePage() {
           { id: "related-guides", label: "Related reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="I smoked one cigarette—what to do next"
-        path="/i-smoked-one-cigarette"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

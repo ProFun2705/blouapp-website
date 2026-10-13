@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -188,12 +187,6 @@ export default function AlcoholAndQuittingSmokingPage() {
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Alcohol and quitting smoking: what to know (2026)"
-        path="/alcohol-and-quitting-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox

@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -152,12 +151,6 @@ export default function QuittingSmokingAfter50Page() {
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quitting smoking in your 50s: plan, benefits, and screening"
-        path="/quitting-smoking-after-50"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
