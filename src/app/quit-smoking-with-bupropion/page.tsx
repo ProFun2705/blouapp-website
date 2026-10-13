@@ -11,7 +11,6 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -107,7 +106,7 @@ export default function QuitSmokingWithBupropionPage() {
           />
           <Link
             href="/quit-smoking-with-varenicline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Varenicline overview →
           </Link>
@@ -146,7 +145,7 @@ export default function QuitSmokingWithBupropionPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Behavior layer</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Medication does not erase learned triggers. Build your cue plan with{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -211,13 +210,11 @@ export default function QuitSmokingWithBupropionPage() {
         />
         <Link
           href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           NRT + app →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-with-bupropion_footer" />
-
 </div>
   );
 }

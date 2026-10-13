@@ -12,7 +12,6 @@ import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { slugifyForSection } from "@/lib/slugify";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-03-10";
 const MODIFIED = "2026-04-20";
@@ -189,49 +188,49 @@ export default function BestQuitSmokingAppsPage() {
           </span>
           <Link
             href="/blou-vs-flamy"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Blou vs Flamy
           </Link>
           <Link
             href="/blou-vs-quit-genius"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Blou vs Quit Genius
           </Link>
           <Link
             href="/quit-smoking-app-android"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Android apps
           </Link>
           <Link
             href="/smoking-cessation-app"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Cessation apps
           </Link>
           <Link
             href="/nrt-and-quit-smoking-app"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             NRT + app
           </Link>
           <Link
             href="/first-week-quit-smoking"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Week 1 playbook
           </Link>
           <Link
             href="/best-quit-smoking-app-for-beginners"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Beginner apps
           </Link>
           <Link
             href="/quit-smoking-on-a-budget"
-            className="rounded-sm border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+            className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
           >
             Quit on a budget
           </Link>
@@ -331,7 +330,7 @@ export default function BestQuitSmokingAppsPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How we picked these
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Available in English with an active development cadence in 2025–2026.</span></li>
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Tracks day counter and at least one of: money saved, cravings, health milestones.</span></li>
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Has a free tier that is usable long-term (no 3-day trial walls).</span></li>
@@ -350,19 +349,17 @@ export default function BestQuitSmokingAppsPage() {
       <div className="scroll-mt-24 flex flex-wrap gap-3">
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Read the quit plan
         </Link>
         <Link
           href="/tools"
-          className="inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
+          className="inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
         >
           Open quit tools
         </Link>
       </div>
-<ArticleConversionFooter campaign="best-quit-smoking-apps_footer" />
-
 </div>
   );
 }

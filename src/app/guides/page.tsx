@@ -151,9 +151,9 @@ export default function GuidesIndexPage() {
             <li key={guide.slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-            className="block border border-teal-200 px-4 py-3 text-sm text-teal-900 hover:bg-teal-50"
+                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
               >
-                <span className="block text-xs font-medium text-teal-700">
+                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
                   Milestone
                 </span>
                 <span className="mt-1 block font-medium">{guide.title}</span>
@@ -178,9 +178,9 @@ export default function GuidesIndexPage() {
             <li key={guide.slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-            className="block border border-teal-200 px-4 py-3 text-sm text-teal-900 hover:bg-teal-50"
+                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
               >
-                <span className="block text-xs font-medium text-teal-700">
+                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
                   Symptom
                 </span>
                 <span className="mt-1 block font-medium">{guide.title}</span>
@@ -207,9 +207,9 @@ export default function GuidesIndexPage() {
               <li key={item.slug}>
                 <Link
                   href={item.href}
-              className="block border border-teal-200 px-4 py-3 text-sm text-teal-900 hover:bg-teal-50"
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
                 >
-                  <span className="block text-xs font-medium text-teal-700">
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
                     Relapse guide
                   </span>
                   <span className="mt-1 block font-medium">{item.title}</span>

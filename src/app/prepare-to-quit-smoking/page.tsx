@@ -17,7 +17,6 @@ import {
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-03-05";
 const MODIFIED = "2026-04-20";
@@ -149,7 +148,7 @@ export default function PrepareToQuitPage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Read the full quit plan →
           </Link>
@@ -191,7 +190,7 @@ export default function PrepareToQuitPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           The 7-day prep checklist
         </h2>
-        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
           {days.map((day) => (
             <li key={day.name}>
               <p className="font-semibold text-teal-950">{day.name}</p>
@@ -296,8 +295,6 @@ export default function PrepareToQuitPage() {
           ]}
         />
       </section>
-<ArticleConversionFooter campaign="prepare-to-quit-smoking_footer" />
-
 </div>
   );
 }

@@ -12,13 +12,12 @@ import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nicotine withdrawal timeline: days 1–30",
+  title: "Nicotine withdrawal timeline (days 1–30): what to expect",
   description:
     "A simple nicotine withdrawal timeline from day 1 to day 30: cravings, sleep, mood, and what helps. Includes links to day-by-day milestones and symptom guides.",
   path: "/nicotine-withdrawal-timeline",
@@ -105,7 +104,7 @@ const timeline = [
 
 export default function NicotineWithdrawalTimelinePage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Nicotine withdrawal timeline: days 1–30",
+    title: "Nicotine withdrawal timeline (days 1–30): what to expect",
     description:
       "A practical withdrawal timeline with what to expect and what to do at each stage.",
     path: "/nicotine-withdrawal-timeline",
@@ -148,7 +147,7 @@ export default function NicotineWithdrawalTimelinePage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Read the full quit plan →
           </Link>
@@ -166,7 +165,7 @@ export default function NicotineWithdrawalTimelinePage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Nicotine withdrawal timeline: days 1–30"
+        name="Nicotine withdrawal timeline (days 1–30): what to expect"
         path="/nicotine-withdrawal-timeline"
       />
 
@@ -197,11 +196,11 @@ export default function NicotineWithdrawalTimelinePage() {
               className="rounded-2xl border border-teal-200 p-5"
             >
               <h3 className="text-base font-semibold text-teal-950">{t.range}</h3>
-              <p className="mt-2 text-base leading-7 text-teal-900/90">
+              <p className="mt-2 text-sm leading-7 text-teal-900/90">
                 <span className="font-medium text-teal-950">What you might feel:</span>{" "}
                 {t.whatYouMightFeel}
               </p>
-              <p className="mt-2 text-base leading-7 text-teal-900/90">
+              <p className="mt-2 text-sm leading-7 text-teal-900/90">
                 <span className="font-medium text-teal-950">What helps:</span>{" "}
                 {t.whatHelps}
               </p>
@@ -210,7 +209,7 @@ export default function NicotineWithdrawalTimelinePage() {
                   <Link
                     key={l.href}
                     href={l.href}
-                    className="inline-flex h-9 items-center justify-center rounded-sm border border-teal-200 bg-white px-4 text-xs font-medium text-teal-900 transition hover:bg-teal-50"
+                    className="inline-flex h-9 items-center justify-center rounded-full border border-teal-200 bg-white px-4 text-xs font-medium text-teal-900 transition hover:bg-teal-50"
                   >
                     {l.label} →
                   </Link>
@@ -226,7 +225,7 @@ export default function NicotineWithdrawalTimelinePage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">What helps most</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -299,13 +298,11 @@ export default function NicotineWithdrawalTimelinePage() {
         />
         <Link
           href="/quit-smoking-tracker"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Use a quit tracker →
         </Link>
       </div>
-<ArticleConversionFooter campaign="nicotine-withdrawal-timeline_footer" />
-
 </div>
   );
 }

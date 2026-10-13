@@ -11,7 +11,6 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -98,7 +97,7 @@ export default function QuitSmokingTrackerPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/tools/money-saved"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Calculate money saved →
           </Link>
@@ -143,7 +142,7 @@ export default function QuitSmokingTrackerPage() {
             <p className="text-sm font-medium text-teal-700">
               1) Smoke-free time
             </p>
-            <p className="mt-2 text-base leading-7 text-teal-900/90">
+            <p className="mt-2 text-sm leading-7 text-teal-900/90">
               This is your “north star” metric. Pair it with milestones like{" "}
               <Link
                 className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -158,7 +157,7 @@ export default function QuitSmokingTrackerPage() {
             <p className="text-sm font-medium text-teal-700">
               2) Cravings
             </p>
-            <p className="mt-2 text-base leading-7 text-teal-900/90">
+            <p className="mt-2 text-sm leading-7 text-teal-900/90">
               Timestamp them. Most cravings last minutes; seeing the pattern
               builds confidence. Use{" "}
               <Link
@@ -174,7 +173,7 @@ export default function QuitSmokingTrackerPage() {
             <p className="text-sm font-medium text-teal-700">
               3) Cues
             </p>
-            <p className="mt-2 text-base leading-7 text-teal-900/90">
+            <p className="mt-2 text-sm leading-7 text-teal-900/90">
               Your top three cues (coffee, driving, after meals) are predictable.
               Prepare for them using{" "}
               <Link
@@ -190,7 +189,7 @@ export default function QuitSmokingTrackerPage() {
             <p className="text-sm font-medium text-teal-700">
               4) Money saved
             </p>
-            <p className="mt-2 text-base leading-7 text-teal-900/90">
+            <p className="mt-2 text-sm leading-7 text-teal-900/90">
               Savings makes the benefit tangible. Track it and spend a portion on
               recovery rewards (food, gym, experiences). Start with{" "}
               <Link
@@ -212,7 +211,7 @@ export default function QuitSmokingTrackerPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How to track (first 14 days)
         </h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>
             Log your first craving each day and use a timer. You’re teaching
             your brain the wave ends.
@@ -236,7 +235,7 @@ export default function QuitSmokingTrackerPage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Treat a slip as a signal to update the plan, not a verdict. Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -263,13 +262,11 @@ export default function QuitSmokingTrackerPage() {
         />
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Read the quit plan →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-tracker_footer" />
-
 </div>
   );
 }

@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Trying to quit smoking again: smarter plan",
+  title: "Trying to quit smoking again: a smarter second (or fifth) attempt",
   description:
     "Multiple quit attempts are normal. Here’s how to learn from the last one—new quit date, cue fixes, medication review, and slip protocols.",
   path: "/trying-to-quit-smoking-again",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function TryingToQuitSmokingAgainPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Trying to quit smoking again: smarter plan",
+    title: "Trying to quit smoking again: a smarter second (or fifth) attempt",
     description:
       "How to retry quitting smoking with a structured plan after previous attempts.",
     path: "/trying-to-quit-smoking-again",
@@ -103,7 +102,7 @@ export default function TryingToQuitSmokingAgainPage() {
           <AppStoreBadgeLink campaign="pillar_try_again" placement="article_intro" />
           <Link
             href="/how-to-stop-a-relapse"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Stop a relapse →
           </Link>
@@ -120,7 +119,7 @@ export default function TryingToQuitSmokingAgainPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Trying to quit smoking again: smarter plan"
+        name="Trying to quit smoking again: a smarter second (or fifth) attempt"
         path="/trying-to-quit-smoking-again"
       />
 
@@ -142,7 +141,7 @@ export default function TryingToQuitSmokingAgainPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Mini post-mortem</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Answer in one line each: What day did cravings spike? What cue broke
           me? Did alcohol matter? Then open{" "}
           <Link
@@ -160,7 +159,7 @@ export default function TryingToQuitSmokingAgainPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Upgrade one layer</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -225,13 +224,11 @@ export default function TryingToQuitSmokingAgainPage() {
         />
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Full quit plan →
         </Link>
       </div>
-<ArticleConversionFooter campaign="trying-to-quit-smoking-again_footer" />
-
 </div>
   );
 }

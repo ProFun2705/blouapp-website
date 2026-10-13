@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
 const MODIFIED = "2026-05-20";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Health benefits of quitting smoking",
+  title: "Health benefits of quitting smoking: what happens to your body",
   description:
     "The health benefits of quitting smoking begin within 20 minutes and compound for decades. Here's a full timeline from hours to 15 years.",
   path: "/health-benefits-of-quitting-smoking",
@@ -68,7 +67,7 @@ const faqItems = [
 
 export default function HealthBenefitsOfQuittingSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Health benefits of quitting smoking",
+    title: "Health benefits of quitting smoking: what happens to your body",
     description:
       "A full timeline of the health benefits of quitting smoking, from minutes to decades.",
     path: "/health-benefits-of-quitting-smoking",
@@ -114,7 +113,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Withdrawal timeline →
           </Link>
@@ -135,7 +134,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Health benefits of quitting smoking"
+        name="Health benefits of quitting smoking: what happens to your body"
         path="/health-benefits-of-quitting-smoking"
       />
 
@@ -159,7 +158,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Minutes to 24 hours: immediate changes
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">20–30 min:</span>
             <span>
@@ -199,7 +198,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Days 1–7: senses and airways
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">48 hours:</span>
             <span>
@@ -255,7 +254,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Weeks 2–12: lung and circulation recovery
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">2 weeks:</span>
             <span>
@@ -311,7 +310,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Months to 15 years: long-term disease risk
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">6 months:</span>
             <span>
@@ -387,13 +386,13 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Mental health benefits
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Many smokers believe cigarettes help manage stress. The evidence shows
           the opposite long-term: nicotine creates the anxiety and stress it
           temporarily relieves. After the withdrawal period (typically 2–6
           weeks), most ex-smokers report:
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>Lower baseline anxiety and stress levels.</span>
@@ -411,7 +410,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
             <span>Improved self-efficacy and confidence from having quit.</span>
           </li>
         </ul>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           See:{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -437,13 +436,13 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Financial benefits
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The financial benefits of quitting compound just like the health ones.
           An average smoker of 10 cigarettes a day can save $1,500–$3,000 per
           year. A pack-a-day smoker saves $3,500–$6,000+ per year depending on
           their country and local cigarette prices.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use the{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -470,13 +469,11 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         />
         <Link
           href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Withdrawal timeline →
         </Link>
       </div>
-<ArticleConversionFooter campaign="health-benefits-of-quitting-smoking_footer" />
-
 </div>
   );
 }

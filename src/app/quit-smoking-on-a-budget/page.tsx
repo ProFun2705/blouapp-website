@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking on a budget: free support",
+  title: "Quit smoking on a budget: free support + smart spending",
   description:
     "How to quit when money is tight: free quitlines, OTC NRT strategies to discuss with a pharmacist, generic meds, and free quit apps that still work.",
   path: "/quit-smoking-on-a-budget",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function QuitSmokingOnABudgetPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking on a budget: free support",
+    title: "Quit smoking on a budget: free support + smart spending",
     description:
       "Budget-conscious strategies for quitting smoking with free and low-cost support.",
     path: "/quit-smoking-on-a-budget",
@@ -96,7 +95,7 @@ export default function QuitSmokingOnABudgetPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_budget" placement="article_intro" />
-          <Link href="/tools/money-saved" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/tools/money-saved" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Money saved tool →
           </Link>
         </div>
@@ -112,7 +111,7 @@ export default function QuitSmokingOnABudgetPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking on a budget: free support"
+        name="Quit smoking on a budget: free support + smart spending"
         path="/quit-smoking-on-a-budget"
       />
 
@@ -130,7 +129,7 @@ export default function QuitSmokingOnABudgetPage() {
 
       <section id="free" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Free first</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Quitline coaching (country-specific).</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>NHS/CDC reading lists linked from /how-to-quit-smoking.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Community accountability that does not shame slips.</span></li>
@@ -139,7 +138,7 @@ export default function QuitSmokingOnABudgetPage() {
 
       <section id="spend" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Where spending helps</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Relapse costs more than a patch box. Compare{" "}
           <Link className="font-medium text-teal-800 underline" href="/nicotine-patch-vs-gum">
             patch vs gum
@@ -162,12 +161,10 @@ export default function QuitSmokingOnABudgetPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_budget" placement="article_footer_card" />
-        <Link href="/best-quit-smoking-apps" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/best-quit-smoking-apps" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           App comparisons →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-on-a-budget_footer" />
-
 </div>
   );
 }

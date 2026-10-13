@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CountrySwitcher } from "@/components/blou/CountrySwitcher";
-import { trackEvent } from "@/lib/track-event";
 
 type MoneySavedCalculatorProps = {
   defaultCigarettesPerDay?: number;
@@ -31,7 +30,13 @@ function track(
   eventName: string,
   params: Record<string, string | number | undefined>,
 ) {
-  trackEvent(eventName, params);
+  if (typeof window === "undefined") return;
+  const anyWindow = window as unknown as {
+    gtag?: (...args: unknown[]) => void;
+  };
+  if (typeof anyWindow.gtag === "function") {
+    anyWindow.gtag("event", eventName, params);
+  }
 }
 
 export function MoneySavedCalculator({

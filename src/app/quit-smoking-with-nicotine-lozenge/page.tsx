@@ -11,7 +11,6 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -103,7 +102,7 @@ export default function QuitSmokingWithNicotineLozengePage() {
           <AppStoreBadgeLink campaign="pillar_lozenge" placement="article_intro" />
           <Link
             href="/nrt-and-quit-smoking-app"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             NRT + app →
           </Link>
@@ -142,7 +141,7 @@ export default function QuitSmokingWithNicotineLozengePage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">When lozenges help</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Lozenges shine when you need portable, discreet relief. Compare with{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -166,7 +165,7 @@ export default function QuitSmokingWithNicotineLozengePage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Behavior loop</h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>Cue fires → start timer → use label-appropriate NRT if in plan.</li>
           <li>Still urge-heavy → do a 2-minute replacement walk or water.</li>
           <li>
@@ -197,13 +196,11 @@ export default function QuitSmokingWithNicotineLozengePage() {
         />
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Full quit plan →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-with-nicotine-lozenge_footer" />
-
 </div>
   );
 }

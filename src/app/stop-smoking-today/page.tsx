@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Stop smoking today: same-day checklist",
+  title: "Stop smoking today: same-day checklist (then book week one)",
   description:
     "If you mean “today” literally: dispose of cigarettes, pick your next action for cravings, call a quitline, install a tracker—and set a formal quit date if you still need prep.",
   path: "/stop-smoking-today",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function StopSmokingTodayPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Stop smoking today: same-day checklist",
+    title: "Stop smoking today: same-day checklist (then book week one)",
     description:
       "Same-day checklist to stop smoking and set up support for week one.",
     path: "/stop-smoking-today",
@@ -97,7 +96,7 @@ export default function StopSmokingTodayPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_stop_today" placement="article_intro" />
-          <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Or: 7-day prep first →
           </Link>
         </div>
@@ -112,7 +111,7 @@ export default function StopSmokingTodayPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Stop smoking today: same-day checklist"
+        name="Stop smoking today: same-day checklist (then book week one)"
         path="/stop-smoking-today"
       />
 
@@ -130,7 +129,7 @@ export default function StopSmokingTodayPage() {
 
       <section id="checklist" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Checklist</h2>
-        <ol className="mt-4 list-decimal space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Trash ashtrays; bag butts; wash jacket pockets.</li>
           <li>Pre-decide your first three craving moves.</li>
           <li>Block tonight’s risk (alcohol, party) or plan an exit.</li>
@@ -148,12 +147,10 @@ export default function StopSmokingTodayPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_stop_today" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Full plan →
         </Link>
       </div>
-<ArticleConversionFooter campaign="stop-smoking-today_footer" />
-
 </div>
   );
 }

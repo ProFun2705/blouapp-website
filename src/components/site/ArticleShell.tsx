@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Byline } from "@/components/marketing/Byline";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 type ArticleMastheadProps = {
   kicker?: string;
@@ -72,20 +71,8 @@ export function ArticleSection({
 
 type ArticleShellProps = {
   children: ReactNode;
-  /** When set, renders a StayOnTrackCard footer before the article ends. */
-  conversionFooterCampaign?: string;
 };
 
-export function ArticleShell({
-  children,
-  conversionFooterCampaign,
-}: ArticleShellProps) {
-  return (
-    <article className="flex flex-col gap-8">
-      {children}
-      {conversionFooterCampaign ? (
-        <ArticleConversionFooter campaign={conversionFooterCampaign} />
-      ) : null}
-    </article>
-  );
+export function ArticleShell({ children }: ArticleShellProps) {
+  return <article className="flex flex-col gap-8">{children}</article>;
 }

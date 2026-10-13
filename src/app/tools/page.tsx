@@ -105,9 +105,9 @@ export default function ToolsIndexPage() {
           <Link
             key={tool.href}
             href={tool.href}
-            className="block section-block"
+            className="block section-block transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            <p className="text-sm font-medium text-teal-700">
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-teal-700">
               {tool.badge}
             </p>
             <h2 className="mt-1 text-lg font-semibold text-teal-950">

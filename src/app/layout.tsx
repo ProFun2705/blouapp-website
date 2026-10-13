@@ -4,7 +4,6 @@ import { Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import { AmplitudeAnalytics } from "@/components/site/AmplitudeAnalytics";
 import { AnalyticsListeners } from "@/components/site/AnalyticsListeners";
 import { CookieConsent } from "@/components/site/CookieConsent";
-import { ContentPageStickyBadge } from "@/components/marketing/ContentPageStickyBadge";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SkipLink } from "@/components/site/SkipLink";
@@ -173,7 +172,6 @@ export default function RootLayout({
         <SiteFooter />
         <AmplitudeAnalytics />
         <AnalyticsListeners />
-        <ContentPageStickyBadge />
         <CookieConsent />
       </body>
     </html>

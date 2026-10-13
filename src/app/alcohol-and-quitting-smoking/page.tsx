@@ -152,7 +152,7 @@ export default function AlcoholAndQuittingSmokingPage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Open the full quit plan →
           </Link>
@@ -213,7 +213,7 @@ export default function AlcoholAndQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Why does alcohol trigger cigarette cravings?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Nicotine withdrawal is only part of the story. Much of long-term
           smoking is{" "}
           <strong>conditioned learning</strong>: the same places, people,
@@ -221,7 +221,7 @@ export default function AlcoholAndQuittingSmokingPage() {
           in that chain, so when blood alcohol rises, your brain predicts a
           smoke next—even when nicotine is already leaving your system.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Public health summaries on tobacco dependence describe repeated pairing
           of cues with nicotine as a core mechanism that makes quitting
           behaviorally hard, not only chemically hard (
@@ -245,7 +245,7 @@ export default function AlcoholAndQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Can you drink while you are quitting smoking?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           There is no universal ban. The useful question is risk timing. Early
           cessation is when your brain is re-writing routines. The{" "}
           <a
@@ -260,7 +260,7 @@ export default function AlcoholAndQuittingSmokingPage() {
           days often means choosing easier battles than your heaviest drinking
           night in week one.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If alcohol has never been tightly linked to your smoking, moderate
           drinking may be less destabilizing than for someone whose every Friday
           ended with a pack. Honesty beats bravado: name your pattern, then
@@ -276,14 +276,14 @@ export default function AlcoholAndQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How should you plan nights out in early quit?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Treat the evening like an athlete treats a game: warm up, set
           boundaries, debrief. Arrive late or leave early the first times you
           test a high-risk venue. Bring nicotine replacement if your clinician
           recommended it—having gum in your pocket beats negotiating with a
           drunk version of yourself at 1 a.m.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -304,7 +304,7 @@ export default function AlcoholAndQuittingSmokingPage() {
           so a single drunk cigarette does not turn into a week-long story that
           you “already ruined it.”
         </p>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           {firstMonthSteps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -321,14 +321,14 @@ export default function AlcoholAndQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How can friends help without nagging?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The best support is specific. Ask for a text at 10 p.m., not a lecture
           on statistics. Ask hosts to keep the patio door closed so smoke does
           not drift to your seat. If someone offers you “just one” while
           drinking, a one-line script you rehearsed sober beats improvising
           while buzzed.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If your social circle equates fun with smoking, you are not obligated
           to educate everyone on quit night. You can simply leave early, host
           yourself, or stack several alcohol-free weeks until the physical
@@ -336,7 +336,7 @@ export default function AlcoholAndQuittingSmokingPage() {
           same as abandoning friends—it is sequencing risk so your new habits get
           a fair trial.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Blou is built for these micro-moments: logging a craving after a
           drink, swapping scripts with your past self, and seeing that slips are
           data—not destiny. Pair that with the{" "}
@@ -358,7 +358,7 @@ export default function AlcoholAndQuittingSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>
             You cannot cut down alcohol on your own, or you drink in ways that
             already worry you—dual dependence deserves coordinated care.
@@ -374,7 +374,7 @@ export default function AlcoholAndQuittingSmokingPage() {
             clinician-led.
           </li>
         </ul>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -445,7 +445,7 @@ export default function AlcoholAndQuittingSmokingPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← Back to quit plan
         </Link>

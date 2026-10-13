@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
 
 export const metadata: Metadata = buildMetadata({
-  title: "First week quit smoking: habits that hold",
+  title: "First week quit smoking: hour-by-hour habits that hold",
   description:
     "What to expect in week one after quitting smoking: withdrawal peaks, cue storms, sleep, and how a tracker + plan keep you from negotiating with cravings.",
   path: "/first-week-quit-smoking",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function FirstWeekQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "First week quit smoking: habits that hold",
+    title: "First week quit smoking: hour-by-hour habits that hold",
     description:
       "Practical habits for the first week after quitting smoking.",
     path: "/first-week-quit-smoking",
@@ -98,7 +97,7 @@ export default function FirstWeekQuitSmokingPage() {
           <AppStoreBadgeLink campaign="pillar_first_week" placement="article_intro" />
           <Link
             href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Withdrawal timeline →
           </Link>
@@ -115,7 +114,7 @@ export default function FirstWeekQuitSmokingPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="First week quit smoking: habits that hold"
+        name="First week quit smoking: hour-by-hour habits that hold"
         path="/first-week-quit-smoking"
       />
 
@@ -139,7 +138,7 @@ export default function FirstWeekQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What to optimize each day
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -178,7 +177,7 @@ export default function FirstWeekQuitSmokingPage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use{" "}
           <Link className="font-medium text-teal-800 underline" href="/i-smoked-one-cigarette">
             the first-hour playbook
@@ -197,12 +196,10 @@ export default function FirstWeekQuitSmokingPage() {
 
       <div className="flex flex-wrap items-center gap-3">
         <AppStoreBadgeLink campaign="pillar_first_week" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Prep checklist →
         </Link>
       </div>
-<ArticleConversionFooter campaign="first-week-quit-smoking_footer" />
-
 </div>
   );
 }

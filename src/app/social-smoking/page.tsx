@@ -19,7 +19,7 @@ const PUBLISHED = "2026-04-27";
 const MODIFIED = "2026-04-27";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Social smoking: am I addicted?",
+  title: "Social smoking: am I addicted if I only smoke sometimes?",
   description:
     "“Only on weekends” still exposes you to nicotine and smoking diseases. Learn how social patterns become dependence, what to track, and how to quit without a pack-a-day label.",
   path: "/social-smoking",
@@ -59,7 +59,7 @@ const faqItems = [
 
 export default function SocialSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Social smoking: am I addicted?",
+    title: "Social smoking: am I addicted if I only smoke sometimes?",
     description:
       "Risks and patterns of intermittent smoking, cue conditioning, and evidence-based quit paths without waiting for a pack-a-day label.",
     path: "/social-smoking",
@@ -108,7 +108,7 @@ export default function SocialSmokingPage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Build a quit plan →
           </Link>
@@ -145,7 +145,7 @@ export default function SocialSmokingPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Social smoking: am I addicted?"
+        name="Social smoking: am I addicted if I only smoke sometimes?"
         path="/social-smoking"
       />
 
@@ -169,13 +169,13 @@ export default function SocialSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Is social smoking still addiction?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Clinicians diagnose tobacco use disorder along severity bands—not only
           “two packs a day.” If you crave cigarettes on Friday afternoon before
           you even see friends, or feel irritable on the weekends you skip
           smoking, your brain is already negotiating with nicotine on a clock.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -198,7 +198,7 @@ export default function SocialSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What are the health risks of occasional smoking?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Public health summaries emphasize that quitting entirely yields the
           largest benefit. The{" "}
           <a
@@ -213,7 +213,7 @@ export default function SocialSmokingPage() {
           smoking as a stable endpoint. For heart attack risk, even low-rate
           smoking moves biomarkers and vessel function compared with not smoking.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you tell yourself “at least I’m not like…” you may delay quitting
           until numbers worsen. A cleaner frame: compare future you to smoke-free
           weeks, not to a heavier smoker.
@@ -227,13 +227,13 @@ export default function SocialSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Which patterns predict escalation from social to daily?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Watch for creeping frequency: two nights a month becomes every weekend,
           then “just one with coffee.” Watch for borrowing cigarettes instead of
           buying—financial denial often tracks with dependence denial. Watch for
           smoking alone after you swore you only smoke socially.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If alcohol is always in the story, read{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -267,14 +267,14 @@ export default function SocialSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           How do you quit if you never bought a pack?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Name your real triggers: certain friends, venues, or “permission
           nights.” Pre-decide alcohol limits or alcohol-free weeks while you
           break the pairing. Tell your crew you are not smoking tonight—specific
           beats vague. If you fear awkwardness, practice a one-sentence boundary
           while sober.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -289,7 +289,7 @@ export default function SocialSmokingPage() {
           patterns across weekends helps you believe the problem is real enough
           to invest in.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -312,7 +312,7 @@ export default function SocialSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>
             You want to quit social smoking before pregnancy or surgery and need
             a medication plan timed to those events.
@@ -383,7 +383,7 @@ export default function SocialSmokingPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/best-quit-smoking-apps"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Compare quit apps
         </Link>

@@ -148,7 +148,7 @@ export default function HowToStopARelapsePage() {
           />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Re-open the quit plan →
           </Link>
@@ -205,7 +205,7 @@ export default function HowToStopARelapsePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What is the difference between a slip and a full relapse?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           A <strong>slip</strong> is often one or a few cigarettes before you
           interrupt the chain. A <strong>relapse</strong> is when daily smoking
           returns for a stretch—days to weeks—and cues re-tighten around nicotine
@@ -219,7 +219,7 @@ export default function HowToStopARelapsePage() {
           </Link>
           .
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The distinction matters because the intervention depth differs. Slips
           need fast behavioral containment; relapses usually need medication
           review plus bigger environmental changes—not only “try harder.”
@@ -233,7 +233,7 @@ export default function HowToStopARelapsePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What steps stop a relapse fastest?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Speed beats pride. The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -247,7 +247,7 @@ export default function HowToStopARelapsePage() {
           quit success rates across populations—exactly the stack you want after
           a relapse, not a lonelier version of the attempt that just failed.
         </p>
-        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
           {recoverySteps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -264,7 +264,7 @@ export default function HowToStopARelapsePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Should you restart medications after a relapse?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           In most cases, yes—if they were safe for you before and you stopped
           them only because you “failed.” Nicotine patches, gum, lozenges,
           varenicline, and bupropion each have eligibility nuances. The{" "}
@@ -279,7 +279,7 @@ export default function HowToStopARelapsePage() {
           is a reminder that every day off cigarettes buys health; medications
           are tools to compress the time you spend climbing back out.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If alcohol moved from occasional to heavy during your relapse, tell
           your prescriber before restarting certain drugs. See{" "}
           <Link
@@ -299,7 +299,7 @@ export default function HowToStopARelapsePage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>
             You want to quit again but feel physically ill when you try to
             lower cigarettes—withdrawal can be medically managed.
@@ -313,7 +313,7 @@ export default function HowToStopARelapsePage() {
             escalating substance use—ask for urgent coordinated care.
           </li>
         </ul>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
           Global burden data from the{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -384,7 +384,7 @@ export default function HowToStopARelapsePage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/prepare-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← Prep checklist
         </Link>

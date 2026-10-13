@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking app for Android + waitlist",
+  title: "Quit smoking app for Android: options today + Blou waitlist",
   description:
     "Looking for a quit smoking app on Android? Here are solid cross-platform picks today, plus how to join the Blou Android waitlist if you want our tracker next.",
   path: "/quit-smoking-app-android",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function QuitSmokingAppAndroidPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking app for Android + waitlist",
+    title: "Quit smoking app for Android: options today + Blou waitlist",
     description:
       "Android quit smoking app options and the Blou Android waitlist.",
     path: "/quit-smoking-app-android",
@@ -98,13 +97,13 @@ export default function QuitSmokingAppAndroidPage() {
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Link
             href="/#android-waitlist"
-            className="inline-flex h-11 items-center justify-center rounded-sm bg-teal-700 px-5 text-sm font-medium text-white transition hover:bg-teal-800"
+            className="inline-flex h-11 items-center justify-center rounded-full bg-teal-700 px-5 text-sm font-medium text-white transition hover:bg-teal-800"
           >
             Join Blou Android waitlist →
           </Link>
           <Link
             href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
             >
             Compare Android apps →
           </Link>
@@ -121,7 +120,7 @@ export default function QuitSmokingAppAndroidPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking app for Android + waitlist"
+        name="Quit smoking app for Android: options today + Blou waitlist"
         path="/quit-smoking-app-android"
       />
 
@@ -145,7 +144,7 @@ export default function QuitSmokingAppAndroidPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Android options today
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Read{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -169,7 +168,7 @@ export default function QuitSmokingAppAndroidPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Blou on iPhone today</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you also have an iPhone, you can use Blou now while you keep your
           Android device for everything else.
         </p>
@@ -196,13 +195,11 @@ export default function QuitSmokingAppAndroidPage() {
         />
         <Link
           href="/#android-waitlist"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Android waitlist →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-app-android_footer" />
-
 </div>
   );
 }

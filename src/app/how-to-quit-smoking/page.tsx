@@ -17,7 +17,6 @@ import {
 } from "@/lib/seo";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
-import { ArticleShell } from "@/components/site/ArticleShell";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-03-01";
@@ -120,7 +119,7 @@ export default function HowToQuitSmokingPage() {
   });
 
   return (
-    <ArticleShell conversionFooterCampaign="how_to_quit_footer">
+    <div className="flex flex-col gap-10">
       <Script id="how-to-quit-article-json-ld" type="application/ld+json">
         {JSON.stringify(articleJsonLd)}
       </Script>
@@ -151,7 +150,7 @@ export default function HowToQuitSmokingPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Start with the 7-day prep →
           </Link>
@@ -191,7 +190,7 @@ export default function HowToQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           The 7-step quit plan
         </h2>
-        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
           {steps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -217,12 +216,12 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="if-you-had-a-slip"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           If you had a slip
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           A single cigarette is a slip, not permission to return to full-time
           smoking. Read{" "}
           <Link
@@ -261,7 +260,7 @@ export default function HowToQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What to do on quit day
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Throw out or lock away remaining cigarettes, lighters, and ashtrays.</span></li>
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Start your NRT or medication as directed.</span></li>
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Tell one person who will check in on days 1, 3, and 7.</span></li>
@@ -277,7 +276,7 @@ export default function HowToQuitSmokingPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Free quit help by country
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li>🇺🇸 US — 1-800-QUIT-NOW and <a className="underline decoration-teal-400 underline-offset-4" href="https://smokefree.gov" target="_blank" rel="noopener noreferrer">smokefree.gov</a></li>
           <li>🇬🇧 UK — NHS <a className="underline decoration-teal-400 underline-offset-4" href="https://www.nhs.uk/better-health/quit-smoking/" target="_blank" rel="noopener noreferrer">Better Health Quit Smoking</a></li>
           <li>🇦🇺 AU — Quitline 13 7848 and <a className="underline decoration-teal-400 underline-offset-4" href="https://www.quit.org.au/" target="_blank" rel="noopener noreferrer">quit.org.au</a></li>
@@ -397,6 +396,6 @@ export default function HowToQuitSmokingPage() {
           <li><a className="underline decoration-teal-400 underline-offset-4" href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank" rel="noopener noreferrer">WHO: Tobacco key facts</a></li>
         </ul>
       </section>
-    </ArticleShell>
+</div>
   );
 }

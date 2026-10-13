@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
 const MODIFIED = "2026-05-20";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking with anxiety: practical guide",
+  title: "How to quit smoking when you have anxiety: a practical guide",
   description:
     "Quitting smoking with anxiety is possible. Learn why anxiety spikes during withdrawal, how long it lasts, and which strategies help the most.",
   path: "/quit-smoking-with-anxiety",
@@ -63,7 +62,7 @@ const faqItems = [
 
 export default function QuitSmokingWithAnxietyPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking with anxiety: practical guide",
+    title: "How to quit smoking when you have anxiety: a practical guide",
     description:
       "A practical guide to quitting smoking with an anxiety disorder or elevated withdrawal anxiety.",
     path: "/quit-smoking-with-anxiety",
@@ -109,7 +108,7 @@ export default function QuitSmokingWithAnxietyPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Full quit plan →
           </Link>
@@ -129,7 +128,7 @@ export default function QuitSmokingWithAnxietyPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Quit smoking with anxiety: practical guide"
+        name="How to quit smoking when you have anxiety: a practical guide"
         path="/quit-smoking-with-anxiety"
       />
 
@@ -153,20 +152,20 @@ export default function QuitSmokingWithAnxietyPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           The nicotine–anxiety cycle
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Nicotine stimulates the release of dopamine and norepinephrine, which
           produces a brief calming effect. But this effect is largely correcting
           withdrawal anxiety caused by the previous cigarette. In other words,
           smoking relieves the discomfort that smoking itself created.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Over time, the baseline anxiety level of a dependent smoker sits
           higher than that of a non-smoker. Each cigarette briefly returns
           anxiety toward normal, reinforcing the false belief that smoking
           "manages" anxiety. This is why many people smoke more during stressful
           periods—the stress and the nicotine cycle amplify each other.
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -204,7 +203,7 @@ export default function QuitSmokingWithAnxietyPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           What to expect in weeks 1–4
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">Day 1–3:</span>
             <span>
@@ -259,7 +258,7 @@ export default function QuitSmokingWithAnxietyPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Strategies that help anxiety during quitting
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -318,20 +317,20 @@ export default function QuitSmokingWithAnxietyPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Medication and NRT considerations
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you have an existing anxiety disorder, quitting with support from a
           clinician is strongly recommended. Some cessation medications (notably
           varenicline and bupropion) have evidence for reducing both tobacco
           craving and anxiety. NRT (patch, gum, lozenge) can reduce withdrawal
           anxiety by moderating nicotine levels during the transition.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you are currently taking medication for anxiety, tell your
           prescriber you're quitting—smoking affects how some drugs (including
           certain antidepressants) are metabolized, and your dose may need
           reviewing.
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -369,11 +368,11 @@ export default function QuitSmokingWithAnxietyPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When to seek care
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Most anxiety during quitting is temporary and manageable. Seek
           professional support if you experience:
         </p>
-        <ul className="mt-3 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>Panic attacks that are severe, prolonged, or increasing in frequency.</span>
@@ -412,13 +411,11 @@ export default function QuitSmokingWithAnxietyPage() {
         />
         <Link
           href="/guides/anxiety"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Anxiety withdrawal guide →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-with-anxiety_footer" />
-
 </div>
   );
 }

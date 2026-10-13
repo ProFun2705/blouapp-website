@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Living with a smoker while quitting",
+  title: "Living with a smoker while quitting: boundaries that work",
   description:
     "If someone at home still smokes, you need air rules, emotional boundaries, and a craving plan that does not depend on their behavior.",
   path: "/living-with-a-smoker-while-quitting",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function LivingWithASmokerWhileQuittingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Living with a smoker while quitting",
+    title: "Living with a smoker while quitting: boundaries that work",
     description:
       "How to quit smoking when someone you live with still smokes.",
     path: "/living-with-a-smoker-while-quitting",
@@ -101,7 +100,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_live_with_smoker" placement="article_intro" />
-          <Link href="/how-to-help-someone-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/how-to-help-someone-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             If you are the supporter →
           </Link>
         </div>
@@ -117,7 +116,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Living with a smoker while quitting"
+        name="Living with a smoker while quitting: boundaries that work"
         path="/living-with-a-smoker-while-quitting"
       />
 
@@ -135,7 +134,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
 
       <section id="boundaries" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">House rules</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Write three rules you both can live with. Revisit after week one when
           withdrawal noise drops. Link out:{" "}
           <Link className="font-medium text-teal-800 underline" href="/social-smoking">
@@ -147,7 +146,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
 
       <section id="escape" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Escape hatches</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Pre-pick a nearby walk loop, a friend to text, and a “I’m stepping out
           for 5” script that is socially acceptable. Combine with{" "}
           <Link className="font-medium text-teal-800 underline" href="/stress-smoking-quit-plan">
@@ -167,12 +166,10 @@ export default function LivingWithASmokerWhileQuittingPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_live_with_smoker" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Prep checklist →
         </Link>
       </div>
-<ArticleConversionFooter campaign="living-with-a-smoker-while-quitting_footer" />
-
 </div>
   );
 }

@@ -1,7 +1,20 @@
 "use client";
 
 import { useEffect } from "react";
-import { trackEvent } from "@/lib/track-event";
+import { trackAmplitudeEvent } from "@/lib/amplitude-sync";
+
+type GtagFn = (...args: unknown[]) => void;
+
+function getGtag(): GtagFn | undefined {
+  if (typeof window === "undefined") return undefined;
+  return (window as unknown as { gtag?: GtagFn }).gtag;
+}
+
+function sendEvent(name: string, params: Record<string, unknown>) {
+  const gtag = getGtag();
+  if (typeof gtag === "function") gtag("event", name, params);
+  void trackAmplitudeEvent(name, params);
+}
 
 function isOutboundLink(anchor: HTMLAnchorElement): boolean {
   if (!anchor.href) return false;
@@ -22,7 +35,7 @@ export function AnalyticsListeners() {
 
       const explicitEvent = el.dataset.event;
       if (explicitEvent) {
-        trackEvent(explicitEvent, {
+        sendEvent(explicitEvent, {
           label: el.dataset.eventLabel ?? "unlabeled",
           href: el.href ?? "",
         });
@@ -35,7 +48,7 @@ export function AnalyticsListeners() {
         } catch {
           host = "unknown";
         }
-        trackEvent("outbound_click", {
+        sendEvent("outbound_click", {
           href: el.href,
           host,
           text: (el.textContent ?? "").trim().slice(0, 60),
@@ -56,7 +69,7 @@ export function AnalyticsListeners() {
       const ratio = scrolled / doc.scrollHeight;
       if (ratio >= 0.75) {
         fired = true;
-        trackEvent("guide_scroll_75", {
+        sendEvent("guide_scroll_75", {
           path: window.location.pathname,
         });
         window.removeEventListener("scroll", onScroll);

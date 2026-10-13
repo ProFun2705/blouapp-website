@@ -11,7 +11,6 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
 const MODIFIED = "2026-05-13";
@@ -107,7 +106,7 @@ export default function VapingAndSmokingTogetherPage() {
           />
           <Link
             href="/quit-vaping"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Quit vaping plan →
           </Link>
@@ -148,7 +147,7 @@ export default function VapingAndSmokingTogetherPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Pick one primary path
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -174,7 +173,7 @@ export default function VapingAndSmokingTogetherPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Track both for one week
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Log time, cue, and which product you used. You are hunting for the
           top three triggers so you can pre-decide replacements—same method as{" "}
           <Link
@@ -202,13 +201,11 @@ export default function VapingAndSmokingTogetherPage() {
         />
         <Link
           href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           NRT + app →
         </Link>
       </div>
-<ArticleConversionFooter campaign="vaping-and-smoking-together_footer" />
-
 </div>
   );
 }

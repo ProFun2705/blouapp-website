@@ -1,7 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { trackEvent } from "@/lib/track-event";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 export function AndroidWaitlistCard() {
   const [email, setEmail] = useState("");
@@ -20,11 +25,13 @@ export function AndroidWaitlistCard() {
         throw new Error("Please enter a valid email address.");
       }
 
-      trackEvent("android_waitlist_signup", {
-        event_category: "conversion",
-        event_label: "android_waitlist",
-        method: "website",
-      });
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "android_waitlist_signup", {
+          event_category: "conversion",
+          event_label: "android_waitlist",
+          method: "website",
+        });
+      }
 
       const res = await fetch("/api/waitlist", {
         method: "POST",

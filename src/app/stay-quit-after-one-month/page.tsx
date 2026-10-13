@@ -11,13 +11,12 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Stay quit after one month: habits that hold",
+  title: "Stay quit after one month: habits that beat “I’m fine now”",
   description:
     "After 30 days, complacency and alcohol cues kill quits. Lock maintenance habits: weekly review, slip protocol, weight/sleep guardrails, and tracker check-ins.",
   path: "/stay-quit-after-one-month",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function StayQuitAfterOneMonthPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Stay quit after one month: habits that hold",
+    title: "Stay quit after one month: habits that beat “I’m fine now”",
     description:
       "Maintenance habits for staying quit after the first month of smoking cessation.",
     path: "/stay-quit-after-one-month",
@@ -97,7 +96,7 @@ export default function StayQuitAfterOneMonthPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_stay_quit_month" placement="article_intro" />
-          <Link href="/how-to-stop-a-relapse" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/how-to-stop-a-relapse" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             Relapse playbook →
           </Link>
         </div>
@@ -112,7 +111,7 @@ export default function StayQuitAfterOneMonthPage() {
         ]}
       />
       <SpeakableJsonLd
-        name="Stay quit after one month: habits that hold"
+        name="Stay quit after one month: habits that beat “I’m fine now”"
         path="/stay-quit-after-one-month"
       />
 
@@ -130,7 +129,7 @@ export default function StayQuitAfterOneMonthPage() {
 
       <section id="weekly" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Weekly review (10 minutes)</h2>
-        <ol className="mt-4 list-decimal space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Any near-misses? What was the 60 seconds before?</li>
           <li>Did alcohol appear? If yes, read /alcohol-and-quitting-smoking again.</li>
           <li>Update one replacement habit that felt weak.</li>
@@ -147,12 +146,10 @@ export default function StayQuitAfterOneMonthPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_stay_quit_month" placement="article_footer_card" />
-        <Link href="/guides/what-happens-after-1-month" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/guides/what-happens-after-1-month" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           1-month milestone guide →
         </Link>
       </div>
-<ArticleConversionFooter campaign="stay-quit-after-one-month_footer" />
-
 </div>
   );
 }

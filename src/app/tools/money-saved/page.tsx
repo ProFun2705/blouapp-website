@@ -14,7 +14,6 @@ import {
 } from "@/lib/seo";
 import { countries } from "@/lib/countryData";
 import { SITE_URL } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking money saved calculator (free)",
@@ -159,7 +158,7 @@ export default function MoneySavedToolPage() {
             <li key={step.name} className="flex gap-3">
               <span
                 aria-hidden
-                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-sm border border-teal-300 text-xs font-semibold text-teal-900"
+                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full border border-teal-300 text-xs font-semibold text-teal-900"
               >
                 {index + 1}
               </span>
@@ -244,8 +243,6 @@ export default function MoneySavedToolPage() {
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} jsonLdId="faq-tool-money-saved" />
       </section>
-<ArticleConversionFooter campaign="tools_money-saved_footer" />
-
 </div>
   );
 }

@@ -12,7 +12,6 @@ import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -104,7 +103,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
           <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
           <Link
             href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
           >
             Read the quit plan →
           </Link>
@@ -145,7 +144,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">The plan (4 pillars)</h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>
             <strong>Stable meals</strong>: don’t skip breakfast/lunch early in a
             quit. Blood sugar swings make cravings louder.
@@ -183,12 +182,12 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         className="scroll-mt-24 section-block"
       >
         <h2 className="text-xl font-semibold text-teal-950">Default snacks</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Choose 2–3 snacks you can keep on hand so you don’t improvise when you
           feel edgy. Examples: yogurt, nuts, fruit + peanut butter, carrots +
           hummus, protein bar.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Tip: spend part of your weekly{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -207,7 +206,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           Cravings vs hunger (fast test)
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Ask: “Would I eat something boring right now?” If yes, you’re likely
           hungry—eat a real snack. If no, it’s likely a cue-based craving—use a
           3-minute timer and a replacement action.
@@ -242,13 +241,11 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         />
         <Link
           href="/quit-smoking-tracker"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Use a quit tracker →
         </Link>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-without-gaining-weight_footer" />
-
 </div>
   );
 }

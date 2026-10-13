@@ -315,26 +315,6 @@ const RELATED_LINK_MAP: Record<
     "How long does nicotine stay in your system?",
     "Symptoms",
   ),
-  [RELATED_PILLAR_SLUGS.compare]: pillarEntry(
-    RELATED_PILLAR_SLUGS.compare,
-    "Compare quit smoking apps",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.kwitVsSmokeFree]: pillarEntry(
-    RELATED_PILLAR_SLUGS.kwitVsSmokeFree,
-    "Kwit vs Smoke Free",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.kwitVsQuitnow]: pillarEntry(
-    RELATED_PILLAR_SLUGS.kwitVsQuitnow,
-    "Kwit vs QuitNow",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.smokeFreeVsQuitnow]: pillarEntry(
-    RELATED_PILLAR_SLUGS.smokeFreeVsQuitnow,
-    "Smoke Free vs QuitNow",
-    "Comparison",
-  ),
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {

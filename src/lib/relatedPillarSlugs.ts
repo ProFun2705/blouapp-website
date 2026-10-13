@@ -65,10 +65,6 @@ export const RELATED_PILLAR_SLUGS = {
   bestQuitSmokingAppForHeavySmokers: "best-quit-smoking-app-for-heavy-smokers",
   healthBenefitsOfQuittingSmoking: "health-benefits-of-quitting-smoking",
   howLongDoesNicotineStayInYourSystem: "how-long-does-nicotine-stay-in-your-system",
-  compare: "compare",
-  kwitVsSmokeFree: "kwit-vs-smoke-free",
-  kwitVsQuitnow: "kwit-vs-quitnow",
-  smokeFreeVsQuitnow: "smoke-free-vs-quitnow",
 } as const;
 
 export type RelatedPillarSlug =

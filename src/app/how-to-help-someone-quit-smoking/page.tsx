@@ -11,7 +11,6 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -101,7 +100,7 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <AppStoreBadgeLink campaign="pillar_help_someone" placement="article_intro" />
-          <Link href="/living-with-a-smoker-while-quitting" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+          <Link href="/living-with-a-smoker-while-quitting" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
             If you live together →
           </Link>
         </div>
@@ -136,7 +135,7 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
 
       <section id="do-list" className="scroll-mt-24 section-block">
         <h2 className="text-xl font-semibold text-teal-950">Do this</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Ask what high-risk situations worry them most—then rehearse scripts.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Offer rides to pharmacy or clinician if NRT/meds are part of the plan.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Celebrate boring wins: first week complete, first craving surfed.</span></li>
@@ -145,7 +144,7 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
 
       <section id="avoid" className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Avoid this</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-amber-600" aria-hidden>•</span><span>“I thought you quit” after a slip—use /i-smoked-one-cigarette framing instead.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-amber-600" aria-hidden>•</span><span>Testing their willpower by smoking around them “to see if they are serious.”</span></li>
         </ul>
@@ -161,12 +160,10 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
 
       <div className="flex flex-wrap gap-3">
         <AppStoreBadgeLink campaign="pillar_help_someone" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
           Prep checklist →
         </Link>
       </div>
-<ArticleConversionFooter campaign="how-to-help-someone-quit-smoking_footer" />
-
 </div>
   );
 }
