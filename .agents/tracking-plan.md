@@ -63,6 +63,7 @@ Apple params: `itsct`, `mttnsubad` match placement.
 - [ ] GSC: submit `https://tryblou.com/sitemap.xml` once
 - [ ] Bing Webmaster: submit sitemap
 - [ ] Vercel env: `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_BING_SITE_VERIFICATION`
+- [ ] Vercel + GitHub Actions: `INDEXNOW_SECRET` aligned with `/api/indexnow` gate
 - [ ] GA4: mark `app_store_badge_click` as conversion
 - [ ] Rich Results Test: spot-check homepage, one guide, one comparison page
 
