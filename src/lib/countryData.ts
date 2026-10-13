@@ -151,7 +151,7 @@ export const countries: CountryCalculator[] = [
       "Vietnam has joined the WHO Framework Convention on Tobacco Control and is tightening advertising, promotion, and sponsorship rules.",
     ],
     popularBrands: ["Vinataba", "Craven A", "Marlboro"],
-    hreflang: "en",
+    hreflang: "en-VN",
   },
   {
     slug: "indonesia",
@@ -185,7 +185,7 @@ export const countries: CountryCalculator[] = [
       "Smoke-free rules exist in some provinces and cities (e.g. Jakarta, Bogor) but enforcement varies.",
     ],
     popularBrands: ["Gudang Garam", "Djarum", "Sampoerna"],
-    hreflang: "en",
+    hreflang: "en-ID",
   },
 ];
 

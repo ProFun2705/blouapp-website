@@ -63,7 +63,7 @@ const faqItems = [
   {
     question: "Do you have tools for cravings or milestones?",
     answer:
-      "The companion Blou iPhone app adds a craving timer, daily streak, and day-by-day milestone unlocks. Downloads are free on the App Store.",
+      "The Blou iPhone app adds a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline. It is a subscription app with a free trial.",
   },
 ] as const;
 
@@ -85,7 +85,7 @@ export default function ToolsIndexPage() {
           prices actually look like.
         </p>
         <div className="mt-6">
-          <AppStoreBadgeLink campaign="tools_index" placement="tools_index" />
+          <AppStoreBadgeLink campaign="tools_index" placement="intro" />
         </div>
       </header>
 

@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_blou-vs-quitstart";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Blou vs quitSTART (2026): CDC app vs Blou — which is better?",
+  title: "Blou vs quitSTART (2026): the CDC app compared",
   description:
-    "Blou vs quitSTART: an honest comparison. Choose Blou for a visual tracker with fast craving tools, or quitSTART for free CDC-backed tips and mood tracking.",
+    "Blou vs quitSTART, honestly compared: Blou is an iPhone subscription app that shows your recovery; quitSTART is a free, government-backed app.",
   path: "/blou-vs-quitstart",
   type: "article",
   publishedTime: PUBLISHED,
@@ -41,7 +42,7 @@ const faqItems = [
   {
     question: "Is Blou better than quitSTART?",
     answer:
-      "They serve slightly different goals. quitSTART is free and officially backed—good for foundational tips and logging. Blou is focused on visual progress, fast craving support, and savings milestones. Try Blou if you want a cleaner daily tracking experience on iPhone.",
+      "They serve slightly different goals. quitSTART is free and officially backed—good for foundational tips and logging. Blou is an iPhone subscription app (with a free trial) focused on showing your own recovery: a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline. If you need something free, quitSTART is the better pick.",
   },
   {
     question: "Is quitSTART free?",
@@ -74,39 +75,30 @@ export default function BlouVsQuitStartPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="blou-vs-quitstart-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Blou vs quitSTART", path: "/blou-vs-quitstart" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Comparison
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Blou vs quitSTART
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Comparison"
+        title="Blou vs quitSTART"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+            See the full apps roundup →
+          </ButtonLink>
+        }
+      >
+        <p>
           We make Blou, so we&apos;re not neutral. quitSTART is a free,
           CDC-backed app with broad appeal. This page compares them so you can
           decide which one fits your quitting style.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            See the full apps roundup →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -114,14 +106,13 @@ export default function BlouVsQuitStartPage() {
           { id: "choose-blou", label: "Choose Blou if…" },
           { id: "choose-quitstart", label: "Choose quitSTART if…" },
           { id: "feature-differences", label: "Feature differences" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Choose quitSTART if you want a completely free, government-backed app with tips, challenges, and mood logging on iOS or Android. Choose Blou if you want a clean visual tracker on iPhone with fast craving tools and health milestone progress."
+          answer="Choose quitSTART if you want a completely free, government-backed app with tips, challenges, and mood logging on iOS or Android. Choose Blou if you are on iPhone, want to see your own recovery (photo timeline, lung checks, SOS craving help), and are fine with a subscription after the free trial."
           facts={[
             "quitSTART was developed with backing from the U.S. National Cancer Institute and is 100% free.",
             "The best app is the one you'll actually open during a craving—speed and clarity matter most.",
@@ -145,21 +136,21 @@ export default function BlouVsQuitStartPage() {
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              You're motivated by health milestones (see{" "}
+              You&apos;re motivated by health milestones (see{" "}
               <Link
                 className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
                 href="/guides/what-happens-after-1-week"
               >
                 what happens after 1 week
               </Link>
-              ) and concrete savings figures.
+              ) and seeing your own recovery in photos and lung checks.
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              You want fast craving support: a timer and a single replacement
-              action you can run in under 3 minutes.
+              You want SOS craving help that is there the second a craving
+              hits.
             </span>
           </li>
           <li className="flex gap-2">
@@ -169,8 +160,20 @@ export default function BlouVsQuitStartPage() {
               tip-of-the-day content.
             </span>
           </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              You&apos;re fine with a subscription once the free trial ends; nothing
+              in Blou works without one.
+            </span>
+          </li>
         </ul>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        If that sounds like you, Blou for iPhone gives you a photo timeline, lung
+        checks, SOS craving help, and every milestone on one visual timeline.
+      </InlineAppCta>
 
       <section
         id="choose-quitstart"
@@ -196,7 +199,7 @@ export default function BlouVsQuitStartPage() {
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
               You value government-backed health messaging and want tips from
-              the Surgeon General's office.
+              the Surgeon General&apos;s office.
             </span>
           </li>
           <li className="flex gap-2">
@@ -220,15 +223,16 @@ export default function BlouVsQuitStartPage() {
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Cost:</strong> quitSTART is free. Blou is free to
-              download with optional premium features.
+              <strong>Cost:</strong> quitSTART is free. Blou is a subscription
+              with a free trial; nothing in the app works without an active
+              subscription.
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Platforms:</strong> quitSTART (iOS + Android). Blou (iOS
-              only in 2026; Android waitlist open).
+              <strong>Platforms:</strong> quitSTART (iOS + Android). Blou
+              (iPhone only for now).
             </span>
           </li>
           <li className="flex gap-2">
@@ -242,8 +246,9 @@ export default function BlouVsQuitStartPage() {
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
               <strong>Focus:</strong> quitSTART provides tips, challenges, and
-              mood logs. Blou focuses on daily tracking, craving speed, and
-              milestone/savings visualization.
+              mood logs. Blou focuses on showing your own recovery: a photo
+              timeline, lung checks, SOS craving help, and every milestone on
+              one visual timeline.
             </span>
           </li>
         </ul>
@@ -267,30 +272,17 @@ export default function BlouVsQuitStartPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-blou-vs-quitstart" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/free-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Best free quit apps →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/blou-vs-quitstart</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+          Compare quit apps →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

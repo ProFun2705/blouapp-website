@@ -1,0 +1,21 @@
+# Blou
+
+> Blou is a quit smoking app for iPhone that shows proof your body is healing: a photo timeline, lung (breath) checks, SOS craving help, personal insights, and every milestone on one visual timeline. It is a subscription app with a free trial; the app's features require an active subscription. iPhone only (iOS 17+); there is no Android version.
+
+The website tryblou.com is free to use. It publishes plain-language quit-smoking guides, checked against public guidance from the NHS, CDC, US Surgeon General, and WHO. It does not replace medical advice.
+
+## Start here
+- [How to quit smoking: step-by-step plan](https://tryblou.com/how-to-quit-smoking)
+- [Nicotine withdrawal timeline, days 1–30](https://tryblou.com/nicotine-withdrawal-timeline)
+- [All guides: milestones and symptoms](https://tryblou.com/guides)
+
+## Tools (free, run in the browser)
+- [Money saved calculator](https://tryblou.com/tools/money-saved)
+- [Lung recovery timeline](https://tryblou.com/tools/lung-recovery)
+- [Cost of smoking calculators by country](https://tryblou.com/calculators)
+
+## Apps compared
+- [Best quit smoking apps in 2026](https://tryblou.com/best-quit-smoking-apps)
+
+## The app
+- [Blou on the App Store](https://apps.apple.com/us/app/quit-smoking-tracker-blou/id6758997298)

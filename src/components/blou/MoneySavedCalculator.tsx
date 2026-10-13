@@ -170,7 +170,7 @@ export function MoneySavedCalculator({
         </label>
       </div>
 
-      <p className="mt-4 text-xs text-teal-900/70">
+      <p className="mt-4 text-xs text-ink-muted">
         Daily spend: <span className="font-medium text-teal-950">
           {formatterPrecise.format(dailySpend)}
         </span>
@@ -195,7 +195,7 @@ export function MoneySavedCalculator({
         })}
       </dl>
 
-      <p className="mt-4 text-[11px] leading-5 text-teal-900/70">
+      <p className="mt-4 text-[11px] leading-5 text-ink-muted">
         Method: pack price ÷ {CIGARETTES_PER_PACK} cigarettes × cigarettes per day × time period.
         Projections assume stable prices and daily usage; actual savings vary with price changes, taxes, and purchase patterns.
       </p>

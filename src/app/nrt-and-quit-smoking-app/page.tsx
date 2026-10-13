@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_nrt-and-quit-smoking-app";
 
 export const metadata: Metadata = buildMetadata({
   title: "NRT and a quit smoking app: how to combine them",
   description:
-    "Use nicotine replacement therapy for baseline withdrawal and a quit app for cues, slips, and visibility. Simple week-by-week habits that keep both tools working together.",
+    "Use NRT for baseline withdrawal and a quit app for cues, slips, and visibility. Simple week-by-week habits that keep both tools working together.",
   path: "/nrt-and-quit-smoking-app",
   type: "article",
   publishedTime: PUBLISHED,
@@ -63,15 +64,11 @@ export default function NrtAndQuitSmokingAppPage() {
     dateModified: MODIFIED,
     author: { name: AUTHOR.name, url: AUTHOR.url },
     reviewer: { name: MEDICAL_REVIEWER.name, url: MEDICAL_REVIEWER.url },
-    isMedical: true,
-    about: { "@type": "MedicalCondition", name: "Tobacco use disorder" },
   });
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="nrt-app-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -79,45 +76,37 @@ export default function NrtAndQuitSmokingAppPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Combination support
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          NRT and a quit smoking app
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Combination support"
+        title="NRT and a quit smoking app"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quit-smoking-with-nicotine-patch" variant="secondary">
+            Patch plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           NRT lowers nicotine withdrawal; a quit app lowers decision fatigue when
           a cue fires. Together they cover “body” and “habit.” This page is a
           simple operating rhythm—not dosing instructions.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_nrt_app" placement="article_intro" />
-          <Link
-            href="/quit-smoking-with-nicotine-patch"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Patch plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "roles", label: "Who does what" },
           { id: "daily-loop", label: "Daily loop (week 1)" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Use NRT as directed for baseline nicotine needs, and use a quit app for cue cravings: one-tap timer, trigger labels, slip recovery, and visible streaks. Review your top cue once per day and update your replacement action."
+          answer="Use NRT as directed for baseline nicotine needs, and use a quit app for cue cravings: fast SOS help, slip recovery, and visible progress. Review your top cue once per day and update your replacement action."
           facts={[
             "Combination NRT (patch + fast acting) is common—get clinician/pharmacist guidance.",
             "Apps shine in the 3–5 minute craving window.",
@@ -155,6 +144,12 @@ export default function NrtAndQuitSmokingAppPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        That&apos;s the habit side Blou covers: its SOS button is there the
+        second a cue fires, and your timeline shows every smoke-free day while
+        NRT handles the withdrawal.
+      </InlineAppCta>
+
       <section
         id="daily-loop"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -183,30 +178,17 @@ export default function NrtAndQuitSmokingAppPage() {
         </ol>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-nrt-app" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_nrt_app"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/smoking-cessation-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Cessation app guide →
-        </Link>
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+          Best quit smoking apps →
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/nrt-and-quit-smoking-app</code>
-      </p>
     </div>
   );
 }

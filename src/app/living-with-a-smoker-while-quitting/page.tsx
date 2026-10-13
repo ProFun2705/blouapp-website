@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_living-with-a-smoker-while-quitting";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Living with a smoker while quitting: boundaries that work",
+  title: "Living with a smoker while quitting: set boundaries",
   description:
     "If someone at home still smokes, you need air rules, emotional boundaries, and a craving plan that does not depend on their behavior.",
   path: "/living-with-a-smoker-while-quitting",
@@ -49,7 +50,7 @@ const faqItems = [
   {
     question: "How can Blou help?",
     answer:
-      "Private tracking and craving drills give you a neutral “third place” when home feels high-friction.",
+      "Blou gives you a private space on your own phone when home feels high-friction: SOS craving help when someone lights up nearby, and one visual timeline of your own milestones.",
   },
 ];
 
@@ -69,9 +70,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="live-with-smoker-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -82,35 +81,30 @@ export default function LivingWithASmokerWhileQuittingPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Household triggers
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Living with a smoker while quitting
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Household triggers"
+        title="Living with a smoker while quitting"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-help-someone-quit-smoking" variant="secondary">
+            If you are the supporter →
+          </ButtonLink>
+        }
+      >
+        <p>
           Your quit is still yours. The goal is to shrink sensory reminders you
           control and build a craving protocol that works even when someone else
           lights up on the porch.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_live_with_smoker" placement="article_intro" />
-          <Link href="/how-to-help-someone-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            If you are the supporter →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "boundaries", label: "House rules" },
           { id: "escape", label: "Escape hatches" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -149,24 +143,23 @@ export default function LivingWithASmokerWhileQuittingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        When someone lights up on the porch, Blou&apos;s SOS craving help gives
+        you something to do besides argue, and your milestones stay on one
+        visual timeline that is yours alone.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-live-with-smoker" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_live_with_smoker" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Prep checklist →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/living-with-a-smoker-while-quitting</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+          Prep checklist →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

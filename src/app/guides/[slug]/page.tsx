@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { TableOfContents } from "@/components/site/TableOfContents";
+import { ButtonLink } from "@/components/ui/Button";
 import {
   blouGuideBySlug,
   isPublishedGuide,
@@ -17,7 +16,7 @@ import {
 } from "@/lib/blouGuides";
 import { makeSectionId } from "@/lib/slugify";
 import { buildArticleJsonLd, buildMetadata, buildSpeakableJsonLd } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 type GuidePageProps = {
   params: Promise<{ slug: string }>;
@@ -46,6 +45,31 @@ const references = [
   },
 ] as const;
 
+const BRAND_SUFFIX_LENGTH = " | Blou".length;
+const MAX_TITLE_LENGTH = 60;
+
+/** Hand-shortened titles for guides whose question-style H1 is too long. */
+const SEO_TITLE_OVERRIDES: Record<string, string> = {
+  "shortness-of-breath": "Shortness of breath after quitting smoking: how long?",
+  "increased-appetite": "Increased appetite after quitting smoking: how long?",
+  "tingling-hands-and-feet": "Tingling hands and feet after quitting smoking",
+  "caffeine-sensitivity": "Caffeine sensitivity after quitting smoking",
+  "taste-and-smell": "When do taste and smell return after quitting smoking?",
+  anger: "Anger after quitting smoking: why and how long",
+  "hair-loss": "Hair loss after quitting smoking: what to expect",
+};
+
+/**
+ * Keeps the guide's question wording (it is what already ranks) and the
+ * "quitting smoking" keyword. Drops the " | Blou" suffix when that is what it
+ * takes to stay within 60 characters.
+ */
+function guideSeoTitle(slug: string, title: string): { text: string; absolute: boolean } {
+  const text = SEO_TITLE_OVERRIDES[slug] ?? title;
+  if (text.length + BRAND_SUFFIX_LENGTH <= MAX_TITLE_LENGTH) return { text, absolute: false };
+  return { text, absolute: true };
+}
+
 export async function generateStaticParams() {
   return publishedGuides.map((guide) => ({ slug: guide.slug }));
 }
@@ -58,8 +82,9 @@ export async function generateMetadata({
 
   if (!guide || !isPublishedGuide(guide)) return {};
 
-  return buildMetadata({
-    title: guide.title,
+  const seoTitle = guideSeoTitle(guide.slug, guide.title);
+  const metadata = buildMetadata({
+    title: seoTitle.text,
     description: guide.summary,
     path: `/guides/${guide.slug}`,
     type: "article",
@@ -72,6 +97,8 @@ export async function generateMetadata({
       guide.shortTitle.toLowerCase(),
     ],
   });
+  if (seoTitle.absolute) metadata.title = { absolute: seoTitle.text };
+  return metadata;
 }
 
 export default async function GuideDetailPage({ params }: GuidePageProps) {
@@ -89,7 +116,6 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
       ? [{ id: "at-a-glance", label: "At a glance" } as const]
       : []),
     { id: "what-to-expect-next", label: "What to expect next" },
-    { id: "stay-on-track", label: "Stay on track" },
     { id: "faq", label: "Frequently asked questions" },
     { id: "related-guides", label: "Related reading" },
     { id: "sources", label: "Sources & further reading" },
@@ -99,6 +125,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
     title: guide.title,
     description: guide.summary,
     path: `/guides/${guide.slug}`,
+    image: `/guides/${guide.slug}/opengraph-image`,
     datePublished: guide.datePublished,
     dateModified: guide.dateModified,
     dateReviewed: guide.dateReviewed,
@@ -124,17 +151,16 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
     selectors: ["#quick-answer"],
   });
 
+  const campaign = `guide_${guide.slug}`;
+  const inlineCtaCopy =
+    guide.category === "milestone"
+      ? "Averages only go so far. Blou shows your own version of this milestone: your photo timeline, your lung checks, and every smoke-free day on one timeline."
+      : `${guide.shortTitle} usually eases as the weeks pass. Blou's timeline lets you watch your own recovery while it does, and its SOS button is there the second a craving hits.`;
+  const midpoint = Math.max(1, Math.ceil(guide.articleSections.length / 2));
+
   return (
     <article className="flex flex-col gap-8">
-      <Script
-        id={`article-json-ld-${guide.slug}`}
-        type="application/ld+json"
-      >
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id={`speakable-json-ld-${guide.slug}`} type="application/ld+json">
-        {JSON.stringify(speakableJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, speakableJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -143,24 +169,16 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          {guide.category === "milestone" ? "Milestone guide" : "Symptom guide"}
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          {guide.title}
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
-          {guide.summary}
-        </p>
-        <p className="mt-2 text-sm leading-7 text-teal-900/75">{guide.detail}</p>
-        <div className="mt-5">
-          <Byline
-            datePublished={guide.datePublished}
-            dateModified={guide.dateModified}
-          />
-        </div>
-      </header>
+      <ArticleHeader
+        kicker={guide.category === "milestone" ? "Milestone guide" : "Symptom guide"}
+        title={guide.title}
+        datePublished={guide.datePublished}
+        dateModified={guide.dateModified}
+        campaign={campaign}
+      >
+        <p>{guide.summary}</p>
+        <p className="mt-2 text-sm">{guide.detail}</p>
+      </ArticleHeader>
 
       <TableOfContents items={[...tocItems]} />
 
@@ -172,55 +190,59 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
       </section>
 
       {guide.articleSections.map((section, index) => (
+        <div key={section.heading} className="flex flex-col gap-8">
         <section
           id={makeSectionId(index, section.heading)}
-          key={section.heading}
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
         >
-          <h2 className="text-xl font-semibold text-teal-950">
+          <h2 className="text-xl font-semibold text-ink">
             {section.heading}
           </h2>
-          <div className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+          <div className="mt-4 space-y-3 text-sm leading-7 text-ink-muted">
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
           {section.bullets.length ? (
-            <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+            <ul className="mt-4 space-y-2 text-sm leading-7 text-ink-muted">
               {section.bullets.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span aria-hidden className="mt-1 text-teal-600">•</span>
+                  <span aria-hidden className="mt-1 text-accent">•</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           ) : null}
         </section>
+        {index === midpoint - 1 ? (
+          <InlineAppCta campaign={campaign}>{inlineCtaCopy}</InlineAppCta>
+        ) : null}
+        </div>
       ))}
 
       {guide.typicalDuration ? (
         <section
           id="at-a-glance"
-          className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+          className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
         >
-          <h2 className="text-xl font-semibold text-teal-950">At-a-glance</h2>
+          <h2 className="text-xl font-semibold text-ink">At-a-glance</h2>
           <dl className="mt-4 grid gap-4 text-sm md:grid-cols-3">
-            <div className="rounded-xl border border-teal-200 bg-teal-50/40 p-4">
-              <dt className="font-medium text-teal-800">
+            <div className="rounded-xl border border-line bg-surface-muted p-4">
+              <dt className="font-medium text-accent-strong">
                 Typical duration (many people)
               </dt>
-              <dd className="mt-2 text-teal-950">{guide.typicalDuration}</dd>
+              <dd className="mt-2 text-ink">{guide.typicalDuration}</dd>
             </div>
             {guide.commonTriggers ? (
-              <div className="rounded-xl border border-teal-200 bg-teal-50/40 p-4">
-                <dt className="font-medium text-teal-800">Common triggers</dt>
-                <dd className="mt-2 text-teal-950">{guide.commonTriggers}</dd>
+              <div className="rounded-xl border border-line bg-surface-muted p-4">
+                <dt className="font-medium text-accent-strong">Common triggers</dt>
+                <dd className="mt-2 text-ink">{guide.commonTriggers}</dd>
               </div>
             ) : null}
             {guide.whenToSeekCare ? (
-              <div className="rounded-xl border border-teal-200 bg-teal-50/40 p-4">
-                <dt className="font-medium text-teal-800">When to seek care</dt>
-                <dd className="mt-2 text-teal-950">{guide.whenToSeekCare}</dd>
+              <div className="rounded-xl border border-line bg-surface-muted p-4">
+                <dt className="font-medium text-accent-strong">When to seek care</dt>
+                <dd className="mt-2 text-ink">{guide.whenToSeekCare}</dd>
               </div>
             ) : null}
           </dl>
@@ -229,27 +251,21 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
 
       <section
         id="what-to-expect-next"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
+        <h2 className="text-xl font-semibold text-ink">
           What to expect next
         </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-ink-muted">
           {guide.whatToExpectNext.map((item) => (
             <li key={item} className="flex gap-2">
-              <span aria-hidden className="mt-1 text-teal-600">•</span>
+              <span aria-hidden className="mt-1 text-accent">•</span>
               <span>{item}</span>
             </li>
           ))}
         </ul>
       </section>
 
-      <section id="stay-on-track" className="scroll-mt-24">
-        <StayOnTrackCard
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
-      </section>
 
       <section id="faq" className="scroll-mt-24">
         <FaqSection
@@ -265,61 +281,46 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
 
       <section
         id="sources"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
+        <h2 className="text-xl font-semibold text-ink">
           Sources & further reading
         </h2>
-        <ul className="mt-4 space-y-2 text-sm text-teal-900">
+        <ul className="mt-4 space-y-2 text-sm text-ink">
           {references.map((reference) => (
             <li key={reference.href}>
               <a
-                className="underline decoration-teal-400 underline-offset-4"
+                className="underline decoration-accent/50 underline-offset-4"
                 href={reference.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {reference.label}
               </a>{" "}
-              <span className="text-teal-900/60">· {reference.publisher}</span>
+              <span className="text-ink-muted">· {reference.publisher}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs leading-5 text-teal-900/70">
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
           This guide is educational and does not replace medical advice. If you
           have pre-existing conditions or take prescription medication, talk to
           your clinician when making changes to your smoking.
         </p>
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <Link
-          href="/guides"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          ← All guides
-        </Link>
-        <Link
-          href="/best-quit-smoking-apps"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 bg-white px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Compare the best quit apps
-        </Link>
-        <Link
-          href="/tools"
-          className="inline-flex h-10 items-center justify-center rounded-full bg-teal-600 px-4 text-sm font-medium text-white transition hover:bg-teal-700"
-        >
-          Open quit tools
-        </Link>
-        <AppStoreBadgeLink
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
-      </div>
+      <EndAppCta campaign={campaign} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/guides/{guide.slug}</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/guides" variant="secondary">
+          ← All guides
+        </ButtonLink>
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+          Withdrawal timeline
+        </ButtonLink>
+        <ButtonLink href="/tools" variant="secondary">
+          Quit tools
+        </ButtonLink>
+      </div>
     </article>
   );
 }

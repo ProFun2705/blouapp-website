@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_how-long-does-nicotine-stay-in-your-system";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How long does nicotine stay in your system? (blood, urine, saliva)",
+  title: "How long does nicotine stay in your system?",
   description:
     "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
   path: "/how-long-does-nicotine-stay-in-your-system",
@@ -66,7 +67,7 @@ const faqItems = [
 
 export default function HowLongDoesNicotineStayInSystemPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How long does nicotine stay in your system? (blood, urine, saliva)",
+    title: "How long does nicotine stay in your system?",
     description:
       "A detailed breakdown of nicotine and cotinine detection times by test type, with a quitting timeline.",
     path: "/how-long-does-nicotine-stay-in-your-system",
@@ -80,9 +81,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="nicotine-system-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -93,31 +92,24 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Nicotine &amp; your body
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How long does nicotine stay in your system?
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Nicotine & your body"
+        title="How long does nicotine stay in your system?"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+            Withdrawal timeline →
+          </ButtonLink>
+        }
+      >
+        <p>
           Nicotine clears quickly—but its metabolite cotinine stays much longer.
           Here&apos;s a complete breakdown by test type, plus what the clearance
           timeline means for withdrawal and how you feel as you quit.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Withdrawal timeline →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -126,7 +118,6 @@ export default function HowLongDoesNicotineStayInSystemPage() {
           { id: "detection-by-test", label: "Detection by test type" },
           { id: "clearance-timeline", label: "Clearance and withdrawal timeline" },
           { id: "factors", label: "Factors that affect clearance" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -157,7 +148,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
           has cleared.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          Most drug tests for "nicotine" actually measure cotinine because it
+          Most drug tests for “nicotine” actually measure cotinine because it
           stays in the system longer and is a more reliable indicator of recent
           tobacco or nicotine product use. Important: cotinine from NRT (patches,
           gum, lozenges, vapes) is identical to cotinine from cigarettes—tests
@@ -204,7 +195,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
             </span>
           </li>
         </ul>
-        <p className="mt-4 text-sm text-teal-900/70">
+        <p className="mt-4 text-sm text-ink-muted">
           Note: detection windows are approximate and vary with the amount smoked,
           individual metabolism, hydration, kidney function, and age. These ranges
           reflect typical figures cited in clinical literature.
@@ -277,6 +268,11 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Nicotine clears in days, but cravings take longer to fade. Blou&apos;s SOS button is there the
+        second one hits, and your timeline shows every smoke-free day since your last cigarette.
+      </InlineAppCta>
+
       <section
         id="factors"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -332,30 +328,17 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-nicotine-system" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/guides/what-happens-after-3-days"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Day 3 milestone guide →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/how-long-does-nicotine-stay-in-your-system</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/guides/what-happens-after-3-days" variant="secondary">
+          Day 3 milestone guide →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

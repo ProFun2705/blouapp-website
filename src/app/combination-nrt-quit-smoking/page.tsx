@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_combination-nrt-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Combination NRT to quit smoking: patch + fast relief (clinician-guided)",
+  title: "Combination NRT to quit smoking: patch + fast relief",
   description:
     "What combination NRT means, why it helps some people, safety basics, and how a quit app logs spikes so you and your pharmacist adjust thoughtfully.",
   path: "/combination-nrt-quit-smoking",
@@ -49,13 +50,13 @@ const faqItems = [
   {
     question: "How does Blou help?",
     answer:
-      "Log breakthrough urges with timestamps so patterns show up by day 5—useful for pharmacist check-ins.",
+      "Blou gives you SOS help the second a breakthrough craving hits, personal insights, and every smoke-free day on one visual timeline—useful context for pharmacist check-ins. Dosing decisions stay with your pharmacist or clinician.",
   },
 ];
 
 export default function CombinationNrtQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Combination NRT to quit smoking: patch + fast relief (clinician-guided)",
+    title: "Combination NRT to quit smoking: patch + fast relief",
     description:
       "Educational overview of combination nicotine replacement therapy for smoking cessation.",
     path: "/combination-nrt-quit-smoking",
@@ -69,9 +70,7 @@ export default function CombinationNrtQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="combo-nrt-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -79,34 +78,29 @@ export default function CombinationNrtQuitSmokingPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          NRT strategy
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Combination NRT to quit smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="NRT strategy"
+        title="Combination NRT to quit smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-patch-vs-gum" variant="secondary">
+            Patch vs gum →
+          </ButtonLink>
+        }
+      >
+        <p>
           Combination NRT pairs a long-acting form (usually patch) with a
           fast-acting form (gum, lozenge, spray where available). It is a medical
           strategy—confirm eligibility and dosing with a clinician or pharmacist.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_combo_nrt" placement="article_intro" />
-          <Link href="/nicotine-patch-vs-gum" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Patch vs gum →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "behavior", label: "Behavior layer" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -136,24 +130,23 @@ export default function CombinationNrtQuitSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        NRT doesn&apos;t delete learned cues. Blou&apos;s SOS button is there the
+        second one fires, alongside the dosing plan you agree with your
+        pharmacist or clinician.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-combo-nrt" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_combo_nrt" placement="article_footer_card" />
-        <Link href="/quit-smoking-with-nicotine-patch" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Patch plan →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/combination-nrt-quit-smoking</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/quit-smoking-with-nicotine-patch" variant="secondary">
+          Patch plan →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

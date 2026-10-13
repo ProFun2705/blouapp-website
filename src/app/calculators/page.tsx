@@ -89,7 +89,7 @@ export default function CalculatorsIndexPage() {
               From <strong>{c.defaultPackPrice} {c.currencyCode}</strong> per pack (
               {c.priceAsOf})
             </p>
-            <p className="mt-3 text-xs leading-5 text-teal-900/70">
+            <p className="mt-3 text-xs leading-5 text-ink-muted">
               Source: {c.priceSource.name}
             </p>
           </Link>
@@ -115,7 +115,7 @@ export default function CalculatorsIndexPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-calculators-index" />
+        <FaqSection items={faqItems} />
       </section>
     </div>
   );

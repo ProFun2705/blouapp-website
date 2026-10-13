@@ -8,7 +8,7 @@ import { AUTHOR, CONTACT_EMAIL, MEDICAL_REVIEWER, SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: `About ${SITE_NAME}`,
   description:
-    "Blou is a quit smoking tracker built by a solo founder. Learn who makes it, our editorial process, and how we keep guides grounded in public-health evidence.",
+    "Blou is a quit smoking app for iPhone built by a solo founder. Learn who makes it, our editorial process, and how we keep guides grounded in public-health evidence.",
   path: "/about",
 });
 
@@ -22,9 +22,10 @@ export default function AboutPage() {
           About Blou
         </h1>
         <p className="mt-3 max-w-3xl text-base leading-7 text-teal-900/85">
-          Blou is a quit smoking tracker for iPhone, built by a small team that
-          believes quitting works best when the invisible becomes visible —
-          cravings, savings, and recovery milestones you can actually see.
+          Blou is a quit smoking app for iPhone, built by a small team that
+          believes quitting works best when the invisible becomes visible: a
+          photo timeline, lung checks, and recovery milestones you can actually
+          see. It is a subscription app with a free trial.
         </p>
       </header>
 
@@ -49,9 +50,9 @@ export default function AboutPage() {
           help by turning your quit into a visible, repeatable loop:
         </p>
         <ul className="mt-3 space-y-2 text-sm leading-7 text-teal-900/85">
-          <li>• Track your streak, cravings, and savings without friction.</li>
-          <li>• Interrupt the craving → smoke loop with a 2-minute action.</li>
-          <li>• See recovery milestones so progress feels real, not abstract.</li>
+          <li>• See your own change: a photo timeline and simple lung checks.</li>
+          <li>• Get help the second a craving hits, with one SOS tap.</li>
+          <li>• See every milestone on one timeline, so progress feels real.</li>
         </ul>
       </section>
 

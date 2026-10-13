@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-nicotine-gum";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking with nicotine gum: how to handle cravings",
+  title: "Quit smoking with nicotine gum: handling cravings",
   description:
     "How to quit smoking with nicotine gum: what it’s for, how to handle cue-based cravings, and how to use tracking to stay consistent in weeks 1–4.",
   path: "/quit-smoking-with-nicotine-gum",
@@ -55,7 +56,7 @@ const faqItems = [
 
 export default function QuitSmokingWithNicotineGumPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking with nicotine gum: how to handle cravings",
+    title: "Quit smoking with nicotine gum: handling cravings",
     description:
       "A practical plan for quitting with nicotine gum, focusing on cravings, cues, and consistency.",
     path: "/quit-smoking-with-nicotine-gum",
@@ -69,9 +70,7 @@ export default function QuitSmokingWithNicotineGumPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="gum-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -82,31 +81,24 @@ export default function QuitSmokingWithNicotineGumPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          NRT support
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking with nicotine gum
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="NRT support"
+        title="Quit smoking with nicotine gum"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/guides/cravings" variant="secondary">
+            Read the cravings playbook →
+          </ButtonLink>
+        }
+      >
+        <p>
           Gum can help with withdrawal and “breakthrough” urges. Your bigger job
           is cue replacement: the coffee craving, the drive craving, the stress
           craving. This page gives a simple system for weeks 1–4.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/guides/cravings"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Read the cravings playbook →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -114,7 +106,6 @@ export default function QuitSmokingWithNicotineGumPage() {
           { id: "simple-plan", label: "A simple gum plan" },
           { id: "cue-cravings", label: "Cue-based cravings" },
           { id: "slips", label: "If you slip" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -187,6 +178,12 @@ export default function QuitSmokingWithNicotineGumPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Gum covers the nicotine; cues are the long game. Blou&apos;s SOS button is
+        there the second a cue craving hits, and your timeline shows every
+        smoke-free day you&apos;ve already put behind you.
+      </InlineAppCta>
+
       <section
         id="slips"
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
@@ -204,30 +201,17 @@ export default function QuitSmokingWithNicotineGumPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-nicotine-gum" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
           Withdrawal timeline →
-        </Link>
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-with-nicotine-gum</code>
-      </p>
     </div>
   );
 }

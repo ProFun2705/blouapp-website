@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_nicotine-withdrawal-timeline";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nicotine withdrawal timeline (days 1–30): what to expect",
+  title: "Nicotine withdrawal timeline: days 1–30 explained",
   description:
-    "A simple nicotine withdrawal timeline from day 1 to day 30: cravings, sleep, mood, and what helps. Includes links to day-by-day milestones and symptom guides.",
+    "A simple nicotine withdrawal timeline from day 1 to day 30: cravings, sleep, mood, and what helps, with links to day-by-day milestones and symptom guides.",
   path: "/nicotine-withdrawal-timeline",
   type: "article",
   publishedTime: PUBLISHED,
@@ -96,14 +97,14 @@ const timeline = [
       "Treat late cravings as cue practice. Keep replacements easy. If weight worries show up, plan snacks and movement.",
     links: [
       { href: "/guides/what-happens-after-2-weeks", label: "After 2 weeks" },
-      { href: "/guides/weight-gain", label: "Weight gain guide" },
+      { href: "/quit-smoking-without-gaining-weight", label: "Weight gain guide" },
     ],
   },
 ] as const;
 
 export default function NicotineWithdrawalTimelinePage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Nicotine withdrawal timeline (days 1–30): what to expect",
+    title: "Nicotine withdrawal timeline: days 1–30 explained",
     description:
       "A practical withdrawal timeline with what to expect and what to do at each stage.",
     path: "/nicotine-withdrawal-timeline",
@@ -117,9 +118,7 @@ export default function NicotineWithdrawalTimelinePage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="withdrawal-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -127,38 +126,30 @@ export default function NicotineWithdrawalTimelinePage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Timeline guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Nicotine withdrawal timeline (days 1–30)
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Timeline guide"
+        title="Nicotine withdrawal timeline (days 1–30)"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Read the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Withdrawal is uncomfortable, but it’s also predictable. Use the timeline
           to plan your week, protect days 2–3, and treat cravings as short waves
           you can ride out.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Read the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "timeline", label: "Timeline (what to expect)" },
           { id: "what-helps-most", label: "What helps most" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "related", label: "Related guides" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
@@ -213,6 +204,11 @@ export default function NicotineWithdrawalTimelinePage() {
         </div>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Days 2–3 are usually the peak. Blou&apos;s SOS button is there the second a craving hits, and
+        your own timeline shows each milestone you&apos;ve already passed.
+      </InlineAppCta>
+
       <section
         id="what-helps-most"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -261,10 +257,6 @@ export default function NicotineWithdrawalTimelinePage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="related" className="scroll-mt-24">
         <RelatedGuides
           slugs={[
@@ -281,25 +273,16 @@ export default function NicotineWithdrawalTimelinePage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-withdrawal-timeline" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/quit-smoking-tracker"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Use a quit tracker →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/nicotine-withdrawal-timeline</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/" variant="secondary">
+          How Blou works →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

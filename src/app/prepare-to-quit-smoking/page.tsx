@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
@@ -15,10 +16,11 @@ import {
 } from "@/lib/seo";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-03-05";
-const MODIFIED = "2026-04-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_prepare-to-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
   title: "How to prepare to quit smoking: 7-day checklist",
@@ -113,12 +115,7 @@ export default function PrepareToQuitPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="prepare-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="prepare-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -126,33 +123,23 @@ export default function PrepareToQuitPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Pillar guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to prepare to quit smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Pillar guide"
+        title="How to prepare to quit smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Read the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           A concrete 7-day checklist to get you from decision to quit day
           without relying on willpower or timing.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Read the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -192,6 +179,11 @@ export default function PrepareToQuitPage() {
           ))}
         </ol>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        Day -4 is about lining up support. Blou&apos;s SOS button is there for the first craving after
+        quit day, and every smoke-free day after it lands on one visual timeline.
+      </InlineAppCta>
 
       <section
         id="med-and-app"
@@ -268,8 +260,10 @@ export default function PrepareToQuitPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-prepare" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -288,10 +282,6 @@ export default function PrepareToQuitPage() {
           ]}
         />
       </section>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/prepare-to-quit-smoking</code>
-      </p>
     </div>
   );
 }

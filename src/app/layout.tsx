@@ -6,6 +6,8 @@ import { AnalyticsListeners } from "@/components/site/AnalyticsListeners";
 import { CookieConsent } from "@/components/site/CookieConsent";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { StickyAppBar } from "@/components/marketing/StickyAppBar";
+import { JsonLd } from "@/components/seo/JsonLd";
 import {
   ORG_JSON_LD,
   SITE_DESCRIPTION,
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME} – Quit Smoking Tracker (iOS)`,
+    default: `${SITE_NAME} – Quit Smoking App for iPhone`,
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
@@ -63,9 +65,6 @@ export const metadata: Metadata = {
     "money saved quitting smoking",
     "Blou app",
   ],
-  alternates: {
-    canonical: "/",
-  },
   formatDetection: {
     telephone: false,
     email: false,
@@ -76,12 +75,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} – Quit Smoking Tracker (iOS)`,
+    title: `${SITE_NAME} – Quit Smoking App for iPhone`,
     description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} – Quit Smoking Tracker (iOS)`,
+    title: `${SITE_NAME} – Quit Smoking App for iPhone`,
     description: SITE_DESCRIPTION,
   },
   robots: {
@@ -112,10 +111,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
-  ],
+  themeColor: "#0b2f2c",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
 };
@@ -148,25 +145,21 @@ export default function RootLayout({
         gtag('js', new Date());
         gtag('config', 'G-L5RLBSF7KK', { anonymize_ip: true });
       `}</Script>
-      <Script id="org-json-ld" type="application/ld+json">
-        {JSON.stringify(ORG_JSON_LD)}
-      </Script>
-      <Script id="website-json-ld" type="application/ld+json">
-        {JSON.stringify(WEBSITE_JSON_LD)}
-      </Script>
-      <Script id="software-app-json-ld" type="application/ld+json">
-        {JSON.stringify(SOFTWARE_APPLICATION_JSON_LD)}
-      </Script>
       <body className="flex min-h-full flex-col">
+        <JsonLd data={[ORG_JSON_LD, WEBSITE_JSON_LD, SOFTWARE_APPLICATION_JSON_LD]} />
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
         <SiteHeader />
 
-        <main className="flex-1">
-          <div className="mx-auto w-full max-w-5xl px-6 py-10">
+        <main id="main" tabIndex={-1} className="flex-1 outline-none">
+          <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 md:py-10">
             {children}
           </div>
         </main>
 
         <SiteFooter />
+        <StickyAppBar />
         <AmplitudeAnalytics />
         <AnalyticsListeners />
         <CookieConsent />

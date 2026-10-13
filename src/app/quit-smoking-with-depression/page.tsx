@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-depression";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How to quit smoking when you have depression: what to know",
+  title: "How to quit smoking with depression: what to know",
   description:
     "Quitting smoking with depression requires extra preparation. Learn how nicotine affects mood, what the timeline looks like, and how to stay safe.",
   path: "/quit-smoking-with-depression",
@@ -61,7 +62,7 @@ const faqItems = [
 
 export default function QuitSmokingWithDepressionPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How to quit smoking when you have depression: what to know",
+    title: "How to quit smoking with depression: what to know",
     description:
       "A practical guide to quitting smoking safely when you have depression or a history of depressive episodes.",
     path: "/quit-smoking-with-depression",
@@ -75,9 +76,7 @@ export default function QuitSmokingWithDepressionPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="quit-depression-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -88,31 +87,24 @@ export default function QuitSmokingWithDepressionPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Quitting with a condition
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to quit smoking when you have depression
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Quitting with a condition"
+        title="How to quit smoking when you have depression"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Smoking rates are significantly higher among people with depression.
           Quitting is still one of the most important things you can do for your
           health—but it requires extra preparation and support.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -122,7 +114,6 @@ export default function QuitSmokingWithDepressionPage() {
           { id: "strategies", label: "Strategies that help" },
           { id: "medication", label: "Medication options" },
           { id: "when-to-seek-care", label: "When to seek care" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -209,14 +200,7 @@ export default function QuitSmokingWithDepressionPage() {
             <span aria-hidden className="mt-1 font-bold text-teal-700">Week 1–2:</span>
             <span>
               Low mood, emotional blunting, or crying spells may continue.
-              Sleep disruption can amplify all mood symptoms. See{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/guides/depression"
-              >
-                depression as a withdrawal symptom
-              </Link>
-              .
+              Sleep disruption can amplify all mood symptoms.
             </span>
           </li>
           <li className="flex gap-2">
@@ -316,6 +300,12 @@ export default function QuitSmokingWithDepressionPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Blou keeps that progress visible: every milestone and smoke-free day on
+        one timeline, plus lung checks you can watch improve. It works alongside
+        your clinician&apos;s care, not instead of it.
+      </InlineAppCta>
+
       <section
         id="medication"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -401,37 +391,24 @@ export default function QuitSmokingWithDepressionPage() {
             <span>New or worsening mood changes while using varenicline or bupropion.</span>
           </li>
         </ul>
-        <p className="mt-3 text-sm text-teal-900/70">
+        <p className="mt-3 text-sm text-ink-muted">
           Quitting smoking is important for your health, but never at the cost
           of your mental safety. Your clinician can help you slow down or adjust
           your plan if needed.
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-smoking-depression" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/guides/depression"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Depression withdrawal guide →
-        </Link>
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+          Withdrawal timeline →
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-with-depression</code>
-      </p>
     </div>
   );
 }

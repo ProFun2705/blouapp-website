@@ -1,57 +1,54 @@
 import Link from "next/link";
 import Image from "next/image";
-import { buildAppStoreUrl } from "@/lib/appStore";
+import { appStoreHref } from "@/lib/appStore";
+import { MobileMenu } from "@/components/site/MobileMenu";
 
-const navLinkClass = "text-teal-100/90 transition-colors hover:text-white";
-const navAppStoreHref = buildAppStoreUrl({
-  campaign: "site_header",
-  itsct: "site_header",
-  mttnsubad: "site_header",
-});
+export const NAV_LINKS = [
+  { href: "/how-to-quit-smoking", label: "Quit plan" },
+  { href: "/guides", label: "Guides" },
+  { href: "/tools", label: "Tools" },
+  { href: "/best-quit-smoking-apps", label: "Compare apps" },
+] as const;
+
+const headerCtaHref = appStoreHref({ campaign: "site", placement: "header" });
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-teal-700/40 bg-teal-900/80 backdrop-blur-md">
-      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-3 px-6 py-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-sm font-semibold tracking-tight text-white"
-          aria-label="Blou – Home"
-        >
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur-md">
+      <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between gap-4 px-4 sm:px-6">
+        <Link href="/" className="flex items-center gap-2.5 text-white" aria-label="Blou home">
           <Image
-            src="/logos/blou-logo-black-name.png"
-            alt="Blou"
-            width={80}
-            height={24}
-            className="h-6 w-auto brightness-0 invert"
+            src="/logos/blou-logo.png"
+            alt=""
+            width={32}
+            height={32}
+            className="rounded-lg"
             priority
           />
-          <span className="sr-only">Blou</span>
+          <span className="text-lg font-semibold tracking-tight">Blou</span>
         </Link>
-        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm">
-          <Link className={navLinkClass} href="/how-to-quit-smoking">
-            Quit plan
-          </Link>
-          <Link className={navLinkClass} href="/guides">
-            Guides
-          </Link>
-          <Link className={navLinkClass} href="/tools">
-            Tools
-          </Link>
-          <Link className={navLinkClass} href="/best-quit-smoking-apps">
-            Compare
-          </Link>
+
+        <nav aria-label="Main" className="hidden items-center gap-6 text-sm md:flex">
+          {NAV_LINKS.map((link) => (
+            <Link key={link.href} className="text-teal-50/85 transition-colors hover:text-white" href={link.href}>
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-2">
           <a
-            className="inline-flex items-center justify-center rounded-full bg-teal-600 px-4 py-2 text-xs font-medium text-white transition hover:bg-teal-700"
-            href={navAppStoreHref}
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-4 text-sm font-semibold text-ink transition hover:bg-accent-soft"
+            href={headerCtaHref}
             target="_blank"
-            rel="noopener noreferrer"
-            data-event="cta_click"
+            rel="noopener"
+            data-event="app_store_click"
             data-event-label="header"
           >
-            Start tracking – free
+            Get the app
           </a>
-        </nav>
+          <MobileMenu links={NAV_LINKS} />
+        </div>
       </div>
     </header>
   );

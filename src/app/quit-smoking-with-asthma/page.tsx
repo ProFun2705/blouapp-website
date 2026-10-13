@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-asthma";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How to quit smoking when you have asthma: benefits and plan",
+  title: "How to quit smoking with asthma: benefits and plan",
   description:
     "Quitting smoking is the single most effective action for asthma control. Learn what to expect, how breathing changes, and how to manage the first weeks.",
   path: "/quit-smoking-with-asthma",
@@ -61,7 +62,7 @@ const faqItems = [
 
 export default function QuitSmokingWithAsthmaPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How to quit smoking when you have asthma: benefits and plan",
+    title: "How to quit smoking with asthma: benefits and plan",
     description:
       "A practical guide to quitting smoking when you have asthma, including what to expect, breathing improvements, and NRT safety.",
     path: "/quit-smoking-with-asthma",
@@ -75,9 +76,7 @@ export default function QuitSmokingWithAsthmaPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="quit-asthma-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -88,31 +87,24 @@ export default function QuitSmokingWithAsthmaPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Quitting with a condition
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to quit smoking when you have asthma
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Quitting with a condition"
+        title="How to quit smoking when you have asthma"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Quitting smoking is the single most impactful action for asthma
           control. Even after years of smoking, airways can recover
           meaningfully. This guide covers what to expect and how to prepare.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -122,7 +114,6 @@ export default function QuitSmokingWithAsthmaPage() {
           { id: "first-weeks", label: "Managing the first weeks" },
           { id: "nrt-inhalers", label: "NRT and inhalers" },
           { id: "when-to-seek-care", label: "When to seek care" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -300,6 +291,12 @@ export default function QuitSmokingWithAsthmaPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Blou&apos;s lung checks give you a simple way to watch your breathing
+        change alongside your smoke-free days. They sit next to your GP&apos;s or
+        asthma nurse&apos;s care, not in place of it.
+      </InlineAppCta>
+
       <section
         id="nrt-inhalers"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -380,30 +377,17 @@ export default function QuitSmokingWithAsthmaPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-smoking-asthma" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/guides/shortness-of-breath"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/guides/shortness-of-breath" variant="secondary">
           Shortness of breath guide →
-        </Link>
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-with-asthma</code>
-      </p>
     </div>
   );
 }

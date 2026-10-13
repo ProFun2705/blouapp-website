@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-vaping";
 
 export const metadata: Metadata = buildMetadata({
   title: "How to quit vaping: a practical plan (2026)",
@@ -45,7 +46,7 @@ const faqItems = [
   {
     question: "Can a quit app help with vaping?",
     answer:
-      "Yes, if it gives you a fast craving response, visible progress, and a place to log triggers. Blou is built around cigarettes, but the same loop—timer, replacement actions, savings, milestones—helps many people who are quitting vapes.",
+      "Yes, if it gives you a fast craving response and visible progress. Blou is built around cigarettes, but its SOS craving help and its visual timeline of smoke-free days and milestones work the same way when the nicotine comes from a vape.",
   },
   {
     question: "Should I use NRT to quit vaping?",
@@ -70,40 +71,28 @@ export default function QuitVapingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="quit-vaping-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs items={[{ name: "Quit vaping", path: "/quit-vaping" }]} />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Vaping cessation
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to quit vaping
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Vaping cessation"
+        title="How to quit vaping"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Core quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Treat quitting vaping like any nicotine quit: pick a stop date, plan
           your top cues, and use a tight loop when urges hit (timer → move →
           water → one replacement). Tracking makes the first two weeks survivable.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink
-            campaign="pillar_quit_vaping"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Core quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -111,7 +100,6 @@ export default function QuitVapingPage() {
           { id: "seven-day-setup", label: "7-day setup" },
           { id: "urge-plan", label: "When an urge hits" },
           { id: "dual-use", label: "Still smoking sometimes?" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -180,6 +168,12 @@ export default function QuitVapingPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Blou&apos;s SOS craving help is built for exactly this moment: it is
+        there the second an urge hits, and every day you stay off nicotine adds
+        to one visual timeline.
+      </InlineAppCta>
+
       <section
         id="dual-use"
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
@@ -199,30 +193,17 @@ export default function QuitVapingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-vaping" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_quit_vaping"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          NRT + quit app →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-vaping</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/nrt-and-quit-smoking-app" variant="secondary">
+          NRT + quit app →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

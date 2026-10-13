@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_blou-vs-quit-genius";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Blou vs Quit Genius (2026): tracker vs clinical CBT program",
+  title: "Blou vs Quit Genius (2026): tracker vs CBT program",
   description:
-    "Blou vs Quit Genius: Blou is a visual iPhone quit tracker; Quit Genius is a structured CBT/coaching program often tied to employers. Pick based on access and budget.",
+    "Blou vs Quit Genius: Blou is an iPhone subscription app that shows your recovery; Quit Genius is a CBT and coaching program, often employer-backed.",
   path: "/blou-vs-quit-genius",
   type: "article",
   publishedTime: PUBLISHED,
@@ -33,7 +33,7 @@ const faqItems = [
   {
     question: "Is Blou trying to replace Quit Genius?",
     answer:
-      "No. Quit Genius delivers a clinical-style curriculum with human coaching in many offerings. Blou is a consumer tracker focused on cravings, savings, and milestones.",
+      "No. Quit Genius delivers a clinical-style curriculum with human coaching in many offerings. Blou is a consumer iPhone app focused on showing your own recovery: a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline.",
   },
   {
     question: "Which is better if my employer pays for Quit Genius?",
@@ -43,12 +43,12 @@ const faqItems = [
   {
     question: "Which is cheaper?",
     answer:
-      "Blou is free to start with optional premium. Quit Genius is often employer-sponsored; direct consumer pricing varies.",
+      "Blou is a subscription with a free trial; nothing in the app works without an active subscription. Quit Genius is often employer-sponsored; direct consumer pricing varies.",
   },
   {
     question: "Android?",
     answer:
-      "Quit Genius lists cross-platform options in many deployments. Blou remains iOS-only in 2026.",
+      "Quit Genius lists cross-platform options in many deployments. Blou is iPhone-only for now.",
   },
 ];
 
@@ -66,39 +66,30 @@ export default function BlouVsQuitGeniusPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="blou-vs-qg-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Blou vs Quit Genius", path: "/blou-vs-quit-genius" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Comparison
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Blou vs Quit Genius
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Comparison"
+        title="Blou vs Quit Genius"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+            Full apps roundup →
+          </ButtonLink>
+        }
+      >
+        <p>
           Quit Genius plays in a different lane: structured programs and
           coaching. Blou is a pocket tracker for people who want progress visible
           every day on iPhone.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="compare_quit_genius" placement="article_intro" />
-          <Link
-            href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Full apps roundup →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -106,14 +97,13 @@ export default function BlouVsQuitGeniusPage() {
           { id: "choose-blou", label: "Choose Blou if…" },
           { id: "choose-qg", label: "Choose Quit Genius if…" },
           { id: "feature-differences", label: "Feature differences" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Choose Blou if you want a lightweight visual tracker on iPhone with craving and savings loops. Choose Quit Genius if you want a structured CBT-style program with coaching—often through an employer—and are willing to follow a curriculum."
+          answer="Choose Blou if you want a lightweight way to see your own recovery on iPhone (photo timeline, lung checks, SOS craving help), on a subscription with a free trial. Choose Quit Genius if you want a structured CBT-style program with coaching—often through an employer—and are willing to follow a curriculum."
           facts={[
             "Clinical programs and trackers can coexist; avoid double-paying for the same coaching.",
             "Medication decisions still belong to your clinician.",
@@ -134,10 +124,26 @@ export default function BlouVsQuitGeniusPage() {
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>You are on iPhone and like visual streak + savings framing.</span>
+            <span>
+              You are on iPhone and want to see your recovery in a photo
+              timeline and lung checks.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              You are fine with a subscription once the free trial ends; nothing
+              in Blou works without one.
+            </span>
           </li>
         </ul>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        If a self-serve app suits you, Blou for iPhone gives you a photo
+        timeline, lung checks, SOS craving help, and every milestone on one
+        visual timeline, with no lessons to keep up with.
+      </InlineAppCta>
 
       <section
         id="choose-qg"
@@ -176,37 +182,25 @@ export default function BlouVsQuitGeniusPage() {
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Access</strong>: Blou App Store download. Quit Genius may
+              <strong>Access</strong>: Blou is an App Store subscription with a
+              free trial (iPhone only). Quit Genius may
               require enrollment/employer sponsorship.
             </span>
           </li>
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-blou-vs-quit-genius" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="compare_quit_genius"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/smoking-cessation-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Cessation app guide →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/blou-vs-quit-genius</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+          Compare quit apps →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

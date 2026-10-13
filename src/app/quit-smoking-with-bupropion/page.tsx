@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-bupropion";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking with bupropion (Zyban) + your quit plan",
@@ -49,7 +50,7 @@ const faqItems = [
   {
     question: "What does Blou add?",
     answer:
-      "Daily craving practice, slip containment links, and visible progress—useful alongside any clinician-approved medication plan.",
+      "SOS help the second a craving hits, simple lung checks, and every smoke-free day on one visual timeline—useful alongside any clinician-approved medication plan, never instead of it.",
   },
 ];
 
@@ -69,9 +70,7 @@ export default function QuitSmokingWithBupropionPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="bupropion-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -82,42 +81,31 @@ export default function QuitSmokingWithBupropionPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Prescription medication (overview)
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking with bupropion (Zyban)
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Prescription medication (overview)"
+        title="Quit smoking with bupropion (Zyban)"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quit-smoking-with-varenicline" variant="secondary">
+            Varenicline overview →
+          </ButtonLink>
+        }
+      >
+        <p>
           Bupropion is an antidepressant-class medicine that is also used for
           smoking cessation in some countries under specific formulations. Only a
           clinician can decide if it is appropriate for you. This page covers
           how it pairs with behavioral tools and apps.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink
-            campaign="pillar_bupropion"
-            placement="article_intro"
-          />
-          <Link
-            href="/quit-smoking-with-varenicline"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Varenicline overview →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "behavior", label: "Behavior layer" },
           { id: "sources", label: "Authoritative sources" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -157,6 +145,12 @@ export default function QuitSmokingWithBupropionPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Medication doesn&apos;t erase learned triggers. Alongside your
+        clinician&apos;s plan, Blou&apos;s SOS button is there the second a
+        craving hits, and your timeline shows every smoke-free day so far.
+      </InlineAppCta>
+
       <section
         id="sources"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -188,30 +182,17 @@ export default function QuitSmokingWithBupropionPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-bupropion" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_bupropion"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/nrt-and-quit-smoking-app" variant="secondary">
           NRT + app →
-        </Link>
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-with-bupropion</code>
-      </p>
     </div>
   );
 }

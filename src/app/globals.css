@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens. The site is light-only on purpose: the teal-on-mint palette
+ * is tuned for light backgrounds, and a half-finished dark mode read as broken.
+ */
 :root {
+  color-scheme: light;
+
   --background: #f0f7f4;
   --foreground: #0f3d3a;
+
+  --surface: #ffffff;
+  --surface-muted: #f4faf8;
+  --ink: #0b2f2c;
+  --ink-muted: #31514e;
+  --line: #b9e4da;
+  --accent: #0f766e;
+  --accent-strong: #115e59;
+  --accent-soft: #ccfbf1;
+  --focus: #0d9488;
+
+  --radius-card: 1rem;
+  --radius-panel: 1.5rem;
+  --shadow-card: 0 1px 2px rgb(15 61 58 / 0.06), 0 1px 3px rgb(15 61 58 / 0.04);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --radius-card: var(--radius-card);
+  --radius-panel: var(--radius-panel);
+  --shadow-card: var(--shadow-card);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0d2220;
-    --foreground: #e7faf6;
-  }
+html {
+  scroll-padding-top: 5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: var(--accent-strong);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

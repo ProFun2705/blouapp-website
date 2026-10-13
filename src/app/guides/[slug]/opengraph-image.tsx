@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { ogLogoDataUrl } from "@/lib/ogLogo";
 import { blouGuideBySlug, isPublishedGuide, publishedGuides } from "@/lib/blouGuides";
 import { SITE_NAME } from "@/lib/site";
 
@@ -24,8 +25,9 @@ export default async function Image({
       ? guide.category === "milestone"
         ? "Quit smoking · Milestone guide"
         : "Quit smoking · Symptom guide"
-      : "Quit smoking, tracked simply.";
+      : "Quit smoking app for iPhone";
 
+  const logo = await ogLogoDataUrl();
   return new ImageResponse(
     (
       <div
@@ -52,22 +54,7 @@ export default async function Image({
             letterSpacing: "-0.01em",
           }}
         >
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: 12,
-              background: "white",
-              color: "#0f766e",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 30,
-              fontWeight: 700,
-            }}
-          >
-            B
-          </div>
+          <img src={logo} width={48} height={48} alt="" style={{ borderRadius: 12 }} />
           {SITE_NAME}
         </div>
 

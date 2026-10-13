@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-without-nrt";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking without NRT: what actually improves odds",
@@ -49,7 +50,7 @@ const faqItems = [
   {
     question: "How does Blou help without NRT?",
     answer:
-      "Craving timers, savings, milestones, and slip containment—behavioral visibility that substitutes for some of the structure NRT provides.",
+      "SOS help the second a craving hits, simple lung checks, a photo timeline, and every milestone and smoke-free day on one visual timeline—behavioral visibility that adds some of the structure NRT would otherwise provide.",
   },
 ];
 
@@ -69,43 +70,36 @@ export default function QuitSmokingWithoutNrtPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="no-nrt-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Quit smoking without NRT", path: "/quit-smoking-without-nrt" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Non-NRT path
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking without NRT
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Non-NRT path"
+        title="Quit smoking without NRT"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quit-smoking-cold-turkey" variant="secondary">
+            Cold turkey guide →
+          </ButtonLink>
+        }
+      >
+        <p>
           Choosing not to use nicotine replacement is valid—but it is not the same
           as “white knuckle only.” Add quitline coaching, airtight cue plans, and
           tracking so the attempt teaches you something even if it wobbles.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_no_nrt" placement="article_intro" />
-          <Link href="/quit-smoking-cold-turkey" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Cold turkey guide →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "stack", label: "Stack these supports" },
           { id: "reconsider", label: "When to reconsider NRT" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -130,6 +124,12 @@ export default function QuitSmokingWithoutNrtPage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Without NRT, a fast response to each craving matters even more.
+        Blou&apos;s SOS button is there the second one hits, and your timeline
+        shows every smoke-free day you&apos;ve already put behind you.
+      </InlineAppCta>
+
       <section id="reconsider" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">When to reconsider NRT</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
@@ -145,24 +145,17 @@ export default function QuitSmokingWithoutNrtPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-no-nrt" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_no_nrt" placement="article_footer_card" />
-        <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
           Withdrawal timeline →
-        </Link>
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-without-nrt</code>
-      </p>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { EmbedCalculatorSnippet } from "@/components/blou/EmbedCalculatorSnippet";
@@ -96,12 +96,8 @@ export default function MoneySavedToolPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="money-saved-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
-      <Script id="money-saved-webapp-json-ld" type="application/ld+json">
-        {JSON.stringify(webAppJsonLd)}
-      </Script>
+      <JsonLd data={howToJsonLd} />
+      <JsonLd data={webAppJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -123,12 +119,6 @@ export default function MoneySavedToolPage() {
           smoke-free. Everything runs in your browser — nothing is sent to a
           server.
         </p>
-        <div className="mt-6">
-          <AppStoreBadgeLink
-            campaign="tool_money_calculator"
-            placement="tool_money_calculator"
-          />
-        </div>
       </header>
 
       <TableOfContents
@@ -145,6 +135,11 @@ export default function MoneySavedToolPage() {
       <section id="calculator" className="scroll-mt-24">
         <MoneySavedCalculator instanceId="global" />
       </section>
+
+      <InlineAppCta campaign="tool_money-saved">
+        The money is the part you can calculate. Blou shows the rest of what quitting gives back:
+        your photo timeline, your lung checks, and every smoke-free day on one timeline.
+      </InlineAppCta>
 
       <section
         id="how-to-use"
@@ -241,12 +236,10 @@ export default function MoneySavedToolPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-tool-money-saved" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/tools/money-saved</code>
-      </p>
+      <EndAppCta campaign="tool_money-saved" />
     </div>
   );
 }

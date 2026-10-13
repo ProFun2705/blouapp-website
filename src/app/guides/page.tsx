@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
-import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
+import { EndAppCta } from "@/components/marketing/AppCta";
+import { ARTICLE_GROUPS, articleRoutes } from "@/lib/staticRoutes";
 import { buildMetadata } from "@/lib/seo";
 import { milestoneGuides, symptomGuides } from "@/lib/blouGuides";
 
@@ -52,98 +52,37 @@ export default function GuidesIndexPage() {
       <TableOfContents
         items={[
           { id: "intro", label: "Overview" },
-          { id: "download-blou", label: "Get the app" },
           { id: "milestones", label: "Milestone guides" },
           { id: "symptoms", label: "Symptom guides" },
-          { id: "relapse", label: "Relapse & maintenance" },
+          { id: "articles", label: "All articles" },
           { id: "faq", label: "FAQ" },
         ]}
       />
 
       <article
         id="intro"
-        className="scroll-mt-24 rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm"
+        className="scroll-mt-24 rounded-panel border border-line bg-surface p-6 shadow-card md:p-8"
       >
-        <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
+        <h1 className="text-3xl font-semibold tracking-tight text-ink">
           Quit smoking guides & timelines
         </h1>
-        <p className="mt-3 max-w-3xl text-sm leading-7 text-teal-900/80">
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-ink-muted">
           These guides explain what most people experience after stopping
           smoking — by milestone (day 1 through 10 years) and by symptom
           (cravings, cough, anxiety, sleep, and more). Each page lists typical
           durations, practical relief, and red flags that warrant medical
           review.
         </p>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <Link
-            href="/how-to-quit-smoking"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Start: How to quit smoking (step-by-step)
-          </Link>
-          <Link
-            href="/tools/money-saved"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Tool: Money saved calculator
-          </Link>
-          <Link
-            href="/quit-vaping"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            How to quit vaping
-          </Link>
-          <Link
-            href="/motivation-to-quit-smoking"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Motivation to quit
-          </Link>
-          <Link
-            href="/trying-to-quit-smoking-again"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Trying to quit again
-          </Link>
-          <Link
-            href="/best-quit-smoking-apps"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Best quit smoking apps
-          </Link>
-          <Link
-            href="/first-week-quit-smoking"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            First week quit smoking
-          </Link>
-          <Link
-            href="/nicotine-withdrawal-symptoms"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Withdrawal symptoms
-          </Link>
-          <Link
-            href="/is-it-too-late-to-quit-smoking"
-            className="rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
-          >
-            Is it too late to quit?
-          </Link>
-        </div>
       </article>
-
-      <section id="download-blou" className="scroll-mt-24">
-        <StayOnTrackCard campaign="guides_index" placement="article_intro" />
-      </section>
 
       <section
         id="milestones"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
+        <h2 className="text-xl font-semibold text-ink">
           Milestones (1 day → 10 years)
         </h2>
-        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+        <p className="mt-2 text-sm leading-6 text-ink-muted">
           How your body typically changes across the first year — and beyond.
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
@@ -151,9 +90,9 @@ export default function GuidesIndexPage() {
             <li key={guide.slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
               >
-                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
                   Milestone
                 </span>
                 <span className="mt-1 block font-medium">{guide.title}</span>
@@ -165,12 +104,12 @@ export default function GuidesIndexPage() {
 
       <section
         id="symptoms"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
+        <h2 className="text-xl font-semibold text-ink">
           Symptoms (how long & when to seek help)
         </h2>
-        <p className="mt-2 text-sm leading-6 text-teal-900/80">
+        <p className="mt-2 text-sm leading-6 text-ink-muted">
           Each guide lists typical duration, practical relief, and red flags.
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
@@ -178,9 +117,9 @@ export default function GuidesIndexPage() {
             <li key={guide.slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
               >
-                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
                   Symptom
                 </span>
                 <span className="mt-1 block font-medium">{guide.title}</span>
@@ -191,38 +130,38 @@ export default function GuidesIndexPage() {
       </section>
 
       <section
-        id="relapse"
-        className="scroll-mt-24 rounded-2xl border border-teal-200/90 bg-white p-6 shadow-sm"
+        id="articles"
+        className="scroll-mt-24 rounded-card border border-line bg-surface p-6 shadow-card"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Relapse &amp; maintenance
-        </h2>
-        <p className="mt-2 text-sm leading-6 text-teal-900/80">
-          If you already slipped or expect high-risk triggers, use these support
-          pages alongside timeline and symptom guides.
+        <h2 className="text-xl font-semibold text-ink">All articles</h2>
+        <p className="mt-2 text-sm leading-6 text-ink-muted">
+          Plans, methods, health situations, slips, and app comparisons.
         </p>
-        <ul className="mt-4 grid gap-3 md:grid-cols-2">
-          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
-            (item) => (
-              <li key={item.slug}>
-                <Link
-                  href={item.href}
-                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
-                >
-                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
-                    Relapse guide
-                  </span>
-                  <span className="mt-1 block font-medium">{item.title}</span>
-                </Link>
-              </li>
-            ),
-          )}
-        </ul>
+        <div className="mt-6 grid gap-8 md:grid-cols-2">
+          {ARTICLE_GROUPS.map((group) => (
+            <div key={group}>
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-accent">{group}</h3>
+              <ul className="mt-3 space-y-2 text-sm">
+                {articleRoutes
+                  .filter((r) => r.group === group)
+                  .map((r) => (
+                    <li key={r.path}>
+                      <Link href={r.path} className="text-ink underline-offset-2 hover:underline">
+                        {r.label}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-guides" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign="guides_hub" />
     </div>
   );
 }

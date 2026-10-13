@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-cold-turkey";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking cold turkey: when it works (and a safer plan)",
+  title: "Quit smoking cold turkey: when it works + safer plan",
   description:
     "Thinking about quitting smoking cold turkey? Here’s when it works, when to add NRT/medication support, and a simple plan for days 1–14.",
   path: "/quit-smoking-cold-turkey",
@@ -56,7 +57,7 @@ const faqItems = [
 
 export default function QuitSmokingColdTurkeyPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking cold turkey: when it works (and a safer plan)",
+    title: "Quit smoking cold turkey: when it works + safer plan",
     description:
       "A practical plan for quitting cold turkey with predictable withdrawal and cue-based cravings.",
     path: "/quit-smoking-cold-turkey",
@@ -70,9 +71,7 @@ export default function QuitSmokingColdTurkeyPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="cold-turkey-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -80,30 +79,23 @@ export default function QuitSmokingColdTurkeyPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Method guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking cold turkey
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Method guide"
+        title="Quit smoking cold turkey"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            Prep in 7 days →
+          </ButtonLink>
+        }
+      >
+        <p>
           Cold turkey can work when you pair it with a real plan: a fixed quit
           date, cue replacements, and a fast craving response for days 1–14.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Prep in 7 days →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -111,7 +103,6 @@ export default function QuitSmokingColdTurkeyPage() {
           { id: "when-cold-turkey-works", label: "When cold turkey works" },
           { id: "a-simple-plan", label: "A simple cold-turkey plan" },
           { id: "days-2-3", label: "Protect days 2–3" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "related", label: "Related guides" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
@@ -220,9 +211,11 @@ export default function QuitSmokingColdTurkeyPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        Days 2–3 are usually the hardest. Blou&apos;s SOS button is there the
+        second a craving hits, and your timeline shows every smoke-free day
+        you&apos;ve already put behind you.
+      </InlineAppCta>
 
       <section id="related" className="scroll-mt-24">
         <RelatedGuides
@@ -238,25 +231,16 @@ export default function QuitSmokingColdTurkeyPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-cold-turkey" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Withdrawal timeline →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-cold-turkey</code>
-      </p>
+      <div className="flex flex-wrap items-center gap-3">
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+          Withdrawal timeline →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

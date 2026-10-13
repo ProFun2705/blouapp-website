@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { buildArticleJsonLd, buildHowToJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-04-24";
-const MODIFIED = "2026-04-24";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_i-smoked-one-cigarette";
 
 export const metadata: Metadata = buildMetadata({
   title: "I smoked one cigarette—what to do next",
@@ -96,12 +98,7 @@ export default function ISmokedOneCigarettePage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="slip-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="slip-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -109,34 +106,24 @@ export default function ISmokedOneCigarettePage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          I smoked one cigarette—what to do next
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="I smoked one cigarette—what to do next"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Revisit the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           A single slip is common. The goal is to interrupt the all-or-nothing
           story, contain the day, and update your plan—not to prove you are
           perfect.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Revisit the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -203,6 +190,11 @@ export default function ISmokedOneCigarettePage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        After a slip, the next craving is the one to beat. Blou&apos;s SOS button is there the second it
+        hits, and your timeline shows your progress as you get back on track.
+      </InlineAppCta>
+
       <section
         id="shame-spiral"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -262,8 +254,10 @@ export default function ISmokedOneCigarettePage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-one-cigarette" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -276,10 +270,6 @@ export default function ISmokedOneCigarettePage() {
           ]}
         />
       </section>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/i-smoked-one-cigarette</code>
-      </p>
     </div>
   );
 }

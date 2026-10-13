@@ -15,22 +15,12 @@ import { staticRoutes } from "@/lib/staticRoutes";
 
 const SITEMAP_GENERATED_AT = new Date().toISOString();
 
-/**
- * Map a country to a unique BCP-47 hreflang. We use `en-{REGION}` because all
- * pages are written in English but geo-targeted (currency, hotlines, prices).
- * Avoids hreflang collisions where two countries both fall back to plain "en".
- */
-const countryHreflang = (slug: string, locale: string): string => {
-  const region = locale.includes("-") ? locale.split("-")[1] : "";
-  return region ? `en-${region}` : `en-${slug.toUpperCase()}`;
+const countryLanguageMap: Record<string, string> = {
+  ...Object.fromEntries(
+    countries.map((c) => [c.hreflang, `${SITE_URL}/calculators/${c.slug}`]),
+  ),
+  "x-default": `${SITE_URL}/calculators`,
 };
-
-const countryLanguageMap = Object.fromEntries(
-  countries.map((c) => [
-    countryHreflang(c.slug, c.locale),
-    `${SITE_URL}/calculators/${c.slug}`,
-  ]),
-);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((r) => ({

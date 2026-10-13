@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_driving-and-quitting-smoking";
 
 export const metadata: Metadata = buildMetadata({
   title: "Driving and quitting smoking: replace car cigarettes",
@@ -69,42 +69,35 @@ export default function DrivingAndQuittingSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="driving-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Driving and quitting smoking", path: "/driving-and-quitting-smoking" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Cue swap
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Driving and quitting smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Cue swap"
+        title="Driving and quitting smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/guides/cravings" variant="secondary">
+            Cravings guide →
+          </ButtonLink>
+        }
+      >
+        <p>
           Treat the car like a lab: remove lighters, deep clean ash smell week
           one, and install a boring replacement (podcast queue, gum rules, two
           planned stops).
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_driving" placement="article_intro" />
-          <Link href="/guides/cravings" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Cravings guide →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "tactics", label: "Tactics" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
@@ -128,24 +121,23 @@ export default function DrivingAndQuittingSmokingPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        Once you are parked, Blou&apos;s SOS craving help can talk you through
+        the urge, and every smoke-free drive adds to one visual timeline of your
+        milestones.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-driving-quit" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_driving" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Full plan →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/driving-and-quitting-smoking</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+          Full plan →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

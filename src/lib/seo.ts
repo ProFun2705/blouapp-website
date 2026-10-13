@@ -121,9 +121,9 @@ type ArticleJsonLdInput = {
   description: string;
   path: string;
   /**
-   * If omitted, Article JSON-LD references the route's auto-generated OG
-   * image (`<route>/opengraph-image`). Pass an absolute URL or site-relative
-   * path to override.
+   * If omitted, Article JSON-LD references the site-wide OG image
+   * (`/opengraph-image`), which exists for every route. Routes with their own
+   * `opengraph-image` file (guides) pass `${path}/opengraph-image`.
    */
   image?: string;
   datePublished: string;
@@ -159,7 +159,7 @@ export function buildArticleJsonLd({
     ? image.startsWith("http")
       ? image
       : `${SITE_URL}${image}`
-    : `${url}/opengraph-image`;
+    : `${SITE_URL}/opengraph-image`;
   const type = isMedical ? ["MedicalWebPage", "Article"] : ["Article"];
 
   const base: Record<string, unknown> = {

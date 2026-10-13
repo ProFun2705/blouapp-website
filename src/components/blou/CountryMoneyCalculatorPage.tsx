@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -93,6 +93,11 @@ export function CountryMoneyCalculatorPage({
         />
       </section>
 
+      <InlineAppCta campaign={campaignSlug}>
+        The money is the part you can calculate. Blou shows the rest of what quitting gives back:
+        your photo timeline, your lung checks, and every smoke-free day on one timeline.
+      </InlineAppCta>
+
       <section className="grid gap-4 md:grid-cols-2">
         <article
           id="local-context"
@@ -161,17 +166,18 @@ export function CountryMoneyCalculatorPage({
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs leading-5 text-teal-900/70">
+          <p className="mt-4 text-xs leading-5 text-ink-muted">
             This page is educational and not medical advice. If you are in a
             medical emergency, contact your local emergency services.
           </p>
         </article>
       </section>
 
+      <EndAppCta campaign={campaignSlug} />
+
       <section id="faq" className="scroll-mt-24">
         <FaqSection
           items={faqItems}
-          jsonLdId={`faq-json-ld-${country.slug}`}
           title={`Frequently asked questions – ${country.name}`}
         />
       </section>
@@ -179,26 +185,22 @@ export function CountryMoneyCalculatorPage({
       <div id="next-steps" className="scroll-mt-24 flex flex-wrap items-center gap-3">
         <Link
           href="/calculators"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-surface px-5 text-sm font-medium text-ink transition-colors hover:bg-surface-muted"
         >
           ← All country calculators
         </Link>
         <Link
           href="/tools/money-saved"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-surface px-5 text-sm font-medium text-ink transition-colors hover:bg-surface-muted"
         >
           Global calculator
         </Link>
         <Link
           href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-surface px-5 text-sm font-medium text-ink transition-colors hover:bg-surface-muted"
         >
           Quit plan
         </Link>
-        <AppStoreBadgeLink
-          campaign={campaignSlug}
-          placement={`country_calculator_${country.slug}`}
-        />
       </div>
     </article>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
@@ -12,7 +12,6 @@ import {
   buildMetadata,
   buildWebApplicationJsonLd,
 } from "@/lib/seo";
-import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
   title: "Lung recovery timeline visualizer (free)",
@@ -87,12 +86,8 @@ export default function LungRecoveryToolPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="lung-recovery-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
-      <Script id="lung-recovery-webapp-json-ld" type="application/ld+json">
-        {JSON.stringify(webAppJsonLd)}
-      </Script>
+      <JsonLd data={howToJsonLd} />
+      <JsonLd data={webAppJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -114,12 +109,6 @@ export default function LungRecoveryToolPage() {
           Surgeon General, CDC, and NHS — use them alongside, not instead of,
           medical advice.
         </p>
-        <div className="mt-6">
-          <AppStoreBadgeLink
-            campaign="tool_lung_recovery"
-            placement="tool_lung_recovery"
-          />
-        </div>
       </header>
 
       <TableOfContents
@@ -135,6 +124,11 @@ export default function LungRecoveryToolPage() {
       <section id="timeline" className="scroll-mt-24">
         <LungRecoveryTimeline />
       </section>
+
+      <InlineAppCta campaign="tool_lung-recovery">
+        This timeline shows what typically happens. Blou&apos;s breath checks show what is happening
+        in your own lungs as the weeks go by.
+      </InlineAppCta>
 
       <section
         id="how-to-use"
@@ -178,7 +172,7 @@ export default function LungRecoveryToolPage() {
             >
               CDC: Benefits of Quitting
             </a>
-            <span className="text-teal-900/60"> · US Centers for Disease Control</span>
+            <span className="text-ink-muted"> · US Centers for Disease Control</span>
           </li>
           <li>
             <a
@@ -189,7 +183,7 @@ export default function LungRecoveryToolPage() {
             >
               US Surgeon General&apos;s Report on Smoking Cessation (2020)
             </a>
-            <span className="text-teal-900/60"> · US HHS</span>
+            <span className="text-ink-muted"> · US HHS</span>
           </li>
           <li>
             <a
@@ -200,7 +194,7 @@ export default function LungRecoveryToolPage() {
             >
               NHS: Quit smoking
             </a>
-            <span className="text-teal-900/60"> · UK National Health Service</span>
+            <span className="text-ink-muted"> · UK National Health Service</span>
           </li>
         </ul>
       </section>
@@ -219,8 +213,10 @@ export default function LungRecoveryToolPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-tool-lung-recovery" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign="tool_lung-recovery" />
 
       <div className="flex flex-wrap gap-3">
         <Link
@@ -236,10 +232,6 @@ export default function LungRecoveryToolPage() {
           Read milestone guides
         </Link>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/tools/lung-recovery</code>
-      </p>
     </div>
   );
 }

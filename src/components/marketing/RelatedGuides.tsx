@@ -78,8 +78,8 @@ const RELATED_LINK_MAP: Record<
     category: "Vaping",
   },
   [RELATED_PILLAR_SLUGS.smokingCessationApp]: {
-    title: "Smoking cessation app: what it should do",
-    href: "/smoking-cessation-app",
+    title: "Best quit smoking apps in 2026",
+    href: "/best-quit-smoking-apps",
     category: "Apps",
   },
   [RELATED_PILLAR_SLUGS.quitSmokingAppAndroid]: {
@@ -198,14 +198,30 @@ const RELATED_LINK_MAP: Record<
     category: "NRT",
   },
   "stay-quit-after-one-month": {
-    title: "Stay quit after one month",
-    href: "/stay-quit-after-one-month",
-    category: "Maintenance",
+    title: "What happens after 1 month smoke-free",
+    href: "/guides/what-happens-after-1-month",
+    category: "Milestone",
   },
   "best-quit-smoking-app-for-beginners": {
-    title: "Best quit smoking app for beginners",
-    href: "/best-quit-smoking-app-for-beginners",
+    title: "Best quit smoking apps in 2026",
+    href: "/best-quit-smoking-apps",
     category: "Apps",
+  },
+  // Guides merged into their pillar articles (Oct 2026).
+  anxiety: {
+    title: "Quitting smoking with anxiety",
+    href: "/quit-smoking-with-anxiety",
+    category: "Symptom",
+  },
+  depression: {
+    title: "Quitting smoking with depression",
+    href: "/quit-smoking-with-depression",
+    category: "Symptom",
+  },
+  "weight-gain": {
+    title: "Quitting smoking without gaining weight",
+    href: "/quit-smoking-without-gaining-weight",
+    category: "Symptom",
   },
   "is-it-too-late-to-quit-smoking": {
     title: "Is it too late to quit smoking?",
@@ -223,8 +239,8 @@ export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuide
   if (!slugs.length) return null;
 
   return (
-    <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
-      <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
+    <section className="rounded-card border border-line bg-surface p-6 shadow-card">
+      <h2 className="text-xl font-semibold text-ink">{title}</h2>
       <ul className="mt-4 grid gap-3 md:grid-cols-2">
         {slugs.map((slug) => {
           const overlay = RELATED_LINK_MAP[slug];
@@ -233,9 +249,9 @@ export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuide
               <li key={slug}>
                 <Link
                   href={overlay.href}
-                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                  className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
                 >
-                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                  <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
                     {overlay.category}
                   </span>
                   <span className="mt-1 block font-medium">{overlay.title}</span>
@@ -251,9 +267,9 @@ export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuide
             <li key={slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
               >
-                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
                   {guide.category === "milestone" ? "Milestone" : "Symptom"}
                 </span>
                 <span className="mt-1 block font-medium">{guide.title}</span>

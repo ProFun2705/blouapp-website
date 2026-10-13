@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import {
   buildArticleJsonLd,
   buildHowToJsonLd,
@@ -16,13 +16,14 @@ import {
 } from "@/lib/seo";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-03-01";
-const MODIFIED = "2026-04-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_how-to-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How to quit smoking: step-by-step plan (2026)",
+  title: "How to quit smoking: a step-by-step plan",
   description:
     "A complete, evidence-based plan for quitting smoking. Set your quit date, choose NRT or medication, handle cravings, and stay quit for the long term.",
   path: "/how-to-quit-smoking",
@@ -98,7 +99,7 @@ const faqItems = [
 
 export default function HowToQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How to quit smoking: step-by-step plan (2026)",
+    title: "How to quit smoking: a step-by-step plan",
     description:
       "An evidence-based plan for quitting smoking — quit date, medication, cravings, and long-term maintenance.",
     path: "/how-to-quit-smoking",
@@ -119,49 +120,36 @@ export default function HowToQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="how-to-quit-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="how-to-quit-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[{ name: "How to quit smoking", path: "/how-to-quit-smoking" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Pillar guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to quit smoking: step-by-step plan (2026)
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Pillar guide"
+        title="How to quit smoking: step-by-step plan (2026)"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            Start with the 7-day prep →
+          </ButtonLink>
+        }
+      >
+        <p>
           A complete, evidence-based plan for the first 90 days and beyond.
           Pick a quit date, line up one form of medical support, plan around
           your top three cues, and use a tracker to make progress visible.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Start with the 7-day prep →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "seven-step-plan", label: "The 7-step quit plan" },
           { id: "if-you-had-a-slip", label: "If you had a slip" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "quit-day", label: "What to do on quit day" },
           { id: "quit-help-by-country", label: "Free quit help by country" },
           { id: "relapse-maintenance", label: "Relapse & maintenance" },
@@ -249,10 +237,6 @@ export default function HowToQuitSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section
         id="quit-day"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -268,6 +252,11 @@ export default function HowToQuitSmokingPage() {
           <li className="flex gap-2"><span aria-hidden className="mt-1 text-teal-600">•</span><span>Drink more water than usual, eat something protein-rich, get outside for 10 minutes.</span></li>
         </ul>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        Quit day is when cravings first test your plan. Blou&apos;s SOS button is there the second one
+        hits, and every smoke-free day lands on one visual timeline.
+      </InlineAppCta>
 
       <section
         id="quit-help-by-country"
@@ -309,7 +298,7 @@ export default function HowToQuitSmokingPage() {
                   <span className="mt-1 block font-medium">{item.title}</span>
                 </Link>
               ) : (
-                <div className="rounded-xl border border-dashed border-teal-200 px-4 py-3 text-sm text-teal-900/75">
+                <div className="rounded-xl border border-dashed border-teal-200 px-4 py-3 text-sm text-ink-muted">
                   <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700/80">
                     Planned
                   </span>
@@ -357,13 +346,13 @@ export default function HowToQuitSmokingPage() {
           </li>
           <li>
             <Link
-              href={`/${RELATED_PILLAR_SLUGS.smokingCessationApp}`}
+              href="/best-quit-smoking-apps"
               className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
             >
               <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
                 Apps
               </span>
-              <span className="mt-1 block font-medium">Smoking cessation app</span>
+              <span className="mt-1 block font-medium">Best quit smoking apps</span>
             </Link>
           </li>
           <li>
@@ -447,23 +436,14 @@ export default function HowToQuitSmokingPage() {
               <span className="mt-1 block font-medium">Withdrawal symptoms hub</span>
             </Link>
           </li>
-          <li>
-            <Link
-              href="/best-quit-smoking-app-for-beginners"
-              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
-            >
-              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
-                Apps
-              </span>
-              <span className="mt-1 block font-medium">Best app for beginners</span>
-            </Link>
-          </li>
         </ul>
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-how-to-quit" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -479,7 +459,7 @@ export default function HowToQuitSmokingPage() {
             "trying-to-quit-smoking-again",
             "first-week-quit-smoking",
             "nicotine-withdrawal-symptoms",
-            "best-quit-smoking-app-for-beginners",
+            "best-quit-smoking-apps",
             "what-happens-after-1-day",
             "what-happens-after-3-days",
             "what-happens-after-1-week",
@@ -503,10 +483,6 @@ export default function HowToQuitSmokingPage() {
           <li><a className="underline decoration-teal-400 underline-offset-4" href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank" rel="noopener noreferrer">WHO: Tobacco key facts</a></li>
         </ul>
       </section>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/how-to-quit-smoking</code>
-      </p>
     </div>
   );
 }

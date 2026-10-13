@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { PILLAR_ARTICLE_REFERENCES } from "@/lib/pillarArticleReferences";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-04-27";
-const MODIFIED = "2026-04-27";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_social-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Social smoking: am I addicted if I only smoke sometimes?",
+  title: "Social smoking: am I addicted if I smoke sometimes?",
   description:
-    "“Only on weekends” still exposes you to nicotine and smoking diseases. Learn how social patterns become dependence, what to track, and how to quit without a pack-a-day label.",
+    "“Only on weekends” still exposes you to nicotine and smoke. How social patterns become dependence, what to watch, and how to quit without the label.",
   path: "/social-smoking",
   type: "article",
   publishedTime: PUBLISHED,
@@ -77,42 +78,30 @@ export default function SocialSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="social-smoking-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Social smoking", path: "/social-smoking" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Social smoking: am I addicted?
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="Social smoking: am I addicted?"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Build a quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           “Only with friends” is still smoking. The question is not whether you
           earn a label—it is whether nicotine and smoke are training your brain
           on a schedule you like but your lungs do not.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Build a quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -137,7 +126,6 @@ export default function SocialSmokingPage() {
             id: "when-to-seek-medical-care",
             label: "When should you seek medical care?",
           },
-          { id: "stay-on-track", label: "Stay on track" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
@@ -253,6 +241,11 @@ export default function SocialSmokingPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Blou&apos;s SOS craving help is there on a high-risk Friday night, and
+        each smoke-free weekend lands on one visual timeline of your milestones.
+      </InlineAppCta>
+
       <section
         id="how-to-quit-without-label"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -278,9 +271,9 @@ export default function SocialSmokingPage() {
             NHS quit smoking hub
           </a>{" "}
           offers practical behavioral tips that apply even when your smoking diary
-          looks sparse on paper. Combine those with Blou’s tracking if seeing
-          patterns across weekends helps you believe the problem is real enough
-          to invest in.
+          looks sparse on paper. Combine those with a simple note of which
+          weekends and settings end in a cigarette if seeing the pattern helps
+          you believe the problem is real enough to invest in.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
@@ -321,16 +314,11 @@ export default function SocialSmokingPage() {
         </ul>
       </section>
 
-      <section id="stay-on-track" className="scroll-mt-24">
-        <StayOnTrackCard
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-social-smoking" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -362,11 +350,11 @@ export default function SocialSmokingPage() {
               >
                 {reference.label}
               </a>{" "}
-              <span className="text-teal-900/60">· {reference.publisher}</span>
+              <span className="text-ink-muted">· {reference.publisher}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs leading-5 text-teal-900/70">
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
           This guide is educational and does not replace medical advice. If you
           have pre-existing conditions or take prescription medication, talk to
           your clinician when making changes to your smoking.
@@ -374,21 +362,10 @@ export default function SocialSmokingPage() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link
-          href="/best-quit-smoking-apps"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
           Compare quit apps
-        </Link>
-        <AppStoreBadgeLink
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/social-smoking</code>
-      </p>
     </div>
   );
 }

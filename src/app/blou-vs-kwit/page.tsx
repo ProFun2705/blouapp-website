@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_blou-vs-kwit";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Blou vs Kwit (2026): which quit smoking app should you pick?",
+  title: "Blou vs Kwit (2026): which quit smoking app to pick?",
   description:
     "Blou vs Kwit: an honest comparison. Choose Blou for a clean visual tracker on iPhone, or Kwit for gamified XP and avatar progression.",
   path: "/blou-vs-kwit",
@@ -35,7 +36,7 @@ const faqItems = [
   {
     question: "Is Blou better than Kwit?",
     answer:
-      "It depends on what motivates you. Blou is a clean, visual tracker focused on cravings, savings, and health milestones. Kwit is built around RPG-style gamification—you level up a character as your quit progresses. Try whichever framing resonates more with how you think about progress.",
+      "It depends on what motivates you. Blou is an iPhone-only subscription app (with a free trial) that shows your own recovery: a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline. Kwit is built around RPG-style gamification—you level up a character as your quit progresses. Try whichever framing resonates more with how you think about progress.",
   },
   {
     question: "Is Kwit free?",
@@ -50,7 +51,7 @@ const faqItems = [
   {
     question: "Do both apps work on Android?",
     answer:
-      "Kwit is available on both iOS and Android. Blou is currently iOS-only; an Android waitlist is on the homepage.",
+      "Kwit is available on both iOS and Android. Blou is iPhone-only for now, with no Android version yet.",
   },
   {
     question: "Should I use a quit app if I'm also using nicotine patches?",
@@ -73,39 +74,30 @@ export default function BlouVsKwitPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="blou-vs-kwit-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Blou vs Kwit", path: "/blou-vs-kwit" }]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Comparison
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Blou vs Kwit
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
-          We make Blou, so we're not neutral. This page is here to help you
-          choose the quit app you'll actually use when cravings hit—not just
+      <ArticleHeader
+        kicker="Comparison"
+        title="Blou vs Kwit"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+            See the full apps roundup →
+          </ButtonLink>
+        }
+      >
+        <p>
+          We make Blou, so we&apos;re not neutral. This page is here to help you
+          choose the quit app you&apos;ll actually use when cravings hit—not just
           download and forget.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            See the full apps roundup →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -113,14 +105,13 @@ export default function BlouVsKwitPage() {
           { id: "choose-blou", label: "Choose Blou if…" },
           { id: "choose-kwit", label: "Choose Kwit if…" },
           { id: "feature-differences", label: "Feature differences" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Choose Blou for a clean visual quit tracker on iPhone—fast craving tools, savings progress, and health milestones without clutter. Choose Kwit if you are motivated by RPG-style gamification, want to level up a character as you quit, or need Android support."
+          answer="Choose Blou for a clean, visual way to see your own recovery on iPhone—a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline—as a subscription with a free trial. Choose Kwit if you are motivated by RPG-style gamification, want to level up a character as you quit, or need Android support."
           facts={[
             "The best quit app is the one you open during cravings, not just on day one.",
             "Most cravings peak and fade within 3–5 minutes—fast access is critical.",
@@ -139,32 +130,26 @@ export default function BlouVsKwitPage() {
         <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>You're on iPhone and want a clean, distraction-free tracker.</span>
+            <span>You&apos;re on iPhone and want a clean, distraction-free tracker.</span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              You prefer progress shown as real health milestones and{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/tools/money-saved"
-              >
-                money saved
-              </Link>{" "}
-              rather than game levels.
+              You prefer progress shown as your own recovery (photo timeline,
+              lung checks, health milestones) rather than game levels.
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              You want craving support that's fast and repeatable—timer + one
-              replacement action.
+              You want SOS craving help that is there the second a craving
+              hits.
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              You're motivated by seeing tangible wins: the first 24 hours, the{" "}
+              You&apos;re motivated by seeing tangible wins: the first 24 hours, the{" "}
               <Link
                 className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
                 href="/guides/what-happens-after-1-week"
@@ -174,8 +159,21 @@ export default function BlouVsKwitPage() {
               , the first month.
             </span>
           </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              You&apos;re fine with a subscription once the free trial ends; nothing
+              in Blou works without one.
+            </span>
+          </li>
         </ul>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        If that sounds like you, Blou for iPhone puts your photo timeline, lung
+        checks, and every milestone on one visual timeline, with SOS craving
+        help one tap away.
+      </InlineAppCta>
 
       <section
         id="choose-kwit"
@@ -217,23 +215,31 @@ export default function BlouVsKwitPage() {
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Platforms:</strong> Blou (iOS only, 2026). Kwit (iOS +
+              <strong>Platforms:</strong> Blou (iPhone only). Kwit (iOS +
               Android).
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Core motivation model:</strong> Blou uses health timeline
-              + savings progress. Kwit uses RPG-style XP and character
+              <strong>Pricing:</strong> Blou is a subscription with a free
+              trial. Kwit has a free tier and a paid subscription.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              <strong>Core motivation model:</strong> Blou shows your own
+              recovery on one visual timeline (photos, lung checks, milestones).
+              Kwit uses RPG-style XP and character
               leveling.
             </span>
           </li>
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              <strong>Craving tools:</strong> Both offer craving logging. Blou
-              emphasizes speed (timer + one action). Kwit ties cravings to game
+              <strong>Craving tools:</strong> Blou has SOS craving help for the
+              moment a craving hits. Kwit ties cravings to game
               mechanics.
             </span>
           </li>
@@ -254,30 +260,17 @@ export default function BlouVsKwitPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-blou-vs-kwit" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/quit-smoking-tracker"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Use a quit tracker →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/blou-vs-kwit</code>
-      </p>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/" variant="secondary">
+          Use a quit tracker →
+        </ButtonLink>
+      </div>
     </div>
   );
 }

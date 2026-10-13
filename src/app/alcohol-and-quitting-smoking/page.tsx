@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { PILLAR_ARTICLE_REFERENCES } from "@/lib/pillarArticleReferences";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
@@ -16,15 +12,20 @@ import {
   buildHowToJsonLd,
   buildMetadata,
 } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-04-27";
-const MODIFIED = "2026-04-27";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_alcohol-and-quitting-smoking";
 
 export const metadata: Metadata = buildMetadata({
   title: "Alcohol and quitting smoking: what to know (2026)",
   description:
-    "Can you drink while quitting smoking? Learn how alcohol changes cravings, slips, and medication safety—and how to plan nights out without derailing your quit.",
+    "Can you drink while quitting smoking? How alcohol changes cravings, slips, and medication safety, and how to plan nights out without derailing your quit.",
   path: "/alcohol-and-quitting-smoking",
   type: "article",
   publishedTime: PUBLISHED,
@@ -113,12 +114,7 @@ export default function AlcoholAndQuittingSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="alcohol-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="alcohol-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -129,34 +125,24 @@ export default function AlcoholAndQuittingSmokingPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Alcohol and quitting smoking: what to know
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="Alcohol and quitting smoking: what to know"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Open the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Alcohol is one of the strongest real-world triggers for slips. You do
           not need a moral verdict on drinking—you need a plan that matches how
           your brain learned smoking.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Open the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -181,7 +167,6 @@ export default function AlcoholAndQuittingSmokingPage() {
             id: "when-to-seek-medical-care",
             label: "When should you seek medical care?",
           },
-          { id: "stay-on-track", label: "Stay on track" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
@@ -307,6 +292,12 @@ export default function AlcoholAndQuittingSmokingPage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        On a night out, Blou&apos;s SOS craving help is one tap away when a
+        drink makes a cigarette sound good, and the next morning every
+        smoke-free day is still there on your timeline.
+      </InlineAppCta>
+
       <section
         id="friends-and-partners"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -330,9 +321,8 @@ export default function AlcoholAndQuittingSmokingPage() {
           a fair trial.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          Blou is built for these micro-moments: logging a craving after a
-          drink, swapping scripts with your past self, and seeing that slips are
-          data—not destiny. Pair that with the{" "}
+          It also helps to treat slips as data, not destiny. Pair that mindset
+          with the{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
             href="/tools/money-saved"
@@ -383,16 +373,11 @@ export default function AlcoholAndQuittingSmokingPage() {
         </p>
       </section>
 
-      <section id="stay-on-track" className="scroll-mt-24">
-        <StayOnTrackCard
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-alcohol-quit" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -424,11 +409,11 @@ export default function AlcoholAndQuittingSmokingPage() {
               >
                 {reference.label}
               </a>{" "}
-              <span className="text-teal-900/60">· {reference.publisher}</span>
+              <span className="text-ink-muted">· {reference.publisher}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs leading-5 text-teal-900/70">
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
           This guide is educational and does not replace medical advice. If you
           have pre-existing conditions or take prescription medication, talk to
           your clinician when making changes to your smoking.
@@ -436,21 +421,10 @@ export default function AlcoholAndQuittingSmokingPage() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link
-          href="/how-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
           ← Back to quit plan
-        </Link>
-        <AppStoreBadgeLink
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+        </ButtonLink>
       </div>
-
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/alcohol-and-quitting-smoking</code>
-      </p>
     </div>
   );
 }

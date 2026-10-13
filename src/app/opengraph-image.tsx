@@ -1,11 +1,13 @@
 import { ImageResponse } from "next/og";
+import { ogLogoDataUrl } from "@/lib/ogLogo";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export const alt = `${SITE_NAME} – ${SITE_TAGLINE}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const logo = await ogLogoDataUrl();
   return new ImageResponse(
     (
       <div
@@ -33,35 +35,20 @@ export default function Image() {
             opacity: 0.95,
           }}
         >
-          <div
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 14,
-              background: "white",
-              color: "#0f766e",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 36,
-              fontWeight: 700,
-            }}
-          >
-            B
-          </div>
+          <img src={logo} width={56} height={56} alt="" style={{ borderRadius: 14 }} />
           {SITE_NAME}
         </div>
         <div
           style={{
             marginTop: 60,
-            fontSize: 88,
+            fontSize: 76,
             fontWeight: 700,
             letterSpacing: "-0.03em",
             lineHeight: 1.05,
             maxWidth: 940,
           }}
         >
-          Quit smoking, tracked simply.
+          See your body heal after your last cigarette.
         </div>
         <div
           style={{
@@ -73,7 +60,7 @@ export default function Image() {
             lineHeight: 1.35,
           }}
         >
-          Cravings, savings, and recovery — visualized for iPhone.
+          Quit smoking app for iPhone: photo timeline, lung checks, SOS craving help.
         </div>
         <div
           style={{

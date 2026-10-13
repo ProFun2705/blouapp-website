@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-without-gaining-weight";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking without gaining weight: a realistic plan",
   description:
-    "Worried about weight gain after quitting? Here’s a realistic plan: handle cravings, plan snacks, protect sleep, and track progress without turning quitting into a diet.",
+    "Worried about weight gain after quitting? A realistic plan: handle cravings, plan snacks, protect sleep, and avoid turning quitting into a diet.",
   path: "/quit-smoking-without-gaining-weight",
   type: "article",
   publishedTime: PUBLISHED,
@@ -70,9 +71,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="weight-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -83,31 +82,24 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         ]}
       />
 
-      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-          Concern-based guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking without gaining weight (realistic plan)
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Concern-based guide"
+        title="Quit smoking without gaining weight (realistic plan)"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Read the quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Weight worries are real—but the goal is staying smoke-free first. This
           plan focuses on stable meals, default snacks, sleep, and craving tools
           so you don’t replace cigarettes with constant grazing.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Read the quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -115,7 +107,6 @@ export default function QuitSmokingWithoutGainingWeightPage() {
           { id: "the-plan", label: "The plan (4 pillars)" },
           { id: "default-snacks", label: "Default snacks" },
           { id: "cravings-vs-hunger", label: "Cravings vs hunger" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "related", label: "Related guides" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
@@ -170,6 +161,11 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        For the craving-response pillar, Blou&apos;s SOS button is there the
+        second a craving hits, so an urge doesn&apos;t turn into a snack run.
+      </InlineAppCta>
+
       <section
         id="default-snacks"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -206,14 +202,10 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="related" className="scroll-mt-24">
         <RelatedGuides
           slugs={[
-            "weight-gain",
+            "increased-appetite",
             "cravings",
             "insomnia",
             "what-happens-after-1-week",
@@ -224,25 +216,16 @@ export default function QuitSmokingWithoutGainingWeightPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-without-weight-gain" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/quit-smoking-tracker"
-          className="inline-flex h-11 items-center justify-center rounded-full border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Use a quit tracker →
-        </Link>
-      </div>
+      <EndAppCta campaign={CAMPAIGN} />
 
-      <p className="text-[11px] text-teal-900/60">
-        Canonical: <code>{SITE_URL}/quit-smoking-without-gaining-weight</code>
-      </p>
+      <div className="flex flex-wrap items-center gap-3">
+        <ButtonLink href="/" variant="secondary">
+          Use a quit tracker →
+        </ButtonLink>
+      </div>
     </div>
   );
 }
