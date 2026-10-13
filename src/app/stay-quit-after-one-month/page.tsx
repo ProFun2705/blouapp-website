@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -80,8 +80,8 @@ export default function StayQuitAfterOneMonthPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Maintenance
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -127,7 +127,7 @@ export default function StayQuitAfterOneMonthPage() {
         />
       </section>
 
-      <section id="weekly" className="scroll-mt-24 section-block">
+      <section id="weekly" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Weekly review (10 minutes)</h2>
         <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Any near-misses? What was the 60 seconds before?</li>
@@ -150,6 +150,10 @@ export default function StayQuitAfterOneMonthPage() {
           1-month milestone guide →
         </Link>
       </div>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/stay-quit-after-one-month</code>
+      </p>
+    </div>
   );
 }

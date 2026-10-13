@@ -11,7 +11,7 @@ import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-05-09";
 const MODIFIED = "2026-05-09";
@@ -84,8 +84,8 @@ export default function QuitSmokingWithoutGainingWeightPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Concern-based guide
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -141,7 +141,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
 
       <section
         id="the-plan"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">The plan (4 pillars)</h2>
         <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
@@ -179,7 +179,7 @@ export default function QuitSmokingWithoutGainingWeightPage() {
 
       <section
         id="default-snacks"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Default snacks</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
@@ -246,7 +246,11 @@ export default function QuitSmokingWithoutGainingWeightPage() {
           Use a quit tracker →
         </Link>
       </div>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/quit-smoking-without-gaining-weight</code>
+      </p>
+    </div>
   );
 }
 

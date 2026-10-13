@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -81,8 +81,8 @@ export default function BestQuitSmokingAppForBeginnersPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Beginner guide
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -128,7 +128,7 @@ export default function BestQuitSmokingAppForBeginnersPage() {
         />
       </section>
 
-      <section id="checklist" className="scroll-mt-24 section-block">
+      <section id="checklist" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Beginner checklist</h2>
         <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>One app only for 14 days.</span></li>
@@ -151,6 +151,10 @@ export default function BestQuitSmokingAppForBeginnersPage() {
           Cessation app guide →
         </Link>
       </div>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/best-quit-smoking-app-for-beginners</code>
+      </p>
+    </div>
   );
 }

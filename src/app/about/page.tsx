@@ -17,7 +17,7 @@ export default function AboutPage() {
     <article className="flex flex-col gap-8">
       <Breadcrumbs items={[{ name: "About", path: "/about" }]} />
 
-      <header className="masthead">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           About Blou
         </h1>
@@ -39,7 +39,7 @@ export default function AboutPage() {
 
       <section
         id="mission"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Our mission</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/85">
@@ -57,7 +57,7 @@ export default function AboutPage() {
 
       <section
         id="editorial"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Editorial process (E-E-A-T)
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
       <section
         id="people"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           People behind Blou
@@ -132,7 +132,7 @@ export default function AboutPage() {
 
       <section
         id="corrections"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Corrections & feedback

@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-05-14";
 const MODIFIED = "2026-05-14";
@@ -83,8 +83,8 @@ export default function LivingWithASmokerWhileQuittingPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Household triggers
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -132,7 +132,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
         />
       </section>
 
-      <section id="boundaries" className="scroll-mt-24 section-block">
+      <section id="boundaries" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">House rules</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Write three rules you both can live with. Revisit after week one when
@@ -144,7 +144,7 @@ export default function LivingWithASmokerWhileQuittingPage() {
         </p>
       </section>
 
-      <section id="escape" className="scroll-mt-24 section-block">
+      <section id="escape" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Escape hatches</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Pre-pick a nearby walk loop, a friend to text, and a “I’m stepping out
@@ -170,6 +170,10 @@ export default function LivingWithASmokerWhileQuittingPage() {
           Prep checklist →
         </Link>
       </div>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/living-with-a-smoker-while-quitting</code>
+      </p>
+    </div>
   );
 }

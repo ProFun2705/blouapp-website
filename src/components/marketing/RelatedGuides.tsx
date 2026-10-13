@@ -318,38 +318,47 @@ const RELATED_LINK_MAP: Record<
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {
-  const items = slugs.flatMap((slug) => {
-    const overlay = RELATED_LINK_MAP[slug];
-    if (overlay) return [{ slug, ...overlay }];
-    const guide = blouGuideBySlug[slug];
-    if (!guide || !isPublishedGuide(guide)) return [];
-    return [
-      {
-        slug,
-        href: `/guides/${guide.slug}`,
-        title: guide.title,
-        category: guide.category === "milestone" ? "Milestone" : "Symptom",
-      },
-    ];
-  }).slice(0, 4);
-
-  if (!items.length) return null;
+  if (!slugs.length) return null;
 
   return (
-    <section className="section-block">
+    <section className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
       <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
-      <ul className="mt-4 divide-y divide-teal-200">
-        {items.map((item) => (
-          <li key={item.slug}>
-            <Link
-              href={item.href}
-              className="flex items-baseline justify-between gap-4 py-3 text-sm text-teal-900 hover:text-teal-950"
-            >
-              <span className="font-medium">{item.title}</span>
-              <span className="shrink-0 text-xs text-teal-700">{item.category}</span>
-            </Link>
-          </li>
-        ))}
+      <ul className="mt-4 grid gap-3 md:grid-cols-2">
+        {slugs.map((slug) => {
+          const overlay = RELATED_LINK_MAP[slug];
+          if (overlay) {
+            return (
+              <li key={slug}>
+                <Link
+                  href={overlay.href}
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+                >
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                    {overlay.category}
+                  </span>
+                  <span className="mt-1 block font-medium">{overlay.title}</span>
+                </Link>
+              </li>
+            );
+          }
+
+          const guide = blouGuideBySlug[slug];
+          if (!guide || !isPublishedGuide(guide)) return null;
+
+          return (
+            <li key={slug}>
+              <Link
+                href={`/guides/${guide.slug}`}
+                className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+              >
+                <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                  {guide.category === "milestone" ? "Milestone" : "Symptom"}
+                </span>
+                <span className="mt-1 block font-medium">{guide.title}</span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

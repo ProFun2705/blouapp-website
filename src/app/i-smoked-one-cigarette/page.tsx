@@ -10,7 +10,7 @@ import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
 import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { buildArticleJsonLd, buildHowToJsonLd, buildMetadata } from "@/lib/seo";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-04-24";
 const MODIFIED = "2026-04-24";
@@ -110,8 +110,8 @@ export default function ISmokedOneCigarettePage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Relapse &amp; maintenance
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -170,7 +170,7 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="slip-vs-relapse"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Slip vs. relapse
@@ -195,7 +195,7 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="first-hour"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What to do in the first hour
@@ -212,7 +212,7 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="shame-spiral"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Shame, guilt, and the next day
@@ -241,7 +241,7 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="extra-help"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When to get extra help
@@ -283,6 +283,10 @@ export default function ISmokedOneCigarettePage() {
           ]}
         />
       </section>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/i-smoked-one-cigarette</code>
+      </p>
+    </div>
   );
 }

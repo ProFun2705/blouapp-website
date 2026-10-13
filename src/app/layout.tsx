@@ -1,12 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Geist_Mono, Schibsted_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { AmplitudeAnalytics } from "@/components/site/AmplitudeAnalytics";
 import { AnalyticsListeners } from "@/components/site/AnalyticsListeners";
 import { CookieConsent } from "@/components/site/CookieConsent";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { SkipLink } from "@/components/site/SkipLink";
 import {
   ORG_JSON_LD,
   SITE_DESCRIPTION,
@@ -32,8 +31,8 @@ function buildVerification(): Metadata["verification"] {
   return Object.keys(verification).length > 0 ? verification : undefined;
 }
 
-const display = Schibsted_Grotesk({
-  variable: "--font-display",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
 });
@@ -114,8 +113,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#eef1ea" },
-    { media: "(prefers-color-scheme: dark)", color: "#161916" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -129,7 +128,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-L5RLBSF7KK"
@@ -159,11 +158,9 @@ export default function RootLayout({
         {JSON.stringify(SOFTWARE_APPLICATION_JSON_LD)}
       </Script>
       <body className="flex min-h-full flex-col">
-        {/* THESIS: mark each smoke-free day on a wall calendar, not a teal card stack. OWN-WORLD: paper, graphite, leaf-green X. STORY: see the streak, download or start the plan. FIRST VIEWPORT: split copy + calendar/phone. FORM: wall-calendar X-out, seed 935e98d8 index 3. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md */}
-        <SkipLink />
         <SiteHeader />
 
-        <main id="main" className="flex-1">
+        <main className="flex-1">
           <div className="mx-auto w-full max-w-5xl px-6 py-10">
             {children}
           </div>

@@ -17,7 +17,7 @@ import {
 } from "@/lib/seo";
 import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
-import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
+import { AUTHOR, MEDICAL_REVIEWER, SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2026-03-01";
 const MODIFIED = "2026-04-20";
@@ -131,8 +131,8 @@ export default function HowToQuitSmokingPage() {
         items={[{ name: "How to quit smoking", path: "/how-to-quit-smoking" }]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Pillar guide
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -162,7 +162,14 @@ export default function HowToQuitSmokingPage() {
           { id: "quick-answer", label: "Quick answer" },
           { id: "seven-step-plan", label: "The 7-step quit plan" },
           { id: "if-you-had-a-slip", label: "If you had a slip" },
+          { id: "social-proof", label: "App Store reviews" },
+          { id: "quit-day", label: "What to do on quit day" },
+          { id: "quit-help-by-country", label: "Free quit help by country" },
+          { id: "relapse-maintenance", label: "Relapse & maintenance" },
+          { id: "more-high-intent", label: "More guides" },
           { id: "faq", label: "Frequently asked questions" },
+          { id: "related-guides", label: "Related reading" },
+          { id: "sources", label: "Sources & further reading" },
         ]}
       />
       <SpeakableJsonLd
@@ -185,7 +192,7 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="seven-step-plan"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           The 7-step quit plan
@@ -255,7 +262,7 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="quit-day"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What to do on quit day
@@ -271,7 +278,7 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="quit-help-by-country"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Free quit help by country
@@ -285,70 +292,177 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="relapse-maintenance"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Relapse & maintenance pages
         </h2>
         <p className="mt-2 text-sm leading-6 text-teal-900/80">
-          Use this cluster when your quit gets shaky after day one.
+          Use this cluster when your quit gets shaky after day one. Published
+          pages are linked below; planned pages are listed so we can switch them
+          live without forgetting internal links.
         </p>
-        <ul className="mt-4 divide-y divide-teal-200 border-y border-teal-200">
-          {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live").map(
-            (item) => (
-              <li key={item.slug}>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {RELAPSE_MAINTENANCE_LINKS.map((item) => (
+            <li key={item.slug}>
+              {item.status === "live" ? (
                 <Link
                   href={item.href}
-                  className="block py-3 text-sm font-medium text-teal-900 hover:text-teal-950"
+                  className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
                 >
-                  {item.title}
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                    Live
+                  </span>
+                  <span className="mt-1 block font-medium">{item.title}</span>
                 </Link>
-              </li>
-            ),
-          )}
+              ) : (
+                <div className="rounded-xl border border-dashed border-teal-200 px-4 py-3 text-sm text-teal-900/75">
+                  <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700/80">
+                    Planned
+                  </span>
+                  <span className="mt-1 block font-medium">{item.title}</span>
+                </div>
+              )}
+            </li>
+          ))}
         </ul>
       </section>
 
       <section
         id="more-high-intent"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">More guides</h2>
         <p className="mt-2 text-sm leading-6 text-teal-900/80">
           Vaping, apps, medications, and motivation—same evidence-based posture
           as this plan, written for specific searches.
         </p>
-        <ul className="mt-4 divide-y divide-teal-200 border-y border-teal-200">
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
           <li>
             <Link
               href={`/${RELATED_PILLAR_SLUGS.quitVaping}`}
-              className="block py-3 text-sm font-medium text-teal-900 hover:text-teal-950"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
             >
-              How to quit vaping
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Vaping
+              </span>
+              <span className="mt-1 block font-medium">How to quit vaping</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.vapingAndSmokingTogether}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Vaping
+              </span>
+              <span className="mt-1 block font-medium">
+                Vaping and smoking together
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.smokingCessationApp}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">Smoking cessation app</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp}`}
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">NRT and a quit app</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/why-cant-i-quit-smoking"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Mindset
+              </span>
+              <span className="mt-1 block font-medium">
+                Why can’t I quit smoking?
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/trying-to-quit-smoking-again"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Mindset
+              </span>
+              <span className="mt-1 block font-medium">
+                Trying to quit smoking again
+              </span>
             </Link>
           </li>
           <li>
             <Link
               href="/first-week-quit-smoking"
-              className="block py-3 text-sm font-medium text-teal-900 hover:text-teal-950"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
             >
-              First week quit smoking
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Playbook
+              </span>
+              <span className="mt-1 block font-medium">First week quit smoking</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/stop-smoking-today"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Playbook
+              </span>
+              <span className="mt-1 block font-medium">Stop smoking today</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/nicotine-patch-vs-gum"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
+            >
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                NRT
+              </span>
+              <span className="mt-1 block font-medium">Nicotine patch vs gum</span>
             </Link>
           </li>
           <li>
             <Link
               href="/nicotine-withdrawal-symptoms"
-              className="block py-3 text-sm font-medium text-teal-900 hover:text-teal-950"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
             >
-              Withdrawal symptoms hub
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Symptoms
+              </span>
+              <span className="mt-1 block font-medium">Withdrawal symptoms hub</span>
             </Link>
           </li>
           <li>
             <Link
               href="/best-quit-smoking-app-for-beginners"
-              className="block py-3 text-sm font-medium text-teal-900 hover:text-teal-950"
+              className="block rounded-xl border border-teal-200 px-4 py-3 text-sm text-teal-900 transition hover:bg-teal-50"
             >
-              Best app for beginners
+              <span className="block text-[10px] font-medium uppercase tracking-wide text-teal-700">
+                Apps
+              </span>
+              <span className="mt-1 block font-medium">Best app for beginners</span>
             </Link>
           </li>
         </ul>
@@ -384,7 +498,7 @@ export default function HowToQuitSmokingPage() {
 
       <section
         id="sources"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources & further reading
@@ -396,6 +510,10 @@ export default function HowToQuitSmokingPage() {
           <li><a className="underline decoration-teal-400 underline-offset-4" href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank" rel="noopener noreferrer">WHO: Tobacco key facts</a></li>
         </ul>
       </section>
-</div>
+
+      <p className="text-[11px] text-teal-900/60">
+        Canonical: <code>{SITE_URL}/how-to-quit-smoking</code>
+      </p>
+    </div>
   );
 }

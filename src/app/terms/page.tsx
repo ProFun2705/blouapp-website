@@ -15,7 +15,7 @@ export default function TermsPage() {
     <article className="flex flex-col gap-8">
       <Breadcrumbs items={[{ name: "Terms of Service", path: "/terms" }]} />
 
-      <header className="masthead">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           Terms of Service
         </h1>
@@ -97,7 +97,7 @@ export default function TermsPage() {
       ].map((s) => (
         <section
           key={s.title}
-          className="section-block"
+          className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
         >
           <h2 className="text-xl font-semibold text-teal-950">{s.title}</h2>
           <p className="mt-3 text-sm leading-7 text-teal-900/85">{s.body}</p>

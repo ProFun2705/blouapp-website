@@ -9,7 +9,7 @@ import {
   ANALYTICS_CONSENT_STORAGE_KEY as STORAGE_KEY,
 } from "@/lib/analytics-consent";
 
-type Decision = typeof GRANTED | typeof DENIED | null | "unknown";
+type Decision = typeof GRANTED | typeof DENIED | null;
 
 function applyConsent(decision: typeof GRANTED | typeof DENIED) {
   if (typeof window === "undefined") return;
@@ -25,7 +25,7 @@ function applyConsent(decision: typeof GRANTED | typeof DENIED) {
 }
 
 export function CookieConsent() {
-  const [decision, setDecision] = useState<Decision>("unknown");
+  const [decision, setDecision] = useState<Decision>(GRANTED);
 
   useEffect(() => {
     try {
@@ -58,8 +58,7 @@ export function CookieConsent() {
     <div
       role="region"
       aria-label="Cookie consent"
-      className="fixed inset-x-3 z-50 rounded-sm border border-teal-200 bg-white p-4 shadow-lg md:inset-x-auto md:right-4 md:max-w-md"
-      style={{ bottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
+      className="fixed inset-x-3 bottom-3 z-50 rounded-2xl border border-teal-200 bg-white/95 p-4 shadow-lg backdrop-blur md:inset-x-auto md:right-4 md:max-w-md"
     >
       <p className="text-sm leading-6 text-teal-950">
         We use privacy-friendly analytics (Google Analytics with IP anonymization)
@@ -80,14 +79,14 @@ export function CookieConsent() {
         <button
           type="button"
           onClick={() => persist(DENIED)}
-          className="pressable min-h-11 rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="rounded-full border border-teal-300 px-4 py-1.5 text-xs font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Decline analytics
         </button>
         <button
           type="button"
           onClick={() => persist(GRANTED)}
-          className="pressable min-h-11 rounded-sm bg-teal-700 px-4 text-sm font-semibold text-white transition hover:bg-teal-800"
+          className="rounded-full bg-teal-700 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-teal-800"
         >
           Accept
         </button>

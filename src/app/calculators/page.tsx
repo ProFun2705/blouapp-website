@@ -43,8 +43,8 @@ export default function CalculatorsIndexPage() {
     <div className="flex flex-col gap-10">
       <Breadcrumbs items={[{ name: "Calculators", path: "/calculators" }]} />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Country calculators
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -79,7 +79,7 @@ export default function CalculatorsIndexPage() {
           <Link
             key={c.slug}
             href={`/calculators/${c.slug}`}
-            className="flex flex-col section-block transition hover:-translate-y-0.5 hover:shadow-md"
+            className="flex flex-col rounded-2xl border border-teal-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <p className="text-[11px] font-semibold uppercase tracking-wide text-teal-700">
               Calculator
@@ -98,7 +98,7 @@ export default function CalculatorsIndexPage() {
 
       <section
         id="global-fallback"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Country not listed?

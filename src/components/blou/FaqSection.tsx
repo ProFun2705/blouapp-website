@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Script from "next/script";
 import { buildFaqJsonLd } from "@/lib/seo";
 
@@ -12,7 +11,9 @@ type FaqItem = {
 type FaqSectionProps = {
   items: ReadonlyArray<FaqItem>;
   title?: string;
+  /** Whether to emit FAQPage JSON-LD for this section. Default true. */
   emitJsonLd?: boolean;
+  /** Unique id used for the JSON-LD script, required if more than one FAQ is on the page. */
   jsonLdId?: string;
 };
 
@@ -29,34 +30,6 @@ function trackExpand(question: string) {
   }
 }
 
-const TOKEN_RE = /(https?:\/\/[^\s]+|\/[a-z0-9][a-z0-9-/]*)/g;
-
-function LinkedAnswer({ text }: { text: string }) {
-  const parts = text.split(TOKEN_RE);
-  return (
-    <p className="mt-3 text-base leading-7 text-teal-900/85">
-      {parts.map((part, index) => {
-        if (part.startsWith("http")) {
-          return <span key={index}>{part}</span>;
-        }
-        if (part.startsWith("/") && part.length > 2 && !part.includes(" ")) {
-          const label = part.slice(1).replace(/-/g, " ");
-          return (
-            <Link
-              key={`${part}-${index}`}
-              href={part}
-              className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-            >
-              {label}
-            </Link>
-          );
-        }
-        return <span key={index}>{part}</span>;
-      })}
-    </p>
-  );
-}
-
 export function FaqSection({
   items,
   title = "Frequently asked questions",
@@ -64,7 +37,10 @@ export function FaqSection({
   jsonLdId = "faq-json-ld",
 }: FaqSectionProps) {
   return (
-    <section className="section-block" aria-label={title}>
+    <section
+      className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      aria-label={title}
+    >
       {emitJsonLd ? (
         <Script id={jsonLdId} type="application/ld+json">
           {JSON.stringify(buildFaqJsonLd(items))}
@@ -72,27 +48,27 @@ export function FaqSection({
       ) : null}
 
       <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
-      <div className="mt-2 divide-y divide-teal-200">
+      <div className="mt-4 space-y-3">
         {items.map((item) => (
           <details
             key={item.question}
-            className="group py-4"
+            className="group rounded-xl border border-teal-200 bg-teal-50/30 p-4 open:bg-white"
             onToggle={(e) => {
               if ((e.currentTarget as HTMLDetailsElement).open) {
                 trackExpand(item.question);
               }
             }}
           >
-            <summary className="flex cursor-pointer list-none items-start justify-between gap-3 text-base font-semibold text-teal-950 [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-3 text-sm font-semibold text-teal-950">
               <span>{item.question}</span>
               <span
                 aria-hidden
-                className="ml-2 text-teal-700 transition motion-safe:group-open:rotate-45"
+                className="ml-2 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full border border-teal-300 text-xs text-teal-900 transition group-open:rotate-45"
               >
                 +
               </span>
             </summary>
-            <LinkedAnswer text={item.answer} />
+            <p className="mt-3 text-sm leading-7 text-teal-900/85">{item.answer}</p>
           </details>
         ))}
       </div>
