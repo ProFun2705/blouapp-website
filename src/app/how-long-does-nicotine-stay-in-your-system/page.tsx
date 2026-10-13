@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_how-long-does-nicotine-stay-in-your-system";
 
 export const metadata: Metadata = buildMetadata({
   title: "How long does nicotine stay in your system?",
@@ -82,9 +81,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="nicotine-system-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -95,31 +92,24 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Nicotine &amp; your body
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How long does nicotine stay in your system?
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Nicotine & your body"
+        title="How long does nicotine stay in your system?"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+            Withdrawal timeline →
+          </ButtonLink>
+        }
+      >
+        <p>
           Nicotine clears quickly—but its metabolite cotinine stays much longer.
           Here&apos;s a complete breakdown by test type, plus what the clearance
           timeline means for withdrawal and how you feel as you quit.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Withdrawal timeline →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -128,16 +118,9 @@ export default function HowLongDoesNicotineStayInSystemPage() {
           { id: "detection-by-test", label: "Detection by test type" },
           { id: "clearance-timeline", label: "Clearance and withdrawal timeline" },
           { id: "factors", label: "Factors that affect clearance" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="How long does nicotine stay in your system?"
-        path="/how-long-does-nicotine-stay-in-your-system"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -152,20 +135,20 @@ export default function HowLongDoesNicotineStayInSystemPage() {
 
       <section
         id="nicotine-vs-cotinine"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Nicotine vs cotinine: why the distinction matters
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           When you smoke, your liver converts most nicotine into cotinine within
           hours. Nicotine itself has a short half-life (about 1–2 hours), so
           direct nicotine levels fall quickly. Cotinine, however, has a half-life
           of 16–19 hours, which is why it remains detectable long after nicotine
           has cleared.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
-          Most drug tests for "nicotine" actually measure cotinine because it
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          Most drug tests for “nicotine” actually measure cotinine because it
           stays in the system longer and is a more reliable indicator of recent
           tobacco or nicotine product use. Important: cotinine from NRT (patches,
           gum, lozenges, vapes) is identical to cotinine from cigarettes—tests
@@ -175,12 +158,12 @@ export default function HowLongDoesNicotineStayInSystemPage() {
 
       <section
         id="detection-by-test"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Detection windows by test type
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">Blood:</span>
             <span>
@@ -212,7 +195,7 @@ export default function HowLongDoesNicotineStayInSystemPage() {
             </span>
           </li>
         </ul>
-        <p className="mt-4 text-sm text-teal-900/70">
+        <p className="mt-4 text-sm text-ink-muted">
           Note: detection windows are approximate and vary with the amount smoked,
           individual metabolism, hydration, kidney function, and age. These ranges
           reflect typical figures cited in clinical literature.
@@ -221,17 +204,17 @@ export default function HowLongDoesNicotineStayInSystemPage() {
 
       <section
         id="clearance-timeline"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Nicotine clearance and the withdrawal connection
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The timeline of nicotine clearing from your body maps directly onto
           withdrawal symptoms. Understanding this helps you anticipate what
           you&apos;ll feel and when:
         </p>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">Hours 1–8:</span>
             <span>
@@ -285,14 +268,19 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Nicotine clears in days, but cravings take longer to fade. Blou&apos;s SOS button is there the
+        second one hits, and your timeline shows every smoke-free day since your last cigarette.
+      </InlineAppCta>
+
       <section
         id="factors"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Factors that affect how long nicotine stays in your system
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -340,28 +328,17 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-nicotine-system" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/guides/what-happens-after-3-days"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Day 3 milestone guide →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="how-long-does-nicotine-stay-in-your-system_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/guides/what-happens-after-3-days" variant="secondary">
+          Day 3 milestone guide →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

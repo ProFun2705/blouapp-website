@@ -18,34 +18,34 @@ function formatDate(isoDate: string): string {
 
 export function Byline({ datePublished, dateModified, readTimeMinutes }: BylineProps) {
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-teal-900/70">
+    <div className="flex flex-col gap-1 text-xs text-ink-muted sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4 sm:gap-y-2">
       <span>
         By{" "}
-        <Link href={AUTHOR.url} className="font-medium text-teal-900 hover:underline">
+        <Link href={AUTHOR.url} className="font-medium text-ink hover:underline">
           {AUTHOR.name}
         </Link>
       </span>
-      <span aria-hidden>·</span>
+      <span aria-hidden className="hidden sm:inline">·</span>
       <span>
         Reviewed by{" "}
         <Link
           href={MEDICAL_REVIEWER.url}
-          className="font-medium text-teal-900 hover:underline"
+          className="font-medium text-ink hover:underline"
         >
           {MEDICAL_REVIEWER.name}
         </Link>
       </span>
-      <span aria-hidden>·</span>
+      <span aria-hidden className="hidden sm:inline">·</span>
       <time dateTime={datePublished}>Published {formatDate(datePublished)}</time>
       {dateModified !== datePublished ? (
         <>
-          <span aria-hidden>·</span>
+          <span aria-hidden className="hidden sm:inline">·</span>
           <time dateTime={dateModified}>Updated {formatDate(dateModified)}</time>
         </>
       ) : null}
       {readTimeMinutes ? (
         <>
-          <span aria-hidden>·</span>
+          <span aria-hidden className="hidden sm:inline">·</span>
           <span>{readTimeMinutes} min read</span>
         </>
       ) : null}

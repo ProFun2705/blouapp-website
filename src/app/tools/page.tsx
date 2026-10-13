@@ -63,7 +63,7 @@ const faqItems = [
   {
     question: "Do you have tools for cravings or milestones?",
     answer:
-      "The companion Blou iPhone app adds a craving timer, daily streak, and day-by-day milestone unlocks. Downloads are free on the App Store.",
+      "The Blou iPhone app adds a photo timeline, lung checks, SOS craving help, and every milestone on one visual timeline. It is a subscription app with a free trial.",
   },
 ] as const;
 
@@ -72,8 +72,8 @@ export default function ToolsIndexPage() {
     <div className="flex flex-col gap-10">
       <Breadcrumbs items={[{ name: "Tools", path: "/tools" }]} />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Free quit smoking tools
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -85,7 +85,7 @@ export default function ToolsIndexPage() {
           prices actually look like.
         </p>
         <div className="mt-6">
-          <AppStoreBadgeLink campaign="tools_index" placement="tools_index" />
+          <AppStoreBadgeLink campaign="tools_index" placement="intro" />
         </div>
       </header>
 
@@ -105,9 +105,9 @@ export default function ToolsIndexPage() {
           <Link
             key={tool.href}
             href={tool.href}
-            className="block section-block"
+            className="block rounded-2xl border border-teal-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            <p className="text-sm font-medium text-teal-700">
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-teal-700">
               {tool.badge}
             </p>
             <h2 className="mt-1 text-lg font-semibold text-teal-950">
@@ -122,7 +122,7 @@ export default function ToolsIndexPage() {
 
       <section
         id="country-calculators"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Country calculators

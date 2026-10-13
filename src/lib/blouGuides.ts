@@ -1431,6 +1431,8 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "anxiety",
+    // Merged into the pillar article on the same topic (Oct 2026).
+    published: false,
     title: "How long does anxiety last after quitting smoking?",
     shortTitle: "Anxiety",
     category: "symptom",
@@ -1602,6 +1604,8 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "weight-gain",
+    // Merged into the pillar article on the same topic (Oct 2026).
+    published: false,
     title: "How long does weight gain last after quitting smoking?",
     shortTitle: "Weight gain",
     category: "symptom",
@@ -3744,6 +3748,8 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "depression",
+    // Merged into the pillar article on the same topic (Oct 2026).
+    published: false,
     title: "Depression after quitting smoking: how long does it last?",
     shortTitle: "Depression",
     category: "symptom",

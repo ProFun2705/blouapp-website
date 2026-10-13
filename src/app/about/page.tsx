@@ -1,16 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { buildMetadata } from "@/lib/seo";
 import { AUTHOR, CONTACT_EMAIL, MEDICAL_REVIEWER, SITE_NAME } from "@/lib/site";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = buildMetadata({
   title: `About ${SITE_NAME}`,
   description:
-    "Blou is a quit smoking tracker built by a solo founder. Learn who makes it, our editorial process, and how we keep guides grounded in public-health evidence.",
+    "Blou is a quit smoking app for iPhone built by a solo founder. Learn who makes it, our editorial process, and how we keep guides grounded in public-health evidence.",
   path: "/about",
 });
 
@@ -19,21 +17,16 @@ export default function AboutPage() {
     <article className="flex flex-col gap-8">
       <Breadcrumbs items={[{ name: "About", path: "/about" }]} />
 
-      <header className="masthead">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           About Blou
         </h1>
         <p className="mt-3 max-w-3xl text-base leading-7 text-teal-900/85">
-          Blou is a quit smoking tracker for iPhone, built by a small team that
-          believes quitting works best when the invisible becomes visible —
-          cravings, savings, and recovery milestones you can actually see.
+          Blou is a quit smoking app for iPhone, built by a small team that
+          believes quitting works best when the invisible becomes visible: a
+          photo timeline, lung checks, and recovery milestones you can actually
+          see. It is a subscription app with a free trial.
         </p>
-        <div className="mt-6">
-          <AppStoreBadgeLink
-            campaign="about_intro"
-            placement="article_intro"
-          />
-        </div>
       </header>
 
       <TableOfContents
@@ -47,7 +40,7 @@ export default function AboutPage() {
 
       <section
         id="mission"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Our mission</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/85">
@@ -57,15 +50,15 @@ export default function AboutPage() {
           help by turning your quit into a visible, repeatable loop:
         </p>
         <ul className="mt-3 space-y-2 text-sm leading-7 text-teal-900/85">
-          <li>• Track your streak, cravings, and savings without friction.</li>
-          <li>• Interrupt the craving → smoke loop with a 2-minute action.</li>
-          <li>• See recovery milestones so progress feels real, not abstract.</li>
+          <li>• See your own change: a photo timeline and simple lung checks.</li>
+          <li>• Get help the second a craving hits, with one SOS tap.</li>
+          <li>• See every milestone on one timeline, so progress feels real.</li>
         </ul>
       </section>
 
       <section
         id="editorial"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Editorial process (E-E-A-T)
@@ -84,10 +77,9 @@ export default function AboutPage() {
             published date and an updated date. Major changes are re-dated.
           </li>
           <li>
-            <strong>Editorial review.</strong> The {MEDICAL_REVIEWER.name}{" "}
-            cross-checks medically relevant content against current
-            public-health guidance from NHS, CDC, WHO, and the US Surgeon
-            General. We welcome clinician feedback and correct errors promptly.
+            <strong>Editorial review.</strong> Content is reviewed against the
+            most recent public-health guidance we can identify. We welcome
+            clinician feedback and correct errors promptly.
           </li>
           <li>
             <strong>Scope.</strong> We provide education, not personal medical
@@ -98,7 +90,7 @@ export default function AboutPage() {
 
       <section
         id="people"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           People behind Blou
@@ -108,7 +100,7 @@ export default function AboutPage() {
             <h3 className="text-sm font-semibold text-teal-950">
               {AUTHOR.name}
             </h3>
-            <p className="text-sm font-medium text-teal-700">
+            <p className="text-xs font-medium uppercase tracking-wide text-teal-700">
               {AUTHOR.role}
             </p>
             <p className="mt-2 text-sm leading-6 text-teal-900/85">
@@ -127,14 +119,13 @@ export default function AboutPage() {
             <h3 className="text-sm font-semibold text-teal-950">
               {MEDICAL_REVIEWER.name}
             </h3>
-            <p className="text-sm font-medium text-teal-700">
+            <p className="text-xs font-medium uppercase tracking-wide text-teal-700">
               {MEDICAL_REVIEWER.role}
             </p>
             <p className="mt-2 text-sm leading-6 text-teal-900/85">
-              Medically relevant guides are reviewed against current NHS, CDC,
-              WHO, and US Surgeon General public summaries before publish and
-              on major updates. If you&apos;re a clinician and want to
-              collaborate on review, please get in touch.
+              Every medically relevant guide is cross-checked against current
+              NHS, CDC, and WHO public guidance. If you&apos;re a clinician and
+              want to collaborate on review, please get in touch.
             </p>
           </div>
         </div>
@@ -142,7 +133,7 @@ export default function AboutPage() {
 
       <section
         id="corrections"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Corrections & feedback
@@ -161,24 +152,22 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <ArticleConversionFooter campaign="about_footer" />
-
       <div className="flex flex-wrap gap-3">
         <Link
           href="/guides"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Read the guides
         </Link>
         <Link
           href="/privacy"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Privacy Policy
         </Link>
         <Link
           href="/terms"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Terms of Service
         </Link>

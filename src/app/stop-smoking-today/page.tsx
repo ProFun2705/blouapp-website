@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_stop-smoking-today";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Stop smoking today: same-day checklist",
+  title: "Stop smoking today: a same-day quit checklist",
   description:
-    "If you mean “today” literally: dispose of cigarettes, pick your next action for cravings, call a quitline, install a tracker—and set a formal quit date if you still need prep.",
+    "Quitting today? Bin your cigarettes, pick your craving moves, call a quitline and line up week-one support, or set a quit date if you still need prep.",
   path: "/stop-smoking-today",
   type: "article",
   publishedTime: PUBLISHED,
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function StopSmokingTodayPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Stop smoking today: same-day checklist",
+    title: "Stop smoking today: a same-day quit checklist",
     description:
       "Same-day checklist to stop smoking and set up support for week one.",
     path: "/stop-smoking-today",
@@ -71,20 +70,23 @@ export default function StopSmokingTodayPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="stop-today-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs items={[{ name: "Stop smoking today", path: "/stop-smoking-today" }]} />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Same-day start
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Stop smoking today
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Same-day start"
+        title="Stop smoking today"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            Or: 7-day prep first →
+          </ButtonLink>
+        }
+      >
+        <p>
           Urgency is useful if it becomes action. Run this checklist in order—then
           anchor tomorrow using{" "}
           <Link className="font-medium text-teal-800 underline" href="/first-week-quit-smoking">
@@ -92,31 +94,15 @@ export default function StopSmokingTodayPage() {
           </Link>
           .
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_stop_today" placement="article_intro" />
-          <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Or: 7-day prep first →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "checklist", label: "Checklist" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Stop smoking today: same-day checklist"
-        path="/stop-smoking-today"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -128,9 +114,9 @@ export default function StopSmokingTodayPage() {
         />
       </section>
 
-      <section id="checklist" className="scroll-mt-24 section-block">
+      <section id="checklist" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Checklist</h2>
-        <ol className="mt-4 list-decimal space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Trash ashtrays; bag butts; wash jacket pockets.</li>
           <li>Pre-decide your first three craving moves.</li>
           <li>Block tonight’s risk (alcohol, party) or plan an exit.</li>
@@ -138,22 +124,22 @@ export default function StopSmokingTodayPage() {
         </ol>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        Once the checklist is done, the cravings start. Blou&apos;s SOS button is there the second
+        one hits, and your timeline shows every smoke-free hour you&apos;ve already banked.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-stop-today" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_stop_today" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Full plan →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="stop-smoking-today_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+          Full plan →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

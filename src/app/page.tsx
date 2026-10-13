@@ -1,103 +1,73 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
-import { TableOfContents } from "@/components/site/TableOfContents";
-import { FaqSection } from "@/components/blou/FaqSection";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { EndAppCta, HeroAppCta } from "@/components/marketing/AppCta";
 import { AndroidWaitlistCard } from "@/components/marketing/AndroidWaitlistCard";
-import { QuitCalendar } from "@/components/marketing/QuitCalendar";
-import { RELAPSE_MAINTENANCE_LINKS } from "@/lib/roadmapLinks";
-import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
+import { ProductIllustration } from "@/components/marketing/ProductIllustration";
+import { FaqSection } from "@/components/blou/FaqSection";
+import { Card, Kicker } from "@/components/ui/Card";
+import { ButtonLink } from "@/components/ui/Button";
+import { milestoneGuides, symptomGuides } from "@/lib/blouGuides";
 import { buildMetadata } from "@/lib/seo";
+import { APP_FEATURES, PRICING_FAQ, SITE_DESCRIPTION } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: `${SITE_NAME} – Quit Smoking Tracker for iPhone`,
+  title: "Blou – Quit Smoking App for iPhone: See Your Body Heal",
   description: SITE_DESCRIPTION,
   path: "/",
   keywords: [
+    "Blou quit smoking app",
     "quit smoking app",
+    "quit smoking app iPhone",
     "quit smoking tracker",
-    "stop smoking iphone",
-    "quit smoking timeline",
-    "money saved quitting smoking",
+    "what happens when you quit smoking",
   ],
 });
 
-const featureRows = [
+const CAMPAIGN = "home";
+
+const steps = [
   {
-    title: "See progress you can feel",
-    body: "Turn abstract commitment into a visible streak. Every day smoke-free is a specific number: savings, cravings avoided, milestones reached.",
+    title: "Start your free trial",
+    body: "Install Blou on your iPhone and start the trial. Cancel anytime in the App Store before it renews.",
   },
   {
-    title: "Plan, don't willpower",
-    body: "Pre-commit a 2-minute action for each of your top cravings. The app nudges you through the first 3–5 minutes, which is all most cravings last.",
+    title: "Check in as you go",
+    body: "Add a photo and a quick breath check, so your progress is something you can see.",
   },
   {
-    title: "Recovery timeline, not vague promises",
-    body: "Know what's typically happening in your body day 1, day 3, week 1, and beyond, backed by NHS, CDC, and Surgeon General public guidance.",
+    title: "Watch yourself heal",
+    body: "Your timeline fills in day by day. When a craving hits, tap SOS.",
   },
 ] as const;
 
-const tools = [
-  {
-    href: "/tools/money-saved",
-    title: "Money saved calculator",
-    subtitle: "What does your habit cost, and what does quitting return?",
-  },
-  {
-    href: "/tools/lung-recovery",
-    title: "Lung recovery timeline",
-    subtitle: "Visualize what typically improves, and when.",
-  },
+const startHere = [
+  { href: "/how-to-quit-smoking", label: "How to quit smoking", note: "Step-by-step plan, from quit day to year one" },
+  { href: "/nicotine-withdrawal-timeline", label: "Withdrawal timeline", note: "What to expect on days 1–30" },
+  { href: "/i-smoked-one-cigarette", label: "I smoked one cigarette", note: "What to do in the next hour" },
 ] as const;
 
-const countryLinks = [
-  { href: "/calculators/united-states", label: "United States" },
-  { href: "/calculators/united-kingdom", label: "United Kingdom" },
-  { href: "/calculators/australia", label: "Australia" },
-  { href: "/calculators/vietnam", label: "Vietnam" },
-  { href: "/calculators/indonesia", label: "Indonesia" },
-] as const;
-
-const pillarLinks = [
-  {
-    href: "/how-to-quit-smoking",
-    label: "How to quit smoking",
-    description: "Step-by-step plan from first day to first year.",
-  },
-  {
-    href: "/prepare-to-quit-smoking",
-    label: "Prepare to quit smoking",
-    description: "The 7-day checklist before your quit date.",
-  },
-  {
-    href: "/compare",
-    label: "Compare quit apps",
-    description: "Blou vs Kwit, Smoke Free, and head-to-head matchups.",
-  },
-  {
-    href: "/best-quit-smoking-apps",
-    label: "Best quit smoking apps",
-    description: "Honest comparison of the leading quit trackers.",
-  },
+const popularSymptoms = [
+  "dreams-and-sleep",
+  "cravings",
+  "insomnia",
+  "headaches",
+  "cough",
+  "fatigue",
+  "irritability",
+  "brain-fog",
 ] as const;
 
 const faqItems = [
+  PRICING_FAQ,
   {
-    question: "Is Blou free to use?",
+    question: "What does Blou do that a day counter doesn't?",
     answer:
-      "Yes. Blou is free to download on the App Store. Core tracking features — streak, money saved, cravings, milestones — are free. Optional premium features support ongoing development.",
+      "A counter shows a number. Blou shows evidence: a photo timeline of your face, breath checks that track your lungs, SOS help when a craving hits, and every milestone on one visual timeline.",
   },
   {
     question: "Where should I start if I want to quit smoking?",
     answer:
-      "Start with our free step-by-step guide at /how-to-quit-smoking, set a quit date within the next 7–14 days, and line up one form of evidence-based support (NRT, varenicline, bupropion, or free quitline coaching).",
-  },
-  {
-    question: "What happens to your body after you quit smoking?",
-    answer:
-      "Recovery begins within hours and compounds for years. See our milestone guides from 1 day to 10 years smoke-free for timelines based on CDC and Surgeon General public summaries.",
+      "Start with the step-by-step plan at /how-to-quit-smoking, set a quit date within the next 7–14 days, and line up one form of evidence-based support (NRT, varenicline, bupropion, or free quitline coaching).",
   },
   {
     question: "How long do nicotine cravings last?",
@@ -107,7 +77,7 @@ const faqItems = [
   {
     question: "Is Blou available on Android?",
     answer:
-      "Not yet. Blou is iPhone-only today. Join the Android waitlist on this page and we'll let you know the day it launches.",
+      "Not yet. Blou is iPhone-only today. The guides, timelines, and calculators on this website work on any device.",
   },
   {
     question: "Is this website medical advice?",
@@ -117,186 +87,145 @@ const faqItems = [
 ] as const;
 
 export default function HomePage() {
+  const symptomLinks = popularSymptoms
+    .map((slug) => symptomGuides.find((g) => g.slug === slug))
+    .filter((g) => g !== undefined);
+
   return (
     <div className="flex flex-col gap-16">
-      <section className="grid items-center gap-10 lg:grid-cols-2">
-        <div className="max-w-xl">
-          <h1 className="text-4xl font-semibold tracking-tight text-teal-950 md:text-5xl">
-            Quit smoking, tracked simply.
+      <section className="grid items-center gap-10 rounded-panel border border-line bg-gradient-to-br from-accent-soft/50 via-surface to-surface p-6 shadow-card md:grid-cols-[1.25fr_1fr] md:p-12">
+        <div>
+          <Kicker>Quit smoking app for iPhone</Kicker>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink md:text-5xl">
+            See your body heal after your last cigarette.
           </h1>
-          <p className="mt-4 max-w-[65ch] text-base leading-7 text-teal-900/80">
-            See each smoke-free day. Track savings and ride out the 3-minute
-            craving. Free on the App Store.
+          <p className="mt-4 max-w-xl text-lg leading-8 text-ink-muted">
+            Blou tracks every smoke-free day, shows how your lungs and face change, and helps the
+            second a craving hits.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <AppStoreBadgeLink
-              campaign="landing_hero"
-              placement="landing_hero"
-              height={56}
-            />
-            <Link
-              href="/how-to-quit-smoking"
-              className="pressable inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50"
-            >
-              Read the quit plan
-            </Link>
+          <div className="mt-7">
+            <HeroAppCta campaign={CAMPAIGN} />
           </div>
         </div>
-        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-start">
-          <div className="hidden md:block">
-            <QuitCalendar />
-          </div>
-          <div className="relative mx-auto w-full max-w-[220px]">
-            <figure>
-              <Image
-                src="/product/blou-phone-streak.jpg"
-                alt="Example iPhone view of Blou: a smoke-free streak and a month calendar with days marked off"
-                width={900}
-                height={1600}
-                priority
-                className="h-auto w-full"
-              />
-              <figcaption className="mt-2 text-xs text-teal-900/70">
-                Example product view. Replace with App Store screenshots when
-                they land.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+        <ProductIllustration />
       </section>
 
-      <TableOfContents
-        items={[
-          { id: "why-tracker", label: "Why a tracker works" },
-          { id: "tools", label: "Free tools" },
-          { id: "plan", label: "Start a plan" },
-          { id: "faq", label: "FAQ" },
-        ]}
-      />
-
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof />
-      </section>
-
-      <section id="why-tracker" className="scroll-mt-24">
-        <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
-          Why a tracker works when willpower doesn&apos;t
+      <section id="what-blou-shows" className="scroll-mt-24">
+        <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+          Proof you&apos;re healing, not just a counter
         </h2>
-        <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
-          Most quit attempts fail in the first two weeks, not because people
-          lack motivation, but because the craving-response loop is invisible.
-          Blou makes it visible so you can interrupt it.
+        <p className="mt-2 max-w-2xl text-base leading-7 text-ink-muted">
+          Most quit apps count days and money from averages. Blou shows your own change.
         </p>
-        <ol className="mt-8 divide-y divide-teal-200 border-y border-teal-200">
-          {featureRows.map((feature, index) => (
-            <li key={feature.title} className="grid gap-3 py-5 md:grid-cols-[4rem_1fr]">
-              <span className="tabular text-sm font-medium text-teal-700">
-                {String(index + 1).padStart(2, "0")}
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {APP_FEATURES.map((feature) => (
+            <li key={feature.title} className="rounded-card border border-line bg-surface p-5 shadow-card">
+              <h3 className="text-base font-semibold text-ink">{feature.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink-muted">{feature.body}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="how-it-works" className="scroll-mt-24">
+        <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">How it works</h2>
+        <ol className="mt-6 grid gap-4 md:grid-cols-3">
+          {steps.map((step, i) => (
+            <li key={step.title} className="rounded-card border border-line bg-surface p-5 shadow-card">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-soft text-sm font-semibold text-accent-strong">
+                {i + 1}
               </span>
-              <div>
-                <h3 className="text-lg font-semibold text-teal-950">
-                  {feature.title}
-                </h3>
-                <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
-                  {feature.body}
-                </p>
-              </div>
+              <h3 className="mt-3 text-base font-semibold text-ink">{step.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink-muted">{step.body}</p>
             </li>
           ))}
         </ol>
       </section>
 
-      <section id="plan" className="scroll-mt-24">
-        <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
-          Start where you are
-        </h2>
-        <ul className="mt-6 divide-y divide-teal-200 border-y border-teal-200">
-          {pillarLinks.map((pillar) => (
-            <li key={pillar.href}>
-              <Link
-                href={pillar.href}
-                className="flex flex-col gap-1 py-4 hover:text-teal-950"
-              >
-                <span className="font-semibold text-teal-950">{pillar.label}</span>
-                <span className="text-sm text-teal-900/80">{pillar.description}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-6">
-          <p className="text-sm font-medium text-teal-800">If you slipped</p>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-            {RELAPSE_MAINTENANCE_LINKS.filter((item) => item.status === "live")
-              .slice(0, 4)
-              .map((item) => (
-                <Link
-                  key={item.slug}
-                  href={item.href}
-                  className="text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                >
-                  {item.title}
-                </Link>
-              ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="tools" className="scroll-mt-24 grid gap-8 md:grid-cols-2">
-        {tools.map((tool) => (
-          <article key={tool.href} className="section-block md:border-t-0 md:pt-0">
-            <h3 className="text-2xl font-semibold tracking-tight text-teal-950">
-              {tool.title}
-            </h3>
-            <p className="mt-2 text-base leading-6 text-teal-900/80">
-              {tool.subtitle}
-            </p>
-            <Link
-              href={tool.href}
-              className="pressable mt-6 inline-flex h-10 items-center justify-center rounded-sm border border-teal-200 px-4 text-sm font-medium text-teal-900 hover:bg-teal-50"
-            >
-              Open tool
-            </Link>
-          </article>
-        ))}
-      </section>
-
-      <section id="calculators" className="section-block scroll-mt-24">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <Card id="guides" size="lg">
+        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-teal-950">
-              Calculators by country
-            </h2>
-            <p className="mt-2 max-w-[65ch] text-base leading-7 text-teal-900/80">
-              Start from a locally sourced pack price and see savings in your
-              currency.
+            <h2 className="text-2xl font-semibold tracking-tight text-ink">Free guides for every stage</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-ink-muted">
+              What&apos;s happening in your body, day by day, based on NHS, CDC, and WHO public guidance.
             </p>
           </div>
-          <Link
-            href="/calculators"
-            className="pressable inline-flex h-10 items-center justify-center rounded-sm bg-teal-600 px-4 text-sm font-medium text-white hover:bg-teal-700"
-          >
-            View all countries
-          </Link>
+          <ButtonLink href="/guides" variant="secondary">
+            All guides
+          </ButtonLink>
         </div>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {countryLinks.map((country) => (
+
+        <div className="mt-6 grid gap-3 md:grid-cols-3">
+          {startHere.map((item) => (
             <Link
-              key={country.href}
-              href={country.href}
-              className="pressable inline-flex h-10 items-center rounded-sm border border-teal-200 px-3 text-sm font-medium text-teal-900 hover:bg-teal-50"
+              key={item.href}
+              href={item.href}
+              className="rounded-xl border border-line bg-surface-muted p-4 transition-colors hover:border-accent/40"
             >
-              {country.label}
+              <p className="text-sm font-semibold text-ink">{item.label}</p>
+              <p className="mt-1 text-sm text-ink-muted">{item.note}</p>
             </Link>
           ))}
         </div>
-      </section>
 
-      <section id="android-waitlist" className="scroll-mt-24">
-        <AndroidWaitlistCard />
+        <div className="mt-8 grid gap-8 md:grid-cols-2">
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-accent">After you quit</h3>
+            <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
+              {milestoneGuides.map((g) => (
+                <li key={g.slug}>
+                  <Link href={`/guides/${g.slug}`} className="text-ink underline-offset-2 hover:underline">
+                    {g.shortTitle}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-accent">Common symptoms</h3>
+            <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
+              {symptomLinks.map((g) => (
+                <li key={g.slug}>
+                  <Link href={`/guides/${g.slug}`} className="text-ink underline-offset-2 hover:underline">
+                    {g.shortTitle}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Card>
+
+      <section id="tools" className="grid scroll-mt-24 gap-4 md:grid-cols-3">
+        <Link href="/tools/money-saved" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">Free tool</p>
+          <p className="mt-2 text-base font-semibold text-ink">Money saved calculator</p>
+          <p className="mt-1 text-sm text-ink-muted">What your habit costs, and what quitting gives back.</p>
+        </Link>
+        <Link href="/tools/lung-recovery" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">Free tool</p>
+          <p className="mt-2 text-base font-semibold text-ink">Lung recovery timeline</p>
+          <p className="mt-1 text-sm text-ink-muted">What typically improves, and when, with sources.</p>
+        </Link>
+        <Link href="/calculators" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">By country</p>
+          <p className="mt-2 text-base font-semibold text-ink">Cost of smoking calculators</p>
+          <p className="mt-1 text-sm text-ink-muted">Local pack prices for the US, UK, Australia, Vietnam, and Indonesia.</p>
+        </Link>
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-home" />
+        <FaqSection items={faqItems} />
+      </section>
+
+      <EndAppCta
+        campaign={CAMPAIGN}
+        title="Your quit, with proof"
+        description="See every smoke-free day add up: your photo timeline, your lung checks, and help the moment a craving hits."
+      />
+
+      <section id="android" className="scroll-mt-24">
+        <AndroidWaitlistCard />
       </section>
     </div>
   );

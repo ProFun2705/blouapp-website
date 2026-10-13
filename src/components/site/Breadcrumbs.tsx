@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Script from "next/script";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbJsonLd } from "@/lib/seo";
 
 export type BreadcrumbItem = {
@@ -16,22 +16,19 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
 
   return (
     <>
-      <Script id="breadcrumb-json-ld" type="application/ld+json">
-        {JSON.stringify(buildBreadcrumbJsonLd(trail))}
-      </Script>
+      <JsonLd data={buildBreadcrumbJsonLd(trail)} />
       <nav aria-label="Breadcrumb" className="mb-4">
-        <ol className="flex flex-wrap items-center gap-1 text-xs text-teal-800/80">
+        <ol className="flex flex-wrap items-center gap-1 text-xs text-ink-muted">
           {trail.map((item, index) => {
             const isLast = index === trail.length - 1;
             return (
               <li key={item.path} className="flex items-center gap-1">
                 {isLast ? (
-                  <span className="font-medium text-teal-900">{item.name}</span>
+                  <span aria-current="page" className="font-medium text-ink">
+                    {item.name}
+                  </span>
                 ) : (
-                  <Link
-                    href={item.path}
-                    className="underline-offset-2 hover:underline"
-                  >
+                  <Link href={item.path} className="underline-offset-2 hover:underline">
                     {item.name}
                   </Link>
                 )}

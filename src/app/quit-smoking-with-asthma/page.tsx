@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-asthma";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking with asthma: benefits and plan",
+  title: "How to quit smoking with asthma: benefits and plan",
   description:
     "Quitting smoking is the single most effective action for asthma control. Learn what to expect, how breathing changes, and how to manage the first weeks.",
   path: "/quit-smoking-with-asthma",
@@ -63,7 +62,7 @@ const faqItems = [
 
 export default function QuitSmokingWithAsthmaPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking with asthma: benefits and plan",
+    title: "How to quit smoking with asthma: benefits and plan",
     description:
       "A practical guide to quitting smoking when you have asthma, including what to expect, breathing improvements, and NRT safety.",
     path: "/quit-smoking-with-asthma",
@@ -77,9 +76,7 @@ export default function QuitSmokingWithAsthmaPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="quit-asthma-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -90,31 +87,24 @@ export default function QuitSmokingWithAsthmaPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Quitting with a condition
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to quit smoking when you have asthma
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Quitting with a condition"
+        title="How to quit smoking when you have asthma"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Quitting smoking is the single most impactful action for asthma
           control. Even after years of smoking, airways can recover
           meaningfully. This guide covers what to expect and how to prepare.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -124,16 +114,9 @@ export default function QuitSmokingWithAsthmaPage() {
           { id: "first-weeks", label: "Managing the first weeks" },
           { id: "nrt-inhalers", label: "NRT and inhalers" },
           { id: "when-to-seek-care", label: "When to seek care" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking with asthma: benefits and plan"
-        path="/quit-smoking-with-asthma"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -148,16 +131,16 @@ export default function QuitSmokingWithAsthmaPage() {
 
       <section
         id="why-smoking-worsens-asthma"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Why smoking worsens asthma
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Cigarette smoke contains thousands of compounds that directly damage
           the airways. For people with asthma, this means:
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -195,12 +178,12 @@ export default function QuitSmokingWithAsthmaPage() {
 
       <section
         id="benefits-timeline"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Breathing benefits after quitting: what the timeline looks like
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">24 hours:</span>
             <span>
@@ -255,17 +238,17 @@ export default function QuitSmokingWithAsthmaPage() {
 
       <section
         id="first-weeks"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Managing the first weeks with asthma
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The first two weeks can feel counterintuitive—coughing and chest
           tightness may temporarily worsen. This is nearly always a sign of
           airway healing, not deterioration.
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -308,25 +291,31 @@ export default function QuitSmokingWithAsthmaPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Blou&apos;s lung checks give you a simple way to watch your breathing
+        change alongside your smoke-free days. They sit next to your GP&apos;s or
+        asthma nurse&apos;s care, not in place of it.
+      </InlineAppCta>
+
       <section
         id="nrt-inhalers"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           NRT and inhaler considerations
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           NRT (patches, gum, lozenges) is generally safe with asthma and
           avoids the smoke, carbon monoxide, and irritants that damage airways.
           The nicotine inhaler NRT product is not recommended for people with
           significant airway disease—discuss with a pharmacist.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Prescription options like varenicline and bupropion do not affect the
           airways and can be used alongside asthma medications. Always check
           with a clinician for your specific combination.
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -364,7 +353,7 @@ export default function QuitSmokingWithAsthmaPage() {
         <h2 className="text-xl font-semibold text-teal-950">
           When to seek care
         </h2>
-        <ul className="mt-3 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>Wheezing at rest that does not respond to your rescue inhaler.</span>
@@ -388,28 +377,17 @@ export default function QuitSmokingWithAsthmaPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-smoking-asthma" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/guides/shortness-of-breath"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/guides/shortness-of-breath" variant="secondary">
           Shortness of breath guide →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-with-asthma_footer" />
-
-</div>
+    </div>
   );
 }

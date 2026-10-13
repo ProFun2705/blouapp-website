@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-app-for-iphone";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking app for iPhone: what works",
+  title: "Quit smoking app for iPhone: what actually works",
   description:
-    "The best quit smoking app for iPhone is the one you use during cravings. Here’s what to look for: fast craving tool, savings, milestones, and a simple plan.",
+    "The best quit smoking app for iPhone is the one you use during cravings. What to look for: a fast craving tool, savings, milestones, and a simple plan.",
   path: "/quit-smoking-app-for-iphone",
   type: "article",
   publishedTime: PUBLISHED,
@@ -51,13 +50,13 @@ const faqItems = [
   {
     question: "Does Blou work on iPhone?",
     answer:
-      "Yes—Blou is built for iPhone in 2026 and focuses on visual daily progress: streaks, cravings, savings, and milestones.",
+      "Yes. Blou is iPhone-only, and it is a subscription app with a free trial. It focuses on showing your own recovery: a photo timeline, lung checks, SOS craving help, personal insights, and every milestone and smoke-free day on one visual timeline.",
   },
 ];
 
 export default function QuitSmokingAppForIphonePage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking app for iPhone: what works",
+    title: "Quit smoking app for iPhone: what works (and what doesn’t)",
     description:
       "How to choose and use a quit smoking app on iPhone for higher odds of staying smoke-free.",
     path: "/quit-smoking-app-for-iphone",
@@ -65,15 +64,11 @@ export default function QuitSmokingAppForIphonePage() {
     dateModified: MODIFIED,
     author: { name: AUTHOR.name, url: AUTHOR.url },
     reviewer: { name: MEDICAL_REVIEWER.name, url: MEDICAL_REVIEWER.url },
-    isMedical: true,
-    about: { "@type": "MedicalCondition", name: "Tobacco use disorder" },
   });
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="iphone-app-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,31 +79,24 @@ export default function QuitSmokingAppForIphonePage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          iPhone app guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking app for iPhone: what works
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="iPhone app guide"
+        title="Quit smoking app for iPhone: what works"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+            Compare quit apps →
+          </ButtonLink>
+        }
+      >
+        <p>
           During a craving, you don’t need a lecture—you need a tool. The most
           helpful iPhone quit apps make cravings survivable in minutes and make
           progress visible day to day.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/best-quit-smoking-apps"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Compare quit apps →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -116,16 +104,9 @@ export default function QuitSmokingAppForIphonePage() {
           { id: "features", label: "Features that matter" },
           { id: "how-to-use", label: "How to use an app to quit" },
           { id: "common-mistakes", label: "Common mistakes" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking app for iPhone: what works"
-        path="/quit-smoking-app-for-iphone"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -140,12 +121,12 @@ export default function QuitSmokingAppForIphonePage() {
 
       <section
         id="features"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Features that matter (for conversion and quitting)
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -189,14 +170,20 @@ export default function QuitSmokingAppForIphonePage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        On iPhone, Blou covers the craving and milestone parts of this list:
+        SOS craving help the second an urge hits, plus a photo timeline, lung
+        checks, and every milestone on one visual timeline.
+      </InlineAppCta>
+
       <section
         id="how-to-use"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How to use an iPhone quit app (simple daily routine)
         </h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>
             Pick a quit date and set up your week using{" "}
             <Link
@@ -223,7 +210,7 @@ export default function QuitSmokingAppForIphonePage() {
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Common mistakes</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-amber-600">•</span>
             <span>
@@ -247,29 +234,18 @@ export default function QuitSmokingAppForIphonePage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-iphone-quit-app" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Read the quit plan →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="quit-smoking-app-for-iphone_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+          Read the quit plan →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }
 

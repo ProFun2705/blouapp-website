@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-before-surgery";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking before surgery: timeline",
+  title: "Quit smoking before surgery: timeline, risks, support",
   description:
-    "Why quitting before surgery matters, typical anesthesia team expectations, how far ahead to plan, and how apps and quitlines help—always follow your surgical team.",
+    "Why quitting before surgery matters, what anesthesia teams expect, how far ahead to plan, and how apps and quitlines help. Always follow your surgical team.",
   path: "/quit-smoking-before-surgery",
   type: "article",
   publishedTime: PUBLISHED,
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function QuitSmokingBeforeSurgeryPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking before surgery: timeline",
+    title: "Quit smoking before surgery: timeline, risks, support",
     description:
       "Preoperative smoking cessation overview with emphasis on clinician guidance.",
     path: "/quit-smoking-before-surgery",
@@ -71,9 +70,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="surgery-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,35 +81,25 @@ export default function QuitSmokingBeforeSurgeryPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Preoperative support
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking before surgery
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Preoperative support"
+        title="Quit smoking before surgery"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            7-day prep checklist →
+          </ButtonLink>
+        }
+      >
+        <p>
           Surgery is one of the highest-motivation moments to quit. Your
           surgical team sets the medical rules; this page helps you build a
           practical behavior plan and daily support while you follow their
           instructions exactly.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink
-            campaign="pillar_surgery"
-            placement="article_intro"
-          />
-          <Link
-            href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            7-day prep checklist →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -120,16 +107,9 @@ export default function QuitSmokingBeforeSurgeryPage() {
           { id: "why", label: "Why teams care" },
           { id: "plan", label: "Build a simple plan" },
           { id: "sources", label: "Further reading" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking before surgery: timeline"
-        path="/quit-smoking-before-surgery"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -144,10 +124,10 @@ export default function QuitSmokingBeforeSurgeryPage() {
 
       <section
         id="why"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Why teams care</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Smoking affects circulation, airway reactivity, and healing. Your team
           may connect you with hospital-based cessation resources—take them.
           General education:{" "}
@@ -165,10 +145,10 @@ export default function QuitSmokingBeforeSurgeryPage() {
 
       <section
         id="plan"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Build a simple plan</h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>Write down your surgery date and the team’s nicotine rules.</li>
           <li>
             Use{" "}
@@ -184,7 +164,7 @@ export default function QuitSmokingBeforeSurgeryPage() {
             If stress spikes, read{" "}
             <Link
               className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-              href="/guides/anxiety"
+              href="/quit-smoking-with-anxiety"
             >
               anxiety
             </Link>{" "}
@@ -193,9 +173,15 @@ export default function QuitSmokingBeforeSurgeryPage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Between pre-op visits, Blou&apos;s SOS button is there the second a
+        craving hits, and your timeline shows every smoke-free day before your
+        surgery date. Your surgical team still sets the rules.
+      </InlineAppCta>
+
       <section
         id="sources"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Further reading</h2>
         <ul className="mt-4 space-y-2 text-sm text-teal-900">
@@ -212,28 +198,17 @@ export default function QuitSmokingBeforeSurgeryPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-surgery" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_surgery"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/motivation-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/motivation-to-quit-smoking" variant="secondary">
           Motivation toolkit →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-before-surgery_footer" />
-
-</div>
+    </div>
   );
 }

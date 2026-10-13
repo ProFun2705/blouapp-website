@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_nicotine-patch-vs-gum";
 
 export const metadata: Metadata = buildMetadata({
   title: "Nicotine patch vs gum: which NRT to start with?",
@@ -71,52 +70,39 @@ export default function NicotinePatchVsGumPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="patch-vs-gum-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Nicotine patch vs gum", path: "/nicotine-patch-vs-gum" }]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          NRT choice
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Nicotine patch vs gum
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="NRT choice"
+        title="Nicotine patch vs gum"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quit-smoking-with-nicotine-patch" variant="secondary">
+            Patch plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Simple frame: <strong>patch</strong> steadies background withdrawal;{" "}
           <strong>gum</strong> (or lozenge) fights cue spikes. Many successful plans
           use both—under guidance—not as a DIY contest.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_patch_vs_gum" placement="article_intro" />
-          <Link href="/quit-smoking-with-nicotine-patch" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Patch plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "pick", label: "How to pick" },
           { id: "combo", label: "Combination NRT" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Nicotine patch vs gum: which NRT to start with?"
-        path="/nicotine-patch-vs-gum"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -129,9 +115,9 @@ export default function NicotinePatchVsGumPage() {
         />
       </section>
 
-      <section id="pick" className="scroll-mt-24 section-block">
+      <section id="pick" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">How to pick</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span className="mt-1 text-teal-600" aria-hidden>•</span>
             <span>
@@ -165,9 +151,15 @@ export default function NicotinePatchVsGumPage() {
         </ul>
       </section>
 
-      <section id="combo" className="scroll-mt-24 section-block">
+      <InlineAppCta campaign={CAMPAIGN}>
+        Whichever NRT you start with, cue cravings still show up. Blou&apos;s SOS
+        button is there the second one hits, alongside the plan you agree with
+        your pharmacist or clinician.
+      </InlineAppCta>
+
+      <section id="combo" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Combination NRT</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you are considering patch + gum together, start with{" "}
           <Link className="font-medium text-teal-800 underline" href="/combination-nrt-quit-smoking">
             combination NRT overview
@@ -180,22 +172,17 @@ export default function NicotinePatchVsGumPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-patch-vs-gum" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_patch_vs_gum" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
           Full quit plan →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="nicotine-patch-vs-gum_footer" />
-
-</div>
+    </div>
   );
 }

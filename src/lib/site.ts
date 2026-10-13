@@ -7,9 +7,42 @@ if (!siteUrlFromEnv) {
 
 export const SITE_URL = siteUrlFromEnv.replace(/\/+$/, "");
 export const SITE_NAME = "Blou";
-export const SITE_TAGLINE = "Quit smoking, tracked simply";
+export const SITE_TAGLINE = "See your body heal after your last cigarette";
 export const SITE_DESCRIPTION =
-  "Blou is a quit smoking tracker for iPhone. Visualize cravings, savings, and health recovery with evidence-based guides, symptom timelines, and country calculators.";
+  "Blou is a quit smoking app for iPhone that shows proof you're healing: a photo timeline, lung checks, SOS craving help, and every milestone visualized. Free guides, symptom timelines, and calculators.";
+
+/**
+ * Pricing truth. Blou is a subscription app with a free trial; nothing in the
+ * app works without an active subscription. Every pricing mention on the site
+ * must come from these constants, never "free app" wording.
+ */
+export const PRICING_SHORT = "Free trial, then a subscription";
+export const PRICING_CTA_NOTE = "iPhone · Free trial, then a subscription. Cancel anytime in the App Store.";
+export const PRICING_FAQ = {
+  question: "Is Blou free?",
+  answer:
+    "Blou is a subscription app with a free trial. Start the trial in the App Store, and cancel anytime in your Apple ID subscriptions before it renews. The guides, timelines, and calculators on this website are free to use.",
+} as const;
+
+/** Core app features, matching the App Store listing. */
+export const APP_FEATURES = [
+  {
+    title: "Photo timeline",
+    body: "See your face change over time in one photo timeline.",
+  },
+  {
+    title: "Lung checks",
+    body: "Simple breath checks that show your lungs getting stronger.",
+  },
+  {
+    title: "SOS craving help",
+    body: "Instant help the second a craving hits.",
+  },
+  {
+    title: "Every milestone visualized",
+    body: "Watch your whole journey unfold on one visual timeline.",
+  },
+] as const;
 
 export const CONTACT_EMAIL = "hello.blou.app@gmail.com";
 
@@ -40,7 +73,7 @@ export const AUTHOR = {
 
 export const MEDICAL_REVIEWER = {
   name: "Blou editorial team",
-  role: "Health content reviewed against NHS, CDC, WHO, and US Surgeon General public guidance",
+  role: "Reviewed against NHS, CDC, and WHO public guidance",
   url: `${SITE_URL}/about#editorial`,
 } as const;
 
@@ -70,20 +103,20 @@ export const WEBSITE_JSON_LD = {
   },
 };
 
+/**
+ * No `offers` block: Blou is a subscription app and we do not publish a price
+ * here. A `price: "0"` offer would misstate the pricing to search engines.
+ */
 export const SOFTWARE_APPLICATION_JSON_LD = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "MobileApplication",
   name: `${SITE_NAME} – Quit Smoking Tracker`,
-  operatingSystem: "iOS",
+  operatingSystem: "iOS 17.0 or later",
   applicationCategory: "HealthApplication",
   url: APP_STORE_CANONICAL_URL,
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
+  installUrl: APP_STORE_CANONICAL_URL,
   description:
-    "Visual quit-smoking tracker: streaks, milestones, money saved, craving support, and recovery timelines.",
+    "Quit smoking app for iPhone with a photo timeline, lung checks, SOS craving support, and visual milestones. Free trial, then a subscription.",
   publisher: {
     "@type": "Organization",
     name: SITE_NAME,

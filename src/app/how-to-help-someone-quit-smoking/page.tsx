@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_how-to-help-someone-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
   title: "How to help someone quit smoking (without nagging)",
@@ -46,7 +44,7 @@ const faqItems = [
   {
     question: "Is gifting an app helpful?",
     answer:
-      "Yes if they asked for tools. Send the App Store link with zero guilt framing—then let them lead setup.",
+      "Yes if they asked for tools. Send the App Store link with zero guilt framing—then let them lead setup. Blou is iPhone-only and a subscription with a free trial, so check that suits them first.",
   },
   {
     question: "What if they relapse?",
@@ -71,9 +69,7 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="help-someone-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,44 +80,33 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Support guide
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to help someone quit smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Support guide"
+        title="How to help someone quit smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/living-with-a-smoker-while-quitting" variant="secondary">
+            If you live together →
+          </ButtonLink>
+        }
+      >
+        <p>
           The best support is specific, scheduled, and non-moralizing. Your job
           is not to police nicotine—it is to make the quit plan easier to execute
           on bad days.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_help_someone" placement="article_intro" />
-          <Link href="/living-with-a-smoker-while-quitting" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            If you live together →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "do-list", label: "Do this" },
           { id: "avoid", label: "Avoid this" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="How to help someone quit smoking (without nagging)"
-        path="/how-to-help-someone-quit-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -134,39 +119,40 @@ export default function HowToHelpSomeoneQuitSmokingPage() {
         />
       </section>
 
-      <section id="do-list" className="scroll-mt-24 section-block">
+      <section id="do-list" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Do this</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Ask what high-risk situations worry them most—then rehearse scripts.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Offer rides to pharmacy or clinician if NRT/meds are part of the plan.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Celebrate boring wins: first week complete, first craving surfed.</span></li>
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        If they want digital support, Blou for iPhone gives them SOS craving
+        help on bad days and puts every milestone, like that first full week, on
+        one visual timeline.
+      </InlineAppCta>
+
       <section id="avoid" className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Avoid this</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-amber-600" aria-hidden>•</span><span>“I thought you quit” after a slip—use /i-smoked-one-cigarette framing instead.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-amber-600" aria-hidden>•</span><span>Testing their willpower by smoking around them “to see if they are serious.”</span></li>
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-help-someone" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_help_someone" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
+        <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
           Prep checklist →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="how-to-help-someone-quit-smoking_footer" />
-
-</div>
+    </div>
   );
 }

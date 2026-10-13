@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
 import { buildArticleJsonLd, buildHowToJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-04-24";
-const MODIFIED = "2026-04-24";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_i-smoked-one-cigarette";
 
 export const metadata: Metadata = buildMetadata({
   title: "I smoked one cigarette—what to do next",
@@ -98,12 +98,7 @@ export default function ISmokedOneCigarettePage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="slip-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="slip-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -111,34 +106,24 @@ export default function ISmokedOneCigarettePage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          I smoked one cigarette—what to do next
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="I smoked one cigarette—what to do next"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Revisit the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           A single slip is common. The goal is to interrupt the all-or-nothing
           story, contain the day, and update your plan—not to prove you are
           perfect.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Revisit the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -151,12 +136,6 @@ export default function ISmokedOneCigarettePage() {
           { id: "related-guides", label: "Related reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="I smoked one cigarette—what to do next"
-        path="/i-smoked-one-cigarette"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -171,12 +150,12 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="slip-vs-relapse"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Slip vs. relapse
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           In quit research, a <strong>slip</strong> is often one or a few
           smoking episodes you interrupt before daily smoking restarts. A{" "}
           <strong>relapse</strong> is when smoking becomes regular again for a
@@ -196,12 +175,12 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="first-hour"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What to do in the first hour
         </h2>
-        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
           {firstHourSteps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -211,21 +190,26 @@ export default function ISmokedOneCigarettePage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        After a slip, the next craving is the one to beat. Blou&apos;s SOS button is there the second it
+        hits, and your timeline shows your progress as you get back on track.
+      </InlineAppCta>
+
       <section
         id="shame-spiral"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Shame, guilt, and the next day
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           It is normal to feel disappointed. What usually hurts recovery is
           not the slip but hiding it. If you can, tell one person (or your app
           community) the truth: “I had one, I am back on plan.”
           Self-compassion in smoking cessation is associated with more adaptive
           coping, not with being “soft.”
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Tonight, do not negotiate with “I will quit again Monday.” The
           research-backed move is: sleep, then execute your first two hours
           of quit day the way you did before—this time with one new note on
@@ -242,12 +226,12 @@ export default function ISmokedOneCigarettePage() {
 
       <section
         id="extra-help"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When to get extra help
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>Slips are clustering (several in a week) and feel out of your control.</li>
           <li>You are using smoking to manage depression, anxiety, or trauma symptoms.</li>
           <li>You are pregnant, nursing, or have heart or lung disease and smoked again.</li>
@@ -262,7 +246,7 @@ export default function ISmokedOneCigarettePage() {
             or ask your clinician for a plan.
           </li>
         </ul>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
           In the U.S., <strong>1-800-QUIT-NOW</strong> connects to free
           coaching; in the U.K. call <strong>0300 123 1044</strong>. A doctor
           can adjust NRT, varenicline, or bupropion if you are eligible.
@@ -270,8 +254,10 @@ export default function ISmokedOneCigarettePage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-one-cigarette" />
+        <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -284,8 +270,6 @@ export default function ISmokedOneCigarettePage() {
           ]}
         />
       </section>
-<ArticleConversionFooter campaign="i-smoked-one-cigarette_footer" />
-
-</div>
+    </div>
   );
 }

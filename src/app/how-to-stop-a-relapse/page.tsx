@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { PILLAR_ARTICLE_REFERENCES } from "@/lib/pillarArticleReferences";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
@@ -20,7 +19,8 @@ import {
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-04-27";
-const MODIFIED = "2026-04-27";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_how-to-stop-a-relapse";
 
 export const metadata: Metadata = buildMetadata({
   title: "How to stop a relapse and recover your quit",
@@ -113,12 +113,7 @@ export default function HowToStopARelapsePage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="relapse-recovery-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
-      <Script id="relapse-recovery-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
+      <JsonLd data={[articleJsonLd, howToJsonLd]} />
 
       <Breadcrumbs
         items={[
@@ -126,34 +121,24 @@ export default function HowToStopARelapsePage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          How to stop a relapse and recover your quit
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="How to stop a relapse and recover your quit"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Re-open the quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           A relapse is information, not a tattoo. The fastest recoveries pair
           honesty with structure: medical tools, environmental edits, and
           relationships that pull you back instead of hiding you.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Re-open the quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -174,18 +159,11 @@ export default function HowToStopARelapsePage() {
             id: "when-to-seek-medical-care",
             label: "When should you seek medical care?",
           },
-          { id: "stay-on-track", label: "Stay on track" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="How to stop a relapse and recover your quit"
-        path="/how-to-stop-a-relapse"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -200,12 +178,12 @@ export default function HowToStopARelapsePage() {
 
       <section
         id="slip-vs-full-relapse"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What is the difference between a slip and a full relapse?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           A <strong>slip</strong> is often one or a few cigarettes before you
           interrupt the chain. A <strong>relapse</strong> is when daily smoking
           returns for a stretch—days to weeks—and cues re-tighten around nicotine
@@ -219,7 +197,7 @@ export default function HowToStopARelapsePage() {
           </Link>
           .
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The distinction matters because the intervention depth differs. Slips
           need fast behavioral containment; relapses usually need medication
           review plus bigger environmental changes—not only “try harder.”
@@ -228,12 +206,12 @@ export default function HowToStopARelapsePage() {
 
       <section
         id="recovery-steps"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What steps stop a relapse fastest?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Speed beats pride. The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -247,7 +225,7 @@ export default function HowToStopARelapsePage() {
           quit success rates across populations—exactly the stack you want after
           a relapse, not a lonelier version of the attempt that just failed.
         </p>
-        <ol className="mt-4 space-y-4 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-4 text-sm leading-7 text-teal-900/90">
           {recoverySteps.map((step) => (
             <li key={step.name}>
               <p className="font-semibold text-teal-950">{step.name}</p>
@@ -257,14 +235,19 @@ export default function HowToStopARelapsePage() {
         </ol>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Once you&apos;ve re-picked your quit date, the next craving is the test. Blou&apos;s SOS button
+        is there the second it hits, and your timeline shows every smoke-free day of the new attempt.
+      </InlineAppCta>
+
       <section
         id="medications-after-relapse"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Should you restart medications after a relapse?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           In most cases, yes—if they were safe for you before and you stopped
           them only because you “failed.” Nicotine patches, gum, lozenges,
           varenicline, and bupropion each have eligibility nuances. The{" "}
@@ -279,7 +262,7 @@ export default function HowToStopARelapsePage() {
           is a reminder that every day off cigarettes buys health; medications
           are tools to compress the time you spend climbing back out.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If alcohol moved from occasional to heavy during your relapse, tell
           your prescriber before restarting certain drugs. See{" "}
           <Link
@@ -294,12 +277,12 @@ export default function HowToStopARelapsePage() {
 
       <section
         id="when-to-seek-medical-care"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>
             You want to quit again but feel physically ill when you try to
             lower cigarettes—withdrawal can be medically managed.
@@ -313,7 +296,7 @@ export default function HowToStopARelapsePage() {
             escalating substance use—ask for urgent coordinated care.
           </li>
         </ul>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
           Global burden data from the{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -329,16 +312,11 @@ export default function HowToStopARelapsePage() {
         </p>
       </section>
 
-      <section id="stay-on-track" className="scroll-mt-24">
-        <StayOnTrackCard
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-stop-relapse" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -354,7 +332,7 @@ export default function HowToStopARelapsePage() {
 
       <section
         id="sources"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources &amp; further reading
@@ -370,11 +348,11 @@ export default function HowToStopARelapsePage() {
               >
                 {reference.label}
               </a>{" "}
-              <span className="text-teal-900/60">· {reference.publisher}</span>
+              <span className="text-ink-muted">· {reference.publisher}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs leading-5 text-teal-900/70">
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
           This guide is educational and does not replace medical advice. If you
           have pre-existing conditions or take prescription medication, talk to
           your clinician when making changes to your smoking.
@@ -382,17 +360,10 @@ export default function HowToStopARelapsePage() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link
-          href="/prepare-to-quit-smoking"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
           ← Prep checklist
-        </Link>
-        <AppStoreBadgeLink
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+        </ButtonLink>
       </div>
-</div>
+    </div>
   );
 }

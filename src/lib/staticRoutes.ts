@@ -1,87 +1,111 @@
 /**
- * Single source of truth for static (non-data-driven) routes that should appear
- * in the sitemap. Pages with their own dynamic content (guides, country
- * calculators) are listed by their generators in `app/sitemap.ts`.
+ * Single source of truth for static (non-data-driven) routes. It feeds the
+ * sitemap AND the article index on /guides, so every article listed here is
+ * linked from a hub page (no orphans). Guides and country calculators are
+ * listed by their own generators in `app/sitemap.ts`.
  *
  * Keep `lastModified` per-route. Update it ONLY when the page content
- * meaningfully changes — never bump on every deploy. Search engines treat
- * unchanging-but-bumped lastmod as noise.
+ * meaningfully changes — never bump on every deploy.
+ *
+ * Legal pages (/privacy, /terms) are noindex and intentionally not listed.
  */
+
+export type ArticleGroup =
+  | "Start here"
+  | "Withdrawal and recovery"
+  | "Methods and medication"
+  | "Situations and health conditions"
+  | "Slips and relapse"
+  | "Quit apps compared";
 
 export type StaticRoute = {
   /** URL path, beginning with "/". */
   path: string;
-  /** ISO date (YYYY-MM-DD or full ISO). Bump when the page's content changes. */
+  /** ISO date (YYYY-MM-DD). Bump when the page's content changes. */
   lastModified: string;
+  /** Present for articles: short label and hub group for the article index. */
+  label?: string;
+  group?: ArticleGroup;
 };
 
+const OCT_2026 = "2026-10-13";
+
 export const staticRoutes: StaticRoute[] = [
-  { path: "/", lastModified: "2025-04-27" },
-  { path: "/about", lastModified: "2025-04-23" },
-  { path: "/guides", lastModified: "2025-04-27" },
-  { path: "/tools", lastModified: "2025-04-23" },
-  { path: "/tools/money-saved", lastModified: "2025-04-23" },
-  { path: "/tools/lung-recovery", lastModified: "2025-04-23" },
-  { path: "/calculators", lastModified: "2025-04-23" },
-  { path: "/how-to-quit-smoking", lastModified: "2025-04-23" },
-  { path: "/prepare-to-quit-smoking", lastModified: "2025-04-23" },
-  { path: "/best-quit-smoking-apps", lastModified: "2025-04-23" },
-  { path: "/i-smoked-one-cigarette", lastModified: "2025-04-24" },
-  { path: "/alcohol-and-quitting-smoking", lastModified: "2025-04-27" },
-  { path: "/quitting-smoking-after-40", lastModified: "2025-04-27" },
-  { path: "/quitting-smoking-after-50", lastModified: "2025-04-27" },
-  { path: "/how-to-stop-a-relapse", lastModified: "2025-04-27" },
-  { path: "/social-smoking", lastModified: "2025-04-27" },
-  { path: "/free-quit-smoking-app", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-app-for-iphone", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-tracker", lastModified: "2026-05-09" },
-  { path: "/nicotine-withdrawal-timeline", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-with-nicotine-patch", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-with-nicotine-gum", lastModified: "2026-05-09" },
-  { path: "/blou-vs-smoke-free", lastModified: "2026-05-09" },
-  { path: "/blou-vs-quitnow", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-without-gaining-weight", lastModified: "2026-05-09" },
-  { path: "/quit-smoking-cold-turkey", lastModified: "2026-05-09" },
-  { path: "/quit-vaping", lastModified: "2026-05-13" },
-  { path: "/vaping-and-smoking-together", lastModified: "2026-05-13" },
-  { path: "/smoking-cessation-app", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-app-android", lastModified: "2026-05-13" },
-  { path: "/nrt-and-quit-smoking-app", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-with-nicotine-lozenge", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-with-varenicline", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-with-bupropion", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-before-surgery", lastModified: "2026-05-13" },
-  { path: "/quit-smoking-while-pregnant", lastModified: "2026-05-13" },
-  { path: "/why-cant-i-quit-smoking", lastModified: "2026-05-13" },
-  { path: "/trying-to-quit-smoking-again", lastModified: "2026-05-13" },
-  { path: "/blou-vs-flamy", lastModified: "2026-05-13" },
-  { path: "/blou-vs-quit-genius", lastModified: "2026-05-13" },
-  { path: "/motivation-to-quit-smoking", lastModified: "2026-05-13" },
-  { path: "/first-week-quit-smoking", lastModified: "2026-05-14" },
-  { path: "/nicotine-patch-vs-gum", lastModified: "2026-05-14" },
-  { path: "/how-to-help-someone-quit-smoking", lastModified: "2026-05-14" },
-  { path: "/quit-smoking-without-nrt", lastModified: "2026-05-14" },
-  { path: "/stop-smoking-today", lastModified: "2026-05-14" },
-  { path: "/quit-smoking-on-a-budget", lastModified: "2026-05-14" },
-  { path: "/stress-smoking-quit-plan", lastModified: "2026-05-14" },
-  { path: "/driving-and-quitting-smoking", lastModified: "2026-05-14" },
-  { path: "/living-with-a-smoker-while-quitting", lastModified: "2026-05-14" },
-  { path: "/nicotine-withdrawal-symptoms", lastModified: "2026-05-14" },
-  { path: "/combination-nrt-quit-smoking", lastModified: "2026-05-14" },
-  { path: "/stay-quit-after-one-month", lastModified: "2026-05-14" },
-  { path: "/best-quit-smoking-app-for-beginners", lastModified: "2026-05-14" },
-  { path: "/is-it-too-late-to-quit-smoking", lastModified: "2026-05-14" },
-  { path: "/coffee-and-quitting-smoking", lastModified: "2026-05-14" },
-  { path: "/blou-vs-kwit", lastModified: "2026-05-20" },
-  { path: "/blou-vs-quitstart", lastModified: "2026-05-20" },
-  { path: "/quit-smoking-with-anxiety", lastModified: "2026-05-20" },
-  { path: "/quit-smoking-with-depression", lastModified: "2026-05-20" },
-  { path: "/quit-smoking-with-asthma", lastModified: "2026-05-20" },
-  { path: "/best-quit-smoking-app-for-heavy-smokers", lastModified: "2026-05-20" },
-  { path: "/health-benefits-of-quitting-smoking", lastModified: "2026-05-20" },
-  { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: "2026-05-20" },
-  { path: "/compare", lastModified: "2026-08-22" },
-  { path: "/kwit-vs-smoke-free", lastModified: "2026-08-22" },
-  { path: "/kwit-vs-quitnow", lastModified: "2026-08-22" },
-  { path: "/smoke-free-vs-quitnow", lastModified: "2026-08-22" },
+  { path: "/", lastModified: OCT_2026 },
+  { path: "/about", lastModified: OCT_2026 },
+  { path: "/guides", lastModified: OCT_2026 },
+  { path: "/tools", lastModified: OCT_2026 },
+  { path: "/tools/money-saved", lastModified: OCT_2026 },
+  { path: "/tools/lung-recovery", lastModified: OCT_2026 },
+  { path: "/calculators", lastModified: OCT_2026 },
+
+  { path: "/how-to-quit-smoking", lastModified: OCT_2026, label: "How to quit smoking: step-by-step plan", group: "Start here" },
+  { path: "/prepare-to-quit-smoking", lastModified: OCT_2026, label: "Prepare to quit: 7-day checklist", group: "Start here" },
+  { path: "/stop-smoking-today", lastModified: OCT_2026, label: "Stop smoking today", group: "Start here" },
+  { path: "/first-week-quit-smoking", lastModified: OCT_2026, label: "Your first week without smoking", group: "Start here" },
+  { path: "/motivation-to-quit-smoking", lastModified: OCT_2026, label: "Motivation to quit smoking", group: "Start here" },
+  { path: "/why-cant-i-quit-smoking", lastModified: OCT_2026, label: "Why can't I quit smoking?", group: "Start here" },
+  { path: "/is-it-too-late-to-quit-smoking", lastModified: OCT_2026, label: "Is it too late to quit?", group: "Start here" },
+  { path: "/quitting-smoking-after-40", lastModified: OCT_2026, label: "Quitting smoking after 40", group: "Start here" },
+  { path: "/quitting-smoking-after-50", lastModified: OCT_2026, label: "Quitting smoking in your 50s", group: "Start here" },
+
+  { path: "/nicotine-withdrawal-timeline", lastModified: OCT_2026, label: "Nicotine withdrawal timeline, days 1–30", group: "Withdrawal and recovery" },
+  { path: "/nicotine-withdrawal-symptoms", lastModified: OCT_2026, label: "Nicotine withdrawal symptoms", group: "Withdrawal and recovery" },
+  { path: "/health-benefits-of-quitting-smoking", lastModified: OCT_2026, label: "Health benefits of quitting smoking", group: "Withdrawal and recovery" },
+  { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: OCT_2026, label: "How long nicotine stays in your system", group: "Withdrawal and recovery" },
+
+  { path: "/quit-smoking-cold-turkey", lastModified: OCT_2026, label: "Quitting cold turkey", group: "Methods and medication" },
+  { path: "/quit-smoking-without-nrt", lastModified: OCT_2026, label: "Quitting without NRT", group: "Methods and medication" },
+  { path: "/nicotine-patch-vs-gum", lastModified: OCT_2026, label: "Nicotine patch vs gum", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-patch", lastModified: OCT_2026, label: "Quitting with the nicotine patch", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-gum", lastModified: OCT_2026, label: "Quitting with nicotine gum", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-lozenge", lastModified: OCT_2026, label: "Quitting with nicotine lozenges", group: "Methods and medication" },
+  { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
+  { path: "/quit-smoking-with-varenicline", lastModified: OCT_2026, label: "Quitting with varenicline (Chantix / Champix)", group: "Methods and medication" },
+  { path: "/quit-smoking-with-bupropion", lastModified: OCT_2026, label: "Quitting with bupropion (Zyban)", group: "Methods and medication" },
+  { path: "/nrt-and-quit-smoking-app", lastModified: OCT_2026, label: "Using NRT with a quit app", group: "Methods and medication" },
+
+  { path: "/quit-smoking-with-anxiety", lastModified: OCT_2026, label: "Quitting smoking with anxiety", group: "Situations and health conditions" },
+  { path: "/quit-smoking-with-depression", lastModified: OCT_2026, label: "Quitting smoking with depression", group: "Situations and health conditions" },
+  { path: "/quit-smoking-with-asthma", lastModified: OCT_2026, label: "Quitting smoking with asthma", group: "Situations and health conditions" },
+  { path: "/quit-smoking-while-pregnant", lastModified: OCT_2026, label: "Quitting smoking while pregnant", group: "Situations and health conditions" },
+  { path: "/quit-smoking-before-surgery", lastModified: OCT_2026, label: "Quitting smoking before surgery", group: "Situations and health conditions" },
+  { path: "/quit-smoking-without-gaining-weight", lastModified: OCT_2026, label: "Quitting without gaining weight", group: "Situations and health conditions" },
+  { path: "/stress-smoking-quit-plan", lastModified: OCT_2026, label: "Stress smoking", group: "Situations and health conditions" },
+  { path: "/quit-smoking-on-a-budget", lastModified: OCT_2026, label: "Quitting on a budget", group: "Situations and health conditions" },
+  { path: "/coffee-and-quitting-smoking", lastModified: OCT_2026, label: "Coffee and quitting smoking", group: "Situations and health conditions" },
+  { path: "/alcohol-and-quitting-smoking", lastModified: OCT_2026, label: "Alcohol and quitting smoking", group: "Situations and health conditions" },
+  { path: "/driving-and-quitting-smoking", lastModified: OCT_2026, label: "Driving and quitting smoking", group: "Situations and health conditions" },
+  { path: "/living-with-a-smoker-while-quitting", lastModified: OCT_2026, label: "Living with a smoker while quitting", group: "Situations and health conditions" },
+  { path: "/social-smoking", lastModified: OCT_2026, label: "Social smoking", group: "Situations and health conditions" },
+  { path: "/how-to-help-someone-quit-smoking", lastModified: OCT_2026, label: "Helping someone quit", group: "Situations and health conditions" },
+  { path: "/quit-vaping", lastModified: OCT_2026, label: "How to quit vaping", group: "Situations and health conditions" },
+  { path: "/vaping-and-smoking-together", lastModified: OCT_2026, label: "Vaping and smoking together", group: "Situations and health conditions" },
+
+  { path: "/i-smoked-one-cigarette", lastModified: OCT_2026, label: "I smoked one cigarette", group: "Slips and relapse" },
+  { path: "/how-to-stop-a-relapse", lastModified: OCT_2026, label: "How to stop a relapse", group: "Slips and relapse" },
+  { path: "/trying-to-quit-smoking-again", lastModified: OCT_2026, label: "Trying to quit again", group: "Slips and relapse" },
+
+  { path: "/best-quit-smoking-apps", lastModified: OCT_2026, label: "Best quit smoking apps in 2026", group: "Quit apps compared" },
+  { path: "/quit-smoking-app-for-iphone", lastModified: OCT_2026, label: "Quit smoking apps for iPhone", group: "Quit apps compared" },
+  { path: "/quit-smoking-app-android", lastModified: OCT_2026, label: "Quit smoking apps for Android", group: "Quit apps compared" },
+  { path: "/blou-vs-smoke-free", lastModified: OCT_2026, label: "Blou vs Smoke Free", group: "Quit apps compared" },
+  { path: "/blou-vs-quitnow", lastModified: OCT_2026, label: "Blou vs QuitNow", group: "Quit apps compared" },
+  { path: "/blou-vs-kwit", lastModified: OCT_2026, label: "Blou vs Kwit", group: "Quit apps compared" },
+  { path: "/blou-vs-quitstart", lastModified: OCT_2026, label: "Blou vs quitSTART", group: "Quit apps compared" },
+  { path: "/blou-vs-flamy", lastModified: OCT_2026, label: "Blou vs Flamy", group: "Quit apps compared" },
+  { path: "/blou-vs-quit-genius", lastModified: OCT_2026, label: "Blou vs Quit Genius", group: "Quit apps compared" },
 ];
+
+export const ARTICLE_GROUPS: ArticleGroup[] = [
+  "Start here",
+  "Withdrawal and recovery",
+  "Methods and medication",
+  "Situations and health conditions",
+  "Slips and relapse",
+  "Quit apps compared",
+];
+
+export const articleRoutes = staticRoutes.filter(
+  (r): r is StaticRoute & { label: string; group: ArticleGroup } => Boolean(r.label && r.group),
+);

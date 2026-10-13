@@ -1,35 +1,28 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { ButtonLink } from "@/components/ui/Button";
+
+export const metadata: Metadata = {
+  title: "Page not found",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
-    <div className="masthead">
-      <p className="text-sm font-medium text-teal-700">Page not found</p>
-      <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-        This page is not on the calendar.
-      </h1>
-      <p className="mt-4 max-w-[65ch] text-base leading-7 text-teal-900/85">
-        The link may be old, or the page may have moved. Start from the quit
-        plan, the guides, or the homepage.
+    <div className="mx-auto flex max-w-xl flex-col items-start gap-4 py-16">
+      <p className="text-xs font-semibold uppercase tracking-wide text-accent">404</p>
+      <h1 className="text-3xl font-semibold tracking-tight text-ink">This page isn&apos;t here</h1>
+      <p className="text-base leading-7 text-ink-muted">
+        It may have moved when we merged a few overlapping guides. These are the best places to
+        pick up from:
       </p>
-      <div className="mt-6 flex flex-wrap gap-3">
-        <Link
-          href="/"
-          className="pressable inline-flex h-11 items-center justify-center rounded-sm bg-teal-600 px-5 text-sm font-medium text-white hover:bg-teal-700"
-        >
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking">Quit plan</ButtonLink>
+        <ButtonLink href="/guides" variant="secondary">
+          All guides
+        </ButtonLink>
+        <ButtonLink href="/" variant="ghost">
           Home
-        </Link>
-        <Link
-          href="/how-to-quit-smoking"
-          className="pressable inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 px-5 text-sm font-medium text-teal-900 hover:bg-teal-50"
-        >
-          Quit plan
-        </Link>
-        <Link
-          href="/guides"
-          className="pressable inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 px-5 text-sm font-medium text-teal-900 hover:bg-teal-50"
-        >
-          Guides
-        </Link>
+        </ButtonLink>
       </div>
     </div>
   );

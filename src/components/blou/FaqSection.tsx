@@ -1,7 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import Script from "next/script";
+import type { ReactNode } from "react";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { buildFaqJsonLd } from "@/lib/seo";
 
 type FaqItem = {
@@ -12,87 +11,62 @@ type FaqItem = {
 type FaqSectionProps = {
   items: ReadonlyArray<FaqItem>;
   title?: string;
+  /** Whether to emit FAQPage JSON-LD for this section. Default true. */
   emitJsonLd?: boolean;
+  /** Kept for backwards compatibility; native JSON-LD scripts need no id. */
   jsonLdId?: string;
 };
 
-function trackExpand(question: string) {
-  if (typeof window === "undefined") return;
-  const anyWindow = window as unknown as {
-    gtag?: (...args: unknown[]) => void;
-  };
-  if (typeof anyWindow.gtag === "function") {
-    anyWindow.gtag("event", "faq_expand", {
-      event_category: "engagement",
-      event_label: question,
-    });
-  }
+// A site path like "/how-to-quit-smoking" or "/guides/cravings", only when it
+// starts a word, so "24/7" or "and/or" stay plain text.
+const INTERNAL_PATH = /(?<=^|[\s(])(\/[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)*)/g;
+
+/** Turns site paths written inside answers ("see /how-to-quit-smoking") into links. */
+function linkify(answer: string): ReactNode[] {
+  return answer.split(INTERNAL_PATH).map((part, i) => {
+    if (i % 2 === 1 && part.length > 1) {
+      const label = part.split("/").filter(Boolean).at(-1)?.replace(/-/g, " ") ?? part;
+      return (
+        <Link key={`${part}-${i}`} href={part} className="font-medium text-accent-strong underline underline-offset-2">
+          {label}
+        </Link>
+      );
+    }
+    return part;
+  });
 }
 
-const TOKEN_RE = /(https?:\/\/[^\s]+|\/[a-z0-9][a-z0-9-/]*)/g;
-
-function LinkedAnswer({ text }: { text: string }) {
-  const parts = text.split(TOKEN_RE);
-  return (
-    <p className="mt-3 text-base leading-7 text-teal-900/85">
-      {parts.map((part, index) => {
-        if (part.startsWith("http")) {
-          return <span key={index}>{part}</span>;
-        }
-        if (part.startsWith("/") && part.length > 2 && !part.includes(" ")) {
-          const label = part.slice(1).replace(/-/g, " ");
-          return (
-            <Link
-              key={`${part}-${index}`}
-              href={part}
-              className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-            >
-              {label}
-            </Link>
-          );
-        }
-        return <span key={index}>{part}</span>;
-      })}
-    </p>
-  );
-}
-
+/**
+ * Server-rendered FAQ. Expand tracking is handled by the global
+ * AnalyticsListeners (`toggle` events on `details[data-faq]`).
+ */
 export function FaqSection({
   items,
   title = "Frequently asked questions",
   emitJsonLd = true,
-  jsonLdId = "faq-json-ld",
 }: FaqSectionProps) {
   return (
-    <section className="section-block" aria-label={title}>
-      {emitJsonLd ? (
-        <Script id={jsonLdId} type="application/ld+json">
-          {JSON.stringify(buildFaqJsonLd(items))}
-        </Script>
-      ) : null}
+    <section className="rounded-card border border-line bg-surface p-6 shadow-card" aria-label={title}>
+      {emitJsonLd ? <JsonLd data={buildFaqJsonLd(items)} /> : null}
 
-      <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
-      <div className="mt-2 divide-y divide-teal-200">
+      <h2 className="text-xl font-semibold text-ink">{title}</h2>
+      <div className="mt-4 space-y-3">
         {items.map((item) => (
           <details
             key={item.question}
-            className="group py-4"
-            onToggle={(e) => {
-              if ((e.currentTarget as HTMLDetailsElement).open) {
-                trackExpand(item.question);
-              }
-            }}
+            data-faq={item.question}
+            className="group rounded-xl border border-line bg-surface-muted p-4 open:bg-surface"
           >
-            <summary className="flex cursor-pointer list-none items-start justify-between gap-3 text-base font-semibold text-teal-950 [&::-webkit-details-marker]:hidden">
+            <summary className="flex min-h-6 cursor-pointer list-none items-start justify-between gap-3 text-sm font-semibold text-ink">
               <span>{item.question}</span>
               <span
                 aria-hidden
-                className="ml-2 text-teal-700 transition motion-safe:group-open:rotate-45"
+                className="ml-2 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full border border-line text-xs text-ink transition group-open:rotate-45"
               >
                 +
               </span>
             </summary>
-            <LinkedAnswer text={item.answer} />
+            <p className="mt-3 text-sm leading-7 text-ink-muted">{linkify(item.answer)}</p>
           </details>
         ))}
       </div>

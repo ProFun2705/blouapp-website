@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
 import { RelatedGuides } from "@/components/marketing/RelatedGuides";
-import { StayOnTrackCard } from "@/components/marketing/StayOnTrackCard";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { PILLAR_ARTICLE_REFERENCES } from "@/lib/pillarArticleReferences";
 import { RELATED_PILLAR_SLUGS } from "@/lib/relatedPillarSlugs";
@@ -16,10 +15,11 @@ import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-04-27";
-const MODIFIED = "2026-04-27";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quitting-smoking-after-50";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quitting smoking in your 50s: plan and benefits",
+  title: "Quitting smoking in your 50s: benefits and screening",
   description:
     "Quitting in your 50s still cuts heart risk and supports healthier lungs. Learn how meds, bone health, and lung screening fit a smoke-free plan in midlife.",
   path: "/quitting-smoking-after-50",
@@ -64,7 +64,7 @@ const faqItems = [
 
 export default function QuittingSmokingAfter50Page() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quitting smoking in your 50s: plan and benefits",
+    title: "Quitting smoking in your 50s: benefits and screening",
     description:
       "Midlife cessation expectations, medications, bone health, and when to involve clinicians.",
     path: "/quitting-smoking-after-50",
@@ -83,9 +83,7 @@ export default function QuittingSmokingAfter50Page() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="after-50-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -93,35 +91,25 @@ export default function QuittingSmokingAfter50Page() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Relapse &amp; maintenance
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quitting smoking in your 50s
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Relapse & maintenance"
+        title="Quitting smoking in your 50s"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Open the full quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           Your 50s are a high-stakes decade for cardiovascular and cancer risk.
           Quitting now still bends the curve—especially when you combine
           cessation with movement, blood pressure control, and appropriate
           screening conversations.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <AppStoreBadgeLink
-            campaign="article_intro"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Open the full quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -146,18 +134,11 @@ export default function QuittingSmokingAfter50Page() {
             id: "when-to-seek-medical-care",
             label: "When should you seek medical care?",
           },
-          { id: "stay-on-track", label: "Stay on track" },
           { id: "faq", label: "Frequently asked questions" },
           { id: "related-guides", label: "Related reading" },
           { id: "sources", label: "Sources & further reading" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quitting smoking in your 50s: plan and benefits"
-        path="/quitting-smoking-after-50"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -172,12 +153,12 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="why-fifties-matter"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Why do your 50s matter for quitting smoking?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Many people in their 50s already notice stairs wind them more, blood
           pressure creeps up, or a parent’s heart attack rewrote their sense of
           risk. Tobacco accelerates those trajectories. The{" "}
@@ -192,7 +173,7 @@ export default function QuittingSmokingAfter50Page() {
           frames tobacco as a population-level driver of NCDs; your quit is the
           personal lever you control inside that picture.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           This decade is also when identity shifts—“I have always been a smoker”
           feels harder to peel. Tools that track smoke-free time, money not spent,
           and craving patterns help replace identity with data. Try the{" "}
@@ -215,12 +196,12 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="heart-and-circulation"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What happens to heart and circulation risk after you quit?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -234,28 +215,33 @@ export default function QuittingSmokingAfter50Page() {
           reductions in heart disease risk after cessation. Those population curves
           include people who quit in midlife—not only lifelong never-smokers.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Practically, pair quitting with blood pressure follow-up. Some
           measurements shift as nervous system tone changes. Your GP can help
           interpret readings over weeks, not single days.
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Your heart and circulation start benefiting soon after the last cigarette. Blou&apos;s lung
+        checks and photo timeline let you see your own changes, with every milestone on one visual timeline.
+      </InlineAppCta>
+
       <section
         id="lungs-screening"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What should you know about lungs and screening?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Low-dose CT lung cancer screening is recommended only for defined
           high-risk groups. Quitting changes your risk profile over time but does
           not magically erase history. Ask your clinician whether you meet
           current criteria, when to start, and how often to repeat—those answers
           are personal, not generic blog defaults.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Separately, some increased phlegm or cough after quitting can reflect
           airway recovery. The{" "}
           <a
@@ -273,12 +259,12 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="medications-safety"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How do you choose cessation medications safely?
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The{" "}
           <a
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -293,7 +279,7 @@ export default function QuittingSmokingAfter50Page() {
           kidney function, psychiatric history, seizures, or complex cardiac
           disease.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Bring real-world details: how many cigarettes per day, wake-up time to
           first cigarette, prior quit attempts, and alcohol pattern. Those inputs
           change dosing strategies and behavioral plans more than age alone.
@@ -302,12 +288,12 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="when-to-seek-medical-care"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           When should you seek medical care?
         </h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-teal-900/90">
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-teal-900/90">
           <li>
             Sudden weakness on one side, slurred speech, or crushing chest
             pain—call emergency services; do not drive yourself.
@@ -322,16 +308,11 @@ export default function QuittingSmokingAfter50Page() {
         </ul>
       </section>
 
-      <section id="stay-on-track" className="scroll-mt-24">
-        <StayOnTrackCard
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-quit-after-50" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <section id="related-guides" className="scroll-mt-24">
         <RelatedGuides
@@ -347,7 +328,7 @@ export default function QuittingSmokingAfter50Page() {
 
       <section
         id="sources"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Sources &amp; further reading
@@ -363,11 +344,11 @@ export default function QuittingSmokingAfter50Page() {
               >
                 {reference.label}
               </a>{" "}
-              <span className="text-teal-900/60">· {reference.publisher}</span>
+              <span className="text-ink-muted">· {reference.publisher}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-xs leading-5 text-teal-900/70">
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
           This guide is educational and does not replace medical advice. If you
           have pre-existing conditions or take prescription medication, talk to
           your clinician when making changes to your smoking.
@@ -375,17 +356,10 @@ export default function QuittingSmokingAfter50Page() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link
-          href="/guides"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/guides" variant="secondary">
           ← All guides
-        </Link>
-        <AppStoreBadgeLink
-          campaign="article_footer_card"
-          placement="article_footer_card"
-        />
+        </ButtonLink>
       </div>
-</div>
+    </div>
   );
 }

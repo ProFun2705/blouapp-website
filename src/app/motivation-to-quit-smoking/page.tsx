@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_motivation-to-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Motivation to quit smoking: dated plan",
+  title: "Motivation to quit smoking: turn it into a plan",
   description:
     "Motivation spikes and fades—use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
   path: "/motivation-to-quit-smoking",
@@ -41,7 +40,7 @@ const faqItems = [
   {
     question: "Should I focus on health or money?",
     answer:
-      "Use both. Health reasons matter long-term; money and time saved matter this week. Blou surfaces savings and milestones so benefits stay concrete.",
+      "Use both. Health reasons matter long-term; money and time saved matter this week. Blou puts every milestone and smoke-free day on one visual timeline so the benefits stay concrete.",
   },
   {
     question: "How do I handle friends who smoke?",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function MotivationToQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Motivation to quit smoking: dated plan",
+    title: "Motivation to quit smoking: turn it into a plan",
     description:
       "How to convert motivation into a quit plan with dates, support, and tracking.",
     path: "/motivation-to-quit-smoking",
@@ -71,9 +70,7 @@ export default function MotivationToQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="motivation-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -81,47 +78,33 @@ export default function MotivationToQuitSmokingPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Mindset + execution
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Motivation to quit smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Mindset + execution"
+        title="Motivation to quit smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            7-day prep →
+          </ButtonLink>
+        }
+      >
+        <p>
           Motivation gets you to the starting line; systems get you through week
           three. Capture your reasons once, then invest energy into a dated plan,
           meds/NRT if appropriate, and craving drills you can repeat tired.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_motivation" placement="article_intro" />
-          <Link
-            href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            7-day prep →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "reasons", label: "Write reasons that survive cravings" },
           { id: "systems", label: "Stack systems, not slogans" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Motivation to quit smoking: dated plan"
-        path="/motivation-to-quit-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -136,12 +119,12 @@ export default function MotivationToQuitSmokingPage() {
 
       <section
         id="reasons"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Write reasons that survive cravings
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -171,14 +154,19 @@ export default function MotivationToQuitSmokingPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Reasons hold up better when you can see them paying off. Blou&apos;s photo timeline and lung
+        checks show your own changes, with every milestone on one visual timeline.
+      </InlineAppCta>
+
       <section
         id="systems"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Stack systems, not slogans
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Follow{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -204,28 +192,17 @@ export default function MotivationToQuitSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-motivation-quit" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_motivation"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/best-quit-smoking-apps"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Compare apps →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="motivation-to-quit-smoking_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+          Compare apps →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

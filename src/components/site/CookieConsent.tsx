@@ -9,7 +9,7 @@ import {
   ANALYTICS_CONSENT_STORAGE_KEY as STORAGE_KEY,
 } from "@/lib/analytics-consent";
 
-type Decision = typeof GRANTED | typeof DENIED | null | "unknown";
+type Decision = typeof GRANTED | typeof DENIED | null;
 
 function applyConsent(decision: typeof GRANTED | typeof DENIED) {
   if (typeof window === "undefined") return;
@@ -24,8 +24,13 @@ function applyConsent(decision: typeof GRANTED | typeof DENIED) {
   });
 }
 
+/**
+ * Slim bottom bar. Kept to one short line so it never becomes the page's
+ * largest paint (it used to be the LCP element on mobile) and never covers
+ * more than a strip of the screen.
+ */
 export function CookieConsent() {
-  const [decision, setDecision] = useState<Decision>("unknown");
+  const [decision, setDecision] = useState<Decision>(GRANTED);
 
   useEffect(() => {
     try {
@@ -57,40 +62,33 @@ export function CookieConsent() {
   return (
     <div
       role="region"
-      aria-label="Cookie consent"
-      className="fixed inset-x-3 z-50 rounded-sm border border-teal-200 bg-white p-4 shadow-lg md:inset-x-auto md:right-4 md:max-w-md"
-      style={{ bottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
+      aria-label="Analytics consent"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-surface/95 px-4 py-2 shadow-[0_-4px_16px_rgb(15_61_58/0.08)] backdrop-blur"
+      style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
     >
-      <p className="text-sm leading-6 text-teal-950">
-        We use privacy-friendly analytics (Google Analytics with IP anonymization)
-        and Amplitude (including optional session replay when you accept) to
-        understand which pages help people quit. No ads, no cross-site tracking.
-      </p>
-      <p className="mt-1 text-xs text-teal-900/70">
-        See our{" "}
-        <Link
-          href="/privacy"
-          className="underline decoration-teal-400 underline-offset-4"
-        >
-          Privacy Policy
-        </Link>
-        .
-      </p>
-      <div className="mt-3 flex flex-wrap justify-end gap-2">
-        <button
-          type="button"
-          onClick={() => persist(DENIED)}
-          className="pressable min-h-11 rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Decline analytics
-        </button>
-        <button
-          type="button"
-          onClick={() => persist(GRANTED)}
-          className="pressable min-h-11 rounded-sm bg-teal-700 px-4 text-sm font-semibold text-white transition hover:bg-teal-800"
-        >
-          Accept
-        </button>
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-1">
+        <p className="text-xs leading-5 text-ink-muted">
+          Analytics help us see which pages help people quit. No ads.{" "}
+          <Link href="/privacy" className="underline underline-offset-2">
+            Privacy
+          </Link>
+        </p>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={() => persist(DENIED)}
+            className="min-h-11 rounded-full px-4 text-xs font-medium text-ink hover:bg-surface-muted"
+          >
+            Decline
+          </button>
+          <button
+            type="button"
+            onClick={() => persist(GRANTED)}
+            className="min-h-11 rounded-full bg-accent-strong px-4 text-xs font-semibold text-white hover:bg-ink"
+          >
+            Accept
+          </button>
+        </div>
       </div>
     </div>
   );

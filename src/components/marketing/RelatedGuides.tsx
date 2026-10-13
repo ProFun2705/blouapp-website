@@ -7,34 +7,26 @@ type RelatedGuidesProps = {
   title?: string;
 };
 
-function pillarEntry(
-  slug: (typeof RELATED_PILLAR_SLUGS)[keyof typeof RELATED_PILLAR_SLUGS],
-  title: string,
-  category: string,
-) {
-  return { title, href: `/${slug}`, category };
-}
-
 /** Pillar tool URLs: add entries here; slug constants live in `@/lib/relatedPillarSlugs`. */
 const RELATED_LINK_MAP: Record<
   string,
   { title: string; href: string; category: string }
 > = {
-  [RELATED_PILLAR_SLUGS.howToQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.howToQuitSmoking,
-    "How to quit smoking – complete plan",
-    "Pillar",
-  ),
-  [RELATED_PILLAR_SLUGS.prepareToQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.prepareToQuitSmoking,
-    "How to prepare to quit smoking",
-    "Pillar",
-  ),
-  [RELATED_PILLAR_SLUGS.bestQuitSmokingApps]: pillarEntry(
-    RELATED_PILLAR_SLUGS.bestQuitSmokingApps,
-    "Best quit smoking apps",
-    "Pillar",
-  ),
+  "how-to-quit-smoking": {
+    title: "How to quit smoking – complete plan",
+    href: "/how-to-quit-smoking",
+    category: "Pillar",
+  },
+  "prepare-to-quit-smoking": {
+    title: "How to prepare to quit smoking",
+    href: "/prepare-to-quit-smoking",
+    category: "Pillar",
+  },
+  "best-quit-smoking-apps": {
+    title: "Best quit smoking apps",
+    href: "/best-quit-smoking-apps",
+    category: "Pillar",
+  },
   "tools/money-saved": {
     title: "Money saved calculator",
     href: "/tools/money-saved",
@@ -45,331 +37,246 @@ const RELATED_LINK_MAP: Record<
     href: "/tools/lung-recovery",
     category: "Tool",
   },
-  [RELATED_PILLAR_SLUGS.iSmokedOneCigarette]: pillarEntry(
-    RELATED_PILLAR_SLUGS.iSmokedOneCigarette,
-    "I smoked one cigarette—what to do next",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking,
-    "Alcohol and quitting smoking",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.quittingSmokingAfter40]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quittingSmokingAfter40,
-    "Quitting smoking after 40",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.quittingSmokingAfter50]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quittingSmokingAfter50,
-    "Quitting smoking in your 50s",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.howToStopARelapse]: pillarEntry(
-    RELATED_PILLAR_SLUGS.howToStopARelapse,
-    "How to stop a relapse and recover your quit",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.socialSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.socialSmoking,
-    "Social smoking: am I addicted?",
-    "Relapse & maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.freeQuitSmokingApp]: pillarEntry(
-    RELATED_PILLAR_SLUGS.freeQuitSmokingApp,
-    "Free quit smoking app",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingAppForIphone]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingAppForIphone,
-    "Quit smoking app for iPhone",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingTracker]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingTracker,
-    "Quit smoking tracker",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.nicotineWithdrawalTimeline]: pillarEntry(
-    RELATED_PILLAR_SLUGS.nicotineWithdrawalTimeline,
-    "Nicotine withdrawal timeline",
-    "Symptoms",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithNicotinePatch]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithNicotinePatch,
-    "Quit smoking with the nicotine patch",
-    "NRT",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithNicotineGum]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithNicotineGum,
-    "Quit smoking with nicotine gum",
-    "NRT",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsSmokeFree]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsSmokeFree,
-    "Blou vs Smoke Free",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsQuitnow]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsQuitnow,
-    "Blou vs QuitNow",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithoutGainingWeight]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithoutGainingWeight,
-    "Quit smoking without gaining weight",
-    "Plan",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingColdTurkey]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingColdTurkey,
-    "Quit smoking cold turkey",
-    "Plan",
-  ),
-  [RELATED_PILLAR_SLUGS.quitVaping]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitVaping,
-    "How to quit vaping",
-    "Vaping",
-  ),
-  [RELATED_PILLAR_SLUGS.vapingAndSmokingTogether]: pillarEntry(
-    RELATED_PILLAR_SLUGS.vapingAndSmokingTogether,
-    "Vaping and smoking together (dual use)",
-    "Vaping",
-  ),
-  [RELATED_PILLAR_SLUGS.smokingCessationApp]: pillarEntry(
-    RELATED_PILLAR_SLUGS.smokingCessationApp,
-    "Smoking cessation app: what it should do",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingAppAndroid]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingAppAndroid,
-    "Quit smoking app for Android",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp]: pillarEntry(
-    RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp,
-    "NRT and a quit smoking app",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithNicotineLozenge]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithNicotineLozenge,
-    "Quit smoking with nicotine lozenges",
-    "NRT",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithVarenicline]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithVarenicline,
-    "Quit smoking with varenicline (Chantix / Champix)",
-    "Medication",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithBupropion]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithBupropion,
-    "Quit smoking with bupropion (Zyban)",
-    "Medication",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingBeforeSurgery]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingBeforeSurgery,
-    "Quit smoking before surgery",
-    "Clinical contexts",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWhilePregnant]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWhilePregnant,
-    "Quit smoking while pregnant (clinician-first)",
-    "Clinical contexts",
-  ),
-  [RELATED_PILLAR_SLUGS.whyCantIQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.whyCantIQuitSmoking,
-    "Why can’t I quit smoking?",
-    "Mindset",
-  ),
-  [RELATED_PILLAR_SLUGS.tryingToQuitSmokingAgain]: pillarEntry(
-    RELATED_PILLAR_SLUGS.tryingToQuitSmokingAgain,
-    "Trying to quit smoking again",
-    "Mindset",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsFlamy]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsFlamy,
-    "Blou vs Flamy",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsQuitGenius]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsQuitGenius,
-    "Blou vs Quit Genius",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.motivationToQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.motivationToQuitSmoking,
-    "Motivation to quit smoking",
-    "Mindset",
-  ),
-  [RELATED_PILLAR_SLUGS.firstWeekQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.firstWeekQuitSmoking,
-    "First week quit smoking",
-    "Playbook",
-  ),
-  [RELATED_PILLAR_SLUGS.nicotinePatchVsGum]: pillarEntry(
-    RELATED_PILLAR_SLUGS.nicotinePatchVsGum,
-    "Nicotine patch vs gum",
-    "NRT",
-  ),
-  [RELATED_PILLAR_SLUGS.howToHelpSomeoneQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.howToHelpSomeoneQuitSmoking,
-    "How to help someone quit smoking",
-    "Support",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithoutNrt]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithoutNrt,
-    "Quit smoking without NRT",
-    "Plan",
-  ),
-  [RELATED_PILLAR_SLUGS.stopSmokingToday]: pillarEntry(
-    RELATED_PILLAR_SLUGS.stopSmokingToday,
-    "Stop smoking today",
-    "Playbook",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingOnABudget]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingOnABudget,
-    "Quit smoking on a budget",
-    "Plan",
-  ),
-  [RELATED_PILLAR_SLUGS.stressSmokingQuitPlan]: pillarEntry(
-    RELATED_PILLAR_SLUGS.stressSmokingQuitPlan,
-    "Stress smoking quit plan",
-    "Plan",
-  ),
-  [RELATED_PILLAR_SLUGS.drivingAndQuittingSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.drivingAndQuittingSmoking,
-    "Driving and quitting smoking",
-    "Cues",
-  ),
-  [RELATED_PILLAR_SLUGS.livingWithASmokerWhileQuitting]: pillarEntry(
-    RELATED_PILLAR_SLUGS.livingWithASmokerWhileQuitting,
-    "Living with a smoker while quitting",
-    "Support",
-  ),
-  [RELATED_PILLAR_SLUGS.nicotineWithdrawalSymptoms]: pillarEntry(
-    RELATED_PILLAR_SLUGS.nicotineWithdrawalSymptoms,
-    "Nicotine withdrawal symptoms",
-    "Symptoms",
-  ),
-  [RELATED_PILLAR_SLUGS.combinationNrtQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.combinationNrtQuitSmoking,
-    "Combination NRT to quit smoking",
-    "NRT",
-  ),
-  [RELATED_PILLAR_SLUGS.stayQuitAfterOneMonth]: pillarEntry(
-    RELATED_PILLAR_SLUGS.stayQuitAfterOneMonth,
-    "Stay quit after one month",
-    "Maintenance",
-  ),
-  [RELATED_PILLAR_SLUGS.bestQuitSmokingAppForBeginners]: pillarEntry(
-    RELATED_PILLAR_SLUGS.bestQuitSmokingAppForBeginners,
-    "Best quit smoking app for beginners",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.isItTooLateToQuitSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.isItTooLateToQuitSmoking,
-    "Is it too late to quit smoking?",
-    "Mindset",
-  ),
-  [RELATED_PILLAR_SLUGS.coffeeAndQuittingSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.coffeeAndQuittingSmoking,
-    "Coffee and quitting smoking",
-    "Cues",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsKwit]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsKwit,
-    "Blou vs Kwit",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.blouVsQuitstart]: pillarEntry(
-    RELATED_PILLAR_SLUGS.blouVsQuitstart,
-    "Blou vs quitSTART",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithAnxiety]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithAnxiety,
-    "Quit smoking with anxiety",
-    "Clinical contexts",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithDepression]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithDepression,
-    "Quit smoking with depression",
-    "Clinical contexts",
-  ),
-  [RELATED_PILLAR_SLUGS.quitSmokingWithAsthma]: pillarEntry(
-    RELATED_PILLAR_SLUGS.quitSmokingWithAsthma,
-    "Quit smoking with asthma",
-    "Clinical contexts",
-  ),
-  [RELATED_PILLAR_SLUGS.bestQuitSmokingAppForHeavySmokers]: pillarEntry(
-    RELATED_PILLAR_SLUGS.bestQuitSmokingAppForHeavySmokers,
-    "Best quit smoking app for heavy smokers",
-    "Apps",
-  ),
-  [RELATED_PILLAR_SLUGS.healthBenefitsOfQuittingSmoking]: pillarEntry(
-    RELATED_PILLAR_SLUGS.healthBenefitsOfQuittingSmoking,
-    "Health benefits of quitting smoking",
-    "Benefits",
-  ),
-  [RELATED_PILLAR_SLUGS.howLongDoesNicotineStayInYourSystem]: pillarEntry(
-    RELATED_PILLAR_SLUGS.howLongDoesNicotineStayInYourSystem,
-    "How long does nicotine stay in your system?",
-    "Symptoms",
-  ),
-  [RELATED_PILLAR_SLUGS.compare]: pillarEntry(
-    RELATED_PILLAR_SLUGS.compare,
-    "Compare quit smoking apps",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.kwitVsSmokeFree]: pillarEntry(
-    RELATED_PILLAR_SLUGS.kwitVsSmokeFree,
-    "Kwit vs Smoke Free",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.kwitVsQuitnow]: pillarEntry(
-    RELATED_PILLAR_SLUGS.kwitVsQuitnow,
-    "Kwit vs QuitNow",
-    "Comparison",
-  ),
-  [RELATED_PILLAR_SLUGS.smokeFreeVsQuitnow]: pillarEntry(
-    RELATED_PILLAR_SLUGS.smokeFreeVsQuitnow,
-    "Smoke Free vs QuitNow",
-    "Comparison",
-  ),
+  [RELATED_PILLAR_SLUGS.iSmokedOneCigarette]: {
+    title: "I smoked one cigarette—what to do next",
+    href: "/i-smoked-one-cigarette",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.alcoholAndQuittingSmoking]: {
+    title: "Alcohol and quitting smoking",
+    href: "/alcohol-and-quitting-smoking",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.quittingSmokingAfter40]: {
+    title: "Quitting smoking after 40",
+    href: "/quitting-smoking-after-40",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.quittingSmokingAfter50]: {
+    title: "Quitting smoking in your 50s",
+    href: "/quitting-smoking-after-50",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.howToStopARelapse]: {
+    title: "How to stop a relapse and recover your quit",
+    href: "/how-to-stop-a-relapse",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.socialSmoking]: {
+    title: "Social smoking: am I addicted?",
+    href: "/social-smoking",
+    category: "Relapse & maintenance",
+  },
+  [RELATED_PILLAR_SLUGS.quitVaping]: {
+    title: "How to quit vaping",
+    href: "/quit-vaping",
+    category: "Vaping",
+  },
+  [RELATED_PILLAR_SLUGS.vapingAndSmokingTogether]: {
+    title: "Vaping and smoking together (dual use)",
+    href: "/vaping-and-smoking-together",
+    category: "Vaping",
+  },
+  [RELATED_PILLAR_SLUGS.smokingCessationApp]: {
+    title: "Best quit smoking apps in 2026",
+    href: "/best-quit-smoking-apps",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingAppAndroid]: {
+    title: "Quit smoking app for Android",
+    href: "/quit-smoking-app-android",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.nrtAndQuitSmokingApp]: {
+    title: "NRT and a quit smoking app",
+    href: "/nrt-and-quit-smoking-app",
+    category: "Apps",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingBeforeSurgery]: {
+    title: "Quit smoking before surgery",
+    href: "/quit-smoking-before-surgery",
+    category: "Clinical contexts",
+  },
+  [RELATED_PILLAR_SLUGS.quitSmokingWhilePregnant]: {
+    title: "Quit smoking while pregnant (clinician-first)",
+    href: "/quit-smoking-while-pregnant",
+    category: "Clinical contexts",
+  },
+  [RELATED_PILLAR_SLUGS.motivationToQuitSmoking]: {
+    title: "Motivation to quit smoking",
+    href: "/motivation-to-quit-smoking",
+    category: "Mindset",
+  },
+  "trying-to-quit-smoking-again": {
+    title: "Trying to quit smoking again",
+    href: "/trying-to-quit-smoking-again",
+    category: "Mindset",
+  },
+  "why-cant-i-quit-smoking": {
+    title: "Why can’t I quit smoking?",
+    href: "/why-cant-i-quit-smoking",
+    category: "Mindset",
+  },
+  "quit-smoking-with-nicotine-lozenge": {
+    title: "Quit smoking with nicotine lozenges",
+    href: "/quit-smoking-with-nicotine-lozenge",
+    category: "NRT",
+  },
+  "quit-smoking-with-varenicline": {
+    title: "Quit smoking with varenicline (Chantix / Champix)",
+    href: "/quit-smoking-with-varenicline",
+    category: "Medication",
+  },
+  "quit-smoking-with-bupropion": {
+    title: "Quit smoking with bupropion (Zyban)",
+    href: "/quit-smoking-with-bupropion",
+    category: "Medication",
+  },
+  "blou-vs-flamy": {
+    title: "Blou vs Flamy",
+    href: "/blou-vs-flamy",
+    category: "Comparison",
+  },
+  "blou-vs-quit-genius": {
+    title: "Blou vs Quit Genius",
+    href: "/blou-vs-quit-genius",
+    category: "Comparison",
+  },
+  "first-week-quit-smoking": {
+    title: "First week quit smoking",
+    href: "/first-week-quit-smoking",
+    category: "Playbook",
+  },
+  "nicotine-patch-vs-gum": {
+    title: "Nicotine patch vs gum",
+    href: "/nicotine-patch-vs-gum",
+    category: "NRT",
+  },
+  "how-to-help-someone-quit-smoking": {
+    title: "How to help someone quit smoking",
+    href: "/how-to-help-someone-quit-smoking",
+    category: "Support",
+  },
+  "quit-smoking-without-nrt": {
+    title: "Quit smoking without NRT",
+    href: "/quit-smoking-without-nrt",
+    category: "Plan",
+  },
+  "stop-smoking-today": {
+    title: "Stop smoking today",
+    href: "/stop-smoking-today",
+    category: "Playbook",
+  },
+  "quit-smoking-on-a-budget": {
+    title: "Quit smoking on a budget",
+    href: "/quit-smoking-on-a-budget",
+    category: "Plan",
+  },
+  "stress-smoking-quit-plan": {
+    title: "Stress smoking quit plan",
+    href: "/stress-smoking-quit-plan",
+    category: "Plan",
+  },
+  "driving-and-quitting-smoking": {
+    title: "Driving and quitting smoking",
+    href: "/driving-and-quitting-smoking",
+    category: "Cues",
+  },
+  "living-with-a-smoker-while-quitting": {
+    title: "Living with a smoker while quitting",
+    href: "/living-with-a-smoker-while-quitting",
+    category: "Support",
+  },
+  "nicotine-withdrawal-symptoms": {
+    title: "Nicotine withdrawal symptoms",
+    href: "/nicotine-withdrawal-symptoms",
+    category: "Symptoms",
+  },
+  "combination-nrt-quit-smoking": {
+    title: "Combination NRT to quit smoking",
+    href: "/combination-nrt-quit-smoking",
+    category: "NRT",
+  },
+  "stay-quit-after-one-month": {
+    title: "What happens after 1 month smoke-free",
+    href: "/guides/what-happens-after-1-month",
+    category: "Milestone",
+  },
+  "best-quit-smoking-app-for-beginners": {
+    title: "Best quit smoking apps in 2026",
+    href: "/best-quit-smoking-apps",
+    category: "Apps",
+  },
+  // Guides merged into their pillar articles (Oct 2026).
+  anxiety: {
+    title: "Quitting smoking with anxiety",
+    href: "/quit-smoking-with-anxiety",
+    category: "Symptom",
+  },
+  depression: {
+    title: "Quitting smoking with depression",
+    href: "/quit-smoking-with-depression",
+    category: "Symptom",
+  },
+  "weight-gain": {
+    title: "Quitting smoking without gaining weight",
+    href: "/quit-smoking-without-gaining-weight",
+    category: "Symptom",
+  },
+  "is-it-too-late-to-quit-smoking": {
+    title: "Is it too late to quit smoking?",
+    href: "/is-it-too-late-to-quit-smoking",
+    category: "Mindset",
+  },
+  "coffee-and-quitting-smoking": {
+    title: "Coffee and quitting smoking",
+    href: "/coffee-and-quitting-smoking",
+    category: "Cues",
+  },
 };
 
 export function RelatedGuides({ slugs, title = "Related reading" }: RelatedGuidesProps) {
-  const items = slugs.flatMap((slug) => {
-    const overlay = RELATED_LINK_MAP[slug];
-    if (overlay) return [{ slug, ...overlay }];
-    const guide = blouGuideBySlug[slug];
-    if (!guide || !isPublishedGuide(guide)) return [];
-    return [
-      {
-        slug,
-        href: `/guides/${guide.slug}`,
-        title: guide.title,
-        category: guide.category === "milestone" ? "Milestone" : "Symptom",
-      },
-    ];
-  }).slice(0, 4);
-
-  if (!items.length) return null;
+  if (!slugs.length) return null;
 
   return (
-    <section className="section-block">
-      <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
-      <ul className="mt-4 divide-y divide-teal-200">
-        {items.map((item) => (
-          <li key={item.slug}>
-            <Link
-              href={item.href}
-              className="flex items-baseline justify-between gap-4 py-3 text-sm text-teal-900 hover:text-teal-950"
-            >
-              <span className="font-medium">{item.title}</span>
-              <span className="shrink-0 text-xs text-teal-700">{item.category}</span>
-            </Link>
-          </li>
-        ))}
+    <section className="rounded-card border border-line bg-surface p-6 shadow-card">
+      <h2 className="text-xl font-semibold text-ink">{title}</h2>
+      <ul className="mt-4 grid gap-3 md:grid-cols-2">
+        {slugs.map((slug) => {
+          const overlay = RELATED_LINK_MAP[slug];
+          if (overlay) {
+            return (
+              <li key={slug}>
+                <Link
+                  href={overlay.href}
+                  className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
+                >
+                  <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
+                    {overlay.category}
+                  </span>
+                  <span className="mt-1 block font-medium">{overlay.title}</span>
+                </Link>
+              </li>
+            );
+          }
+
+          const guide = blouGuideBySlug[slug];
+          if (!guide || !isPublishedGuide(guide)) return null;
+
+          return (
+            <li key={slug}>
+              <Link
+                href={`/guides/${guide.slug}`}
+                className="block min-h-11 rounded-xl border border-line px-4 py-3 text-sm text-ink transition-colors hover:border-accent/40 hover:bg-surface-muted"
+              >
+                <span className="block text-[11px] font-medium uppercase tracking-wide text-accent">
+                  {guide.category === "milestone" ? "Milestone" : "Symptom"}
+                </span>
+                <span className="mt-1 block font-medium">{guide.title}</span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

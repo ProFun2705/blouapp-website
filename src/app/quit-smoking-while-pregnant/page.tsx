@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-while-pregnant";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking while pregnant: safety-first",
+  title: "Quit smoking while pregnant: a safety-first guide",
   description:
-    "Why quitting smoking in pregnancy matters, what to ask your obstetric clinician, how quitlines help, and how apps support cravings—this is not personalized medical advice.",
+    "Why quitting smoking in pregnancy matters, what to ask your obstetric clinician, how quitlines help, and where apps fit. Not personalized medical advice.",
   path: "/quit-smoking-while-pregnant",
   type: "article",
   publishedTime: PUBLISHED,
@@ -46,7 +45,7 @@ const faqItems = [
   {
     question: "Can a quit app help?",
     answer:
-      "Apps can help with craving timers, tracking, and reminders, but they do not replace prenatal care.",
+      "Apps can help with in-the-moment craving support and seeing your progress, but they do not replace prenatal care.",
   },
   {
     question: "I feel ashamed—does that make quitting harder?",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function QuitSmokingWhilePregnantPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking while pregnant: safety-first",
+    title: "Quit smoking while pregnant: a safety-first guide",
     description:
       "Pregnancy smoking cessation overview emphasizing obstetric guidance.",
     path: "/quit-smoking-while-pregnant",
@@ -71,9 +70,7 @@ export default function QuitSmokingWhilePregnantPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="pregnant-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,14 +81,19 @@ export default function QuitSmokingWhilePregnantPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Pregnancy — clinician-first
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking while pregnant
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Pregnancy — clinician-first"
+        title="Quit smoking while pregnant"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+            Behavioral quit plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           <strong>
             This page is general education, not prenatal medical advice.
           </strong>{" "}
@@ -99,22 +101,7 @@ export default function QuitSmokingWhilePregnantPage() {
           involving NRT, medications, or rapid tapering. Apps can support
           cravings and routines once your team sets direction.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink
-            campaign="pillar_pregnant"
-            placement="article_intro"
-          />
-          <Link
-            href="/how-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Behavioral quit plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -122,16 +109,9 @@ export default function QuitSmokingWhilePregnantPage() {
           { id: "ask-clinician", label: "Questions for your clinician" },
           { id: "support", label: "Support channels" },
           { id: "sources", label: "Trusted sources" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking while pregnant: safety-first"
-        path="/quit-smoking-while-pregnant"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -146,12 +126,12 @@ export default function QuitSmokingWhilePregnantPage() {
 
       <section
         id="ask-clinician"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Questions for your clinician
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>What is the safest cessation pathway for me this trimester?</span>
@@ -169,10 +149,10 @@ export default function QuitSmokingWhilePregnantPage() {
 
       <section
         id="support"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Support channels</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Pair clinical guidance with{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -183,7 +163,7 @@ export default function QuitSmokingWhilePregnantPage() {
           (environment, cues) and{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-            href="/guides/anxiety"
+            href="/quit-smoking-with-anxiety"
           >
             anxiety
           </Link>{" "}
@@ -191,9 +171,15 @@ export default function QuitSmokingWhilePregnantPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Once your care team has set the plan, Blou&apos;s SOS button can help in
+        the moments between appointments, the second a craving hits. It supports
+        your prenatal care and never replaces it.
+      </InlineAppCta>
+
       <section
         id="sources"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Trusted sources</h2>
         <ul className="mt-4 space-y-2 text-sm text-teal-900">
@@ -220,28 +206,20 @@ export default function QuitSmokingWhilePregnantPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-pregnant" />
-      </section>
+      <EndAppCta
+        campaign={CAMPAIGN}
+        description="Alongside your prenatal care, Blou shows your own progress from your first smoke-free day, with SOS help when a craving hits."
+      />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_pregnant"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/quit-smoking-before-surgery"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/quit-smoking-before-surgery" variant="secondary">
           Quitting before surgery →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-while-pregnant_footer" />
-
-</div>
+    </div>
   );
 }

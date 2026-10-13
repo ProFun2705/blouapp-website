@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CountryMoneyCalculatorPage } from "@/components/blou/CountryMoneyCalculatorPage";
-import { calculatorLanguageAlternates } from "@/lib/countryHreflang";
 import { buildMetadata } from "@/lib/seo";
 import { countries, countryBySlug } from "@/lib/countryData";
 
 type CountryPageProps = {
   params: Promise<{ country: string }>;
 };
+
+function placeName(name: string) {
+  return name.startsWith("United ") ? `the ${name}` : name;
+}
 
 function toOpenGraphLocale(locale: string) {
   return locale.replace("-", "_");
@@ -24,12 +27,14 @@ export async function generateMetadata({
   const country = countryBySlug[slug];
   if (!country) return {};
 
-  const languages = calculatorLanguageAlternates(countries);
-  languages["x-default"] = `/calculators/${country.slug}`;
+  const languages = Object.fromEntries(
+    countries.map((c) => [c.hreflang, `/calculators/${c.slug}`]),
+  );
+  languages["x-default"] = "/calculators";
 
   return buildMetadata({
-    title: `Quit smoking money saved calculator – ${country.name}`,
-    description: `Free quit smoking calculator for ${country.name}. Local pack price (${country.defaultPackPrice} ${country.currencyCode}), local currency, 1-day to 10-year projections.`,
+    title: `Cost of smoking in ${placeName(country.name)}: calculator`,
+    description: `What smoking costs in ${placeName(country.name)} at the local pack price (${country.defaultPackPrice} ${country.currencyCode}), and what quitting saves from 1 day to 10 years.`,
     path: `/calculators/${country.slug}`,
     keywords: [
       `quit smoking calculator ${country.name}`,

@@ -10,19 +10,20 @@ type TableOfContentsProps = {
   className?: string;
 };
 
+/**
+ * "On this page" jump links. Mobile: <details> so the outline does not push key content
+ * down. md+: static nav. Only one block is visible at a breakpoint.
+ */
 export function TableOfContents({ items, className }: TableOfContentsProps) {
   if (items.length === 0) return null;
 
   const list = (
-    <ol className="mt-2 space-y-1.5 text-sm leading-6 text-teal-900">
-      {items.map((item, index) => (
-        <li key={item.id} className="flex gap-3">
-          <span className="tabular w-6 shrink-0 text-teal-700">
-            {String(index + 1).padStart(2, "0")}
-          </span>
+    <ol className="mt-0 list-decimal space-y-1.5 pl-5 text-sm leading-6 text-teal-900">
+      {items.map((item) => (
+        <li key={item.id}>
           <Link
             href={`#${item.id}`}
-            className="text-teal-800 underline decoration-teal-300 underline-offset-2 transition hover:text-teal-950"
+            className="text-teal-800 underline decoration-teal-300 underline-offset-2 transition hover:text-teal-950 hover:decoration-teal-500"
           >
             {item.label}
           </Link>
@@ -34,13 +35,13 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
   return (
     <>
       <div className={["md:hidden", className].filter(Boolean).join(" ")}>
-        <details className="group border border-teal-200 px-4 py-3">
+        <details className="group rounded-2xl border border-teal-200 bg-teal-50/50 p-4 open:bg-white">
           <summary className="cursor-pointer list-none text-sm font-semibold text-teal-950 [&::-webkit-details-marker]:hidden">
             <span className="flex items-center justify-between gap-2">
               On this page
               <span
                 aria-hidden
-                className="text-teal-600 transition motion-safe:group-open:rotate-90"
+                className="text-teal-600 transition group-open:rotate-90"
               >
                 ›
               </span>
@@ -54,7 +55,9 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
         aria-label="On this page"
         className={["hidden md:block", className].filter(Boolean).join(" ")}
       >
-        <p className="text-sm font-medium text-teal-700">On this page</p>
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
+          On this page
+        </p>
         {list}
       </nav>
     </>

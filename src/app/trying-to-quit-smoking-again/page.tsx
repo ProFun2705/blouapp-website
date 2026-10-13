@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_trying-to-quit-smoking-again";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Trying to quit smoking again: smarter plan",
+  title: "Trying to quit smoking again: a smarter next attempt",
   description:
     "Multiple quit attempts are normal. Here’s how to learn from the last one—new quit date, cue fixes, medication review, and slip protocols.",
   path: "/trying-to-quit-smoking-again",
@@ -51,13 +50,13 @@ const faqItems = [
   {
     question: "Where does Blou fit?",
     answer:
-      "Track cravings, savings, and slips without catastrophizing streak resets.",
+      "Blou gives you SOS help the second a craving hits, plus lung checks, a photo timeline, and every milestone and smoke-free day on one visual timeline, so this attempt starts with progress you can see.",
   },
 ];
 
 export default function TryingToQuitSmokingAgainPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Trying to quit smoking again: smarter plan",
+    title: "Trying to quit smoking again: a smarter next attempt",
     description:
       "How to retry quitting smoking with a structured plan after previous attempts.",
     path: "/trying-to-quit-smoking-again",
@@ -71,9 +70,7 @@ export default function TryingToQuitSmokingAgainPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="trying-again-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,47 +81,33 @@ export default function TryingToQuitSmokingAgainPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Retry playbook
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Trying to quit smoking again
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Retry playbook"
+        title="Trying to quit smoking again"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/how-to-stop-a-relapse" variant="secondary">
+            Stop a relapse →
+          </ButtonLink>
+        }
+      >
+        <p>
           You are not “starting over from zero”—you are stacking lessons. The
           goal of this attempt is to fix one failure mode from last time (cue,
           alcohol window, medication gap, sleep crash).
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_try_again" placement="article_intro" />
-          <Link
-            href="/how-to-stop-a-relapse"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Stop a relapse →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "postmortem", label: "Mini post-mortem" },
           { id: "upgrade", label: "Upgrade one layer" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Trying to quit smoking again: smarter plan"
-        path="/trying-to-quit-smoking-again"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -139,10 +122,10 @@ export default function TryingToQuitSmokingAgainPage() {
 
       <section
         id="postmortem"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Mini post-mortem</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Answer in one line each: What day did cravings spike? What cue broke
           me? Did alcohol matter? Then open{" "}
           <Link
@@ -155,12 +138,17 @@ export default function TryingToQuitSmokingAgainPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Once you know where the last attempt broke, plan for that moment. Blou&apos;s SOS button is
+        there the second a craving hits, and your timeline shows this attempt&apos;s progress day by day.
+      </InlineAppCta>
+
       <section
         id="upgrade"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">Upgrade one layer</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -210,28 +198,17 @@ export default function TryingToQuitSmokingAgainPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-trying-again" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_try_again"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/how-to-quit-smoking"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Full quit plan →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="trying-to-quit-smoking-again_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+          Full quit plan →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

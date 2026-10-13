@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-on-a-budget";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Quit smoking on a budget: free support",
+  title: "Quit smoking on a budget: free help + smart spending",
   description:
     "How to quit when money is tight: free quitlines, OTC NRT strategies to discuss with a pharmacist, generic meds, and free quit apps that still work.",
   path: "/quit-smoking-on-a-budget",
@@ -41,7 +40,7 @@ const faqItems = [
   {
     question: "Are free quit apps enough?",
     answer:
-      "They can be if they cover cravings, tracking, and slips. See /free-quit-smoking-app for what “free” should include.",
+      "They can be if they cover cravings, tracking, and slips. See /best-quit-smoking-apps for how the main apps compare, including what each one costs.",
   },
   {
     question: "How do I afford NRT?",
@@ -51,13 +50,13 @@ const faqItems = [
   {
     question: "Does Blou cost money?",
     answer:
-      "Blou is free to download with optional premium; core tracking is designed to be useful without a subscription.",
+      "Yes. Blou is a subscription app with a free trial, and nothing in the app works without an active subscription. Cancel anytime in your Apple ID subscriptions before it renews. The guides, calculators, and tools on this website are free.",
   },
 ];
 
 export default function QuitSmokingOnABudgetPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Quit smoking on a budget: free support",
+    title: "Quit smoking on a budget: free support + smart spending",
     description:
       "Budget-conscious strategies for quitting smoking with free and low-cost support.",
     path: "/quit-smoking-on-a-budget",
@@ -71,75 +70,62 @@ export default function QuitSmokingOnABudgetPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="budget-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "Quit smoking on a budget", path: "/quit-smoking-on-a-budget" }]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Cost-conscious quitting
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking on a budget
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Cost-conscious quitting"
+        title="Quit smoking on a budget"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/tools/money-saved" variant="secondary">
+            Money saved tool →
+          </ButtonLink>
+        }
+      >
+        <p>
           Money stress is a smoking trigger—so your quit plan should reduce
           financial surprises. Stack free coaching, generic products where
           appropriate, and visible savings so the quit pays you back.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_budget" placement="article_intro" />
-          <Link href="/tools/money-saved" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Money saved tool →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "free", label: "Free first" },
           { id: "spend", label: "Where spending helps" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking on a budget: free support"
-        path="/quit-smoking-on-a-budget"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
           answer="Start with free quitlines and a genuinely free tracker app, then spend selectively on evidence-based NRT or clinician-prescribed medications if eligible. Use a savings calculator so motivation compounds weekly."
           facts={[
-            "Avoid subscription traps that lock craving tools—see /free-quit-smoking-app.",
+            "Check what an app costs before you commit—see /best-quit-smoking-apps.",
             "Combination NRT can be cost-effective if it prevents relapse—ask a pharmacist.",
           ]}
         />
       </section>
 
-      <section id="free" className="scroll-mt-24 section-block">
+      <section id="free" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Free first</h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Quitline coaching (country-specific).</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>NHS/CDC reading lists linked from /how-to-quit-smoking.</span></li>
           <li className="flex gap-2"><span className="mt-1 text-teal-600" aria-hidden>•</span><span>Community accountability that does not shame slips.</span></li>
         </ul>
       </section>
 
-      <section id="spend" className="scroll-mt-24 section-block">
+      <section id="spend" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Where spending helps</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Relapse costs more than a patch box. Compare{" "}
           <Link className="font-medium text-teal-800 underline" href="/nicotine-patch-vs-gum">
             patch vs gum
@@ -152,22 +138,23 @@ export default function QuitSmokingOnABudgetPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        A relapse is the most expensive outcome. Blou&apos;s SOS craving help is
+        there the second a craving hits, and every milestone sits on one visual
+        timeline so you can see what you are protecting.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-budget-quit" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_budget" placement="article_footer_card" />
-        <Link href="/best-quit-smoking-apps" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          App comparisons →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="quit-smoking-on-a-budget_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
+          App comparisons →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

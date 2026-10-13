@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 
 const PUBLISHED = "2026-05-13";
-const MODIFIED = "2026-05-13";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_vaping-and-smoking-together";
 
 export const metadata: Metadata = buildMetadata({
   title: "Vaping and smoking together: how to quit dual use",
   description:
-    "If you vape and still smoke cigarettes, you are in “dual use.” Here is a simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
+    "If you vape and still smoke cigarettes, you are in “dual use.” A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
   path: "/vaping-and-smoking-together",
   type: "article",
   publishedTime: PUBLISHED,
@@ -71,9 +70,7 @@ export default function VapingAndSmokingTogetherPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="dual-use-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,51 +81,34 @@ export default function VapingAndSmokingTogetherPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Dual use
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Vaping and smoking together
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Dual use"
+        title="Vaping and smoking together"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quit-vaping" variant="secondary">
+            Quit vaping plan →
+          </ButtonLink>
+        }
+      >
+        <p>
           “Dual use” means you still smoke cigarettes while also vaping. It is
           common, and it is not a moral failure—it is a cue problem. The fix is
           a clearer plan: shrink one channel, track slips, and get medical
           support when you need it.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink
-            campaign="pillar_dual_use"
-            placement="article_intro"
-          />
-          <Link
-            href="/quit-vaping"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Quit vaping plan →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "pick-path", label: "Pick one primary path" },
           { id: "tracking", label: "Track both for one week" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Vaping and smoking together: how to quit dual use"
-        path="/vaping-and-smoking-together"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -143,12 +123,12 @@ export default function VapingAndSmokingTogetherPage() {
 
       <section
         id="pick-path"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Pick one primary path
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -167,19 +147,25 @@ export default function VapingAndSmokingTogetherPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Whichever path you pick, Blou&apos;s SOS craving help is there when
+        either habit fires, and its lung checks let you see your breathing
+        change once the cigarettes stop.
+      </InlineAppCta>
+
       <section
         id="tracking"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Track both for one week
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Log time, cue, and which product you used. You are hunting for the
           top three triggers so you can pre-decide replacements—same method as{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-            href="/quit-smoking-tracker"
+            href="/"
           >
             quit smoking tracker
           </Link>{" "}
@@ -187,28 +173,17 @@ export default function VapingAndSmokingTogetherPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-dual-use" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="pillar_dual_use"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nrt-and-quit-smoking-app"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          NRT + app →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="vaping-and-smoking-together_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/nrt-and-quit-smoking-app" variant="secondary">
+          NRT + app →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

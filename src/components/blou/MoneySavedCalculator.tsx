@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { CountrySwitcher } from "@/components/blou/CountrySwitcher";
-import { trackEvent } from "@/lib/track-event";
 
 type MoneySavedCalculatorProps = {
   defaultCigarettesPerDay?: number;
@@ -11,9 +9,10 @@ type MoneySavedCalculatorProps = {
   locale?: string;
   title?: string;
   description?: string;
+  /** Used as the event_label for GA4 events emitted by this instance. */
   instanceId?: string;
+  /** Enables URL state sync. Defaults true. */
   shareable?: boolean;
-  countrySlug?: string;
 };
 
 const CIGARETTES_PER_PACK = 20;
@@ -31,7 +30,13 @@ function track(
   eventName: string,
   params: Record<string, string | number | undefined>,
 ) {
-  trackEvent(eventName, params);
+  if (typeof window === "undefined") return;
+  const anyWindow = window as unknown as {
+    gtag?: (...args: unknown[]) => void;
+  };
+  if (typeof anyWindow.gtag === "function") {
+    anyWindow.gtag("event", eventName, params);
+  }
 }
 
 export function MoneySavedCalculator({
@@ -43,13 +48,10 @@ export function MoneySavedCalculator({
   description = "Estimate how much money you keep by staying smoke-free.",
   instanceId = "default",
   shareable = true,
-  countrySlug,
 }: MoneySavedCalculatorProps) {
   const [cigarettesPerDay, setCigarettesPerDay] = useState(defaultCigarettesPerDay);
   const [packPrice, setPackPrice] = useState(defaultPackPrice);
-  const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">(
-    "idle",
-  );
+  const [shareStatus, setShareStatus] = useState<"idle" | "copied">("idle");
   const hydrated = useRef(false);
 
   useEffect(() => {
@@ -117,38 +119,28 @@ export function MoneySavedCalculator({
         });
         setTimeout(() => setShareStatus("idle"), 2000);
       })
-      .catch(() => {
-        setShareStatus("failed");
-      });
+      .catch(() => undefined);
   }
 
   return (
-    <section className="section-block" aria-label={title}>
+    <section
+      className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      aria-label={title}
+    >
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2 className="text-xl font-semibold text-teal-950">{title}</h2>
-          <p className="mt-2 max-w-[65ch] text-base leading-6 text-teal-900/80">
-            {description}
-          </p>
+          <p className="mt-2 text-sm leading-6 text-teal-900/80">{description}</p>
         </div>
         {shareable ? (
           <button
             type="button"
             onClick={onShare}
-            className="pressable h-11 rounded-sm border border-teal-200 bg-white px-3 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+            className="rounded-full border border-teal-200 bg-white px-3 py-1.5 text-xs font-medium text-teal-900 transition hover:bg-teal-50"
           >
-            {shareStatus === "copied"
-              ? "Link copied"
-              : shareStatus === "failed"
-                ? "Copy failed. Try again."
-                : "Share result"}
+            {shareStatus === "copied" ? "Link copied" : "Share result"}
           </button>
         ) : null}
-      </div>
-
-      <div className="mt-5">
-        <p className="mb-2 text-sm font-medium text-teal-900">Country</p>
-        <CountrySwitcher currentSlug={countrySlug} />
       </div>
 
       <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -156,44 +148,46 @@ export function MoneySavedCalculator({
           Cigarettes per day
           <input
             type="number"
-            inputMode="numeric"
             min={0}
             step={1}
             value={safeCigarettesPerDay}
             onChange={(event) => setCigarettesPerDay(Number(event.target.value))}
             onBlur={(event) => emitInputEvent("cpd", Number(event.target.value))}
-            className="tabular h-11 rounded-sm border border-teal-200 px-3 text-base text-teal-950"
+            className="h-11 rounded-lg border border-teal-200 px-3 text-base text-teal-950 outline-none transition focus:border-teal-400"
           />
         </label>
         <label className="flex flex-col gap-2 text-sm font-medium text-teal-900">
           Pack price ({currencyCode})
           <input
             type="number"
-            inputMode="decimal"
             min={0}
             step={0.01}
             value={safePackPrice}
             onChange={(event) => setPackPrice(Number(event.target.value))}
             onBlur={(event) => emitInputEvent("pp", Number(event.target.value))}
-            className="tabular h-11 rounded-sm border border-teal-200 px-3 text-base text-teal-950"
+            className="h-11 rounded-lg border border-teal-200 px-3 text-base text-teal-950 outline-none transition focus:border-teal-400"
           />
         </label>
       </div>
 
-      <p className="mt-4 text-sm text-teal-900/70" aria-live="polite">
-        Daily spend:{" "}
-        <span className="tabular font-medium text-teal-950">
+      <p className="mt-4 text-xs text-ink-muted">
+        Daily spend: <span className="font-medium text-teal-950">
           {formatterPrecise.format(dailySpend)}
         </span>
       </p>
 
-      <dl className="mt-4 grid gap-px bg-teal-200 sm:grid-cols-2 lg:grid-cols-3">
+      <dl className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {timeframes.map((timeframe) => {
           const moneySaved = dailySpend * timeframe.days;
           return (
-            <div key={timeframe.label} className="bg-[var(--paper)] p-4">
-              <dt className="text-xs font-medium text-teal-700">{timeframe.label}</dt>
-              <dd className="tabular mt-2 text-2xl font-semibold text-teal-950">
+            <div
+              key={timeframe.label}
+              className="rounded-xl border border-teal-200 bg-teal-50/50 p-4"
+            >
+              <dt className="text-xs font-medium uppercase tracking-wide text-teal-700">
+                {timeframe.label}
+              </dt>
+              <dd className="mt-2 text-lg font-semibold text-teal-950">
                 {formatter.format(moneySaved)}
               </dd>
             </div>
@@ -201,7 +195,7 @@ export function MoneySavedCalculator({
         })}
       </dl>
 
-      <p className="mt-4 text-xs leading-5 text-teal-900/70">
+      <p className="mt-4 text-[11px] leading-5 text-ink-muted">
         Method: pack price ÷ {CIGARETTES_PER_PACK} cigarettes × cigarettes per day × time period.
         Projections assume stable prices and daily usage; actual savings vary with price changes, taxes, and purchase patterns.
       </p>

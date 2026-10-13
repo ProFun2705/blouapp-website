@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { ogLogoDataUrl } from "@/lib/ogLogo";
 import { blouGuideBySlug, isPublishedGuide, publishedGuides } from "@/lib/blouGuides";
 import { SITE_NAME } from "@/lib/site";
 
@@ -24,8 +25,9 @@ export default async function Image({
       ? guide.category === "milestone"
         ? "Quit smoking · Milestone guide"
         : "Quit smoking · Symptom guide"
-      : "Quit smoking, tracked simply.";
+      : "Quit smoking app for iPhone";
 
+  const logo = await ogLogoDataUrl();
   return new ImageResponse(
     (
       <div
@@ -35,8 +37,9 @@ export default async function Image({
           display: "flex",
           flexDirection: "column",
           padding: "72px",
-          background: "#eef1ea",
-          color: "#141714",
+          background:
+            "linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%)",
+          color: "white",
           fontFamily: "system-ui, -apple-system, sans-serif",
         }}
       >
@@ -51,22 +54,7 @@ export default async function Image({
             letterSpacing: "-0.01em",
           }}
         >
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: 12,
-              background: "#141714",
-              color: "#eef1ea",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 30,
-              fontWeight: 700,
-            }}
-          >
-            B
-          </div>
+          <img src={logo} width={48} height={48} alt="" style={{ borderRadius: 12 }} />
           {SITE_NAME}
         </div>
 
@@ -74,7 +62,7 @@ export default async function Image({
           style={{
             marginTop: 48,
             fontSize: 24,
-            color: "#5c635c",
+            opacity: 0.9,
             letterSpacing: "0.02em",
             textTransform: "uppercase",
           }}

@@ -36,11 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-# cursor (keep scratchpad and SEO rules tracked)
+# cursor (keep scratchpad tracked)
 .cursor/**
 !.cursor/scratchpad.md
-!.cursor/rules/
-!.cursor/rules/**
 
 # typescript
 *.tsbuildinfo

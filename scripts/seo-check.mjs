@@ -1,202 +1,101 @@
 #!/usr/bin/env node
 /**
- * SEO sanity checks for tryblou.com.
- * Fail on sitemap/hreflang/guide drift. Warn on long titles.
+ * SEO guardrail. Runs after `next build` against the prerendered HTML in
+ * .next/server/app and fails the build on regressions we have already paid for:
  *
- * Usage: npm run seo:check
+ *  - every indexable page has server-rendered JSON-LD
+ *  - titles are unique and at most 60 characters
+ *  - every indexable page (except the homepage) is linked from another page
+ *  - no hreflang value repeats within a page
+ *  - no false pricing or rating claims (Blou is a subscription app with a free
+ *    trial, and has no 4.8★ rating)
+ *
+ * Usage: `npm run build` (runs automatically) or `npm run seo:check`.
  */
-import { readdirSync, readFileSync } from "node:fs";
-import { dirname, join, relative } from "node:path";
-import { fileURLToPath } from "node:url";
+import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
+import { join, relative, sep } from "node:path";
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const TITLE_SUFFIX = " | Blou";
-const TITLE_WARN_CHARS = 60;
-const NOINDEX_PATHS = new Set(["/privacy", "/terms"]);
-const errors = [];
-const warnings = [];
+const APP_DIR = join(process.cwd(), ".next", "server", "app");
+const MAX_TITLE = 60;
+const SKIP = [/^_/, /^api\//, /^go\//, /opengraph-image/, /twitter-image/, /\.rsc$/];
 
-function read(relPath) {
-  return readFileSync(join(root, relPath), "utf8");
-}
+const BANNED = [
+  [/4\.8\s*(★|stars?|on the App Store)/i, "made-up 4.8 rating"],
+  [/from\s+\d+\+?\s+quitters/i, "made-up review count"],
+  [/Free on the App Store/i, "\"free\" pricing claim"],
+  [/Start tracking\s*[–-]\s*free/i, "\"free\" pricing claim"],
+  [/Free for iPhone/i, "\"free\" pricing claim"],
+  [/optional premium/i, "\"free + premium\" pricing claim"],
+  [/"@type":"(Software|Mobile)Application"[^<]*?"price":"0"/, "price 0 in app schema"],
+];
 
-function walkPageFiles(dir, acc = []) {
-  for (const entry of readdirSync(dir, { withFileTypes: true })) {
-    const full = join(dir, entry.name);
-    if (entry.isDirectory()) {
-      if (entry.name.startsWith("[")) continue;
-      walkPageFiles(full, acc);
-      continue;
-    }
-    if (entry.name === "page.tsx") acc.push(full);
-  }
-  return acc;
-}
-
-function fileToPath(file) {
-  const rel = relative(join(root, "src/app"), file).replace(/\\/g, "/");
-  if (rel === "page.tsx") return "/";
-  return `/${rel.replace(/\/page\.tsx$/, "")}`;
-}
-
-function parseStaticRoutePaths(src) {
-  return [...src.matchAll(/path:\s*"([^"]+)"/g)].map((m) => m[1]);
-}
-
-function countryHreflang(slug, locale) {
-  const region = locale.includes("-") ? locale.split("-").at(-1) : "";
-  return region ? `en-${region}` : `en-${slug.toUpperCase()}`;
-}
-
-function parseCountries(src) {
-  const countries = [];
-  const re = /slug:\s*"([^"]+)"[\s\S]*?locale:\s*"([^"]+)"/g;
-  let match;
-  while ((match = re.exec(src))) {
-    countries.push({ slug: match[1], locale: match[2] });
-  }
-  return countries;
-}
-
-function parseGuides(src) {
-  const guides = [];
-  const parts = src.split(/\n  \{\n    slug: "/).slice(1);
-  for (const part of parts) {
-    const slugEnd = part.indexOf('"');
-    if (slugEnd < 0) continue;
-    const slug = part.slice(0, slugEnd);
-    const block = part.slice(0, part.indexOf("\n  },") >= 0 ? part.indexOf("\n  },") : part.length);
-    const publishedFalse = /published:\s*false/.test(block);
-    guides.push({
-      slug,
-      published: !publishedFalse,
-      hasTargetKeyword: /targetKeyword:\s*"/.test(block),
-      hasQuickAnswer: /quickAnswer:\s*"/.test(block),
-      hasFaq: /faq:\s*\[/.test(block),
-    });
-  }
-  return guides;
-}
-
-function extractMetadataTitle(src) {
-  const blockMatch = src.match(/buildMetadata\(\{([\s\S]*?)\}\)/);
-  if (!blockMatch) return null;
-  const titleMatch = blockMatch[1].match(/\btitle:\s*"([^"]+)"/);
-  return titleMatch ? titleMatch[1] : null;
-}
-
-function parseRelatedPillarEntries(src) {
-  return [...src.matchAll(/^\s+(\w+):\s*"([a-z0-9-]+)"/gm)].map((m) => ({
-    key: m[1],
-    slug: m[2],
-  }));
-}
-
-const staticRoutesSrc = read("src/lib/staticRoutes.ts");
-const staticPaths = parseStaticRoutePaths(staticRoutesSrc);
-const staticPathSet = new Set(staticPaths);
-
-const pageFiles = walkPageFiles(join(root, "src/app"));
-const pagePaths = pageFiles.map(fileToPath);
-
-for (const path of pagePaths) {
-  if (NOINDEX_PATHS.has(path)) continue;
-  if (!staticPathSet.has(path)) {
-    errors.push(`Indexable page ${path} is missing from src/lib/staticRoutes.ts`);
-  }
-}
-
-for (const path of staticPaths) {
-  if (NOINDEX_PATHS.has(path)) {
-    errors.push(`noindex path ${path} must not be listed in staticRoutes.ts`);
-  }
-}
-
-for (const noindexPath of NOINDEX_PATHS) {
-  const page = pageFiles.find((f) => fileToPath(f) === noindexPath);
-  if (!page) {
-    errors.push(`Expected noindex page ${noindexPath} is missing`);
-    continue;
-  }
-  const src = readFileSync(page, "utf8");
-  if (!/noindex:\s*true/.test(src)) {
-    errors.push(`${noindexPath} must pass noindex: true to buildMetadata()`);
-  }
-}
-
-const countries = parseCountries(read("src/lib/countryData.ts"));
-if (countries.length === 0) {
-  errors.push("Could not parse countries from src/lib/countryData.ts");
-}
-const hreflangSeen = new Map();
-for (const country of countries) {
-  const tag = countryHreflang(country.slug, country.locale);
-  if (hreflangSeen.has(tag)) {
-    errors.push(
-      `Duplicate hreflang "${tag}" for ${hreflangSeen.get(tag)} and ${country.slug}`,
-    );
-  } else {
-    hreflangSeen.set(tag, country.slug);
-  }
-}
-
-const guidesSrc = read("src/lib/blouGuides.ts");
-const guides = parseGuides(guidesSrc);
-const slugCount = [...guidesSrc.matchAll(/^\s+slug:\s*"/gm)].length;
-if (guides.length === 0) {
-  errors.push("Could not parse guides from src/lib/blouGuides.ts");
-} else if (guides.length !== slugCount) {
-  errors.push(
-    `Guide parser found ${guides.length} entries but ${slugCount} slug fields — parser may have missed a guide`,
-  );
-}
-for (const guide of guides) {
-  if (!guide.published) continue;
-  if (!guide.hasTargetKeyword) {
-    errors.push(`Guide "${guide.slug}" is missing targetKeyword`);
-  }
-  if (!guide.hasQuickAnswer) {
-    errors.push(`Guide "${guide.slug}" is missing quickAnswer`);
-  }
-  if (!guide.hasFaq) {
-    errors.push(`Guide "${guide.slug}" is missing faq`);
-  }
-}
-
-const pillarEntries = parseRelatedPillarEntries(read("src/lib/relatedPillarSlugs.ts"));
-const relatedGuidesSrc = read("src/components/marketing/RelatedGuides.tsx");
-for (const { key, slug } of pillarEntries) {
-  if (!staticPathSet.has(`/${slug}`)) {
-    errors.push(`RELATED_PILLAR_SLUGS.${key} ("${slug}") is not in staticRoutes.ts`);
-  }
-  if (!relatedGuidesSrc.includes(`RELATED_PILLAR_SLUGS.${key}`)) {
-    errors.push(`RELATED_PILLAR_SLUGS.${key} is missing from RELATED_LINK_MAP`);
-  }
-}
-
-for (const file of pageFiles) {
-  const path = fileToPath(file);
-  const title = extractMetadataTitle(readFileSync(file, "utf8"));
-  if (!title) continue;
-  const rendered = `${title}${TITLE_SUFFIX}`;
-  if (rendered.length > TITLE_WARN_CHARS) {
-    warnings.push(
-      `Title for ${path} is ${rendered.length} chars with suffix (aim ≤${TITLE_WARN_CHARS}): "${rendered}"`,
-    );
-  }
-}
-
-if (warnings.length) {
-  console.log("SEO check warnings:");
-  for (const warning of warnings) console.log(`  - ${warning}`);
-}
-
-if (errors.length) {
-  console.error("SEO check failed:");
-  for (const error of errors) console.error(`  - ${error}`);
+if (!existsSync(APP_DIR)) {
+  console.error("seo-check: .next/server/app not found. Run `next build` first.");
   process.exit(1);
 }
 
-console.log(
-  `SEO check passed (${pagePaths.length} static pages, ${guides.filter((g) => g.published).length} published guides, ${countries.length} calculators).`,
-);
+function walk(dir) {
+  return readdirSync(dir).flatMap((name) => {
+    const full = join(dir, name);
+    return statSync(full).isDirectory() ? walk(full) : [full];
+  });
+}
+
+function routeFor(file) {
+  const rel = relative(APP_DIR, file).split(sep).join("/").replace(/\.html$/, "");
+  if (rel === "index") return "/";
+  return `/${rel}`;
+}
+
+const pages = walk(APP_DIR)
+  .filter((f) => f.endsWith(".html"))
+  .map((file) => ({ file, route: routeFor(file) }))
+  .filter(({ route }) => !SKIP.some((re) => re.test(route.slice(1))))
+  .map(({ file, route }) => {
+    const html = readFileSync(file, "utf8");
+    const title = (html.match(/<title>([^<]*)<\/title>/) ?? [])[1] ?? "";
+    const robots = (html.match(/<meta name="robots" content="([^"]*)"/) ?? [])[1] ?? "";
+    const jsonLd = (html.match(/<script type="application\/ld\+json">/g) ?? []).length;
+    const hreflangs = [...html.matchAll(/hrefLang="([^"]+)"/gi)].map((m) => m[1].toLowerCase());
+    const links = new Set(
+      [...html.matchAll(/href="(\/[^"#?]*)/g)].map((m) => m[1].replace(/\/$/, "") || "/"),
+    );
+    return { route, html, title: decode(title), robots, jsonLd, hreflangs, links };
+  });
+
+function decode(s) {
+  return s.replace(/&amp;/g, "&").replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
+}
+
+const errors = [];
+const indexable = pages.filter((p) => !/noindex/.test(p.robots) && p.route !== "/_not-found");
+
+const seenTitles = new Map();
+for (const p of indexable) {
+  if (!p.title) errors.push(`${p.route}: missing <title>`);
+  if (p.title.length > MAX_TITLE) errors.push(`${p.route}: title is ${p.title.length} chars (max ${MAX_TITLE}): "${p.title}"`);
+  if (seenTitles.has(p.title)) errors.push(`${p.route}: duplicate title with ${seenTitles.get(p.title)}`);
+  seenTitles.set(p.title, p.route);
+
+  if (p.jsonLd === 0) errors.push(`${p.route}: no server-rendered JSON-LD`);
+
+  const dupes = p.hreflangs.filter((h, i) => p.hreflangs.indexOf(h) !== i);
+  if (dupes.length) errors.push(`${p.route}: repeated hreflang ${[...new Set(dupes)].join(", ")}`);
+
+  for (const [re, label] of BANNED) {
+    if (re.test(p.html)) errors.push(`${p.route}: ${label} (${re})`);
+  }
+}
+
+for (const p of indexable) {
+  if (p.route === "/") continue;
+  const linked = pages.some((other) => other.route !== p.route && other.links.has(p.route));
+  if (!linked) errors.push(`${p.route}: orphan page, no other page links to it`);
+}
+
+console.log(`seo-check: ${indexable.length} indexable pages checked.`);
+if (errors.length) {
+  console.error(`seo-check: ${errors.length} problem(s):\n  - ${errors.join("\n  - ")}`);
+  process.exit(1);
+}
+console.log("seo-check: all checks passed.");

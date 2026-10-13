@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { EmbedCalculatorSnippet } from "@/components/blou/EmbedCalculatorSnippet";
@@ -14,7 +14,6 @@ import {
 } from "@/lib/seo";
 import { countries } from "@/lib/countryData";
 import { SITE_URL } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking money saved calculator (free)",
@@ -97,12 +96,8 @@ export default function MoneySavedToolPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="money-saved-howto-json-ld" type="application/ld+json">
-        {JSON.stringify(howToJsonLd)}
-      </Script>
-      <Script id="money-saved-webapp-json-ld" type="application/ld+json">
-        {JSON.stringify(webAppJsonLd)}
-      </Script>
+      <JsonLd data={howToJsonLd} />
+      <JsonLd data={webAppJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -111,8 +106,8 @@ export default function MoneySavedToolPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">
           Calculator
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
@@ -124,12 +119,6 @@ export default function MoneySavedToolPage() {
           smoke-free. Everything runs in your browser — nothing is sent to a
           server.
         </p>
-        <div className="mt-6">
-          <AppStoreBadgeLink
-            campaign="tool_money_calculator"
-            placement="tool_money_calculator"
-          />
-        </div>
       </header>
 
       <TableOfContents
@@ -147,9 +136,14 @@ export default function MoneySavedToolPage() {
         <MoneySavedCalculator instanceId="global" />
       </section>
 
+      <InlineAppCta campaign="tool_money-saved">
+        The money is the part you can calculate. Blou shows the rest of what quitting gives back:
+        your photo timeline, your lung checks, and every smoke-free day on one timeline.
+      </InlineAppCta>
+
       <section
         id="how-to-use"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           How to use this calculator
@@ -159,7 +153,7 @@ export default function MoneySavedToolPage() {
             <li key={step.name} className="flex gap-3">
               <span
                 aria-hidden
-                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-sm border border-teal-300 text-xs font-semibold text-teal-900"
+                className="mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full border border-teal-300 text-xs font-semibold text-teal-900"
               >
                 {index + 1}
               </span>
@@ -174,7 +168,7 @@ export default function MoneySavedToolPage() {
 
       <section
         id="methodology"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Methodology & assumptions
@@ -214,7 +208,7 @@ export default function MoneySavedToolPage() {
 
       <section
         id="country-versions"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Localized versions
@@ -242,10 +236,10 @@ export default function MoneySavedToolPage() {
       </section>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-tool-money-saved" />
+        <FaqSection items={faqItems} />
       </section>
-<ArticleConversionFooter campaign="tools_money-saved_footer" />
 
-</div>
+      <EndAppCta campaign="tool_money-saved" />
+    </div>
   );
 }

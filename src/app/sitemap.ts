@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { isPublishedGuide, blouGuides } from "@/lib/blouGuides";
 import { countries } from "@/lib/countryData";
-import { calculatorLanguageAlternates } from "@/lib/countryHreflang";
 import { staticRoutes } from "@/lib/staticRoutes";
 
 /**
@@ -16,12 +15,12 @@ import { staticRoutes } from "@/lib/staticRoutes";
 
 const SITEMAP_GENERATED_AT = new Date().toISOString();
 
-const countryLanguageMap = Object.fromEntries(
-  Object.entries(calculatorLanguageAlternates(countries)).map(([lang, path]) => [
-    lang,
-    `${SITE_URL}${path}`,
-  ]),
-);
+const countryLanguageMap: Record<string, string> = {
+  ...Object.fromEntries(
+    countries.map((c) => [c.hreflang, `${SITE_URL}/calculators/${c.slug}`]),
+  ),
+  "x-default": `${SITE_URL}/calculators`,
+};
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((r) => ({

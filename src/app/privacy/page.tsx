@@ -124,7 +124,7 @@ export default function PrivacyPage() {
     <article className="flex flex-col gap-8">
       <Breadcrumbs items={[{ name: "Privacy Policy", path: "/privacy" }]} />
 
-      <header className="masthead">
+      <header className="rounded-3xl border border-teal-200/90 bg-white p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal-950">
           Privacy Policy
         </h1>
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
       {sections.map((section) => (
         <section
           key={section.title}
-          className="section-block"
+          className="rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
         >
           <h2 className="text-xl font-semibold text-teal-950">{section.title}</h2>
           {section.paragraphs.map((paragraph) => (
@@ -162,13 +162,13 @@ export default function PrivacyPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           ← Back to home
         </Link>
         <Link
           href="/terms"
-          className="inline-flex h-10 items-center justify-center rounded-sm border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
+          className="inline-flex h-10 items-center justify-center rounded-full border border-teal-300 px-4 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
         >
           Terms of Service
         </Link>

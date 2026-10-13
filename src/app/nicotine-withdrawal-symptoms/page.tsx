@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_nicotine-withdrawal-symptoms";
 
 export const metadata: Metadata = buildMetadata({
   title: "Nicotine withdrawal symptoms after quitting smoking",
@@ -71,9 +70,7 @@ export default function NicotineWithdrawalSymptomsPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="withdrawal-symptoms-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -81,42 +78,31 @@ export default function NicotineWithdrawalSymptomsPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Symptom hub
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Nicotine withdrawal symptoms
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Symptom hub"
+        title="Nicotine withdrawal symptoms"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+            Withdrawal timeline →
+          </ButtonLink>
+        }
+      >
+        <p>
           Withdrawal feels chaotic until you name it. Use this hub to match what
           you feel with a guide, then anchor behavior with a tracker.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_withdrawal_symptoms" placement="article_intro" />
-          <Link href="/nicotine-withdrawal-timeline" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Withdrawal timeline →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "common", label: "Common symptoms" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Nicotine withdrawal symptoms after quitting smoking"
-        path="/nicotine-withdrawal-symptoms"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -128,10 +114,10 @@ export default function NicotineWithdrawalSymptomsPage() {
         />
       </section>
 
-      <section id="common" className="scroll-mt-24 section-block">
+      <section id="common" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">Common symptoms (jump links)</h2>
         <ul className="mt-4 grid gap-2 text-sm text-teal-900 sm:grid-cols-2">
-          <li><Link className="font-medium text-teal-800 underline" href="/guides/anxiety">Anxiety</Link></li>
+          <li><Link className="font-medium text-teal-800 underline" href="/quit-smoking-with-anxiety">Anxiety</Link></li>
           <li><Link className="font-medium text-teal-800 underline" href="/guides/irritability">Irritability</Link></li>
           <li><Link className="font-medium text-teal-800 underline" href="/guides/insomnia">Insomnia</Link></li>
           <li><Link className="font-medium text-teal-800 underline" href="/guides/headaches">Headaches</Link></li>
@@ -142,22 +128,22 @@ export default function NicotineWithdrawalSymptomsPage() {
         </ul>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        Most of these symptoms peak in week one, then ease. Blou&apos;s SOS button helps the second a
+        craving hits, and your timeline shows every smoke-free day you&apos;ve already got through.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-withdrawal-symptoms" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_withdrawal_symptoms" placement="article_footer_card" />
-        <Link href="/first-week-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Week one playbook →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="nicotine-withdrawal-symptoms_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/first-week-quit-smoking" variant="secondary">
+          Week one playbook →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

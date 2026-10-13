@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_first-week-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "First week quit smoking: habits that hold",
+  title: "First week quit smoking: day-by-day habits that hold",
   description:
     "What to expect in week one after quitting smoking: withdrawal peaks, cue storms, sleep, and how a tracker + plan keep you from negotiating with cravings.",
   path: "/first-week-quit-smoking",
@@ -46,7 +45,7 @@ const faqItems = [
   {
     question: "Do I need an app in week one?",
     answer:
-      "If it gives you a one-tap craving timer and visible progress, yes—week one is when negotiation (“just one”) is loudest.",
+      "If it gives you one-tap craving help and visible progress, yes—week one is when negotiation (“just one”) is loudest.",
   },
   {
     question: "When should I call a clinician?",
@@ -57,7 +56,7 @@ const faqItems = [
 
 export default function FirstWeekQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "First week quit smoking: habits that hold",
+    title: "First week quit smoking: day-by-day habits that hold",
     description:
       "Practical habits for the first week after quitting smoking.",
     path: "/first-week-quit-smoking",
@@ -71,55 +70,39 @@ export default function FirstWeekQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="first-week-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[{ name: "First week quit smoking", path: "/first-week-quit-smoking" }]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Week 1 playbook
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          First week quit smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Week 1 playbook"
+        title="First week quit smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+            Withdrawal timeline →
+          </ButtonLink>
+        }
+      >
+        <p>
           Week one is not about being heroic—it is about being boringly consistent:
           same quit date, same craving response, same check-in person. Use this
           page as a checklist against your full plan.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_first_week" placement="article_intro" />
-          <Link
-            href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Withdrawal timeline →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "daily-focus", label: "What to optimize each day" },
           { id: "slips", label: "If you slip" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="First week quit smoking: habits that hold"
-        path="/first-week-quit-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -134,12 +117,12 @@ export default function FirstWeekQuitSmokingPage() {
 
       <section
         id="daily-focus"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           What to optimize each day
         </h2>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
@@ -164,8 +147,8 @@ export default function FirstWeekQuitSmokingPage() {
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
               <strong>Days 5–7</strong>: review top cue; tighten one replacement; read{" "}
-              <Link className="font-medium text-teal-800 underline" href="/stay-quit-after-one-month">
-                staying quit after a month
+              <Link className="font-medium text-teal-800 underline" href="/guides/what-happens-after-1-month">
+                what happens after one month
               </Link>{" "}
               early so week two does not feel empty.
             </span>
@@ -173,12 +156,17 @@ export default function FirstWeekQuitSmokingPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Days 2–3 are usually the peak. Blou&apos;s SOS button is there the second a craving hits,
+        and your timeline shows how far you&apos;ve already come.
+      </InlineAppCta>
+
       <section
         id="slips"
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use{" "}
           <Link className="font-medium text-teal-800 underline" href="/i-smoked-one-cigarette">
             the first-hour playbook
@@ -187,22 +175,17 @@ export default function FirstWeekQuitSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-first-week" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink campaign="pillar_first_week" placement="article_footer_card" />
-        <Link href="/prepare-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Prep checklist →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="first-week-quit-smoking_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+          Prep checklist →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

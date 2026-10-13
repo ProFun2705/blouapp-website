@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-09";
-const MODIFIED = "2026-05-09";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_quit-smoking-with-nicotine-patch";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quit smoking with the nicotine patch: a simple plan",
@@ -71,9 +70,7 @@ export default function QuitSmokingWithNicotinePatchPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="patch-article-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -84,31 +81,24 @@ export default function QuitSmokingWithNicotinePatchPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          NRT support
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Quit smoking with the nicotine patch
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="NRT support"
+        title="Quit smoking with the nicotine patch"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/prepare-to-quit-smoking" variant="secondary">
+            Prep checklist →
+          </ButtonLink>
+        }
+      >
+        <p>
           The patch can reduce baseline withdrawal. Your main job is handling
           cue-based cravings (coffee, driving, stress). This page gives a simple
           plan so you can stay consistent in weeks 1–4.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/prepare-to-quit-smoking"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Prep checklist →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -116,16 +106,9 @@ export default function QuitSmokingWithNicotinePatchPage() {
           { id: "simple-plan", label: "A simple patch plan" },
           { id: "breakthrough-cravings", label: "Breakthrough cravings" },
           { id: "slips", label: "If you slip" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Quit smoking with the nicotine patch: a simple plan"
-        path="/quit-smoking-with-nicotine-patch"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -140,12 +123,12 @@ export default function QuitSmokingWithNicotinePatchPage() {
 
       <section
         id="simple-plan"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           A simple patch plan (weeks 1–4)
         </h2>
-        <ol className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ol className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li>
             Choose a quit date and prep your cues using{" "}
             <Link
@@ -179,28 +162,34 @@ export default function QuitSmokingWithNicotinePatchPage() {
 
       <section
         id="breakthrough-cravings"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Breakthrough cravings (what to do)
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Even with the patch, cravings can hit because cues are learned. Your
           goal is to make your response automatic: timer → change location →
           water → one 2‑minute action (walk, teeth, stretch, text someone).
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If cravings feel unmanageable or you’re unsure about dosing, ask a
           pharmacist or clinician for personalized guidance.
         </p>
       </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        Even on the patch, cue cravings still hit. Blou&apos;s SOS button is
+        there the second one does, and your timeline shows every smoke-free day
+        you&apos;ve already stacked up.
+      </InlineAppCta>
 
       <section
         id="slips"
         className="scroll-mt-24 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">If you slip</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           A slip is common. Contain it and return to plan the same day. Use{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -212,29 +201,18 @@ export default function QuitSmokingWithNicotinePatchPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
+      <section id="faq" className="scroll-mt-24">
+        <FaqSection items={faqItems} />
       </section>
 
-      <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-nicotine-patch" />
-      </section>
+      <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
           Withdrawal timeline →
-        </Link>
+        </ButtonLink>
       </div>
-<ArticleConversionFooter campaign="quit-smoking-with-nicotine-patch_footer" />
-
-</div>
+    </div>
   );
 }
 

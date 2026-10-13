@@ -22,6 +22,16 @@ const nextConfig: NextConfig = {
         destination: "/calculators/:country",
         permanent: true,
       },
+      // Oct 2026 consolidation: one owner URL per keyword cluster.
+      { source: "/best-quit-smoking-app-for-heavy-smokers", destination: "/best-quit-smoking-apps", permanent: true },
+      { source: "/best-quit-smoking-app-for-beginners", destination: "/best-quit-smoking-apps", permanent: true },
+      { source: "/free-quit-smoking-app", destination: "/best-quit-smoking-apps", permanent: true },
+      { source: "/smoking-cessation-app", destination: "/best-quit-smoking-apps", permanent: true },
+      { source: "/quit-smoking-tracker", destination: "/", permanent: true },
+      { source: "/stay-quit-after-one-month", destination: "/guides/what-happens-after-1-month", permanent: true },
+      { source: "/guides/anxiety", destination: "/quit-smoking-with-anxiety", permanent: true },
+      { source: "/guides/depression", destination: "/quit-smoking-with-depression", permanent: true },
+      { source: "/guides/weight-gain", destination: "/quit-smoking-without-gaining-weight", permanent: true },
     ];
   },
 };

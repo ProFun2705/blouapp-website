@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-05-20";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_health-benefits-of-quitting-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Health benefits of quitting smoking",
+  title: "Health benefits of quitting smoking: a full timeline",
   description:
     "The health benefits of quitting smoking begin within 20 minutes and compound for decades. Here's a full timeline from hours to 15 years.",
   path: "/health-benefits-of-quitting-smoking",
@@ -68,7 +67,7 @@ const faqItems = [
 
 export default function HealthBenefitsOfQuittingSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Health benefits of quitting smoking",
+    title: "Health benefits of quitting smoking: a full timeline",
     description:
       "A full timeline of the health benefits of quitting smoking, from minutes to decades.",
     path: "/health-benefits-of-quitting-smoking",
@@ -82,9 +81,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="health-benefits-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -95,31 +92,24 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Why quit
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Health benefits of quitting smoking
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Why quit"
+        title="Health benefits of quitting smoking"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+            Withdrawal timeline →
+          </ButtonLink>
+        }
+      >
+        <p>
           The benefits start within minutes of your last cigarette and compound
           for 15 years. This page gives a full timeline so you can see exactly
           what your body is doing as you quit.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="article_intro" placement="article_intro" />
-          <Link
-            href="/nicotine-withdrawal-timeline"
-            className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-          >
-            Withdrawal timeline →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
@@ -130,16 +120,9 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
           { id: "months-years", label: "Months to years" },
           { id: "mental-health", label: "Mental health benefits" },
           { id: "financial", label: "Financial benefits" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Health benefits of quitting smoking"
-        path="/health-benefits-of-quitting-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -154,12 +137,12 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="hours"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Minutes to 24 hours: immediate changes
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">20–30 min:</span>
             <span>
@@ -194,12 +177,12 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="days"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Days 1–7: senses and airways
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">48 hours:</span>
             <span>
@@ -250,12 +233,12 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="weeks"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Weeks 2–12: lung and circulation recovery
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">2 weeks:</span>
             <span>
@@ -304,14 +287,19 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         </ul>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Your lungs keep improving through these first weeks. Blou&apos;s lung checks let you see it for
+        yourself, and your photo timeline shows the changes in your face over the same stretch.
+      </InlineAppCta>
+
       <section
         id="months-years"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Months to 15 years: long-term disease risk
         </h2>
-        <ul className="mt-4 space-y-3 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 font-bold text-teal-700">6 months:</span>
             <span>
@@ -382,18 +370,18 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="mental-health"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Mental health benefits
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Many smokers believe cigarettes help manage stress. The evidence shows
           the opposite long-term: nicotine creates the anxiety and stress it
           temporarily relieves. After the withdrawal period (typically 2–6
           weeks), most ex-smokers report:
         </p>
-        <ul className="mt-4 space-y-2 text-base leading-7 text-teal-900/90">
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>Lower baseline anxiety and stress levels.</span>
@@ -411,7 +399,7 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
             <span>Improved self-efficacy and confidence from having quit.</span>
           </li>
         </ul>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           See:{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -432,18 +420,18 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
 
       <section
         id="financial"
-        className="scroll-mt-24 section-block"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
           Financial benefits
         </h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           The financial benefits of quitting compound just like the health ones.
           An average smoker of 10 cigarettes a day can save $1,500–$3,000 per
           year. A pack-a-day smoker saves $3,500–$6,000+ per year depending on
           their country and local cigarette prices.
         </p>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use the{" "}
           <Link
             className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
@@ -455,28 +443,17 @@ export default function HealthBenefitsOfQuittingSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
-
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-health-benefits-quitting" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <AppStoreBadgeLink
-          campaign="article_footer"
-          placement="article_footer_card"
-        />
-        <Link
-          href="/nicotine-withdrawal-timeline"
-          className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 transition hover:bg-teal-50"
-        >
-          Withdrawal timeline →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="health-benefits-of-quitting-smoking_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
+          Withdrawal timeline →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }

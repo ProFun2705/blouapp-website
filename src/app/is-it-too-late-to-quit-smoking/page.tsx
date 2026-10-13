@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
+import { ArticleHeader } from "@/components/marketing/ArticleHeader";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ButtonLink } from "@/components/ui/Button";
 import Link from "next/link";
-import Script from "next/script";
-import { AppStoreBadgeLink } from "@/components/marketing/AppStoreBadgeLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { Byline } from "@/components/marketing/Byline";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { QuickAnswerBox } from "@/components/marketing/QuickAnswerBox";
-import { SpeakableJsonLd } from "@/components/marketing/SpeakableJsonLd";
-import { SocialProof } from "@/components/marketing/SocialProof";
 import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
-import { ArticleConversionFooter } from "@/components/marketing/ArticleConversionFooter";
 
 const PUBLISHED = "2026-05-14";
-const MODIFIED = "2026-05-14";
+const MODIFIED = "2026-10-13";
+const CAMPAIGN = "article_is-it-too-late-to-quit-smoking";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Is it too late to quit smoking?",
+  title: "Is it too late to quit smoking? Benefits at any age",
   description:
     "No—quitting has meaningful benefits at any adult age. Here is what changes first, what to ask your clinician, and how tracking keeps momentum.",
   path: "/is-it-too-late-to-quit-smoking",
@@ -51,13 +50,13 @@ const faqItems = [
   {
     question: "How does Blou help older quitters?",
     answer:
-      "Clear counters and craving support reduce cognitive load during urges—helpful at any age.",
+      "Blou keeps it simple: an SOS button for the moment a craving hits, lung checks, and one visual timeline of every milestone and smoke-free day—helpful at any age.",
   },
 ];
 
 export default function IsItTooLateToQuitSmokingPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "Is it too late to quit smoking?",
+    title: "Is it too late to quit smoking? Benefits at any age",
     description:
       "Evidence-oriented reassurance that quitting smoking remains worthwhile at older ages.",
     path: "/is-it-too-late-to-quit-smoking",
@@ -71,9 +70,7 @@ export default function IsItTooLateToQuitSmokingPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Script id="too-late-json-ld" type="application/ld+json">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
         items={[
@@ -81,42 +78,31 @@ export default function IsItTooLateToQuitSmokingPage() {
         ]}
       />
 
-      <header className="masthead">
-        <p className="text-sm font-medium text-teal-700">
-          Hope + planning
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-teal-950">
-          Is it too late to quit smoking?
-        </h1>
-        <p className="mt-4 text-base leading-7 text-teal-900/90">
+      <ArticleHeader
+        kicker="Hope + planning"
+        title="Is it too late to quit smoking?"
+        datePublished={PUBLISHED}
+        dateModified={MODIFIED}
+        campaign={CAMPAIGN}
+        actions={
+          <ButtonLink href="/quitting-smoking-after-50" variant="secondary">
+            Quitting in your 50s+ →
+          </ButtonLink>
+        }
+      >
+        <p>
           It is rarely “too late” for meaningful benefit. The better question is
           what support you need given your age, conditions, and smoking history.
         </p>
-        <div className="mt-5">
-          <Byline datePublished={PUBLISHED} dateModified={MODIFIED} />
-        </div>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <AppStoreBadgeLink campaign="pillar_too_late" placement="article_intro" />
-          <Link href="/quitting-smoking-after-50" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-            Quitting in your 50s+ →
-          </Link>
-        </div>
-      </header>
+      </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "next", label: "What to do next" },
-          { id: "social-proof", label: "App Store reviews" },
           { id: "faq", label: "Frequently asked questions" },
         ]}
       />
-      <SpeakableJsonLd
-        name="Is it too late to quit smoking?"
-        path="/is-it-too-late-to-quit-smoking"
-      />
-
-
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
@@ -128,9 +114,9 @@ export default function IsItTooLateToQuitSmokingPage() {
         />
       </section>
 
-      <section id="next" className="scroll-mt-24 section-block">
+      <section id="next" className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-teal-950">What to do next</h2>
-        <p className="mt-3 text-base leading-7 text-teal-900/90">
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Use{" "}
           <Link className="font-medium text-teal-800 underline" href="/prepare-to-quit-smoking">
             prep checklist
@@ -147,22 +133,22 @@ export default function IsItTooLateToQuitSmokingPage() {
         </p>
       </section>
 
-      <section id="social-proof" className="scroll-mt-24">
-        <SocialProof compact />
-      </section>
+      <InlineAppCta campaign={CAMPAIGN}>
+        Your body starts responding within days, whatever your age. Blou&apos;s lung checks and photo
+        timeline let you watch your own recovery, and its SOS button is there when a craving hits.
+      </InlineAppCta>
 
       <section id="faq" className="scroll-mt-24">
-        <FaqSection items={faqItems} jsonLdId="faq-too-late-quit" />
+        <FaqSection items={faqItems} />
       </section>
 
-      <div className="flex flex-wrap gap-3">
-        <AppStoreBadgeLink campaign="pillar_too_late" placement="article_footer_card" />
-        <Link href="/how-to-quit-smoking" className="inline-flex h-11 items-center justify-center rounded-sm border border-teal-200 bg-white px-5 text-sm font-medium text-teal-900 hover:bg-teal-50">
-          Full plan →
-        </Link>
-      </div>
-<ArticleConversionFooter campaign="is-it-too-late-to-quit-smoking_footer" />
+      <EndAppCta campaign={CAMPAIGN} />
 
-</div>
+      <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/how-to-quit-smoking" variant="secondary">
+          Full plan →
+        </ButtonLink>
+      </div>
+    </div>
   );
 }
