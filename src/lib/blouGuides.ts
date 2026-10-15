@@ -49,7 +49,7 @@ export const blouGuides: BlouGuide[] = [
   // ─────────────────────────── MILESTONES ───────────────────────────
   {
     slug: "what-happens-after-1-day",
-    title: "What happens to your body after 1 day without smoking",
+    title: "1 day without smoking: what happens to your body",
     shortTitle: "After 1 day",
     category: "milestone",
     targetKeyword: "what happens after 1 day of not smoking",
@@ -124,6 +124,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-01",
     dateModified: "2026-04-20",
     relatedSlugs: [
+      "what-happens-after-2-days",
       "what-happens-after-3-days",
       "cravings",
       "headaches",
@@ -132,8 +133,98 @@ export const blouGuides: BlouGuide[] = [
     medicalConditionName: "Nicotine withdrawal",
   },
   {
+    slug: "what-happens-after-2-days",
+    title: "2 days without smoking: what happens to your body",
+    shortTitle: "After 2 days",
+    category: "milestone",
+    targetKeyword: "2 days without smoking",
+    quickAnswer:
+      "After 2 days without smoking, carbon monoxide in your blood is down to non-smoker levels and your lungs start clearing out mucus. Nicotine has left your bloodstream, so withdrawal is close to its peak: cravings, irritability and poor sleep are common.",
+    quickFacts: [
+      "NHS: by 48 hours carbon monoxide has dropped to non-smoker levels and taste and smell start to improve.",
+      "CDC: the nicotine level in your blood drops to zero within about 24 hours of quitting.",
+      "NHS: withdrawal is strongest in the first week, especially the first 3 days.",
+    ],
+    summary:
+      "2 days without smoking: carbon monoxide is back to non-smoker levels, your lungs start clearing mucus, and withdrawal is near its peak. What helps today.",
+    detail:
+      "Day 2 often feels harder than day 1. Your body is clearing smoke faster than at any point in years, but with nicotine gone from your blood, your brain notices the gap more sharply. Knowing that this is the peak, not the new normal, makes it easier to hold on.",
+    articleSections: [
+      {
+        heading: "What is happening in your body at 48 hours",
+        paragraphs: [
+          "The NHS says that by 48 hours after your last cigarette, carbon monoxide in your blood has dropped to the level of someone who doesn't smoke. That means more of your red blood cells are carrying oxygen again instead of carbon monoxide.",
+          "Your lungs also start to clear out mucus around this point (NHS). Some people notice more coughing or phlegm in the first days. The NHS describes this as a short-term process while your airways clear.",
+          "Taste and smell begin to improve at 48 hours, according to the NHS, and it notes you may feel hungrier from this point as food starts tasting better.",
+        ],
+        bullets: [
+          "Carbon monoxide: down to non-smoker levels (NHS).",
+          "Nicotine in your blood: at zero since roughly the 24-hour mark (CDC).",
+          "Taste and smell: starting to sharpen, which can bring extra hunger (NHS).",
+        ],
+      },
+      {
+        heading: "Why withdrawal peaks around day 2",
+        paragraphs: [
+          "Withdrawal can start within a few hours of your last cigarette and is strongest in the first week, especially the first 3 days (NHS). Day 2 sits right in that window. Your brain is used to regular nicotine and is adjusting to having none.",
+          "A research review of tobacco withdrawal found that the core symptoms peak within the first week and last 2–4 weeks. Those symptoms are anger, anxiety, low mood, difficulty concentrating, impatience, trouble sleeping and restlessness. They are temporary, even when day 2 makes them feel permanent.",
+        ],
+        bullets: [
+          "Strong cravings that come in waves; the NHS says each one lasts up to 15 minutes.",
+          "Irritability, impatience or anger.",
+          "Anxiety, restlessness and low mood.",
+          "Trouble sleeping and trouble concentrating.",
+          "Feeling hungrier than usual.",
+        ],
+      },
+      {
+        heading: "What to do on day 2",
+        paragraphs: [
+          "Plan for the cravings, not just the day. Quit (Australia) suggests the 4 Ds: delay acting on the craving for about 5 minutes, take slow deep breaths, do something else, and drink water. The NHS also suggests keeping your mouth busy with carrot sticks, celery or sugar-free gum, and avoiding triggers such as coffee breaks with smokers for the first 28 days.",
+          "If you are not using a stop smoking medicine yet, it is not too late to start. The CDC says FDA-approved quit medicines can double your chance of quitting for good. A pharmacist, GP or quitline can help: your local NHS Stop Smoking Service (UK), Quitline 13 7848 (Australia), or 1-800-QUIT-NOW (US). Withdrawal is unpleasant but not dangerous. Chest pain, fainting or severe breathlessness are not normal withdrawal and need urgent care.",
+        ],
+        bullets: [
+          "Delay 5 minutes, breathe slowly, then change what you are doing.",
+          "Keep water and a crunchy snack within reach.",
+          "Skip alcohol and smoking-break routines for now.",
+        ],
+      },
+    ],
+    whatToExpectNext: [
+      "At 72 hours, breathing may feel easier as your bronchial tubes relax (NHS).",
+      "The first 3 days are usually the most intense part of withdrawal (NHS).",
+      "Cravings usually become less frequent after the first week (Quit).",
+    ],
+    faq: [
+      {
+        question: "Is day 2 the hardest day of quitting smoking?",
+        answer:
+          "For many people, days 2 and 3 are the hardest. The NHS says withdrawal is strongest in the first week, especially the first 3 days, because nicotine has fully left your blood. It eases after that.",
+      },
+      {
+        question: "What happens after 48 hours without smoking?",
+        answer:
+          "The NHS says carbon monoxide drops to non-smoker levels, your lungs start clearing out mucus, and your senses of taste and smell begin to improve. Withdrawal symptoms are also near their peak.",
+      },
+      {
+        question: "Why am I so hungry 2 days after quitting smoking?",
+        answer:
+          "The NHS explains that as taste and smell improve, you may feel hungrier after 48 hours. Increased appetite is also a common withdrawal symptom. Crunchy, filling snacks help without derailing your quit.",
+      },
+    ],
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    relatedSlugs: [
+      "what-happens-after-1-day",
+      "what-happens-after-3-days",
+      "cravings",
+      "irritability",
+    ],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
     slug: "what-happens-after-3-days",
-    title: "What happens to your body after 3 days without smoking",
+    title: "3 days without smoking: what happens to your body",
     shortTitle: "After 3 days",
     category: "milestone",
     targetKeyword: "what happens after 3 days of not smoking",
@@ -207,7 +298,8 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-01",
     dateModified: "2026-04-20",
     relatedSlugs: [
-      "what-happens-after-1-day",
+      "what-happens-after-2-days",
+      "what-happens-after-5-days",
       "what-happens-after-1-week",
       "irritability",
       "anxiety",
@@ -216,16 +308,104 @@ export const blouGuides: BlouGuide[] = [
     medicalConditionName: "Nicotine withdrawal",
   },
   {
+    slug: "what-happens-after-5-days",
+    title: "5 days without smoking: what happens to your body",
+    shortTitle: "After 5 days",
+    category: "milestone",
+    targetKeyword: "5 days without smoking",
+    quickAnswer:
+      "At 5 days without smoking, nicotine and carbon monoxide have cleared, breathing often feels easier, and taste and smell are sharper. The most intense first 3 days are behind you, but you are still in the first week, when withdrawal and the risk of slipping are highest.",
+    quickFacts: [
+      "CDC: carbon monoxide returns to non-smoker levels within several days of quitting.",
+      "Quit (Australia): within a week your sense of taste and smell may improve.",
+      "Smokefree.gov: the first week after quitting is when you are most at risk of slipping back.",
+    ],
+    summary:
+      "5 days without smoking: the hardest 72 hours are behind you, breathing feels easier, and taste and smell sharpen. What to expect and how to finish week 1.",
+    detail:
+      "Day 5 is a quiet turning point. The physical peak of withdrawal has usually passed, but your routines haven't caught up yet. Most of the urges now come from places, people and times of day that used to mean a cigarette.",
+    articleSections: [
+      {
+        heading: "Your body at 5 days smoke-free",
+        paragraphs: [
+          "By day 5 your blood is free of nicotine and carbon monoxide. The CDC says carbon monoxide returns to non-smoker levels within several days, and the NHS puts that point at 48 hours. From 72 hours, the NHS says breathing may feel easier as your bronchial tubes relax, and your energy increases.",
+          "Your lungs are starting to clean themselves. Cleveland Clinic says the cilia, the tiny hairs that sweep dirt and mucus out of your airways, begin to grow back and work again fairly quickly. That is why some people develop a new cough soon after quitting: it is the airways clearing out.",
+        ],
+        bullets: [
+          "Breathing may feel easier and energy higher (NHS).",
+          "Taste and smell may be noticeably better within the week (Quit).",
+          "A looser, more productive cough can be a sign of the cilia recovering (Cleveland Clinic).",
+        ],
+      },
+      {
+        heading: "How withdrawal feels on day 5",
+        paragraphs: [
+          "The NHS says withdrawal is strongest in the first week, especially the first 3 days. Smokefree.gov says the worst symptoms last a few days to a couple of weeks. So by day 5 many people feel a clear step down from day 3, while still having rough patches.",
+          "Research on tobacco withdrawal shows the core symptoms peak within the first week and last 2–4 weeks. Feeling short-tempered, foggy or restless on day 5 is still normal, and it is still temporary.",
+        ],
+        bullets: [
+          "Cravings that are less constant but sharp around old smoking moments.",
+          "Irritability, low mood or anxiety that comes and goes.",
+          "Sleep that hasn't fully settled.",
+          "Trouble concentrating and extra hunger.",
+        ],
+      },
+      {
+        heading: "Finishing week 1 strong",
+        paragraphs: [
+          "Smokefree.gov says the first week is when you are most at risk of slipping back to smoking, so treat days 5 to 7 as part of the hard stretch. The NHS suggests avoiding triggers, such as people who smoke or smoking-linked routines, for the first 28 days, and says that once you reach 28 days smoke-free you are 5 times more likely to stay quit for good.",
+          "Use short, physical responses to cravings: a quick burst of activity, slow deep breaths in through the nose and out through the mouth, or something to keep your mouth busy (NHS). Write down your reasons for quitting and keep them where you can see them.",
+        ],
+        bullets: [
+          "Name your two riskiest moments of the day and plan a 5-minute replacement for each.",
+          "Keep any nicotine replacement at the same dose through week 1 unless your pharmacist says otherwise.",
+          "Free help: local NHS Stop Smoking Service (UK), Quitline 13 7848 (Australia), 1-800-QUIT-NOW (US).",
+        ],
+      },
+    ],
+    whatToExpectNext: [
+      "Day 7 completes the week when withdrawal is strongest (NHS, Quit).",
+      "For many people, withdrawal fades over weeks 2–4 (Quit).",
+      "A cough may come and go as your cilia recover (Cleveland Clinic).",
+    ],
+    faq: [
+      {
+        question: "Does it get easier after 5 days without smoking?",
+        answer:
+          "Usually, yes. The NHS says withdrawal is strongest in the first 3 days, and Smokefree.gov says the worst symptoms last a few days to a couple of weeks. Day 5 is often noticeably easier than day 3, though cravings still appear.",
+      },
+      {
+        question: "Why do I still crave cigarettes after 5 days?",
+        answer:
+          "Nicotine has left your body, but withdrawal symptoms typically last 2–4 weeks, and your habits are still linked to smoking. Cravings now tend to be triggered by routines. Each one you get through without smoking makes the next one easier to handle.",
+      },
+      {
+        question: "Is coughing normal 5 days after quitting smoking?",
+        answer:
+          "Yes, for many people. Cleveland Clinic says a new cough after quitting can happen as the cilia recover and clear the lungs. See a doctor if you cough up blood, have a fever, or feel very short of breath.",
+      },
+    ],
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    relatedSlugs: [
+      "what-happens-after-3-days",
+      "what-happens-after-1-week",
+      "cough",
+      "cravings",
+    ],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
     slug: "what-happens-after-1-week",
-    title: "What happens to your body after 1 week without smoking",
+    title: "1 week without smoking: what happens to your body",
     shortTitle: "After 1 week",
     category: "milestone",
     targetKeyword: "1 week without smoking",
     quickAnswer:
-      "After 1 week smoke-free, nicotine withdrawal is past its peak. Cilia in your lungs start regrowing, sense of smell sharpens, and cravings shift from constant to cue-driven (after coffee, meals, or stress).",
+      "After 1 week smoke-free, nicotine withdrawal is past its peak. Cilia in your lungs begin to recover, sense of smell sharpens, and cravings shift from constant to cue-driven (after coffee, meals, or stress).",
     quickFacts: [
       "Roughly 9 out of 10 acute withdrawal symptoms peak before day 7.",
-      "Cilia — the tiny 'sweepers' in your airways — begin regenerating within the first week.",
+      "Cilia, the tiny 'sweepers' in your airways, begin to recover and keep regenerating over the next few months (Cleveland Clinic).",
       "Resting heart rate commonly drops several beats per minute versus smoking baseline.",
     ],
     summary:
@@ -248,7 +428,7 @@ export const blouGuides: BlouGuide[] = [
       {
         heading: "What changes inside your airways this week",
         paragraphs: [
-          "Cilia — microscopic hair-like structures that sweep mucus and particles out of your airways — are paralyzed by cigarette smoke. After about a week without smoking, cilia start regrowing and moving again. That is why cough can briefly get worse this week: your lungs are finally clearing trapped mucus.",
+          "Cilia — microscopic hair-like structures that sweep mucus and particles out of your airways — are paralyzed by cigarette smoke. Once you stop smoking, cilia begin to recover and move again, a process that continues over a few months (Cleveland Clinic). That is why cough can briefly get worse this week: your lungs are finally clearing trapped mucus.",
           "Sense of smell and taste often change in week 1. Food can taste saltier or sweeter than you remember because your olfactory receptors have less smoke interference.",
         ],
         bullets: [
@@ -291,7 +471,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-02",
     dateModified: "2026-04-20",
     relatedSlugs: [
-      "what-happens-after-3-days",
+      "what-happens-after-5-days",
       "what-happens-after-2-weeks",
       "cough",
       "cravings",
@@ -300,7 +480,7 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-2-weeks",
-    title: "What happens to your body after 2 weeks without smoking",
+    title: "2 weeks without smoking: what happens to your body",
     shortTitle: "After 2 weeks",
     category: "milestone",
     targetKeyword: "2 weeks without smoking",
@@ -375,15 +555,102 @@ export const blouGuides: BlouGuide[] = [
     dateModified: "2026-04-20",
     relatedSlugs: [
       "what-happens-after-1-week",
-      "what-happens-after-1-month",
+      "what-happens-after-3-weeks",
       "shortness-of-breath",
       "cough",
     ],
     medicalConditionName: "Nicotine withdrawal",
   },
   {
+    slug: "what-happens-after-3-weeks",
+    title: "3 weeks without smoking: what happens to your body",
+    shortTitle: "After 3 weeks",
+    category: "milestone",
+    targetKeyword: "3 weeks without smoking",
+    quickAnswer:
+      "At 3 weeks without smoking, most people are near the end of nicotine withdrawal: the NHS says symptoms last 3 to 4 weeks on average. Circulation and lung function are starting to improve, and cravings are usually shorter and less frequent than in week 1.",
+    quickFacts: [
+      "NHS: on average, withdrawal symptoms last 3 to 4 weeks.",
+      "American Lung Association: lung function begins to improve between 2 weeks and 3 months after quitting.",
+      "NHS: once you reach 28 days smoke-free, you are 5 times more likely to stay quit for good.",
+    ],
+    summary:
+      "3 weeks without smoking: withdrawal is winding down, circulation and lung function are improving, and day 28 is close. What's normal now and what to do.",
+    detail:
+      "Three weeks in, the story changes from surviving withdrawal to building a life that doesn't include cigarettes. Most of the physical symptoms are fading. The urges that remain are usually tied to habits, stress and social moments.",
+    articleSections: [
+      {
+        heading: "What has changed in your body by week 3",
+        paragraphs: [
+          "The NHS says circulation improves between 2 and 12 weeks after quitting, so blood flows better to your heart and muscles. Walking and climbing stairs often start to feel a little easier around now.",
+          "Your lungs are recovering too. The American Lung Association says lung function begins to improve between 2 weeks and 3 months. Cleveland Clinic says inflammation and mucus production calm down in the weeks after quitting, while the cilia keep regenerating over a few months.",
+        ],
+        bullets: [
+          "Better circulation to heart and muscles (NHS).",
+          "Lung function starting to improve (American Lung Association).",
+          "Less airway inflammation and mucus (Cleveland Clinic).",
+        ],
+      },
+      {
+        heading: "Withdrawal at 3 weeks: nearly done",
+        paragraphs: [
+          "On average, withdrawal symptoms last 3 to 4 weeks, though the NHS notes some people feel them for a few months. A research review found the core symptoms (anger, anxiety, low mood, poor concentration, impatience, insomnia and restlessness) last 2–4 weeks. Quit (Australia) says that for many people, withdrawal is gone after about two to four weeks.",
+          "So at 3 weeks you may have good days with almost no symptoms, followed by a day where a craving or a low mood hits out of nowhere. That pattern is normal. The NHS says mixed emotions in the first few days and weeks are common and will pass.",
+        ],
+        bullets: [
+          "Cravings: fewer, and more often triggered by a situation than by your body.",
+          "Mood and sleep: mostly settling, with occasional dips.",
+          "Appetite: may still be higher than before you quit.",
+        ],
+      },
+      {
+        heading: "Getting to day 28",
+        paragraphs: [
+          "The NHS says that once you reach 28 days smoke-free you are 5 times more likely to stay quit for good, and suggests steering clear of triggers for those first 28 days. With a week to go, keep doing whatever got you here rather than easing off.",
+          "When a craving comes, the NHS suggests a quick burst of activity, reminding yourself that cravings pass, keeping your mouth busy with sugar-free gum or carrot sticks, and slow deep breaths. If you use nicotine replacement, keep following the course on the pack or from your pharmacist rather than stopping early.",
+        ],
+        bullets: [
+          "Plan for the riskiest event in the next week (a night out, a stressful meeting).",
+          "Re-read your written reasons for quitting.",
+          "Free help: local NHS Stop Smoking Service (UK), Quitline 13 7848 (Australia), 1-800-QUIT-NOW (US).",
+        ],
+      },
+    ],
+    whatToExpectNext: [
+      "Day 28: the NHS says you are 5 times more likely to stay quit.",
+      "From about 6 weeks, the NHS says mental health benefits can start.",
+      "Over 1–9 months, coughing and shortness of breath decrease (American Lung Association).",
+    ],
+    faq: [
+      {
+        question: "Is nicotine withdrawal over after 3 weeks?",
+        answer:
+          "For many people it is almost over. The NHS says symptoms last 3 to 4 weeks on average, and some people feel them for a few months. Occasional cravings are normal for longer.",
+      },
+      {
+        question: "Is it normal to still have cravings 3 weeks after quitting smoking?",
+        answer:
+          "Yes. By week 3 cravings are usually shorter and less frequent, but stress, alcohol and old routines can still set them off. Use the same plan that worked in week 1: delay, breathe, move, and drink water.",
+      },
+      {
+        question: "Why do I feel low 3 weeks after quitting smoking?",
+        answer:
+          "Low mood is a recognised withdrawal symptom, and the NHS says mixed emotions in the first weeks are normal and pass. It also says that after the withdrawal stage, people who quit have less anxiety, depression and stress than people who keep smoking. If low mood lasts more than two weeks or you have thoughts of self-harm, talk to a doctor.",
+      },
+    ],
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    relatedSlugs: [
+      "what-happens-after-2-weeks",
+      "what-happens-after-1-month",
+      "cravings",
+      "mood-swings",
+    ],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
     slug: "what-happens-after-1-month",
-    title: "What happens to your body after 1 month without smoking",
+    title: "1 month without smoking: what happens to your body",
     shortTitle: "After 1 month",
     category: "milestone",
     targetKeyword: "1 month without smoking",
@@ -457,7 +724,8 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-03",
     dateModified: "2026-04-20",
     relatedSlugs: [
-      "what-happens-after-2-weeks",
+      "what-happens-after-3-weeks",
+      "what-happens-after-2-months",
       "what-happens-after-3-months",
       "weight-gain",
       "mood-swings",
@@ -465,8 +733,91 @@ export const blouGuides: BlouGuide[] = [
     medicalConditionName: "Nicotine withdrawal",
   },
   {
+    slug: "what-happens-after-2-months",
+    title: "2 months without smoking: what happens to your body",
+    shortTitle: "After 2 months",
+    category: "milestone",
+    targetKeyword: "2 months without smoking",
+    quickAnswer:
+      "At 2 months without smoking, nicotine withdrawal is over for most people, circulation has improved, and lung function is climbing. Many people notice less coughing and easier breathing, and the NHS says mental health benefits can start from about 6 weeks.",
+    quickFacts: [
+      "NHS: circulation improves between 2 and 12 weeks after quitting.",
+      "Cleveland Clinic: a quitter's cough can last for the first couple of months while the cilia fully recover.",
+      "NHS: you can start to feel mental health benefits in as little as 6 weeks.",
+    ],
+    summary:
+      "2 months without smoking: withdrawal is behind most people, breathing and circulation are improving, and mood often lifts. What has changed, what to watch.",
+    detail:
+      "Two months is where the gains stop being theoretical. Stairs, walks and mornings often feel different. The main risk now isn't withdrawal but drift: feeling so normal that the old 'just one' thought starts to sound reasonable.",
+    articleSections: [
+      {
+        heading: "Your lungs and circulation at 2 months",
+        paragraphs: [
+          "The American Lung Association says lung function begins to improve between 2 weeks and 3 months after quitting, and the National Cancer Institute describes substantial improvements in lung function within several months. The NHS says circulation improves between 2 and 12 weeks, which makes physical activity easier.",
+          "If you have had a cough since quitting, it may be fading now. Cleveland Clinic explains that some people cough for the first couple of months as the cilia fully recover and clear the lungs, and that shortness of breath improves within the first 1 to 9 months. Quit (Australia) says that within three months you are coughing and wheezing less.",
+        ],
+        bullets: [
+          "Lung function: improving (American Lung Association, National Cancer Institute).",
+          "Circulation: better blood flow to heart and muscles (NHS).",
+          "Cough: often easing as cilia finish recovering (Cleveland Clinic).",
+        ],
+      },
+      {
+        heading: "Mood, energy and cravings",
+        paragraphs: [
+          "The NHS says it can take as little as 6 weeks to start feeling the mental health benefits of quitting, and that after the withdrawal stage people have less anxiety, depression and stress, and a more positive mood, than people who keep smoking.",
+          "Withdrawal is over for most people by now. The NHS says symptoms last 3 to 4 weeks on average, though some people feel them for a few months. Cravings at 2 months are usually brief and tied to specific situations, such as drinking, stress or being around people who smoke.",
+        ],
+        bullets: [
+          "Quit (Australia) says many people feel less stressed and have more energy in the months after quitting.",
+          "Cravings: occasional, situational, and shorter.",
+          "Appetite and weight: the NHS says most people gain some weight after quitting.",
+        ],
+      },
+      {
+        heading: "Protecting a 2-month quit",
+        paragraphs: [
+          "Feeling well can make it tempting to test yourself with a single cigarette. Plan ahead for the next big trigger instead: a holiday, a wedding, a hard week at work. Decide now what you will do instead and who you will message.",
+          "If you are using nicotine replacement or a prescribed quit medicine, finish the course as directed by the pack or your prescriber rather than stopping abruptly. Keep the support you set up in week 1 within reach: your local NHS Stop Smoking Service (UK), Quitline 13 7848 (Australia), or 1-800-QUIT-NOW (US).",
+        ],
+        bullets: [],
+      },
+    ],
+    whatToExpectNext: [
+      "By 3 months, Quit says you'll be coughing and wheezing less.",
+      "Between 3 and 9 months, the NHS says lung function can rise by up to 10%.",
+      "At 1 year, the NHS says your risk of a heart attack is about half that of a smoker.",
+    ],
+    faq: [
+      {
+        question: "What happens after 2 months without smoking?",
+        answer:
+          "Withdrawal is over for most people, circulation has improved (NHS), lung function is climbing (American Lung Association), and many people feel calmer and more energetic. The NHS says mental health benefits can start from about 6 weeks.",
+      },
+      {
+        question: "Is it normal to still cough 2 months after quitting smoking?",
+        answer:
+          "It can be. Cleveland Clinic says a cough can last for the first couple of months while the cilia fully recover. See a doctor if your cough is getting worse rather than better, you cough up blood, or you are increasingly short of breath.",
+      },
+      {
+        question: "Can you still get cravings 2 months after quitting?",
+        answer:
+          "Yes, occasionally. The NHS notes some people feel withdrawal symptoms for a few months, and habit cravings can be triggered by alcohol, stress or social situations. They are usually shorter and easier to ride out than in the first weeks.",
+      },
+    ],
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    relatedSlugs: [
+      "what-happens-after-1-month",
+      "what-happens-after-3-months",
+      "cough",
+      "weight-gain",
+    ],
+    medicalConditionName: "Nicotine withdrawal",
+  },
+  {
     slug: "what-happens-after-3-months",
-    title: "What happens to your body after 3 months without smoking",
+    title: "3 months without smoking: what happens to your body",
     shortTitle: "After 3 months",
     category: "milestone",
     targetKeyword: "3 months without smoking",
@@ -540,7 +891,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-03",
     dateModified: "2026-04-20",
     relatedSlugs: [
-      "what-happens-after-1-month",
+      "what-happens-after-2-months",
       "what-happens-after-6-months",
       "shortness-of-breath",
       "best-quit-smoking-apps",
@@ -549,7 +900,7 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-6-months",
-    title: "What happens to your body after 6 months without smoking",
+    title: "6 months without smoking: what happens to your body",
     shortTitle: "After 6 months",
     category: "milestone",
     targetKeyword: "6 months without smoking",
@@ -632,7 +983,7 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-1-year",
-    title: "What happens to your body after 1 year without smoking",
+    title: "1 year without smoking: what happens to your body",
     shortTitle: "After 1 year",
     category: "milestone",
     targetKeyword: "1 year without smoking",
@@ -714,7 +1065,7 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-5-years",
-    title: "What happens to your body after 5 years without smoking",
+    title: "5 years without smoking: what happens to your body",
     shortTitle: "After 5 years",
     category: "milestone",
     targetKeyword: "5 years without smoking",
@@ -796,7 +1147,7 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-10-years",
-    title: "What happens to your body after 10 years without smoking",
+    title: "10 years without smoking: what happens to your body",
     shortTitle: "After 10 years",
     category: "milestone",
     targetKeyword: "10 years without smoking",

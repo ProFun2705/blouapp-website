@@ -1,15 +1,31 @@
 # Blou
 
-> Blou is a quit smoking app for iPhone that shows proof your body is healing: a photo timeline, lung (breath) checks, SOS craving help, personal insights, and every milestone on one visual timeline. It is a subscription app with a free trial; the app's features require an active subscription. iPhone only (iOS 17+); there is no Android version.
+> Blou is a quit smoking app for iPhone that shows proof your body is healing: a photo timeline, lung (breath) checks, SOS craving help, personal insights, and every milestone on one visual timeline. It is a subscription app with a free trial; the app's features require an active subscription. It supports quitting cigarettes and nicotine pouches (such as Zyn). iPhone only (iOS 17+); there is no Android version.
 
 The website tryblou.com is free to use. It publishes plain-language quit-smoking guides, checked against public guidance from the NHS, CDC, US Surgeon General, and WHO. It does not replace medical advice.
 
 ## Start here
 - [How to quit smoking: step-by-step plan](https://tryblou.com/how-to-quit-smoking)
+- [Quit smoking timeline, 20 minutes to 20 years, with a quit-date tool](https://tryblou.com/quit-smoking-timeline)
 - [Nicotine withdrawal timeline, days 1–30](https://tryblou.com/nicotine-withdrawal-timeline)
 - [All guides: milestones and symptoms](https://tryblou.com/guides)
 
+## Nicotine pouches (Zyn)
+- [How to quit Zyn](https://tryblou.com/quit-zyn)
+- [Zyn withdrawal: symptoms and timeline](https://tryblou.com/zyn-withdrawal)
+- [Are Zyns bad for you?](https://tryblou.com/are-zyns-bad-for-you)
+
+## Lungs
+- [Can your lungs heal after smoking?](https://tryblou.com/can-lungs-heal-after-smoking)
+- [Smokers' lungs vs healthy lungs](https://tryblou.com/smokers-lungs-vs-healthy-lungs)
+
+## Free help by US state
+- [Quitlines, free nicotine patches, and cigarette tax for every state](https://tryblou.com/quit-smoking-help)
+
 ## Tools (free, run in the browser)
+- [Pack-year calculator with lung screening check](https://tryblou.com/tools/pack-year-calculator)
+- [Nicotine patch strength and step-down plan](https://tryblou.com/tools/nicotine-patch-plan)
+- [Nicotine pouch calculator](https://tryblou.com/tools/nicotine-pouch-calculator)
 - [Money saved calculator](https://tryblou.com/tools/money-saved)
 - [Lung recovery timeline](https://tryblou.com/tools/lung-recovery)
 - [Cost of smoking calculators by country](https://tryblou.com/calculators)

@@ -314,8 +314,8 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
         <ButtonLink href="/guides" variant="secondary">
           ← All guides
         </ButtonLink>
-        <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
-          Withdrawal timeline
+        <ButtonLink href="/quit-smoking-timeline" variant="secondary">
+          Quit smoking timeline
         </ButtonLink>
         <ButtonLink href="/tools" variant="secondary">
           Quit tools

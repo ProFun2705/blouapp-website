@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { EmbedCalculatorSnippet } from "@/components/blou/EmbedCalculatorSnippet";
+import { buildEmbedCode } from "@/lib/embed";
 import { FaqSection } from "@/components/blou/FaqSection";
 import { MoneySavedCalculator } from "@/components/blou/MoneySavedCalculator";
 import {
@@ -75,8 +76,11 @@ const howToSteps = [
   },
 ] as const;
 
-const embedCode = `<iframe src="${SITE_URL}/tools/money-saved?cpd=20&pp=10" width="100%" height="720" style="border:1px solid #99f6e4;border-radius:16px;" title="Blou quit smoking money saved calculator"></iframe>
-<p style="font-size:12px;color:#475569;margin-top:8px;">Calculator by <a href="${SITE_URL}" target="_blank" rel="noopener">Blou – Quit Smoking Tracker</a>.</p>`;
+const embedCode = buildEmbedCode({
+  url: `${SITE_URL}/tools/money-saved?cpd=20&pp=10`,
+  title: "Quit smoking money saved calculator",
+  height: 720,
+});
 
 export default function MoneySavedToolPage() {
   const howToJsonLd = buildHowToJsonLd({

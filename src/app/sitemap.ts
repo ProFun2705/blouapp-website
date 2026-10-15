@@ -3,6 +3,7 @@ import { SITE_URL } from "@/lib/site";
 import { isPublishedGuide, blouGuides } from "@/lib/blouGuides";
 import { countries } from "@/lib/countryData";
 import { staticRoutes } from "@/lib/staticRoutes";
+import { US_STATES } from "@/lib/stateData";
 
 /**
  * Notes:
@@ -44,5 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: countryLanguageMap },
   }));
 
-  return [...staticEntries, ...guideEntries, ...countryEntries];
+  const stateEntries: MetadataRoute.Sitemap = US_STATES.map((st) => ({
+    url: `${SITE_URL}/quit-smoking-help/${st.slug}`,
+    lastModified: st.quitline?.verifiedOn ?? "2026-10-15",
+  }));
+
+  return [...staticEntries, ...guideEntries, ...countryEntries, ...stateEntries];
 }

@@ -16,7 +16,9 @@ export type ArticleGroup =
   | "Methods and medication"
   | "Situations and health conditions"
   | "Slips and relapse"
-  | "Quit apps compared";
+  | "Quit apps compared"
+  | "Nicotine pouches"
+  | "Free tools";
 
 export type StaticRoute = {
   /** URL path, beginning with "/". */
@@ -29,6 +31,7 @@ export type StaticRoute = {
 };
 
 const OCT_2026 = "2026-10-13";
+const OCT_15_2026 = "2026-10-15";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -49,6 +52,9 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/quitting-smoking-after-40", lastModified: OCT_2026, label: "Quitting smoking after 40", group: "Start here" },
   { path: "/quitting-smoking-after-50", lastModified: OCT_2026, label: "Quitting smoking in your 50s", group: "Start here" },
 
+  { path: "/quit-smoking-timeline", lastModified: OCT_15_2026, label: "Quit smoking timeline: hour by hour, year by year", group: "Withdrawal and recovery" },
+  { path: "/can-lungs-heal-after-smoking", lastModified: OCT_15_2026, label: "Can your lungs heal after smoking?", group: "Withdrawal and recovery" },
+  { path: "/smokers-lungs-vs-healthy-lungs", lastModified: OCT_15_2026, label: "Smokers' lungs vs healthy lungs", group: "Withdrawal and recovery" },
   { path: "/nicotine-withdrawal-timeline", lastModified: OCT_2026, label: "Nicotine withdrawal timeline, days 1–30", group: "Withdrawal and recovery" },
   { path: "/nicotine-withdrawal-symptoms", lastModified: OCT_2026, label: "Nicotine withdrawal symptoms", group: "Withdrawal and recovery" },
   { path: "/health-benefits-of-quitting-smoking", lastModified: OCT_2026, label: "Health benefits of quitting smoking", group: "Withdrawal and recovery" },
@@ -63,6 +69,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
   { path: "/quit-smoking-with-varenicline", lastModified: OCT_2026, label: "Quitting with varenicline (Chantix / Champix)", group: "Methods and medication" },
   { path: "/quit-smoking-with-bupropion", lastModified: OCT_2026, label: "Quitting with bupropion (Zyban)", group: "Methods and medication" },
+  { path: "/nicotine-patch-side-effects", lastModified: OCT_15_2026, label: "Nicotine patch side effects", group: "Methods and medication" },
   { path: "/nrt-and-quit-smoking-app", lastModified: OCT_2026, label: "Using NRT with a quit app", group: "Methods and medication" },
 
   { path: "/quit-smoking-with-anxiety", lastModified: OCT_2026, label: "Quitting smoking with anxiety", group: "Situations and health conditions" },
@@ -80,6 +87,8 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/social-smoking", lastModified: OCT_2026, label: "Social smoking", group: "Situations and health conditions" },
   { path: "/how-to-help-someone-quit-smoking", lastModified: OCT_2026, label: "Helping someone quit", group: "Situations and health conditions" },
   { path: "/quit-vaping", lastModified: OCT_2026, label: "How to quit vaping", group: "Situations and health conditions" },
+  { path: "/vape-withdrawal-symptoms", lastModified: OCT_15_2026, label: "Vape withdrawal symptoms", group: "Situations and health conditions" },
+  { path: "/quit-vaping-timeline", lastModified: OCT_15_2026, label: "Quit vaping timeline", group: "Situations and health conditions" },
   { path: "/vaping-and-smoking-together", lastModified: OCT_2026, label: "Vaping and smoking together", group: "Situations and health conditions" },
 
   { path: "/i-smoked-one-cigarette", lastModified: OCT_2026, label: "I smoked one cigarette", group: "Slips and relapse" },
@@ -95,6 +104,16 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/blou-vs-quitstart", lastModified: OCT_2026, label: "Blou vs quitSTART", group: "Quit apps compared" },
   { path: "/blou-vs-flamy", lastModified: OCT_2026, label: "Blou vs Flamy", group: "Quit apps compared" },
   { path: "/blou-vs-quit-genius", lastModified: OCT_2026, label: "Blou vs Quit Genius", group: "Quit apps compared" },
+
+  { path: "/quit-zyn", lastModified: OCT_15_2026, label: "How to quit Zyn and nicotine pouches", group: "Nicotine pouches" },
+  { path: "/zyn-withdrawal", lastModified: OCT_15_2026, label: "Zyn withdrawal: symptoms and timeline", group: "Nicotine pouches" },
+  { path: "/are-zyns-bad-for-you", lastModified: OCT_15_2026, label: "Are Zyns bad for you?", group: "Nicotine pouches" },
+  { path: "/zyn-vs-cigarettes", lastModified: OCT_15_2026, label: "Zyn vs cigarettes", group: "Nicotine pouches" },
+
+  { path: "/tools/pack-year-calculator", lastModified: OCT_15_2026, label: "Pack-year calculator", group: "Free tools" },
+  { path: "/tools/nicotine-patch-plan", lastModified: OCT_15_2026, label: "Nicotine patch strength and step-down plan", group: "Free tools" },
+  { path: "/tools/nicotine-pouch-calculator", lastModified: OCT_15_2026, label: "Nicotine pouch calculator", group: "Free tools" },
+  { path: "/quit-smoking-help", lastModified: OCT_15_2026, label: "Free quit-smoking help by US state", group: "Free tools" },
 ];
 
 export const ARTICLE_GROUPS: ArticleGroup[] = [
@@ -104,6 +123,8 @@ export const ARTICLE_GROUPS: ArticleGroup[] = [
   "Situations and health conditions",
   "Slips and relapse",
   "Quit apps compared",
+  "Nicotine pouches",
+  "Free tools",
 ];
 
 export const articleRoutes = staticRoutes.filter(

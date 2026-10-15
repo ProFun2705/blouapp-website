@@ -197,6 +197,21 @@ export default function HomePage() {
       </Card>
 
       <section id="tools" className="grid scroll-mt-24 gap-4 md:grid-cols-3">
+        <Link href="/quit-smoking-timeline" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">Free tool</p>
+          <p className="mt-2 text-base font-semibold text-ink">Quit smoking timeline</p>
+          <p className="mt-1 text-sm text-ink-muted">Enter your quit date and see what your body is doing right now.</p>
+        </Link>
+        <Link href="/tools/pack-year-calculator" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">Free tool</p>
+          <p className="mt-2 text-base font-semibold text-ink">Pack-year calculator</p>
+          <p className="mt-1 text-sm text-ink-muted">Your smoking history in pack-years, plus a lung screening check.</p>
+        </Link>
+        <Link href="/quit-zyn" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">Nicotine pouches</p>
+          <p className="mt-2 text-base font-semibold text-ink">Quitting Zyn and pouches</p>
+          <p className="mt-1 text-sm text-ink-muted">Taper plans, withdrawal timeline, and a pouch calculator.</p>
+        </Link>
         <Link href="/tools/money-saved" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
           <p className="text-xs font-semibold uppercase tracking-wide text-accent">Free tool</p>
           <p className="mt-2 text-base font-semibold text-ink">Money saved calculator</p>
@@ -207,10 +222,10 @@ export default function HomePage() {
           <p className="mt-2 text-base font-semibold text-ink">Lung recovery timeline</p>
           <p className="mt-1 text-sm text-ink-muted">What typically improves, and when, with sources.</p>
         </Link>
-        <Link href="/calculators" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
-          <p className="text-xs font-semibold uppercase tracking-wide text-accent">By country</p>
-          <p className="mt-2 text-base font-semibold text-ink">Cost of smoking calculators</p>
-          <p className="mt-1 text-sm text-ink-muted">Local pack prices for the US, UK, Australia, Vietnam, and Indonesia.</p>
+        <Link href="/quit-smoking-help" className="rounded-card border border-line bg-surface p-5 shadow-card transition-colors hover:border-accent/40">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">By US state</p>
+          <p className="mt-2 text-base font-semibold text-ink">Free quitlines and patches</p>
+          <p className="mt-1 text-sm text-ink-muted">Your state&apos;s free quit help, cigarette tax, and costs.</p>
         </Link>
       </section>
 

@@ -22,6 +22,41 @@ export const metadata: Metadata = buildMetadata({
 
 const tools = [
   {
+    href: "/quit-smoking-timeline",
+    badge: "Timeline",
+    title: "Quit smoking timeline",
+    description:
+      "Enter the date of your last cigarette to see the milestone you've reached and what comes next, from 20 minutes to 20 years.",
+  },
+  {
+    href: "/tools/pack-year-calculator",
+    badge: "Calculator",
+    title: "Pack-year calculator",
+    description:
+      "Work out your smoking history in pack-years, even if your habit changed, and check lung cancer screening criteria.",
+  },
+  {
+    href: "/tools/nicotine-patch-plan",
+    badge: "Planner",
+    title: "Nicotine patch plan",
+    description:
+      "Which patch strength to start with and a dated step-down schedule from 21 mg to 7 mg.",
+  },
+  {
+    href: "/tools/nicotine-pouch-calculator",
+    badge: "Calculator",
+    title: "Nicotine pouch calculator",
+    description:
+      "How much nicotine your Zyn or other pouches contain, what they cost a year, and a taper plan.",
+  },
+  {
+    href: "/quit-smoking-help",
+    badge: "By state",
+    title: "Free quit help by US state",
+    description:
+      "Every state's free quitline, free nicotine patch offer, and cigarette tax in one table.",
+  },
+  {
     href: "/tools/money-saved",
     badge: "Calculator",
     title: "Money saved calculator",

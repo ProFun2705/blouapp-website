@@ -87,6 +87,40 @@ for (const p of indexable) {
   }
 }
 
+// Programmatic pages must carry their own data and enough unique text, so a
+// template change can never ship 51 near-empty pages.
+const PROGRAMMATIC = [
+  { re: /^\/quit-smoking-help\/[a-z-]+$/, marker: 'data-unique-data="state-quitline"', minWords: 300 },
+  { re: /^\/guides\/what-happens-after-/, marker: null, minWords: 300 },
+];
+function mainWords(html) {
+  const main = html.match(/<main[\s\S]*?<\/main>/)?.[0] ?? html;
+  const text = main
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<style[\s\S]*?<\/style>/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z#0-9]+;/gi, " ");
+  return text.split(/\s+/).filter((w) => /[a-z]/i.test(w)).length;
+}
+for (const p of indexable) {
+  const rule = PROGRAMMATIC.find((r) => r.re.test(p.route));
+  if (!rule) continue;
+  if (rule.marker && !p.html.includes(rule.marker)) errors.push(`${p.route}: missing unique data block (${rule.marker})`);
+  const words = mainWords(p.html);
+  if (words < rule.minWords) errors.push(`${p.route}: only ${words} words of main content (min ${rule.minWords})`);
+}
+
+// Every indexable page must be listed in the sitemap.
+const sitemapFile = join(APP_DIR, "sitemap.xml.body");
+if (existsSync(sitemapFile)) {
+  const inSitemap = new Set(
+    [...readFileSync(sitemapFile, "utf8").matchAll(/<loc>https?:\/\/[^/<]+([^<]*)<\/loc>/g)].map((m) => m[1] || "/"),
+  );
+  for (const p of indexable) {
+    if (!inSitemap.has(p.route)) errors.push(`${p.route}: indexable but missing from sitemap.xml`);
+  }
+}
+
 for (const p of indexable) {
   if (p.route === "/") continue;
   const linked = pages.some((other) => other.route !== p.route && other.links.has(p.route));

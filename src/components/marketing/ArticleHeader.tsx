@@ -15,6 +15,8 @@ type ArticleHeaderProps = {
   campaign: string;
   /** Optional extra actions (secondary links) shown under the byline. */
   actions?: ReactNode;
+  /** Set false on pages Blou does not cover (e.g. vaping) to drop the app intro. */
+  showAppIntro?: boolean;
 };
 
 /**
@@ -29,6 +31,7 @@ export function ArticleHeader({
   dateModified,
   campaign,
   actions,
+  showAppIntro = true,
 }: ArticleHeaderProps) {
   return (
     <header className="rounded-panel border border-line bg-surface p-6 shadow-card md:p-8">
@@ -39,6 +42,7 @@ export function ArticleHeader({
         <Byline datePublished={datePublished} dateModified={dateModified} />
       </div>
       {actions ? <div className="mt-5 flex flex-wrap items-center gap-3">{actions}</div> : null}
+      {showAppIntro ? (
       <a
         href={appStoreHref({ campaign, placement: "intro" })}
         target="_blank"
@@ -60,6 +64,7 @@ export function ArticleHeader({
           →
         </span>
       </a>
+      ) : null}
     </header>
   );
 }
