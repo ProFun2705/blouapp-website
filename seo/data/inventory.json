@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:09:57.126Z",
+  "generatedAt": "2026-10-27T15:28:55.921Z",
   "gscWindow": {
     "start": "2026-09-27",
     "end": "2026-10-24"
@@ -479,13 +479,14 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1655,
+      "words": 1799,
       "faqCount": 7,
-      "appStoreCtas": 0,
+      "appStoreCtas": 2,
       "internalLinksOut": [
         "/",
         "/quit-vaping-timeline",
         "/nicotine-withdrawal-timeline",
+        "/go/app",
         "/vaping-and-smoking-together",
         "/quit-vaping"
       ],
@@ -573,9 +574,7 @@
       },
       "amplitude": null,
       "lastChecked": "2026-10-27",
-      "issues": [
-        "no-app-cta"
-      ]
+      "issues": []
     },
     {
       "url": "/quit-smoking-timeline",
@@ -11863,12 +11862,13 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1618,
+      "words": 1769,
       "faqCount": 6,
-      "appStoreCtas": 0,
+      "appStoreCtas": 2,
       "internalLinksOut": [
         "/",
         "/vape-withdrawal-symptoms",
+        "/go/app",
         "/smokers-lungs-vs-healthy-lungs",
         "/quit-vaping",
         "/vaping-and-smoking-together"
@@ -11885,9 +11885,7 @@
       "gsc": null,
       "amplitude": null,
       "lastChecked": "2026-10-27",
-      "issues": [
-        "no-app-cta"
-      ]
+      "issues": []
     },
     {
       "url": "/quitting-smoking-after-40",

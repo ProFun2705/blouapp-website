@@ -1,0 +1,338 @@
+[
+ {
+  "path": "/guides/anger",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-04T16:13:48Z",
+  "canonical": "https://tryblou.com/guides/anger"
+ },
+ {
+  "path": "/guides/bad-breath",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/bloating-and-gas",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/brain-fog",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/caffeine-sensitivity",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-09-11T00:54:31Z",
+  "canonical": "https://tryblou.com/guides/caffeine-sensitivity"
+ },
+ {
+  "path": "/guides/chest-tightness",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/concentration",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-27T09:47:05Z",
+  "canonical": "https://tryblou.com/guides/concentration"
+ },
+ {
+  "path": "/guides/constipation",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/cough",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/cravings",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/crying",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-03T11:50:29Z",
+  "canonical": "https://tryblou.com/guides/crying"
+ },
+ {
+  "path": "/guides/diarrhea",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-18T16:42:28Z",
+  "canonical": "https://tryblou.com/guides/diarrhea"
+ },
+ {
+  "path": "/guides/dizziness",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-10T20:24:07Z",
+  "canonical": "https://tryblou.com/guides/dizziness"
+ },
+ {
+  "path": "/guides/dreams-and-sleep",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-19T04:20:15Z",
+  "canonical": "https://tryblou.com/guides/dreams-and-sleep"
+ },
+ {
+  "path": "/guides/dry-mouth",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/fatigue",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/flu-like-symptoms",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-12T04:58:06Z",
+  "canonical": "https://tryblou.com/guides/flu-like-symptoms"
+ },
+ {
+  "path": "/guides/hair-loss",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-12T06:37:13Z",
+  "canonical": "https://tryblou.com/guides/hair-loss"
+ },
+ {
+  "path": "/guides/headaches",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/heart-palpitations",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-16T07:21:01Z",
+  "canonical": "https://tryblou.com/guides/heart-palpitations"
+ },
+ {
+  "path": "/guides/heartburn-and-reflux",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-07-18T02:05:33Z",
+  "canonical": "https://tryblou.com/guides/heartburn-and-reflux"
+ },
+ {
+  "path": "/guides/increased-appetite",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-19T01:42:43Z",
+  "canonical": "https://tryblou.com/guides/increased-appetite"
+ },
+ {
+  "path": "/guides/insomnia",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/irritability",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/joint-pain",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-19T03:12:27Z",
+  "canonical": "https://tryblou.com/guides/joint-pain"
+ },
+ {
+  "path": "/guides/libido",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-05-20T15:07:29Z",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/mood-swings",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/mouth-ulcers",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/muscle-aches",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-16T07:54:37Z",
+  "canonical": "https://tryblou.com/guides/muscle-aches"
+ },
+ {
+  "path": "/guides/nausea",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-18T17:14:57Z",
+  "canonical": "https://tryblou.com/guides/nausea"
+ },
+ {
+  "path": "/guides/night-sweats",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-19T07:21:50Z",
+  "canonical": "https://tryblou.com/guides/night-sweats"
+ },
+ {
+  "path": "/guides/restlessness",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-20T17:42:26Z",
+  "canonical": "https://tryblou.com/guides/restlessness"
+ },
+ {
+  "path": "/guides/shortness-of-breath",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/sinus-congestion",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/skin-changes",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-05-20T15:33:45Z",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/skin-rash",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/sneezing",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/sore-gums",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-10-05T10:21:14Z",
+  "canonical": "https://tryblou.com/guides/sore-gums"
+ },
+ {
+  "path": "/guides/sore-throat",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-09-11T14:53:38Z",
+  "canonical": "https://tryblou.com/guides/sore-throat"
+ },
+ {
+  "path": "/guides/sugar-cravings",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/taste-and-smell",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-17T06:58:25Z",
+  "canonical": "https://tryblou.com/guides/taste-and-smell"
+ },
+ {
+  "path": "/guides/tingling-hands-and-feet",
+  "coverage": "Crawled - currently not indexed",
+  "lastCrawl": "2026-05-22T23:57:16Z",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-1-day",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-1-month",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-1-week",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-1-year",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-10-years",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-2-days",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-10-15T20:21:16Z",
+  "canonical": "https://tryblou.com/guides/what-happens-after-2-days"
+ },
+ {
+  "path": "/guides/what-happens-after-2-months",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-2-weeks",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-3-days",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-09-19T20:33:46Z",
+  "canonical": "https://tryblou.com/guides/what-happens-after-3-days"
+ },
+ {
+  "path": "/guides/what-happens-after-3-months",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-3-weeks",
+  "coverage": "Submitted and indexed",
+  "lastCrawl": "2026-10-15T20:21:15Z",
+  "canonical": "https://tryblou.com/guides/what-happens-after-3-weeks"
+ },
+ {
+  "path": "/guides/what-happens-after-5-days",
+  "coverage": "URL is unknown to Google",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-5-years",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ },
+ {
+  "path": "/guides/what-happens-after-6-months",
+  "coverage": "Discovered - currently not indexed",
+  "lastCrawl": "",
+  "canonical": ""
+ }
+]

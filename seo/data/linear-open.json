@@ -1,6 +1,76 @@
 {
-  "fetchedAt": "2026-10-27T13:08:26.004Z",
+  "fetchedAt": "2026-10-27T15:34:50.713Z",
   "issues": [
+    {
+      "id": "BLO-27",
+      "title": "Push /guides/what-happens-after-3-days to page 1 (queries at positions 4-17)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-27/push-guideswhat-happens-after-3-days-to-page-1-queries-at-positions-4",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "page-2-push",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/what-happens-after-3-days",
+      "cluster": "3 days without smoking",
+      "updatedAt": "2026-10-27T15:34:02.413Z"
+    },
+    {
+      "id": "BLO-26",
+      "title": "Refresh /guides/libido (dropped out of the index, 149 to 3 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-26/refresh-guideslibido-dropped-out-of-the-index-149-to-3-impressions",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/libido",
+      "cluster": "libido after quitting smoking",
+      "updatedAt": "2026-10-27T15:33:59.120Z"
+    },
+    {
+      "id": "BLO-25",
+      "title": "Refresh /guides/tingling-hands-and-feet (dropped out of the index, 183 to 19 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-25/refresh-guidestingling-hands-and-feet-dropped-out-of-the-index-183-to",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/tingling-hands-and-feet",
+      "cluster": "tingling after quitting smoking",
+      "updatedAt": "2026-10-27T15:33:56.692Z"
+    },
+    {
+      "id": "BLO-24",
+      "title": "Get /guides pages indexed (41 of 56 not in Google's index)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-24/get-guides-pages-indexed-41-of-56-not-in-googles-index",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/guides",
+      "cluster": "guides indexing coverage",
+      "updatedAt": "2026-10-27T15:33:54.226Z"
+    },
+    {
+      "id": "BLO-22",
+      "title": "Submit new and updated pages to Bing (manual)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-22/submit-new-and-updated-pages-to-bing-manual",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "technical",
+        "source:human"
+      ],
+      "pageUrl": "/",
+      "cluster": "setup:bing",
+      "updatedAt": "2026-10-27T14:28:38.799Z"
+    },
     {
       "id": "BLO-21",
       "title": "Push /tools/money-saved to page 1 (position 23, rising from 43)",
@@ -14,7 +84,7 @@
       ],
       "pageUrl": "/tools/money-saved",
       "cluster": "quit smoking money saved calculator",
-      "updatedAt": "2026-10-27T13:08:22.507Z"
+      "updatedAt": "2026-10-27T15:34:37.126Z"
     },
     {
       "id": "BLO-20",
@@ -101,7 +171,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-weeks",
       "cluster": "3 weeks smoke free",
-      "updatedAt": "2026-10-27T13:08:06.167Z"
+      "updatedAt": "2026-10-27T15:34:30.252Z"
     },
     {
       "id": "BLO-14",
@@ -115,7 +185,7 @@
       ],
       "pageUrl": "/guides/nausea",
       "cluster": "symptom-guides-snippets",
-      "updatedAt": "2026-10-27T13:08:03.956Z"
+      "updatedAt": "2026-10-27T15:34:24.436Z"
     },
     {
       "id": "BLO-13",
@@ -129,7 +199,7 @@
       ],
       "pageUrl": "/guides/joint-pain",
       "cluster": "joint pain after quitting smoking",
-      "updatedAt": "2026-10-27T13:08:00.709Z"
+      "updatedAt": "2026-10-27T15:34:19.148Z"
     },
     {
       "id": "BLO-12",
@@ -143,7 +213,7 @@
       ],
       "pageUrl": "/guides/dreams-and-sleep",
       "cluster": "quit smoking vivid dreams / insomnia",
-      "updatedAt": "2026-10-27T13:07:58.138Z"
+      "updatedAt": "2026-10-27T15:34:13.271Z"
     },
     {
       "id": "BLO-11",
@@ -157,7 +227,7 @@
       ],
       "pageUrl": "/guides/diarrhea",
       "cluster": "diarrhea after quitting smoking",
-      "updatedAt": "2026-10-27T13:07:54.972Z"
+      "updatedAt": "2026-10-27T15:34:07.574Z"
     },
     {
       "id": "BLO-10",
@@ -175,35 +245,6 @@
       "updatedAt": "2026-10-27T13:07:52.601Z"
     },
     {
-      "id": "BLO-9",
-      "title": "Add App Store CTAs to pages that have none",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-9/add-app-store-ctas-to-pages-that-have-none",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "technical",
-        "conversion",
-        "source:audit"
-      ],
-      "pageUrl": "/vape-withdrawal-symptoms",
-      "cluster": "conversion:missing-cta",
-      "updatedAt": "2026-10-27T13:07:50.241Z"
-    },
-    {
-      "id": "BLO-8",
-      "title": "Schedule the SEO loop (research, writer, audit, conversions)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-8/schedule-the-seo-loop-research-writer-audit-conversions",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "technical",
-        "source:human"
-      ],
-      "pageUrl": "/",
-      "cluster": "setup:schedule",
-      "updatedAt": "2026-10-27T13:07:47.508Z"
-    },
-    {
       "id": "BLO-7",
       "title": "Decide on SERP and screenshot APIs (DataForSEO, ScreenshotOne)",
       "url": "https://linear.app/blou-site-seo/issue/BLO-7/decide-on-serp-and-screenshot-apis-dataforseo-screenshotone",
@@ -218,20 +259,6 @@
       "updatedAt": "2026-10-27T13:07:44.701Z"
     },
     {
-      "id": "BLO-6",
-      "title": "Add Google Ads Keyword Planner keys to .env.local",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-6/add-google-ads-keyword-planner-keys-to-envlocal",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "technical",
-        "source:human"
-      ],
-      "pageUrl": "/",
-      "cluster": "setup:keyword-planner",
-      "updatedAt": "2026-10-27T13:07:41.180Z"
-    },
-    {
       "id": "BLO-5",
       "title": "Connect Amplitude to the SEO loop",
       "url": "https://linear.app/blou-site-seo/issue/BLO-5/connect-amplitude-to-the-seo-loop",
@@ -244,7 +271,7 @@
       ],
       "pageUrl": "/",
       "cluster": "setup:amplitude",
-      "updatedAt": "2026-10-27T13:07:38.358Z"
+      "updatedAt": "2026-10-27T15:34:42.095Z"
     }
   ]
 }
