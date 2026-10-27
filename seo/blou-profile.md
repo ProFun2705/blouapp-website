@@ -14,6 +14,7 @@ Every SEO skill in `.claude/skills/seo-*` reads this file first. It is the "busi
 ## Product facts (approved claims)
 
 - iPhone only. iOS 17 or later.
+- Supports quitting vaping as well as cigarettes (confirmed by the owner, 2026-10-27). Pages about vaping can recommend Blou. Describe it only with the features listed below; don't invent vaping-specific features such as puff counting or device syncing.
 - **Pricing:** "Free trial, then a subscription. Cancel anytime in the App Store." Use `PRICING_SHORT`, `PRICING_CTA_NOTE`, `PRICING_FAQ` from `src/lib/site.ts`. Never write the app is free.
 - The website's guides, timelines and calculators are free to use. That is the only "free" claim allowed.
 - Features: photo timeline, lung (breath) checks, SOS craving help, visual milestone timeline. Nothing else unless it is in `APP_FEATURES`.
