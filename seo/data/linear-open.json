@@ -1,6 +1,118 @@
 {
-  "fetchedAt": "2026-10-27T15:34:50.713Z",
+  "fetchedAt": "2026-10-27T15:41:25.624Z",
   "issues": [
+    {
+      "id": "BLO-35",
+      "title": "New landing page: quit vaping app (/quit-vaping-app), confirm vaping support first",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-35/new-landing-page-quit-vaping-app-quit-vaping-app-confirm-vaping",
+      "state": "Backlog",
+      "priority": 4,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/quit-vaping-app",
+      "cluster": "quit vaping app",
+      "updatedAt": "2026-10-27T15:41:22.085Z"
+    },
+    {
+      "id": "BLO-34",
+      "title": "New page: nicotine replacement therapy for vaping (/nrt-for-vaping)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-34/new-page-nicotine-replacement-therapy-for-vaping-nrt-for-vaping",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/nrt-for-vaping",
+      "cluster": "nicotine replacement therapy for vaping",
+      "updatedAt": "2026-10-27T15:41:19.864Z"
+    },
+    {
+      "id": "BLO-33",
+      "title": "New page: what happens if you swallow a Zyn (/swallowed-a-zyn)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-33/new-page-what-happens-if-you-swallow-a-zyn-swallowed-a-zyn",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/swallowed-a-zyn",
+      "cluster": "swallowed a zyn pouch",
+      "updatedAt": "2026-10-27T15:41:16.561Z"
+    },
+    {
+      "id": "BLO-32",
+      "title": "Refresh /quit-smoking-help for \"free nicotine patches\"",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-32/refresh-quit-smoking-help-for-free-nicotine-patches",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-help",
+      "cluster": "free nicotine patches",
+      "updatedAt": "2026-10-27T15:41:13.756Z"
+    },
+    {
+      "id": "BLO-31",
+      "title": "Refresh /quit-smoking-with-varenicline for \"Chantix to quit smoking\"",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-31/refresh-quit-smoking-with-varenicline-for-chantix-to-quit-smoking",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-with-varenicline",
+      "cluster": "chantix varenicline to quit smoking",
+      "updatedAt": "2026-10-27T15:41:10.445Z"
+    },
+    {
+      "id": "BLO-30",
+      "title": "Refresh /quit-smoking-with-nicotine-gum (position 37, demand up 1.9x)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-30/refresh-quit-smoking-with-nicotine-gum-position-37-demand-up-19x",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-with-nicotine-gum",
+      "cluster": "nicotine gum to quit smoking",
+      "updatedAt": "2026-10-27T15:41:07.757Z"
+    },
+    {
+      "id": "BLO-29",
+      "title": "Refresh /quit-smoking-with-bupropion for \"Wellbutrin for quitting smoking\"",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-29/refresh-quit-smoking-with-bupropion-for-wellbutrin-for-quitting",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-with-bupropion",
+      "cluster": "wellbutrin bupropion to quit smoking",
+      "updatedAt": "2026-10-27T15:41:05.384Z"
+    },
+    {
+      "id": "BLO-28",
+      "title": "Refresh /quit-smoking-with-nicotine-patch for \"using nicotine patches\" and \"where to put a nicotine patch\"",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-28/refresh-quit-smoking-with-nicotine-patch-for-using-nicotine-patches",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-with-nicotine-patch",
+      "cluster": "nicotine patch to quit smoking",
+      "updatedAt": "2026-10-27T15:41:02.467Z"
+    },
     {
       "id": "BLO-27",
       "title": "Push /guides/what-happens-after-3-days to page 1 (queries at positions 4-17)",
