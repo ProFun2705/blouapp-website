@@ -6,7 +6,7 @@ An agent-run SEO system for tryblou.com: it finds keywords, writes articles, QA-
           weekly (Mon)                 daily                         after writer          after PASS
   ┌────────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────┐
   │ seo-opportunity-research│──▶│ seo-content-brief     │──▶│ seo-content-qa        │──▶│ seo-publish       │
-  │  GSC + Keyword Planner  │   │ seo-blog-writer       │◀──│  FAIL → back to writer│   │  PR → Vercel      │
+  │  GSC + Keyword Planner  │   │ seo-blog-writer       │◀──│  FAIL → back to writer│   │  push main→Vercel │
   │  + Amplitude + inventory│   │  (picks next Todo)    │   └──────────────────────┘   │  IndexNow, Done   │
   └────────────────────────┘   └──────────────────────┘                               └──────────────────┘
           ▲                                                                                    │
@@ -76,25 +76,25 @@ seo-content-brief
 How we know it worked.
 ```
 
-Status flow: **Backlog** (idea, not yet worth doing) → **Todo** (ready for a brief/writer) → **In Progress** (writer on it) → **In Review** (QA, or PR waiting for merge) → **Done** (live) / **Canceled**.
+Status flow: **Backlog** (idea, not yet worth doing) → **Todo** (ready for a brief/writer) → **In Progress** (writer on it) → **In Review** (QA, or waiting for the deploy) → **Done** (live) / **Canceled**.
 
 ## Loop schedule
 
 Create these as scheduled tasks (Claude Code desktop: Scheduled tasks, or `/schedule` for cloud routines). Each prompt is self-contained. Run them in this repo's folder.
 
 **1. Monday 07:00 · Research**
-> Use the seo-opportunity-research skill for tryblou.com. Refresh the data (seo:gsc, seo:conversions, build + seo:inventory, seo:linear open), find the best opportunities, and create up to 8 Linear issues with the template in seo/README.md. Write the report to seo/reports/research-<date>.md, commit it on a branch `seo/reports-<date>`, and open a PR.
+> Use the seo-opportunity-research skill for tryblou.com. Refresh the data (seo:gsc, seo:conversions, build + seo:inventory, seo:linear open), find the best opportunities, and create up to 8 Linear issues with the template in seo/README.md. Write the report to seo/reports/research-<date>.md, commit it and push to main (as ProFun2705, see seo-publish).
 
 **2. Weekdays 09:00 · Write one article**
-> Run `npm run seo:linear -- next`. If it returns null, stop. Otherwise take that issue through seo-content-brief (if it has no brief), seo-blog-writer, and seo-content-qa, looping writer↔QA until PASS (max 3 rounds). On PASS, use seo-publish with SEO_PUBLISH_MODE=pr. Do one issue per run.
+> Run `npm run seo:linear -- next`. If it returns null, stop. Otherwise take that issue through seo-content-brief (if it has no brief), seo-blog-writer, and seo-content-qa, looping writer↔QA until PASS (max 3 rounds). On PASS, use seo-publish to push it to main. Do one issue per run.
 
 **3. Thursday 07:00 · Audit**
-> Use the seo-performance-audit skill for tryblou.com with 28-day windows. Comment on already-tracked issues instead of duplicating them, create up to 6 new improvement issues, write seo/reports/audit-<date>.md, commit on a branch and open a PR.
+> Use the seo-performance-audit skill for tryblou.com with 28-day windows. Comment on already-tracked issues instead of duplicating them, create up to 6 new improvement issues, write seo/reports/audit-<date>.md, commit it and push to main.
 
 **4. First Monday of the month · Conversions review**
-> Run `npm run seo:conversions -- --days 90`. List the 10 pages with the highest App Store click rate and the 10 with the most views but no clicks. Add what you learn to the "Topics to prioritize" section of seo/blou-profile.md and open a PR so the owner can approve the change.
+> Run `npm run seo:conversions -- --days 90`. List the 10 pages with the highest App Store click rate and the 10 with the most views but no clicks. Add what you learn to the "Topics to prioritize" section of seo/blou-profile.md, commit it and push to main, and list the change in the Linear project as a status update so the owner sees it.
 
-Start with `SEO_PUBLISH_MODE=pr` (every article is a PR you merge). After a few weeks of good PRs, allow `auto` for refresh/snippet/internal-link issues in `.claude/skills/seo-publish/SKILL.md`.
+QA-passed articles go straight to `main` (no PRs). Every push is pushed as the `ProFun2705` GitHub account; the steps are in `.claude/skills/seo-publish/SKILL.md`. Read new pages on the live site and use step 8 (the profile) to correct the agent.
 
 ## First run
 
@@ -103,4 +103,4 @@ Start with `SEO_PUBLISH_MODE=pr` (every article is a PR you merge). After a few 
 3. `npm run seo:linear -- setup` creates the SEO team (if missing), statuses, project and labels.
 4. `npm run seo:linear -- create seo/backlog/initial.json` fills the board.
 5. Add the Google Ads keys to `.env.local`, then `npm run seo:keywords -- "quit smoking app"`.
-6. Schedule the four tasks above.
+6. Schedule the four tasks above. The machine running them needs both `George-Kreatli` and `ProFun2705` logged in to `gh`.

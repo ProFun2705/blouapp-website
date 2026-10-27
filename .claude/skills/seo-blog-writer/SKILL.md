@@ -1,6 +1,6 @@
 ---
 name: seo-blog-writer
-description: 'Write or refresh a Blou article as a Next.js page from an approved brief, on a branch, without publishing. Use when picking up the next Todo SEO issue.'
+description: 'Write or refresh a Blou article as a Next.js page from an approved brief, on a local branch, without publishing. Use when picking up the next Todo SEO issue.'
 ---
 
 <!-- Generic workflow adapted from RomeoSEO free SEO skills v2 (https://romeoseo.com/skills, file 04-seo-blog-writer.skill.md). The Blou setup section is specific to this repo. -->
@@ -12,7 +12,7 @@ Runs when there is a **Todo** issue with a brief. Pick it with `npm run seo:line
 Blou specifics:
 
 - Read `seo/blou-profile.md` and the brief (`seo/briefs/<slug>.md` or the issue body) before writing a word.
-- Work on a branch: `git switch -c seo/<KEY>-<slug>`.
+- Work on a local branch: `git switch -c seo/<KEY>-<slug>`. Keep it local; `seo-publish` lands it on `main` after QA passes, so a failing draft never reaches the live site.
 - Output format is code, not Markdown:
   - New article: `src/app/<slug>/page.tsx`, following `src/app/zyn-withdrawal/page.tsx` (constants `PUBLISHED`, `MODIFIED`, `CAMPAIGN`, `PATH`, `TITLE`, `DESCRIPTION`, a `SOURCES` array, `faqItems`, then the JSX). Add the route to `src/lib/staticRoutes.ts` with a label and group.
   - New guide: a new object in `blouGuides` in `src/lib/blouGuides.ts`.
@@ -21,7 +21,7 @@ Blou specifics:
 - No em dashes. 7th-grade reading level. Answer first. Every number has a source in `SOURCES`.
 - Pricing text only from `PRICING_SHORT` / `PRICING_CTA_NOTE` / `PRICING_FAQ`.
 - Images: reuse `public/` assets or build an SVG/React illustration. For comparisons, capture App Store screenshots (screenshot API if connected, otherwise the built-in browser) into `public/compare/`. If an image cannot be made, list it in the QA handoff; do not leave a broken `src`.
-- When done: `npm run build` must pass (it runs `scripts/seo-check.mjs`), then hand off to `seo-content-qa`. **Do not merge or push to main.** Move the issue to In Review.
+- When done: `npm run build` must pass (it runs `scripts/seo-check.mjs`), then hand off to `seo-content-qa`. **Do not push or merge it yourself;** `seo-publish` does that after a PASS. Move the issue to In Review.
 
 ---
 
