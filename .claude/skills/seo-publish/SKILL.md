@@ -1,6 +1,6 @@
 ---
 name: seo-publish
-description: 'Publish a QA-passed Blou article: push it straight to main as ProFun2705 (no PR), confirm it is live, ping IndexNow, and close the Linear issue. Use only after a PASS verdict.'
+description: 'Publish a QA-passed Blou article: push it straight to main as ProFun2705 (no PR), confirm it is live, and close the Linear issue. Use only after a PASS verdict.'
 ---
 
 <!-- Generic workflow adapted from RomeoSEO free SEO skills v2 (https://romeoseo.com/skills, file 07-cms-publishing-adapter.skill.md). The Blou setup section is specific to this repo. -->
@@ -30,8 +30,8 @@ Steps:
 
 After the deploy is live (wait until `https://tryblou.com/<slug>` returns 200 and shows the new H1; Vercel usually takes 1-3 minutes):
 
-1. Ping search engines: `curl -X POST "https://tryblou.com/api/indexnow" -H "x-indexnow-secret: $INDEXNOW_SECRET" -H "Content-Type: application/json" -d '{"urls":["https://tryblou.com/<slug>"]}'` (see `src/app/api/indexnow`).
-2. Requesting indexing in GSC is manual (no API); note it in the Linear comment for new pages.
+1. Don't ping IndexNow. The owner submits new URLs to Bing by hand (Linear BLO-22) and requests indexing in GSC by hand, so put the live URL in the Done comment where they can copy it.
+2. For new pages, add "Needs manual Bing + GSC submission" to that comment.
 3. Set `linearIssue` and `suppressUntil` (+21 days) on the page's record in `seo/data/inventory.json`, commit, and push to `main` the same way.
 4. Move the Linear issue to **Done** with a comment: live URL, commit SHA, publish date.
 

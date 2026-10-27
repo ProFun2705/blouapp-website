@@ -7,7 +7,7 @@ An agent-run SEO system for tryblou.com: it finds keywords, writes articles, QA-
   ┌────────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────┐
   │ seo-opportunity-research│──▶│ seo-content-brief     │──▶│ seo-content-qa        │──▶│ seo-publish       │
   │  GSC + Keyword Planner  │   │ seo-blog-writer       │◀──│  FAIL → back to writer│   │  push main→Vercel │
-  │  + Amplitude + inventory│   │  (picks next Todo)    │   └──────────────────────┘   │  IndexNow, Done   │
+  │  + Amplitude + inventory│   │  (picks next Todo)    │   └──────────────────────┘   │  Linear Done      │
   └────────────────────────┘   └──────────────────────┘                               └──────────────────┘
           ▲                                                                                    │
           │                 weekly (Thu) seo-performance-audit → refresh/CTR/page-2 issues     │
