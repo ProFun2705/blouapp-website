@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { ArticleHeader } from "@/components/marketing/ArticleHeader";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -289,6 +290,11 @@ export default function QuitVapingTimelinePage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        Habit cravings can show up weeks after the physical part is over. Blou&apos;s SOS craving
+        help is ready when they do, and each milestone shows up on one visual timeline.
+      </InlineAppCta>
+
       <section
         id="benefits"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -409,6 +415,12 @@ export default function QuitVapingTimelinePage() {
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta
+        campaign={CAMPAIGN}
+        title="Watch your quit vaping timeline fill in"
+        description="Blou tracks every vape-free day on one visual timeline. SOS help is there for cravings, and simple lung checks let you see your breathing change."
+      />
 
       <section
         id="sources"

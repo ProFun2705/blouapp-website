@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { ArticleHeader } from "@/components/marketing/ArticleHeader";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
@@ -140,12 +141,12 @@ const faqItems = [
   {
     question: "Is vape withdrawal worse than cigarette withdrawal?",
     answer:
-      "Usually a little milder, but still real. A 2020 study estimated vape withdrawal was about 25% less severe than cigarette withdrawal on average, yet a third of participants met the full clinical criteria for nicotine withdrawal.",
+      "Usually a little milder, but still real. A 2020 study estimated vape withdrawal was about 25% less severe than cigarette withdrawal on average. Still, a third of participants met the full clinical criteria for nicotine withdrawal.",
   },
   {
     question: "Can you get withdrawal from a nicotine-free vape?",
     answer:
-      "Quit (Australia) notes that some people get withdrawal symptoms even when their vape claims to be nicotine-free, and advises speaking to a doctor or pharmacist about quitting medicines if that happens.",
+      "Quit (Australia) notes that some people get withdrawal symptoms even when their vape claims to be nicotine-free. If that happens, it advises speaking to a doctor or pharmacist about quitting medicines.",
   },
   {
     question: "What helps with vape withdrawal?",
@@ -225,7 +226,7 @@ export default function VapeWithdrawalSymptomsPage() {
       >
         <h2 className="text-xl font-semibold text-teal-950">Common vape withdrawal symptoms</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          Nicotine is the addictive drug in most vapes, and Quit (Australia) explains that
+          Nicotine is the addictive drug in most vapes. Quit (Australia) explains that
           withdrawal is your body and brain getting used to working without it. The CDC says
           quitting vaping is likely to be similar to quitting cigarettes for the same reason. These
           are the symptoms listed by Smokefree.gov, the NHS and Quit:
@@ -240,7 +241,7 @@ export default function VapeWithdrawalSymptomsPage() {
         </ul>
         <p className="mt-4 text-sm leading-7 text-teal-900/90">
           In a clinical study of daily vapers who stopped for six days, researchers also saw mood
-          swings, impulsivity and less enjoyment of normal pleasures, and participants put on a
+          swings, impulsivity and less enjoyment of normal pleasures. Participants also put on a
           little weight. Everyone&apos;s mix is different. Many people get only a few of these
           symptoms.
         </p>
@@ -304,6 +305,11 @@ export default function VapeWithdrawalSymptomsPage() {
         </p>
       </section>
 
+      <InlineAppCta campaign={CAMPAIGN}>
+        The first week is the hardest part. Blou&apos;s SOS craving help is there the second an
+        urge hits, and every vape-free day adds to your visual timeline.
+      </InlineAppCta>
+
       <section
         id="vs-cigarettes"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
@@ -321,14 +327,14 @@ export default function VapeWithdrawalSymptomsPage() {
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           On average, the withdrawal was about 25% milder than in an earlier study of people
           stopping cigarettes. It was still real: a third of participants met the full clinical
-          criteria for nicotine withdrawal, and 41% still had higher-than-normal symptoms at the end
+          criteria for nicotine withdrawal. And 41% still had higher-than-normal symptoms at the end
           of the study. The trial was small and only included former smokers, so treat these numbers
           as a guide.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Note that participants craved cigarettes too. If you switched from smoking to vaping, the
-          NHS says you should only quit vaping when you are confident you can do it without smoking,
-          and that going back to vaping is far better than going back to cigarettes. If you
+          NHS says you should only quit vaping when you are confident you can do it without smoking.
+          It also says going back to vaping is far better than going back to cigarettes. If you
           currently do both, read{" "}
           <Link className={linkClass} href="/vaping-and-smoking-together">
             vaping and smoking together
@@ -371,7 +377,7 @@ export default function VapeWithdrawalSymptomsPage() {
             <span>
               <strong>Ask about nicotine replacement.</strong> A pharmacist or stop smoking adviser
               can talk you through NRT. Smokefree.gov notes that NRT, varenicline and bupropion can
-              reduce cravings, though in the US the FDA has not approved them specifically for
+              reduce cravings. In the US, though, the FDA has not approved them specifically for
               quitting vaping.
             </span>
           </li>
@@ -417,6 +423,12 @@ export default function VapeWithdrawalSymptomsPage() {
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} />
       </section>
+
+      <EndAppCta
+        campaign={CAMPAIGN}
+        title="Get through vape withdrawal with a plan"
+        description="Blou supports quitting vapes and cigarettes. SOS help is there for cravings, and every vape-free day adds to your visual timeline."
+      />
 
       <section
         id="sources"
