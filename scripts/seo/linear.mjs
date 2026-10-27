@@ -175,7 +175,8 @@ switch (cmd) {
   }
   case "next": {
     const todo = openIssues()
-      .filter((i) => i.state === "Todo")
+      // source:human issues are setup tasks for the owner, not for the writer.
+      .filter((i) => i.state === "Todo" && !i.labels.includes("source:human"))
       .sort((a, b) => (a.priority || 5) - (b.priority || 5) || a.updatedAt.localeCompare(b.updatedAt));
     if (!todo.length) {
       console.log("null");
