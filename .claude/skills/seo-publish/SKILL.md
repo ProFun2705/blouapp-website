@@ -35,7 +35,13 @@ After the deploy is live (wait until `https://tryblou.com/<slug>` returns 200 an
 3. Set `linearIssue` and `suppressUntil` (+21 days) on the page's record in `seo/data/inventory.json`, commit, and push to `main` the same way.
 4. Move the Linear issue to **Done** with a comment: live URL, commit SHA, publish date.
 
-If the page isn't live 10 minutes after the push, leave the issue In Review with a comment saying the deploy didn't show up. Don't revert on your own.
+Check with one bounded command, never an open-ended loop. Look for something only the new version has (the H1 for a new page, or a string the change added), because Vercel can serve an old cached page with status 200:
+
+```bash
+for i in $(seq 1 20); do curl -s https://tryblou.com/<slug> | grep -q '<string only the new version has>' && echo LIVE && break; sleep 30; done
+```
+
+If it doesn't print LIVE (10 minutes), stop waiting. Leave the issue In Review with a comment giving the commit SHA and saying the deploy didn't show up (see BLO-23), then end the run. Don't revert on your own.
 
 Never: force-push `main`, change the slug or title of a page with GSC clicks without the brief saying so, or publish without a PASS verdict in `seo/qa/<KEY>.md`.
 
