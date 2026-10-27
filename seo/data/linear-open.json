@@ -1,0 +1,250 @@
+{
+  "fetchedAt": "2026-10-27T13:08:26.004Z",
+  "issues": [
+    {
+      "id": "BLO-21",
+      "title": "Push /tools/money-saved to page 1 (position 23, rising from 43)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-21/push-toolsmoney-saved-to-page-1-position-23-rising-from-43",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "page-2-push",
+        "tool",
+        "source:audit"
+      ],
+      "pageUrl": "/tools/money-saved",
+      "cluster": "quit smoking money saved calculator",
+      "updatedAt": "2026-10-27T13:08:22.507Z"
+    },
+    {
+      "id": "BLO-20",
+      "title": "Snippet for /calculators/indonesia (position 6.9, 0 clicks)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-20/snippet-for-calculatorsindonesia-position-69-0-clicks",
+      "state": "Backlog",
+      "priority": 4,
+      "labels": [
+        "ctr-snippet",
+        "tool",
+        "source:audit"
+      ],
+      "pageUrl": "/calculators/indonesia",
+      "cluster": "biaya merokok / smoking cost indonesia",
+      "updatedAt": "2026-10-27T13:08:19.568Z"
+    },
+    {
+      "id": "BLO-19",
+      "title": "Refresh /quit-zyn for tapering queries (\"how to taper off zyn\")",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-19/refresh-quit-zyn-for-tapering-queries-how-to-taper-off-zyn",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-zyn",
+      "cluster": "how to quit zyn / taper off zyn",
+      "updatedAt": "2026-10-27T13:08:16.526Z"
+    },
+    {
+      "id": "BLO-18",
+      "title": "Refresh /quit-smoking-timeline for \"quit smoking timeline\" (position 80)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-18/refresh-quit-smoking-timeline-for-quit-smoking-timeline-position-80",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-timeline",
+      "cluster": "quit smoking timeline",
+      "updatedAt": "2026-10-27T13:08:14.072Z"
+    },
+    {
+      "id": "BLO-17",
+      "title": "Fix vaping timeline cannibalization (/vape-withdrawal-symptoms vs /quit-vaping-timeline)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-17/fix-vaping-timeline-cannibalization-vape-withdrawal-symptoms-vs-quit",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "internal-links",
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/vape-withdrawal-symptoms",
+      "cluster": "vaping withdrawal timeline",
+      "updatedAt": "2026-10-27T13:08:10.797Z"
+    },
+    {
+      "id": "BLO-16",
+      "title": "Win the pack-year cluster on /tools/pack-year-calculator (positions 50-70)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-16/win-the-pack-year-cluster-on-toolspack-year-calculator-positions-50-70",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "page-2-push",
+        "tool",
+        "source:research"
+      ],
+      "pageUrl": "/tools/pack-year-calculator",
+      "cluster": "pack year calculator",
+      "updatedAt": "2026-10-27T13:08:08.675Z"
+    },
+    {
+      "id": "BLO-15",
+      "title": "Push /guides/what-happens-after-3-weeks to page 1 (position 13)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-15/push-guideswhat-happens-after-3-weeks-to-page-1-position-13",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "page-2-push",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/what-happens-after-3-weeks",
+      "cluster": "3 weeks smoke free",
+      "updatedAt": "2026-10-27T13:08:06.167Z"
+    },
+    {
+      "id": "BLO-14",
+      "title": "Snippet pass on symptom guides at positions 8-10 (nausea, palpitations, night sweats)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-14/snippet-pass-on-symptom-guides-at-positions-8-10-nausea-palpitations",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "ctr-snippet",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/nausea",
+      "cluster": "symptom-guides-snippets",
+      "updatedAt": "2026-10-27T13:08:03.956Z"
+    },
+    {
+      "id": "BLO-13",
+      "title": "Rewrite title and meta for /guides/joint-pain (240 impressions, 0.8% CTR)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-13/rewrite-title-and-meta-for-guidesjoint-pain-240-impressions-08percent",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "ctr-snippet",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/joint-pain",
+      "cluster": "joint pain after quitting smoking",
+      "updatedAt": "2026-10-27T13:08:00.709Z"
+    },
+    {
+      "id": "BLO-12",
+      "title": "Rewrite title and meta for /guides/dreams-and-sleep (373 impressions, 0 clicks)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-12/rewrite-title-and-meta-for-guidesdreams-and-sleep-373-impressions-0",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "ctr-snippet",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/dreams-and-sleep",
+      "cluster": "quit smoking vivid dreams / insomnia",
+      "updatedAt": "2026-10-27T13:07:58.138Z"
+    },
+    {
+      "id": "BLO-11",
+      "title": "Rewrite title and meta for /guides/diarrhea (579 impressions, 0.35% CTR)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-11/rewrite-title-and-meta-for-guidesdiarrhea-579-impressions-035percent",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "ctr-snippet",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/diarrhea",
+      "cluster": "diarrhea after quitting smoking",
+      "updatedAt": "2026-10-27T13:07:54.972Z"
+    },
+    {
+      "id": "BLO-10",
+      "title": "Link /about from the footer or guides hub",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-10/link-about-from-the-footer-or-guides-hub",
+      "state": "Backlog",
+      "priority": 4,
+      "labels": [
+        "internal-links",
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/about",
+      "cluster": "technical:orphan",
+      "updatedAt": "2026-10-27T13:07:52.601Z"
+    },
+    {
+      "id": "BLO-9",
+      "title": "Add App Store CTAs to pages that have none",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-9/add-app-store-ctas-to-pages-that-have-none",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "conversion",
+        "source:audit"
+      ],
+      "pageUrl": "/vape-withdrawal-symptoms",
+      "cluster": "conversion:missing-cta",
+      "updatedAt": "2026-10-27T13:07:50.241Z"
+    },
+    {
+      "id": "BLO-8",
+      "title": "Schedule the SEO loop (research, writer, audit, conversions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-8/schedule-the-seo-loop-research-writer-audit-conversions",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:human"
+      ],
+      "pageUrl": "/",
+      "cluster": "setup:schedule",
+      "updatedAt": "2026-10-27T13:07:47.508Z"
+    },
+    {
+      "id": "BLO-7",
+      "title": "Decide on SERP and screenshot APIs (DataForSEO, ScreenshotOne)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-7/decide-on-serp-and-screenshot-apis-dataforseo-screenshotone",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "technical",
+        "source:human"
+      ],
+      "pageUrl": "/",
+      "cluster": "setup:serp-screenshot",
+      "updatedAt": "2026-10-27T13:07:44.701Z"
+    },
+    {
+      "id": "BLO-6",
+      "title": "Add Google Ads Keyword Planner keys to .env.local",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-6/add-google-ads-keyword-planner-keys-to-envlocal",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:human"
+      ],
+      "pageUrl": "/",
+      "cluster": "setup:keyword-planner",
+      "updatedAt": "2026-10-27T13:07:41.180Z"
+    },
+    {
+      "id": "BLO-5",
+      "title": "Connect Amplitude to the SEO loop",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-5/connect-amplitude-to-the-seo-loop",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "conversion",
+        "source:human"
+      ],
+      "pageUrl": "/",
+      "cluster": "setup:amplitude",
+      "updatedAt": "2026-10-27T13:07:38.358Z"
+    }
+  ]
+}

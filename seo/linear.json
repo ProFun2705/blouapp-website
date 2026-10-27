@@ -1,0 +1,30 @@
+{
+  "teamId": "2f635bd7-5b56-4981-88ee-601274290e46",
+  "teamKey": "BLO",
+  "projectId": "4cd494f9-8c3e-4699-9694-dd37e5993076",
+  "projectUrl": "https://linear.app/blou-site-seo/project/blou-seo-loop-536b16c45b04",
+  "states": {
+    "In Review": "a8bd7a50-05a7-484b-b6a2-08d4763cbd86",
+    "Todo": "fa22e5aa-a79e-401a-bf96-dee1d3e48dc5",
+    "Canceled": "f0ed88cd-c87b-4fd2-a619-5faf2fc6eda3",
+    "Backlog": "ba5c1782-177e-40f8-b7ad-37dd2a19c591",
+    "Duplicate": "844d9517-a1a3-4051-9f86-8c07c1439e65",
+    "Done": "3143cd4b-3561-4828-b31e-2fbbb0b0c9ce",
+    "In Progress": "03c1c897-5f20-445b-bd94-648e71b80432"
+  },
+  "labels": {
+    "new-content": "ae5bedb6-682c-4bd6-a79d-2cb6f66b7327",
+    "refresh": "7c105a16-6abc-45fb-9c1e-cf4da771e789",
+    "ctr-snippet": "dd72dbda-2624-413e-a99b-d25b72f242bc",
+    "page-2-push": "ac340a76-8cad-4293-abb3-0201069f3c49",
+    "internal-links": "07a26972-4a5d-4c19-ac0d-5cf00493f0f9",
+    "technical": "0e32f9c4-8d2c-4e64-8785-423a0f4c2442",
+    "conversion": "03adbf0e-df42-4fda-8a6f-ccc4001a4c64",
+    "comparison": "b8ec44b0-aced-46b3-a7e0-3d8130d69089",
+    "tool": "b7f5b1ec-a1ce-407a-a6e4-084a4d567e33",
+    "source:research": "6a7467b1-80f3-46ff-a968-878459d5a5a6",
+    "source:audit": "90b425b2-4cd4-47c5-98c6-6f8f74e4cfdd",
+    "source:human": "ea4c1b8e-f87f-451c-9f5c-00e455fa7c47",
+    "qa-failed": "9646a196-2f9c-4b5d-8f6c-d33a8c44564e"
+  }
+}

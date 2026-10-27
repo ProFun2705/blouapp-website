@@ -1,0 +1,121 @@
+[
+  {
+    "title": "Connect Amplitude to the SEO loop",
+    "labels": ["technical", "conversion", "source:human"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /\nCluster: setup:amplitude\nType: technical\nSource: SEO plan step 7\n\n## Why\nStep 7 of the plan (focus on conversions) needs per-page App Store clicks. The site already sends `app_store_click`, `tool_input` and autocaptured page views to Amplitude, but the agent cannot read them yet.\n\n## Do\n1. Open the Composio Amplitude link and connect the Blou Amplitude project (alias `blou`).\n2. Run `npm run seo:conversions` and check the top pages look right.\n3. Commit `seo/data/amplitude/latest.json`.\n\n## Done when\n`npm run seo:conversions` prints per-page App Store clicks."
+  },
+  {
+    "title": "Add Google Ads Keyword Planner keys to .env.local",
+    "labels": ["technical", "source:human"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /\nCluster: setup:keyword-planner\nType: technical\nSource: SEO plan step 2\n\n## Why\nWeekly research needs search volume. The Google Ads account and OAuth client used by the AniDachi CRM already work; Blou can reuse them.\n\n## Do\nAdd to `.env.local` (never commit): `GOOGLE_ADS_DEVELOPER_TOKEN`, `GOOGLE_ADS_CUSTOMER_ID` (8078204641), `GOOGLE_ADS_CLIENT_ID`, `GOOGLE_ADS_CLIENT_SECRET`, `GOOGLE_ADS_REFRESH_TOKEN`. Values are in the AniDachi `apps/web/.env.local` and `apps/web/crm-data/google-ads-tokens.json`.\n\n## Done when\n`npm run seo:keywords -- \"quit smoking app\"` prints ideas with monthly searches."
+  },
+  {
+    "title": "Decide on SERP and screenshot APIs (DataForSEO, ScreenshotOne)",
+    "labels": ["technical", "source:human"],
+    "priority": 3,
+    "state": "Backlog",
+    "body": "URL: /\nCluster: setup:serp-screenshot\nType: technical\nSource: SEO plan step 1\n\n## Why\nThe article recommends DataForSEO for SERP data and ScreenshotOne for screenshots. Today the agent reads SERPs through the browser and captures screenshots by hand, which works but is slower and less reliable in a scheduled run.\n\n## Do\nCreate accounts if wanted, connect them in Composio, and add the tool names to `.claude/skills/seo-opportunity-research/SKILL.md` and `seo-blog-writer/SKILL.md`.\n\n## Done when\nResearch runs pull top-5 SERP results without the browser."
+  },
+  {
+    "title": "Schedule the SEO loop (research, writer, audit, conversions)",
+    "labels": ["technical", "source:human"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /\nCluster: setup:schedule\nType: technical\nSource: SEO plan steps 2-6\n\n## Do\nCreate the four scheduled tasks from `seo/README.md` (Loop schedule section). Start with `SEO_PUBLISH_MODE=pr` so every article lands as a PR you merge.\n\n## Done when\nThe Monday research run has created issues on its own once."
+  },
+  {
+    "title": "Add App Store CTAs to pages that have none",
+    "labels": ["technical", "conversion", "source:audit"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /vape-withdrawal-symptoms\nCluster: conversion:missing-cta\nType: conversion\nSource: seo/data/inventory.json issue `no-app-cta`\n\n## Evidence\nThe inventory flags 2 article pages with zero `data-event=\"app_store_click\"` links: `/vape-withdrawal-symptoms` (170 impressions/28d) and `/quit-vaping-timeline`. Neither imports `AppCta`.\n\n## Do\nAdd `InlineAppCta` after the first useful section and `EndAppCta` with `campaign=\"article_<slug>\"`.\n\n## Done when\nRebuilt inventory shows no `no-app-cta` issues."
+  },
+  {
+    "title": "Link /about from the footer or guides hub",
+    "labels": ["internal-links", "technical", "source:audit"],
+    "priority": 4,
+    "state": "Backlog",
+    "body": "URL: /about\nCluster: technical:orphan\nType: internal-links\nSource: seo/data/inventory.json issue `orphan`\n\n## Evidence\n`/about` has 0 inbound links inside `<main>` on any page. It carries the author and editorial-review details that health pages reference (E-E-A-T).\n\n## Do\nLink it from the byline (`Byline.tsx`) or the guides hub intro.\n\n## Done when\nInventory `linkedFrom` for `/about` is above 0."
+  },
+  {
+    "title": "Rewrite title and meta for /guides/diarrhea (579 impressions, 0.35% CTR)",
+    "labels": ["ctr-snippet", "source:audit"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /guides/diarrhea\nCluster: diarrhea after quitting smoking\nType: ctr-snippet\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n579 impressions, 2 clicks, CTR 0.35%, average position 8.6 (previous 28 days: 16 impressions). This is the site's highest-impression page. Meta description is 183 chars (cut off in results) and the title does not contain the exact phrase the page targets.\n\n## Recommended action\nSnippet review plus a sharper quick answer. Low ranking risk: the page gets almost no clicks today. Keep the URL. Title ≤ 60 chars leading with the answer (how long it lasts), meta 140-155 chars with a concrete duration and a reason to click.\n\n## Next skill\nseo-content-brief (job type: snippet review + refresh of the top section)\n\n## Done when\nQA PASS, live, and CTR checked again 3 weeks after publish."
+  },
+  {
+    "title": "Rewrite title and meta for /guides/dreams-and-sleep (373 impressions, 0 clicks)",
+    "labels": ["ctr-snippet", "source:audit"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /guides/dreams-and-sleep\nCluster: quit smoking vivid dreams / insomnia\nType: ctr-snippet\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n373 impressions, 0 clicks, position 8.4 (previous: 47 impressions). Ranks on page 1 but nobody clicks.\n\n## Recommended action\nSnippet review. Check which queries the page shows for (`seo/data/gsc/latest.json` queryPages) and lead the title with the most common one (likely vivid dreams or insomnia after quitting). Add a duration answer to the quick answer box.\n\n## Next skill\nseo-content-brief"
+  },
+  {
+    "title": "Rewrite title and meta for /guides/joint-pain (240 impressions, 0.8% CTR)",
+    "labels": ["ctr-snippet", "source:audit"],
+    "priority": 3,
+    "state": "Todo",
+    "body": "URL: /guides/joint-pain\nCluster: joint pain after quitting smoking\nType: ctr-snippet\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n240 impressions, 2 clicks, position 8.2, up from 16.6. Rising page with a weak snippet.\n\n## Recommended action\nSnippet review and quick-answer tightening. Keep the URL.\n\n## Next skill\nseo-content-brief"
+  },
+  {
+    "title": "Snippet pass on symptom guides at positions 8-10 (nausea, palpitations, night sweats)",
+    "labels": ["ctr-snippet", "source:audit"],
+    "priority": 3,
+    "state": "Backlog",
+    "body": "URL: /guides/nausea\nCluster: symptom-guides-snippets\nType: ctr-snippet\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n/guides/nausea 159 impressions, 1 click, pos 9.5. /guides/heart-palpitations 126 impressions, 0 clicks, pos 8.9. /guides/night-sweats 100 impressions, 0 clicks, pos 9.4.\n\n## Recommended action\nAfter the diarrhea, dreams and joint-pain snippet changes have 3 weeks of data, apply whatever worked to these three. Split into one issue per URL when picked up.\n\n## Next skill\nseo-performance-audit (re-check), then seo-content-brief"
+  },
+  {
+    "title": "Push /guides/what-happens-after-3-weeks to page 1 (position 13)",
+    "labels": ["page-2-push", "source:audit"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /guides/what-happens-after-3-weeks\nCluster: 3 weeks smoke free\nType: page-2-push\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n123 impressions, 1 click, position 13. Queries: \"3 weeks smoke free\" (pos 16), \"3 weeks not smoking\" (pos 11.7). New this window.\n\n## Recommended action\nRefresh: add the query wording to the H1/quick answer, a short \"what you might feel at week 3\" list, 2-3 more FAQs from the query data, and links in from /guides/what-happens-after-2-weeks, /quit-smoking-timeline and /first-week-quit-smoking.\n\n## Next skill\nseo-content-brief"
+  },
+  {
+    "title": "Win the pack-year cluster on /tools/pack-year-calculator (positions 50-70)",
+    "labels": ["page-2-push", "tool", "source:research"],
+    "priority": 2,
+    "state": "Todo",
+    "body": "URL: /tools/pack-year-calculator\nCluster: pack year calculator\nType: refresh\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n283 impressions, 0 clicks, position 55. At least 12 distinct pack-year queries appeared this window (\"pack year calculator\", \"pack years\", \"how to work out pack years\", \"pack year history calculator\", \"smoking pack years calculator\"...). Google is testing the page for the whole cluster but it ranks too low.\n\n## Recommended action\nRefresh the tool page: answer \"how to calculate pack years\" (formula + worked example) above the fold, add a table of common values, FAQ for lung-screening thresholds (USPSTF 20 pack-years, cite it), and links from /smokers-lungs-vs-healthy-lungs, /can-lungs-heal-after-smoking, /quitting-smoking-after-50. Check Keyword Planner volume for the cluster first.\n\n## Next skill\nseo-content-brief"
+  },
+  {
+    "title": "Fix vaping timeline cannibalization (/vape-withdrawal-symptoms vs /quit-vaping-timeline)",
+    "labels": ["internal-links", "refresh", "source:audit"],
+    "priority": 3,
+    "state": "Todo",
+    "body": "URL: /vape-withdrawal-symptoms\nCluster: vaping withdrawal timeline\nType: internal-links\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n\"vaping withdrawal timeline\" (pos 79.5), \"how long does it take to quit vaping\" (pos 73.2) show /vape-withdrawal-symptoms, not /quit-vaping-timeline, which is the page built for timeline intent.\n\n## Recommended action\nKeep symptoms on /vape-withdrawal-symptoms and timeline on /quit-vaping-timeline: shorten the timeline section on the symptoms page to a summary that links to /quit-vaping-timeline with timeline anchor text, and make sure /quit-vaping-timeline links back for symptoms.\n\n## Next skill\nseo-content-brief (job type: consolidation / internal-link update)"
+  },
+  {
+    "title": "Refresh /quit-smoking-timeline for \"quit smoking timeline\" (position 80)",
+    "labels": ["refresh", "source:research"],
+    "priority": 3,
+    "state": "Backlog",
+    "body": "URL: /quit-smoking-timeline\nCluster: quit smoking timeline\nType: refresh\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n167 impressions, position 63.6; \"quit smoking timeline\" pos 80.7, \"stop smoking timeline\" pos 86.6, \"quitting smoking timeline\" pos 82.3. Head-ish term with strong competitors (NHS, Cleveland Clinic, Healthline).\n\n## Recommended action\nInspect the top 5 SERP results first. Likely wins: a scannable hour-by-hour table above the fold, an interactive element (reuse `QuitDateTimeline`), and stronger links in from all 56 guide pages. Medium effort, medium confidence.\n\n## Next skill\nseo-opportunity-research (SERP check), then seo-content-brief"
+  },
+  {
+    "title": "Refresh /quit-zyn for tapering queries (\"how to taper off zyn\")",
+    "labels": ["refresh", "source:research"],
+    "priority": 3,
+    "state": "Backlog",
+    "body": "URL: /quit-zyn\nCluster: how to quit zyn / taper off zyn\nType: refresh\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n158 impressions, position 62. Queries: \"how to quit zyn\" (63), \"how to quit nicotine pouches\" (67), \"how to taper off zyn\" (45.8). Page published 2026-10-15, so it is still settling. Re-check in the 2026-11-05 audit before acting.\n\n## Recommended action\nIf still below position 30 then: add a step-down taper table (mg per day by week, linking /tools/nicotine-pouch-calculator) near the top.\n\n## Next skill\nseo-performance-audit (re-check)"
+  },
+  {
+    "title": "Snippet for /calculators/indonesia (position 6.9, 0 clicks)",
+    "labels": ["ctr-snippet", "tool", "source:audit"],
+    "priority": 4,
+    "state": "Backlog",
+    "body": "URL: /calculators/indonesia\nCluster: biaya merokok / smoking cost indonesia\nType: ctr-snippet\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n163 impressions, 0 clicks, position 6.9. Likely Indonesian-language queries hitting an English page. Profile says English only for now.\n\n## Recommended action\nCheck the queries. If they are Indonesian, leave this as a localization opportunity and do not translate yet. If English, improve the title with the currency (IDR) and a concrete yearly cost.\n\n## Next skill\nseo-performance-audit"
+  },
+  {
+    "title": "Push /tools/money-saved to page 1 (position 23, rising from 43)",
+    "labels": ["page-2-push", "tool", "source:audit"],
+    "priority": 3,
+    "state": "Todo",
+    "body": "URL: /tools/money-saved\nCluster: quit smoking money saved calculator\nType: page-2-push\nSource: GSC 2026-09-27..2026-10-24\n\n## Evidence\n104 impressions, position 22.9, up from 42.6 the window before. Rising.\n\n## Recommended action\nCheck Keyword Planner for \"quit smoking savings calculator\", \"how much money will I save if I quit smoking\". Add a worked example and per-country links (to /calculators/*) above the fold, plus links in from /quit-smoking-on-a-budget and /motivation-to-quit-smoking.\n\n## Next skill\nseo-content-brief"
+  }
+]

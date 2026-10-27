@@ -7,7 +7,13 @@
     "build": "next build && node scripts/seo-check.mjs",
     "start": "next start",
     "lint": "eslint",
-    "seo:check": "node scripts/seo-check.mjs"
+    "seo:check": "node scripts/seo-check.mjs",
+    "seo:gsc": "node scripts/seo/gsc-pull.mjs",
+    "seo:keywords": "node scripts/seo/keyword-ideas.mjs",
+    "seo:conversions": "node scripts/seo/amplitude-conversions.mjs",
+    "seo:inventory": "node scripts/seo/inventory.mjs",
+    "seo:qa": "node scripts/seo/qa-lint.mjs",
+    "seo:linear": "node scripts/seo/linear.mjs"
   },
   "dependencies": {
     "@amplitude/unified": "^1.1.1",
