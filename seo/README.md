@@ -82,16 +82,16 @@ Status flow: **Backlog** (idea, not yet worth doing) → **Todo** (ready for a b
 
 Create these as scheduled tasks (Claude Code desktop: Scheduled tasks, or `/schedule` for cloud routines). Each prompt is self-contained. Run them in this repo's folder.
 
-**1. Monday 07:00 · Research**
+**1. Monday 09:00 · Research**
 > Use the seo-opportunity-research skill for tryblou.com. Refresh the data (seo:gsc, seo:conversions, build + seo:inventory, seo:linear open), find the best opportunities, and create up to 8 Linear issues with the template in seo/README.md. Write the report to seo/reports/research-<date>.md, commit it and push to main (as ProFun2705, see seo-publish).
 
-**2. Weekdays 09:00 · Write one article**
+**2. Weekdays 11:00 · Write one article**
 > Run `npm run seo:linear -- next`. If it returns null, stop. Otherwise take that issue through seo-content-brief (if it has no brief), seo-blog-writer, and seo-content-qa, looping writer↔QA until PASS (max 3 rounds). On PASS, use seo-publish to push it to main. Do one issue per run.
 
-**3. Thursday 07:00 · Audit**
+**3. Thursday 09:00 · Audit**
 > Use the seo-performance-audit skill for tryblou.com with 28-day windows. Comment on already-tracked issues instead of duplicating them, create up to 6 new improvement issues, write seo/reports/audit-<date>.md, commit it and push to main.
 
-**4. First Monday of the month · Conversions review**
+**4. 1st of the month 10:00 · Conversions review**
 > Run `npm run seo:conversions -- --days 90`. List the 10 pages with the highest App Store click rate and the 10 with the most views but no clicks. Add what you learn to the "Topics to prioritize" section of seo/blou-profile.md, commit it and push to main, and list the change in the Linear project as a status update so the owner sees it.
 
 QA-passed articles go straight to `main` (no PRs). Every push is pushed as the `ProFun2705` GitHub account; the steps are in `.claude/skills/seo-publish/SKILL.md`. Read new pages on the live site and use step 8 (the profile) to correct the agent.
