@@ -242,6 +242,17 @@ export default function QuittingSmokingAfter50Page() {
           are personal, not generic blog defaults.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          US guidelines use your smoking history in pack years. Our{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href="/tools/pack-year-calculator"
+          >
+            pack year calculator
+          </Link>{" "}
+          works out your number and shows which screening criteria you meet, so you can bring it to
+          your appointment.
+        </p>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
           Separately, some increased phlegm or cough after quitting can reflect
           airway recovery. The{" "}
           <a

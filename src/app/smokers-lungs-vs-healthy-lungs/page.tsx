@@ -339,7 +339,11 @@ export default function SmokersLungsVsHealthyLungsPage() {
             <span>
               <strong>Years:</strong> ex-smokers have four times as many healthy, low-mutation airway
               cells as current smokers (<em>Nature</em>, 2020). Added lung cancer risk halves after
-              10–15 years (CDC).
+              10–15 years (CDC). To see your own smoking history, use the{" "}
+              <Link className={linkClass} href="/tools/pack-year-calculator">
+                pack year calculator
+              </Link>
+              .
             </span>
           </li>
           <li className="flex gap-2">

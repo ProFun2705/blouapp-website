@@ -32,6 +32,7 @@ export type StaticRoute = {
 
 const OCT_2026 = "2026-10-13";
 const OCT_15_2026 = "2026-10-15";
+const OCT_28_2026 = "2026-10-28";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -110,7 +111,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/are-zyns-bad-for-you", lastModified: OCT_15_2026, label: "Are Zyns bad for you?", group: "Nicotine pouches" },
   { path: "/zyn-vs-cigarettes", lastModified: OCT_15_2026, label: "Zyn vs cigarettes", group: "Nicotine pouches" },
 
-  { path: "/tools/pack-year-calculator", lastModified: OCT_15_2026, label: "Pack-year calculator", group: "Free tools" },
+  { path: "/tools/pack-year-calculator", lastModified: OCT_28_2026, label: "Pack-year calculator", group: "Free tools" },
   { path: "/tools/nicotine-patch-plan", lastModified: OCT_15_2026, label: "Nicotine patch strength and step-down plan", group: "Free tools" },
   { path: "/tools/nicotine-pouch-calculator", lastModified: OCT_15_2026, label: "Nicotine pouch calculator", group: "Free tools" },
   { path: "/quit-smoking-help", lastModified: OCT_15_2026, label: "Free quit-smoking help by US state", group: "Free tools" },
