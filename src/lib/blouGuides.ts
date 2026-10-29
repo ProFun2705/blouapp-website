@@ -41,6 +41,8 @@ export type BlouGuide = {
    * Surfaces as `lastReviewed` in Article/MedicalWebPage JSON-LD.
    */
   dateReviewed?: string;
+  /** Guide-specific sources. Falls back to the shared list in the guide page. */
+  references?: Array<{ label: string; href: string; publisher: string }>;
 };
 
 export const isPublishedGuide = (g: BlouGuide): boolean => g.published !== false;
@@ -1690,6 +1692,7 @@ export const blouGuides: BlouGuide[] = [
     relatedSlugs: [
       "what-happens-after-3-days",
       "what-happens-after-1-week",
+      "diarrhea",
       "weight-gain",
       "cravings",
       "tools/money-saved",
@@ -2672,6 +2675,7 @@ export const blouGuides: BlouGuide[] = [
     dateModified: "2026-05-08",
     relatedSlugs: [
       "constipation",
+      "diarrhea",
       "headaches",
       "cravings",
       "anxiety",
@@ -3197,80 +3201,162 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "diarrhea",
-    title: "How long does diarrhea last after quitting smoking?",
+    title: "Diarrhea after quitting smoking: how long does it last?",
     shortTitle: "Diarrhea",
     category: "symptom",
     targetKeyword: "diarrhea after quitting smoking",
     quickAnswer:
-      "Some people get loose stools in early quitting from stress, diet changes, or nicotine withdrawal effects on gut motility. Mild diarrhea often improves within a few days to 2 weeks. Blood in stool, high fever, or dehydration needs medical care.",
+      "Diarrhea after quitting smoking usually clears up in a few days. For most adults it stops within 5 to 7 days. It is not a typical nicotine withdrawal symptom (constipation is more common), so the cause is often something that changed when you quit, like sugar-free gum, more coffee, or a stop-smoking medicine. Get help if you see blood, can't keep fluids down, or it lasts more than 7 days.",
     quickFacts: [
-      "Diet and caffeine often change abruptly during quit week.",
-      "Anxiety can speed gut motility and mimic “withdrawal diarrhea.”",
-      "Red flags: blood/black stools, severe pain, persistent fever, dehydration.",
+      "NHS: diarrhea in adults usually stops within 5 to 7 days.",
+      "Sugar-free gum and mints often contain sorbitol, which can cause loose stools.",
+      "Varenicline (Chantix) lists diarrhea as a common side effect.",
     ],
     summary:
-      "Diarrhea can happen when quitting, but it’s not always caused by withdrawal. Treat it like a short GI episode: hydration, simple foods, and a low threshold to seek care for red flags.",
+      "Diarrhea after quitting smoking usually clears in a few days and stops within a week. See why it happens when you quit, what helps, and when to get help.",
     detail:
-      "Track timing relative to caffeine, stress peaks, and NRT dosing. If it correlates strongly, a pharmacist can help adjust without harming quit success.",
+      "Think about what changed when you quit: gum, coffee, new snacks, or a new medicine. A pharmacist can help you sort it out without giving up your quit.",
     articleSections: [
       {
-        heading: "Why diarrhea can show up after quitting",
+        heading: "Is diarrhea a nicotine withdrawal symptom?",
         paragraphs: [
-          "Quitting changes routines quickly: more coffee, sugar-free gum, or new snacks can irritate the gut.",
-          "Stress and cravings can activate the gut-brain axis and increase motility.",
+          "Not usually. The NHS list of common withdrawal symptoms is about cravings, mood, focus, and sleep. It does not include diarrhea.",
+          "When quitting changes your bowels, it tends to go the other way. In one study, about 1 in 6 people who quit got constipated. So if you have diarrhea, look for another cause first.",
         ],
         bullets: [],
       },
       {
-        heading: "What helps most",
+        heading: "Why you might get diarrhea after quitting",
         paragraphs: [
-          "Focus on hydration and bland foods while your gut settles. Avoid alcohol, greasy foods, and high caffeine for a few days.",
-          "If you feel dizzy, very thirsty, or your urine is dark, prioritize oral rehydration.",
+          "Quitting changes a lot of habits at once. Any of these can upset your gut in the first weeks.",
         ],
         bullets: [
-          "Water + salty foods (or oral rehydration solution).",
-          "BRAT-style bland foods temporarily (bananas, rice, toast).",
-          "Pause sugar alcohols (some sugar-free products worsen diarrhea).",
+          "Sugar-free gum and mints. Many contain sorbitol, a sweetener with a laxative effect. Chewing a lot of it can cause diarrhea.",
+          "Stop-smoking medicine. Varenicline (Chantix) lists diarrhea as a common side effect. Nicotine lozenges can cause heartburn, and using too many at once can make you feel sick.",
+          "More coffee. Many people drink more coffee or energy drinks to replace cigarette breaks.",
+          "New snacks and drinks. Fatty food, fruit juice, and fizzy drinks can all make loose stools worse.",
+          "A stomach bug. An infection can happen during a quit too. It is often the real cause.",
+          "Stress. Quitting is stressful, and stress can upset your stomach.",
         ],
       },
       {
-        heading: "When diarrhea needs medical evaluation",
+        heading: "How long diarrhea lasts after quitting smoking",
         paragraphs: [
-          "Get urgent care for blood in stool, black stools, severe abdominal pain, persistent high fever, or inability to keep fluids down.",
-          "See a clinician if diarrhea lasts beyond 2 weeks without improvement.",
+          "Short-term diarrhea often lasts 1 to 2 days. The NHS says diarrhea in adults usually stops within 5 to 7 days.",
+          "If it is caused by gum or coffee, it often settles a day or two after you cut back. If it lasts 4 weeks or more, doctors call it chronic, and it needs a checkup.",
+        ],
+        bullets: [],
+      },
+      {
+        heading: "What helps diarrhea while you quit",
+        paragraphs: [
+          "Most cases get better on their own. Your main job is to stay hydrated and remove the likely trigger.",
+          "Do not stop a prescribed medicine on your own. If you think your stop-smoking medicine is the cause, ask your pharmacist or doctor. They can often adjust it so you can keep going.",
+        ],
+        bullets: [
+          "Drink plenty of fluids. Take small sips if you feel sick.",
+          "Ask a pharmacist about oral rehydration sachets if you feel dizzy or very thirsty.",
+          "Eat when you feel able to. Skip fatty and spicy food for a few days.",
+          "Avoid fruit juice and fizzy drinks.",
+          "Cut back on sugar-free gum and mints, and on coffee.",
+        ],
+      },
+      {
+        heading: "When to get medical help",
+        paragraphs: [
+          "Call your doctor or an urgent care line if you have blood in your stool or bleeding from your bottom. Also call if you can't keep fluids down, still have signs of dehydration after rehydration sachets, or the diarrhea lasts more than 7 days.",
+          "Get emergency care for blood in your vomit, sudden severe stomach pain, or confusion.",
         ],
         bullets: [],
       },
     ],
-    typicalDuration: "Usually a few days; improving within 1–2 weeks for mild cases.",
-    commonTriggers: "Stress, caffeine, diet changes, sugar alcohols, infection.",
+    typicalDuration: "A few days. Usually stops within 5 to 7 days in adults.",
+    commonTriggers: "Sugar-free gum (sorbitol), stop-smoking medicine, more coffee, diet changes, stomach bugs, stress.",
     whenToSeekCare:
-      "Urgent for blood/black stools, severe pain, high fever, dehydration, or persistent vomiting. Routine visit if >2 weeks without improvement.",
+      "Blood in stool, can't keep fluids down, signs of dehydration, or diarrhea lasting more than 7 days. Emergency for blood in vomit, sudden severe stomach pain, or confusion.",
     whatToExpectNext: [
-      "Hydration improves symptoms and prevents dizziness.",
-      "As stress drops, gut motility often normalizes.",
-      "If symptoms persist, rule out infection or medication effects.",
+      "Most diarrhea settles in a few days once you stay hydrated and remove the trigger.",
+      "Constipation can show up later in your quit. It is the more common bowel change.",
+      "Cravings and mood changes are the main withdrawal symptoms. On average they last 3 to 4 weeks.",
     ],
     faq: [
       {
         question: "How long does diarrhea last after quitting smoking?",
         answer:
-          "Mild diarrhea often improves within a few days to 2 weeks. If it persists beyond 2 weeks or includes red flags like blood or high fever, seek medical advice.",
+          "Usually a few days. The NHS says diarrhea in adults usually stops within 5 to 7 days. If it lasts more than 7 days, talk to a doctor.",
       },
       {
-        question: "Is diarrhea a nicotine withdrawal symptom?",
+        question: "Is diarrhea a symptom of nicotine withdrawal?",
         answer:
-          "It can be, but stress and diet changes are also common causes. Treat symptoms and get evaluated if severe or persistent.",
+          "Not a typical one. The common withdrawal symptoms are cravings, irritability, anxiety, poor focus, and trouble sleeping. Constipation is the more common bowel change after quitting. Diarrhea usually has another cause, like sugar-free gum, coffee, medicine, or a stomach bug.",
       },
       {
-        question: "When should I worry about diarrhea while quitting?",
+        question: "Can nicotine gum or lozenges cause diarrhea?",
         answer:
-          "Worry if there’s blood or black stools, severe pain, persistent fever, dehydration, or you can’t keep fluids down.",
+          "Diarrhea is not one of the main listed side effects of nicotine lozenges, but they can cause heartburn, and using too many at once can cause nausea. If your stomach is upset, ask a pharmacist. A different product or dose may help. Don't just stop using it.",
+      },
+      {
+        question: "Can Chantix (varenicline) cause diarrhea?",
+        answer:
+          "Yes. The NHS lists diarrhea as a common side effect of varenicline. Drink plenty of fluids and talk to your doctor or pharmacist if it bothers you. Don't stop taking it without advice.",
+      },
+      {
+        question: "Can quitting vaping or nicotine pouches cause diarrhea?",
+        answer:
+          "The same rules apply. Diarrhea is not a typical withdrawal symptom, so look at what changed: more gum, more coffee, new snacks, or a new medicine. Most cases settle within a week.",
+      },
+      {
+        question: "When should I worry about diarrhea after quitting?",
+        answer:
+          "Get help for blood in your stool, if you can't keep fluids down, if you are still dehydrated after rehydration sachets, or if it lasts more than 7 days. Get emergency care for blood in vomit, sudden severe stomach pain, or confusion.",
+      },
+    ],
+    references: [
+      {
+        label: "NHS: Diarrhoea and vomiting",
+        href: "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "MedlinePlus: Diarrhea",
+        href: "https://medlineplus.gov/diarrhea.html",
+        publisher: "US National Library of Medicine",
+      },
+      {
+        label: "NHS Better Health: Managing nicotine withdrawal symptoms",
+        href: "https://www.nhs.uk/better-health/quit-smoking/staying-smoke-free/managing-nicotine-withdrawal-symptoms",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS: Side effects of varenicline",
+        href: "https://www.nhs.uk/medicines/varenicline/side-effects-of-varenicline/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "MedlinePlus: Nicotine lozenges",
+        href: "https://medlineplus.gov/druginfo/meds/a606019.html",
+        publisher: "US National Library of Medicine",
+      },
+      {
+        label: "Hajek P et al. Stopping smoking can cause constipation. Addiction, 2003",
+        href: "https://pubmed.ncbi.nlm.nih.gov/14616182/",
+        publisher: "PubMed",
+      },
+      {
+        label: "Bauditz J et al. Severe weight loss caused by chewing gum. BMJ, 2008",
+        href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2190242/",
+        publisher: "PubMed Central",
+      },
+      {
+        label: "CDC: Benefits of Quitting",
+        href: "https://www.cdc.gov/tobacco/about/benefits-of-quitting.html",
+        publisher: "US Centers for Disease Control and Prevention",
       },
     ],
     datePublished: "2026-05-08",
-    dateModified: "2026-05-08",
-    relatedSlugs: ["constipation", "nausea", "dizziness", "what-happens-after-3-days", "anxiety"],
+    dateModified: "2026-10-29",
+    dateReviewed: "2026-10-29",
+    relatedSlugs: ["constipation", "bloating-and-gas", "nausea", "cravings", "anxiety", "what-happens-after-3-days"],
     medicalConditionName: "Diarrhea (post-cessation)",
   },
   {
@@ -3346,7 +3432,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
-    relatedSlugs: ["constipation", "nausea", "increased-appetite", "what-happens-after-1-week"],
+    relatedSlugs: ["constipation", "diarrhea", "nausea", "increased-appetite", "what-happens-after-1-week"],
     medicalConditionName: "Bloating (post-cessation)",
   },
   {

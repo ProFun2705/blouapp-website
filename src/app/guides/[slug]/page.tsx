@@ -57,6 +57,7 @@ const SEO_TITLE_OVERRIDES: Record<string, string> = {
   "taste-and-smell": "When do taste and smell return after quitting smoking?",
   anger: "Anger after quitting smoking: why and how long",
   "hair-loss": "Hair loss after quitting smoking: what to expect",
+  diarrhea: "Diarrhea after quitting smoking: how long it lasts",
 };
 
 /**
@@ -105,6 +106,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
   const { slug } = await params;
   const guide = blouGuideBySlug[slug];
   if (!guide || !isPublishedGuide(guide)) notFound();
+  const sources = guide.references ?? references;
 
   const tocItems = [
     { id: "quick-answer", label: "Quick answer" },
@@ -138,7 +140,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
           name: guide.medicalConditionName,
         }
       : undefined,
-    citation: references.map((r) => ({
+    citation: sources.map((r) => ({
       name: r.label,
       url: r.href,
       publisher: r.publisher,
@@ -287,7 +289,7 @@ export default async function GuideDetailPage({ params }: GuidePageProps) {
           Sources & further reading
         </h2>
         <ul className="mt-4 space-y-2 text-sm text-ink">
-          {references.map((reference) => (
+          {sources.map((reference) => (
             <li key={reference.href}>
               <a
                 className="underline decoration-accent/50 underline-offset-4"
