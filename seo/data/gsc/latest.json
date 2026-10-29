@@ -1,147 +1,129 @@
 {
   "property": "sc-domain:tryblou.com",
-  "fetchedAt": "2026-10-27T15:37:09.989Z",
+  "fetchedAt": "2026-10-29T09:48:01.222Z",
   "current": {
-    "start": "2026-09-27",
-    "end": "2026-10-24"
+    "start": "2026-09-29",
+    "end": "2026-10-26"
   },
   "previous": {
-    "start": "2026-08-30",
-    "end": "2026-09-26"
+    "start": "2026-09-01",
+    "end": "2026-09-28"
   },
   "totals": {
-    "clicks": 12,
-    "impressions": 3979,
-    "prevClicks": 6,
-    "prevImpressions": 1318
+    "clicks": 14,
+    "impressions": 4240,
+    "prevClicks": 5,
+    "prevImpressions": 1221
   },
   "opportunities": {
     "page2Pages": [
       {
         "page": "/guides/what-happens-after-3-weeks",
-        "clicks": 1,
-        "impressions": 123,
-        "ctr": 0.0081,
-        "position": 13,
+        "clicks": 2,
+        "impressions": 139,
+        "ctr": 0.0144,
+        "position": 12.3,
         "prev": null
       },
       {
         "page": "/tools/money-saved",
         "clicks": 0,
-        "impressions": 104,
+        "impressions": 110,
         "ctr": 0,
-        "position": 22.9,
+        "position": 22.7,
         "prev": {
           "clicks": 0,
-          "impressions": 78,
+          "impressions": 63,
           "ctr": 0,
-          "position": 42.6
+          "position": 36.7
         }
+      },
+      {
+        "page": "/zyn-vs-cigarettes",
+        "clicks": 0,
+        "impressions": 60,
+        "ctr": 0,
+        "position": 13.7,
+        "prev": null
       }
     ],
     "lowCtrPages": [
       {
         "page": "/guides/diarrhea",
         "clicks": 2,
-        "impressions": 579,
-        "ctr": 0.0035,
-        "position": 8.6,
+        "impressions": 605,
+        "ctr": 0.0033,
+        "position": 8.5,
         "prev": {
           "clicks": 0,
-          "impressions": 16,
-          "ctr": 0,
-          "position": 8.5
-        }
-      },
-      {
-        "page": "/guides/dreams-and-sleep",
-        "clicks": 0,
-        "impressions": 373,
-        "ctr": 0,
-        "position": 8.4,
-        "prev": {
-          "clicks": 0,
-          "impressions": 47,
+          "impressions": 34,
           "ctr": 0,
           "position": 8.6
         }
       },
       {
-        "page": "/guides/joint-pain",
-        "clicks": 2,
-        "impressions": 240,
-        "ctr": 0.0083,
-        "position": 8.2,
+        "page": "/guides/dreams-and-sleep",
+        "clicks": 0,
+        "impressions": 367,
+        "ctr": 0,
+        "position": 8.4,
         "prev": {
           "clicks": 0,
-          "impressions": 46,
+          "impressions": 60,
           "ctr": 0,
-          "position": 16.6
+          "position": 8.2
+        }
+      },
+      {
+        "page": "/guides/joint-pain",
+        "clicks": 2,
+        "impressions": 242,
+        "ctr": 0.0083,
+        "position": 7.5,
+        "prev": {
+          "clicks": 0,
+          "impressions": 64,
+          "ctr": 0,
+          "position": 16.3
         }
       },
       {
         "page": "/calculators/indonesia",
         "clicks": 0,
-        "impressions": 163,
+        "impressions": 182,
         "ctr": 0,
         "position": 6.9,
         "prev": {
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 21,
           "ctr": 0,
-          "position": 12.3
+          "position": 6.9
         }
       },
       {
         "page": "/guides/nausea",
         "clicks": 1,
-        "impressions": 159,
-        "ctr": 0.0063,
-        "position": 9.5,
+        "impressions": 154,
+        "ctr": 0.0065,
+        "position": 9.4,
         "prev": {
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 0.0286,
-          "position": 21.1
+          "impressions": 50,
+          "ctr": 0.02,
+          "position": 17.9
         }
       },
       {
         "page": "/guides/heart-palpitations",
         "clicks": 0,
-        "impressions": 126,
+        "impressions": 119,
         "ctr": 0,
         "position": 8.9,
         "prev": {
           "clicks": 1,
-          "impressions": 26,
-          "ctr": 0.0385,
-          "position": 9.2
-        }
-      },
-      {
-        "page": "/",
-        "clicks": 1,
-        "impressions": 101,
-        "ctr": 0.0099,
-        "position": 6.4,
-        "prev": {
-          "clicks": 0,
-          "impressions": 63,
-          "ctr": 0,
-          "position": 4.9
-        }
-      },
-      {
-        "page": "/guides/night-sweats",
-        "clicks": 0,
-        "impressions": 100,
-        "ctr": 0,
-        "position": 9.4,
-        "prev": {
-          "clicks": 0,
-          "impressions": 28,
-          "ctr": 0,
-          "position": 14
+          "impressions": 43,
+          "ctr": 0.0233,
+          "position": 9.1
         }
       }
     ],
@@ -159,15 +141,24 @@
         "query": "blou",
         "page": "/",
         "clicks": 0,
-        "impressions": 15,
+        "impressions": 13,
         "ctr": 0,
-        "position": 12.3,
+        "position": 12.2,
         "prev": {
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 6,
           "ctr": 0,
-          "position": 10
+          "position": 11
         }
+      },
+      {
+        "query": "nys quit smoking",
+        "page": "/quit-smoking-help/new-york",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 26,
+        "prev": null
       },
       {
         "query": "3 weeks not smoking",
@@ -177,29 +168,6 @@
         "ctr": 0,
         "position": 11.7,
         "prev": null
-      },
-      {
-        "query": "3 days no smoking",
-        "page": "/guides/what-happens-after-3-days",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 16.8,
-        "prev": {
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 9.6
-        }
-      },
-      {
-        "query": "nys quit smoking",
-        "page": "/quit-smoking-help/new-york",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 25.4,
-        "prev": null
       }
     ],
     "lowCtr": [
@@ -207,12 +175,12 @@
         "query": "blou app",
         "page": "/",
         "clicks": 0,
-        "impressions": 22,
+        "impressions": 20,
         "ctr": 0,
         "position": 2.8,
         "prev": {
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 11,
           "ctr": 0,
           "position": 2.7
         }
@@ -220,34 +188,34 @@
     ],
     "bigMovers": [
       {
+        "query": "quit smoking calculator",
+        "page": "/calculators/united-kingdom",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 38.1,
+        "prev": {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 65.8
+        },
+        "delta": 27.7
+      },
+      {
         "query": "smoking calculator",
         "page": "/calculators/united-kingdom",
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 8,
         "ctr": 0,
-        "position": 39.7,
+        "position": 37.5,
         "prev": {
           "clicks": 0,
           "impressions": 7,
           "ctr": 0,
-          "position": 66.6
+          "position": 62.6
         },
-        "delta": 26.9
-      },
-      {
-        "query": "day 3 no smoking",
-        "page": "/guides/what-happens-after-3-days",
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 41.2,
-        "prev": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 65
-        },
-        "delta": 23.8
+        "delta": 25.1
       },
       {
         "query": "day 3 of not smoking",
@@ -263,21 +231,6 @@
           "position": 64
         },
         "delta": -21
-      },
-      {
-        "query": "quit smoking calculator",
-        "page": "/calculators/united-kingdom",
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 46.5,
-        "prev": {
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 65.8
-        },
-        "delta": 19.3
       },
       {
         "query": "quit smoking calculator",
@@ -310,6 +263,21 @@
         "delta": 16.4
       },
       {
+        "query": "smoking money",
+        "page": "/tools/money-saved",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 49.2,
+        "prev": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 59
+        },
+        "delta": 9.8
+      },
+      {
         "query": "quit smoking app",
         "page": "/best-quit-smoking-apps",
         "clicks": 0,
@@ -323,21 +291,6 @@
           "position": 35
         },
         "delta": -9.1
-      },
-      {
-        "query": "the best quit smoking app",
-        "page": "/best-quit-smoking-apps",
-        "clicks": 0,
-        "impressions": 30,
-        "ctr": 0,
-        "position": 60.3,
-        "prev": {
-          "clicks": 0,
-          "impressions": 26,
-          "ctr": 0,
-          "position": 68.9
-        },
-        "delta": 8.6
       },
       {
         "query": "quit smoking savings calculator",
@@ -355,64 +308,64 @@
         "delta": 8.5
       },
       {
-        "query": "how to avoid relapse when quitting smoking",
-        "page": "/how-to-stop-a-relapse",
-        "clicks": 0,
-        "impressions": 7,
-        "ctr": 0,
-        "position": 90.3,
+        "query": "best quit smoking app",
+        "page": "/best-quit-smoking-apps",
+        "clicks": 1,
+        "impressions": 28,
+        "ctr": 0.0357,
+        "position": 54.3,
         "prev": {
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 15,
           "ctr": 0,
-          "position": 82
+          "position": 61.9
         },
-        "delta": -8.3
+        "delta": 7.6
       },
       {
         "query": "the best quit smoking app",
         "page": "/best-quit-smoking-app-for-heavy-smokers",
         "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 73.9,
+        "prev": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 81.2
+        },
+        "delta": 7.3
+      },
+      {
+        "query": "day 3 no smoking",
+        "page": "/guides/what-happens-after-3-days",
+        "clicks": 0,
         "impressions": 9,
         "ctr": 0,
-        "position": 75.3,
+        "position": 44.7,
         "prev": {
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 2,
           "ctr": 0,
-          "position": 83.4
-        },
-        "delta": 8.1
-      },
-      {
-        "query": "3 days without smoking",
-        "page": "/guides/what-happens-after-3-days",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 10,
-        "prev": {
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 18
-        },
-        "delta": 8
-      },
-      {
-        "query": "3 days no smoking",
-        "page": "/guides/what-happens-after-3-days",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 16.8,
-        "prev": {
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 9.6
+          "position": 37.5
         },
         "delta": -7.2
+      },
+      {
+        "query": "the best quit smoking app",
+        "page": "/best-quit-smoking-apps",
+        "clicks": 0,
+        "impressions": 35,
+        "ctr": 0,
+        "position": 59.9,
+        "prev": {
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 66.8
+        },
+        "delta": 6.9
       },
       {
         "query": "smoking cost calculator",
@@ -428,6 +381,21 @@
           "position": 61
         },
         "delta": 5.2
+      },
+      {
+        "query": "best quit smoking app",
+        "page": "/best-quit-smoking-app-for-heavy-smokers",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 70.8,
+        "prev": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 75.8
+        },
+        "delta": 5
       }
     ],
     "newQueries": [
@@ -435,16 +403,16 @@
         "query": "quit smoking timeline",
         "page": "/quit-smoking-timeline",
         "clicks": 0,
-        "impressions": 27,
+        "impressions": 36,
         "ctr": 0,
-        "position": 80.7,
+        "position": 79.4,
         "prev": null
       },
       {
         "query": "how long does it take to quit vaping",
         "page": "/vape-withdrawal-symptoms",
         "clicks": 0,
-        "impressions": 23,
+        "impressions": 25,
         "ctr": 0,
         "position": 73.2,
         "prev": null
@@ -453,9 +421,36 @@
         "query": "vaping withdrawal symptoms",
         "page": "/vape-withdrawal-symptoms",
         "clicks": 0,
-        "impressions": 17,
+        "impressions": 20,
         "ctr": 0,
-        "position": 74.4,
+        "position": 73.8,
+        "prev": null
+      },
+      {
+        "query": "zyn withdrawal timeline",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": 0,
+        "position": 60.6,
+        "prev": null
+      },
+      {
+        "query": "pack years",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 66.2,
+        "prev": null
+      },
+      {
+        "query": "pack year calculator",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0,
+        "position": 51.6,
         "prev": null
       },
       {
@@ -468,79 +463,133 @@
         "prev": null
       },
       {
-        "query": "zyn withdrawal timeline",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 16,
-        "ctr": 0,
-        "position": 62.7,
-        "prev": null
-      },
-      {
-        "query": "pack year calculator",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 15,
-        "ctr": 0,
-        "position": 52.9,
-        "prev": null
-      },
-      {
-        "query": "pack years",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 14,
-        "ctr": 0,
-        "position": 68.4,
-        "prev": null
-      },
-      {
-        "query": "vaping withdrawal timeline",
-        "page": "/vape-withdrawal-symptoms",
-        "clicks": 0,
-        "impressions": 14,
-        "ctr": 0,
-        "position": 79.5,
-        "prev": null
-      },
-      {
         "query": "how to quit zyn",
         "page": "/quit-zyn",
         "clicks": 0,
-        "impressions": 13,
+        "impressions": 16,
         "ctr": 0,
-        "position": 63.3,
-        "prev": null
-      },
-      {
-        "query": "pack year",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 13,
-        "ctr": 0,
-        "position": 66.3,
+        "position": 64.4,
         "prev": null
       },
       {
         "query": "stop smoking timeline",
         "page": "/quit-smoking-timeline",
         "clicks": 0,
-        "impressions": 13,
+        "impressions": 16,
         "ctr": 0,
-        "position": 86.6,
+        "position": 87.4,
+        "prev": null
+      },
+      {
+        "query": "vaping withdrawal timeline",
+        "page": "/vape-withdrawal-symptoms",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 77.6,
+        "prev": null
+      },
+      {
+        "query": "pack year",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 66.2,
+        "prev": null
+      },
+      {
+        "query": "pack years of smoking",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 73.3,
+        "prev": null
+      },
+      {
+        "query": "quit smoking apps",
+        "page": "/best-quit-smoking-apps",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 43.1,
+        "prev": null
+      },
+      {
+        "query": "quitting smoking timeline",
+        "page": "/quit-smoking-timeline",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 82.7,
         "prev": null
       },
       {
         "query": "vape withdrawal symptoms",
         "page": "/vape-withdrawal-symptoms",
         "clicks": 0,
-        "impressions": 13,
+        "impressions": 15,
         "ctr": 0,
-        "position": 71.2,
+        "position": 70.7,
         "prev": null
       },
       {
         "query": "pack year history",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 63.9,
+        "prev": null
+      },
+      {
+        "query": "pack year history calculator",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 47.5,
+        "prev": null
+      },
+      {
+        "query": "smoking pack years",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 73.7,
+        "prev": null
+      },
+      {
+        "query": "zyn withdrawal symptoms",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 70.9,
+        "prev": null
+      },
+      {
+        "query": "pack years smoking calculator",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 59.6,
+        "prev": null
+      },
+      {
+        "query": "how to quit nicotine pouches",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 66.2,
+        "prev": null
+      },
+      {
+        "query": "how to work out pack years",
         "page": "/tools/pack-year-calculator",
         "clicks": 0,
         "impressions": 12,
@@ -549,84 +598,57 @@
         "prev": null
       },
       {
-        "query": "quitting smoking timeline",
-        "page": "/quit-smoking-timeline",
-        "clicks": 0,
-        "impressions": 12,
-        "ctr": 0,
-        "position": 82.3,
-        "prev": null
-      },
-      {
-        "query": "zyn withdrawal symptoms",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 12,
-        "ctr": 0,
-        "position": 69.4,
-        "prev": null
-      },
-      {
-        "query": "smoking pack years",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 76.1,
-        "prev": null
-      },
-      {
         "query": "smoking pack years calculator",
         "page": "/tools/pack-year-calculator",
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 12,
         "ctr": 0,
-        "position": 60,
+        "position": 59.1,
         "prev": null
       },
       {
-        "query": "how to quit nicotine pouches",
+        "query": "cigar pack years",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 69.9,
+        "prev": null
+      },
+      {
+        "query": "how to taper off zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 45.4,
+        "prev": null
+      },
+      {
+        "query": "what is a pack year",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 73.5,
+        "prev": null
+      },
+      {
+        "query": "how to quit velo",
         "page": "/quit-zyn",
         "clicks": 0,
         "impressions": 10,
         "ctr": 0,
-        "position": 67,
+        "position": 64.8,
         "prev": null
       },
       {
-        "query": "how to work out pack years",
+        "query": "pack year formula",
         "page": "/tools/pack-year-calculator",
         "clicks": 0,
         "impressions": 10,
         "ctr": 0,
-        "position": 64.5,
-        "prev": null
-      },
-      {
-        "query": "pack year history calculator",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 50.9,
-        "prev": null
-      },
-      {
-        "query": "pack years of smoking",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 75,
-        "prev": null
-      },
-      {
-        "query": "quit smoking apps",
-        "page": "/best-quit-smoking-apps",
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 43.4,
+        "position": 64.3,
         "prev": null
       },
       {
@@ -639,75 +661,147 @@
         "prev": null
       },
       {
-        "query": "how to taper off zyn",
-        "page": "/quit-zyn",
+        "query": "smoking cessation timeline",
+        "page": "/quit-smoking-timeline",
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 10,
         "ctr": 0,
-        "position": 45.8,
-        "prev": null
-      },
-      {
-        "query": "pack years smoking calculator",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 63.8,
-        "prev": null
-      },
-      {
-        "query": "what is a pack year",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 72.9,
-        "prev": null
-      },
-      {
-        "query": "cigar pack years",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 71.4,
+        "position": 83.4,
         "prev": null
       },
       {
         "query": "how much is a pack of cigarettes in indonesia",
         "page": "/calculators/indonesia",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 9,
         "ctr": 0,
-        "position": 7.5,
+        "position": 7.3,
         "prev": null
       },
       {
-        "query": "how to quit velo",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 64.5,
-        "prev": null
-      },
-      {
-        "query": "pack year formula",
+        "query": "how to calculate pack years",
         "page": "/tools/pack-year-calculator",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 9,
         "ctr": 0,
-        "position": 66.4,
+        "position": 67,
+        "prev": null
+      },
+      {
+        "query": "nys quit smoking",
+        "page": "/quit-smoking-help/new-york",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 26,
         "prev": null
       },
       {
         "query": "quitting cigarettes timeline",
         "page": "/quit-smoking-timeline",
         "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 83.4,
+        "prev": null
+      },
+      {
+        "query": "best way to quit zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
         "impressions": 8,
         "ctr": 0,
-        "position": 83.1,
+        "position": 73.5,
+        "prev": null
+      },
+      {
+        "query": "easiest way to quit zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 79,
+        "prev": null
+      },
+      {
+        "query": "giving up smoking timeline",
+        "page": "/quit-smoking-timeline",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 90,
+        "prev": null
+      },
+      {
+        "query": "how long do zyn withdrawals last",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 77,
+        "prev": null
+      },
+      {
+        "query": "how long does it take to quit zyn",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 66.8,
+        "prev": null
+      },
+      {
+        "query": "how long to quit zyn",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 66.8,
+        "prev": null
+      },
+      {
+        "query": "how to get off zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 61.5,
+        "prev": null
+      },
+      {
+        "query": "how to taper off nicotine pouches",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 58.5,
+        "prev": null
+      },
+      {
+        "query": "lung cancer screening pack years",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 78.5,
+        "prev": null
+      },
+      {
+        "query": "quitting zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 69.3,
+        "prev": null
+      },
+      {
+        "query": "quitting zyns timeline",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 56.4,
         "prev": null
       },
       {
@@ -720,21 +814,48 @@
         "prev": null
       },
       {
-        "query": "how to calculate pack years",
-        "page": "/tools/pack-year-calculator",
+        "query": "3 weeks without smoking",
+        "page": "/guides/what-happens-after-3-weeks",
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
-        "position": 69.1,
+        "position": 6.3,
         "prev": null
       },
       {
-        "query": "how to taper off nicotine pouches",
+        "query": "how to quit zyn cold turkey",
         "page": "/quit-zyn",
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
-        "position": 59.9,
+        "position": 72.6,
+        "prev": null
+      },
+      {
+        "query": "how to quit zyn pouches",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 76.7,
+        "prev": null
+      },
+      {
+        "query": "is it hard to quit zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 81.3,
+        "prev": null
+      },
+      {
+        "query": "is quitting zyn hard",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 61.3,
         "prev": null
       },
       {
@@ -747,6 +868,15 @@
         "prev": null
       },
       {
+        "query": "quit zyn cold turkey",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 79.7,
+        "prev": null
+      },
+      {
         "query": "quitting vaping timeline",
         "page": "/vape-withdrawal-symptoms",
         "clicks": 0,
@@ -756,147 +886,84 @@
         "prev": null
       },
       {
-        "query": "quitting zyns timeline",
+        "query": "quitting zyn",
         "page": "/zyn-withdrawal",
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
-        "position": 58.7,
+        "position": 64,
         "prev": null
       },
       {
-        "query": "best way to quit zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 69.2,
-        "prev": null
-      },
-      {
-        "query": "easiest way to quit zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 79.5,
-        "prev": null
-      },
-      {
-        "query": "giving up smoking timeline",
-        "page": "/quit-smoking-timeline",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 89.5,
-        "prev": null
-      },
-      {
-        "query": "how long do zyn withdrawals last",
+        "query": "quitting zyn cold turkey",
         "page": "/zyn-withdrawal",
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 7,
         "ctr": 0,
-        "position": 75.3,
-        "prev": null
-      },
-      {
-        "query": "how long does it take to quit zyn",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 67.3,
-        "prev": null
-      },
-      {
-        "query": "how long to quit zyn",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 66,
-        "prev": null
-      },
-      {
-        "query": "how to get off zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 62.5,
-        "prev": null
-      },
-      {
-        "query": "how to quit zyn pouches",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 73.3,
-        "prev": null
-      },
-      {
-        "query": "is it hard to quit zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 78.3,
-        "prev": null
-      },
-      {
-        "query": "lung cancer screening pack years",
-        "page": "/tools/pack-year-calculator",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 78,
-        "prev": null
-      },
-      {
-        "query": "quitting zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 69.8,
+        "position": 64.6,
         "prev": null
       },
       {
         "query": "smoking cessation benefits timetable",
         "page": "/quit-smoking-timeline",
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 7,
         "ctr": 0,
-        "position": 88.2,
-        "prev": null
-      },
-      {
-        "query": "smoking cessation timeline",
-        "page": "/quit-smoking-timeline",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 84,
+        "position": 87.7,
         "prev": null
       },
       {
         "query": "zyn quit smoking",
         "page": "/quit-zyn",
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 7,
         "ctr": 0,
-        "position": 63.3,
+        "position": 60.7,
         "prev": null
       },
       {
         "query": "zyn withdrawal",
         "page": "/quit-zyn",
         "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 67.1,
+        "prev": null
+      },
+      {
+        "query": "zyn withdrawal",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 68.4,
+        "prev": null
+      },
+      {
+        "query": "best way to quit zyns",
+        "page": "/quit-zyn",
+        "clicks": 0,
         "impressions": 6,
         "ctr": 0,
-        "position": 65.7,
+        "position": 71.2,
+        "prev": null
+      },
+      {
+        "query": "how long to quit zyn",
+        "page": "/quit-zyn",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 58.3,
+        "prev": null
+      },
+      {
+        "query": "how to quit zyn",
+        "page": "/zyn-withdrawal",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 80.2,
         "prev": null
       },
       {
@@ -909,12 +976,12 @@
         "prev": null
       },
       {
-        "query": "3 weeks without smoking",
+        "query": "3 weeks without nicotine",
         "page": "/guides/what-happens-after-3-weeks",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
-        "position": 7,
+        "position": 5,
         "prev": null
       },
       {
@@ -927,15 +994,6 @@
         "prev": null
       },
       {
-        "query": "how long to quit zyn",
-        "page": "/quit-zyn",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 58.6,
-        "prev": null
-      },
-      {
         "query": "how much is 52 packs of cigarettes in indonesia",
         "page": "/calculators/indonesia",
         "clicks": 0,
@@ -945,21 +1003,12 @@
         "prev": null
       },
       {
-        "query": "how to quit zyn",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 80.8,
-        "prev": null
-      },
-      {
-        "query": "how to quit zyn cold turkey",
+        "query": "how to stop zyn",
         "page": "/quit-zyn",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
-        "position": 73.6,
+        "position": 84.8,
         "prev": null
       },
       {
@@ -972,48 +1021,39 @@
         "prev": null
       },
       {
-        "query": "is quitting zyn hard",
-        "page": "/zyn-withdrawal",
+        "query": "no smoking timeline",
+        "page": "/quit-smoking-timeline",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
-        "position": 57.8,
+        "position": 85.6,
         "prev": null
       },
       {
-        "query": "nys quit smoking",
-        "page": "/quit-smoking-help/new-york",
+        "query": "pack per year calculator",
+        "page": "/tools/pack-year-calculator",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
-        "position": 25.4,
+        "position": 34.8,
+        "prev": null
+      },
+      {
+        "query": "pack years calculator",
+        "page": "/tools/pack-year-calculator",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 49.8,
         "prev": null
       },
       {
         "query": "quit zyn cold turkey",
-        "page": "/zyn-withdrawal",
+        "page": "/quit-zyn",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
-        "position": 74.4,
-        "prev": null
-      },
-      {
-        "query": "quitting zyn",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 64.4,
-        "prev": null
-      },
-      {
-        "query": "quitting zyn cold turkey",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 65.4,
+        "position": 80.8,
         "prev": null
       },
       {
@@ -1026,21 +1066,21 @@
         "prev": null
       },
       {
+        "query": "stop smoking timetable",
+        "page": "/quit-smoking-timeline",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 82.4,
+        "prev": null
+      },
+      {
         "query": "stopping vaping cold turkey side effects",
         "page": "/vape-withdrawal-symptoms",
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
         "position": 68.4,
-        "prev": null
-      },
-      {
-        "query": "zyn withdrawal",
-        "page": "/zyn-withdrawal",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 67.6,
         "prev": null
       },
       {
@@ -1054,6 +1094,36 @@
       }
     ],
     "cannibalization": [
+      {
+        "query": "the best quit smoking app",
+        "pages": [
+          {
+            "page": "/best-quit-smoking-apps",
+            "impressions": 35,
+            "position": 59.9
+          },
+          {
+            "page": "/best-quit-smoking-app-for-heavy-smokers",
+            "impressions": 11,
+            "position": 73.9
+          }
+        ]
+      },
+      {
+        "query": "quit smoking calculator",
+        "pages": [
+          {
+            "page": "/calculators/australia",
+            "impressions": 14,
+            "position": 47.9
+          },
+          {
+            "page": "/calculators/united-kingdom",
+            "impressions": 10,
+            "position": 38.1
+          }
+        ]
+      },
       {
         "query": "smoking calculator",
         "pages": [
@@ -1075,240 +1145,240 @@
     {
       "page": "/guides/diarrhea",
       "clicks": 2,
-      "impressions": 579,
-      "ctr": 0.0035,
-      "position": 8.6,
+      "impressions": 605,
+      "ctr": 0.0033,
+      "position": 8.5,
       "prev": {
         "clicks": 0,
-        "impressions": 16,
-        "ctr": 0,
-        "position": 8.5
-      }
-    },
-    {
-      "page": "/guides/dreams-and-sleep",
-      "clicks": 0,
-      "impressions": 373,
-      "ctr": 0,
-      "position": 8.4,
-      "prev": {
-        "clicks": 0,
-        "impressions": 47,
+        "impressions": 34,
         "ctr": 0,
         "position": 8.6
       }
     },
     {
+      "page": "/guides/dreams-and-sleep",
+      "clicks": 0,
+      "impressions": 367,
+      "ctr": 0,
+      "position": 8.4,
+      "prev": {
+        "clicks": 0,
+        "impressions": 60,
+        "ctr": 0,
+        "position": 8.2
+      }
+    },
+    {
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
-      "impressions": 283,
+      "impressions": 349,
       "ctr": 0,
-      "position": 55.4,
+      "position": 54.8,
       "prev": null
     },
     {
       "page": "/guides/joint-pain",
       "clicks": 2,
-      "impressions": 240,
+      "impressions": 242,
       "ctr": 0.0083,
-      "position": 8.2,
+      "position": 7.5,
       "prev": {
         "clicks": 0,
-        "impressions": 46,
+        "impressions": 64,
         "ctr": 0,
-        "position": 16.6
+        "position": 16.3
       }
-    },
-    {
-      "page": "/vape-withdrawal-symptoms",
-      "clicks": 0,
-      "impressions": 170,
-      "ctr": 0,
-      "position": 62.7,
-      "prev": null
     },
     {
       "page": "/quit-smoking-timeline",
       "clicks": 0,
-      "impressions": 167,
+      "impressions": 212,
       "ctr": 0,
-      "position": 63.6,
+      "position": 66,
+      "prev": null
+    },
+    {
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 198,
+      "ctr": 0,
+      "position": 63,
+      "prev": null
+    },
+    {
+      "page": "/vape-withdrawal-symptoms",
+      "clicks": 0,
+      "impressions": 183,
+      "ctr": 0,
+      "position": 62.5,
       "prev": null
     },
     {
       "page": "/calculators/indonesia",
       "clicks": 0,
-      "impressions": 163,
+      "impressions": 182,
       "ctr": 0,
       "position": 6.9,
       "prev": {
         "clicks": 0,
-        "impressions": 16,
+        "impressions": 21,
         "ctr": 0,
-        "position": 12.3
+        "position": 6.9
       }
-    },
-    {
-      "page": "/guides/nausea",
-      "clicks": 1,
-      "impressions": 159,
-      "ctr": 0.0063,
-      "position": 9.5,
-      "prev": {
-        "clicks": 1,
-        "impressions": 35,
-        "ctr": 0.0286,
-        "position": 21.1
-      }
-    },
-    {
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 158,
-      "ctr": 0,
-      "position": 62.2,
-      "prev": null
     },
     {
       "page": "/best-quit-smoking-apps",
       "clicks": 3,
-      "impressions": 152,
-      "ctr": 0.0197,
-      "position": 47.3,
+      "impressions": 160,
+      "ctr": 0.0187,
+      "position": 47.8,
       "prev": {
         "clicks": 0,
-        "impressions": 199,
+        "impressions": 187,
         "ctr": 0,
-        "position": 36.4
+        "position": 34.6
       }
     },
     {
       "page": "/zyn-withdrawal",
       "clicks": 0,
-      "impressions": 129,
+      "impressions": 158,
       "ctr": 0,
-      "position": 58.4,
+      "position": 58.9,
+      "prev": null
+    },
+    {
+      "page": "/guides/nausea",
+      "clicks": 1,
+      "impressions": 154,
+      "ctr": 0.0065,
+      "position": 9.4,
+      "prev": {
+        "clicks": 1,
+        "impressions": 50,
+        "ctr": 0.02,
+        "position": 17.9
+      }
+    },
+    {
+      "page": "/guides/what-happens-after-3-weeks",
+      "clicks": 2,
+      "impressions": 139,
+      "ctr": 0.0144,
+      "position": 12.3,
       "prev": null
     },
     {
       "page": "/guides/heart-palpitations",
       "clicks": 0,
-      "impressions": 126,
+      "impressions": 119,
       "ctr": 0,
       "position": 8.9,
       "prev": {
         "clicks": 1,
-        "impressions": 26,
-        "ctr": 0.0385,
-        "position": 9.2
-      }
-    },
-    {
-      "page": "/guides/what-happens-after-3-weeks",
-      "clicks": 1,
-      "impressions": 123,
-      "ctr": 0.0081,
-      "position": 13,
-      "prev": null
-    },
-    {
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 112,
-      "ctr": 0,
-      "position": 32.9,
-      "prev": {
-        "clicks": 0,
-        "impressions": 54,
-        "ctr": 0,
-        "position": 35.6
+        "impressions": 43,
+        "ctr": 0.0233,
+        "position": 9.1
       }
     },
     {
       "page": "/tools/money-saved",
       "clicks": 0,
-      "impressions": 104,
+      "impressions": 110,
       "ctr": 0,
-      "position": 22.9,
+      "position": 22.7,
       "prev": {
         "clicks": 0,
-        "impressions": 78,
+        "impressions": 63,
         "ctr": 0,
-        "position": 42.6
+        "position": 36.7
+      }
+    },
+    {
+      "page": "/guides/what-happens-after-3-days",
+      "clicks": 0,
+      "impressions": 109,
+      "ctr": 0,
+      "position": 32,
+      "prev": {
+        "clicks": 0,
+        "impressions": 59,
+        "ctr": 0,
+        "position": 36.2
       }
     },
     {
       "page": "/",
       "clicks": 1,
-      "impressions": 101,
-      "ctr": 0.0099,
-      "position": 6.4,
+      "impressions": 96,
+      "ctr": 0.0104,
+      "position": 6.5,
       "prev": {
         "clicks": 0,
         "impressions": 63,
         "ctr": 0,
-        "position": 4.9
+        "position": 4.7
       }
     },
     {
       "page": "/guides/night-sweats",
       "clicks": 0,
-      "impressions": 100,
+      "impressions": 93,
       "ctr": 0,
-      "position": 9.4,
+      "position": 9.8,
       "prev": {
         "clicks": 0,
-        "impressions": 28,
+        "impressions": 38,
         "ctr": 0,
-        "position": 14
+        "position": 11.9
       }
     },
     {
       "page": "/guides/dizziness",
       "clicks": 1,
-      "impressions": 87,
-      "ctr": 0.0115,
+      "impressions": 84,
+      "ctr": 0.0119,
       "position": 8,
       "prev": {
         "clicks": 0,
-        "impressions": 46,
+        "impressions": 49,
         "ctr": 0,
-        "position": 13.8
+        "position": 13.4
       }
     },
     {
       "page": "/guides/taste-and-smell",
       "clicks": 0,
-      "impressions": 81,
+      "impressions": 78,
       "ctr": 0,
-      "position": 10.5,
+      "position": 10.8,
       "prev": {
         "clicks": 0,
-        "impressions": 19,
+        "impressions": 25,
         "ctr": 0,
-        "position": 16.7
-      }
-    },
-    {
-      "page": "/calculators/australia",
-      "clicks": 0,
-      "impressions": 54,
-      "ctr": 0,
-      "position": 45.4,
-      "prev": {
-        "clicks": 0,
-        "impressions": 54,
-        "ctr": 0,
-        "position": 67.6
+        "position": 14.1
       }
     },
     {
       "page": "/zyn-vs-cigarettes",
       "clicks": 0,
-      "impressions": 49,
+      "impressions": 60,
       "ctr": 0,
-      "position": 11.9,
+      "position": 13.7,
       "prev": null
+    },
+    {
+      "page": "/calculators/australia",
+      "clicks": 0,
+      "impressions": 55,
+      "ctr": 0,
+      "position": 45.8,
+      "prev": {
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 67.8
+      }
     },
     {
       "page": "/can-lungs-heal-after-smoking",
@@ -1319,114 +1389,106 @@
       "prev": null
     },
     {
-      "page": "/guides/caffeine-sensitivity",
-      "clicks": 1,
-      "impressions": 40,
-      "ctr": 0.025,
-      "position": 7.8,
-      "prev": {
-        "clicks": 2,
-        "impressions": 20,
-        "ctr": 0.1,
-        "position": 7.8
-      }
-    },
-    {
       "page": "/guides/increased-appetite",
-      "clicks": 0,
-      "impressions": 37,
-      "ctr": 0,
-      "position": 9.6,
+      "clicks": 1,
+      "impressions": 42,
+      "ctr": 0.0238,
+      "position": 9.3,
       "prev": null
     },
     {
       "page": "/calculators/united-kingdom",
       "clicks": 0,
-      "impressions": 35,
+      "impressions": 42,
       "ctr": 0,
-      "position": 39.3,
+      "position": 36.5,
       "prev": {
         "clicks": 0,
-        "impressions": 26,
+        "impressions": 25,
         "ctr": 0,
-        "position": 60.4
-      }
-    },
-    {
-      "page": "/best-quit-smoking-app-for-heavy-smokers",
-      "clicks": 0,
-      "impressions": 34,
-      "ctr": 0,
-      "position": 56,
-      "prev": {
-        "clicks": 0,
-        "impressions": 30,
-        "ctr": 0,
-        "position": 66
+        "position": 59.1
       }
     },
     {
       "page": "/guides/what-happens-after-2-days",
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 42,
       "ctr": 0,
-      "position": 22.3,
+      "position": 19.1,
       "prev": null
+    },
+    {
+      "page": "/best-quit-smoking-app-for-heavy-smokers",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 52.9,
+      "prev": {
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 64.6
+      }
+    },
+    {
+      "page": "/guides/caffeine-sensitivity",
+      "clicks": 1,
+      "impressions": 38,
+      "ctr": 0.0263,
+      "position": 8,
+      "prev": {
+        "clicks": 2,
+        "impressions": 22,
+        "ctr": 0.0909,
+        "position": 7.4
+      }
     },
     {
       "page": "/calculators/united-states",
       "clicks": 0,
-      "impressions": 32,
+      "impressions": 30,
       "ctr": 0,
-      "position": 55,
+      "position": 53.9,
       "prev": {
         "clicks": 0,
-        "impressions": 48,
+        "impressions": 43,
         "ctr": 0,
-        "position": 59.9
-      }
-    },
-    {
-      "page": "/how-to-stop-a-relapse",
-      "clicks": 0,
-      "impressions": 20,
-      "ctr": 0,
-      "position": 40.8,
-      "prev": {
-        "clicks": 0,
-        "impressions": 32,
-        "ctr": 0,
-        "position": 18
-      }
-    },
-    {
-      "page": "/quit-smoking-with-nicotine-gum",
-      "clicks": 0,
-      "impressions": 20,
-      "ctr": 0,
-      "position": 37.1,
-      "prev": null
-    },
-    {
-      "page": "/guides/tingling-hands-and-feet",
-      "clicks": 0,
-      "impressions": 19,
-      "ctr": 0,
-      "position": 8.1,
-      "prev": {
-        "clicks": 2,
-        "impressions": 183,
-        "ctr": 0.0109,
-        "position": 9.8
+        "position": 58.5
       }
     },
     {
       "page": "/quit-smoking-help/new-york",
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 20,
       "ctr": 0,
-      "position": 37.8,
+      "position": 35.5,
       "prev": null
+    },
+    {
+      "page": "/quit-smoking-with-nicotine-gum",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 44.9,
+      "prev": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 29
+      }
+    },
+    {
+      "page": "/how-to-stop-a-relapse",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 34.5,
+      "prev": {
+        "clicks": 0,
+        "impressions": 35,
+        "ctr": 0,
+        "position": 20.3
+      }
     },
     {
       "page": "/guides/concentration",
@@ -1436,31 +1498,31 @@
       "position": 10.4,
       "prev": {
         "clicks": 0,
-        "impressions": 19,
+        "impressions": 15,
         "ctr": 0,
-        "position": 21.8
-      }
-    },
-    {
-      "page": "/guides/sore-gums",
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 16.3,
-      "prev": {
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 11.5
+        "position": 12.8
       }
     },
     {
       "page": "/are-zyns-bad-for-you",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0,
-      "position": 22.9,
+      "position": 21.9,
       "prev": null
+    },
+    {
+      "page": "/guides/muscle-aches",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 9.6,
+      "prev": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 15.3
+      }
     },
     {
       "page": "/calculators",
@@ -1484,29 +1546,50 @@
       }
     },
     {
-      "page": "/guides/muscle-aches",
+      "page": "/guides/restlessness",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
-      "position": 9.8,
+      "position": 8.1,
       "prev": {
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
-        "position": 15.3
+        "position": 10.3
       }
     },
     {
-      "page": "/guides/restlessness",
+      "page": "/guides/sore-gums",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
-      "position": 8.4,
+      "position": 14.9,
       "prev": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 12,
         "ctr": 0,
-        "position": 10.5
+        "position": 13.1
+      }
+    },
+    {
+      "page": "/nicotine-patch-side-effects",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 52.6,
+      "prev": null
+    },
+    {
+      "page": "/guides/tingling-hands-and-feet",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.8,
+      "prev": {
+        "clicks": 1,
+        "impressions": 182,
+        "ctr": 0.0055,
+        "position": 9.1
       }
     },
     {
@@ -1525,9 +1608,9 @@
       "position": 11.9,
       "prev": {
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 4,
         "ctr": 0,
-        "position": 30.8
+        "position": 24.3
       }
     },
     {
@@ -1546,9 +1629,9 @@
     {
       "page": "/best-quit-smoking-app-for-beginners",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 6,
       "ctr": 0,
-      "position": 37.8,
+      "position": 42.7,
       "prev": {
         "clicks": 0,
         "impressions": 6,
@@ -1557,19 +1640,19 @@
       }
     },
     {
+      "page": "/quit-smoking-help/north-dakota",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 20.4,
+      "prev": null
+    },
+    {
       "page": "/quit-smoking-app-android",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
       "position": 19,
-      "prev": null
-    },
-    {
-      "page": "/quit-smoking-help/north-dakota",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 18.8,
       "prev": null
     },
     {
@@ -1583,19 +1666,6 @@
         "impressions": 14,
         "ctr": 0,
         "position": 6.1
-      }
-    },
-    {
-      "page": "/guides/libido",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 9,
-      "prev": {
-        "clicks": 0,
-        "impressions": 149,
-        "ctr": 0,
-        "position": 11.3
       }
     },
     {
@@ -1651,22 +1721,22 @@
       "position": 10,
       "prev": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0,
-        "position": 30
+        "position": 41.5
       }
     },
     {
-      "page": "/guides/hair-loss",
+      "page": "/how-long-does-nicotine-stay-in-your-system",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 1,
+      "position": 46,
       "prev": {
         "clicks": 0,
-        "impressions": 25,
+        "impressions": 2,
         "ctr": 0,
-        "position": 16.8
+        "position": 6.5
       }
     },
     {
@@ -1688,47 +1758,47 @@
   ],
   "queryPages": [
     {
+      "query": "quit smoking timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 79.4,
+      "prev": null
+    },
+    {
       "query": "the best quit smoking app",
       "page": "/best-quit-smoking-apps",
       "clicks": 0,
-      "impressions": 30,
+      "impressions": 35,
       "ctr": 0,
-      "position": 60.3,
+      "position": 59.9,
       "prev": {
         "clicks": 0,
-        "impressions": 26,
+        "impressions": 21,
         "ctr": 0,
-        "position": 68.9
+        "position": 66.8
       }
     },
     {
       "query": "best quit smoking app",
       "page": "/best-quit-smoking-apps",
       "clicks": 1,
-      "impressions": 29,
-      "ctr": 0.0345,
-      "position": 55.1,
+      "impressions": 28,
+      "ctr": 0.0357,
+      "position": 54.3,
       "prev": {
         "clicks": 0,
-        "impressions": 16,
+        "impressions": 15,
         "ctr": 0,
-        "position": 59.4
+        "position": 61.9
       }
-    },
-    {
-      "query": "quit smoking timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 27,
-      "ctr": 0,
-      "position": 80.7,
-      "prev": null
     },
     {
       "query": "how long does it take to quit vaping",
       "page": "/vape-withdrawal-symptoms",
       "clicks": 0,
-      "impressions": 23,
+      "impressions": 25,
       "ctr": 0,
       "position": 73.2,
       "prev": null
@@ -1737,12 +1807,12 @@
       "query": "blou app",
       "page": "/",
       "clicks": 0,
-      "impressions": 22,
+      "impressions": 20,
       "ctr": 0,
       "position": 2.8,
       "prev": {
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 11,
         "ctr": 0,
         "position": 2.7
       }
@@ -1751,9 +1821,36 @@
       "query": "vaping withdrawal symptoms",
       "page": "/vape-withdrawal-symptoms",
       "clicks": 0,
-      "impressions": 17,
+      "impressions": 20,
       "ctr": 0,
-      "position": 74.4,
+      "position": 73.8,
+      "prev": null
+    },
+    {
+      "query": "zyn withdrawal timeline",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 60.6,
+      "prev": null
+    },
+    {
+      "query": "pack years",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 66.2,
+      "prev": null
+    },
+    {
+      "query": "pack year calculator",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 51.6,
       "prev": null
     },
     {
@@ -1766,44 +1863,93 @@
       "prev": null
     },
     {
-      "query": "zyn withdrawal timeline",
-      "page": "/zyn-withdrawal",
+      "query": "how to quit zyn",
+      "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 16,
       "ctr": 0,
-      "position": 62.7,
+      "position": 64.4,
       "prev": null
     },
     {
-      "query": "blou",
-      "page": "/",
+      "query": "stop smoking timeline",
+      "page": "/quit-smoking-timeline",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 16,
       "ctr": 0,
-      "position": 12.3,
-      "prev": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 10
-      }
+      "position": 87.4,
+      "prev": null
     },
     {
-      "query": "pack year calculator",
+      "query": "vaping withdrawal timeline",
+      "page": "/vape-withdrawal-symptoms",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 77.6,
+      "prev": null
+    },
+    {
+      "query": "pack year",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 15,
       "ctr": 0,
-      "position": 52.9,
+      "position": 66.2,
       "prev": null
     },
     {
-      "query": "pack years",
+      "query": "pack years of smoking",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 73.3,
+      "prev": null
+    },
+    {
+      "query": "quit smoking apps",
+      "page": "/best-quit-smoking-apps",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 43.1,
+      "prev": null
+    },
+    {
+      "query": "quitting smoking timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 82.7,
+      "prev": null
+    },
+    {
+      "query": "vape withdrawal symptoms",
+      "page": "/vape-withdrawal-symptoms",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 70.7,
+      "prev": null
+    },
+    {
+      "query": "pack year history",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 14,
       "ctr": 0,
-      "position": 68.4,
+      "position": 63.9,
+      "prev": null
+    },
+    {
+      "query": "pack year history calculator",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 47.5,
       "prev": null
     },
     {
@@ -1821,66 +1967,62 @@
       }
     },
     {
-      "query": "vaping withdrawal timeline",
-      "page": "/vape-withdrawal-symptoms",
+      "query": "smoking pack years",
+      "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 14,
       "ctr": 0,
-      "position": 79.5,
+      "position": 73.7,
       "prev": null
     },
     {
-      "query": "how to quit zyn",
+      "query": "zyn withdrawal symptoms",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 70.9,
+      "prev": null
+    },
+    {
+      "query": "blou",
+      "page": "/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 12.2,
+      "prev": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 11
+      }
+    },
+    {
+      "query": "pack years smoking calculator",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 59.6,
+      "prev": null
+    },
+    {
+      "query": "how to quit nicotine pouches",
       "page": "/quit-zyn",
       "clicks": 0,
-      "impressions": 13,
+      "impressions": 12,
       "ctr": 0,
-      "position": 63.3,
+      "position": 66.2,
       "prev": null
     },
     {
-      "query": "pack year",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 13,
-      "ctr": 0,
-      "position": 66.3,
-      "prev": null
-    },
-    {
-      "query": "stop smoking timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 13,
-      "ctr": 0,
-      "position": 86.6,
-      "prev": null
-    },
-    {
-      "query": "vape withdrawal symptoms",
-      "page": "/vape-withdrawal-symptoms",
-      "clicks": 0,
-      "impressions": 13,
-      "ctr": 0,
-      "position": 71.2,
-      "prev": null
-    },
-    {
-      "query": "pack year history",
+      "query": "how to work out pack years",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 12,
       "ctr": 0,
       "position": 63.3,
-      "prev": null
-    },
-    {
-      "query": "quitting smoking timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 82.3,
       "prev": null
     },
     {
@@ -1898,27 +2040,31 @@
       }
     },
     {
-      "query": "zyn withdrawal symptoms",
-      "page": "/zyn-withdrawal",
+      "query": "smoking pack years calculator",
+      "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 12,
       "ctr": 0,
-      "position": 69.4,
+      "position": 59.1,
       "prev": null
     },
     {
-      "query": "lung pain after quitting smoking",
-      "page": "/guides/joint-pain",
+      "query": "cigar pack years",
+      "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 11,
       "ctr": 0,
-      "position": 10.1,
-      "prev": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 9.7
-      }
+      "position": 69.9,
+      "prev": null
+    },
+    {
+      "query": "how to taper off zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 45.4,
+      "prev": null
     },
     {
       "query": "quit smoking app",
@@ -1935,81 +2081,59 @@
       }
     },
     {
-      "query": "smoking pack years",
-      "page": "/tools/pack-year-calculator",
+      "query": "the best quit smoking app",
+      "page": "/best-quit-smoking-app-for-heavy-smokers",
       "clicks": 0,
       "impressions": 11,
       "ctr": 0,
-      "position": 76.1,
-      "prev": null
-    },
-    {
-      "query": "smoking pack years calculator",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 11,
-      "ctr": 0,
-      "position": 60,
-      "prev": null
-    },
-    {
-      "query": "day 3 no smoking",
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 41.2,
+      "position": 73.9,
       "prev": {
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 6,
         "ctr": 0,
-        "position": 65
+        "position": 81.2
       }
     },
     {
-      "query": "how to quit nicotine pouches",
+      "query": "what is a pack year",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 73.5,
+      "prev": null
+    },
+    {
+      "query": "how to quit velo",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 10,
       "ctr": 0,
-      "position": 67,
+      "position": 64.8,
       "prev": null
     },
     {
-      "query": "how to work out pack years",
+      "query": "pack year formula",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 10,
       "ctr": 0,
-      "position": 64.5,
+      "position": 64.3,
       "prev": null
     },
     {
-      "query": "pack year history calculator",
-      "page": "/tools/pack-year-calculator",
+      "query": "quit smoking calculator",
+      "page": "/calculators/united-kingdom",
       "clicks": 0,
       "impressions": 10,
       "ctr": 0,
-      "position": 50.9,
-      "prev": null
-    },
-    {
-      "query": "pack years of smoking",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 75,
-      "prev": null
-    },
-    {
-      "query": "quit smoking apps",
-      "page": "/best-quit-smoking-apps",
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 43.4,
-      "prev": null
+      "position": 38.1,
+      "prev": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 65.8
+      }
     },
     {
       "query": "smoking calculator",
@@ -2021,6 +2145,15 @@
       "prev": null
     },
     {
+      "query": "smoking cessation timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 83.4,
+      "prev": null
+    },
+    {
       "query": "best quit smoking app",
       "page": "/best-quit-smoking-app-for-heavy-smokers",
       "clicks": 0,
@@ -2029,110 +2162,187 @@
       "position": 70.8,
       "prev": {
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 4,
         "ctr": 0,
-        "position": 75.2
+        "position": 75.8
       }
     },
     {
-      "query": "how to taper off zyn",
-      "page": "/quit-zyn",
+      "query": "day 3 no smoking",
+      "page": "/guides/what-happens-after-3-days",
       "clicks": 0,
       "impressions": 9,
       "ctr": 0,
-      "position": 45.8,
-      "prev": null
-    },
-    {
-      "query": "pack years smoking calculator",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 63.8,
-      "prev": null
-    },
-    {
-      "query": "the best quit smoking app",
-      "page": "/best-quit-smoking-app-for-heavy-smokers",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 75.3,
+      "position": 44.7,
       "prev": {
         "clicks": 0,
-        "impressions": 7,
+        "impressions": 2,
         "ctr": 0,
-        "position": 83.4
+        "position": 37.5
       }
-    },
-    {
-      "query": "what is a pack year",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 72.9,
-      "prev": null
-    },
-    {
-      "query": "cigar pack years",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 71.4,
-      "prev": null
     },
     {
       "query": "how much is a pack of cigarettes in indonesia",
       "page": "/calculators/indonesia",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 7.5,
+      "position": 7.3,
       "prev": null
     },
     {
-      "query": "how to quit velo",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 64.5,
-      "prev": null
-    },
-    {
-      "query": "pack year formula",
+      "query": "how to calculate pack years",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 66.4,
+      "position": 67,
       "prev": null
     },
     {
-      "query": "quit smoking calculator",
-      "page": "/calculators/united-kingdom",
+      "query": "lung pain after quitting smoking",
+      "page": "/guides/joint-pain",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 46.5,
+      "position": 9.9,
       "prev": {
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 5,
         "ctr": 0,
-        "position": 65.8
+        "position": 10.2
       }
+    },
+    {
+      "query": "nys quit smoking",
+      "page": "/quit-smoking-help/new-york",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 26,
+      "prev": null
     },
     {
       "query": "quitting cigarettes timeline",
       "page": "/quit-smoking-timeline",
       "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 83.4,
+      "prev": null
+    },
+    {
+      "query": "best way to quit zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
       "impressions": 8,
       "ctr": 0,
-      "position": 83.1,
+      "position": 73.5,
       "prev": null
+    },
+    {
+      "query": "easiest way to quit zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 79,
+      "prev": null
+    },
+    {
+      "query": "giving up smoking timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 90,
+      "prev": null
+    },
+    {
+      "query": "how long do zyn withdrawals last",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 77,
+      "prev": null
+    },
+    {
+      "query": "how long does it take to quit zyn",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 66.8,
+      "prev": null
+    },
+    {
+      "query": "how long to quit zyn",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 66.8,
+      "prev": null
+    },
+    {
+      "query": "how to get off zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 61.5,
+      "prev": null
+    },
+    {
+      "query": "how to taper off nicotine pouches",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 58.5,
+      "prev": null
+    },
+    {
+      "query": "lung cancer screening pack years",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 78.5,
+      "prev": null
+    },
+    {
+      "query": "quitting zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 69.3,
+      "prev": null
+    },
+    {
+      "query": "quitting zyns timeline",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 56.4,
+      "prev": null
+    },
+    {
+      "query": "smoking calculator",
+      "page": "/calculators/united-kingdom",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 37.5,
+      "prev": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 62.6
+      }
     },
     {
       "query": "3 weeks not smoking",
@@ -2144,35 +2354,48 @@
       "prev": null
     },
     {
-      "query": "how to avoid relapse when quitting smoking",
-      "page": "/how-to-stop-a-relapse",
+      "query": "3 weeks without smoking",
+      "page": "/guides/what-happens-after-3-weeks",
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
-      "position": 90.3,
-      "prev": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 82
-      }
-    },
-    {
-      "query": "how to calculate pack years",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 69.1,
+      "position": 6.3,
       "prev": null
     },
     {
-      "query": "how to taper off nicotine pouches",
+      "query": "how to quit zyn cold turkey",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
-      "position": 59.9,
+      "position": 72.6,
+      "prev": null
+    },
+    {
+      "query": "how to quit zyn pouches",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 76.7,
+      "prev": null
+    },
+    {
+      "query": "is it hard to quit zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 81.3,
+      "prev": null
+    },
+    {
+      "query": "is quitting zyn hard",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 61.3,
       "prev": null
     },
     {
@@ -2185,6 +2408,15 @@
       "prev": null
     },
     {
+      "query": "quit zyn cold turkey",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 79.7,
+      "prev": null
+    },
+    {
       "query": "quitting vaping timeline",
       "page": "/vape-withdrawal-symptoms",
       "clicks": 0,
@@ -2194,102 +2426,84 @@
       "prev": null
     },
     {
-      "query": "quitting zyns timeline",
+      "query": "quitting zyn",
       "page": "/zyn-withdrawal",
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
-      "position": 58.7,
+      "position": 64,
       "prev": null
     },
     {
-      "query": "best way to quit zyn",
-      "page": "/quit-zyn",
+      "query": "quitting zyn cold turkey",
+      "page": "/zyn-withdrawal",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 69.2,
+      "position": 64.6,
       "prev": null
     },
     {
-      "query": "easiest way to quit zyn",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 79.5,
-      "prev": null
-    },
-    {
-      "query": "giving up smoking timeline",
+      "query": "smoking cessation benefits timetable",
       "page": "/quit-smoking-timeline",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 89.5,
+      "position": 87.7,
       "prev": null
     },
     {
-      "query": "how long do zyn withdrawals last",
-      "page": "/zyn-withdrawal",
+      "query": "zyn quit smoking",
+      "page": "/quit-zyn",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 75.3,
+      "position": 60.7,
       "prev": null
     },
     {
-      "query": "how long does it take to quit zyn",
+      "query": "zyn withdrawal",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 67.1,
+      "prev": null
+    },
+    {
+      "query": "zyn withdrawal",
       "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 68.4,
+      "prev": null
+    },
+    {
+      "query": "best way to quit zyns",
+      "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
-      "position": 67.3,
+      "position": 71.2,
       "prev": null
     },
     {
       "query": "how long to quit zyn",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 58.3,
+      "prev": null
+    },
+    {
+      "query": "how to quit zyn",
       "page": "/zyn-withdrawal",
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
-      "position": 66,
-      "prev": null
-    },
-    {
-      "query": "how to get off zyn",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 62.5,
-      "prev": null
-    },
-    {
-      "query": "how to quit zyn pouches",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 73.3,
-      "prev": null
-    },
-    {
-      "query": "is it hard to quit zyn",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 78.3,
-      "prev": null
-    },
-    {
-      "query": "lung cancer screening pack years",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 78,
+      "position": 80.2,
       "prev": null
     },
     {
@@ -2307,93 +2521,6 @@
       }
     },
     {
-      "query": "quitting zyn",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 69.8,
-      "prev": null
-    },
-    {
-      "query": "smoking calculator",
-      "page": "/calculators/united-kingdom",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 39.7,
-      "prev": {
-        "clicks": 0,
-        "impressions": 7,
-        "ctr": 0,
-        "position": 66.6
-      }
-    },
-    {
-      "query": "smoking cessation benefits timetable",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 88.2,
-      "prev": null
-    },
-    {
-      "query": "smoking cessation timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 84,
-      "prev": null
-    },
-    {
-      "query": "zyn quit smoking",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 63.3,
-      "prev": null
-    },
-    {
-      "query": "zyn withdrawal",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 65.7,
-      "prev": null
-    },
-    {
-      "query": "3 days no smoking",
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 16.8,
-      "prev": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 9.6
-      }
-    },
-    {
-      "query": "3 days without smoking",
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 10,
-      "prev": {
-        "clicks": 0,
-        "impressions": 7,
-        "ctr": 0,
-        "position": 18
-      }
-    },
-    {
       "query": "3 weeks of not smoking",
       "page": "/guides/what-happens-after-3-weeks",
       "clicks": 0,
@@ -2403,12 +2530,12 @@
       "prev": null
     },
     {
-      "query": "3 weeks without smoking",
+      "query": "3 weeks without nicotine",
       "page": "/guides/what-happens-after-3-weeks",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 7,
+      "position": 5,
       "prev": null
     },
     {
@@ -2435,13 +2562,18 @@
       "prev": null
     },
     {
-      "query": "how long to quit zyn",
-      "page": "/quit-zyn",
+      "query": "how much does smoking cost",
+      "page": "/calculators/united-kingdom",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 58.6,
-      "prev": null
+      "position": 80.2,
+      "prev": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 85
+      }
     },
     {
       "query": "how much is 52 packs of cigarettes in indonesia",
@@ -2453,21 +2585,12 @@
       "prev": null
     },
     {
-      "query": "how to quit zyn",
-      "page": "/zyn-withdrawal",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 80.8,
-      "prev": null
-    },
-    {
-      "query": "how to quit zyn cold turkey",
+      "query": "how to stop zyn",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 73.6,
+      "position": 84.8,
       "prev": null
     },
     {
@@ -2480,48 +2603,39 @@
       "prev": null
     },
     {
-      "query": "is quitting zyn hard",
-      "page": "/zyn-withdrawal",
+      "query": "no smoking timeline",
+      "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 57.8,
+      "position": 85.6,
       "prev": null
     },
     {
-      "query": "nys quit smoking",
-      "page": "/quit-smoking-help/new-york",
+      "query": "pack per year calculator",
+      "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 25.4,
+      "position": 34.8,
+      "prev": null
+    },
+    {
+      "query": "pack years calculator",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 49.8,
       "prev": null
     },
     {
       "query": "quit zyn cold turkey",
-      "page": "/zyn-withdrawal",
+      "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
-      "position": 74.4,
-      "prev": null
-    },
-    {
-      "query": "quitting zyn",
-      "page": "/zyn-withdrawal",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 64.4,
-      "prev": null
-    },
-    {
-      "query": "quitting zyn cold turkey",
-      "page": "/zyn-withdrawal",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 65.4,
+      "position": 80.8,
       "prev": null
     },
     {
@@ -2548,6 +2662,29 @@
       }
     },
     {
+      "query": "smoking money",
+      "page": "/tools/money-saved",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 49.2,
+      "prev": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 59
+      }
+    },
+    {
+      "query": "stop smoking timetable",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 82.4,
+      "prev": null
+    },
+    {
       "query": "stopping vaping cold turkey side effects",
       "page": "/vape-withdrawal-symptoms",
       "clicks": 0,
@@ -2557,21 +2694,49 @@
       "prev": null
     },
     {
-      "query": "zyn withdrawal",
-      "page": "/zyn-withdrawal",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 67.6,
-      "prev": null
-    },
-    {
       "query": "zyn withdrawal timeline",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 5,
       "ctr": 0,
       "position": 82,
+      "prev": null
+    },
+    {
+      "query": "3 days no smoking",
+      "page": "/guides/what-happens-after-3-days",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.8,
+      "prev": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.5
+      }
+    },
+    {
+      "query": "3 days without smoking",
+      "page": "/guides/what-happens-after-3-days",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10,
+      "prev": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 17
+      }
+    },
+    {
+      "query": "3 weeks no smoking",
+      "page": "/guides/what-happens-after-3-weeks",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 14.3,
       "prev": null
     },
     {
@@ -2598,50 +2763,13 @@
       }
     },
     {
-      "query": "best way to quit zyns",
-      "page": "/quit-zyn",
+      "query": "how long to quit smoking",
+      "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 72.3,
+      "position": 89,
       "prev": null
-    },
-    {
-      "query": "cigarette price in indonesia",
-      "page": "/calculators/indonesia",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 5.5,
-      "prev": null
-    },
-    {
-      "query": "how long does nic sick last",
-      "page": "/guides/nausea",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 41.5,
-      "prev": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 49
-      }
-    },
-    {
-      "query": "how much does smoking cost",
-      "page": "/calculators/united-kingdom",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 83,
-      "prev": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 85
-      }
     },
     {
       "query": "how much money do you save quitting vaping",
@@ -2653,30 +2781,35 @@
       "prev": null
     },
     {
-      "query": "how to stop zyn",
-      "page": "/quit-zyn",
+      "query": "how to avoid relapse when quitting smoking",
+      "page": "/how-to-stop-a-relapse",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 82.8,
-      "prev": null
+      "position": 91.3,
+      "prev": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 87.3
+      }
     },
     {
-      "query": "no smoking timeline",
+      "query": "not smoking timeline",
       "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 86.5,
+      "position": 78.5,
       "prev": null
     },
     {
-      "query": "pack years calculator",
+      "query": "packyear",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 51.5,
+      "position": 59,
       "prev": null
     },
     {
@@ -2703,27 +2836,27 @@
       }
     },
     {
-      "query": "smoking money",
-      "page": "/tools/money-saved",
+      "query": "quit zyn",
+      "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 51.5,
-      "prev": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 59
-      }
+      "position": 62.3,
+      "prev": null
     },
     {
-      "query": "stop smoking timetable",
-      "page": "/quit-smoking-timeline",
+      "query": "smoking cessation apps",
+      "page": "/best-quit-smoking-apps",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 81.5,
-      "prev": null
+      "position": 61.8,
+      "prev": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 52
+      }
     },
     {
       "query": "vaping quitting timeline",
@@ -2762,24 +2895,6 @@
       "prev": null
     },
     {
-      "query": "3 weeks no smoking",
-      "page": "/guides/what-happens-after-3-weeks",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 14.3,
-      "prev": null
-    },
-    {
-      "query": "3 weeks without nicotine",
-      "page": "/guides/what-happens-after-3-weeks",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 5.7,
-      "prev": null
-    },
-    {
       "query": "best free quit smoking app",
       "page": "/best-quit-smoking-apps",
       "clicks": 0,
@@ -2812,6 +2927,29 @@
       "prev": null
     },
     {
+      "query": "cigarette cessation timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 81,
+      "prev": null
+    },
+    {
+      "query": "cigarette price in indonesia",
+      "page": "/calculators/indonesia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7,
+      "prev": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      }
+    },
+    {
       "query": "day 3 without nicotine",
       "page": "/guides/what-happens-after-3-days",
       "clicks": 0,
@@ -2840,13 +2978,32 @@
       }
     },
     {
-      "query": "how long to quit smoking",
-      "page": "/quit-smoking-timeline",
+      "query": "how long does nic sick last",
+      "page": "/guides/nausea",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 89.3,
-      "prev": null
+      "position": 37,
+      "prev": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 52
+      }
+    },
+    {
+      "query": "how much money can you save by not smoking",
+      "page": "/tools/money-saved",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66,
+      "prev": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 82
+      }
     },
     {
       "query": "how much money do you save quitting vaping",
@@ -2855,15 +3012,6 @@
       "impressions": 3,
       "ctr": 0,
       "position": 85.7,
-      "prev": null
-    },
-    {
-      "query": "nicotine gum withdrawal timeline",
-      "page": "/quit-smoking-with-nicotine-gum",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 10.7,
       "prev": null
     },
     {
@@ -2885,21 +3033,12 @@
       "prev": null
     },
     {
-      "query": "not smoking timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 78.7,
-      "prev": null
-    },
-    {
-      "query": "pack per year calculator",
+      "query": "pack years formula",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 45.7,
+      "position": 51.3,
       "prev": null
     },
     {
@@ -2911,33 +3050,19 @@
       "position": 74.3,
       "prev": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0,
-        "position": 65.5
+        "position": 64
       }
     },
     {
-      "query": "quit zyn cold turkey",
+      "query": "quitting nicotine pouches",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 83.3,
+      "position": 68,
       "prev": null
-    },
-    {
-      "query": "smoking cessation apps",
-      "page": "/best-quit-smoking-apps",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 64.3,
-      "prev": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 52
-      }
     },
     {
       "query": "smoking withdrawal symptoms",
@@ -2949,18 +3074,13 @@
       "prev": null
     },
     {
-      "query": "stop smoking calculator",
-      "page": "/calculators/united-states",
+      "query": "stages of quitting smoking",
+      "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 56,
-      "prev": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 63
-      }
+      "position": 95,
+      "prev": null
     },
     {
       "query": "three days without smoking",
@@ -2986,12 +3106,44 @@
       "prev": null
     },
     {
+      "query": "timeline after quitting smoking",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 73.3,
+      "prev": null
+    },
+    {
+      "query": "tobacco cost calculator",
+      "page": "/calculators/united-states",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 53.7,
+      "prev": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 63.5
+      }
+    },
+    {
       "query": "what happens to your body 3 days after quitting smoking",
       "page": "/guides/what-happens-after-3-days",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
       "position": 10,
+      "prev": null
+    },
+    {
+      "query": "zyn withdrawal symptoms",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 95,
       "prev": null
     },
     {
@@ -3158,20 +3310,6 @@
       "prev": null
     },
     {
-      "query": "can quitting smoking cause inflammation",
-      "page": "/guides/joint-pain",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 66,
-      "prev": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 65.5
-      }
-    },
-    {
       "query": "can vaping cause muscle pain",
       "page": "/guides/joint-pain",
       "clicks": 0,
@@ -3199,18 +3337,13 @@
       "prev": null
     },
     {
-      "query": "chewing tobacco cost calculator",
-      "page": "/calculators/united-states",
+      "query": "cigarette price indonesia",
+      "page": "/calculators/indonesia",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 56,
-      "prev": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 52.3
-      }
+      "position": 5,
+      "prev": null
     },
     {
       "query": "cigarette savings calculator",
@@ -3282,6 +3415,15 @@
       "prev": null
     },
     {
+      "query": "does nicotine patches have side effects",
+      "page": "/nicotine-patch-side-effects",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 73.5,
+      "prev": null
+    },
+    {
       "query": "give up smoking app",
       "page": "/best-quit-smoking-apps",
       "clicks": 0,
@@ -3345,17 +3487,17 @@
       "prev": null
     },
     {
-      "query": "how much money can you save by not smoking",
-      "page": "/tools/money-saved",
+      "query": "how much money will i save if i quit smoking",
+      "page": "/calculators/australia",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 70,
+      "position": 71,
       "prev": {
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
-        "position": 81
+        "position": 84
       }
     },
     {
@@ -3377,21 +3519,12 @@
       "prev": null
     },
     {
-      "query": "is nausea a symptom of nicotine withdrawal",
-      "page": "/guides/nausea",
+      "query": "ndquits",
+      "page": "/quit-smoking-help/north-dakota",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 3,
-      "prev": null
-    },
-    {
-      "query": "nicotine withdrawal gum",
-      "page": "/quit-smoking-with-nicotine-gum",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 61,
+      "position": 27,
       "prev": null
     },
     {
@@ -3413,21 +3546,21 @@
       "prev": null
     },
     {
+      "query": "pack per year",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52.5,
+      "prev": null
+    },
+    {
       "query": "pack per year smoking calculator",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 56.5,
-      "prev": null
-    },
-    {
-      "query": "pack years formula",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 48.5,
       "prev": null
     },
     {
@@ -3440,27 +3573,13 @@
       "prev": null
     },
     {
-      "query": "packyear",
-      "page": "/tools/pack-year-calculator",
+      "query": "quit nicotine pouches",
+      "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 55,
+      "position": 80.5,
       "prev": null
-    },
-    {
-      "query": "quit chewing tobacco calculator",
-      "page": "/calculators/united-states",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 58,
-      "prev": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 58
-      }
     },
     {
       "query": "quit smoking calculator",
@@ -3494,7 +3613,7 @@
       "position": 86,
       "prev": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0,
         "position": 72
       }
@@ -3506,24 +3625,6 @@
       "impressions": 2,
       "ctr": 0,
       "position": 86,
-      "prev": null
-    },
-    {
-      "query": "quit zyn",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 64.5,
-      "prev": null
-    },
-    {
-      "query": "quitting nicotine pouches",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 68,
       "prev": null
     },
     {
@@ -3545,12 +3646,30 @@
       "prev": null
     },
     {
+      "query": "quitting zyn symptoms",
+      "page": "/quit-zyn",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88,
+      "prev": null
+    },
+    {
       "query": "side effects of quitting vaping",
       "page": "/vape-withdrawal-symptoms",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 74.5,
+      "prev": null
+    },
+    {
+      "query": "smoke pack year calculator",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44.5,
       "prev": null
     },
     {
@@ -3572,15 +3691,6 @@
       "prev": null
     },
     {
-      "query": "stages of quitting smoking",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 96,
-      "prev": null
-    },
-    {
       "query": "steps to quit smoking",
       "page": "/how-to-quit-smoking",
       "clicks": 0,
@@ -3597,6 +3707,20 @@
       "ctr": 0,
       "position": 38.5,
       "prev": null
+    },
+    {
+      "query": "stop smoking calculator",
+      "page": "/calculators/united-states",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52.5,
+      "prev": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 63
+      }
     },
     {
       "query": "stop smoking day 3",
@@ -3622,18 +3746,13 @@
       "prev": null
     },
     {
-      "query": "tobacco cost calculator",
-      "page": "/calculators/united-states",
+      "query": "timeline of stopping smoking",
+      "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 63,
-      "prev": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 60
-      }
+      "position": 71,
+      "prev": null
     },
     {
       "query": "tobacco withdrawal symptoms",
@@ -3645,21 +3764,21 @@
       "prev": null
     },
     {
+      "query": "what are the most popular quit smoking apps right now, and which one should i download?",
+      "page": "/best-quit-smoking-app-for-heavy-smokers",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11,
+      "prev": null
+    },
+    {
       "query": "what happens 3 weeks after quitting smoking",
       "page": "/guides/what-happens-after-3-weeks",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 8.5,
-      "prev": null
-    },
-    {
-      "query": "zyn withdrawal symptoms",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 93,
       "prev": null
     },
     {
@@ -3719,6 +3838,33 @@
       "impressions": 1,
       "ctr": 0,
       "position": 80,
+      "prev": null
+    },
+    {
+      "query": "2 días sin fumar",
+      "page": "/guides/what-happens-after-2-days",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "prev": null
+    },
+    {
+      "query": "20 pack years",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65,
+      "prev": null
+    },
+    {
+      "query": "20 pack-year",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16,
       "prev": null
     },
     {
@@ -3848,6 +3994,15 @@
       "prev": null
     },
     {
+      "query": "allergic reaction to nicotine",
+      "page": "/nicotine-patch-side-effects",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56,
+      "prev": null
+    },
+    {
       "query": "apps for quitting smoking",
       "page": "/best-quit-smoking-apps",
       "clicks": 0,
@@ -3966,6 +4121,15 @@
       "prev": null
     },
     {
+      "query": "best smoking cessation app",
+      "page": "/best-quit-smoking-app-for-heavy-smokers",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51,
+      "prev": null
+    },
+    {
       "query": "best smoking cessation apps",
       "page": "/best-quit-smoking-apps",
       "clicks": 0,
@@ -4018,6 +4182,15 @@
       "impressions": 1,
       "ctr": 0,
       "position": 4,
+      "prev": null
+    },
+    {
+      "query": "calculate pack years for smoking",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34,
       "prev": null
     },
     {
@@ -4129,21 +4302,26 @@
       "prev": null
     },
     {
+      "query": "chewing tobacco cost calculator",
+      "page": "/calculators/united-states",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54,
+      "prev": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 55.3
+      }
+    },
+    {
       "query": "choice nicotine pouches",
       "page": "/zyn-vs-cigarettes",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 4,
-      "prev": null
-    },
-    {
-      "query": "cigarette cessation timeline",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 92,
       "prev": null
     },
     {
@@ -4171,15 +4349,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 15,
-      "prev": null
-    },
-    {
-      "query": "cigarette price indonesia",
-      "page": "/calculators/indonesia",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
       "prev": null
     },
     {
@@ -4280,15 +4449,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 94,
-      "prev": null
-    },
-    {
-      "query": "day 9 of not smoking",
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 89,
       "prev": null
     },
     {
@@ -4400,15 +4560,6 @@
       "prev": null
     },
     {
-      "query": "giving up smoking day 3",
-      "page": "/guides/what-happens-after-3-days",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 94,
-      "prev": null
-    },
-    {
       "query": "gli zyn sono meglio delle sigarette?",
       "page": "/zyn-vs-cigarettes",
       "clicks": 0,
@@ -4433,6 +4584,15 @@
       "impressions": 1,
       "ctr": 0,
       "position": 77,
+      "prev": null
+    },
+    {
+      "query": "how long do nicotine withdrawals last",
+      "page": "/vape-withdrawal-symptoms",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90,
       "prev": null
     },
     {
@@ -4535,6 +4695,15 @@
       "prev": null
     },
     {
+      "query": "how much do cigarettes cost in indonesia",
+      "page": "/calculators/indonesia",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "prev": null
+    },
+    {
       "query": "how much does smoking cost nhs",
       "page": "/calculators/united-kingdom",
       "clicks": 0,
@@ -4562,6 +4731,15 @@
       "prev": null
     },
     {
+      "query": "how much is 500 cigarettes",
+      "page": "/calculators/indonesia",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11,
+      "prev": null
+    },
+    {
       "query": "how much money can you save by not smoking",
       "page": "/calculators/australia",
       "clicks": 0,
@@ -4570,23 +4748,9 @@
       "position": 85,
       "prev": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0,
-        "position": 90.5
-      }
-    },
-    {
-      "query": "how much money will i save if i quit smoking",
-      "page": "/calculators/australia",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 77,
-      "prev": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 85.7
+        "position": 92
       }
     },
     {
@@ -4598,9 +4762,9 @@
       "position": 64,
       "prev": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0,
-        "position": 78.3
+        "position": 76.5
       }
     },
     {
@@ -4690,15 +4854,6 @@
       }
     },
     {
-      "query": "i stopped smoking",
-      "page": "/guides/dreams-and-sleep",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "prev": null
-    },
-    {
       "query": "i've smoked 20 a day for 25 years. what stop smoking app or service would you recommend for a heavy smoker like me?",
       "page": "/best-quit-smoking-app-for-heavy-smokers",
       "clicks": 0,
@@ -4717,20 +4872,6 @@
       "prev": null
     },
     {
-      "query": "inflammation after quitting smoking",
-      "page": "/guides/joint-pain",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 75,
-      "prev": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 69.2
-      }
-    },
-    {
       "query": "is lung damage reversible",
       "page": "/can-lungs-heal-after-smoking",
       "clicks": 0,
@@ -4738,6 +4879,20 @@
       "ctr": 0,
       "position": 71,
       "prev": null
+    },
+    {
+      "query": "is nausea a symptom of nicotine withdrawal",
+      "page": "/guides/nausea",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "prev": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      }
     },
     {
       "query": "joint pain?",
@@ -4769,6 +4924,15 @@
       "impressions": 1,
       "ctr": 0,
       "position": 64,
+      "prev": null
+    },
+    {
+      "query": "lungs after 3 weeks of not smoking",
+      "page": "/guides/what-happens-after-3-weeks",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
       "prev": null
     },
     {
@@ -4813,15 +4977,6 @@
       "prev": null
     },
     {
-      "query": "ndquits",
-      "page": "/quit-smoking-help/north-dakota",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 27,
-      "prev": null
-    },
-    {
       "query": "nhs smoking calculator",
       "page": "/calculators/united-kingdom",
       "clicks": 0,
@@ -4849,12 +5004,12 @@
       "prev": null
     },
     {
-      "query": "nicotine gum withdrawal",
-      "page": "/quit-smoking-with-nicotine-gum",
+      "query": "nicotine in a cigarette vs zyn",
+      "page": "/zyn-vs-cigarettes",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 56,
+      "position": 74,
       "prev": null
     },
     {
@@ -4867,12 +5022,30 @@
       "prev": null
     },
     {
+      "query": "nicotine patch side effects",
+      "page": "/nicotine-patch-side-effects",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73,
+      "prev": null
+    },
+    {
       "query": "nicotine pouch withdrawal symptoms timeline",
       "page": "/quit-zyn",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 36,
+      "prev": null
+    },
+    {
+      "query": "nicotine pouch withdrawal timeline",
+      "page": "/zyn-withdrawal",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83,
       "prev": null
     },
     {
@@ -4892,6 +5065,20 @@
       "ctr": 0,
       "position": 100,
       "prev": null
+    },
+    {
+      "query": "nicotine withdrawal gum",
+      "page": "/quit-smoking-with-nicotine-gum",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65,
+      "prev": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 57
+      }
     },
     {
       "query": "nicotine withdrawal light headed",
@@ -4998,6 +5185,15 @@
       }
     },
     {
+      "query": "no smoking day 2",
+      "page": "/guides/what-happens-after-2-days",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "prev": null
+    },
+    {
       "query": "not smoking for 3 weeks",
       "page": "/guides/what-happens-after-3-weeks",
       "clicks": 0,
@@ -5034,6 +5230,15 @@
       "prev": null
     },
     {
+      "query": "oui",
+      "page": "/tools/money-saved",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "prev": null
+    },
+    {
       "query": "pablo nicotine pouches",
       "page": "/zyn-vs-cigarettes",
       "clicks": 0,
@@ -5052,21 +5257,21 @@
       "prev": null
     },
     {
-      "query": "pack per year",
-      "page": "/tools/pack-year-calculator",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 36,
-      "prev": null
-    },
-    {
       "query": "pack per year calculation",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 62,
+      "prev": null
+    },
+    {
+      "query": "pack per years",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61,
       "prev": null
     },
     {
@@ -5085,6 +5290,24 @@
       "impressions": 1,
       "ctr": 0,
       "position": 49,
+      "prev": null
+    },
+    {
+      "query": "pack years berechnung",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44,
+      "prev": null
+    },
+    {
+      "query": "pack years calculation",
+      "page": "/tools/pack-year-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57,
       "prev": null
     },
     {
@@ -5124,15 +5347,6 @@
       "prev": null
     },
     {
-      "query": "pain after quitting smoking",
-      "page": "/guides/joint-pain",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "prev": null
-    },
-    {
       "query": "ppy smoking calculator",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
@@ -5151,21 +5365,26 @@
       "prev": null
     },
     {
+      "query": "quit chewing tobacco calculator",
+      "page": "/calculators/united-states",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59,
+      "prev": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 58.5
+      }
+    },
+    {
       "query": "quit chewing tobacco timeline",
       "page": "/quit-smoking-timeline",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 54,
-      "prev": null
-    },
-    {
-      "query": "quit nicotine pouches",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 67,
       "prev": null
     },
     {
@@ -5341,6 +5560,15 @@
       }
     },
     {
+      "query": "quitting cigs timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80,
+      "prev": null
+    },
+    {
       "query": "quitting nicotine night sweats",
       "page": "/guides/night-sweats",
       "clicks": 0,
@@ -5413,15 +5641,6 @@
       "prev": null
     },
     {
-      "query": "quitting zyn symptoms",
-      "page": "/quit-zyn",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 95,
-      "prev": null
-    },
-    {
       "query": "quitting zyn timeline",
       "page": "/zyn-withdrawal",
       "clicks": 0,
@@ -5485,12 +5704,12 @@
       "prev": null
     },
     {
-      "query": "smoke pack year calculator",
+      "query": "smoke pack years calculator",
       "page": "/tools/pack-year-calculator",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 58,
+      "position": 55,
       "prev": null
     },
     {
@@ -5509,6 +5728,15 @@
       "impressions": 1,
       "ctr": 0,
       "position": 90,
+      "prev": null
+    },
+    {
+      "query": "smoking giving up timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84,
       "prev": null
     },
     {
@@ -5595,6 +5823,15 @@
       "impressions": 1,
       "ctr": 0,
       "position": 93,
+      "prev": null
+    },
+    {
+      "query": "stages of giving up smoking",
+      "page": "/guides/what-happens-after-3-weeks",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18,
       "prev": null
     },
     {
@@ -5702,6 +5939,15 @@
       }
     },
     {
+      "query": "the best quit smoking app",
+      "page": "/best-quit-smoking-app-for-beginners",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67,
+      "prev": null
+    },
+    {
       "query": "timeline after quit smoking",
       "page": "/quit-smoking-timeline",
       "clicks": 0,
@@ -5720,21 +5966,30 @@
       "prev": null
     },
     {
+      "query": "timeline of quiting smoking",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76,
+      "prev": null
+    },
+    {
+      "query": "timeline of quitting cigarettes",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83,
+      "prev": null
+    },
+    {
       "query": "timeline of stopping smoking",
       "page": "/guides",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 77,
-      "prev": null
-    },
-    {
-      "query": "timeline of stopping smoking",
-      "page": "/quit-smoking-timeline",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 80,
       "prev": null
     },
     {
@@ -5919,6 +6174,15 @@
       "prev": null
     },
     {
+      "query": "when you quit smoking timeline",
+      "page": "/quit-smoking-timeline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68,
+      "prev": null
+    },
+    {
       "query": "will your lungs heal if you quit smoking",
       "page": "/can-lungs-heal-after-smoking",
       "clicks": 0,
@@ -6018,6 +6282,15 @@
       "prev": null
     },
     {
+      "query": "zyn vs cigarettes nicotine content",
+      "page": "/zyn-vs-cigarettes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11,
+      "prev": null
+    },
+    {
       "query": "zyn vs tabacco riscaldato",
       "page": "/zyn-vs-cigarettes",
       "clicks": 0,
@@ -6052,166 +6325,141 @@
       "ctr": 0,
       "position": 3,
       "prev": null
-    },
-    {
-      "query": "منذ ٥ ايام",
-      "page": "/guides/dizziness",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 9,
-      "prev": null
-    },
-    {
-      "query": "نعم",
-      "page": "/guides/dizziness",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3,
-      "prev": null
     }
   ],
   "countries": [
     {
       "country": "usa",
       "clicks": 2,
-      "impressions": 1552,
-      "ctr": 0.0013,
-      "position": 24
+      "impressions": 1659,
+      "ctr": 0.0012,
+      "position": 25.9
     },
     {
       "country": "gbr",
       "clicks": 2,
-      "impressions": 690,
-      "ctr": 0.0029,
-      "position": 36.5
+      "impressions": 757,
+      "ctr": 0.0026,
+      "position": 38.1
     },
     {
       "country": "aus",
       "clicks": 1,
-      "impressions": 298,
-      "ctr": 0.0034,
-      "position": 39.9
+      "impressions": 311,
+      "ctr": 0.0032,
+      "position": 40.4
     },
     {
       "country": "can",
       "clicks": 0,
-      "impressions": 197,
+      "impressions": 207,
       "ctr": 0,
-      "position": 22.5
+      "position": 21.5
     },
     {
       "country": "deu",
       "clicks": 0,
-      "impressions": 79,
+      "impressions": 87,
       "ctr": 0,
-      "position": 14.7
+      "position": 17.6
     },
     {
       "country": "nld",
       "clicks": 1,
-      "impressions": 58,
-      "ctr": 0.0172,
-      "position": 13.8
+      "impressions": 59,
+      "ctr": 0.0169,
+      "position": 15.8
     },
     {
       "country": "ind",
       "clicks": 0,
-      "impressions": 53,
+      "impressions": 56,
       "ctr": 0,
-      "position": 13.6
+      "position": 13.2
     },
     {
       "country": "esp",
       "clicks": 0,
-      "impressions": 51,
+      "impressions": 50,
       "ctr": 0,
       "position": 10.1
     },
     {
-      "country": "bra",
+      "country": "idn",
       "clicks": 0,
       "impressions": 45,
       "ctr": 0,
-      "position": 42.5
+      "position": 9.6
     },
     {
-      "country": "idn",
+      "country": "bra",
       "clicks": 0,
-      "impressions": 42,
+      "impressions": 44,
       "ctr": 0,
-      "position": 9.8
-    },
-    {
-      "country": "phl",
-      "clicks": 0,
-      "impressions": 33,
-      "ctr": 0,
-      "position": 24.8
-    },
-    {
-      "country": "irl",
-      "clicks": 0,
-      "impressions": 31,
-      "ctr": 0,
-      "position": 24.5
-    },
-    {
-      "country": "are",
-      "clicks": 0,
-      "impressions": 29,
-      "ctr": 0,
-      "position": 15
-    },
-    {
-      "country": "fra",
-      "clicks": 0,
-      "impressions": 28,
-      "ctr": 0,
-      "position": 15.3
-    },
-    {
-      "country": "swe",
-      "clicks": 0,
-      "impressions": 26,
-      "ctr": 0,
-      "position": 13.5
-    },
-    {
-      "country": "bel",
-      "clicks": 0,
-      "impressions": 25,
-      "ctr": 0,
-      "position": 6.9
-    },
-    {
-      "country": "fin",
-      "clicks": 0,
-      "impressions": 23,
-      "ctr": 0,
-      "position": 7.4
-    },
-    {
-      "country": "dnk",
-      "clicks": 1,
-      "impressions": 21,
-      "ctr": 0.0476,
-      "position": 7
+      "position": 43.4
     },
     {
       "country": "zaf",
       "clicks": 1,
-      "impressions": 21,
-      "ctr": 0.0476,
+      "impressions": 41,
+      "ctr": 0.0244,
+      "position": 38.8
+    },
+    {
+      "country": "irl",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 27.2
+    },
+    {
+      "country": "phl",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 24.6
+    },
+    {
+      "country": "fra",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 16.3
+    },
+    {
+      "country": "swe",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 12.9
+    },
+    {
+      "country": "are",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
       "position": 15.5
     },
     {
-      "country": "ita",
+      "country": "fin",
       "clicks": 0,
-      "impressions": 19,
+      "impressions": 26,
       "ctr": 0,
-      "position": 26.7
+      "position": 7.2
+    },
+    {
+      "country": "bel",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 7.1
+    },
+    {
+      "country": "dnk",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.0526,
+      "position": 7
     },
     {
       "country": "sau",
@@ -6221,11 +6469,32 @@
       "position": 11.6
     },
     {
+      "country": "mex",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 25.4
+    },
+    {
+      "country": "pak",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 12.3
+    },
+    {
       "country": "bgd",
       "clicks": 0,
       "impressions": 17,
       "ctr": 0,
-      "position": 37.5
+      "position": 42.1
+    },
+    {
+      "country": "ita",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 28.6
     },
     {
       "country": "tur",
@@ -6233,20 +6502,6 @@
       "impressions": 17,
       "ctr": 0,
       "position": 15.1
-    },
-    {
-      "country": "mex",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 27.7
-    },
-    {
-      "country": "pak",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 13.3
     }
   ]
 }

@@ -1,0 +1,149 @@
+{
+  "fetchedAt": "2026-10-29T09:48:20.099Z",
+  "window": {
+    "start": "2026-10-01",
+    "end": "2026-10-28"
+  },
+  "pages": [
+    {
+      "page": "/",
+      "views": 30,
+      "appStoreClicks": 1,
+      "toolInputs": 0,
+      "clickRate": 0.0333
+    },
+    {
+      "page": "/guides",
+      "views": 4,
+      "appStoreClicks": 1,
+      "toolInputs": 0,
+      "clickRate": 0.25
+    },
+    {
+      "page": "/tools",
+      "views": 7,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/how-to-quit-smoking",
+      "views": 6,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/best-quit-smoking-apps",
+      "views": 5,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/dreams-and-sleep",
+      "views": 2,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/quit-smoking-timeline",
+      "views": 2,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/tools/pack-year-calculator",
+      "views": 2,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/calculators/united-kingdom",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/can-lungs-heal-after-smoking",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/concentration",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/constipation",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/libido",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/sneezing",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/what-happens-after-3-months",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/what-happens-after-3-weeks",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/what-happens-after-5-years",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/prepare-to-quit-smoking",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/quit-smoking-help",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/quit-zyn",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    }
+  ]
+}

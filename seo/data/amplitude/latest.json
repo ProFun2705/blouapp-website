@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-10-27T15:37:32.490Z",
+  "fetchedAt": "2026-10-29T09:48:20.099Z",
   "window": {
-    "start": "2026-09-29",
-    "end": "2026-10-26"
+    "start": "2026-10-01",
+    "end": "2026-10-28"
   },
   "pages": [
     {
@@ -21,13 +21,6 @@
     },
     {
       "page": "/tools",
-      "views": 8,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/best-quit-smoking-apps",
       "views": 7,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -41,35 +34,14 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/constipation",
-      "views": 3,
+      "page": "/best-quit-smoking-apps",
+      "views": 5,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
     },
     {
       "page": "/guides/dreams-and-sleep",
-      "views": 2,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/hair-loss",
-      "views": 2,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/libido",
-      "views": 2,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/sneezing",
       "views": 2,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -104,13 +76,6 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/caffeine-sensitivity",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
       "page": "/guides/concentration",
       "views": 1,
       "appStoreClicks": 0,
@@ -118,14 +83,21 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/joint-pain",
+      "page": "/guides/constipation",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
     },
     {
-      "page": "/guides/skin-changes",
+      "page": "/guides/libido",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/sneezing",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -133,6 +105,13 @@
     },
     {
       "page": "/guides/what-happens-after-3-months",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/what-happens-after-3-weeks",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,

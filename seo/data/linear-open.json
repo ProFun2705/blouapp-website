@@ -1,11 +1,81 @@
 {
-  "fetchedAt": "2026-10-27T15:41:25.624Z",
+  "fetchedAt": "2026-10-29T09:55:45.001Z",
   "issues": [
+    {
+      "id": "BLO-40",
+      "title": "Refresh /nicotine-withdrawal-symptoms into the symptom hub (indexed, 0 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-40/refresh-nicotine-withdrawal-symptoms-into-the-symptom-hub-indexed-0",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/nicotine-withdrawal-symptoms",
+      "cluster": "nicotine withdrawal symptoms",
+      "updatedAt": "2026-10-29T09:54:32.500Z"
+    },
+    {
+      "id": "BLO-39",
+      "title": "Refresh /first-week-quit-smoking (crawled, not indexed, 541 words)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-39/refresh-first-week-quit-smoking-crawled-not-indexed-541-words",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/first-week-quit-smoking",
+      "cluster": "first week quit smoking",
+      "updatedAt": "2026-10-29T09:54:29.263Z"
+    },
+    {
+      "id": "BLO-38",
+      "title": "Refresh /nicotine-withdrawal-timeline (crawled, not indexed, 19 internal links)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-38/refresh-nicotine-withdrawal-timeline-crawled-not-indexed-19-internal",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/nicotine-withdrawal-timeline",
+      "cluster": "nicotine withdrawal timeline",
+      "updatedAt": "2026-10-29T09:54:26.590Z"
+    },
+    {
+      "id": "BLO-37",
+      "title": "Get articles and tools indexed (20 non-guide pages not in Google's index)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-37/get-articles-and-tools-indexed-20-non-guide-pages-not-in-googles-index",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/sitemap.xml",
+      "cluster": "article and tool indexing coverage",
+      "updatedAt": "2026-10-29T09:54:24.203Z"
+    },
+    {
+      "id": "BLO-36",
+      "title": "Get /quit-smoking-app-for-iphone indexed (crawled, not indexed; 1 internal link)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-36/get-quit-smoking-app-for-iphone-indexed-crawled-not-indexed-1-internal",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/quit-smoking-app-for-iphone",
+      "cluster": "quit smoking app for iphone",
+      "updatedAt": "2026-10-29T09:54:22.065Z"
+    },
     {
       "id": "BLO-35",
       "title": "New landing page: quit vaping app (/quit-vaping-app), confirm vaping support first",
       "url": "https://linear.app/blou-site-seo/issue/BLO-35/new-landing-page-quit-vaping-app-quit-vaping-app-confirm-vaping",
-      "state": "Backlog",
+      "state": "Todo",
       "priority": 4,
       "labels": [
         "new-content",
@@ -13,7 +83,7 @@
       ],
       "pageUrl": "/quit-vaping-app",
       "cluster": "quit vaping app",
-      "updatedAt": "2026-10-27T15:41:22.085Z"
+      "updatedAt": "2026-10-27T15:45:29.579Z"
     },
     {
       "id": "BLO-34",
@@ -97,7 +167,7 @@
       ],
       "pageUrl": "/quit-smoking-with-bupropion",
       "cluster": "wellbutrin bupropion to quit smoking",
-      "updatedAt": "2026-10-27T15:41:05.384Z"
+      "updatedAt": "2026-10-29T09:54:56.414Z"
     },
     {
       "id": "BLO-28",
@@ -111,7 +181,7 @@
       ],
       "pageUrl": "/quit-smoking-with-nicotine-patch",
       "cluster": "nicotine patch to quit smoking",
-      "updatedAt": "2026-10-27T15:41:02.467Z"
+      "updatedAt": "2026-10-29T09:54:51.498Z"
     },
     {
       "id": "BLO-27",
@@ -139,7 +209,7 @@
       ],
       "pageUrl": "/guides/libido",
       "cluster": "libido after quitting smoking",
-      "updatedAt": "2026-10-27T15:33:59.120Z"
+      "updatedAt": "2026-10-29T09:55:22.440Z"
     },
     {
       "id": "BLO-25",
@@ -153,7 +223,7 @@
       ],
       "pageUrl": "/guides/tingling-hands-and-feet",
       "cluster": "tingling after quitting smoking",
-      "updatedAt": "2026-10-27T15:33:56.692Z"
+      "updatedAt": "2026-10-29T09:55:17.366Z"
     },
     {
       "id": "BLO-24",
@@ -167,7 +237,7 @@
       ],
       "pageUrl": "/guides",
       "cluster": "guides indexing coverage",
-      "updatedAt": "2026-10-27T15:33:54.226Z"
+      "updatedAt": "2026-10-29T09:55:12.841Z"
     },
     {
       "id": "BLO-22",
@@ -239,7 +309,7 @@
       ],
       "pageUrl": "/quit-smoking-timeline",
       "cluster": "quit smoking timeline",
-      "updatedAt": "2026-10-27T13:08:14.072Z"
+      "updatedAt": "2026-10-29T09:55:06.907Z"
     },
     {
       "id": "BLO-17",
@@ -254,22 +324,7 @@
       ],
       "pageUrl": "/vape-withdrawal-symptoms",
       "cluster": "vaping withdrawal timeline",
-      "updatedAt": "2026-10-27T13:08:10.797Z"
-    },
-    {
-      "id": "BLO-16",
-      "title": "Win the pack-year cluster on /tools/pack-year-calculator (positions 50-70)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-16/win-the-pack-year-cluster-on-toolspack-year-calculator-positions-50-70",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "page-2-push",
-        "tool",
-        "source:research"
-      ],
-      "pageUrl": "/tools/pack-year-calculator",
-      "cluster": "pack year calculator",
-      "updatedAt": "2026-10-27T13:08:08.675Z"
+      "updatedAt": "2026-10-29T09:55:01.324Z"
     },
     {
       "id": "BLO-15",
@@ -283,7 +338,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-weeks",
       "cluster": "3 weeks smoke free",
-      "updatedAt": "2026-10-27T15:34:30.252Z"
+      "updatedAt": "2026-10-29T09:55:26.823Z"
     },
     {
       "id": "BLO-14",
@@ -383,7 +438,7 @@
       ],
       "pageUrl": "/",
       "cluster": "setup:amplitude",
-      "updatedAt": "2026-10-27T15:34:42.095Z"
+      "updatedAt": "2026-10-29T09:55:35.724Z"
     }
   ]
 }
