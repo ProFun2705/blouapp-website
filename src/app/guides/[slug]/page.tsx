@@ -58,6 +58,7 @@ const SEO_TITLE_OVERRIDES: Record<string, string> = {
   anger: "Anger after quitting smoking: why and how long",
   "hair-loss": "Hair loss after quitting smoking: what to expect",
   diarrhea: "Diarrhea after quitting smoking: how long it lasts",
+  "dreams-and-sleep": "Vivid dreams after quitting smoking: why and how long",
 };
 
 /**
