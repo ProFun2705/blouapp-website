@@ -1,16 +1,16 @@
 {
-  "fetchedAt": "2026-11-01T12:30:17.687Z",
+  "fetchedAt": "2026-11-02T09:45:35.351Z",
   "window": {
-    "start": "2026-08-03",
-    "end": "2026-10-31"
+    "start": "2026-10-05",
+    "end": "2026-11-01"
   },
   "pages": [
     {
       "page": "/",
-      "views": 33,
+      "views": 30,
       "appStoreClicks": 1,
       "toolInputs": 0,
-      "clickRate": 0.0303
+      "clickRate": 0.0333
     },
     {
       "page": "/guides",
@@ -20,15 +20,8 @@
       "clickRate": 0.25
     },
     {
-      "page": "/best-quit-smoking-apps",
-      "views": 10,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
       "page": "/tools",
-      "views": 8,
+      "views": 7,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
@@ -41,49 +34,14 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/libido",
-      "views": 4,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/constipation",
-      "views": 3,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/what-happens-after-3-months",
-      "views": 3,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/concentration",
-      "views": 2,
+      "page": "/best-quit-smoking-apps",
+      "views": 5,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
     },
     {
       "page": "/guides/dreams-and-sleep",
-      "views": 2,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/hair-loss",
-      "views": 2,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/sneezing",
       "views": 2,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -125,7 +83,14 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/caffeine-sensitivity",
+      "page": "/guides/concentration",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/constipation",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -139,35 +104,21 @@
       "clickRate": 0
     },
     {
-      "page": "/guides/joint-pain",
+      "page": "/guides/libido",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
     },
     {
-      "page": "/guides/restlessness",
+      "page": "/guides/sneezing",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
       "clickRate": 0
     },
     {
-      "page": "/guides/sinus-congestion",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/skin-changes",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/tingling-hands-and-feet",
+      "page": "/guides/what-happens-after-3-months",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -182,20 +133,6 @@
     },
     {
       "page": "/guides/what-happens-after-5-years",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/guides/what-happens-after-6-months",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/i-smoked-one-cigarette",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -217,13 +154,6 @@
     },
     {
       "page": "/quit-zyn",
-      "views": 1,
-      "appStoreClicks": 0,
-      "toolInputs": 0,
-      "clickRate": 0
-    },
-    {
-      "page": "/tools/money-saved",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,

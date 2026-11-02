@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T09:55:45.001Z",
+  "fetchedAt": "2026-11-02T09:45:38.607Z",
   "issues": [
     {
       "id": "BLO-40",
@@ -369,34 +369,6 @@
       "updatedAt": "2026-10-27T15:34:19.148Z"
     },
     {
-      "id": "BLO-12",
-      "title": "Rewrite title and meta for /guides/dreams-and-sleep (373 impressions, 0 clicks)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-12/rewrite-title-and-meta-for-guidesdreams-and-sleep-373-impressions-0",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "ctr-snippet",
-        "source:audit"
-      ],
-      "pageUrl": "/guides/dreams-and-sleep",
-      "cluster": "quit smoking vivid dreams / insomnia",
-      "updatedAt": "2026-10-27T15:34:13.271Z"
-    },
-    {
-      "id": "BLO-11",
-      "title": "Rewrite title and meta for /guides/diarrhea (579 impressions, 0.35% CTR)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-11/rewrite-title-and-meta-for-guidesdiarrhea-579-impressions-035percent",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "ctr-snippet",
-        "source:audit"
-      ],
-      "pageUrl": "/guides/diarrhea",
-      "cluster": "diarrhea after quitting smoking",
-      "updatedAt": "2026-10-27T15:34:07.574Z"
-    },
-    {
       "id": "BLO-10",
       "title": "Link /about from the footer or guides hub",
       "url": "https://linear.app/blou-site-seo/issue/BLO-10/link-about-from-the-footer-or-guides-hub",
@@ -438,7 +410,7 @@
       ],
       "pageUrl": "/",
       "cluster": "setup:amplitude",
-      "updatedAt": "2026-10-29T09:55:35.724Z"
+      "updatedAt": "2026-11-01T12:30:57.346Z"
     }
   ]
 }
