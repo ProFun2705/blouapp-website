@@ -197,6 +197,9 @@ export default function BlouVsQuitGeniusPage() {
       <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/quit-smoking-app-for-iphone" variant="secondary">
+          Best quit app for iPhone →
+        </ButtonLink>
         <ButtonLink href="/best-quit-smoking-apps" variant="secondary">
           Compare quit apps →
         </ButtonLink>

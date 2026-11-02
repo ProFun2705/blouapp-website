@@ -240,6 +240,9 @@ export default function BlouVsSmokeFreePage() {
       <EndAppCta campaign={CAMPAIGN} />
 
       <div className="flex flex-wrap gap-3">
+        <ButtonLink href="/quit-smoking-app-for-iphone" variant="secondary">
+          Best quit app for iPhone →
+        </ButtonLink>
         <ButtonLink href="/" variant="secondary">
           Use a quit tracker →
         </ButtonLink>

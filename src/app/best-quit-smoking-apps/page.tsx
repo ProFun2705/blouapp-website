@@ -196,6 +196,12 @@ export default function BestQuitSmokingAppsPage() {
           Blou vs Quit Genius
         </Link>
         <Link
+          href="/quit-smoking-app-for-iphone"
+          className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
+        >
+          iPhone apps
+        </Link>
+        <Link
           href="/quit-smoking-app-android"
           className="rounded-full border border-teal-200 px-3 py-1.5 text-teal-900 hover:bg-teal-50"
         >

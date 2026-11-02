@@ -155,7 +155,14 @@ export default function QuitSmokingAppAndroidPage() {
         <h2 className="text-xl font-semibold text-teal-950">Blou on iPhone today</h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
           If you also have an iPhone, you can use Blou now while you keep your
-          Android device for everything else.
+          Android device for everything else. See{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href="/quit-smoking-app-for-iphone"
+          >
+            how to choose a quit smoking app for iPhone
+          </Link>
+          .
         </p>
       </section>
 

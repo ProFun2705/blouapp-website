@@ -97,7 +97,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/trying-to-quit-smoking-again", lastModified: OCT_2026, label: "Trying to quit again", group: "Slips and relapse" },
 
   { path: "/best-quit-smoking-apps", lastModified: OCT_2026, label: "Best quit smoking apps in 2026", group: "Quit apps compared" },
-  { path: "/quit-smoking-app-for-iphone", lastModified: OCT_2026, label: "Quit smoking apps for iPhone", group: "Quit apps compared" },
+  { path: "/quit-smoking-app-for-iphone", lastModified: "2026-11-02", label: "Best quit smoking app for iPhone", group: "Quit apps compared" },
   { path: "/quit-smoking-app-android", lastModified: OCT_2026, label: "Quit smoking apps for Android", group: "Quit apps compared" },
   { path: "/blou-vs-smoke-free", lastModified: OCT_2026, label: "Blou vs Smoke Free", group: "Quit apps compared" },
   { path: "/blou-vs-quitnow", lastModified: OCT_2026, label: "Blou vs QuitNow", group: "Quit apps compared" },

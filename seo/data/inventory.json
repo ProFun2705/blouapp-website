@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T09:45:55.093Z",
+  "generatedAt": "2026-11-02T10:15:19.626Z",
   "gscWindow": {
     "start": "2026-10-03",
     "end": "2026-10-30"
@@ -1139,7 +1139,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 920,
+      "words": 922,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -1147,6 +1147,7 @@
         "/go/app",
         "/blou-vs-flamy",
         "/blou-vs-quit-genius",
+        "/quit-smoking-app-for-iphone",
         "/quit-smoking-app-android",
         "/nrt-and-quit-smoking-app",
         "/first-week-quit-smoking",
@@ -1571,7 +1572,7 @@
         "/calculators/vietnam",
         "/calculators/indonesia"
       ],
-      "linkedFrom": 24,
+      "linkedFrom": 23,
       "primaryKeyword": "quit smoking money saved calculator",
       "secondaryKeywords": null,
       "intent": null,
@@ -1822,11 +1823,12 @@
         "MobileApplication",
         "FAQPage"
       ],
-      "words": 792,
+      "words": 804,
       "faqCount": 6,
       "appStoreCtas": 2,
       "internalLinksOut": [
         "/go/app",
+        "/quit-smoking-app-for-iphone",
         "/guides",
         "/how-to-quit-smoking",
         "/nicotine-withdrawal-timeline",
@@ -3749,7 +3751,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1235,
+      "words": 1236,
       "faqCount": 4,
       "appStoreCtas": 1,
       "internalLinksOut": [
@@ -4413,7 +4415,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 579,
+      "words": 590,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -4422,9 +4424,10 @@
         "/go/app",
         "/how-to-quit-smoking",
         "/guides",
-        "/tools/money-saved"
+        "/tools/money-saved",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 2,
+      "linkedFrom": 3,
       "primaryKeyword": "quit smoking app android",
       "secondaryKeywords": null,
       "intent": null,
@@ -4901,16 +4904,17 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 571,
+      "words": 577,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
         "/best-quit-smoking-apps",
         "/go/app",
+        "/quit-smoking-app-for-iphone",
         "/how-to-quit-smoking"
       ],
-      "linkedFrom": 2,
+      "linkedFrom": 3,
       "primaryKeyword": "blou vs flamy",
       "secondaryKeywords": null,
       "intent": null,
@@ -5254,7 +5258,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 797,
+      "words": 803,
       "faqCount": 5,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -5262,9 +5266,10 @@
         "/best-quit-smoking-apps",
         "/go/app",
         "/guides/what-happens-after-1-week",
-        "/how-to-quit-smoking"
+        "/how-to-quit-smoking",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 1,
+      "linkedFrom": 2,
       "primaryKeyword": "blou vs kwit",
       "secondaryKeywords": null,
       "intent": null,
@@ -5301,15 +5306,16 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 585,
+      "words": 591,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
         "/best-quit-smoking-apps",
-        "/go/app"
+        "/go/app",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 2,
+      "linkedFrom": 3,
       "primaryKeyword": "blou vs quit genius",
       "secondaryKeywords": null,
       "intent": null,
@@ -5347,7 +5353,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 655,
+      "words": 661,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -5357,9 +5363,10 @@
         "/tools/money-saved",
         "/guides/cravings",
         "/how-to-quit-smoking",
-        "/i-smoked-one-cigarette"
+        "/i-smoked-one-cigarette",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 1,
+      "linkedFrom": 2,
       "primaryKeyword": "blou vs quitnow",
       "secondaryKeywords": null,
       "intent": null,
@@ -5399,7 +5406,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 833,
+      "words": 839,
       "faqCount": 5,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -5408,9 +5415,10 @@
         "/go/app",
         "/guides/what-happens-after-1-week",
         "/how-to-quit-smoking",
-        "/prepare-to-quit-smoking"
+        "/prepare-to-quit-smoking",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 1,
+      "linkedFrom": 2,
       "primaryKeyword": "blou vs quitstart",
       "secondaryKeywords": null,
       "intent": null,
@@ -5448,7 +5456,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 690,
+      "words": 696,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -5458,9 +5466,10 @@
         "/tools/money-saved",
         "/how-to-quit-smoking",
         "/quit-smoking-with-nicotine-patch",
-        "/quit-smoking-with-nicotine-gum"
+        "/quit-smoking-with-nicotine-gum",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 1,
+      "linkedFrom": 2,
       "primaryKeyword": "blou vs smoke free",
       "secondaryKeywords": null,
       "intent": null,
@@ -5711,7 +5720,7 @@
         "/i-smoked-one-cigarette",
         "/prepare-to-quit-smoking"
       ],
-      "linkedFrom": 7,
+      "linkedFrom": 8,
       "primaryKeyword": "first week quit smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -7307,7 +7316,7 @@
         "/quit-smoking-timeline",
         "/tools"
       ],
-      "linkedFrom": 14,
+      "linkedFrom": 13,
       "primaryKeyword": "what happens after 1 day of not smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -8296,7 +8305,7 @@
         "/quit-smoking-with-nicotine-lozenge",
         "/best-quit-smoking-apps"
       ],
-      "linkedFrom": 15,
+      "linkedFrom": 16,
       "primaryKeyword": "NRT and quit app",
       "secondaryKeywords": null,
       "intent": null,
@@ -8422,17 +8431,18 @@
       "section": "landing",
       "source": "src/app/quit-smoking-app-for-iphone/page.tsx",
       "status": "live",
-      "title": "Quit smoking app for iPhone: what actually works | Blou",
-      "description": "The best quit smoking app for iPhone is the one you use during cravings. What to look for: a fast craving tool, savings, milestones, and a simple plan.",
-      "h1": "Quit smoking app for iPhone: what works",
+      "title": "Best quit smoking app for iPhone: how to choose | Blou",
+      "description": "The best quit smoking app for iPhone depends on what you need. Compare price, in-app purchases and iOS version, and learn how to cancel a trial in time.",
+      "h1": "Best quit smoking app for iPhone",
       "keywordsMeta": [
-        "quit smoking app for iphone",
         "best quit smoking app for iphone",
-        "quit smoking app iphone",
-        "stop smoking app iphone"
+        "quit smoking app for iphone",
+        "stop smoking app iphone",
+        "quit smoking app iphone free",
+        "best free quit smoking app for iphone"
       ],
       "published": "2026-05-09",
-      "modified": "2026-10-13",
+      "modified": "2026-11-02",
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -8441,21 +8451,29 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 660,
-      "faqCount": 4,
+      "words": 1698,
+      "faqCount": 6,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
         "/best-quit-smoking-apps",
         "/go/app",
-        "/guides/cravings",
-        "/tools/money-saved",
-        "/guides/what-happens-after-1-day",
+        "/blou-vs-quitstart",
+        "/blou-vs-smoke-free",
+        "/blou-vs-quitnow",
+        "/blou-vs-kwit",
+        "/blou-vs-flamy",
+        "/blou-vs-quit-genius",
+        "/quit-smoking-app-android",
+        "/nrt-and-quit-smoking-app",
         "/prepare-to-quit-smoking",
+        "/guides/cravings",
         "/i-smoked-one-cigarette",
+        "/first-week-quit-smoking",
+        "/quit-smoking-on-a-budget",
         "/how-to-quit-smoking"
       ],
-      "linkedFrom": 1,
+      "linkedFrom": 10,
       "primaryKeyword": "quit smoking app for iphone",
       "secondaryKeywords": null,
       "intent": null,
@@ -11253,7 +11271,7 @@
         "/quit-smoking-without-nrt",
         "/best-quit-smoking-apps"
       ],
-      "linkedFrom": 3,
+      "linkedFrom": 4,
       "primaryKeyword": "quit smoking on a budget",
       "secondaryKeywords": null,
       "intent": null,

@@ -116,6 +116,11 @@ export default function HomePage() {
         </h2>
         <p className="mt-2 max-w-2xl text-base leading-7 text-ink-muted">
           Most quit apps count days and money from averages. Blou shows your own change.
+          Still comparing?{" "}
+          <Link href="/quit-smoking-app-for-iphone" className="font-medium text-accent-strong underline underline-offset-2">
+            How to choose a quit smoking app for iPhone
+          </Link>
+          .
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {APP_FEATURES.map((feature) => (
