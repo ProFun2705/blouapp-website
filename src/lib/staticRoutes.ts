@@ -33,6 +33,7 @@ export type StaticRoute = {
 const OCT_2026 = "2026-10-13";
 const OCT_15_2026 = "2026-10-15";
 const OCT_28_2026 = "2026-10-28";
+const NOV_3_2026 = "2026-11-03";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -64,7 +65,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/quit-smoking-cold-turkey", lastModified: OCT_2026, label: "Quitting cold turkey", group: "Methods and medication" },
   { path: "/quit-smoking-without-nrt", lastModified: OCT_2026, label: "Quitting without NRT", group: "Methods and medication" },
   { path: "/nicotine-patch-vs-gum", lastModified: OCT_2026, label: "Nicotine patch vs gum", group: "Methods and medication" },
-  { path: "/quit-smoking-with-nicotine-patch", lastModified: OCT_2026, label: "Quitting with the nicotine patch", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-patch", lastModified: NOV_3_2026, label: "How to use a nicotine patch", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-gum", lastModified: OCT_2026, label: "Quitting with nicotine gum", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-lozenge", lastModified: OCT_2026, label: "Quitting with nicotine lozenges", group: "Methods and medication" },
   { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
