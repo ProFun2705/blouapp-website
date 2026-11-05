@@ -1,6 +1,118 @@
 {
-  "fetchedAt": "2026-11-02T09:45:38.607Z",
+  "fetchedAt": "2026-11-05T10:53:47.089Z",
   "issues": [
+    {
+      "id": "BLO-48",
+      "title": "Add \"Zyn hiccups\" section to /are-zyns-bad-for-you (720/mo, LOW competition)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-48/add-zyn-hiccups-section-to-are-zyns-bad-for-you-720mo-low-competition",
+      "state": "Backlog",
+      "priority": 4,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/are-zyns-bad-for-you",
+      "cluster": "zyn hiccups",
+      "updatedAt": "2026-11-02T09:50:00.692Z"
+    },
+    {
+      "id": "BLO-47",
+      "title": "New page: can your lungs heal from vaping (/can-lungs-heal-from-vaping)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-47/new-page-can-your-lungs-heal-from-vaping-can-lungs-heal-from-vaping",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/can-lungs-heal-from-vaping",
+      "cluster": "can lungs heal from vaping",
+      "updatedAt": "2026-11-02T09:49:57.999Z"
+    },
+    {
+      "id": "BLO-46",
+      "title": "Refresh /quit-smoking-without-gaining-weight for \"weight gain after quitting smoking\"",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-46/refresh-quit-smoking-without-gaining-weight-for-weight-gain-after",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-without-gaining-weight",
+      "cluster": "weight gain after quitting smoking",
+      "updatedAt": "2026-11-02T09:49:55.078Z"
+    },
+    {
+      "id": "BLO-45",
+      "title": "Push /guides/what-happens-after-2-days to page 1 (position 16, 63 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-45/push-guideswhat-happens-after-2-days-to-page-1-position-16-63",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "page-2-push",
+        "source:research"
+      ],
+      "pageUrl": "/guides/what-happens-after-2-days",
+      "cluster": "2 days without smoking",
+      "updatedAt": "2026-11-02T09:49:51.050Z"
+    },
+    {
+      "id": "BLO-44",
+      "title": "Refresh /how-to-help-someone-quit-smoking (demand up 2x, page thin)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-44/refresh-how-to-help-someone-quit-smoking-demand-up-2x-page-thin",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/how-to-help-someone-quit-smoking",
+      "cluster": "how to help someone quit smoking",
+      "updatedAt": "2026-11-02T09:49:48.637Z"
+    },
+    {
+      "id": "BLO-43",
+      "title": "Refresh /quit-smoking-cold-turkey (crawled, not indexed since May; 1,600/mo cluster)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-43/refresh-quit-smoking-cold-turkey-crawled-not-indexed-since-may-1600mo",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-cold-turkey",
+      "cluster": "quit smoking cold turkey",
+      "updatedAt": "2026-11-02T09:49:46.058Z"
+    },
+    {
+      "id": "BLO-42",
+      "title": "Refresh /quit-smoking-with-nicotine-lozenge for \"nicotine lozenge\" (2mg vs 4mg, how to use)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-42/refresh-quit-smoking-with-nicotine-lozenge-for-nicotine-lozenge-2mg-vs",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-with-nicotine-lozenge",
+      "cluster": "nicotine lozenge to quit smoking",
+      "updatedAt": "2026-11-02T09:49:43.611Z"
+    },
+    {
+      "id": "BLO-41",
+      "title": "Refresh /quit-vaping for \"how to quit vaping\" (thin page, vaping support now confirmed)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-41/refresh-quit-vaping-for-how-to-quit-vaping-thin-page-vaping-support",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/quit-vaping",
+      "cluster": "how to quit vaping",
+      "updatedAt": "2026-11-02T09:49:33.525Z"
+    },
     {
       "id": "BLO-40",
       "title": "Refresh /nicotine-withdrawal-symptoms into the symptom hub (indexed, 0 impressions)",
@@ -56,20 +168,6 @@
       "pageUrl": "/sitemap.xml",
       "cluster": "article and tool indexing coverage",
       "updatedAt": "2026-10-29T09:54:24.203Z"
-    },
-    {
-      "id": "BLO-36",
-      "title": "Get /quit-smoking-app-for-iphone indexed (crawled, not indexed; 1 internal link)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-36/get-quit-smoking-app-for-iphone-indexed-crawled-not-indexed-1-internal",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "technical",
-        "source:audit"
-      ],
-      "pageUrl": "/quit-smoking-app-for-iphone",
-      "cluster": "quit smoking app for iphone",
-      "updatedAt": "2026-10-29T09:54:22.065Z"
     },
     {
       "id": "BLO-35",
@@ -168,20 +266,6 @@
       "pageUrl": "/quit-smoking-with-bupropion",
       "cluster": "wellbutrin bupropion to quit smoking",
       "updatedAt": "2026-10-29T09:54:56.414Z"
-    },
-    {
-      "id": "BLO-28",
-      "title": "Refresh /quit-smoking-with-nicotine-patch for \"using nicotine patches\" and \"where to put a nicotine patch\"",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-28/refresh-quit-smoking-with-nicotine-patch-for-using-nicotine-patches",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-smoking-with-nicotine-patch",
-      "cluster": "nicotine patch to quit smoking",
-      "updatedAt": "2026-10-29T09:54:51.498Z"
     },
     {
       "id": "BLO-27",

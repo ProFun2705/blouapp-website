@@ -126,6 +126,10 @@ export default function CombinationNrtQuitSmokingPage() {
           <Link className="font-medium text-teal-800 underline" href="/first-week-quit-smoking">
             week one
           </Link>
+          . Some people pair a patch with a prescription pill instead; see{" "}
+          <Link className="font-medium text-teal-800 underline" href="/quit-smoking-with-bupropion">
+            Wellbutrin (bupropion) for quitting smoking
+          </Link>
           .
         </p>
       </section>

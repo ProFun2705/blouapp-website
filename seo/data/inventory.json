@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-02T10:15:19.626Z",
+  "generatedAt": "2026-11-05T10:53:37.083Z",
   "gscWindow": {
-    "start": "2026-10-03",
-    "end": "2026-10-30"
+    "start": "2026-10-06",
+    "end": "2026-11-02"
   },
   "amplitudeWindow": {
-    "start": "2026-10-05",
-    "end": "2026-11-01"
+    "start": "2026-10-08",
+    "end": "2026-11-04"
   },
   "counts": {
     "guide": 56,
@@ -73,23 +73,23 @@
       "suppressUntil": "2026-11-19",
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 1,
-        "impressions": 620,
-        "ctr": 0.0016,
-        "position": 8.6,
+        "impressions": 606,
+        "ctr": 0.0017,
+        "position": 8.5,
         "prev": {
           "clicks": 1,
-          "impressions": 95,
-          "ctr": 0.0105,
-          "position": 8.4
+          "impressions": 145,
+          "ctr": 0.0069,
+          "position": 8.8
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "low-ctr"
       ]
@@ -150,74 +150,74 @@
       "suppressUntil": "2026-11-18",
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 448,
+        "impressions": 512,
         "ctr": 0,
-        "position": 51.7,
+        "position": 51.1,
         "prev": null,
         "topQueries": [
           {
             "query": "pack years",
-            "impressions": 25,
+            "impressions": 31,
             "clicks": 0,
-            "position": 68.2
-          },
-          {
-            "query": "pack year history calculator",
-            "impressions": 23,
-            "clicks": 0,
-            "position": 42.4
+            "position": 68.9
           },
           {
             "query": "pack year calculator",
-            "impressions": 22,
+            "impressions": 26,
             "clicks": 0,
-            "position": 51.5
+            "position": 50
+          },
+          {
+            "query": "pack year history calculator",
+            "impressions": 26,
+            "clicks": 0,
+            "position": 40.8
           },
           {
             "query": "pack years of smoking",
-            "impressions": 20,
+            "impressions": 23,
             "clicks": 0,
-            "position": 72.8
+            "position": 73.5
           },
           {
             "query": "pack year",
-            "impressions": 19,
+            "impressions": 22,
             "clicks": 0,
-            "position": 65.3
+            "position": 63.3
           },
           {
             "query": "smoking pack years",
-            "impressions": 18,
+            "impressions": 20,
             "clicks": 0,
-            "position": 73.1
-          },
-          {
-            "query": "pack year history",
-            "impressions": 17,
-            "clicks": 0,
-            "position": 62.8
+            "position": 72.4
           },
           {
             "query": "how to work out pack years",
-            "impressions": 15,
+            "impressions": 19,
             "clicks": 0,
-            "position": 61.5
+            "position": 59.8
+          },
+          {
+            "query": "pack year history",
+            "impressions": 19,
+            "clicks": 0,
+            "position": 61.8
           },
           {
             "query": "pack years smoking calculator",
-            "impressions": 15,
+            "impressions": 19,
             "clicks": 0,
-            "position": 57.3
+            "position": 52.5
           },
           {
             "query": "smoking calculator",
-            "impressions": 14,
+            "impressions": 17,
             "clicks": 0,
-            "position": 51.4
+            "position": 51.8
           }
         ]
       },
@@ -228,95 +228,8 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
-    },
-    {
-      "url": "/guides/dreams-and-sleep",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "Vivid dreams after quitting smoking: why and how long | Blou",
-      "description": "Vivid dreams after quitting smoking often start in week 1 and ease within 2 to 4 weeks. Why they happen, patch and Chantix tips, and when to get help.",
-      "h1": "Vivid dreams after quitting smoking: why and how long they last",
-      "keywordsMeta": [
-        "vivid dreams after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "vivid dreams"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-10-30",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1584,
-      "faqCount": 6,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/insomnia",
-        "/guides/cravings",
-        "/guides/caffeine-sensitivity",
-        "/quit-smoking-with-anxiety",
-        "/guides/what-happens-after-3-days",
-        "/guides/what-happens-after-1-week",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 6,
-      "primaryKeyword": "vivid dreams after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": "BLO-12",
-      "notes": null,
-      "suppressUntil": "2026-11-20",
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 361,
-        "ctr": 0,
-        "position": 8.3,
-        "prev": {
-          "clicks": 0,
-          "impressions": 94,
-          "ctr": 0,
-          "position": 8.4
-        },
-        "topQueries": [
-          {
-            "query": "unusually vivid dreams",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 3
-          }
-        ]
-      },
-      "amplitude": {
-        "page": "/guides/dreams-and-sleep",
-        "views": 2,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "low-ctr"
-      ]
     },
     {
       "url": "/quit-smoking-timeline",
@@ -382,26 +295,26 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 301,
+        "impressions": 343,
         "ctr": 0,
-        "position": 60.8,
+        "position": 58.3,
         "prev": null,
         "topQueries": [
           {
             "query": "quit smoking timeline",
-            "impressions": 46,
+            "impressions": 52,
             "clicks": 0,
-            "position": 77.7
+            "position": 77.2
           },
           {
             "query": "stop smoking timeline",
-            "impressions": 28,
+            "impressions": 33,
             "clicks": 0,
-            "position": 85
+            "position": 83.9
           },
           {
             "query": "quitting smoking timeline",
@@ -416,16 +329,22 @@
             "position": 81.9
           },
           {
-            "query": "smoking cessation timeline",
-            "impressions": 12,
+            "query": "giving up smoking timeline",
+            "impressions": 13,
             "clicks": 0,
-            "position": 79.8
+            "position": 87.6
           },
           {
-            "query": "giving up smoking timeline",
-            "impressions": 11,
+            "query": "smoking cessation timeline",
+            "impressions": 13,
             "clicks": 0,
-            "position": 86.8
+            "position": 80
+          },
+          {
+            "query": "smoking cessation benefits timetable",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 88
           },
           {
             "query": "no smoking timeline",
@@ -434,16 +353,10 @@
             "position": 85.3
           },
           {
-            "query": "smoking cessation benefits timetable",
+            "query": "not smoking timeline",
             "impressions": 7,
             "clicks": 0,
-            "position": 87.7
-          },
-          {
-            "query": "not smoking timeline",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 78.8
+            "position": 80.3
           },
           {
             "query": "stop smoking timetable",
@@ -460,8 +373,95 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
+    },
+    {
+      "url": "/guides/dreams-and-sleep",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "Vivid dreams after quitting smoking: why and how long | Blou",
+      "description": "Vivid dreams after quitting smoking often start in week 1 and ease within 2 to 4 weeks. Why they happen, patch and Chantix tips, and when to get help.",
+      "h1": "Vivid dreams after quitting smoking: why and how long they last",
+      "keywordsMeta": [
+        "vivid dreams after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "vivid dreams"
+      ],
+      "published": "2026-05-08",
+      "modified": "2026-10-30",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1584,
+      "faqCount": 6,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/insomnia",
+        "/guides/cravings",
+        "/guides/caffeine-sensitivity",
+        "/quit-smoking-with-anxiety",
+        "/guides/what-happens-after-3-days",
+        "/guides/what-happens-after-1-week",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 7,
+      "primaryKeyword": "vivid dreams after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": "BLO-12",
+      "notes": null,
+      "suppressUntil": "2026-11-20",
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 322,
+        "ctr": 0,
+        "position": 8.3,
+        "prev": {
+          "clicks": 0,
+          "impressions": 142,
+          "ctr": 0,
+          "position": 8.5
+        },
+        "topQueries": [
+          {
+            "query": "unusually vivid dreams",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 3
+          }
+        ]
+      },
+      "amplitude": {
+        "page": "/guides/dreams-and-sleep",
+        "views": 2,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "low-ctr"
+      ]
     },
     {
       "url": "/quit-zyn",
@@ -518,74 +518,74 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 256,
+        "impressions": 297,
         "ctr": 0,
-        "position": 64,
+        "position": 63.7,
         "prev": null,
         "topQueries": [
           {
             "query": "how to quit zyn",
-            "impressions": 19,
+            "impressions": 22,
             "clicks": 0,
-            "position": 63
+            "position": 67.5
           },
           {
             "query": "how to taper off zyn",
-            "impressions": 15,
+            "impressions": 17,
             "clicks": 0,
-            "position": 49.1
-          },
-          {
-            "query": "easiest way to quit zyn",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 79.3
-          },
-          {
-            "query": "how to quit nicotine pouches",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 66.2
-          },
-          {
-            "query": "quitting zyn",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 69.4
+            "position": 51.1
           },
           {
             "query": "best way to quit zyn",
-            "impressions": 11,
+            "impressions": 15,
             "clicks": 0,
-            "position": 71
+            "position": 64.2
+          },
+          {
+            "query": "easiest way to quit zyn",
+            "impressions": 14,
+            "clicks": 0,
+            "position": 78.6
           },
           {
             "query": "how to get off zyn",
-            "impressions": 11,
+            "impressions": 13,
             "clicks": 0,
-            "position": 60.9
+            "position": 60.2
           },
           {
-            "query": "how to quit velo",
-            "impressions": 11,
+            "query": "how to quit nicotine pouches",
+            "impressions": 13,
             "clicks": 0,
             "position": 67.3
           },
           {
             "query": "how to quit zyn cold turkey",
-            "impressions": 11,
+            "impressions": 13,
             "clicks": 0,
-            "position": 72.5
+            "position": 72.1
           },
           {
             "query": "how to quit zyn pouches",
-            "impressions": 11,
+            "impressions": 13,
             "clicks": 0,
-            "position": 78.4
+            "position": 74.7
+          },
+          {
+            "query": "quitting zyn",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 69.2
+          },
+          {
+            "query": "is it hard to quit zyn",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 78.7
           }
         ]
       },
@@ -596,8 +596,134 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
+    },
+    {
+      "url": "/calculators/indonesia",
+      "section": "tool",
+      "source": "src/lib/countryData.ts",
+      "status": "live",
+      "title": "Cost of smoking in Indonesia: calculator | Blou",
+      "description": "What smoking costs in Indonesia at the local pack price (35000 IDR), and what quitting saves from 1 day to 10 years.",
+      "h1": "Quit smoking money saved calculator (Indonesia)",
+      "keywordsMeta": [
+        "quit smoking calculator Indonesia",
+        "cigarette pack price Indonesia",
+        "money saved quitting smoking",
+        "smoking cost calculator"
+      ],
+      "published": null,
+      "modified": null,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 617,
+      "faqCount": 4,
+      "appStoreCtas": 2,
+      "internalLinksOut": [
+        "/",
+        "/calculators",
+        "/go/app",
+        "/tools/money-saved",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "quit smoking calculator Indonesia",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 269,
+        "ctr": 0,
+        "position": 6.6,
+        "prev": {
+          "clicks": 0,
+          "impressions": 41,
+          "ctr": 0,
+          "position": 5.6
+        },
+        "topQueries": [
+          {
+            "query": "how much is a pack of cigarettes in indonesia",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 6.3
+          },
+          {
+            "query": "how much is 52 packs of cigarettes in indonesia",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 4.1
+          },
+          {
+            "query": "cigarette price in indonesia",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 7
+          },
+          {
+            "query": "12000",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 4
+          },
+          {
+            "query": "cigarette average price",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 6
+          },
+          {
+            "query": "cigarette price indonesia",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9
+          },
+          {
+            "query": "cost of cigarettes in indonesia",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 8
+          },
+          {
+            "query": "how much are cigarettes in indonesia",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11
+          },
+          {
+            "query": "how much do cigarettes cost in indonesia",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10
+          },
+          {
+            "query": "how much is 20 cigarettes",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 25
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "low-ctr"
+      ]
     },
     {
       "url": "/guides/joint-pain",
@@ -650,37 +776,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 2,
-        "impressions": 253,
-        "ctr": 0.0079,
-        "position": 7.4,
+        "impressions": 262,
+        "ctr": 0.0076,
+        "position": 7.2,
         "prev": {
           "clicks": 1,
-          "impressions": 97,
-          "ctr": 0.0103,
-          "position": 14.3
+          "impressions": 120,
+          "ctr": 0.0083,
+          "position": 13.3
         },
         "topQueries": [
-          {
-            "query": "lung pain after quitting smoking",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 11
-          },
           {
             "query": "can vaping cause joint pain",
             "impressions": 1,
             "clicks": 0,
             "position": 66
-          },
-          {
-            "query": "can vaping cause muscle pain",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 35
           },
           {
             "query": "does smoking affect your joints",
@@ -699,6 +813,12 @@
             "impressions": 1,
             "clicks": 0,
             "position": 4
+          },
+          {
+            "query": "lung pain after quitting smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 11
           },
           {
             "query": "muscle and joint pain after quitting smoking reddit",
@@ -721,7 +841,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "low-ctr"
       ]
@@ -780,8 +900,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
         "impressions": 224,
@@ -852,134 +972,8 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
-    },
-    {
-      "url": "/calculators/indonesia",
-      "section": "tool",
-      "source": "src/lib/countryData.ts",
-      "status": "live",
-      "title": "Cost of smoking in Indonesia: calculator | Blou",
-      "description": "What smoking costs in Indonesia at the local pack price (35000 IDR), and what quitting saves from 1 day to 10 years.",
-      "h1": "Quit smoking money saved calculator (Indonesia)",
-      "keywordsMeta": [
-        "quit smoking calculator Indonesia",
-        "cigarette pack price Indonesia",
-        "money saved quitting smoking",
-        "smoking cost calculator"
-      ],
-      "published": null,
-      "modified": null,
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 617,
-      "faqCount": 4,
-      "appStoreCtas": 2,
-      "internalLinksOut": [
-        "/",
-        "/calculators",
-        "/go/app",
-        "/tools/money-saved",
-        "/how-to-quit-smoking"
-      ],
-      "linkedFrom": 3,
-      "primaryKeyword": "quit smoking calculator Indonesia",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 218,
-        "ctr": 0,
-        "position": 6.9,
-        "prev": {
-          "clicks": 0,
-          "impressions": 31,
-          "ctr": 0,
-          "position": 6.3
-        },
-        "topQueries": [
-          {
-            "query": "how much is a pack of cigarettes in indonesia",
-            "impressions": 15,
-            "clicks": 0,
-            "position": 6.7
-          },
-          {
-            "query": "how much is 52 packs of cigarettes in indonesia",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 5
-          },
-          {
-            "query": "cigarette price in indonesia",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 7
-          },
-          {
-            "query": "12000",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 4
-          },
-          {
-            "query": "cigarette average price",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 6
-          },
-          {
-            "query": "cigarette price indonesia",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 9
-          },
-          {
-            "query": "cost of cigarettes in indonesia",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 8
-          },
-          {
-            "query": "how much are cigarettes in indonesia",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 11
-          },
-          {
-            "query": "how much do cigarettes cost in indonesia",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 10
-          },
-          {
-            "query": "how much is 20 cigarettes",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 25
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "low-ctr"
-      ]
     },
     {
       "url": "/guides/what-happens-after-3-weeks",
@@ -1032,26 +1026,26 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
-        "clicks": 2,
-        "impressions": 187,
-        "ctr": 0.0107,
-        "position": 17.3,
+        "clicks": 3,
+        "impressions": 216,
+        "ctr": 0.0139,
+        "position": 17.9,
         "prev": null,
         "topQueries": [
           {
             "query": "3 weeks smoke free",
-            "impressions": 21,
+            "impressions": 26,
             "clicks": 0,
-            "position": 17
+            "position": 17.2
           },
           {
             "query": "3 weeks not smoking",
-            "impressions": 11,
+            "impressions": 12,
             "clicks": 0,
-            "position": 17.8
+            "position": 17
           },
           {
             "query": "3 weeks without smoking",
@@ -1067,9 +1061,9 @@
           },
           {
             "query": "3 weeks without nicotine",
-            "impressions": 5,
+            "impressions": 6,
             "clicks": 0,
-            "position": 5
+            "position": 5.3
           },
           {
             "query": "3 weeks no smoking",
@@ -1096,10 +1090,10 @@
             "position": 13.3
           },
           {
-            "query": "three weeks no smoking",
+            "query": "no smoking 3 weeks",
             "impressions": 3,
             "clicks": 0,
-            "position": 11.7
+            "position": 4
           }
         ]
       },
@@ -1110,7 +1104,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -1166,79 +1160,79 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
-        "clicks": 3,
-        "impressions": 186,
-        "ctr": 0.0161,
-        "position": 47.5,
+        "clicks": 1,
+        "impressions": 196,
+        "ctr": 0.0051,
+        "position": 44.4,
         "prev": {
-          "clicks": 0,
+          "clicks": 2,
           "impressions": 185,
-          "ctr": 0,
-          "position": 34.8
+          "ctr": 0.0108,
+          "position": 34
         },
         "topQueries": [
           {
-            "query": "the best quit smoking app",
-            "impressions": 38,
+            "query": "quit smoking apps",
+            "impressions": 37,
             "clicks": 0,
-            "position": 59.1
+            "position": 50.9
+          },
+          {
+            "query": "the best quit smoking app",
+            "impressions": 37,
+            "clicks": 0,
+            "position": 57.3
           },
           {
             "query": "best quit smoking app",
-            "impressions": 31,
-            "clicks": 1,
-            "position": 52.9
+            "impressions": 34,
+            "clicks": 0,
+            "position": 55.6
           },
           {
-            "query": "quit smoking apps",
-            "impressions": 31,
+            "query": "pouchbuddy alternatives",
+            "impressions": 12,
             "clicks": 0,
-            "position": 52.4
+            "position": 5.8
           },
           {
             "query": "quit smoking app",
-            "impressions": 12,
+            "impressions": 9,
             "clicks": 0,
-            "position": 48.6
+            "position": 49.8
           },
           {
-            "query": "pot smoking mobile app",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 52.8
-          },
-          {
-            "query": "best free quit smoking app",
+            "query": "best quit smoking app 2019",
             "impressions": 3,
             "clicks": 0,
-            "position": 57.7
-          },
-          {
-            "query": "best stop smoking app",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 62
+            "position": 53
           },
           {
             "query": "good quit smoking apps",
             "impressions": 3,
             "clicks": 0,
-            "position": 65.7
-          },
-          {
-            "query": "pouchbuddy alternatives",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 5
+            "position": 67
           },
           {
             "query": "smoking cessation apps",
             "impressions": 3,
             "clicks": 0,
-            "position": 58.3
+            "position": 52.7
+          },
+          {
+            "query": "what is the best quit smoking app",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 68.7
+          },
+          {
+            "query": "app for quit smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 49.5
           }
         ]
       },
@@ -1249,7 +1243,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -1300,8 +1294,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
         "impressions": 183,
@@ -1372,7 +1366,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -1428,26 +1422,20 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 1,
-        "impressions": 143,
-        "ctr": 0.007,
-        "position": 7.6,
+        "impressions": 131,
+        "ctr": 0.0076,
+        "position": 7.8,
         "prev": {
           "clicks": 1,
-          "impressions": 81,
-          "ctr": 0.0123,
-          "position": 17.5
+          "impressions": 106,
+          "ctr": 0.0094,
+          "position": 15
         },
         "topQueries": [
-          {
-            "query": "how long does cigar nausea last",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 22
-          },
           {
             "query": "how long does it last",
             "impressions": 1,
@@ -1457,7 +1445,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "low-ctr"
       ]
@@ -1513,23 +1501,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 129,
+        "impressions": 122,
         "ctr": 0,
         "position": 9,
         "prev": {
           "clicks": 1,
-          "impressions": 60,
-          "ctr": 0.0167,
-          "position": 8.8
+          "impressions": 76,
+          "ctr": 0.0132,
+          "position": 8.6
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "low-ctr"
       ]
@@ -1583,18 +1571,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 103,
+        "impressions": 113,
         "ctr": 0,
-        "position": 22,
+        "position": 20.9,
         "prev": {
           "clicks": 0,
-          "impressions": 73,
+          "impressions": 72,
           "ctr": 0,
-          "position": 35.7
+          "position": 34
         },
         "topQueries": [
           {
@@ -1605,9 +1593,9 @@
           },
           {
             "query": "smoking money",
-            "impressions": 5,
+            "impressions": 6,
             "clicks": 0,
-            "position": 49.2
+            "position": 50.5
           },
           {
             "query": "how much money do you save quitting vaping",
@@ -1616,10 +1604,10 @@
             "position": 75.5
           },
           {
-            "query": "cigarette savings calculator",
-            "impressions": 2,
+            "query": "sluta röka spara pengar",
+            "impressions": 3,
             "clicks": 0,
-            "position": 67.5
+            "position": 69.7
           },
           {
             "query": "how much money would you save if you quit smoking",
@@ -1634,34 +1622,156 @@
             "position": 77.5
           },
           {
+            "query": "cigarette savings calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 68
+          },
+          {
             "query": "how much money can you save by not smoking",
             "impressions": 1,
             "clicks": 0,
             "position": 58
           },
           {
-            "query": "kalkulator oszczędności po rzuceniu palenia",
+            "query": "oui",
             "impressions": 1,
             "clicks": 0,
-            "position": 67
+            "position": 3
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "page-2"
+      ]
+    },
+    {
+      "url": "/zyn-vs-cigarettes",
+      "section": "article",
+      "source": "src/app/zyn-vs-cigarettes/page.tsx",
+      "status": "live",
+      "title": "Zyn vs cigarettes: nicotine, risks and cost compared | Blou",
+      "description": "Zyn vs cigarettes: how much nicotine is in a cigarette vs Zyn, plus smoke, carbon monoxide, addiction and cost compared side by side.",
+      "h1": "Zyn vs cigarettes: nicotine, health risks and cost",
+      "keywordsMeta": [
+        "zyn vs cigarettes",
+        "how much nicotine is in a cigarette vs zyn",
+        "zyn vs smoking",
+        "is zyn better than cigarettes",
+        "nicotine pouches vs cigarettes"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 2070,
+      "faqCount": 6,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-zyn",
+        "/tools/nicotine-pouch-calculator",
+        "/go/app",
+        "/are-zyns-bad-for-you",
+        "/how-to-quit-smoking",
+        "/zyn-withdrawal",
+        "/quit-smoking-timeline"
+      ],
+      "linkedFrom": 5,
+      "primaryKeyword": "zyn vs cigarettes",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 107,
+        "ctr": 0,
+        "position": 11,
+        "prev": null,
+        "topQueries": [
+          {
+            "query": "zyn vs cigarettes nicotine content",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 11
           },
           {
-            "query": "oui",
+            "query": "zynは喫煙よりも良いですか？",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 7.5
+          },
+          {
+            "query": "1 zyn vs 1 cigarette",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "bat nicotine pouches",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 4
+          },
+          {
+            "query": "best place to put zyn in mouth",
             "impressions": 1,
             "clicks": 0,
             "position": 3
           },
           {
-            "query": "sluta röka spara pengar",
+            "query": "choice nicotine pouches",
             "impressions": 1,
             "clicks": 0,
-            "position": 66
+            "position": 4
+          },
+          {
+            "query": "cigarette vs zyn nicotine content",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 12
+          },
+          {
+            "query": "evaluate nicokick on zyn",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 6
+          },
+          {
+            "query": "gli zyn sono meglio delle sigarette?",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2
+          },
+          {
+            "query": "is zyn bad for your mouth",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 3
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
+        "low-ctr",
         "page-2"
       ]
     },
@@ -1718,25 +1828,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 102,
+        "impressions": 95,
         "ctr": 0,
-        "position": 27,
+        "position": 24.2,
         "prev": {
           "clicks": 0,
-          "impressions": 80,
+          "impressions": 94,
           "ctr": 0,
-          "position": 37.1
+          "position": 37
         },
         "topQueries": [
           {
             "query": "day 3 no smoking",
-            "impressions": 9,
+            "impressions": 6,
             "clicks": 0,
-            "position": 44.7
+            "position": 39.7
           },
           {
             "query": "day 3 of not smoking",
@@ -1746,27 +1856,15 @@
           },
           {
             "query": "3 days without smoking",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 10
-          },
-          {
-            "query": "day 3 without nicotine",
             "impressions": 3,
             "clicks": 0,
-            "position": 9.3
+            "position": 9.7
           },
           {
             "query": "no cigarettes for 3 days",
             "impressions": 3,
             "clicks": 0,
             "position": 3.7
-          },
-          {
-            "query": "three days without smoking",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 38.3
           },
           {
             "query": "what happens to your body 3 days after quitting smoking",
@@ -1791,11 +1889,23 @@
             "impressions": 2,
             "clicks": 0,
             "position": 10
+          },
+          {
+            "query": "day 3 of quitting smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 53.5
+          },
+          {
+            "query": "stop smoking day 3",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 84.5
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -1873,18 +1983,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 2,
         "impressions": 89,
         "ctr": 0.0225,
-        "position": 5,
+        "position": 4.7,
         "prev": {
           "clicks": 0,
-          "impressions": 68,
+          "impressions": 66,
           "ctr": 0,
-          "position": 6.4
+          "position": 7
         },
         "topQueries": [
           {
@@ -1895,9 +2005,9 @@
           },
           {
             "query": "blou",
-            "impressions": 12,
+            "impressions": 10,
             "clicks": 0,
-            "position": 13.2
+            "position": 10.3
           },
           {
             "query": "bloudo",
@@ -1920,135 +2030,8 @@
         "toolInputs": 0,
         "clickRate": 0.0333
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
-    },
-    {
-      "url": "/zyn-vs-cigarettes",
-      "section": "article",
-      "source": "src/app/zyn-vs-cigarettes/page.tsx",
-      "status": "live",
-      "title": "Zyn vs cigarettes: nicotine, risks and cost compared | Blou",
-      "description": "Zyn vs cigarettes: how much nicotine is in a cigarette vs Zyn, plus smoke, carbon monoxide, addiction and cost compared side by side.",
-      "h1": "Zyn vs cigarettes: nicotine, health risks and cost",
-      "keywordsMeta": [
-        "zyn vs cigarettes",
-        "how much nicotine is in a cigarette vs zyn",
-        "zyn vs smoking",
-        "is zyn better than cigarettes",
-        "nicotine pouches vs cigarettes"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 2070,
-      "faqCount": 6,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-zyn",
-        "/tools/nicotine-pouch-calculator",
-        "/go/app",
-        "/are-zyns-bad-for-you",
-        "/how-to-quit-smoking",
-        "/zyn-withdrawal",
-        "/quit-smoking-timeline"
-      ],
-      "linkedFrom": 5,
-      "primaryKeyword": "zyn vs cigarettes",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 87,
-        "ctr": 0,
-        "position": 11.4,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "1 zyn vs 1 cigarette",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "best place to put zyn in mouth",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 3
-          },
-          {
-            "query": "choice nicotine pouches",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 4
-          },
-          {
-            "query": "cigarette vs zyn nicotine content",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 12
-          },
-          {
-            "query": "evaluate nicokick on zyn",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 6
-          },
-          {
-            "query": "gli zyn sono meglio delle sigarette?",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 2
-          },
-          {
-            "query": "is zyn bad for your mouth",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 3
-          },
-          {
-            "query": "mahak one nicotine pouches",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 5
-          },
-          {
-            "query": "maria nicotine pouches review",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 5
-          },
-          {
-            "query": "nic pouches",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 3
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "page-2"
-      ]
     },
     {
       "url": "/guides/taste-and-smell",
@@ -2101,37 +2084,152 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 80,
+        "impressions": 75,
         "ctr": 0,
-        "position": 9.9,
+        "position": 8.6,
         "prev": {
           "clicks": 0,
-          "impressions": 34,
+          "impressions": 47,
           "ctr": 0,
-          "position": 14.1
+          "position": 14.8
         },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/guides/what-happens-after-2-days",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "2 days without smoking: what happens to your body | Blou",
+      "description": "2 days without smoking: carbon monoxide is back to non-smoker levels, your lungs start clearing mucus, and withdrawal is near its peak. What helps today.",
+      "h1": "2 days without smoking: what happens to your body",
+      "keywordsMeta": [
+        "2 days without smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "after 2 days"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1189,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-3-days",
+        "/guides/cravings",
+        "/guides/irritability",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 5,
+      "primaryKeyword": "2 days without smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 75,
+        "ctr": 0,
+        "position": 16.7,
+        "prev": null,
         "topQueries": [
           {
-            "query": "bad taste in mouth after stopping smoking",
-            "impressions": 1,
+            "query": "2 days without smoking",
+            "impressions": 3,
             "clicks": 0,
-            "position": 50
+            "position": 42
           },
           {
-            "query": "taste buds after quitting smoking",
+            "query": "quit smoking day 2",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 83.7
+          },
+          {
+            "query": "day 2 of no smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 10.5
+          },
+          {
+            "query": "day 2 of not smoking cigarettes",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 66
+          },
+          {
+            "query": "2 days of not smoking cigarettes",
             "impressions": 1,
             "clicks": 0,
-            "position": 57
+            "position": 80
+          },
+          {
+            "query": "2 días sin fumar",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2
+          },
+          {
+            "query": "day 2 no smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 19
+          },
+          {
+            "query": "day 8 of not smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 82
+          },
+          {
+            "query": "no smoking day 2",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 7
+          },
+          {
+            "query": "يومين",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "page-2"
+      ]
     },
     {
       "url": "/guides/night-sweats",
@@ -2185,26 +2283,20 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
-        "clicks": 0,
-        "impressions": 76,
-        "ctr": 0,
-        "position": 10.3,
+        "clicks": 1,
+        "impressions": 67,
+        "ctr": 0.0149,
+        "position": 10.8,
         "prev": {
           "clicks": 0,
-          "impressions": 60,
+          "impressions": 76,
           "ctr": 0,
-          "position": 10.2
+          "position": 9.8
         },
         "topQueries": [
-          {
-            "query": "can vaping cause night sweats",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 23
-          },
           {
             "query": "14 dní",
             "impressions": 1,
@@ -2218,28 +2310,22 @@
             "position": 50
           },
           {
+            "query": "can vaping cause night sweats",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 23
+          },
+          {
             "query": "does vaping cause night sweats",
             "impressions": 1,
             "clicks": 0,
             "position": 3
           },
           {
-            "query": "how long do night sweats last after quitting smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 10
-          },
-          {
             "query": "nicotine night sweats",
             "impressions": 1,
             "clicks": 0,
             "position": 46
-          },
-          {
-            "query": "nicotine withdrawal night sweats",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 15
           },
           {
             "query": "night sweats quitting smoking",
@@ -2250,7 +2336,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -2307,18 +2393,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 74,
+        "impressions": 66,
         "ctr": 0,
-        "position": 9.1,
+        "position": 9.5,
         "prev": {
           "clicks": 1,
-          "impressions": 69,
-          "ctr": 0.0145,
-          "position": 11.1
+          "impressions": 81,
+          "ctr": 0.0123,
+          "position": 10.5
         },
         "topQueries": [
           {
@@ -2326,12 +2412,6 @@
             "impressions": 2,
             "clicks": 0,
             "position": 58.5
-          },
-          {
-            "query": "1 mes",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 1
           },
           {
             "query": "can smoking cause dizziness",
@@ -2352,12 +2432,6 @@
             "position": 10
           },
           {
-            "query": "how to get rid of dizziness after smoking cigarettes",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 36
-          },
-          {
             "query": "nicotine withdrawal light headed",
             "impressions": 1,
             "clicks": 0,
@@ -2366,247 +2440,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/guides/what-happens-after-2-days",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "2 days without smoking: what happens to your body | Blou",
-      "description": "2 days without smoking: carbon monoxide is back to non-smoker levels, your lungs start clearing mucus, and withdrawal is near its peak. What helps today.",
-      "h1": "2 days without smoking: what happens to your body",
-      "keywordsMeta": [
-        "2 days without smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "after 2 days"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1189,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-3-days",
-        "/guides/cravings",
-        "/guides/irritability",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 5,
-      "primaryKeyword": "2 days without smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 63,
-        "ctr": 0,
-        "position": 16,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "2 days without smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 58
-          },
-          {
-            "query": "day 2 of no smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 10.5
-          },
-          {
-            "query": "day 2 of not smoking cigarettes",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 66
-          },
-          {
-            "query": "quit smoking day 2",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 86
-          },
-          {
-            "query": "2 days of not smoking cigarettes",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 80
-          },
-          {
-            "query": "2 días sin fumar",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 2
-          },
-          {
-            "query": "day 8 of not smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 82
-          },
-          {
-            "query": "no smoking day 2",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 7
-          },
-          {
-            "query": "يومين",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 2
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "page-2"
-      ]
-    },
-    {
-      "url": "/calculators/australia",
-      "section": "tool",
-      "source": "src/lib/countryData.ts",
-      "status": "live",
-      "title": "Cost of smoking in Australia: calculator | Blou",
-      "description": "What smoking costs in Australia at the local pack price (50 AUD), and what quitting saves from 1 day to 10 years.",
-      "h1": "Quit smoking money saved calculator (Australia)",
-      "keywordsMeta": [
-        "quit smoking calculator Australia",
-        "cigarette pack price Australia",
-        "money saved quitting smoking",
-        "smoking cost calculator"
-      ],
-      "published": null,
-      "modified": null,
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 600,
-      "faqCount": 4,
-      "appStoreCtas": 2,
-      "internalLinksOut": [
-        "/",
-        "/calculators",
-        "/go/app",
-        "/tools/money-saved",
-        "/how-to-quit-smoking"
-      ],
-      "linkedFrom": 3,
-      "primaryKeyword": "quit smoking calculator Australia",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 56,
-        "ctr": 0,
-        "position": 41.4,
-        "prev": {
-          "clicks": 0,
-          "impressions": 50,
-          "ctr": 0,
-          "position": 67.8
-        },
-        "topQueries": [
-          {
-            "query": "quit smoking calculator",
-            "impressions": 16,
-            "clicks": 0,
-            "position": 45.8
-          },
-          {
-            "query": "smoking calculator",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 53.8
-          },
-          {
-            "query": "no smoking calculator",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 26.5
-          },
-          {
-            "query": "how much money will i save if i quit smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 65
-          },
-          {
-            "query": "quit smoking calc",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 30
-          },
-          {
-            "query": "quit smoking save money calculator",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 94
-          },
-          {
-            "query": "quit smoking savings calculator",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 29
-          },
-          {
-            "query": "smoking money",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 49
-          },
-          {
-            "query": "tobacco calculator",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 50
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -2653,31 +2487,31 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 56,
+        "impressions": 64,
         "ctr": 0,
-        "position": 31.9,
+        "position": 31,
         "prev": {
           "clicks": 0,
-          "impressions": 24,
+          "impressions": 22,
           "ctr": 0,
-          "position": 53.8
+          "position": 52.2
         },
         "topQueries": [
           {
             "query": "quit smoking calculator",
-            "impressions": 12,
+            "impressions": 13,
             "clicks": 0,
-            "position": 39.1
+            "position": 38.4
           },
           {
             "query": "smoking calculator",
-            "impressions": 9,
+            "impressions": 11,
             "clicks": 0,
-            "position": 34.1
+            "position": 35
           },
           {
             "query": "how much does smoking cost",
@@ -2693,9 +2527,9 @@
           },
           {
             "query": "stop smoking calculator",
-            "impressions": 3,
+            "impressions": 4,
             "clicks": 0,
-            "position": 42.3
+            "position": 39.8
           },
           {
             "query": "how much does smoking cost nhs",
@@ -2720,6 +2554,12 @@
             "impressions": 1,
             "clicks": 0,
             "position": 18
+          },
+          {
+            "query": "pack year history calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 36
           }
         ]
       },
@@ -2730,7 +2570,125 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/calculators/australia",
+      "section": "tool",
+      "source": "src/lib/countryData.ts",
+      "status": "live",
+      "title": "Cost of smoking in Australia: calculator | Blou",
+      "description": "What smoking costs in Australia at the local pack price (50 AUD), and what quitting saves from 1 day to 10 years.",
+      "h1": "Quit smoking money saved calculator (Australia)",
+      "keywordsMeta": [
+        "quit smoking calculator Australia",
+        "cigarette pack price Australia",
+        "money saved quitting smoking",
+        "smoking cost calculator"
+      ],
+      "published": null,
+      "modified": null,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 600,
+      "faqCount": 4,
+      "appStoreCtas": 2,
+      "internalLinksOut": [
+        "/",
+        "/calculators",
+        "/go/app",
+        "/tools/money-saved",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "quit smoking calculator Australia",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 53,
+        "ctr": 0,
+        "position": 39.9,
+        "prev": {
+          "clicks": 0,
+          "impressions": 48,
+          "ctr": 0,
+          "position": 69.5
+        },
+        "topQueries": [
+          {
+            "query": "quit smoking calculator",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 43
+          },
+          {
+            "query": "smoking calculator",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 51.5
+          },
+          {
+            "query": "no smoking calculator",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 26.5
+          },
+          {
+            "query": "how much money will i save if i quit smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 65
+          },
+          {
+            "query": "quit smoking calc",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 30
+          },
+          {
+            "query": "quit smoking save money calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 94
+          },
+          {
+            "query": "quit smoking savings calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 29
+          },
+          {
+            "query": "smoking money",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 49
+          },
+          {
+            "query": "tobacco calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 50
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -2787,13 +2745,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 51,
+        "impressions": 52,
         "ctr": 0,
-        "position": 42.6,
+        "position": 41.9,
         "prev": null,
         "topQueries": [
           {
@@ -2865,7 +2823,102 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/nicotine-patch-side-effects",
+      "section": "article",
+      "source": "src/app/nicotine-patch-side-effects/page.tsx",
+      "status": "live",
+      "title": "Nicotine patch side effects: what’s normal and not | Blou",
+      "description": "Nicotine patch side effects: skin rash, vivid dreams, the 21 mg dose, how long you can wear a patch, overdose signs and when to call a doctor.",
+      "h1": "Nicotine patch side effects: what’s normal and when to call a doctor",
+      "keywordsMeta": [
+        "nicotine patch side effects",
+        "side effects of nicotine patch 21 mg",
+        "nicotine patch skin rash",
+        "how long can you wear a nicotine patch",
+        "nicotine patch vivid dreams"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 2572,
+      "faqCount": 7,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-smoking-with-nicotine-patch",
+        "/tools/nicotine-patch-plan",
+        "/go/app",
+        "/nicotine-withdrawal-timeline",
+        "/combination-nrt-quit-smoking",
+        "/nicotine-patch-vs-gum",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "nicotine patch side effects",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 40,
+        "ctr": 0,
+        "position": 50,
+        "prev": null,
+        "topQueries": [
+          {
+            "query": "allergic reaction to nicotine",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 59.5
+          },
+          {
+            "query": "does nicotine patches have side effects",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 72
+          },
+          {
+            "query": "nicotine patch side effects",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 72.5
+          },
+          {
+            "query": "21 mg nicotine patch side effects",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 86
+          },
+          {
+            "query": "why does nicotine patch itch",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 48
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -2919,23 +2972,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 1,
-        "impressions": 44,
-        "ctr": 0.0227,
-        "position": 9.1,
+        "impressions": 38,
+        "ctr": 0.0263,
+        "position": 8.6,
         "prev": {
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 9,
           "ctr": 0,
-          "position": 10.7
+          "position": 11.7
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -2982,25 +3035,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 34,
+        "impressions": 35,
         "ctr": 0,
-        "position": 51.4,
+        "position": 47.5,
         "prev": {
           "clicks": 0,
-          "impressions": 41,
+          "impressions": 36,
           "ctr": 0,
-          "position": 58.9
+          "position": 58
         },
         "topQueries": [
           {
             "query": "smoking cost calculator",
-            "impressions": 6,
+            "impressions": 5,
             "clicks": 0,
-            "position": 52
+            "position": 49.4
           },
           {
             "query": "how much money do you save quitting vaping",
@@ -3009,22 +3062,16 @@
             "position": 85.7
           },
           {
+            "query": "quit smoking calculator",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 50
+          },
+          {
             "query": "tobacco cost calculator",
             "impressions": 3,
             "clicks": 0,
             "position": 53.7
-          },
-          {
-            "query": "cigarette savings calculator",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 75.5
-          },
-          {
-            "query": "quit smoking calculator",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 51
           },
           {
             "query": "quit smoking savings calculator",
@@ -3051,15 +3098,130 @@
             "position": 38
           },
           {
+            "query": "cigarette savings calculator",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 76
+          },
+          {
             "query": "cost of smoking calculator",
             "impressions": 1,
             "clicks": 0,
-            "position": 71
+            "position": 61
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/quit-smoking-help/new-york",
+      "section": "state",
+      "source": null,
+      "status": "live",
+      "title": "Free help to quit smoking in New York | Blou",
+      "description": "New York State Quitline, free nicotine patches, and what smoking costs in New York: $5.35 state tax per pack. Sourced from CDC data.",
+      "h1": "Free help to quit smoking in New York",
+      "keywordsMeta": [
+        "quit smoking New York",
+        "free nicotine patches New York",
+        "New York quitline",
+        "cigarette tax New York",
+        "cigarette prices in New York"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 841,
+      "faqCount": 5,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-smoking-help",
+        "/go/app",
+        "/how-to-quit-smoking",
+        "/quit-smoking-timeline",
+        "/quit-smoking-help/new-hampshire",
+        "/quit-smoking-help/new-jersey",
+        "/quit-smoking-help/new-mexico",
+        "/quit-smoking-help/north-carolina",
+        "/quit-smoking-help/north-dakota",
+        "/quit-smoking-help/ohio"
+      ],
+      "linkedFrom": 7,
+      "primaryKeyword": "quit smoking New York",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 30,
+        "ctr": 0,
+        "position": 34,
+        "prev": null,
+        "topQueries": [
+          {
+            "query": "nys quit smoking",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 26
+          },
+          {
+            "query": "ny help quit smoking",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 30.3
+          },
+          {
+            "query": "nyc nicotine patch gum program",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 31
+          },
+          {
+            "query": "1866 ny quits",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 32
+          },
+          {
+            "query": "ny quits smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 29
+          },
+          {
+            "query": "nys quit",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 33
+          },
+          {
+            "query": "quit smoking ny",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 29
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -3115,221 +3277,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 1,
-        "impressions": 31,
-        "ctr": 0.0323,
-        "position": 7.8,
+        "impressions": 26,
+        "ctr": 0.0385,
+        "position": 8.2,
         "prev": {
           "clicks": 2,
-          "impressions": 30,
-          "ctr": 0.0667,
-          "position": 7.8
+          "impressions": 35,
+          "ctr": 0.0571,
+          "position": 7.5
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/nicotine-patch-side-effects",
-      "section": "article",
-      "source": "src/app/nicotine-patch-side-effects/page.tsx",
-      "status": "live",
-      "title": "Nicotine patch side effects: what’s normal and not | Blou",
-      "description": "Nicotine patch side effects: skin rash, vivid dreams, the 21 mg dose, how long you can wear a patch, overdose signs and when to call a doctor.",
-      "h1": "Nicotine patch side effects: what’s normal and when to call a doctor",
-      "keywordsMeta": [
-        "nicotine patch side effects",
-        "side effects of nicotine patch 21 mg",
-        "nicotine patch skin rash",
-        "how long can you wear a nicotine patch",
-        "nicotine patch vivid dreams"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 2572,
-      "faqCount": 7,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-smoking-with-nicotine-patch",
-        "/tools/nicotine-patch-plan",
-        "/go/app",
-        "/nicotine-withdrawal-timeline",
-        "/combination-nrt-quit-smoking",
-        "/nicotine-patch-vs-gum",
-        "/how-to-quit-smoking"
-      ],
-      "linkedFrom": 2,
-      "primaryKeyword": "nicotine patch side effects",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 27,
-        "ctr": 0,
-        "position": 48.3,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "allergic reaction to nicotine",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 59.5
-          },
-          {
-            "query": "does nicotine patches have side effects",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 73.5
-          },
-          {
-            "query": "nicotine patch side effects",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 72.5
-          },
-          {
-            "query": "21 mg nicotine patch side effects",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 86
-          },
-          {
-            "query": "why does nicotine patch itch",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 48
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/quit-smoking-help/new-york",
-      "section": "state",
-      "source": null,
-      "status": "live",
-      "title": "Free help to quit smoking in New York | Blou",
-      "description": "New York State Quitline, free nicotine patches, and what smoking costs in New York: $5.35 state tax per pack. Sourced from CDC data.",
-      "h1": "Free help to quit smoking in New York",
-      "keywordsMeta": [
-        "quit smoking New York",
-        "free nicotine patches New York",
-        "New York quitline",
-        "cigarette tax New York",
-        "cigarette prices in New York"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 841,
-      "faqCount": 5,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-smoking-help",
-        "/go/app",
-        "/how-to-quit-smoking",
-        "/quit-smoking-timeline",
-        "/quit-smoking-help/new-hampshire",
-        "/quit-smoking-help/new-jersey",
-        "/quit-smoking-help/new-mexico",
-        "/quit-smoking-help/north-carolina",
-        "/quit-smoking-help/north-dakota",
-        "/quit-smoking-help/ohio"
-      ],
-      "linkedFrom": 7,
-      "primaryKeyword": "quit smoking New York",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 23,
-        "ctr": 0,
-        "position": 33.9,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "nys quit smoking",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 26
-          },
-          {
-            "query": "ny help quit smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 31.5
-          },
-          {
-            "query": "ny quits smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 29
-          },
-          {
-            "query": "nyc nicotine patch gum program",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 33
-          },
-          {
-            "query": "nys quit",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 33
-          },
-          {
-            "query": "quit smoking ny",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 29
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -3380,25 +3344,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 19,
+        "impressions": 18,
         "ctr": 0,
-        "position": 40.8,
+        "position": 38.2,
         "prev": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 6,
           "ctr": 0,
-          "position": 29
+          "position": 38.8
         },
         "topQueries": [
           {
             "query": "chewing gum to quit smoking",
-            "impressions": 3,
+            "impressions": 2,
             "clicks": 0,
-            "position": 92
+            "position": 94
           },
           {
             "query": "how to quit with nicotine gum",
@@ -3427,7 +3391,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -3483,13 +3447,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 16,
+        "impressions": 17,
         "ctr": 0,
-        "position": 17.9,
+        "position": 22.5,
         "prev": null,
         "topQueries": [
           {
@@ -3497,11 +3461,17 @@
             "impressions": 1,
             "clicks": 0,
             "position": 56
+          },
+          {
+            "query": "is zyn okay for you",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 97
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -3557,65 +3527,70 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 13,
+        "impressions": 15,
         "ctr": 0,
-        "position": 9.6,
+        "position": 10.7,
         "prev": {
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 5,
           "ctr": 0,
-          "position": 15.3
+          "position": 11.4
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "page-2"
+      ]
     },
     {
-      "url": "/how-to-stop-a-relapse",
-      "section": "article",
-      "source": "src/app/how-to-stop-a-relapse/page.tsx",
+      "url": "/guides/restlessness",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "How to stop a relapse and recover your quit | Blou",
-      "description": "Smoking again after a quit doesn’t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
-      "h1": "How to stop a relapse and recover your quit",
+      "title": "How long does restlessness last after quitting smoking?",
+      "description": "Restlessness is your nervous system recalibrating without nicotine. The fastest relief usually comes from scheduled movement, earlier caffeine cutoff, and predictable daily structure.",
+      "h1": "How long does restlessness last after quitting smoking?",
       "keywordsMeta": [
-        "quit smoking relapse recovery",
-        "how to stop smoking again after quitting",
-        "smoking relapse what to do",
-        "get back on track after smoking"
+        "restlessness after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "restlessness"
       ],
-      "published": "2026-04-27",
-      "modified": "2026-10-13",
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
         "MedicalWebPage",
         "Article",
-        "HowTo",
+        "WebPage",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1183,
-      "faqCount": 4,
+      "words": 767,
+      "faqCount": 3,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/how-to-quit-smoking",
+        "/guides",
         "/go/app",
-        "/i-smoked-one-cigarette",
-        "/alcohol-and-quitting-smoking",
-        "/prepare-to-quit-smoking",
-        "/guides/cravings"
+        "/guides/insomnia",
+        "/quit-smoking-with-anxiety",
+        "/guides/cravings",
+        "/guides/what-happens-after-3-days",
+        "/how-to-stop-a-relapse",
+        "/quit-smoking-timeline",
+        "/tools"
       ],
-      "linkedFrom": 10,
-      "primaryKeyword": "quit smoking relapse recovery",
+      "linkedFrom": 4,
+      "primaryKeyword": "restlessness after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -3625,30 +3600,99 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 13,
+        "impressions": 11,
         "ctr": 0,
-        "position": 25.4,
+        "position": 8.1,
         "prev": {
           "clicks": 0,
-          "impressions": 34,
+          "impressions": 3,
           "ctr": 0,
-          "position": 25.7
+          "position": 10.3
         },
-        "topQueries": [
-          {
-            "query": "how to avoid relapse when quitting smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 87.5
-          }
-        ]
+        "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/guides/sore-gums",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "How long do sore gums last after quitting smoking? | Blou",
+      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a ‘get ahead of dental health’ moment, not a failure.",
+      "h1": "How long do sore gums last after quitting smoking?",
+      "keywordsMeta": [
+        "sore gums after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "sore gums"
+      ],
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 800,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/dry-mouth",
+        "/guides/mouth-ulcers",
+        "/guides/what-happens-after-1-week",
+        "/prepare-to-quit-smoking",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "sore gums after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 15.2,
+        "prev": {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 12.6
+        },
+        "topQueries": []
+      },
+      "amplitude": {
+        "page": "/guides/sore-gums",
+        "views": 2,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -3700,18 +3744,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 10,
         "ctr": 0,
-        "position": 14.1,
+        "position": 14.5,
         "prev": {
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 4
+          "position": 6
         },
         "topQueries": [
           {
@@ -3723,10 +3767,85 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
+    },
+    {
+      "url": "/how-to-stop-a-relapse",
+      "section": "article",
+      "source": "src/app/how-to-stop-a-relapse/page.tsx",
+      "status": "live",
+      "title": "How to stop a relapse and recover your quit | Blou",
+      "description": "Smoking again after a quit doesn’t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
+      "h1": "How to stop a relapse and recover your quit",
+      "keywordsMeta": [
+        "quit smoking relapse recovery",
+        "how to stop smoking again after quitting",
+        "smoking relapse what to do",
+        "get back on track after smoking"
+      ],
+      "published": "2026-04-27",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "HowTo",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1183,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/how-to-quit-smoking",
+        "/go/app",
+        "/i-smoked-one-cigarette",
+        "/alcohol-and-quitting-smoking",
+        "/prepare-to-quit-smoking",
+        "/guides/cravings"
+      ],
+      "linkedFrom": 10,
+      "primaryKeyword": "quit smoking relapse recovery",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 30.8,
+        "prev": {
+          "clicks": 0,
+          "impressions": 33,
+          "ctr": 0,
+          "position": 26.1
+        },
+        "topQueries": [
+          {
+            "query": "how to avoid relapse when quitting smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 87.5
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": []
     },
     {
       "url": "/guides",
@@ -3751,7 +3870,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1236,
+      "words": 1237,
       "faqCount": 4,
       "appStoreCtas": 1,
       "internalLinksOut": [
@@ -3890,18 +4009,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 9,
         "ctr": 0,
-        "position": 16.4,
+        "position": 11.1,
         "prev": {
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 5,
           "ctr": 0,
-          "position": 6.3
+          "position": 19.8
         },
         "topQueries": [
           {
@@ -3909,12 +4028,6 @@
             "impressions": 1,
             "clicks": 0,
             "position": 77
-          },
-          {
-            "query": "timeline quitting smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 74
           }
         ]
       },
@@ -3925,301 +4038,9 @@
         "toolInputs": 0,
         "clickRate": 0.25
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
-      ]
-    },
-    {
-      "url": "/guides/restlessness",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "How long does restlessness last after quitting smoking?",
-      "description": "Restlessness is your nervous system recalibrating without nicotine. The fastest relief usually comes from scheduled movement, earlier caffeine cutoff, and predictable daily structure.",
-      "h1": "How long does restlessness last after quitting smoking?",
-      "keywordsMeta": [
-        "restlessness after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "restlessness"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 767,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/insomnia",
-        "/quit-smoking-with-anxiety",
-        "/guides/cravings",
-        "/guides/what-happens-after-3-days",
-        "/how-to-stop-a-relapse",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 4,
-      "primaryKeyword": "restlessness after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 8.1,
-        "prev": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 10.3
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/guides/sore-gums",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "How long do sore gums last after quitting smoking? | Blou",
-      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a ‘get ahead of dental health’ moment, not a failure.",
-      "h1": "How long do sore gums last after quitting smoking?",
-      "keywordsMeta": [
-        "sore gums after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "sore gums"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 800,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/dry-mouth",
-        "/guides/mouth-ulcers",
-        "/guides/what-happens-after-1-week",
-        "/prepare-to-quit-smoking",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 4,
-      "primaryKeyword": "sore gums after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 15.4,
-        "prev": {
-          "clicks": 0,
-          "impressions": 11,
-          "ctr": 0,
-          "position": 12.7
-        },
-        "topQueries": []
-      },
-      "amplitude": {
-        "page": "/guides/sore-gums",
-        "views": 2,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "page-2"
-      ]
-    },
-    {
-      "url": "/guides/concentration",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "Can't concentrate after quitting smoking: what's happening",
-      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom—nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
-      "h1": "Can't concentrate after quitting smoking: what's happening",
-      "keywordsMeta": [
-        "can't concentrate after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "poor concentration"
-      ],
-      "published": "2026-05-20",
-      "modified": "2026-05-20",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1062,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/brain-fog",
-        "/guides/fatigue",
-        "/guides/insomnia",
-        "/guides/restlessness",
-        "/guides/what-happens-after-1-week",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 1,
-      "primaryKeyword": "can't concentrate after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 9.5,
-        "prev": {
-          "clicks": 0,
-          "impressions": 19,
-          "ctr": 0,
-          "position": 12.8
-        },
-        "topQueries": []
-      },
-      "amplitude": {
-        "page": "/guides/concentration",
-        "views": 1,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/quit-vaping",
-      "section": "article",
-      "source": "src/app/quit-vaping/page.tsx",
-      "status": "live",
-      "title": "How to quit vaping: a practical plan (2026) | Blou",
-      "description": "Quit vaping with a clear plan: set a stop date, handle nicotine urges, replace hand-to-mouth cues, and use a tracker app so progress stays visible.",
-      "h1": "How to quit vaping",
-      "keywordsMeta": [
-        "quit vaping",
-        "how to quit vaping",
-        "stop vaping",
-        "vaping cessation",
-        "nicotine vape quit"
-      ],
-      "published": "2026-05-13",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 651,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/how-to-quit-smoking",
-        "/go/app",
-        "/prepare-to-quit-smoking",
-        "/nicotine-withdrawal-timeline",
-        "/guides/cravings",
-        "/vaping-and-smoking-together",
-        "/nrt-and-quit-smoking-app"
-      ],
-      "linkedFrom": 6,
-      "primaryKeyword": "quit vaping",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 7.5,
-        "prev": null,
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "thin"
       ]
     },
     {
@@ -4276,13 +4097,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 9,
         "ctr": 0,
-        "position": 11.9,
+        "position": 11.2,
         "prev": {
           "clicks": 0,
           "impressions": 4,
@@ -4305,9 +4126,75 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
+      ]
+    },
+    {
+      "url": "/quit-vaping",
+      "section": "article",
+      "source": "src/app/quit-vaping/page.tsx",
+      "status": "live",
+      "title": "How to quit vaping: a practical plan (2026) | Blou",
+      "description": "Quit vaping with a clear plan: set a stop date, handle nicotine urges, replace hand-to-mouth cues, and use a tracker app so progress stays visible.",
+      "h1": "How to quit vaping",
+      "keywordsMeta": [
+        "quit vaping",
+        "how to quit vaping",
+        "stop vaping",
+        "vaping cessation",
+        "nicotine vape quit"
+      ],
+      "published": "2026-05-13",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 651,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/how-to-quit-smoking",
+        "/go/app",
+        "/prepare-to-quit-smoking",
+        "/nicotine-withdrawal-timeline",
+        "/guides/cravings",
+        "/vaping-and-smoking-together",
+        "/nrt-and-quit-smoking-app"
+      ],
+      "linkedFrom": 6,
+      "primaryKeyword": "quit vaping",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 7.5,
+        "prev": null,
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "thin"
       ]
     },
     {
@@ -4362,8 +4249,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
         "impressions": 7,
@@ -4386,7 +4273,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
       ]
@@ -4438,8 +4325,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
         "impressions": 6,
@@ -4456,77 +4343,9 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
-      ]
-    },
-    {
-      "url": "/vaping-and-smoking-together",
-      "section": "article",
-      "source": "src/app/vaping-and-smoking-together/page.tsx",
-      "status": "live",
-      "title": "Vaping and smoking together: how to quit dual use | Blou",
-      "description": "If you vape and still smoke cigarettes, you are in “dual use.” A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
-      "h1": "Vaping and smoking together",
-      "keywordsMeta": [
-        "vape and smoke",
-        "dual use vaping smoking",
-        "quit vaping and smoking",
-        "smoke sometimes vape"
-      ],
-      "published": "2026-05-13",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 572,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-vaping",
-        "/go/app",
-        "/how-to-quit-smoking",
-        "/i-smoked-one-cigarette",
-        "/nrt-and-quit-smoking-app"
-      ],
-      "linkedFrom": 6,
-      "primaryKeyword": "vape and smoke",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 9.7,
-        "prev": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 7
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "thin"
       ]
     },
     {
@@ -4581,78 +4400,63 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 6,
         "ctr": 0,
-        "position": 31,
+        "position": 32.2,
         "prev": null,
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
-      "url": "/how-to-quit-smoking",
-      "section": "article",
-      "source": "src/app/how-to-quit-smoking/page.tsx",
+      "url": "/guides/concentration",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "How to quit smoking: a step-by-step plan | Blou",
-      "description": "A complete, evidence-based plan for quitting smoking. Set your quit date, choose NRT or medication, handle cravings, and stay quit for the long term.",
-      "h1": "How to quit smoking: step-by-step plan (2026)",
+      "title": "Can't concentrate after quitting smoking: what's happening",
+      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom—nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
+      "h1": "Can't concentrate after quitting smoking: what's happening",
       "keywordsMeta": [
-        "how to quit smoking",
-        "quit smoking plan",
-        "steps to quit smoking",
-        "best way to quit smoking"
+        "can't concentrate after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "poor concentration"
       ],
-      "published": "2026-03-01",
-      "modified": "2026-10-13",
+      "published": "2026-05-20",
+      "modified": "2026-05-20",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
         "MedicalWebPage",
         "Article",
-        "HowTo",
+        "WebPage",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1345,
-      "faqCount": 5,
+      "words": 1062,
+      "faqCount": 3,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/prepare-to-quit-smoking",
+        "/guides",
         "/go/app",
-        "/i-smoked-one-cigarette",
-        "/how-to-stop-a-relapse",
-        "/alcohol-and-quitting-smoking",
-        "/social-smoking",
-        "/quitting-smoking-after-40",
-        "/quitting-smoking-after-50",
-        "/quit-vaping",
-        "/vaping-and-smoking-together",
-        "/best-quit-smoking-apps",
-        "/nrt-and-quit-smoking-app",
-        "/why-cant-i-quit-smoking",
-        "/trying-to-quit-smoking-again",
-        "/first-week-quit-smoking",
-        "/stop-smoking-today",
-        "/nicotine-patch-vs-gum",
-        "/nicotine-withdrawal-symptoms",
-        "/motivation-to-quit-smoking",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-3-days",
+        "/guides/brain-fog",
+        "/guides/fatigue",
+        "/guides/insomnia",
+        "/guides/restlessness",
         "/guides/what-happens-after-1-week",
-        "/guides/cravings",
-        "/tools/money-saved"
+        "/quit-smoking-timeline",
+        "/tools"
       ],
-      "linkedFrom": 104,
-      "primaryKeyword": "how to quit smoking",
+      "linkedFrom": 1,
+      "primaryKeyword": "can't concentrate after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -4662,36 +4466,29 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 4,
         "ctr": 0,
-        "position": 59.7,
+        "position": 9,
         "prev": {
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 20,
           "ctr": 0,
-          "position": 12.4
+          "position": 12.8
         },
-        "topQueries": [
-          {
-            "query": "steps to quit smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 85.5
-          }
-        ]
+        "topQueries": []
       },
       "amplitude": {
-        "page": "/how-to-quit-smoking",
-        "views": 6,
+        "page": "/guides/concentration",
+        "views": 1,
         "appStoreClicks": 0,
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -4777,7 +4574,7 @@
         "/quit-smoking-help/wisconsin",
         "/quit-smoking-help/wyoming"
       ],
-      "linkedFrom": 54,
+      "linkedFrom": 55,
       "primaryKeyword": "free nicotine patches",
       "secondaryKeywords": null,
       "intent": null,
@@ -4788,26 +4585,516 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 4,
         "ctr": 0,
-        "position": 27.5,
+        "position": 17.8,
         "prev": null,
         "topQueries": []
       },
       "amplitude": {
         "page": "/quit-smoking-help",
-        "views": 1,
+        "views": 2,
         "appStoreClicks": 0,
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "page-2"
+      ]
+    },
+    {
+      "url": "/vaping-and-smoking-together",
+      "section": "article",
+      "source": "src/app/vaping-and-smoking-together/page.tsx",
+      "status": "live",
+      "title": "Vaping and smoking together: how to quit dual use | Blou",
+      "description": "If you vape and still smoke cigarettes, you are in “dual use.” A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
+      "h1": "Vaping and smoking together",
+      "keywordsMeta": [
+        "vape and smoke",
+        "dual use vaping smoking",
+        "quit vaping and smoking",
+        "smoke sometimes vape"
+      ],
+      "published": "2026-05-13",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 572,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-vaping",
+        "/go/app",
+        "/how-to-quit-smoking",
+        "/i-smoked-one-cigarette",
+        "/nrt-and-quit-smoking-app"
+      ],
+      "linkedFrom": 6,
+      "primaryKeyword": "vape and smoke",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 10,
+        "prev": {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 7.5
+        },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "thin"
+      ]
+    },
+    {
+      "url": "/how-to-quit-smoking",
+      "section": "article",
+      "source": "src/app/how-to-quit-smoking/page.tsx",
+      "status": "live",
+      "title": "How to quit smoking: a step-by-step plan | Blou",
+      "description": "A complete, evidence-based plan for quitting smoking. Set your quit date, choose NRT or medication, handle cravings, and stay quit for the long term.",
+      "h1": "How to quit smoking: step-by-step plan (2026)",
+      "keywordsMeta": [
+        "how to quit smoking",
+        "quit smoking plan",
+        "steps to quit smoking",
+        "best way to quit smoking"
+      ],
+      "published": "2026-03-01",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "HowTo",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1345,
+      "faqCount": 5,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/prepare-to-quit-smoking",
+        "/go/app",
+        "/i-smoked-one-cigarette",
+        "/how-to-stop-a-relapse",
+        "/alcohol-and-quitting-smoking",
+        "/social-smoking",
+        "/quitting-smoking-after-40",
+        "/quitting-smoking-after-50",
+        "/quit-vaping",
+        "/vaping-and-smoking-together",
+        "/best-quit-smoking-apps",
+        "/nrt-and-quit-smoking-app",
+        "/why-cant-i-quit-smoking",
+        "/trying-to-quit-smoking-again",
+        "/first-week-quit-smoking",
+        "/stop-smoking-today",
+        "/nicotine-patch-vs-gum",
+        "/nicotine-withdrawal-symptoms",
+        "/motivation-to-quit-smoking",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-3-days",
+        "/guides/what-happens-after-1-week",
+        "/guides/cravings",
+        "/tools/money-saved"
+      ],
+      "linkedFrom": 104,
+      "primaryKeyword": "how to quit smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 59.7,
+        "prev": {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 12.4
+        },
+        "topQueries": [
+          {
+            "query": "steps to quit smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 85.5
+          }
+        ]
+      },
+      "amplitude": {
+        "page": "/how-to-quit-smoking",
+        "views": 7,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/blou-vs-flamy",
+      "section": "comparison",
+      "source": "src/app/blou-vs-flamy/page.tsx",
+      "status": "live",
+      "title": "Blou vs Flamy (2026): which quit app fits you? | Blou",
+      "description": "Blou vs Flamy: honest comparison. Flamy emphasizes lightweight daily challenges; Blou emphasizes visual progress and craving speed on iPhone.",
+      "h1": "Blou vs Flamy",
+      "keywordsMeta": [
+        "blou vs flamy",
+        "flamy quit smoking app",
+        "quit smoking app comparison"
+      ],
+      "published": "2026-05-13",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 577,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/best-quit-smoking-apps",
+        "/go/app",
+        "/quit-smoking-app-for-iphone",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "blou vs flamy",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10,
+        "prev": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 73
+        },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/blou-vs-kwit",
+      "section": "comparison",
+      "source": "src/app/blou-vs-kwit/page.tsx",
+      "status": "live",
+      "title": "Blou vs Kwit (2026): which quit smoking app to pick? | Blou",
+      "description": "Blou vs Kwit: an honest comparison. Choose Blou for a clean visual tracker on iPhone, or Kwit for gamified XP and avatar progression.",
+      "h1": "Blou vs Kwit",
+      "keywordsMeta": [
+        "blou vs kwit",
+        "kwit vs blou",
+        "kwit app review",
+        "best quit smoking app",
+        "quit smoking app comparison"
+      ],
+      "published": "2026-05-20",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 803,
+      "faqCount": 5,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/best-quit-smoking-apps",
+        "/go/app",
+        "/guides/what-happens-after-1-week",
+        "/how-to-quit-smoking",
+        "/quit-smoking-app-for-iphone"
+      ],
+      "linkedFrom": 2,
+      "primaryKeyword": "blou vs kwit",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3,
+        "prev": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 7.2
+        },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/how-long-does-nicotine-stay-in-your-system",
+      "section": "article",
+      "source": "src/app/how-long-does-nicotine-stay-in-your-system/page.tsx",
+      "status": "live",
+      "title": "How long does nicotine stay in your system? | Blou",
+      "description": "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
+      "h1": "How long does nicotine stay in your system?",
+      "keywordsMeta": [
+        "how long does nicotine stay in your system",
+        "how long does nicotine stay in blood",
+        "nicotine urine test how long",
+        "cotinine detection time",
+        "nicotine out of system"
+      ],
+      "published": "2026-05-20",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1125,
+      "faqCount": 6,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/nicotine-withdrawal-timeline",
+        "/go/app",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-3-days"
+      ],
+      "linkedFrom": 1,
+      "primaryKeyword": "how long does nicotine stay in your system",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 46,
+        "prev": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6.5
+        },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": []
+    },
+    {
+      "url": "/living-with-a-smoker-while-quitting",
+      "section": "article",
+      "source": "src/app/living-with-a-smoker-while-quitting/page.tsx",
+      "status": "live",
+      "title": "Living with a smoker while quitting: set boundaries | Blou",
+      "description": "If someone at home still smokes, you need air rules, emotional boundaries, and a craving plan that does not depend on their behavior.",
+      "h1": "Living with a smoker while quitting",
+      "keywordsMeta": [
+        "living with a smoker quit smoking",
+        "quit smoking partner smokes",
+        "household smoking quit",
+        "secondhand smoke quitting"
+      ],
+      "published": "2026-05-14",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 497,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/how-to-help-someone-quit-smoking",
+        "/go/app",
+        "/social-smoking",
+        "/stress-smoking-quit-plan",
+        "/prepare-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "living with a smoker quit smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5,
+        "prev": null,
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "thin"
+      ]
+    },
+    {
+      "url": "/nicotine-patch-vs-gum",
+      "section": "article",
+      "source": "src/app/nicotine-patch-vs-gum/page.tsx",
+      "status": "live",
+      "title": "Nicotine patch vs gum: which NRT to start with? | Blou",
+      "description": "Patch vs gum for quitting smoking: what each covers (baseline vs cue cravings), combination NRT basics, and how a quit app keeps both usable.",
+      "h1": "Nicotine patch vs gum",
+      "keywordsMeta": [
+        "nicotine patch vs gum",
+        "patch or gum to quit smoking",
+        "NRT patch vs gum",
+        "combination NRT patch gum"
+      ],
+      "published": "2026-05-14",
+      "modified": "2026-10-13",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 470,
+      "faqCount": 4,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-smoking-with-nicotine-patch",
+        "/go/app",
+        "/quit-smoking-with-nicotine-gum",
+        "/quit-smoking-with-nicotine-lozenge",
+        "/combination-nrt-quit-smoking",
+        "/nrt-and-quit-smoking-app",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 8,
+      "primaryKeyword": "nicotine patch vs gum",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-06",
+          "end": "2026-11-02"
+        },
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9,
+        "prev": null,
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-05",
+      "issues": [
+        "thin"
       ]
     },
     {
@@ -4858,282 +5145,30 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 57.5,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "champix quit smoking app",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 57.5
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "thin"
-      ]
-    },
-    {
-      "url": "/blou-vs-flamy",
-      "section": "comparison",
-      "source": "src/app/blou-vs-flamy/page.tsx",
-      "status": "live",
-      "title": "Blou vs Flamy (2026): which quit app fits you? | Blou",
-      "description": "Blou vs Flamy: honest comparison. Flamy emphasizes lightweight daily challenges; Blou emphasizes visual progress and craving speed on iPhone.",
-      "h1": "Blou vs Flamy",
-      "keywordsMeta": [
-        "blou vs flamy",
-        "flamy quit smoking app",
-        "quit smoking app comparison"
-      ],
-      "published": "2026-05-13",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 577,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/best-quit-smoking-apps",
-        "/go/app",
-        "/quit-smoking-app-for-iphone",
-        "/how-to-quit-smoking"
-      ],
-      "linkedFrom": 3,
-      "primaryKeyword": "blou vs flamy",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
+          "start": "2026-10-06",
+          "end": "2026-11-02"
         },
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
-        "position": 10,
+        "position": 59,
         "prev": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 73
+          "position": 56
         },
-        "topQueries": []
+        "topQueries": [
+          {
+            "query": "champix quit smoking app",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 59
+          }
+        ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/how-long-does-nicotine-stay-in-your-system",
-      "section": "article",
-      "source": "src/app/how-long-does-nicotine-stay-in-your-system/page.tsx",
-      "status": "live",
-      "title": "How long does nicotine stay in your system? | Blou",
-      "description": "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
-      "h1": "How long does nicotine stay in your system?",
-      "keywordsMeta": [
-        "how long does nicotine stay in your system",
-        "how long does nicotine stay in blood",
-        "nicotine urine test how long",
-        "cotinine detection time",
-        "nicotine out of system"
-      ],
-      "published": "2026-05-20",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1125,
-      "faqCount": 6,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/nicotine-withdrawal-timeline",
-        "/go/app",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-3-days"
-      ],
-      "linkedFrom": 1,
-      "primaryKeyword": "how long does nicotine stay in your system",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 46,
-        "prev": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6.5
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/living-with-a-smoker-while-quitting",
-      "section": "article",
-      "source": "src/app/living-with-a-smoker-while-quitting/page.tsx",
-      "status": "live",
-      "title": "Living with a smoker while quitting: set boundaries | Blou",
-      "description": "If someone at home still smokes, you need air rules, emotional boundaries, and a craving plan that does not depend on their behavior.",
-      "h1": "Living with a smoker while quitting",
-      "keywordsMeta": [
-        "living with a smoker quit smoking",
-        "quit smoking partner smokes",
-        "household smoking quit",
-        "secondhand smoke quitting"
-      ],
-      "published": "2026-05-14",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 497,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/how-to-help-someone-quit-smoking",
-        "/go/app",
-        "/social-smoking",
-        "/stress-smoking-quit-plan",
-        "/prepare-to-quit-smoking"
-      ],
-      "linkedFrom": 3,
-      "primaryKeyword": "living with a smoker quit smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 5,
-        "prev": null,
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "thin"
-      ]
-    },
-    {
-      "url": "/nicotine-patch-vs-gum",
-      "section": "article",
-      "source": "src/app/nicotine-patch-vs-gum/page.tsx",
-      "status": "live",
-      "title": "Nicotine patch vs gum: which NRT to start with? | Blou",
-      "description": "Patch vs gum for quitting smoking: what each covers (baseline vs cue cravings), combination NRT basics, and how a quit app keeps both usable.",
-      "h1": "Nicotine patch vs gum",
-      "keywordsMeta": [
-        "nicotine patch vs gum",
-        "patch or gum to quit smoking",
-        "NRT patch vs gum",
-        "combination NRT patch gum"
-      ],
-      "published": "2026-05-14",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 470,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-smoking-with-nicotine-patch",
-        "/go/app",
-        "/quit-smoking-with-nicotine-gum",
-        "/quit-smoking-with-nicotine-lozenge",
-        "/combination-nrt-quit-smoking",
-        "/nrt-and-quit-smoking-app",
-        "/how-to-quit-smoking"
-      ],
-      "linkedFrom": 7,
-      "primaryKeyword": "nicotine patch vs gum",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-03",
-          "end": "2026-10-30"
-        },
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 9,
-        "prev": null,
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -5175,7 +5210,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "orphan"
       ]
@@ -5230,57 +5265,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": []
-    },
-    {
-      "url": "/blou-vs-kwit",
-      "section": "comparison",
-      "source": "src/app/blou-vs-kwit/page.tsx",
-      "status": "live",
-      "title": "Blou vs Kwit (2026): which quit smoking app to pick? | Blou",
-      "description": "Blou vs Kwit: an honest comparison. Choose Blou for a clean visual tracker on iPhone, or Kwit for gamified XP and avatar progression.",
-      "h1": "Blou vs Kwit",
-      "keywordsMeta": [
-        "blou vs kwit",
-        "kwit vs blou",
-        "kwit app review",
-        "best quit smoking app",
-        "quit smoking app comparison"
-      ],
-      "published": "2026-05-20",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 803,
-      "faqCount": 5,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/best-quit-smoking-apps",
-        "/go/app",
-        "/guides/what-happens-after-1-week",
-        "/how-to-quit-smoking",
-        "/quit-smoking-app-for-iphone"
-      ],
-      "linkedFrom": 2,
-      "primaryKeyword": "blou vs kwit",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": null,
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5326,7 +5311,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5377,7 +5362,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5429,7 +5414,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5480,7 +5465,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5527,7 +5512,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5575,7 +5560,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -5616,7 +5601,7 @@
         "/first-week-quit-smoking",
         "/quit-smoking-with-nicotine-patch"
       ],
-      "linkedFrom": 6,
+      "linkedFrom": 7,
       "primaryKeyword": "combination NRT",
       "secondaryKeywords": null,
       "intent": null,
@@ -5627,7 +5612,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -5677,7 +5662,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -5731,7 +5716,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -5788,7 +5773,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5842,7 +5827,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5897,7 +5882,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -5950,7 +5935,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6005,7 +5990,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6068,7 +6053,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6121,7 +6106,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6176,7 +6161,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6231,7 +6216,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6285,7 +6270,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6338,7 +6323,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6393,7 +6378,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6446,7 +6431,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6505,7 +6490,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6559,7 +6544,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6614,7 +6599,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6668,7 +6653,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6728,7 +6713,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6781,7 +6766,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6835,7 +6820,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6888,7 +6873,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6942,7 +6927,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -6995,7 +6980,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7049,7 +7034,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7109,7 +7094,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7163,7 +7148,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7218,7 +7203,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7272,7 +7257,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7327,7 +7312,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7382,7 +7367,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7436,7 +7421,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7489,7 +7474,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7542,7 +7527,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7596,7 +7581,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7650,7 +7635,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7710,7 +7695,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7764,7 +7749,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7823,7 +7808,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7877,7 +7862,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7939,7 +7924,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -7988,7 +7973,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8042,7 +8027,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8094,7 +8079,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8149,7 +8134,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8207,7 +8192,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8266,7 +8251,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8316,7 +8301,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8385,7 +8370,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8423,7 +8408,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8484,7 +8469,7 @@
       "suppressUntil": "2026-11-23",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8534,7 +8519,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8590,7 +8575,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -8647,7 +8632,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8702,7 +8687,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8756,8 +8741,14 @@
       "notes": null,
       "suppressUntil": null,
       "gsc": null,
-      "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "amplitude": {
+        "page": "/quit-smoking-help/arkansas",
+        "views": 3,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8812,7 +8803,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8867,7 +8858,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8922,7 +8913,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -8977,7 +8968,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9032,7 +9023,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9087,7 +9078,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9142,7 +9133,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9197,7 +9188,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9252,7 +9243,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9307,7 +9298,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9362,7 +9353,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9417,7 +9408,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9472,7 +9463,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9527,7 +9518,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9582,7 +9573,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9637,7 +9628,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9692,7 +9683,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9747,7 +9738,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9802,7 +9793,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9857,7 +9848,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9912,7 +9903,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -9967,7 +9958,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10022,7 +10013,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10077,7 +10068,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10132,7 +10123,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10187,7 +10178,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10242,7 +10233,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10297,7 +10288,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10352,7 +10343,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10407,7 +10398,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10462,7 +10453,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10517,7 +10508,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10572,7 +10563,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10627,7 +10618,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10682,7 +10673,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10737,7 +10728,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10792,7 +10783,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10847,7 +10838,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10902,7 +10893,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -10957,7 +10948,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11012,7 +11003,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11067,7 +11058,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11122,7 +11113,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11177,7 +11168,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11232,7 +11223,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11282,7 +11273,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11334,7 +11325,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11392,7 +11383,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11447,7 +11438,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11497,7 +11488,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11556,7 +11547,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11607,7 +11598,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11617,35 +11608,46 @@
       "section": "article",
       "source": "src/app/quit-smoking-with-nicotine-patch/page.tsx",
       "status": "live",
-      "title": "Quit smoking with the nicotine patch: a simple plan | Blou",
-      "description": "How to quit smoking with the nicotine patch: when to start, how to handle breakthrough cravings, and how an app keeps you consistent in weeks 1–4.",
-      "h1": "Quit smoking with the nicotine patch",
+      "title": "How to use a nicotine patch to quit smoking | Blou",
+      "description": "How to use a nicotine patch to quit smoking: where to put it, which strength to start with, how long to use it, and what to do about cravings.",
+      "h1": "How to use a nicotine patch to quit smoking",
       "keywordsMeta": [
-        "quit smoking with nicotine patch",
         "nicotine patch to quit smoking",
+        "using nicotine patches to quit smoking",
         "how to use nicotine patch",
+        "where to put nicotine patch",
+        "best place to put a nicotine patch",
+        "nicotine replacement patch",
+        "quit smoking with nicotine patch",
         "nicotine patch cravings"
       ],
       "published": "2026-05-09",
-      "modified": "2026-10-13",
+      "modified": "2026-11-03",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
         "MedicalWebPage",
         "Article",
+        "HowTo",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 645,
-      "faqCount": 4,
+      "words": 2274,
+      "faqCount": 8,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/prepare-to-quit-smoking",
+        "/tools/nicotine-patch-plan",
         "/go/app",
+        "/prepare-to-quit-smoking",
+        "/guides/dreams-and-sleep",
+        "/combination-nrt-quit-smoking",
+        "/nicotine-patch-vs-gum",
         "/guides/cravings",
         "/i-smoked-one-cigarette",
+        "/nicotine-patch-side-effects",
+        "/quit-smoking-help",
         "/nicotine-withdrawal-timeline"
       ],
       "linkedFrom": 9,
@@ -11659,10 +11661,8 @@
       "suppressUntil": "2026-11-24",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
-      "issues": [
-        "thin"
-      ]
+      "lastChecked": "2026-11-05",
+      "issues": []
     },
     {
       "url": "/quit-smoking-without-gaining-weight",
@@ -11714,7 +11714,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11766,7 +11766,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -11819,7 +11819,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11871,7 +11871,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11926,7 +11926,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -11982,7 +11982,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12034,7 +12034,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12084,7 +12084,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -12137,7 +12137,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -12177,7 +12177,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12231,7 +12231,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12273,7 +12273,7 @@
         "/quit-smoking-with-nicotine-patch",
         "/nicotine-patch-vs-gum"
       ],
-      "linkedFrom": 3,
+      "linkedFrom": 4,
       "primaryKeyword": "nicotine patch strength",
       "secondaryKeywords": null,
       "intent": null,
@@ -12284,7 +12284,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12335,7 +12335,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": []
     },
     {
@@ -12388,7 +12388,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]
@@ -12442,7 +12442,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-02",
+      "lastChecked": "2026-11-05",
       "issues": [
         "thin"
       ]

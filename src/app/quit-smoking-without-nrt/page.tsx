@@ -141,7 +141,12 @@ export default function QuitSmokingWithoutNrtPage() {
           <Link className="font-medium text-teal-800 underline" href="/nrt-and-quit-smoking-app">
             NRT + app
           </Link>{" "}
-          with a pharmacist—switching paths is data, not failure.
+          with a pharmacist—switching paths is data, not failure. If you want
+          help without nicotine, ask about{" "}
+          <Link className="font-medium text-teal-800 underline" href="/quit-smoking-with-bupropion">
+            Wellbutrin (bupropion) for quitting smoking
+          </Link>
+          .
         </p>
       </section>
 
