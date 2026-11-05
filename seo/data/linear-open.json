@@ -1,6 +1,62 @@
 {
-  "fetchedAt": "2026-11-05T10:53:47.089Z",
+  "fetchedAt": "2026-11-05T11:01:40.654Z",
   "issues": [
+    {
+      "id": "BLO-52",
+      "title": "Clear the old /best-quit-smoking-app-for-heavy-smokers URL from Google (redirected, still indexed, 69 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-52/clear-the-old-best-quit-smoking-app-for-heavy-smokers-url-from-google",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/best-quit-smoking-app-for-heavy-smokers",
+      "cluster": "best quit smoking app",
+      "updatedAt": "2026-11-05T11:00:30.943Z"
+    },
+    {
+      "id": "BLO-51",
+      "title": "Separate /zyn-withdrawal from /quit-zyn (4 shared queries, 0 impressions since 2026-10-31)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-51/separate-zyn-withdrawal-from-quit-zyn-4-shared-queries-0-impressions",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:audit"
+      ],
+      "pageUrl": "/zyn-withdrawal",
+      "cluster": "zyn withdrawal",
+      "updatedAt": "2026-11-05T11:00:26.960Z"
+    },
+    {
+      "id": "BLO-50",
+      "title": "Push /zyn-vs-cigarettes to page 1 (position 11.0, 107 impressions, 0 clicks)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-50/push-zyn-vs-cigarettes-to-page-1-position-110-107-impressions-0-clicks",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "page-2-push",
+        "source:audit"
+      ],
+      "pageUrl": "/zyn-vs-cigarettes",
+      "cluster": "zyn vs cigarettes",
+      "updatedAt": "2026-11-05T11:00:22.379Z"
+    },
+    {
+      "id": "BLO-49",
+      "title": "Get /guides/dreams-and-sleep back in the index (dropped 2026-11-02, 322 impressions)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-49/get-guidesdreams-and-sleep-back-in-the-index-dropped-2026-11-02-322",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "technical",
+        "source:audit"
+      ],
+      "pageUrl": "/guides/dreams-and-sleep",
+      "cluster": "vivid dreams after quitting smoking",
+      "updatedAt": "2026-11-05T11:00:17.621Z"
+    },
     {
       "id": "BLO-48",
       "title": "Add \"Zyn hiccups\" section to /are-zyns-bad-for-you (720/mo, LOW competition)",
@@ -55,7 +111,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-2-days",
       "cluster": "2 days without smoking",
-      "updatedAt": "2026-11-02T09:49:51.050Z"
+      "updatedAt": "2026-11-05T10:59:27.367Z"
     },
     {
       "id": "BLO-44",
@@ -257,7 +313,7 @@
       "id": "BLO-29",
       "title": "Refresh /quit-smoking-with-bupropion for \"Wellbutrin for quitting smoking\"",
       "url": "https://linear.app/blou-site-seo/issue/BLO-29/refresh-quit-smoking-with-bupropion-for-wellbutrin-for-quitting",
-      "state": "Todo",
+      "state": "In Progress",
       "priority": 2,
       "labels": [
         "refresh",
@@ -265,7 +321,7 @@
       ],
       "pageUrl": "/quit-smoking-with-bupropion",
       "cluster": "wellbutrin bupropion to quit smoking",
-      "updatedAt": "2026-10-29T09:54:56.414Z"
+      "updatedAt": "2026-11-05T11:00:16.331Z"
     },
     {
       "id": "BLO-27",
@@ -279,7 +335,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-days",
       "cluster": "3 days without smoking",
-      "updatedAt": "2026-10-27T15:34:02.413Z"
+      "updatedAt": "2026-11-05T10:59:21.595Z"
     },
     {
       "id": "BLO-26",
@@ -321,7 +377,7 @@
       ],
       "pageUrl": "/guides",
       "cluster": "guides indexing coverage",
-      "updatedAt": "2026-10-29T09:55:12.841Z"
+      "updatedAt": "2026-11-05T10:59:33.869Z"
     },
     {
       "id": "BLO-22",
@@ -350,7 +406,7 @@
       ],
       "pageUrl": "/tools/money-saved",
       "cluster": "quit smoking money saved calculator",
-      "updatedAt": "2026-10-27T15:34:37.126Z"
+      "updatedAt": "2026-11-05T10:59:13.061Z"
     },
     {
       "id": "BLO-20",
@@ -365,7 +421,7 @@
       ],
       "pageUrl": "/calculators/indonesia",
       "cluster": "biaya merokok / smoking cost indonesia",
-      "updatedAt": "2026-10-27T13:08:19.568Z"
+      "updatedAt": "2026-11-05T10:59:06.057Z"
     },
     {
       "id": "BLO-19",
@@ -379,7 +435,7 @@
       ],
       "pageUrl": "/quit-zyn",
       "cluster": "how to quit zyn / taper off zyn",
-      "updatedAt": "2026-10-27T13:08:16.526Z"
+      "updatedAt": "2026-11-05T10:59:00.248Z"
     },
     {
       "id": "BLO-18",
@@ -393,7 +449,7 @@
       ],
       "pageUrl": "/quit-smoking-timeline",
       "cluster": "quit smoking timeline",
-      "updatedAt": "2026-10-29T09:55:06.907Z"
+      "updatedAt": "2026-11-05T10:58:52.722Z"
     },
     {
       "id": "BLO-17",
@@ -408,7 +464,7 @@
       ],
       "pageUrl": "/vape-withdrawal-symptoms",
       "cluster": "vaping withdrawal timeline",
-      "updatedAt": "2026-10-29T09:55:01.324Z"
+      "updatedAt": "2026-11-05T10:58:45.052Z"
     },
     {
       "id": "BLO-15",
@@ -422,7 +478,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-weeks",
       "cluster": "3 weeks smoke free",
-      "updatedAt": "2026-10-29T09:55:26.823Z"
+      "updatedAt": "2026-11-05T10:58:38.291Z"
     },
     {
       "id": "BLO-14",
@@ -436,7 +492,7 @@
       ],
       "pageUrl": "/guides/nausea",
       "cluster": "symptom-guides-snippets",
-      "updatedAt": "2026-10-27T15:34:24.436Z"
+      "updatedAt": "2026-11-05T10:58:32.773Z"
     },
     {
       "id": "BLO-13",
@@ -450,7 +506,7 @@
       ],
       "pageUrl": "/guides/joint-pain",
       "cluster": "joint pain after quitting smoking",
-      "updatedAt": "2026-10-27T15:34:19.148Z"
+      "updatedAt": "2026-11-05T10:58:26.101Z"
     },
     {
       "id": "BLO-10",
@@ -494,7 +550,7 @@
       ],
       "pageUrl": "/",
       "cluster": "setup:amplitude",
-      "updatedAt": "2026-11-01T12:30:57.346Z"
+      "updatedAt": "2026-11-05T10:59:39.452Z"
     }
   ]
 }
