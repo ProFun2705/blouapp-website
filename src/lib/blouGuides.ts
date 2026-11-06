@@ -1927,6 +1927,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-03-08",
     dateModified: "2026-04-20",
     relatedSlugs: [
+      "tingling-hands-and-feet",
       "cravings",
       "mood-swings",
       "irritability",
@@ -2538,6 +2539,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
     relatedSlugs: [
+      "tingling-hands-and-feet",
       "headaches",
       "anxiety",
       "fatigue",
@@ -3571,76 +3573,153 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "tingling-hands-and-feet",
-    title: "How long does tingling in hands and feet last after quitting smoking?",
+    title: "Tingling after quitting smoking: hands, feet, and how long it lasts",
     shortTitle: "Tingling",
     category: "symptom",
     targetKeyword: "tingling after quitting smoking",
     quickAnswer:
-      "Mild tingling can occur during early quitting from anxiety, hyperventilation, or circulation changes and often improves within days to a few weeks. Sudden one-sided numbness, weakness, or trouble speaking is an emergency.",
+      "Tingling is not on the usual list of nicotine withdrawal symptoms, but anxiety, panic, and fast breathing can cause it, and that is common in the first weeks off nicotine. These episodes usually pass once your breathing slows down. Face drooping, a weak arm, or slurred speech is an emergency: call 999 or 911.",
     quickFacts: [
-      "Hyperventilation during panic can cause tingling in fingers and lips.",
-      "Cold hands/feet can feel different as circulation stabilizes after quitting.",
-      "One-sided symptoms, facial droop, or severe headache require urgent care.",
+      "A panic attack can cause tingling in your fingers or lips (NHS).",
+      "Breathing too fast lowers carbon dioxide in your blood, which can cause tingling around the mouth and in the arms (MedlinePlus).",
+      "Face weakness, arm weakness, or speech problems mean call 999 or 911 right away (NHS).",
     ],
     summary:
-      "Tingling is commonly anxiety-linked during quitting, but it’s important to know emergency thresholds. Expect improvement with calmer breathing and stable routines—escalate fast if neurologic red flags appear.",
+      "Tingling after quitting smoking is often tied to anxiety or fast breathing and usually passes as you slow down. What helps, and the signs that need a doctor.",
     detail:
-      "If tingling tracks directly with cravings or panic sensations, breathing work helps. If it’s constant, worsening, or one-sided, a clinician should evaluate.",
+      "Quitting can make you tense, and tense people breathe faster. That alone can make your hands, feet, or lips tingle. It is usually harmless, but it should not be ignored if it stays or comes with warning signs.",
     articleSections: [
       {
-        heading: "Why tingling can happen after quitting",
+        heading: "Why you may get tingling after quitting smoking",
         paragraphs: [
-          "Stress and panic can increase breathing rate, changing blood carbon dioxide and causing tingling sensations.",
-          "Circulation and nerve sensitivity can feel “different” after quitting as your body normalizes without nicotine pulses.",
+          "The NHS lists feeling anxious, tense, restless, and irritable as common withdrawal symptoms. It does not list tingling. But anxiety is a known trigger for it.",
+          "When you panic or breathe too fast, your blood carbon dioxide drops. MedlinePlus says this can cause numbness and tingling in the arms or around the mouth. The NHS lists tingling in your fingers or lips as a sign of a panic attack.",
+          "Tingling can also have causes that have nothing to do with quitting. MedlinePlus lists many, including low vitamin B levels, diabetes, and a nerve that is pressed. It also names tobacco and alcohol as possible causes.",
+        ],
+        bullets: [
+          "Anxiety or a panic attack during a strong craving.",
+          "Breathing fast without noticing it.",
+          "A sleeping limb or a pressed nerve.",
+          "A medical cause that shows up at the same time you quit.",
+        ],
+      },
+      {
+        heading: "How long tingling lasts after quitting",
+        paragraphs: [
+          "There is no research timeline for tingling on its own. The best guide is what we know about withdrawal in general.",
+          "The NHS says withdrawal symptoms are usually strongest in the first week, especially the first 3 days. On average they last 3 to 4 weeks, and some people feel them for a few months.",
+          "If your tingling comes from fast breathing, it should fade as your breathing slows down. MedlinePlus says the goal is to raise carbon dioxide back up, and that ends most symptoms. Tingling that keeps coming back or lasts a long time is a reason to see a doctor (NHS).",
         ],
         bullets: [],
       },
       {
-        heading: "What helps most",
+        heading: "What helps tingling right now",
         paragraphs: [
-          "Slow breathing (in 4, out 6) and grounding (sit, feet on the floor) often reduces tingling quickly if anxiety-driven.",
-          "Warmth, hydration, and steady meals also help prevent stress spikes.",
+          "If you think anxiety is the cause, slow your breathing first. MedlinePlus suggests pursed lip breathing: pucker your lips as if you are blowing out a candle, then breathe out slowly.",
+          "The NHS suggests breathing in slowly through your nose and gently out through your mouth. It says this can help you relax and make cravings easier to handle.",
+        ],
+        bullets: [
+          "Sit down and put both feet on the floor.",
+          "Breathe in through your nose, then out slowly through pursed lips.",
+          "Keep going for a few minutes until the tingling eases.",
+          "If a craving set it off, use Blou's SOS craving help and ride it out. Cravings pass.",
+        ],
+      },
+      {
+        heading: "When tingling is an emergency",
+        paragraphs: [
+          "The NHS lists the main stroke signs: face weakness (one side may droop), arm weakness or numbness in one arm, and speech problems such as slurred words. Call 999 straight away. In the US, call 911. Do not drive yourself.",
+          "MedlinePlus also says to get emergency help if tingling comes with weakness or being unable to move, confusion, vision changes, trouble walking, or loss of bladder or bowel control. Tingling right after a head, neck, or back injury is an emergency too.",
         ],
         bullets: [],
       },
       {
-        heading: "When tingling is urgent",
+        heading: "When to see a doctor about tingling",
         paragraphs: [
-          "Call emergency services for one-sided weakness or numbness, facial droop, trouble speaking, sudden severe headache, or confusion.",
-          "See a clinician if tingling is persistent beyond 4 weeks or progressively worsening.",
+          "Book a visit if the tingling keeps coming back, lasts a long time, or has no obvious cause (NHS, MedlinePlus). Do not try to work out the cause yourself.",
+          "MedlinePlus also lists pain in the neck, forearm, or fingers, a new rash, dizziness, or muscle spasms as reasons to contact your provider.",
+          "Tell your doctor you recently quit nicotine. If you use a medicine to quit, ask your pharmacist before you change anything.",
         ],
         bullets: [],
       },
     ],
-    typicalDuration: "Often minutes to days if anxiety-linked; improving over 1–4 weeks for mild cases.",
-    commonTriggers: "Anxiety, hyperventilation, caffeine, poor sleep, cold exposure.",
+    typicalDuration:
+      "Tingling from fast breathing usually fades as your breathing slows. Withdrawal overall peaks in week 1 and lasts 3 to 4 weeks on average (NHS).",
+    commonTriggers: "Anxiety, panic, fast breathing, strong cravings, poor sleep.",
     whenToSeekCare:
-      "Emergency for stroke-like symptoms (one-sided weakness/numbness, speech trouble). Routine evaluation if persistent >4 weeks or worsening.",
+      "Call 999 or 911 for face droop, one weak arm, slurred speech, confusion, or weakness. See a doctor if tingling keeps coming back, lasts a long time, or has no obvious cause.",
     whatToExpectNext: [
-      "Anxiety-linked tingling improves with slower breathing.",
-      "Circulation continues normalizing over weeks.",
-      "Persistent symptoms deserve medical assessment.",
+      "Tingling from anxiety often eases once you slow your breathing.",
+      "Withdrawal symptoms are usually strongest in week 1 and fade over about 3 to 4 weeks.",
+      "Tingling that stays or keeps returning is worth a doctor visit.",
     ],
     faq: [
       {
         question: "How long does tingling last after quitting smoking?",
         answer:
-          "If it’s tied to anxiety or hyperventilation, it can improve quickly (minutes to days). Mild intermittent tingling often improves over 1–4 weeks. Persistent or one-sided symptoms need medical evaluation.",
+          "There is no research timeline for tingling alone. If fast breathing causes it, it usually fades as your breathing slows. Withdrawal symptoms overall are strongest in the first week and last 3 to 4 weeks on average (NHS). See a doctor if it keeps coming back or lasts a long time.",
       },
       {
-        question: "Can quitting smoking cause numbness or tingling?",
+        question: "Can quitting smoking cause tingling in hands and feet?",
         answer:
-          "Some people notice tingling during early quitting, often from anxiety and breathing changes. It should improve, not worsen—worsening or one-sided symptoms need urgent care.",
+          "Tingling is not on the NHS list of withdrawal symptoms. But anxiety and panic are, and they can cause fast breathing, which can make your fingers, lips, or feet tingle. Other medical causes are possible, so get it checked if it stays.",
       },
       {
-        question: "When should I worry about tingling after quitting?",
+        question: "Why do my fingers tingle when I get a craving?",
         answer:
-          "Worry if it’s one-sided, paired with weakness or speech trouble, or sudden and severe. Those are emergency signs.",
+          "A strong craving can make you tense and breathe faster. Breathing too fast lowers carbon dioxide in your blood and can cause tingling in the arms or around the mouth (MedlinePlus). Slow breathing usually helps.",
+      },
+      {
+        question: "Is tingling after quitting a sign of a stroke?",
+        answer:
+          "Usually not, but do not guess. If tingling comes with face drooping, weakness or numbness in one arm, or slurred speech, call 999 or 911 right away (NHS).",
+      },
+      {
+        question: "Can quitting vaping cause tingling?",
+        answer:
+          "Quitting vaping can bring the same anxiety and tension as quitting cigarettes, and that can cause fast breathing and tingling. The same tips apply: slow your breathing and get help for anything that lasts or comes with warning signs.",
+      },
+      {
+        question: "When should I see a doctor about tingling?",
+        answer:
+          "See a doctor if it keeps coming back, lasts a long time, has no obvious cause, or comes with pain, a rash, dizziness, or muscle spasms (NHS, MedlinePlus). Go to emergency care for stroke signs.",
+      },
+    ],
+    references: [
+      {
+        label: "NHS: Pins and needles",
+        href: "https://www.nhs.uk/conditions/pins-and-needles/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS: Anxiety, fear and panic",
+        href: "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS: Stroke symptoms",
+        href: "https://www.nhs.uk/conditions/stroke/symptoms/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS Better Health: Managing nicotine withdrawal symptoms",
+        href: "https://www.nhs.uk/better-health/quit-smoking/staying-smoke-free/managing-nicotine-withdrawal-symptoms",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "MedlinePlus: Hyperventilation",
+        href: "https://medlineplus.gov/ency/article/003071.htm",
+        publisher: "US National Library of Medicine",
+      },
+      {
+        label: "MedlinePlus: Numbness and tingling",
+        href: "https://medlineplus.gov/ency/article/003206.htm",
+        publisher: "US National Library of Medicine",
       },
     ],
     datePublished: "2026-05-08",
-    dateModified: "2026-05-08",
-    relatedSlugs: ["anxiety", "dizziness", "headaches", "what-happens-after-3-days"],
+    dateModified: "2026-11-06",
+    relatedSlugs: ["anxiety", "dizziness", "headaches", "shortness-of-breath", "what-happens-after-3-days"],
     medicalConditionName: "Paresthesia (post-cessation)",
   },
   {

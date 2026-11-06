@@ -52,7 +52,7 @@ const MAX_TITLE_LENGTH = 60;
 const SEO_TITLE_OVERRIDES: Record<string, string> = {
   "shortness-of-breath": "Shortness of breath after quitting smoking: how long?",
   "increased-appetite": "Increased appetite after quitting smoking: how long?",
-  "tingling-hands-and-feet": "Tingling hands and feet after quitting smoking",
+  "tingling-hands-and-feet": "Tingling after quitting smoking: causes and how long",
   "caffeine-sensitivity": "Caffeine sensitivity after quitting smoking",
   "taste-and-smell": "When do taste and smell return after quitting smoking?",
   anger: "Anger after quitting smoking: why and how long",
