@@ -1488,6 +1488,7 @@ export const blouGuides: BlouGuide[] = [
       "what-happens-after-1-week",
       "anxiety",
       "mood-swings",
+      "libido",
     ],
     medicalConditionName: "Insomnia",
   },
@@ -2275,6 +2276,7 @@ export const blouGuides: BlouGuide[] = [
       "insomnia",
       "brain-fog",
       "what-happens-after-1-week",
+      "libido",
     ],
     medicalConditionName: "Post-cessation fatigue",
   },
@@ -2444,6 +2446,7 @@ export const blouGuides: BlouGuide[] = [
       "anxiety",
       "irritability",
       "what-happens-after-1-month",
+      "libido",
     ],
     medicalConditionName: "Mood instability (post-cessation)",
   },
@@ -4806,81 +4809,154 @@ export const blouGuides: BlouGuide[] = [
     category: "symptom",
     targetKeyword: "libido after quitting smoking",
     quickAnswer:
-      "Sex drive and libido often improve over the months after quitting smoking as circulation, hormone regulation, and energy levels recover. A temporary dip is possible in the first weeks during acute withdrawal.",
+      "For most people, sex drive and erections are no worse, and often better, in the long run after quitting smoking. A short dip in desire can happen in the first weeks because withdrawal disrupts sleep and mood. If problems keep going, see a doctor.",
     quickFacts: [
-      "Smoking impairs circulation to sexual organs and is associated with erectile dysfunction and reduced arousal.",
-      "Quitting smoking is associated with improved sexual function in both men and women over 3–6 months.",
-      "A temporary short-term dip in libido during acute withdrawal is possible but typically brief.",
+      "Smoking is listed as a lifestyle risk factor for erectile dysfunction (NIDDK), and stopping smoking is advised as a way to help (NHS).",
+      "Withdrawal symptoms such as trouble sleeping, irritability and low mood are strongest in week 1 and usually last 3 to 4 weeks (NHS Better Health). They can lower desire for a while.",
+      "Stress, depression, alcohol and some medicines also lower sex drive (NHS). See a GP if it keeps happening.",
     ],
     summary:
-      "Long-term, quitting smoking improves libido, sexual function, and physical confidence. Short-term withdrawal may produce a temporary dip in sex drive due to hormonal and neurochemical fluctuations, but this passes.",
+      "Does quitting smoking change your sex drive? A short dip can happen while withdrawal affects sleep and mood, and long-term, quitting helps sexual health.",
     detail:
-      "The relationship between smoking and sexual health is well established. Nicotine and other smoke compounds cause vasoconstriction, which reduces blood flow to sexual organs. Over time this contributes to erectile dysfunction in men and reduced genital sensitivity and arousal response in women. Quitting reverses much of this through improved circulation and hormonal balance—though it takes months, not days.",
+      "Sex drive depends on sleep, mood, stress, blood flow and general health. Smoking is a known risk factor for erectile problems, and stopping smoking is part of standard lifestyle advice for them. Quitting also brings withdrawal, which can disturb sleep and mood for a few weeks. So some people feel less interested in sex for a while before things settle.",
     articleSections: [
       {
-        heading: "How smoking affects sex drive and sexual function",
+        heading: "Does quitting smoking increase your sex drive?",
         paragraphs: [
-          "Nicotine causes vasoconstriction—narrowing of blood vessels. This reduces blood flow to the genitals, which is important for both erection (men) and arousal lubrication (women). Long-term smoking is a significant independent risk factor for erectile dysfunction; studies suggest smokers have roughly twice the risk of ED compared to non-smokers.",
-          "Smoking also affects testosterone metabolism and is associated with lower testosterone levels in some studies. It increases oxidative stress, which affects sperm quality and motility, and impairs vaginal blood flow and sensitivity.",
+          "There is no study that gives a day-by-day timeline for libido after quitting. What the health sources agree on is the direction. Smoking is a risk factor for erectile dysfunction, and the NHS and MedlinePlus both list stopping smoking among the changes that may help.",
+          "So for most people, quitting is good for sexual health over time. How fast you notice it varies from person to person.",
         ],
         bullets: [
-          "Erectile dysfunction risk is roughly twice as high in smokers vs non-smokers.",
-          "Carbon monoxide from smoke reduces oxygen delivery to all tissues including genital ones.",
-          "Smoking is associated with lower overall energy and confidence, both of which affect libido.",
+          "The US National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) lists smoking cigarettes as a lifestyle behavior that makes erectile dysfunction more likely.",
+          "The CDC lists harmful reproductive health effects among the harms of cigarette smoking.",
+          "The NHS lists stopping smoking among the lifestyle changes that can sometimes help with erectile dysfunction.",
         ],
       },
       {
-        heading: "What happens to libido when you quit",
+        heading: "Why sex drive can dip in the first weeks",
         paragraphs: [
-          "In the short term (first 1–4 weeks), some people experience a temporary reduction in libido. This is partly a withdrawal effect—neurochemical fluctuations, sleep disruption, and mood changes all reduce sexual desire temporarily. This is a withdrawal symptom, not a permanent change.",
-          "Over the medium term (1–6 months), most people report improving sexual function as circulation recovers, energy levels rise, and mood stabilizes. Men who had smoking-related erectile dysfunction often notice significant improvement within 3–6 months of quitting. Women may notice improved arousal and genital sensitivity.",
+          "Sex drive is tied to sleep, mood and stress. NHS Better Health lists trouble sleeping, being easily upset or irritable, feeling anxious or tense, and low mood as common withdrawal symptoms. Any of these can make sex feel less appealing.",
+          "These symptoms are strongest in the first week, especially the first 3 days. They usually last about 3 to 4 weeks on average, though some people feel them for a few months. A dip in desire that follows the same pattern is likely to ease the same way.",
         ],
         bullets: [
-          "Most libido changes are temporary; the long-term trajectory after quitting is positive.",
-          "Circulation improvement begins within weeks and continues over months.",
-          "Sleep and energy—both disrupted by withdrawal—are major libido factors; they recover.",
+          "Poor sleep and tiredness are common early on. See the guides on insomnia and fatigue.",
+          "Low mood and irritability can reduce interest in sex. See the guides on mood swings and depression.",
+          "Your partner may need to hear that this is withdrawal, not a loss of interest in them.",
         ],
       },
       {
-        heading: "Managing the short-term dip",
+        heading: "Libido after quitting: what to expect",
         paragraphs: [
-          "The first weeks of quitting involve significant neurochemical and physiological adjustment. Reduced libido during this period is normal and temporary. Focus on the behaviors that support recovery—sleep, exercise, nutrition, and craving management—and libido naturally follows as the system stabilizes.",
+          "Treat this as a guide, not a schedule. Only the withdrawal points come from a timed source.",
         ],
         bullets: [
-          "Sleep quality improving is often one of the first signs the acute withdrawal phase is ending.",
-          "Regular exercise (even walks) improves circulation and hormone balance, supporting libido recovery.",
-          "If libido does not improve after 2–3 months smoke-free, discuss it with a clinician.",
+          "Week 1: withdrawal peaks. Poor sleep, irritability and low mood can lower desire (NHS Better Health).",
+          "Weeks 2 to 4: withdrawal symptoms usually ease over 3 to 4 weeks on average (NHS Better Health).",
+          "Months 1 to 3: sleep and mood settle for most people, and desire often follows. No source gives a set timeline.",
+          "Later: stopping smoking is advised as one way to help erectile problems (NHS, MedlinePlus).",
+        ],
+      },
+      {
+        heading: "What helps while you wait",
+        paragraphs: [
+          "You cannot force desire back, but you can support the things it depends on. Better sleep and less stress usually help most.",
+          "Craving spikes can add to stress. Blou's SOS craving help gives you something to do in those moments, so a hard evening is less likely to end in a slip.",
+        ],
+        bullets: [
+          "Keep a regular bedtime and cut caffeine late in the day.",
+          "Move daily. The NHS lists daily exercise among the healthy changes for erectile problems.",
+          "Go easy on alcohol. The NHS lists too much alcohol as a cause of low sex drive and of occasional erection problems.",
+          "Tell your partner what is going on and take the pressure off for a few weeks.",
+        ],
+      },
+      {
+        heading: "Other causes of low sex drive",
+        paragraphs: [
+          "Quitting may not be the only reason. The NHS lists stress, anxiety and depression as main causes of low sex drive. It also names some medicines, such as blood pressure medicine and antidepressants, and drinking too much alcohol.",
+          "Do not stop a prescribed medicine on your own. If you think a medicine is the cause, talk to your GP or pharmacist first.",
+        ],
+        bullets: [
+          "Occasional erection problems are usually caused by stress, tiredness or too much alcohol (NHS).",
+          "Frequent problems can point to a condition such as high blood pressure, diabetes, depression or anxiety, or a hormone problem (NHS).",
         ],
       },
     ],
-    typicalDuration: "Short-term dip: 1–4 weeks. Long-term improvement: 1–6 months",
-    whenToSeekCare: "Consult a clinician if erectile dysfunction or significant sexual dysfunction persists beyond 3–6 months smoke-free.",
+    typicalDuration: "Withdrawal symptoms that can affect desire usually last 3 to 4 weeks on average (NHS Better Health)",
+    whenToSeekCare:
+      "See a GP if erection problems keep happening, if low sex drive worries you, if you think a medicine is the cause, or if you feel low or hopeless. Talk to a doctor first before changing any prescribed medicine.",
     whatToExpectNext: [
-      "Circulation continues improving over the first 3 months.",
-      "Energy and sleep—both linked to libido—continue recovering.",
-      "Many people report better sexual function at 3–6 months smoke-free than while smoking.",
+      "Sleep and mood usually settle as withdrawal eases over 3 to 4 weeks.",
+      "Desire often follows sleep and mood, but the timing varies.",
+      "If problems last well beyond the first few months, a GP can look for other causes.",
     ],
     faq: [
       {
-        question: "Does quitting smoking increase sex drive?",
+        question: "Does quitting smoking increase libido?",
         answer:
-          "For most people, yes—over time. Quitting improves circulation, energy, and hormone regulation, all of which support libido. There may be a brief dip during acute withdrawal in the first weeks, but the long-term trajectory is improvement.",
+          "For most people it does not hurt and often helps over time. Smoking is a risk factor for erectile dysfunction, and stopping smoking is advised as one way to help (NHS, NIDDK). No source gives a set timeline for libido alone.",
       },
       {
         question: "Why is my sex drive low after quitting smoking?",
         answer:
-          "Low libido in the first weeks is a withdrawal symptom caused by neurochemical fluctuations, disrupted sleep, and mood changes. It is temporary and typically resolves within 2–4 weeks as the body adjusts.",
+          "Withdrawal can cause trouble sleeping, irritability, anxiety and low mood. These can lower desire. NHS Better Health says these symptoms are strongest in week 1 and usually last 3 to 4 weeks. Stress, alcohol and some medicines can also play a part.",
+      },
+      {
+        question: "How long does low libido last after quitting smoking?",
+        answer:
+          "There is no research timeline for libido alone. If it is linked to withdrawal, it should ease as sleep and mood settle, which is usually within 3 to 4 weeks, though some people feel withdrawal for a few months. See a GP if it does not improve.",
       },
       {
         question: "Does quitting smoking help erectile dysfunction?",
         answer:
-          "Yes, in many cases. Smoking-related ED is largely circulation-based, and quitting allows blood vessels to recover. Studies show significant improvement in erectile function within 3–6 months of quitting in men with smoking-related ED.",
+          "The NHS lists stopping smoking among the lifestyle changes that can sometimes help, and MedlinePlus says it may help. Results differ by person. If problems keep happening, see a GP, because they can signal a health condition that can be treated.",
+      },
+      {
+        question: "Can quitting vaping or nicotine pouches affect libido?",
+        answer:
+          "Withdrawal from any nicotine product can disturb sleep and mood for a few weeks, which can lower desire. We found no source that measures libido after quitting vaping or pouches specifically, so the same advice applies.",
+      },
+      {
+        question: "When should I see a doctor about libido after quitting?",
+        answer:
+          "See a GP if erection problems keep happening, if low sex drive worries you, or if you feel low for more than a couple of weeks. Do not stop a prescribed medicine without asking your doctor or pharmacist.",
       },
     ],
     datePublished: "2026-05-20",
-    dateModified: "2026-05-20",
-    relatedSlugs: ["fatigue", "insomnia", "mood-swings", "what-happens-after-3-months"],
+    dateModified: "2026-11-09",
+    relatedSlugs: ["fatigue", "insomnia", "mood-swings", "depression", "what-happens-after-3-months"],
     medicalConditionName: "Nicotine withdrawal",
+    references: [
+      {
+        label: "NIDDK: Definition and facts for erectile dysfunction",
+        href: "https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction/definition-facts",
+        publisher: "US National Institute of Diabetes and Digestive and Kidney Diseases",
+      },
+      {
+        label: "NHS: Erectile dysfunction (impotence)",
+        href: "https://www.nhs.uk/conditions/erectile-dysfunction/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS: Loss of libido",
+        href: "https://www.nhs.uk/conditions/loss-of-libido/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS Better Health: Managing nicotine withdrawal symptoms",
+        href: "https://www.nhs.uk/better-health/quit-smoking/staying-smoke-free/managing-nicotine-withdrawal-symptoms",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "MedlinePlus: Erectile dysfunction",
+        href: "https://medlineplus.gov/erectiledysfunction.html",
+        publisher: "US National Library of Medicine",
+      },
+      {
+        label: "CDC: About tobacco",
+        href: "https://www.cdc.gov/tobacco/about/index.html",
+        publisher: "US Centers for Disease Control and Prevention",
+      },
+    ],
   },
   {
     slug: "joint-pain",
