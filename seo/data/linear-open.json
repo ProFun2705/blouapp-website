@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T11:01:40.654Z",
+  "fetchedAt": "2026-11-09T09:43:09.651Z",
   "issues": [
     {
       "id": "BLO-52",
@@ -219,11 +219,12 @@
       "priority": 2,
       "labels": [
         "technical",
-        "source:audit"
+        "source:audit",
+        "source:human"
       ],
       "pageUrl": "/sitemap.xml",
       "cluster": "article and tool indexing coverage",
-      "updatedAt": "2026-10-29T09:54:24.203Z"
+      "updatedAt": "2026-11-06T11:13:09.694Z"
     },
     {
       "id": "BLO-35",
@@ -310,20 +311,6 @@
       "updatedAt": "2026-10-27T15:41:07.757Z"
     },
     {
-      "id": "BLO-29",
-      "title": "Refresh /quit-smoking-with-bupropion for \"Wellbutrin for quitting smoking\"",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-29/refresh-quit-smoking-with-bupropion-for-wellbutrin-for-quitting",
-      "state": "In Progress",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-smoking-with-bupropion",
-      "cluster": "wellbutrin bupropion to quit smoking",
-      "updatedAt": "2026-11-05T11:00:16.331Z"
-    },
-    {
       "id": "BLO-27",
       "title": "Push /guides/what-happens-after-3-days to page 1 (queries at positions 4-17)",
       "url": "https://linear.app/blou-site-seo/issue/BLO-27/push-guideswhat-happens-after-3-days-to-page-1-queries-at-positions-4",
@@ -350,20 +337,6 @@
       "pageUrl": "/guides/libido",
       "cluster": "libido after quitting smoking",
       "updatedAt": "2026-10-29T09:55:22.440Z"
-    },
-    {
-      "id": "BLO-25",
-      "title": "Refresh /guides/tingling-hands-and-feet (dropped out of the index, 183 to 19 impressions)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-25/refresh-guidestingling-hands-and-feet-dropped-out-of-the-index-183-to",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:audit"
-      ],
-      "pageUrl": "/guides/tingling-hands-and-feet",
-      "cluster": "tingling after quitting smoking",
-      "updatedAt": "2026-10-29T09:55:17.366Z"
     },
     {
       "id": "BLO-24",
