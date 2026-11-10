@@ -35,6 +35,7 @@ const OCT_15_2026 = "2026-10-15";
 const OCT_28_2026 = "2026-10-28";
 const NOV_3_2026 = "2026-11-03";
 const NOV_5_2026 = "2026-11-05";
+const NOV_10_2026 = "2026-11-10";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -89,7 +90,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/living-with-a-smoker-while-quitting", lastModified: OCT_2026, label: "Living with a smoker while quitting", group: "Situations and health conditions" },
   { path: "/social-smoking", lastModified: OCT_2026, label: "Social smoking", group: "Situations and health conditions" },
   { path: "/how-to-help-someone-quit-smoking", lastModified: OCT_2026, label: "Helping someone quit", group: "Situations and health conditions" },
-  { path: "/quit-vaping", lastModified: OCT_2026, label: "How to quit vaping", group: "Situations and health conditions" },
+  { path: "/quit-vaping", lastModified: NOV_10_2026, label: "How to quit vaping", group: "Situations and health conditions" },
   { path: "/vape-withdrawal-symptoms", lastModified: OCT_15_2026, label: "Vape withdrawal symptoms", group: "Situations and health conditions" },
   { path: "/quit-vaping-timeline", lastModified: OCT_15_2026, label: "Quit vaping timeline", group: "Situations and health conditions" },
   { path: "/vaping-and-smoking-together", lastModified: OCT_2026, label: "Vaping and smoking together", group: "Situations and health conditions" },
