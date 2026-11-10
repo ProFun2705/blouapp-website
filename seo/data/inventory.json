@@ -1504,7 +1504,7 @@
         "prev": null,
         "topQueries": [
           {
-            "query": "zyn\u306f\u55ab\u7159\u3088\u308a\u3082\u826f\u3044\u3067\u3059\u304b\uff1f",
+            "query": "zynは喫煙よりも良いですか？",
             "impressions": 4,
             "clicks": 0,
             "position": 6.8
@@ -1516,7 +1516,7 @@
             "position": 10.5
           },
           {
-            "query": "zyn ve sigara kar\u015f\u0131la\u015ft\u0131rmas\u0131",
+            "query": "zyn ve sigara karşılaştırması",
             "impressions": 2,
             "clicks": 0,
             "position": 3
@@ -1732,7 +1732,7 @@
             "position": 51.5
           },
           {
-            "query": "sluta r\u00f6ka spara pengar",
+            "query": "sluta röka spara pengar",
             "impressions": 4,
             "clicks": 0,
             "position": 71
@@ -1781,7 +1781,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "When do taste and smell return after quitting smoking?",
-      "description": "Taste and smell recovery is one of the fastest benefits of quitting. The main downside is increased appetite\u2014plan for it so it doesn\u2019t become a relapse trigger.",
+      "description": "Taste and smell recovery is one of the fastest benefits of quitting. The main downside is increased appetite—plan for it so it doesn’t become a relapse trigger.",
       "h1": "How long does it take for taste and smell to return after quitting smoking?",
       "keywordsMeta": [
         "taste and smell return after quitting smoking",
@@ -1850,7 +1850,7 @@
       "section": "home",
       "source": "src/app/page.tsx",
       "status": "live",
-      "title": "Blou \u2013 Quit Smoking App for iPhone: See Your Body Heal",
+      "title": "Blou – Quit Smoking App for iPhone: See Your Body Heal",
       "description": "Blou is a quit smoking app for iPhone that shows proof you're healing: a photo timeline, lung checks, SOS craving help, and every milestone visualized. Free guides, symptom timelines, and calculators.",
       "h1": "See your body heal after your last cigarette.",
       "keywordsMeta": [
@@ -2065,7 +2065,7 @@
             "position": 80
           },
           {
-            "query": "2 d\u00edas sin fumar",
+            "query": "2 días sin fumar",
             "impressions": 1,
             "clicks": 0,
             "position": 2
@@ -2369,7 +2369,7 @@
       "source": "src/app/guides/page.tsx",
       "status": "live",
       "title": "Quit smoking guides: milestones, symptoms & timelines | Blou",
-      "description": "Evidence-based quit smoking guides. Explore what happens to your body after 1 day, 1 week, 1 month, 1 year \u2014 plus symptom guides for cravings, cough, anxiety, and more.",
+      "description": "Evidence-based quit smoking guides. Explore what happens to your body after 1 day, 1 week, 1 month, 1 year — plus symptom guides for cravings, cough, anxiety, and more.",
       "h1": "Quit smoking guides & timelines",
       "keywordsMeta": [
         "quit smoking guide",
@@ -2617,7 +2617,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do night sweats last after quitting smoking? | Blou",
-      "description": "Treat night sweats as context plus pattern: occasional early episodes that shrink as sleep returns often fit withdrawal. Fever, cachexia, months of drenching, or daytime sweats need clinicians\u2014not guesses.",
+      "description": "Treat night sweats as context plus pattern: occasional early episodes that shrink as sleep returns often fit withdrawal. Fever, cachexia, months of drenching, or daytime sweats need clinicians—not guesses.",
       "h1": "How long do night sweats last after quitting smoking?",
       "keywordsMeta": [
         "night sweats after quitting smoking",
@@ -2954,7 +2954,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does dizziness last after quitting smoking? | Blou",
-      "description": "Post-quit dizziness is usually benign and tied to nicotine withdrawal plus routine changes\u2014not brain damage from quitting. Hydration, slow position changes, and steady routines usually fix it fastest.",
+      "description": "Post-quit dizziness is usually benign and tied to nicotine withdrawal plus routine changes—not brain damage from quitting. Hydration, slow position changes, and steady routines usually fix it fastest.",
       "h1": "How long does dizziness last after quitting smoking?",
       "keywordsMeta": [
         "dizziness after quitting smoking",
@@ -3149,9 +3149,9 @@
       "section": "article",
       "source": "src/app/nicotine-patch-side-effects/page.tsx",
       "status": "live",
-      "title": "Nicotine patch side effects: what\u2019s normal and not | Blou",
+      "title": "Nicotine patch side effects: what’s normal and not | Blou",
       "description": "Nicotine patch side effects: skin rash, vivid dreams, the 21 mg dose, how long you can wear a patch, overdose signs and when to call a doctor.",
-      "h1": "Nicotine patch side effects: what\u2019s normal and when to call a doctor",
+      "h1": "Nicotine patch side effects: what’s normal and when to call a doctor",
       "keywordsMeta": [
         "nicotine patch side effects",
         "side effects of nicotine patch 21 mg",
@@ -3372,7 +3372,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Increased appetite after quitting smoking: how long? | Blou",
-      "description": "Hunger after quitting is expected and manageable. The winning strategy is structure: planned snacks, protein/fiber, and replacing \u201chand-to-mouth\u201d smoking moments intentionally.",
+      "description": "Hunger after quitting is expected and manageable. The winning strategy is structure: planned snacks, protein/fiber, and replacing “hand-to-mouth” smoking moments intentionally.",
       "h1": "How long does increased appetite last after quitting smoking?",
       "keywordsMeta": [
         "increased appetite after quitting smoking",
@@ -3442,7 +3442,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Caffeine sensitivity after quitting smoking | Blou",
-      "description": "Caffeine \u201chits harder\u201d after quitting for a real pharmacology reason. Adjusting coffee is one of the fastest ways to improve sleep, anxiety, and palpitations during quitting.",
+      "description": "Caffeine “hits harder” after quitting for a real pharmacology reason. Adjusting coffee is one of the fastest ways to improve sleep, anxiety, and palpitations during quitting.",
       "h1": "How long does caffeine sensitivity last after quitting smoking?",
       "keywordsMeta": [
         "caffeine sensitivity after quitting smoking",
@@ -3606,7 +3606,7 @@
       "source": "src/app/quit-smoking-with-nicotine-gum/page.tsx",
       "status": "live",
       "title": "Quit smoking with nicotine gum: handling cravings | Blou",
-      "description": "How to quit smoking with nicotine gum: what it\u2019s for, how to handle cue-based cravings, and how to use tracking to stay consistent in weeks 1\u20134.",
+      "description": "How to quit smoking with nicotine gum: what it’s for, how to handle cue-based cravings, and how to use tracking to stay consistent in weeks 1–4.",
       "h1": "Quit smoking with nicotine gum",
       "keywordsMeta": [
         "quit smoking with nicotine gum",
@@ -3861,7 +3861,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do sore gums last after quitting smoking? | Blou",
-      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a \u2018get ahead of dental health\u2019 moment, not a failure.",
+      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a ‘get ahead of dental health’ moment, not a failure.",
       "h1": "How long do sore gums last after quitting smoking?",
       "keywordsMeta": [
         "sore gums after quitting smoking",
@@ -4157,7 +4157,7 @@
       "source": "src/app/how-to-stop-a-relapse/page.tsx",
       "status": "live",
       "title": "How to stop a relapse and recover your quit | Blou",
-      "description": "Smoking again after a quit doesn\u2019t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
+      "description": "Smoking again after a quit doesn’t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
       "h1": "How to stop a relapse and recover your quit",
       "keywordsMeta": [
         "quit smoking relapse recovery",
@@ -4463,9 +4463,9 @@
       "intent": null,
       "funnelStage": null,
       "priority": null,
-      "linearIssue": null,
+      "linearIssue": "BLO-41",
       "notes": null,
-      "suppressUntil": null,
+      "suppressUntil": "2026-12-01",
       "gsc": {
         "window": {
           "start": "2026-10-10",
@@ -4556,7 +4556,7 @@
       "source": "src/app/vaping-and-smoking-together/page.tsx",
       "status": "live",
       "title": "Vaping and smoking together: how to quit dual use | Blou",
-      "description": "If you vape and still smoke cigarettes, you are in \u201cdual use.\u201d A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
+      "description": "If you vape and still smoke cigarettes, you are in “dual use.” A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
       "h1": "Vaping and smoking together",
       "keywordsMeta": [
         "vape and smoke",
@@ -4624,7 +4624,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Can't concentrate after quitting smoking: what's happening",
-      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom\u2014nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
+      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom—nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
       "h1": "Can't concentrate after quitting smoking: what's happening",
       "keywordsMeta": [
         "can't concentrate after quitting smoking",
@@ -5184,7 +5184,7 @@
       "source": "src/app/how-long-does-nicotine-stay-in-your-system/page.tsx",
       "status": "live",
       "title": "How long does nicotine stay in your system? | Blou",
-      "description": "Nicotine stays in blood for 1\u20133 days, urine for 3\u20134 days, and saliva for 1\u20134 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
+      "description": "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
       "h1": "How long does nicotine stay in your system?",
       "keywordsMeta": [
         "how long does nicotine stay in your system",
@@ -5315,7 +5315,7 @@
       "source": "src/app/quit-smoking-with-varenicline/page.tsx",
       "status": "live",
       "title": "Quit smoking with varenicline (Chantix / Champix) | Blou",
-      "description": "What varenicline is for, how it fits a quit plan, side effects to discuss with a clinician, and how a quit app supports cravings and routines\u2014not dosing.",
+      "description": "What varenicline is for, how it fits a quit plan, side effects to discuss with a clinician, and how a quit app supports cravings and routines—not dosing.",
       "h1": "Quit smoking with varenicline (Chantix / Champix)",
       "keywordsMeta": [
         "varenicline quit smoking",
@@ -5841,7 +5841,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does bad breath last after quitting smoking? | Blou",
-      "description": "Most people get better breath quickly after quitting. If you don\u2019t, it\u2019s usually a fixable oral-health or reflux issue\u2014not a reason to relapse.",
+      "description": "Most people get better breath quickly after quitting. If you don’t, it’s usually a fixable oral-health or reflux issue—not a reason to relapse.",
       "h1": "How long does bad breath last after quitting smoking?",
       "keywordsMeta": [
         "bad breath after quitting smoking",
@@ -5950,7 +5950,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does brain fog last after quitting smoking? | Blou",
-      "description": "Brain fog is a short-term effect of nicotine withdrawal, not a long-term trade-off. Thinking usually sharpens within 2\u20134 weeks and keeps improving.",
+      "description": "Brain fog is a short-term effect of nicotine withdrawal, not a long-term trade-off. Thinking usually sharpens within 2–4 weeks and keeps improving.",
       "h1": "How long does brain fog last after quitting smoking?",
       "keywordsMeta": [
         "brain fog after quitting smoking",
@@ -6003,7 +6003,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does chest tightness last after quitting smoking?",
-      "description": "Chest tightness is common enough in early quitting to be a known worry, but it is also a symptom you should not minimize if it\u2019s severe or worsening. The safest rule: expect gradual improvement\u2014escalate quickly for red flags.",
+      "description": "Chest tightness is common enough in early quitting to be a known worry, but it is also a symptom you should not minimize if it’s severe or worsening. The safest rule: expect gradual improvement—escalate quickly for red flags.",
       "h1": "How long does chest tightness last after quitting smoking?",
       "keywordsMeta": [
         "chest tightness after quitting smoking",
@@ -6058,7 +6058,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does constipation last after quitting smoking?",
-      "description": "Many quitters get constipated because nicotine used to stimulate bowel activity. The fix is usually simple\u2014hydration, fiber, and movement\u2014while the body recalibrates.",
+      "description": "Many quitters get constipated because nicotine used to stimulate bowel activity. The fix is usually simple—hydration, fiber, and movement—while the body recalibrates.",
       "h1": "How long does constipation last after quitting smoking?",
       "keywordsMeta": [
         "constipation after quitting smoking",
@@ -6121,7 +6121,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a cough last after quitting smoking? | Blou",
-      "description": "Most post-quit coughs are temporary and productive \u2014 the lungs are clearing years of mucus and debris. Duration is usually weeks, occasionally months.",
+      "description": "Most post-quit coughs are temporary and productive — the lungs are clearing years of mucus and debris. Duration is usually weeks, occasionally months.",
       "h1": "How long does a cough last after quitting smoking?",
       "keywordsMeta": [
         "cough after quitting smoking",
@@ -6284,7 +6284,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does dry mouth last after quitting smoking? | Blou",
-      "description": "Dry mouth is uncomfortable but fixable. Most relief comes from simple routines: water, sugar-free gum, and reducing late caffeine while your mouth\u2019s natural defenses rebound.",
+      "description": "Dry mouth is uncomfortable but fixable. Most relief comes from simple routines: water, sugar-free gum, and reducing late caffeine while your mouth’s natural defenses rebound.",
       "h1": "How long does dry mouth last after quitting smoking?",
       "keywordsMeta": [
         "dry mouth after quitting smoking",
@@ -6391,7 +6391,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Flu-like symptoms when quitting smoking: what's normal",
-      "description": "Many quitters feel like they have a mild flu in the first week. This is a combination of nicotine withdrawal symptoms\u2014body aches, fatigue, headache, sore throat, and sometimes a productive cough\u2014not an actual infection. It passes.",
+      "description": "Many quitters feel like they have a mild flu in the first week. This is a combination of nicotine withdrawal symptoms—body aches, fatigue, headache, sore throat, and sometimes a productive cough—not an actual infection. It passes.",
       "h1": "Flu-like symptoms when quitting smoking: what's normal",
       "keywordsMeta": [
         "flu symptoms after quitting smoking",
@@ -6499,7 +6499,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do headaches last after quitting smoking? | Blou",
-      "description": "Quit headaches are common but short. They track the same 2\u201314 day withdrawal window as the rest of the acute symptoms.",
+      "description": "Quit headaches are common but short. They track the same 2–14 day withdrawal window as the rest of the acute symptoms.",
       "h1": "How long do headaches last after quitting smoking?",
       "keywordsMeta": [
         "headaches after quitting smoking",
@@ -6834,7 +6834,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do mouth ulcers last after quitting smoking? | Blou",
-      "description": "Mouth ulcers are a common early-quit annoyance. Most resolve with gentle care, but persistent or unusual sores deserve a dentist\u2019s evaluation\u2014especially if you have a long smoking history.",
+      "description": "Mouth ulcers are a common early-quit annoyance. Most resolve with gentle care, but persistent or unusual sores deserve a dentist’s evaluation—especially if you have a long smoking history.",
       "h1": "How long do mouth ulcers last after quitting smoking?",
       "keywordsMeta": [
         "mouth ulcers after quitting smoking",
@@ -6941,7 +6941,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does sinus congestion last after quitting smoking?",
-      "description": "Sinus congestion after quitting is usually a short recovery/allergy overlap rather than a dangerous detox. Expect gradual improvement\u2014escalate if you see infection red flags.",
+      "description": "Sinus congestion after quitting is usually a short recovery/allergy overlap rather than a dangerous detox. Expect gradual improvement—escalate if you see infection red flags.",
       "h1": "How long does sinus congestion last after quitting smoking?",
       "keywordsMeta": [
         "sinus congestion after quitting smoking",
@@ -7048,7 +7048,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a skin rash last after quitting smoking?",
-      "description": "Don\u2019t assume every rash is withdrawal. Identify triggers (new lotions, detergents, NRT adhesives) and treat symptoms. Escalate quickly if it\u2019s severe, spreading fast, or associated with swelling or breathing symptoms.",
+      "description": "Don’t assume every rash is withdrawal. Identify triggers (new lotions, detergents, NRT adhesives) and treat symptoms. Escalate quickly if it’s severe, spreading fast, or associated with swelling or breathing symptoms.",
       "h1": "How long does a skin rash last after quitting smoking?",
       "keywordsMeta": [
         "skin rash after quitting smoking",
@@ -7162,7 +7162,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a sore throat last after quitting smoking?",
-      "description": "Your throat notices healing before it celebrates it\u2014irritated tissue plus productive cough reflexes can coexist. Hydration and gentle coughing hygiene usually shorten misery.",
+      "description": "Your throat notices healing before it celebrates it—irritated tissue plus productive cough reflexes can coexist. Hydration and gentle coughing hygiene usually shorten misery.",
       "h1": "How long does a sore throat last after quitting smoking?",
       "keywordsMeta": [
         "sore throat after quitting smoking",
@@ -7216,7 +7216,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do sugar cravings last after quitting smoking?",
-      "description": "Sugar cravings are predictable and beatable. The goal is not perfection\u2014it\u2019s having planned alternatives so sweet cravings don\u2019t become a relapse trigger.",
+      "description": "Sugar cravings are predictable and beatable. The goal is not perfection—it’s having planned alternatives so sweet cravings don’t become a relapse trigger.",
       "h1": "How long do sugar cravings last after quitting smoking?",
       "keywordsMeta": [
         "sugar cravings after quitting smoking",
@@ -7993,7 +7993,7 @@
       "source": "src/app/how-to-help-someone-quit-smoking/page.tsx",
       "status": "live",
       "title": "How to help someone quit smoking (without nagging) | Blou",
-      "description": "Practical support for partners and friends: what helps, what backfires, scripts for cravings, and how a quit app can be part of the system\u2014not a lecture.",
+      "description": "Practical support for partners and friends: what helps, what backfires, scripts for cravings, and how a quit app can be part of the system—not a lecture.",
       "h1": "How to help someone quit smoking",
       "keywordsMeta": [
         "how to help someone quit smoking",
@@ -8043,9 +8043,9 @@
       "section": "article",
       "source": "src/app/i-smoked-one-cigarette/page.tsx",
       "status": "live",
-      "title": "I smoked one cigarette\u2014what to do next | Blou",
+      "title": "I smoked one cigarette—what to do next | Blou",
       "description": "A slip is not the same as starting over. Here is what to do in the first hour, how to avoid an all-or-nothing spiral, and when to get extra help.",
-      "h1": "I smoked one cigarette\u2014what to do next",
+      "h1": "I smoked one cigarette—what to do next",
       "keywordsMeta": [
         "I smoked one cigarette",
         "smoked one cigarette after quitting",
@@ -8096,7 +8096,7 @@
       "source": "src/app/is-it-too-late-to-quit-smoking/page.tsx",
       "status": "live",
       "title": "Is it too late to quit smoking? Benefits at any age | Blou",
-      "description": "No\u2014quitting has meaningful benefits at any adult age. Here is what changes first, what to ask your clinician, and how tracking keeps momentum.",
+      "description": "No—quitting has meaningful benefits at any adult age. Here is what changes first, what to ask your clinician, and how tracking keeps momentum.",
       "h1": "Is it too late to quit smoking?",
       "keywordsMeta": [
         "is it too late to quit smoking",
@@ -8150,7 +8150,7 @@
       "source": "src/app/motivation-to-quit-smoking/page.tsx",
       "status": "live",
       "title": "Motivation to quit smoking: turn it into a plan | Blou",
-      "description": "Motivation spikes and fades\u2014use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
+      "description": "Motivation spikes and fades—use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
       "h1": "Motivation to quit smoking",
       "keywordsMeta": [
         "motivation to quit smoking",
@@ -8262,9 +8262,9 @@
       "section": "article",
       "source": "src/app/nicotine-withdrawal-timeline/page.tsx",
       "status": "live",
-      "title": "Nicotine withdrawal timeline: days 1\u201330 explained | Blou",
+      "title": "Nicotine withdrawal timeline: days 1–30 explained | Blou",
       "description": "A simple nicotine withdrawal timeline from day 1 to day 30: cravings, sleep, mood, and what helps, with links to day-by-day milestones and symptom guides.",
-      "h1": "Nicotine withdrawal timeline (days 1\u201330)",
+      "h1": "Nicotine withdrawal timeline (days 1–30)",
       "keywordsMeta": [
         "nicotine withdrawal timeline",
         "nicotine withdrawal symptoms timeline",
@@ -8590,7 +8590,7 @@
       "source": "src/app/quit-smoking-cold-turkey/page.tsx",
       "status": "live",
       "title": "Quit smoking cold turkey: when it works + safer plan | Blou",
-      "description": "Thinking about quitting smoking cold turkey? Here\u2019s when it works, when to add NRT/medication support, and a simple plan for days 1\u201314.",
+      "description": "Thinking about quitting smoking cold turkey? Here’s when it works, when to add NRT/medication support, and a simple plan for days 1–14.",
       "h1": "Quit smoking cold turkey",
       "keywordsMeta": [
         "quit smoking cold turkey",
@@ -9202,7 +9202,7 @@
       "source": null,
       "status": "live",
       "title": "Free help to quit smoking in Hawaii | Blou",
-      "description": "Hawai\u02bbi Tobacco Quitline, free nicotine patches, and what smoking costs in Hawaii: $3.20 state tax per pack. Sourced from CDC data.",
+      "description": "Hawaiʻi Tobacco Quitline, free nicotine patches, and what smoking costs in Hawaii: $3.20 state tax per pack. Sourced from CDC data.",
       "h1": "Free help to quit smoking in Hawaii",
       "keywordsMeta": [
         "quit smoking Hawaii",
@@ -11507,7 +11507,7 @@
       "source": "src/app/quit-smoking-with-bupropion/page.tsx",
       "status": "live",
       "title": "Wellbutrin for quitting smoking (bupropion) | Blou",
-      "description": "Wellbutrin for quitting smoking (bupropion): you need a prescription, start 1\u20132 weeks before your quit day, take it about 12 weeks. Side effects and the patch.",
+      "description": "Wellbutrin for quitting smoking (bupropion): you need a prescription, start 1–2 weeks before your quit day, take it about 12 weeks. Side effects and the patch.",
       "h1": "Wellbutrin for quitting smoking: how bupropion works",
       "keywordsMeta": [
         "wellbutrin for quitting smoking",
@@ -11794,7 +11794,7 @@
       "source": "src/app/quit-smoking-without-nrt/page.tsx",
       "status": "live",
       "title": "Quit smoking without NRT: what actually improves odds | Blou",
-      "description": "If you prefer not to use nicotine replacement, stack quitlines, cue planning, sleep, and a tracker app\u2014plus know when to reconsider NRT with a clinician.",
+      "description": "If you prefer not to use nicotine replacement, stack quitlines, cue planning, sleep, and a tracker app—plus know when to reconsider NRT with a clinician.",
       "h1": "Quit smoking without NRT",
       "keywordsMeta": [
         "quit smoking without NRT",
@@ -12061,7 +12061,7 @@
       "source": "src/app/social-smoking/page.tsx",
       "status": "live",
       "title": "Social smoking: am I addicted if I smoke sometimes? | Blou",
-      "description": "\u201cOnly on weekends\u201d still exposes you to nicotine and smoke. How social patterns become dependence, what to watch, and how to quit without the label.",
+      "description": "“Only on weekends” still exposes you to nicotine and smoke. How social patterns become dependence, what to watch, and how to quit without the label.",
       "h1": "Social smoking: am I addicted?",
       "keywordsMeta": [
         "social smoking",
@@ -12165,7 +12165,7 @@
       "source": "src/app/stress-smoking-quit-plan/page.tsx",
       "status": "live",
       "title": "Stress smoking: a quit plan that survives hard weeks | Blou",
-      "description": "If stress is your #1 smoking cue, you need a different default than \u201cwhite knuckle.\u201d Build micro-breaks, sleep protection, and a fast craving app loop.",
+      "description": "If stress is your #1 smoking cue, you need a different default than “white knuckle.” Build micro-breaks, sleep protection, and a fast craving app loop.",
       "h1": "Stress smoking: a quit plan",
       "keywordsMeta": [
         "stress smoking",
@@ -12256,7 +12256,7 @@
       "source": "src/app/tools/lung-recovery/page.tsx",
       "status": "live",
       "title": "Lung recovery timeline visualizer (free) | Blou",
-      "description": "Enter your smoke-free days and see which recovery milestones you've reached \u2014 based on NHS, CDC, and Surgeon General public guidance.",
+      "description": "Enter your smoke-free days and see which recovery milestones you've reached — based on NHS, CDC, and Surgeon General public guidance.",
       "h1": "Lung recovery timeline visualizer",
       "keywordsMeta": [
         "lung recovery timeline",
@@ -12414,7 +12414,7 @@
       "source": "src/app/trying-to-quit-smoking-again/page.tsx",
       "status": "live",
       "title": "Trying to quit smoking again: a smarter next attempt | Blou",
-      "description": "Multiple quit attempts are normal. Here\u2019s how to learn from the last one\u2014new quit date, cue fixes, medication review, and slip protocols.",
+      "description": "Multiple quit attempts are normal. Here’s how to learn from the last one—new quit date, cue fixes, medication review, and slip protocols.",
       "h1": "Trying to quit smoking again",
       "keywordsMeta": [
         "trying to quit smoking again",
@@ -12468,9 +12468,9 @@
       "section": "article",
       "source": "src/app/why-cant-i-quit-smoking/page.tsx",
       "status": "live",
-      "title": "Why can\u2019t I quit smoking? The 3 usual reasons | Blou",
-      "description": "Nicotine dependence, cue triggers, and shame loops explain most \u201cI can\u2019t quit\u201d feelings. A practical reset: medication options, cue planning, and tracking.",
-      "h1": "Why can\u2019t I quit smoking?",
+      "title": "Why can’t I quit smoking? The 3 usual reasons | Blou",
+      "description": "Nicotine dependence, cue triggers, and shame loops explain most “I can’t quit” feelings. A practical reset: medication options, cue planning, and tracking.",
+      "h1": "Why can’t I quit smoking?",
       "keywordsMeta": [
         "why cant i quit smoking",
         "cant quit smoking",
