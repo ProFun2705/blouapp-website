@@ -36,6 +36,7 @@ const OCT_28_2026 = "2026-10-28";
 const NOV_3_2026 = "2026-11-03";
 const NOV_5_2026 = "2026-11-05";
 const NOV_10_2026 = "2026-11-10";
+const NOV_11_2026 = "2026-11-11";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -69,7 +70,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/nicotine-patch-vs-gum", lastModified: OCT_2026, label: "Nicotine patch vs gum", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-patch", lastModified: NOV_3_2026, label: "How to use a nicotine patch", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-gum", lastModified: OCT_2026, label: "Quitting with nicotine gum", group: "Methods and medication" },
-  { path: "/quit-smoking-with-nicotine-lozenge", lastModified: OCT_2026, label: "Quitting with nicotine lozenges", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-lozenge", lastModified: NOV_11_2026, label: "Nicotine lozenge: 2mg vs 4mg and how to use it", group: "Methods and medication" },
   { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
   { path: "/quit-smoking-with-varenicline", lastModified: OCT_2026, label: "Quitting with varenicline (Chantix / Champix)", group: "Methods and medication" },
   { path: "/quit-smoking-with-bupropion", lastModified: NOV_5_2026, label: "Wellbutrin for quitting smoking (bupropion)", group: "Methods and medication" },

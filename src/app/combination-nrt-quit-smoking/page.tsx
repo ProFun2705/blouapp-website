@@ -94,6 +94,14 @@ export default function CombinationNrtQuitSmokingPage() {
           Combination NRT pairs a long-acting form (usually patch) with a
           fast-acting form (gum, lozenge, spray where available). It is a medical
           strategy—confirm eligibility and dosing with a clinician or pharmacist.
+          See{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href="/quit-smoking-with-nicotine-lozenge"
+          >
+            nicotine lozenge 2mg vs 4mg and how to use it
+          </Link>
+          .
         </p>
       </ArticleHeader>
 

@@ -424,7 +424,11 @@ export default function QuitSmokingWithNicotinePatchPage() {
             <>
               <strong>Add a fast-acting form.</strong> The CDC says you can use the patch with
               nicotine gum or a lozenge for cravings that break through. The NHS says two types
-              together, a slow one and a fast one, can work well. See{" "}
+              together, a slow one and a fast one, can work well. Not sure about strength? See{" "}
+              <Link className={LINK} href="/quit-smoking-with-nicotine-lozenge">
+                nicotine lozenge 2mg vs 4mg
+              </Link>
+              . See{" "}
               <Link className={LINK} href="/combination-nrt-quit-smoking">
                 combination NRT
               </Link>{" "}
