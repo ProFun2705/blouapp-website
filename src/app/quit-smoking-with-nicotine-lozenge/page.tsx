@@ -293,8 +293,7 @@ export default function QuitSmokingWithNicotineLozengePage() {
       <Section id="strength" title="Nicotine lozenge 2mg vs 4mg: which to use">
         <P>
           Lozenges come in 2 mg and 4 mg, in regular and mini sizes (CDC). The label picks the
-          strength by how soon you smoke after waking up. People who smoke early tend to be more
-          dependent, so they start higher.
+          strength by how soon you smoke after waking up.
         </P>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[30rem] text-left text-sm">
