@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArticleHeader } from "@/components/marketing/ArticleHeader";
 import { EndAppCta, InlineAppCta } from "@/components/marketing/AppCta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ButtonLink } from "@/components/ui/Button";
-import Link from "next/link";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { FaqSection } from "@/components/blou/FaqSection";
@@ -12,71 +12,127 @@ import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-05-20";
-const MODIFIED = "2026-10-13";
+const MODIFIED = "2026-11-12";
 const CAMPAIGN = "article_how-long-does-nicotine-stay-in-your-system";
+const PATH = "/how-long-does-nicotine-stay-in-your-system";
+
+const TITLE = "How long does nicotine stay in your system?";
+const DESCRIPTION =
+  "Nicotine's half-life is 0.5–3 hours and cotinine's is about 15–20 hours. See what tests look for, how fast levels fall, and when withdrawal eases.";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How long does nicotine stay in your system?",
-  description:
-    "Nicotine stays in blood for 1–3 days, urine for 3–4 days, and saliva for 1–4 days. Cotinine (the metabolite) lasts longer. Full breakdown by test type.",
-  path: "/how-long-does-nicotine-stay-in-your-system",
+  title: TITLE,
+  description: DESCRIPTION,
+  path: PATH,
   type: "article",
   publishedTime: PUBLISHED,
   modifiedTime: MODIFIED,
   keywords: [
     "how long does nicotine stay in your system",
+    "how long does it take nicotine to leave your system",
     "how long does nicotine stay in blood",
     "nicotine urine test how long",
     "cotinine detection time",
-    "nicotine out of system",
   ],
 });
+
+const LINK =
+  "font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950";
+
+type Source = { label: string; href: string; publisher: string };
+
+const SOURCES: Source[] = [
+  {
+    label: "Biochemical verification of tobacco use and abstinence: cotinine protocol (half-lives and cutpoints)",
+    href: "https://phenxtoolkit.org/protocols/view/91709",
+    publisher: "PhenX Toolkit (RTI International, NIH-funded)",
+  },
+  {
+    label: "Benowitz NL et al. Biochemical verification of tobacco use and abstinence: 2019 update. Nicotine Tob Res. 2020;22(7):1086–1097",
+    href: "https://academic.oup.com/ntr/article/22/7/1086/5579733",
+    publisher: "Nicotine & Tobacco Research (peer reviewed)",
+  },
+  {
+    label: "Handling nicotine withdrawal and triggers when you decide to quit tobacco",
+    href: "https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/withdrawal-fact-sheet",
+    publisher: "National Cancer Institute",
+  },
+  {
+    label: "Managing nicotine withdrawal",
+    href: "https://smokefree.gov/challenges-when-quitting/withdrawal/understanding-withdrawal",
+    publisher: "Smokefree.gov (National Cancer Institute)",
+  },
+  {
+    label: "Quit smoking: benefits timeline",
+    href: "https://www.nhs.uk/better-health/quit-smoking/",
+    publisher: "NHS",
+  },
+];
 
 const faqItems = [
   {
     question: "How long does nicotine stay in your blood?",
     answer:
-      "Nicotine itself has a short half-life of about 1–2 hours, so it clears from blood within 1–3 days. However, cotinine—the main metabolite—stays in blood for 1–3 weeks depending on how heavily you smoked. Blood tests for nicotine often test cotinine, not nicotine directly.",
+      "Nicotine has a half-life of about 0.5 to 3 hours, so most of it is gone within a day. Tests usually look for cotinine instead. Cotinine has a half-life of about 15 to 20 hours, so it lasts longer. Exact detection times depend on how much you used and the lab's cutoff.",
   },
   {
     question: "How long does nicotine stay in urine?",
     answer:
-      "Nicotine metabolites (mainly cotinine) are detectable in urine for 3–4 days in light smokers and up to 3–4 weeks in heavy smokers or regular users. Hair tests can detect cotinine for up to 3 months.",
+      "Urine tests look for cotinine. Its half-life is about the same in urine as in blood and saliva, roughly 15 to 20 hours. By that math, levels fall by about 90 percent in 2 to 3 days after your last use. How long a test still reads positive depends on the lab's cutoff and how much you used.",
   },
   {
-    question: "How long after quitting do cravings last?",
+    question: "How long does nicotine stay in saliva?",
     answer:
-      "Physical nicotine cravings are at their most intense in the first 72 hours and generally decrease significantly over the first 2–4 weeks. Psychological and cue-based cravings can persist for months but become less frequent and intense over time.",
+      "Saliva tests also look for cotinine, which has about the same half-life in saliva as in blood and urine (roughly 15 to 20 hours). The time a test can detect it depends on the cutoff the lab uses.",
   },
   {
-    question: "Does drinking water help flush nicotine out faster?",
+    question: "How long does nicotine stay in hair?",
     answer:
-      "Staying well-hydrated supports kidney function and overall detoxification, but there is no strong evidence that drinking large amounts of water meaningfully speeds up nicotine clearance. The main driver of clearance is liver metabolism and time.",
+      "The half-life figures on this page do not apply to hair tests. If you have a hair test coming up, ask the lab or the person who ordered it what window the test covers.",
   },
   {
-    question: "How can I track when nicotine is fully out of my system?",
+    question: "How long does it take nicotine to leave your body after quitting?",
     answer:
-      "Most people are free of measurable nicotine within 3–4 days of their last cigarette. The bigger withdrawal milestone is at 72 hours, when symptoms typically peak and then begin easing. A quit tracker shows you exactly where you are in the timeline.",
+      "Nicotine itself falls fast, with a half-life of about 0.5 to 3 hours. Cotinine, its breakdown product, has a half-life of about 15 to 20 hours, so it takes a few days to fall to a small fraction of its starting level. Many people feel withdrawal peak around day 3, then ease over the first month.",
   },
   {
-    question: "Does nicotine from patches or gum stay in your system the same way?",
+    question: "Does a nicotine test tell what product I used?",
     answer:
-      "Yes. Cotinine from any nicotine source—cigarettes, patches, gum, lozenges, vapes—is metabolized the same way by the liver. Detection tests cannot distinguish between nicotine from cigarettes and nicotine from NRT.",
+      "A cotinine test measures a breakdown product of nicotine, not the product it came from. If a test matters for your job, insurance or surgery, ask the lab what it measures and what cutoff it uses.",
   },
+  {
+    question: "How long do nicotine withdrawal symptoms last?",
+    answer:
+      "The National Cancer Institute says symptoms are usually worst in the first week, peaking around the first 3 days, and ease over the first month. Some people have symptoms for several months. Smokefree.gov says the worst symptoms last a few days to a couple of weeks.",
+  },
+  {
+    question: "Can I make nicotine leave my body faster?",
+    answer:
+      "We found no reliable source showing that water, sweating or a special product speeds it up. Time is what lowers cotinine. If you are quitting, the useful step is getting through the first few days without using again.",
+  },
+];
+
+const HALF_LIFE_ROWS = [
+  { time: "1 day", left: "about 33–44%" },
+  { time: "2 days", left: "about 11–19%" },
+  { time: "3 days", left: "about 4–8%" },
+  { time: "4 days", left: "about 1–4%" },
+  { time: "7 days", left: "under 1%" },
 ];
 
 export default function HowLongDoesNicotineStayInSystemPage() {
   const articleJsonLd = buildArticleJsonLd({
-    title: "How long does nicotine stay in your system?",
+    title: TITLE,
     description:
-      "A detailed breakdown of nicotine and cotinine detection times by test type, with a quitting timeline.",
-    path: "/how-long-does-nicotine-stay-in-your-system",
+      "How fast nicotine and cotinine fall after your last use, what nicotine tests look for, and how that lines up with withdrawal.",
+    path: PATH,
     datePublished: PUBLISHED,
     dateModified: MODIFIED,
     author: { name: AUTHOR.name, url: AUTHOR.url },
     reviewer: { name: MEDICAL_REVIEWER.name, url: MEDICAL_REVIEWER.url },
     isMedical: true,
     about: { "@type": "MedicalCondition", name: "Nicotine withdrawal" },
+    citation: SOURCES.map((s) => ({ name: s.label, url: s.href, publisher: s.publisher })),
   });
 
   return (
@@ -84,17 +140,12 @@ export default function HowLongDoesNicotineStayInSystemPage() {
       <JsonLd data={articleJsonLd} />
 
       <Breadcrumbs
-        items={[
-          {
-            name: "How long does nicotine stay in your system",
-            path: "/how-long-does-nicotine-stay-in-your-system",
-          },
-        ]}
+        items={[{ name: "How long does nicotine stay in your system", path: PATH }]}
       />
 
       <ArticleHeader
         kicker="Nicotine & your body"
-        title="How long does nicotine stay in your system?"
+        title={TITLE}
         datePublished={PUBLISHED}
         dateModified={MODIFIED}
         campaign={CAMPAIGN}
@@ -105,9 +156,9 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         }
       >
         <p>
-          Nicotine clears quickly—but its metabolite cotinine stays much longer.
-          Here&apos;s a complete breakdown by test type, plus what the clearance
-          timeline means for withdrawal and how you feel as you quit.
+          Nicotine itself leaves your body fast. What most tests look for is cotinine, which
+          lasts longer. Here is how quickly each one falls, what tests measure, and what that
+          means for withdrawal.
         </p>
       </ArticleHeader>
 
@@ -115,20 +166,22 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "nicotine-vs-cotinine", label: "Nicotine vs cotinine" },
-          { id: "detection-by-test", label: "Detection by test type" },
-          { id: "clearance-timeline", label: "Clearance and withdrawal timeline" },
-          { id: "factors", label: "Factors that affect clearance" },
-          { id: "faq", label: "Frequently asked questions" },
+          { id: "detection-by-test", label: "Blood, urine, saliva and hair" },
+          { id: "how-fast", label: "How fast levels fall" },
+          { id: "factors", label: "What changes the timing" },
+          { id: "withdrawal", label: "Clearance and withdrawal" },
+          { id: "faq", label: "FAQ" },
+          { id: "sources", label: "Sources" },
         ]}
       />
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Nicotine itself clears from blood within 1–3 days. Cotinine (the metabolite that tests detect) stays in blood for 1–3 weeks, in urine for 3–4 days to 3–4 weeks, and is detectable in hair for up to 3 months. Withdrawal symptoms peak at 48–72 hours when nicotine is fully gone, then gradually ease."
+          answer="Nicotine has a half-life of about 0.5 to 3 hours, so most of it is gone within a day. Tests for blood, urine and saliva usually look for cotinine, a breakdown product with a half-life of about 15 to 20 hours. That means cotinine falls to a small fraction in about 3 to 4 days. How long a test still reads positive depends on the lab's cutoff and how much you used."
           facts={[
-            "Nicotine half-life is about 1–2 hours; most is gone within 24 hours.",
-            "Cotinine half-life is 16–19 hours; it remains detectable days to weeks after quitting.",
-            "Standard urine tests detect cotinine, not nicotine—so recent NRT use will test positive.",
+            "Nicotine half-life: about 0.5 to 3 hours.",
+            "Cotinine half-life: about 15 to 20 hours, about the same in blood, urine and saliva.",
+            "Withdrawal is usually worst around day 3 and eases over the first month.",
           ]}
         />
       </section>
@@ -138,21 +191,22 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
-          Nicotine vs cotinine: why the distinction matters
+          Nicotine vs cotinine: what a test actually looks for
         </h2>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          When you smoke, your liver converts most nicotine into cotinine within
-          hours. Nicotine itself has a short half-life (about 1–2 hours), so
-          direct nicotine levels fall quickly. Cotinine, however, has a half-life
-          of 16–19 hours, which is why it remains detectable long after nicotine
-          has cleared.
+          Your body breaks nicotine down into cotinine. Nicotine has a half-life of about 0.5 to
+          3 hours. Cotinine has a half-life of about 15 to 20 hours.
         </p>
         <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          Most drug tests for “nicotine” actually measure cotinine because it
-          stays in the system longer and is a more reliable indicator of recent
-          tobacco or nicotine product use. Important: cotinine from NRT (patches,
-          gum, lozenges, vapes) is identical to cotinine from cigarettes—tests
-          cannot distinguish between sources.
+          A half-life is the time it takes for the amount to drop by half. Because cotinine
+          lasts so much longer, labs measure it instead of nicotine to see if someone has used
+          tobacco or nicotine.
+        </p>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          A cotinine test measures a breakdown product of nicotine, not the product it came
+          from. Labs also pick their own cutoff level. One review puts the usual line between
+          people who use nicotine and people who do not at 3 to 10 ng/mL, and says it depends
+          on things like secondhand smoke exposure.
         </p>
       </section>
 
@@ -161,175 +215,229 @@ export default function HowLongDoesNicotineStayInSystemPage() {
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">
-          Detection windows by test type
+          Blood, urine, saliva and hair tests
         </h2>
-        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Blood:</span>
-            <span>
-              Nicotine: 1–3 days. Cotinine: 1–10 days (light smoker) to up to
-              3 weeks (heavy smoker). Blood tests are less common for routine
-              nicotine screening.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Urine:</span>
-            <span>
-              Cotinine: 3–4 days for occasional smokers; 1–3 weeks for heavy
-              daily smokers. Urine is the most common test method.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Saliva:</span>
-            <span>
-              Cotinine: 1–4 days for most smokers. Saliva tests are used in
-              some clinical and research settings.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Hair:</span>
-            <span>
-              Cotinine is incorporated into hair follicles and can be detected
-              for up to 3 months. Hair tests reflect longer-term use history,
-              not recent use.
-            </span>
-          </li>
-        </ul>
-        <p className="mt-4 text-sm text-ink-muted">
-          Note: detection windows are approximate and vary with the amount smoked,
-          individual metabolism, hydration, kidney function, and age. These ranges
-          reflect typical figures cited in clinical literature.
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full min-w-[32rem] text-left text-sm text-teal-900/90">
+            <thead>
+              <tr className="border-b border-teal-200 text-teal-950">
+                <th className="py-2 pr-4 font-semibold">Test</th>
+                <th className="py-2 pr-4 font-semibold">What it looks for</th>
+                <th className="py-2 font-semibold">What to know</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-teal-100 align-top">
+                <td className="py-2 pr-4 font-medium">Blood</td>
+                <td className="py-2 pr-4">Cotinine (sometimes nicotine)</td>
+                <td className="py-2">Cotinine half-life about 15–20 hours.</td>
+              </tr>
+              <tr className="border-b border-teal-100 align-top">
+                <td className="py-2 pr-4 font-medium">Urine</td>
+                <td className="py-2 pr-4">Cotinine</td>
+                <td className="py-2">Same half-life as blood. The lab sets the cutoff.</td>
+              </tr>
+              <tr className="border-b border-teal-100 align-top">
+                <td className="py-2 pr-4 font-medium">Saliva</td>
+                <td className="py-2 pr-4">Cotinine</td>
+                <td className="py-2">Same half-life as blood. The lab sets the cutoff.</td>
+              </tr>
+              <tr className="align-top">
+                <td className="py-2 pr-4 font-medium">Hair</td>
+                <td className="py-2 pr-4">Varies by lab</td>
+                <td className="py-2">The half-life math below does not apply. Ask the lab what window it covers.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
+          We do not list a single &quot;number of days&quot; for each test. Cutoffs and methods
+          differ by lab, and we did not find one source we could stand behind for every test
+          type. The next section shows how fast cotinine falls, so you can see the shape of it.
+        </p>
+      </section>
+
+      <InlineAppCta campaign={CAMPAIGN}>
+        Nicotine leaves in days, but cravings can last longer. Blou&apos;s SOS button is there
+        when one hits, and your timeline counts every smoke-free day since your last cigarette.
+      </InlineAppCta>
+
+      <section
+        id="how-fast"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">How fast cotinine falls</h2>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          This is simple math from the half-life of about 15 to 20 hours. Each half-life cuts
+          the amount in half. It is an illustration, not a test result.
+        </p>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full min-w-[20rem] text-left text-sm text-teal-900/90">
+            <thead>
+              <tr className="border-b border-teal-200 text-teal-950">
+                <th className="py-2 pr-4 font-semibold">After your last use</th>
+                <th className="py-2 font-semibold">Cotinine left (estimate)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {HALF_LIFE_ROWS.map((row) => (
+                <tr key={row.time} className="border-b border-teal-100 last:border-0">
+                  <td className="py-2 pr-4 font-medium">{row.time}</td>
+                  <td className="py-2">{row.left}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
+          Whether a test still reads positive depends on where you started and on the lab&apos;s
+          cutoff. Someone who used a lot starts higher, so it takes longer to drop below the
+          line.
         </p>
       </section>
 
       <section
-        id="clearance-timeline"
+        id="factors"
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Nicotine clearance and the withdrawal connection
-        </h2>
-        <p className="mt-3 text-sm leading-7 text-teal-900/90">
-          The timeline of nicotine clearing from your body maps directly onto
-          withdrawal symptoms. Understanding this helps you anticipate what
-          you&apos;ll feel and when:
-        </p>
-        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+        <h2 className="text-xl font-semibold text-teal-950">What changes the timing</h2>
+        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Hours 1–8:</span>
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              Nicotine levels falling. First cravings begin. Heart rate and blood
-              pressure start normalizing.
+              <strong>How much you used.</strong> A higher starting level takes longer to fall
+              under a cutoff.
             </span>
           </li>
           <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">24 hours:</span>
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
             <span>
-              Nicotine largely cleared. Carbon monoxide mostly gone. See the{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/guides/what-happens-after-1-day"
-              >
+              <strong>The lab&apos;s cutoff.</strong> A review puts typical cutpoints at 3 to
+              10 ng/mL, and they shift with secondhand smoke exposure.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              <strong>The sample type.</strong> Blood, urine, saliva and hair are different
+              tests. Ask what yours measures.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span aria-hidden className="mt-1 text-teal-600">•</span>
+            <span>
+              <strong>Your own body.</strong> People break nicotine down at different speeds, so
+              the 15 to 20 hour figure is a typical value, not a promise.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
+          Blou cannot speed any of this up, and nothing on this page is advice for passing a
+          test. If a test matters, ask the lab or the person who ordered it.
+        </p>
+      </section>
+
+      <section
+        id="withdrawal"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">
+          Nicotine clearance and the withdrawal timeline
+        </h2>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          Nicotine falls fast, so withdrawal starts early. Here is what the public health
+          sources say.
+        </p>
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-teal-900/90">
+          <li className="flex gap-2">
+            <span className="mt-1 font-bold text-teal-700">First hours:</span>
+            <span>
+              Cravings can start within an hour or two of your last use (National Cancer
+              Institute).
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="mt-1 font-bold text-teal-700">8 to 48 hours:</span>
+            <span>
+              Blood carbon monoxide is halved at 8 hours and matches a non-smoker&apos;s at 48
+              hours (NHS). See the{" "}
+              <Link className={LINK} href="/guides/what-happens-after-1-day">
                 1-day milestone
               </Link>
               .
             </span>
           </li>
           <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">48–72 hours:</span>
+            <span className="mt-1 font-bold text-teal-700">Around day 3:</span>
             <span>
-              Nicotine fully gone. Withdrawal symptoms peak—irritability, brain
-              fog, headaches, strong cravings. This is the hardest stretch. See{" "}
-              <Link
-                className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
-                href="/guides/what-happens-after-3-days"
-              >
+              Symptoms usually peak around the first 3 days (National Cancer Institute). Read{" "}
+              <Link className={LINK} href="/guides/what-happens-after-3-days">
                 what happens after 3 days
               </Link>
               .
             </span>
           </li>
           <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">Week 1–2:</span>
+            <span className="mt-1 font-bold text-teal-700">Week 1 to 2:</span>
             <span>
-              Cotinine still detectable in urine for many people. Withdrawal
-              symptoms declining. Cravings becoming more situational (cue-based)
-              rather than constant.
+              Smokefree.gov says the worst symptoms last a few days to a couple of weeks, and
+              the first week is when relapse risk is highest.
             </span>
           </li>
           <li className="flex gap-2">
-            <span aria-hidden className="mt-1 font-bold text-teal-700">3–4 weeks:</span>
+            <span className="mt-1 font-bold text-teal-700">First month:</span>
             <span>
-              Even cotinine is undetectable for most quitters at this point. The
-              physical dependency cycle is broken. Cue-based psychological
-              cravings may continue for months but steadily diminish.
+              Symptoms ease over the first month. Some people have them for several months
+              (National Cancer Institute).
             </span>
           </li>
         </ul>
-      </section>
-
-      <InlineAppCta campaign={CAMPAIGN}>
-        Nicotine clears in days, but cravings take longer to fade. Blou&apos;s SOS button is there the
-        second one hits, and your timeline shows every smoke-free day since your last cigarette.
-      </InlineAppCta>
-
-      <section
-        id="factors"
-        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
-      >
-        <h2 className="text-xl font-semibold text-teal-950">
-          Factors that affect how long nicotine stays in your system
-        </h2>
-        <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>How much you smoked.</strong> Heavy smokers have higher
-              cotinine loads and take longer to clear.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Metabolism rate.</strong> Individual differences in liver
-              enzyme activity (specifically CYP2A6) affect how fast nicotine is
-              converted to cotinine and cleared.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Age.</strong> Older adults generally metabolize nicotine
-              more slowly.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Kidney function.</strong> Cotinine is primarily cleared
-              through urine. Reduced kidney function slows clearance.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Urine pH.</strong> More acidic urine speeds up cotinine
-              excretion slightly. Diet and hydration affect this.
-            </span>
-          </li>
-          <li className="flex gap-2">
-            <span aria-hidden className="mt-1 text-teal-600">•</span>
-            <span>
-              <strong>Continued NRT use.</strong> If you&apos;re using nicotine
-              replacement products, cotinine stays elevated. This is expected
-              and not harmful.
-            </span>
-          </li>
-        </ul>
+        <p className="mt-4 text-sm leading-7 text-teal-900/90">
+          For the full picture, see the{" "}
+          <Link className={LINK} href="/nicotine-withdrawal-timeline">
+            nicotine withdrawal timeline
+          </Link>
+          , the{" "}
+          <Link className={LINK} href="/quit-smoking-timeline">
+            quit smoking timeline
+          </Link>
+          , or{" "}
+          <Link className={LINK} href="/zyn-withdrawal">
+            Zyn withdrawal
+          </Link>{" "}
+          if you use pouches.
+        </p>
       </section>
 
       <section id="faq" className="scroll-mt-24">
         <FaqSection items={faqItems} />
+      </section>
+
+      <section
+        id="sources"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">Sources &amp; further reading</h2>
+        <ul className="mt-4 space-y-2 text-sm text-teal-900">
+          {SOURCES.map((s) => (
+            <li key={s.href}>
+              <a
+                className="underline decoration-teal-400 underline-offset-4"
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {s.label}
+              </a>{" "}
+              <span className="text-ink-muted">· {s.publisher}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-xs leading-5 text-ink-muted">
+          This page is educational and is not medical advice. Half-life figures are typical
+          values and vary from person to person. If you have a health condition, are pregnant,
+          or take medication, talk to a clinician before changing how you use nicotine.
+        </p>
       </section>
 
       <EndAppCta campaign={CAMPAIGN} />
@@ -337,6 +445,9 @@ export default function HowLongDoesNicotineStayInSystemPage() {
       <div className="flex flex-wrap gap-3">
         <ButtonLink href="/guides/what-happens-after-3-days" variant="secondary">
           Day 3 milestone guide →
+        </ButtonLink>
+        <ButtonLink href="/quit-smoking-app-for-iphone" variant="secondary">
+          Quit smoking app for iPhone →
         </ButtonLink>
       </div>
     </div>

@@ -214,6 +214,16 @@ export default function NicotineWithdrawalTimelinePage() {
         className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-teal-950">What helps most</h2>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          Curious how long nicotine and cotinine stay in your body?{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href="/how-long-does-nicotine-stay-in-your-system"
+          >
+            See detection times by test type
+          </Link>
+          .
+        </p>
         <ul className="mt-4 space-y-2 text-sm leading-7 text-teal-900/90">
           <li className="flex gap-2">
             <span aria-hidden className="mt-1 text-teal-600">•</span>

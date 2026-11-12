@@ -173,6 +173,13 @@ export default function FirstWeekQuitSmokingPage() {
           </Link>{" "}
           the same day—then return here for week-one rhythm.
         </p>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          Wondering when nicotine is out of your body? Read{" "}
+          <Link className="font-medium text-teal-800 underline" href="/how-long-does-nicotine-stay-in-your-system">
+            how long nicotine stays in your system
+          </Link>
+          .
+        </p>
       </section>
 
       <section id="faq" className="scroll-mt-24">

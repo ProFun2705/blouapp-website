@@ -125,6 +125,7 @@ export default function NicotineWithdrawalSymptomsPage() {
           <li><Link className="font-medium text-teal-800 underline" href="/guides/constipation">Constipation</Link></li>
           <li><Link className="font-medium text-teal-800 underline" href="/guides/cravings">Cravings</Link></li>
           <li><Link className="font-medium text-teal-800 underline" href="/guides/increased-appetite">Increased appetite</Link></li>
+          <li><Link className="font-medium text-teal-800 underline" href="/how-long-does-nicotine-stay-in-your-system">How long nicotine stays in your system</Link></li>
         </ul>
       </section>
 

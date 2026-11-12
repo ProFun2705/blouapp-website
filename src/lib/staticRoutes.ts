@@ -63,7 +63,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/nicotine-withdrawal-timeline", lastModified: OCT_2026, label: "Nicotine withdrawal timeline, days 1–30", group: "Withdrawal and recovery" },
   { path: "/nicotine-withdrawal-symptoms", lastModified: OCT_2026, label: "Nicotine withdrawal symptoms", group: "Withdrawal and recovery" },
   { path: "/health-benefits-of-quitting-smoking", lastModified: OCT_2026, label: "Health benefits of quitting smoking", group: "Withdrawal and recovery" },
-  { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: OCT_2026, label: "How long nicotine stays in your system", group: "Withdrawal and recovery" },
+  { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: "2026-11-12", label: "How long nicotine stays in your system", group: "Withdrawal and recovery" },
 
   { path: "/quit-smoking-cold-turkey", lastModified: OCT_2026, label: "Quitting cold turkey", group: "Methods and medication" },
   { path: "/quit-smoking-without-nrt", lastModified: OCT_2026, label: "Quitting without NRT", group: "Methods and medication" },
