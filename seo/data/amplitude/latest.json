@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-11-09T09:43:06.449Z",
+  "fetchedAt": "2026-11-12T09:45:40.474Z",
   "window": {
-    "start": "2026-10-12",
-    "end": "2026-11-08"
+    "start": "2026-10-15",
+    "end": "2026-11-11"
   },
   "pages": [
     {
@@ -49,6 +49,13 @@
     },
     {
       "page": "/guides/dreams-and-sleep",
+      "views": 2,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/joint-pain",
       "views": 2,
       "appStoreClicks": 0,
       "toolInputs": 0,
@@ -111,6 +118,13 @@
       "clickRate": 0
     },
     {
+      "page": "/guides/fatigue",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
       "page": "/guides/headaches",
       "views": 1,
       "appStoreClicks": 0,
@@ -119,6 +133,13 @@
     },
     {
       "page": "/guides/libido",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/guides/muscle-aches",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,

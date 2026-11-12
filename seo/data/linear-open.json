@@ -1,6 +1,90 @@
 {
-  "fetchedAt": "2026-11-09T09:43:09.651Z",
+  "fetchedAt": "2026-11-12T09:46:06.912Z",
   "issues": [
+    {
+      "id": "BLO-58",
+      "title": "New page: /quit-chewing-tobacco for \"quit chewing tobacco\" and \"quit smokeless tobacco\" (390 + 260 a month)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-58/new-page-quit-chewing-tobacco-for-quit-chewing-tobacco-and-quit",
+      "state": "Backlog",
+      "priority": 4,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/quit-chewing-tobacco",
+      "cluster": "quit chewing tobacco",
+      "updatedAt": "2026-11-09T09:44:51.451Z"
+    },
+    {
+      "id": "BLO-57",
+      "title": "New page: /does-hypnosis-help-quit-smoking (5,400 a month, evidence is weak so write it honestly)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-57/new-page-does-hypnosis-help-quit-smoking-5400-a-month-evidence-is-weak",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/does-hypnosis-help-quit-smoking",
+      "cluster": "does hypnosis help you quit smoking",
+      "updatedAt": "2026-11-09T09:44:48.381Z"
+    },
+    {
+      "id": "BLO-56",
+      "title": "Refresh /nicotine-patch-vs-gum for \"nicotine patch vs gum\" (480 a month, 470-word page)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-56/refresh-nicotine-patch-vs-gum-for-nicotine-patch-vs-gum-480-a-month",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/nicotine-patch-vs-gum",
+      "cluster": "nicotine patch vs gum",
+      "updatedAt": "2026-11-09T09:44:45.787Z"
+    },
+    {
+      "id": "BLO-55",
+      "title": "Refresh /best-quit-smoking-apps (position 42.7 and slipping for \"best quit smoking apps\", closest page to conversion)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-55/refresh-best-quit-smoking-apps-position-427-and-slipping-for-best-quit",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/best-quit-smoking-apps",
+      "cluster": "best quit smoking apps",
+      "updatedAt": "2026-11-09T09:44:43.253Z"
+    },
+    {
+      "id": "BLO-54",
+      "title": "New page: /quit-smoking-medication, an overview of quit smoking medication options (8,100 a month)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-54/new-page-quit-smoking-medication-an-overview-of-quit-smoking",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/quit-smoking-medication",
+      "cluster": "quit smoking medication options",
+      "updatedAt": "2026-11-09T09:44:40.271Z"
+    },
+    {
+      "id": "BLO-53",
+      "title": "Refresh /how-long-does-nicotine-stay-in-your-system for \"how long does nicotine stay in your system\" (49,500 a month, page unranked)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-53/refresh-how-long-does-nicotine-stay-in-your-system-for-how-long-does",
+      "state": "Todo",
+      "priority": 2,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/how-long-does-nicotine-stay-in-your-system",
+      "cluster": "how long does nicotine stay in your system",
+      "updatedAt": "2026-11-09T09:44:37.853Z"
+    },
     {
       "id": "BLO-52",
       "title": "Clear the old /best-quit-smoking-app-for-heavy-smokers URL from Google (redirected, still indexed, 69 impressions)",
@@ -140,34 +224,6 @@
       "pageUrl": "/quit-smoking-cold-turkey",
       "cluster": "quit smoking cold turkey",
       "updatedAt": "2026-11-02T09:49:46.058Z"
-    },
-    {
-      "id": "BLO-42",
-      "title": "Refresh /quit-smoking-with-nicotine-lozenge for \"nicotine lozenge\" (2mg vs 4mg, how to use)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-42/refresh-quit-smoking-with-nicotine-lozenge-for-nicotine-lozenge-2mg-vs",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-smoking-with-nicotine-lozenge",
-      "cluster": "nicotine lozenge to quit smoking",
-      "updatedAt": "2026-11-02T09:49:43.611Z"
-    },
-    {
-      "id": "BLO-41",
-      "title": "Refresh /quit-vaping for \"how to quit vaping\" (thin page, vaping support now confirmed)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-41/refresh-quit-vaping-for-how-to-quit-vaping-thin-page-vaping-support",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-vaping",
-      "cluster": "how to quit vaping",
-      "updatedAt": "2026-11-02T09:49:33.525Z"
     },
     {
       "id": "BLO-40",
@@ -323,20 +379,6 @@
       "pageUrl": "/guides/what-happens-after-3-days",
       "cluster": "3 days without smoking",
       "updatedAt": "2026-11-05T10:59:21.595Z"
-    },
-    {
-      "id": "BLO-26",
-      "title": "Refresh /guides/libido (dropped out of the index, 149 to 3 impressions)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-26/refresh-guideslibido-dropped-out-of-the-index-149-to-3-impressions",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:audit"
-      ],
-      "pageUrl": "/guides/libido",
-      "cluster": "libido after quitting smoking",
-      "updatedAt": "2026-10-29T09:55:22.440Z"
     },
     {
       "id": "BLO-24",
