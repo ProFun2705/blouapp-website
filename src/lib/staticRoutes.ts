@@ -65,6 +65,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/health-benefits-of-quitting-smoking", lastModified: OCT_2026, label: "Health benefits of quitting smoking", group: "Withdrawal and recovery" },
   { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: "2026-11-12", label: "How long nicotine stays in your system", group: "Withdrawal and recovery" },
 
+  { path: "/quit-smoking-medication", lastModified: "2026-11-13", label: "Quit smoking medication: all 7 options compared", group: "Methods and medication" },
   { path: "/quit-smoking-cold-turkey", lastModified: OCT_2026, label: "Quitting cold turkey", group: "Methods and medication" },
   { path: "/quit-smoking-without-nrt", lastModified: OCT_2026, label: "Quitting without NRT", group: "Methods and medication" },
   { path: "/nicotine-patch-vs-gum", lastModified: OCT_2026, label: "Nicotine patch vs gum", group: "Methods and medication" },

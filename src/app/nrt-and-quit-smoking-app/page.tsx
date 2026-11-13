@@ -173,6 +173,13 @@ export default function NrtAndQuitSmokingAppPage() {
             >
               lozenge
             </Link>
+            . Not sure which product? See{" "}
+            <Link
+              className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+              href="/quit-smoking-medication"
+            >
+              all seven quit smoking medications
+            </Link>
             .
           </li>
         </ol>

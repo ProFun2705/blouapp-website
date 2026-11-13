@@ -146,6 +146,10 @@ export default function QuitSmokingWithoutNrtPage() {
           <Link className="font-medium text-teal-800 underline" href="/quit-smoking-with-bupropion">
             Wellbutrin (bupropion) for quitting smoking
           </Link>
+          . See all seven options in{" "}
+          <Link className="font-medium text-teal-800 underline" href="/quit-smoking-medication">
+            quit smoking medication
+          </Link>
           .
         </p>
       </section>
