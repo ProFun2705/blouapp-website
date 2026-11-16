@@ -1417,9 +1417,9 @@
       "intent": null,
       "funnelStage": null,
       "priority": null,
-      "linearIssue": null,
+      "linearIssue": "BLO-50",
       "notes": null,
-      "suppressUntil": null,
+      "suppressUntil": "2026-12-07",
       "gsc": {
         "window": {
           "start": "2026-10-13",
