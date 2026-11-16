@@ -1,6 +1,20 @@
 {
-  "fetchedAt": "2026-11-12T09:46:06.912Z",
+  "fetchedAt": "2026-11-16T11:31:14.083Z",
   "issues": [
+    {
+      "id": "BLO-59",
+      "title": "Push /calculators/united-kingdom to page 1 (position 25.8, 90 impressions, split with /calculators/australia)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-59/push-calculatorsunited-kingdom-to-page-1-position-258-90-impressions",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "page-2-push",
+        "source:audit"
+      ],
+      "pageUrl": "/calculators/united-kingdom",
+      "cluster": "quit smoking calculator uk",
+      "updatedAt": "2026-11-12T09:46:53.309Z"
+    },
     {
       "id": "BLO-58",
       "title": "New page: /quit-chewing-tobacco for \"quit chewing tobacco\" and \"quit smokeless tobacco\" (390 + 260 a month)",
@@ -55,13 +69,13 @@
       ],
       "pageUrl": "/best-quit-smoking-apps",
       "cluster": "best quit smoking apps",
-      "updatedAt": "2026-11-09T09:44:43.253Z"
+      "updatedAt": "2026-11-12T09:47:46.081Z"
     },
     {
       "id": "BLO-54",
       "title": "New page: /quit-smoking-medication, an overview of quit smoking medication options (8,100 a month)",
       "url": "https://linear.app/blou-site-seo/issue/BLO-54/new-page-quit-smoking-medication-an-overview-of-quit-smoking",
-      "state": "Todo",
+      "state": "In Review",
       "priority": 2,
       "labels": [
         "new-content",
@@ -69,21 +83,7 @@
       ],
       "pageUrl": "/quit-smoking-medication",
       "cluster": "quit smoking medication options",
-      "updatedAt": "2026-11-09T09:44:40.271Z"
-    },
-    {
-      "id": "BLO-53",
-      "title": "Refresh /how-long-does-nicotine-stay-in-your-system for \"how long does nicotine stay in your system\" (49,500 a month, page unranked)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-53/refresh-how-long-does-nicotine-stay-in-your-system-for-how-long-does",
-      "state": "Todo",
-      "priority": 2,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/how-long-does-nicotine-stay-in-your-system",
-      "cluster": "how long does nicotine stay in your system",
-      "updatedAt": "2026-11-09T09:44:37.853Z"
+      "updatedAt": "2026-11-13T10:06:06.323Z"
     },
     {
       "id": "BLO-52",
@@ -97,7 +97,7 @@
       ],
       "pageUrl": "/best-quit-smoking-app-for-heavy-smokers",
       "cluster": "best quit smoking app",
-      "updatedAt": "2026-11-05T11:00:30.943Z"
+      "updatedAt": "2026-11-12T09:47:41.417Z"
     },
     {
       "id": "BLO-51",
@@ -111,13 +111,13 @@
       ],
       "pageUrl": "/zyn-withdrawal",
       "cluster": "zyn withdrawal",
-      "updatedAt": "2026-11-05T11:00:26.960Z"
+      "updatedAt": "2026-11-12T09:47:36.146Z"
     },
     {
       "id": "BLO-50",
       "title": "Push /zyn-vs-cigarettes to page 1 (position 11.0, 107 impressions, 0 clicks)",
       "url": "https://linear.app/blou-site-seo/issue/BLO-50/push-zyn-vs-cigarettes-to-page-1-position-110-107-impressions-0-clicks",
-      "state": "Todo",
+      "state": "In Progress",
       "priority": 2,
       "labels": [
         "page-2-push",
@@ -125,7 +125,7 @@
       ],
       "pageUrl": "/zyn-vs-cigarettes",
       "cluster": "zyn vs cigarettes",
-      "updatedAt": "2026-11-05T11:00:22.379Z"
+      "updatedAt": "2026-11-16T11:31:13.346Z"
     },
     {
       "id": "BLO-49",
@@ -135,11 +135,12 @@
       "priority": 2,
       "labels": [
         "technical",
-        "source:audit"
+        "source:audit",
+        "source:human"
       ],
       "pageUrl": "/guides/dreams-and-sleep",
       "cluster": "vivid dreams after quitting smoking",
-      "updatedAt": "2026-11-05T11:00:17.621Z"
+      "updatedAt": "2026-11-16T11:30:37.907Z"
     },
     {
       "id": "BLO-48",
@@ -195,7 +196,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-2-days",
       "cluster": "2 days without smoking",
-      "updatedAt": "2026-11-05T10:59:27.367Z"
+      "updatedAt": "2026-11-12T09:47:11.252Z"
     },
     {
       "id": "BLO-44",
@@ -378,7 +379,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-days",
       "cluster": "3 days without smoking",
-      "updatedAt": "2026-11-05T10:59:21.595Z"
+      "updatedAt": "2026-11-12T09:47:15.594Z"
     },
     {
       "id": "BLO-24",
@@ -388,11 +389,12 @@
       "priority": 2,
       "labels": [
         "technical",
-        "source:audit"
+        "source:audit",
+        "source:human"
       ],
       "pageUrl": "/guides",
       "cluster": "guides indexing coverage",
-      "updatedAt": "2026-11-05T10:59:33.869Z"
+      "updatedAt": "2026-11-12T10:08:22.520Z"
     },
     {
       "id": "BLO-22",
@@ -421,7 +423,7 @@
       ],
       "pageUrl": "/tools/money-saved",
       "cluster": "quit smoking money saved calculator",
-      "updatedAt": "2026-11-05T10:59:13.061Z"
+      "updatedAt": "2026-11-12T09:47:50.827Z"
     },
     {
       "id": "BLO-20",
@@ -436,7 +438,7 @@
       ],
       "pageUrl": "/calculators/indonesia",
       "cluster": "biaya merokok / smoking cost indonesia",
-      "updatedAt": "2026-11-05T10:59:06.057Z"
+      "updatedAt": "2026-11-12T09:47:27.068Z"
     },
     {
       "id": "BLO-19",
@@ -450,7 +452,7 @@
       ],
       "pageUrl": "/quit-zyn",
       "cluster": "how to quit zyn / taper off zyn",
-      "updatedAt": "2026-11-05T10:59:00.248Z"
+      "updatedAt": "2026-11-12T09:48:00.641Z"
     },
     {
       "id": "BLO-18",
@@ -464,7 +466,7 @@
       ],
       "pageUrl": "/quit-smoking-timeline",
       "cluster": "quit smoking timeline",
-      "updatedAt": "2026-11-05T10:58:52.722Z"
+      "updatedAt": "2026-11-12T09:47:55.560Z"
     },
     {
       "id": "BLO-17",
@@ -479,7 +481,7 @@
       ],
       "pageUrl": "/vape-withdrawal-symptoms",
       "cluster": "vaping withdrawal timeline",
-      "updatedAt": "2026-11-05T10:58:45.052Z"
+      "updatedAt": "2026-11-12T09:47:31.928Z"
     },
     {
       "id": "BLO-15",
@@ -493,7 +495,7 @@
       ],
       "pageUrl": "/guides/what-happens-after-3-weeks",
       "cluster": "3 weeks smoke free",
-      "updatedAt": "2026-11-05T10:58:38.291Z"
+      "updatedAt": "2026-11-12T09:47:07.134Z"
     },
     {
       "id": "BLO-14",
@@ -507,7 +509,7 @@
       ],
       "pageUrl": "/guides/nausea",
       "cluster": "symptom-guides-snippets",
-      "updatedAt": "2026-11-05T10:58:32.773Z"
+      "updatedAt": "2026-11-12T09:48:04.934Z"
     },
     {
       "id": "BLO-13",
@@ -521,7 +523,7 @@
       ],
       "pageUrl": "/guides/joint-pain",
       "cluster": "joint pain after quitting smoking",
-      "updatedAt": "2026-11-05T10:58:26.101Z"
+      "updatedAt": "2026-11-12T09:47:20.440Z"
     },
     {
       "id": "BLO-10",

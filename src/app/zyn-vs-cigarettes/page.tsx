@@ -13,7 +13,7 @@ import { buildArticleJsonLd, buildMetadata } from "@/lib/seo";
 import { AUTHOR, MEDICAL_REVIEWER } from "@/lib/site";
 
 const PUBLISHED = "2026-10-15";
-const MODIFIED = "2026-10-15";
+const MODIFIED = "2026-11-16";
 const CAMPAIGN = "article_zyn-vs-cigarettes";
 const PATH = "/zyn-vs-cigarettes";
 
@@ -112,9 +112,9 @@ const faqItems = [
       "The tobacco in one cigarette holds roughly 12 mg of nicotine on average (one lab analysis of 33 brands found about 7 to 18 mg), but the average smoker takes in only 1 to 2 mg per cigarette, according to NIDA. A ZYN pouch is labeled 3 mg or 6 mg, and only part of that is absorbed through the gum. Because the two products are absorbed so differently, the label numbers cannot be compared directly.",
   },
   {
-    question: "Is one Zyn equal to a cigarette?",
+    question: "Is 1 Zyn the same as 1 cigarette?",
     answer:
-      "There is no reliable one-to-one equivalence. How much nicotine reaches your blood from a pouch depends on the brand, how long you keep it in, and how you use it. One study found blood nicotine was not linked to the nicotine content printed on the pouch. Cigarettes also deliver nicotine much faster. To understand your own intake, look at total mg per day with the /tools/nicotine-pouch-calculator rather than a cigarette equivalent.",
+      "No, and there is no reliable one-to-one equivalence. How much nicotine reaches your blood from a pouch depends on the brand, how long you keep it in, and how you use it. One study found blood nicotine was not linked to the nicotine content printed on the pouch. Cigarettes also deliver nicotine much faster. To understand your own intake, look at total mg per day with the /tools/nicotine-pouch-calculator rather than a cigarette equivalent.",
   },
   {
     question: "Is Zyn better than cigarettes?",
@@ -262,18 +262,19 @@ export default function ZynVsCigarettesPage() {
         }
       >
         <p>
-          <strong className="font-semibold text-ink">Updated October 2026.</strong> Zyn and
-          cigarettes both deliver addictive nicotine, but cigarettes burn tobacco and expose you
-          to smoke, tar and carbon monoxide. Zyn does not. Here is how they compare on nicotine,
-          chemicals, addiction and cost, and why the milligram numbers on the labels are not a
-          like-for-like comparison.
+          <strong className="font-semibold text-ink">Updated November 2026.</strong> Zyn and
+          cigarettes both deliver addictive nicotine. Cigarettes burn tobacco, so you breathe in
+          smoke, tar and carbon monoxide. Zyn does not. Here is how they compare on nicotine,
+          chemicals, addiction and cost, and why the label numbers do not line up.
         </p>
       </ArticleHeader>
 
       <TableOfContents
         items={[
           { id: "quick-answer", label: "Quick answer" },
+          { id: "numbers", label: "The nicotine numbers side by side" },
           { id: "comparison", label: "Zyn vs cigarettes at a glance" },
+          { id: "one-vs-one", label: "1 Zyn vs 1 cigarette" },
           { id: "nicotine", label: "How much nicotine is in a cigarette vs Zyn" },
           { id: "health", label: "Health risks compared" },
           { id: "switching", label: "Switching, dual use and quitting" },
@@ -293,6 +294,54 @@ export default function ZynVsCigarettesPage() {
           ]}
         />
       </section>
+
+      <Section id="numbers" title="Zyn vs cigarettes nicotine content: the numbers">
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full min-w-[30rem] text-left text-sm">
+            <caption className="sr-only">Nicotine in one cigarette and one Zyn pouch</caption>
+            <thead>
+              <tr className="border-b border-line text-ink">
+                <th scope="col" className="py-2 pr-4 font-semibold">
+                  &nbsp;
+                </th>
+                <th scope="col" className="py-2 pr-4 font-semibold">
+                  1 cigarette
+                </th>
+                <th scope="col" className="py-2 font-semibold">
+                  1 Zyn pouch
+                </th>
+              </tr>
+            </thead>
+            <tbody className="align-top text-ink-muted">
+              <tr className="border-b border-line">
+                <th scope="row" className="py-3 pr-4 font-medium text-ink">
+                  Nicotine in the product
+                </th>
+                <td className="py-3 pr-4 leading-6">About 12 mg on average (7–18 mg in one lab study)</td>
+                <td className="py-3 leading-6">3 mg or 6 mg (FDA)</td>
+              </tr>
+              <tr className="border-b border-line">
+                <th scope="row" className="py-3 pr-4 font-medium text-ink">
+                  Nicotine you absorb
+                </th>
+                <td className="py-3 pr-4 leading-6">About 1–2 mg (NIDA)</td>
+                <td className="py-3 leading-6">Only part of the label amount, and it varies</td>
+              </tr>
+              <tr>
+                <th scope="row" className="py-3 pr-4 font-medium text-ink">
+                  Time to peak blood level
+                </th>
+                <td className="py-3 pr-4 leading-6">About 7 minutes in one study</td>
+                <td className="py-3 leading-6">About 60–65 minutes in the same study</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <P>
+          A pouch label and a cigarette measure different things. Use the rows as a guide, not a
+          trade rate.
+        </P>
+      </Section>
 
       <Section id="comparison" title="Zyn vs cigarettes at a glance">
         <div className="mt-4 overflow-x-auto">
@@ -335,8 +384,8 @@ export default function ZynVsCigarettesPage() {
 
       <Section id="nicotine" title="How much nicotine is in a cigarette vs Zyn?">
         <P>
-          This is where most comparisons go wrong, because the number on a pouch can and the
-          nicotine in a cigarette measure different things.
+          This is where most comparisons go wrong. The number on a pouch can and the nicotine in a
+          cigarette measure different things.
         </P>
         <Bullets
           items={[
@@ -374,12 +423,27 @@ export default function ZynVsCigarettesPage() {
         </P>
       </Section>
 
+      <Section id="one-vs-one" title="1 Zyn vs 1 cigarette">
+        <P>
+          One Zyn is not one cigarette. In a 2022 study, several pouches raised blood nicotine as
+          much as a cigarette or more, but about an hour later instead of within minutes. In a 2024
+          study, a 6 mg pouch released only about 38% of its nicotine during 20 minutes of use.
+        </P>
+        <P>
+          So one pouch can match a cigarette or fall well short. It depends on the brand and how you
+          use it. To see your own intake, add up your daily milligrams with the{" "}
+          <Link className={LINK} href="/tools/nicotine-pouch-calculator">
+            nicotine pouch calculator
+          </Link>
+          .
+        </P>
+      </Section>
+
       <Section id="health" title="Zyn vs smoking: health risks compared">
         <P>
-          The FDA describes a continuum of risk, with burned products like cigarettes at the most
-          harmful end. Its explanation is that nicotine keeps people using tobacco, but the
-          thousands of chemicals in tobacco smoke are what cause the serious diseases, such as
-          cancer and COPD.
+          The FDA describes a range of risk, with burned products like cigarettes at the most harmful
+          end. Nicotine keeps people using tobacco. The thousands of chemicals in smoke cause the
+          serious diseases, such as cancer and COPD.
         </P>
         <Bullets
           items={[

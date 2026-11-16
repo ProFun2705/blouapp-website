@@ -206,6 +206,9 @@ export default function QuitSmokingTimelinePage() {
         <ButtonLink href="/how-to-quit-smoking" variant="secondary">
           Quit plan
         </ButtonLink>
+        <ButtonLink href="/zyn-vs-cigarettes" variant="secondary">
+          Zyn vs cigarettes
+        </ButtonLink>
       </div>
     </div>
   );

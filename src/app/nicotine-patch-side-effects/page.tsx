@@ -540,6 +540,9 @@ export default function NicotinePatchSideEffectsPage() {
         <ButtonLink href="/nicotine-patch-vs-gum" variant="secondary">
           Patch vs gum →
         </ButtonLink>
+        <ButtonLink href="/zyn-vs-cigarettes" variant="secondary">
+          Zyn vs cigarettes →
+        </ButtonLink>
       </div>
     </div>
   );

@@ -1,0 +1,52 @@
+[
+ {
+  "title": "New page: /chantix-side-effects for \"chantix side effects\" (12,100 a month, LOW competition)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 2,
+  "state": "Todo",
+  "body": "URL: /chantix-side-effects\nCluster: chantix side effects\nType: new-content\nSource: Keyword Planner US 2026-11-16, GSC 2026-10-17..2026-11-13, inventory 2026-11-16\n\n## Evidence\n- Keyword Planner US (monthly): \"chantix side effects\" 12,100 (LOW competition, bids up to $16.87), \"long term side effects of chantix\" 260, \"side effects after stopping chantix\" 140, \"chantix side effects weight loss\" 170. Close variants share volume, read as one cluster.\n- Inventory: only /quit-smoking-with-varenicline (563 words, modified 2026-10-13) covers the drug, for \"varenicline quit smoking\". No page targets the side-effect intent. BLO-31 is a refresh of that page for \"Chantix to quit smoking\", a different intent.\n- Fit: people on or about to start Chantix are mid-quit. Medical risk +2, so every claim needs FDA, NHS or MedlinePlus sources.\n\n## Recommended action\nCreate a side-effects page from FDA label, NHS and MedlinePlus facts only: common effects (nausea, sleep and dreams, headache), rare serious ones and when to call a clinician. No dosing advice and never tell anyone to stop the medication; say \"talk to your prescriber\". Link to /quit-smoking-with-varenicline, /quit-smoking-medication and /guides/dreams-and-sleep, and back from those pages. Do not claim Blou treats side effects; position the app only for cravings and routine.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live with a sourced answer-first box, FAQ from the cluster, links in from 2+ pages; impressions appear for \"chantix side effects\" within 4 weeks.\n"
+ },
+ {
+  "title": "New page: /popcorn-lung-vaping, what popcorn lung is and what vaping does (about 4,400 a month, LOW competition)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Todo",
+  "body": "URL: /popcorn-lung-vaping\nCluster: popcorn lung vaping\nType: new-content\nSource: Keyword Planner US 2026-11-16, GSC 2026-10-17..2026-11-13, inventory 2026-11-16\n\n## Evidence\n- Keyword Planner US (monthly): \"signs of popcorn lung\" 4,400, \"how to know if you have popcorn lung\" 2,400, \"will vaping cause popcorn lung\" 1,600, \"symptoms\" 1,000, \"what is popcorn lung from vaping\" 720 (all LOW competition). Variants overlap, read as one cluster of roughly 4,400.\n- Inventory: no page mentions the topic as a target; /vape-withdrawal-symptoms and /quit-vaping-timeline cover withdrawal only. Vaping is a stated priority theme and a confirmed Blou audience.\n- Fit: vapers worried about their lungs are a natural bridge to quitting. Medical risk +2.\n\n## Recommended action\nWrite a neutral, sourced answer (bronchiolitis obliterans, diacetyl, what CDC, NHS and the American Lung Association say, what is and is not established). State the public-health position without recommending e-cigarettes as a quit method. Add \"when to see a doctor\" and a bridge to /quit-vaping and /tools/lung-recovery. Do not diagnose or promise lungs heal.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live, all medical claims cited to CDC/NHS/NIH/peer-reviewed sources, linked from /quit-vaping and /vape-withdrawal-symptoms.\n"
+ },
+ {
+  "title": "New page: /nicotine-gum-side-effects for \"nicotine gum side effects\" (2,900 a month, LOW competition)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Backlog",
+  "body": "URL: /nicotine-gum-side-effects\nCluster: nicotine gum side effects\nType: new-content\nSource: Keyword Planner US 2026-11-16, GSC 2026-10-17..2026-11-13, inventory 2026-11-16\n\n## Evidence\n- Keyword Planner US (monthly): \"nicotine gum side effects\" 2,900 (LOW), \"withdrawal symptoms from nicotine gum\" 110.\n- Inventory: /nicotine-patch-side-effects exists as the sibling page; /quit-smoking-with-nicotine-gum (617 words) targets \"how to use\", and is already a refresh in BLO-30. No page matches the side-effect intent.\n- Fit: strong, NRT users who hit hiccups, sore jaw or mouth irritation are at risk of quitting the quit.\n\n## Recommended action\nMirror the structure of /nicotine-patch-side-effects. Source from NHS, FDA label and MedlinePlus. Cover hiccups, jaw soreness, mouth irritation, nausea, and the \"chew and park\" method as a sourced fix. No dosing beyond what NHS states verbatim. Link both ways with /quit-smoking-with-nicotine-gum and /nicotine-patch-vs-gum. Schedule after BLO-30 to avoid overlap.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live, linked from the gum page and the patch-side-effects page, no cannibalization with BLO-30 target keywords.\n"
+ },
+ {
+  "title": "New page: /how-long-does-zyn-stay-in-your-system (390 a month) plus \"zyn addiction\" (480)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Backlog",
+  "body": "URL: /how-long-does-zyn-stay-in-your-system\nCluster: how long does zyn stay in your system\nType: new-content\nSource: Keyword Planner US 2026-11-16, GSC 2026-10-17..2026-11-13, inventory 2026-11-16\n\n## Evidence\n- Keyword Planner US (monthly): \"how long does zyn stay in your system\" 390 (LOW), \"zyn addiction\" 480 (LOW).\n- GSC: the Zyn pages already earn impressions at positions 55 to 75 (/quit-zyn, /zyn-withdrawal), so the domain has Zyn topical signal; no page answers the detection-window question.\n- Inventory: /how-long-does-nicotine-stay-in-your-system covers cigarettes/general nicotine (BLO-53 done, suppressed to 2026-12-03). The Zyn-specific window has different half-life and pouch-absorption facts.\n- Zyn is topic 2 in the profile.\n\n## Recommended action\nShort answer-first page on nicotine and cotinine detection windows for pouch users, with sourced half-life figures, then a section on dependence and a link to /zyn-withdrawal and /quit-zyn. Only cite peer-reviewed or FDA/CDC sources; do not repeat figures from BLO-53 without the same source. Add \"zyn addiction\" as one H2 only if the page stays one intent.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live with sources, links from /quit-zyn, /zyn-withdrawal and /are-zyns-bad-for-you.\n"
+ },
+ {
+  "title": "Refresh /guides/cough for \"cough after quitting smoking\" (590 a month, page last updated April)",
+  "labels": [
+   "refresh",
+   "source:research"
+  ],
+  "priority": 4,
+  "state": "Backlog",
+  "body": "URL: /guides/cough\nCluster: smokers cough after quitting smoking\nType: refresh\nSource: Keyword Planner US 2026-11-16, GSC 2026-10-17..2026-11-13, inventory 2026-11-16\n\n## Evidence\n- Keyword Planner US (monthly): \"smokers cough after quitting smoking\" 590 (LOW).\n- Inventory: 936 words, 3 FAQs, modified 2026-04-20, 17 internal links in; the oldest symptom guide in the set.\n- Symptom guides are the largest impression share on the site, but this one is not in the GSC opportunity lists, so evidence is mainly volume. Lower priority.\n\n## Recommended action\nCheck the live SERP, add answer-first duration section with NHS/CDC sources, more FAQs from related queries, and when-to-see-a-doctor. Title/meta change needs a risk note if the page ranks. Keep URL and intent.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage modified, 5+ FAQs, sources section updated.\n"
+ }
+]
