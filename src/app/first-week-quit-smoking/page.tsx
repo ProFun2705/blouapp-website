@@ -150,7 +150,11 @@ export default function FirstWeekQuitSmokingPage() {
               <Link className="font-medium text-teal-800 underline" href="/guides/what-happens-after-1-month">
                 what happens after one month
               </Link>{" "}
-              early so week two does not feel empty.
+              early so week two does not feel empty. Want to see where this is heading? Read{" "}
+              <Link className="font-medium text-teal-800 underline" href="/guides/what-happens-after-3-weeks">
+                what 3 weeks smoke free looks like
+              </Link>
+              .
             </span>
           </li>
         </ul>

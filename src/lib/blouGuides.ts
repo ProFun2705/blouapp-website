@@ -565,22 +565,36 @@ export const blouGuides: BlouGuide[] = [
   },
   {
     slug: "what-happens-after-3-weeks",
-    title: "3 weeks without smoking: what happens to your body",
+    title: "3 weeks smoke free: what happens to your body",
     shortTitle: "After 3 weeks",
     category: "milestone",
-    targetKeyword: "3 weeks without smoking",
+    targetKeyword: "3 weeks smoke free",
     quickAnswer:
-      "At 3 weeks without smoking, most people are near the end of nicotine withdrawal: the NHS says symptoms last 3 to 4 weeks on average. Circulation and lung function are starting to improve, and cravings are usually shorter and less frequent than in week 1.",
+      "At 3 weeks smoke free, most people are near the end of nicotine withdrawal: the NHS says symptoms last 3 to 4 weeks on average. If you are 3 weeks not smoking, cravings are usually shorter and less frequent than in week 1, and circulation and lung function are starting to improve.",
     quickFacts: [
       "NHS: on average, withdrawal symptoms last 3 to 4 weeks.",
       "American Lung Association: lung function begins to improve between 2 weeks and 3 months after quitting.",
       "NHS: once you reach 28 days smoke-free, you are 5 times more likely to stay quit for good.",
     ],
     summary:
-      "3 weeks without smoking: withdrawal is winding down, circulation and lung function are improving, and day 28 is close. What's normal now and what to do.",
+      "3 weeks smoke free: withdrawal is winding down, circulation and lungs are improving, and day 28 is close. What feels normal at week 3 and what to do.",
     detail:
       "Three weeks in, the story changes from surviving withdrawal to building a life that doesn't include cigarettes. Most of the physical symptoms are fading. The urges that remain are usually tied to habits, stress and social moments.",
     articleSections: [
+      {
+        heading: "What you might feel at 3 weeks not smoking",
+        paragraphs: [
+          "Week 3 is often uneven. You can have a calm day, then a hard one. Both fit the usual pattern, and timing differs from person to person.",
+        ],
+        bullets: [
+          "Cravings: shorter and less frequent, often set off by a situation (NCI, NHS).",
+          "Mood: mostly steadier, with the odd low or irritable day (NHS).",
+          "Sleep and focus: usually improving, though not always evenly.",
+          "Appetite: may still be higher than before you quit.",
+          "Breathing: walking and stairs may feel a little easier (NHS, American Lung Association).",
+          "Cough and mucus: may still come and go while your airways recover (Cleveland Clinic).",
+        ],
+      },
       {
         heading: "What has changed in your body by week 3",
         paragraphs: [
@@ -635,18 +649,65 @@ export const blouGuides: BlouGuide[] = [
           "Yes. By week 3 cravings are usually shorter and less frequent, but stress, alcohol and old routines can still set them off. Use the same plan that worked in week 1: delay, breathe, move, and drink water.",
       },
       {
+        question: "Is 3 weeks smoke free a big milestone?",
+        answer:
+          "Yes. You are close to the 28 day mark, and the NHS says that once you reach 28 days smoke-free you are 5 times more likely to stay quit for good. Most withdrawal symptoms are fading by now.",
+      },
+      {
+        question: "Why do I feel worse 3 weeks after quitting smoking?",
+        answer:
+          "A bad day at week 3 is common. The NHS says withdrawal lasts 3 to 4 weeks on average and some people feel symptoms for a few months, and stress or old routines can bring cravings back. If a low mood lasts more than two weeks, talk to a doctor.",
+      },
+      {
+        question: "What happens to my lungs after 3 weeks without smoking?",
+        answer:
+          "The American Lung Association says lung function begins to improve between 2 weeks and 3 months after quitting. Cleveland Clinic says airway inflammation and mucus calm down in the weeks after quitting. Your cough may still come and go.",
+      },
+      {
+        question: "How do I get through a craving at 3 weeks?",
+        answer:
+          "The NHS suggests a quick burst of activity, reminding yourself that cravings pass, sugar-free gum or carrot sticks, and slow deep breaths. Most cravings fade within minutes.",
+      },
+      {
         question: "Why do I feel low 3 weeks after quitting smoking?",
         answer:
           "Low mood is a recognised withdrawal symptom, and the NHS says mixed emotions in the first weeks are normal and pass. It also says that after the withdrawal stage, people who quit have less anxiety, depression and stress than people who keep smoking. If low mood lasts more than two weeks or you have thoughts of self-harm, talk to a doctor.",
       },
     ],
     datePublished: "2026-10-15",
-    dateModified: "2026-10-15",
+    dateModified: "2026-11-18",
     relatedSlugs: [
       "what-happens-after-2-weeks",
       "what-happens-after-1-month",
       "cravings",
       "mood-swings",
+    ],
+    references: [
+      {
+        label: "NHS: Managing nicotine withdrawal symptoms",
+        href: "https://www.nhs.uk/better-health/quit-smoking/staying-smoke-free/managing-nicotine-withdrawal-symptoms",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "NHS: Benefits of quitting smoking",
+        href: "https://www.nhs.uk/better-health/quit-smoking/why-quit-smoking/benefits-of-quitting-smoking/",
+        publisher: "UK National Health Service",
+      },
+      {
+        label: "American Lung Association: Benefits of quitting",
+        href: "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+        publisher: "American Lung Association",
+      },
+      {
+        label: "Cleveland Clinic: Smoking",
+        href: "https://my.clevelandclinic.org/health/articles/17488-smoking",
+        publisher: "Cleveland Clinic",
+      },
+      {
+        label: "Quit: What is nicotine withdrawal",
+        href: "https://quit.org.au/en/articles/what-is-nicotine-withdrawal",
+        publisher: "Quit (Australia)",
+      },
     ],
     medicalConditionName: "Nicotine withdrawal",
   },
