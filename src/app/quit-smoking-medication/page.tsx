@@ -362,6 +362,13 @@ export default function QuitSmokingMedicationPage() {
           without nicotine. Both need a prescription, and your doctor checks that they are safe for
           you first.
         </P>
+        <P>
+          Worried about side effects? See{" "}
+          <Link className={LINK} href="/chantix-side-effects">
+            Chantix (varenicline) side effects
+          </Link>
+          .
+        </P>
       </Section>
 
       <InlineAppCta campaign={CAMPAIGN}>

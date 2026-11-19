@@ -477,7 +477,11 @@ export default function NicotinePatchSideEffectsPage() {
           25,000 participants found that the patch increased the chance of quitting by about 64%
           compared with placebo or no NRT. The CDC notes the patch is easy to use once a day, can
           be combined with faster forms, and usually has minor side effects. If one product does
-          not suit you, you have options: gum, lozenges, or prescription medicine.
+          not suit you, you have options: gum, lozenges, or prescription medicine. For the pills, see{" "}
+          <Link className={LINK} href="/chantix-side-effects">
+            Chantix side effects
+          </Link>
+          .
         </P>
         <P>
           Compare forms in{" "}

@@ -38,6 +38,7 @@ const NOV_5_2026 = "2026-11-05";
 const NOV_10_2026 = "2026-11-10";
 const NOV_11_2026 = "2026-11-11";
 const NOV_16_2026 = "2026-11-16";
+const NOV_19_2026 = "2026-11-19";
 
 export const staticRoutes: StaticRoute[] = [
   { path: "/", lastModified: OCT_2026 },
@@ -76,6 +77,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
   { path: "/quit-smoking-with-varenicline", lastModified: OCT_2026, label: "Quitting with varenicline (Chantix / Champix)", group: "Methods and medication" },
   { path: "/quit-smoking-with-bupropion", lastModified: NOV_5_2026, label: "Wellbutrin for quitting smoking (bupropion)", group: "Methods and medication" },
+  { path: "/chantix-side-effects", lastModified: NOV_19_2026, label: "Chantix side effects", group: "Methods and medication" },
   { path: "/nicotine-patch-side-effects", lastModified: NOV_16_2026, label: "Nicotine patch side effects", group: "Methods and medication" },
   { path: "/nrt-and-quit-smoking-app", lastModified: OCT_2026, label: "Using NRT with a quit app", group: "Methods and medication" },
 

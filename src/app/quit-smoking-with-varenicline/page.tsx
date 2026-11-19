@@ -106,6 +106,7 @@ export default function QuitSmokingWithVareniclinePage() {
         items={[
           { id: "quick-answer", label: "Quick answer" },
           { id: "role", label: "Role in a quit plan" },
+          { id: "side-effects", label: "Side effects" },
           { id: "app", label: "Where a quit app fits" },
           { id: "sources", label: "Authoritative sources" },
           { id: "faq", label: "Frequently asked questions" },
@@ -145,6 +146,24 @@ export default function QuitSmokingWithVareniclinePage() {
             withdrawal timeline
           </Link>{" "}
           so expectations match reality.
+        </p>
+      </section>
+
+      <section
+        id="side-effects"
+        className="scroll-mt-24 rounded-2xl border border-teal-200 bg-white p-6 shadow-sm"
+      >
+        <h2 className="text-xl font-semibold text-teal-950">Side effects</h2>
+        <p className="mt-3 text-sm leading-7 text-teal-900/90">
+          Nausea, sleep trouble and vivid dreams are the most common. Serious effects are rare but
+          need a call to your doctor right away. See{" "}
+          <Link
+            className="font-medium text-teal-800 underline decoration-teal-300 underline-offset-2 hover:text-teal-950"
+            href="/chantix-side-effects"
+          >
+            Chantix side effects
+          </Link>{" "}
+          for what is common, what is serious, and when to get help.
         </p>
       </section>
 
