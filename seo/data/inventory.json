@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:01:47.964Z",
+  "generatedAt": "2026-11-19T10:12:42.507Z",
   "gscWindow": {
     "start": "2026-10-20",
     "end": "2026-11-16"
@@ -10,7 +10,7 @@
   },
   "counts": {
     "tool": 12,
-    "article": 52,
+    "article": 53,
     "guide": 56,
     "hub": 2,
     "comparison": 7,
@@ -829,7 +829,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1250,
+      "words": 1253,
       "faqCount": 4,
       "appStoreCtas": 1,
       "internalLinksOut": [
@@ -916,6 +916,7 @@
         "/combination-nrt-quit-smoking",
         "/quit-smoking-with-varenicline",
         "/quit-smoking-with-bupropion",
+        "/chantix-side-effects",
         "/nicotine-patch-side-effects",
         "/nrt-and-quit-smoking-app",
         "/quit-smoking-with-anxiety",
@@ -1894,7 +1895,7 @@
         "/quit-smoking-timeline",
         "/tools"
       ],
-      "linkedFrom": 7,
+      "linkedFrom": 8,
       "primaryKeyword": "vivid dreams after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -2469,7 +2470,7 @@
         "/tools/lung-recovery",
         "/quit-smoking-help"
       ],
-      "linkedFrom": 186,
+      "linkedFrom": 187,
       "primaryKeyword": "Blou quit smoking app",
       "secondaryKeywords": null,
       "intent": null,
@@ -3274,7 +3275,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 2576,
+      "words": 2584,
       "faqCount": 7,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -3285,10 +3286,11 @@
         "/nicotine-withdrawal-timeline",
         "/combination-nrt-quit-smoking",
         "/nicotine-patch-vs-gum",
+        "/chantix-side-effects",
         "/how-to-quit-smoking",
         "/zyn-vs-cigarettes"
       ],
-      "linkedFrom": 3,
+      "linkedFrom": 4,
       "primaryKeyword": "nicotine patch side effects",
       "secondaryKeywords": null,
       "intent": null,
@@ -4120,7 +4122,7 @@
         "/quit-smoking-help/wisconsin",
         "/quit-smoking-help/wyoming"
       ],
-      "linkedFrom": 58,
+      "linkedFrom": 59,
       "primaryKeyword": "free nicotine patches",
       "secondaryKeywords": null,
       "intent": null,
@@ -5582,7 +5584,7 @@
         "/guides/cravings",
         "/how-to-stop-a-relapse"
       ],
-      "linkedFrom": 10,
+      "linkedFrom": 11,
       "primaryKeyword": "alcohol and quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -5684,6 +5686,70 @@
       "linearIssue": null,
       "notes": null,
       "suppressUntil": null,
+      "gsc": null,
+      "amplitude": null,
+      "lastChecked": "2026-11-19",
+      "issues": []
+    },
+    {
+      "url": "/chantix-side-effects",
+      "section": "article",
+      "source": "src/app/chantix-side-effects/page.tsx",
+      "status": "live",
+      "title": "Chantix side effects: what is common and what is not | Blou",
+      "description": "Chantix (varenicline) side effects: nausea, sleep and vivid dreams, headache, the serious warning signs, and when to call your doctor.",
+      "h1": "Chantix side effects (varenicline): what to expect",
+      "keywordsMeta": [
+        "chantix side effects",
+        "side effects of chantix",
+        "chantix side effects weight loss",
+        "long term side effects of chantix",
+        "side effects after stopping chantix",
+        "chantix nausea",
+        "chantix dreams",
+        "varenicline side effects"
+      ],
+      "published": "2026-11-19",
+      "modified": "2026-11-19",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 2046,
+      "faqCount": 8,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-smoking-with-varenicline",
+        "/go/app",
+        "/nicotine-withdrawal-symptoms",
+        "/guides/dreams-and-sleep",
+        "/guides/insomnia",
+        "/quit-smoking-without-gaining-weight",
+        "/alcohol-and-quitting-smoking",
+        "/driving-and-quitting-smoking",
+        "/quit-smoking-with-anxiety",
+        "/quit-smoking-with-depression",
+        "/quit-smoking-medication",
+        "/quit-smoking-with-bupropion",
+        "/quit-smoking-with-nicotine-patch",
+        "/nicotine-patch-side-effects",
+        "/quit-smoking-help"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "chantix side effects",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": "BLO-60",
+      "notes": null,
+      "suppressUntil": "2026-12-10",
       "gsc": null,
       "amplitude": null,
       "lastChecked": "2026-11-19",
@@ -5828,7 +5894,7 @@
         "/go/app",
         "/how-to-quit-smoking"
       ],
-      "linkedFrom": 2,
+      "linkedFrom": 3,
       "primaryKeyword": "quit smoking driving",
       "secondaryKeywords": null,
       "intent": null,
@@ -6836,7 +6902,7 @@
         "/quit-smoking-timeline",
         "/tools"
       ],
-      "linkedFrom": 21,
+      "linkedFrom": 22,
       "primaryKeyword": "insomnia after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -8325,7 +8391,7 @@
         "/how-long-does-nicotine-stay-in-your-system",
         "/first-week-quit-smoking"
       ],
-      "linkedFrom": 2,
+      "linkedFrom": 3,
       "primaryKeyword": "nicotine withdrawal symptoms",
       "secondaryKeywords": null,
       "intent": null,
@@ -11344,7 +11410,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1639,
+      "words": 1649,
       "faqCount": 7,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -11357,13 +11423,14 @@
         "/quit-smoking-with-varenicline",
         "/quit-smoking-with-bupropion",
         "/nicotine-patch-vs-gum",
+        "/chantix-side-effects",
         "/quit-smoking-without-nrt",
         "/nrt-and-quit-smoking-app",
         "/quit-smoking-help",
         "/quit-smoking-app-for-iphone",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 4,
+      "linkedFrom": 5,
       "primaryKeyword": "quit smoking medication",
       "secondaryKeywords": null,
       "intent": null,
@@ -11523,7 +11590,7 @@
         "/nrt-and-quit-smoking-app",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 28,
+      "linkedFrom": 29,
       "primaryKeyword": "quit smoking with anxiety",
       "secondaryKeywords": null,
       "intent": null,
@@ -11639,7 +11706,7 @@
         "/prepare-to-quit-smoking",
         "/nrt-and-quit-smoking-app"
       ],
-      "linkedFrom": 9,
+      "linkedFrom": 10,
       "primaryKeyword": "bupropion quit smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -11696,7 +11763,7 @@
         "/nrt-and-quit-smoking-app",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 5,
+      "linkedFrom": 6,
       "primaryKeyword": "quit smoking with depression",
       "secondaryKeywords": null,
       "intent": null,
@@ -11818,7 +11885,7 @@
         "/quit-smoking-help",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 11,
+      "linkedFrom": 12,
       "primaryKeyword": "quit smoking with nicotine patch",
       "secondaryKeywords": null,
       "intent": null,
@@ -11857,7 +11924,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 563,
+      "words": 608,
       "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -11866,10 +11933,11 @@
         "/go/app",
         "/prepare-to-quit-smoking",
         "/nicotine-withdrawal-timeline",
+        "/chantix-side-effects",
         "/nrt-and-quit-smoking-app",
         "/quit-smoking-with-bupropion"
       ],
-      "linkedFrom": 8,
+      "linkedFrom": 9,
       "primaryKeyword": "varenicline quit smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -11924,7 +11992,7 @@
         "/guides/what-happens-after-1-week",
         "/prepare-to-quit-smoking"
       ],
-      "linkedFrom": 8,
+      "linkedFrom": 9,
       "primaryKeyword": "quit smoking without gaining weight",
       "secondaryKeywords": null,
       "intent": null,
