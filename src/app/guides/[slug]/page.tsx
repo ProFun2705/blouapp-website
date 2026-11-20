@@ -57,7 +57,7 @@ const SEO_TITLE_OVERRIDES: Record<string, string> = {
   "taste-and-smell": "When do taste and smell return after quitting smoking?",
   anger: "Anger after quitting smoking: why and how long",
   "hair-loss": "Hair loss after quitting smoking: what to expect",
-  diarrhea: "Diarrhea after quitting smoking: how long it lasts",
+  diarrhea: "Diarrhea after quitting smoking: usually 5–7 days",
   "dreams-and-sleep": "Vivid dreams after quitting smoking: why and how long",
 };
 

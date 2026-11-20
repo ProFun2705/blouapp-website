@@ -3340,7 +3340,7 @@ export const blouGuides: BlouGuide[] = [
       "Varenicline (Chantix) lists diarrhea as a common side effect.",
     ],
     summary:
-      "Diarrhea after quitting smoking usually clears in a few days and stops within a week. See why it happens when you quit, what helps, and when to get help.",
+      "Diarrhea after quitting smoking usually stops in 5 to 7 days. See why it happens, what helps, and when to call a doctor (blood, dehydration, or over 7 days).",
     detail:
       "Think about what changed when you quit: gum, coffee, new snacks, or a new medicine. A pharmacist can help you sort it out without giving up your quit.",
     articleSections: [
@@ -3481,7 +3481,7 @@ export const blouGuides: BlouGuide[] = [
       },
     ],
     datePublished: "2026-05-08",
-    dateModified: "2026-10-29",
+    dateModified: "2026-11-20",
     dateReviewed: "2026-10-29",
     relatedSlugs: ["constipation", "bloating-and-gas", "nausea", "cravings", "anxiety", "what-happens-after-3-days"],
     medicalConditionName: "Diarrhea (post-cessation)",
