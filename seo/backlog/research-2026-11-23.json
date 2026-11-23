@@ -1,0 +1,32 @@
+[
+ {
+  "title": "New page: /nicotine-pouch-side-effects for \"nicotine pouches side effects\" (4,400 a month, LOW competition)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Todo",
+  "body": "URL: /nicotine-pouch-side-effects\nCluster: nicotine pouches side effects\nType: new-content\nSource: Keyword Planner US 2026-11-23, GSC 2026-10-24..2026-11-20, inventory 2026-11-23\n\n## Evidence\n- Keyword Planner US (monthly): \"nicotine pouches side effects\" 4,400 (LOW competition, bids up to $4.25), \"zyn side effects\" 3,600 (LOW). Close variants share volume, read as one cluster.\n- Inventory: /are-zyns-bad-for-you targets safety (\"are zyns bad for you\"), /zyn-withdrawal targets quitting symptoms, /quit-zyn the quit plan. None targets the \"side effects while using\" intent (mouth irritation, hiccups, nausea, heart rate, sleep).\n- Fit: pouch users are the fast-growing priority audience (profile topic 2). Medical risk +2, so every claim needs FDA, CDC, NCI or Truth Initiative sources.\n\n## Recommended action\nCreate a side-effects page: common (mouth and gum irritation, hiccups, nausea, headache, racing heart), when to talk to a clinician, and what to do next. Link to /are-zyns-bad-for-you (do not duplicate it; BLO-48 adds the hiccups section there, so link to it for that part), /zyn-withdrawal and /quit-zyn, and back from those pages. Do not claim Blou treats symptoms.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live with a sourced answer-first box, FAQ from the cluster, links in from 2+ pages; impressions appear for \"nicotine pouches side effects\" within 4 weeks.\n"
+ },
+ {
+  "title": "Refresh /tools/pack-year-calculator for \"pack year calculator\" (3,600 a month, 794 impressions, position 50)",
+  "labels": [
+   "refresh",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Todo",
+  "body": "URL: /tools/pack-year-calculator\nCluster: pack year calculator\nType: refresh\nSource: Keyword Planner US 2026-11-23, GSC 2026-10-24..2026-11-20\n\n## Evidence\n- GSC: 794 impressions (prev 250, up 3x), 0 clicks, average position 50.5. Top queries: \"pack year calculator\" (46 impr, pos 40), \"pack years\", \"how to work out pack years\", \"pack year history calculator\", all at positions 36 to 75.\n- Keyword Planner US: \"pack year calculator\" 3,600 and \"pack per year calculator\" 3,600 (LOW competition).\n- The earlier suppression window ended 2026-11-18. Demand is rising and the page does not rank on page 1 or 2 yet.\n\n## Recommended action\nAdd an answer-first block with the formula (packs per day x years smoked) and a worked example, a short section on what pack years are used for (clinical history, lung cancer screening eligibility, sourced to CDC, NCI or the USPSTF), and a FAQ from the top queries. Keep the calculator above the fold. Link in from /guides and from the smoking-history pages. Risk note: the page is unranked, so a title and meta change is low risk. No medical advice beyond sourced facts.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPosition for \"pack year calculator\" under 20 within 6 weeks; clicks above 0.\n"
+ },
+ {
+  "title": "New page: /is-vaping-worse-than-smoking for \"is vaping worse than smoking\" (14,800 a month, LOW competition)",
+  "labels": [
+   "new-content",
+   "source:research"
+  ],
+  "priority": 3,
+  "state": "Backlog",
+  "body": "URL: /is-vaping-worse-than-smoking\nCluster: is vaping worse than smoking\nType: new-content\nSource: Keyword Planner US 2026-11-23, inventory 2026-11-23\n\n## Evidence\n- Keyword Planner US (monthly): \"is vaping worse than smoking\" 14,800 (LOW competition), \"is vaping worse than cigarettes\" 8,100, \"is vaping worse than smoking cigarettes\" 3,600.\n- Inventory: no page targets this comparison. /vaping-and-smoking-together, /quit-vaping and /vape-withdrawal-symptoms cover other intents.\n- Fit: vapers weighing whether to quit; good path to /quit-vaping and the app. Medical risk +2 and the profile says e-cigarettes are not recommended as a quit method, so state the public-health position neutrally.\n\n## Recommended action\nWrite a neutral, sourced comparison (CDC, NCI, FDA, NHS, WHO): known risks of each, what is still uncertain, and that quitting nicotine entirely is the goal. No claim that vaping is safe or a recommended quit aid. Link to /quit-vaping, /quit-vaping-timeline and /vaping-and-smoking-together. Held in Backlog until BLO-61 (popcorn lung) is written so the two pages share consistent sourcing.\n\n## Next skill\nseo-content-brief\n\n## Done when\nPage live with sourced, neutral answer box and links in from 3+ vaping pages; impressions for the cluster within 4 weeks.\n"
+ }
+]

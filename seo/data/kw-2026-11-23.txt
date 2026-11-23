@@ -1,0 +1,46 @@
+
+> site@0.1.0 seo:keywords
+> node scripts/seo/keyword-ideas.mjs pack year calculator how many pack years is lung cancer screening nicotine withdrawal anxiety how to quit vaping cold turkey quit smoking after 30 years smoking cessation counseling quit smoking hypnosis nicotine pouches side effects on! nicotine pouches quit smoking gummies nicotine free vape how to stop craving cigarettes vaping withdrawal symptoms timeline quit smoking weed and tobacco e-cigarette lung damage recovery lung cancer screening eligibility is vaping worse than smoking can you quit smoking cold turkey quit smoking benefits timeline nicotine pouch addiction
+
+Seeds: pack year calculator, how many pack years is lung cancer screening, nicotine withdrawal anxiety, how to quit vaping cold turkey, quit smoking after 30 years, smoking cessation counseling, quit smoking hypnosis, nicotine pouches side effects, on! nicotine pouches, quit smoking gummies, nicotine free vape, how to stop craving cigarettes, vaping withdrawal symptoms timeline, quit smoking weed and tobacco, e-cigarette lung damage recovery, lung cancer screening eligibility, is vaping worse than smoking, can you quit smoking cold turkey, quit smoking benefits timeline, nicotine pouch addiction · 1279 ideas
+
+  27100  HIGH      $2.17-5.47    on nicotine pouches
+  14800  LOW       $1.11-4.42    is vaping worse than smoking
+  14800  LOW       $1.11-4.42    is smoking worse than vaping
+  14800  LOW       $1.11-4.42    is vapes worse than smoking
+  14800  LOW       $1.11-4.42    is vapor worse than smoking
+  14800  LOW       $1.11-4.42    vaping is worse than smoking
+   8100  LOW       $1.08-4.21    is vaping worse than cigarettes
+   5400  MEDIUM    $1.27-5.53    quit smoking hypnosis
+   5400  MEDIUM    $1.27-5.53    stop smoking hypnosis
+   5400  MEDIUM    $1.27-5.53    stop smoking hypnotherapy
+   5400  MEDIUM    $1.27-5.53    hypnotherapy to quit smoking
+   5400  MEDIUM    $1.27-5.53    smoking cessation hypnosis
+   5400  MEDIUM    $1.27-5.53    give up smoking hypnosis
+   5400  MEDIUM    $1.27-5.53    stop smoking through hypnosis
+   5400  MEDIUM    $1.27-5.53    hypnosis for tobacco cessation
+   5400  MEDIUM    $1.27-5.53    hypnosis and quitting smoking
+   5400  MEDIUM    $1.27-5.53    quit cigarettes hypnosis
+   5400  MEDIUM    $1.27-5.53    hypnosis and smoking cessation
+   5400  MEDIUM    $1.27-5.53    stop smoking cigarettes hypnosis
+   5400  MEDIUM    $1.27-5.53    stop smoking using hypnosis
+   4400  LOW       $0.47-4.25    nicotine pouches side effects
+   4400  LOW       $0.47-4.25    nicotine pouches side effect
+   3600  LOW       n/a           pack year calculator
+   3600  LOW       $0.92-4.42    is vaping worse than smoking cigarettes
+   3600  LOW       $0.53-4.79    zyn side effects
+   3600  LOW       $0.92-4.42    is vaping worse than smoking a cigarette
+   3600  LOW       $0.92-4.42    is vaping worse than cigarette smoking
+   3600  LOW       $0.92-4.42    is smoking cigarettes worse than vaping
+   3600  LOW       $0.92-4.42    is smoking vapes worse than cigarettes
+   3600  LOW       n/a           pack per year calculator
+   2400  MEDIUM    $1.23-4.80    hypnosis for smoking
+   2400  MEDIUM    $1.08-5.32    stop smoking hypnosis near me
+   2400  MEDIUM    $1.23-4.80    hypnotherapy for smoking
+   2400  MEDIUM    $1.08-5.32    quit smoking hypnosis near me
+   2400  MEDIUM    $1.08-5.32    hypnotherapy to stop smoking near me
+   2400  LOW       $0.04-4.35    how long is nicotine withdrawal
+   2400  MEDIUM    $1.08-5.32    stop smoking hypnotherapy near me
+   2400  MEDIUM    $1.08-5.32    hypnotherapy to quit smoking near me
+   2400  MEDIUM    $1.08-5.32    hypnotherapy quit smoking near me
+   2400  MEDIUM    $1.08-5.32    hypnosis smoking cessation near me
