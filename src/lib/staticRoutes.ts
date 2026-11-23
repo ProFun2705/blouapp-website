@@ -37,6 +37,7 @@ const NOV_3_2026 = "2026-11-03";
 const NOV_5_2026 = "2026-11-05";
 const NOV_10_2026 = "2026-11-10";
 const NOV_11_2026 = "2026-11-11";
+const NOV_23_2026 = "2026-11-23";
 const NOV_16_2026 = "2026-11-16";
 const NOV_19_2026 = "2026-11-19";
 
@@ -72,7 +73,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/quit-smoking-without-nrt", lastModified: OCT_2026, label: "Quitting without NRT", group: "Methods and medication" },
   { path: "/nicotine-patch-vs-gum", lastModified: OCT_2026, label: "Nicotine patch vs gum", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-patch", lastModified: NOV_3_2026, label: "How to use a nicotine patch", group: "Methods and medication" },
-  { path: "/quit-smoking-with-nicotine-gum", lastModified: OCT_2026, label: "Quitting with nicotine gum", group: "Methods and medication" },
+  { path: "/quit-smoking-with-nicotine-gum", lastModified: NOV_23_2026, label: "Nicotine gum to quit smoking: how to use it", group: "Methods and medication" },
   { path: "/quit-smoking-with-nicotine-lozenge", lastModified: NOV_11_2026, label: "Nicotine lozenge: 2mg vs 4mg and how to use it", group: "Methods and medication" },
   { path: "/combination-nrt-quit-smoking", lastModified: OCT_2026, label: "Combination NRT", group: "Methods and medication" },
   { path: "/quit-smoking-with-varenicline", lastModified: OCT_2026, label: "Quitting with varenicline (Chantix / Champix)", group: "Methods and medication" },
