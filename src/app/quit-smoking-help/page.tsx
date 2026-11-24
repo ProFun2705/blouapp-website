@@ -80,7 +80,7 @@ const steps = [
   },
   {
     name: "Wait for your supply",
-    text: "If you qualify, the quitline mails a starter supply. Use the patches as the label or your coach says.",
+    text: "If you qualify, the quitline mails your supply. Use the patches as the label or your coach says.",
   },
 ];
 
@@ -96,7 +96,7 @@ const faqItems = [
   },
   {
     question: "Can I get free nicotine patches online?",
-    answer: "Yes, through your state quitline. Many quitlines let you enroll by phone or on their website, then mail the patches to your home. Be careful with sites that promise free patches but ask for card details. Start from your state page in the table below.",
+    answer: "Yes, through your state quitline. Check your state page for how to enroll. If you qualify, the quitline mails the patches to your home. Be careful with sites that promise free patches but ask for card details. Start from your state page in the table below.",
   },
   {
     question: "Does every state give free patches?",
@@ -108,7 +108,7 @@ const faqItems = [
   },
   {
     question: "How many weeks of patches will I get?",
-    answer: "It depends on the state. Many quitlines send a starter supply, often a few weeks' worth, and the details are set by each program. Ask your coach for your state's exact amount. For a typical step-down plan, see /tools/nicotine-patch-plan.",
+    answer: "It depends on the state, because each program sets its own amount. Ask your coach for your state's exact amount. For a typical step-down plan, see /tools/nicotine-patch-plan.",
   },
   {
     question: "What if I don't qualify for free patches?",
@@ -233,8 +233,7 @@ export default function StateHubPage() {
           such as uninsured or Medicaid callers (CDC).
         </p>
         <p className="mt-3 text-sm leading-7 text-ink-muted">
-          Free medicine has its own rules. Programs often ask a few health questions first, for
-          example about pregnancy or heart problems. In the table, &quot;Yes&quot; means free
+          Free medicine has its own rules. Programs can set their own screening rules, so expect a few questions. In the table, &quot;Yes&quot; means free
           replacement is offered to adults in general. &quot;Some callers&quot; means only specific
           groups get it. If your state says &quot;Not listed&quot; or &quot;Ask&quot;, call and
           check.
