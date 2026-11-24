@@ -38,6 +38,7 @@ const NOV_5_2026 = "2026-11-05";
 const NOV_10_2026 = "2026-11-10";
 const NOV_11_2026 = "2026-11-11";
 const NOV_23_2026 = "2026-11-23";
+const NOV_24_2026 = "2026-11-24";
 const NOV_16_2026 = "2026-11-16";
 const NOV_19_2026 = "2026-11-19";
 
@@ -123,7 +124,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/tools/pack-year-calculator", lastModified: OCT_28_2026, label: "Pack-year calculator", group: "Free tools" },
   { path: "/tools/nicotine-patch-plan", lastModified: OCT_15_2026, label: "Nicotine patch strength and step-down plan", group: "Free tools" },
   { path: "/tools/nicotine-pouch-calculator", lastModified: OCT_15_2026, label: "Nicotine pouch calculator", group: "Free tools" },
-  { path: "/quit-smoking-help", lastModified: OCT_15_2026, label: "Free quit-smoking help by US state", group: "Free tools" },
+  { path: "/quit-smoking-help", lastModified: NOV_24_2026, label: "Free nicotine patches by state", group: "Free tools" },
 ];
 
 export const ARTICLE_GROUPS: ArticleGroup[] = [
