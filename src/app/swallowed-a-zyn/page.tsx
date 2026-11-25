@@ -90,7 +90,7 @@ const faqItems = [
   {
     question: "Do you swallow Zyn spit or spit it out?",
     answer:
-      "Spitting is the safer habit. Swallowing saliva puts extra nicotine in your stomach, and nicotine can cause nausea and stomach pain. Nicotine in pouches is absorbed through the lining of your mouth, so you do not need to swallow anything for a pouch to work.",
+      "Spitting avoids sending extra nicotine to your stomach, where it can add to nausea and stomach pain (MedlinePlus lists abdominal cramps and vomiting among nicotine poisoning symptoms). You do not need to swallow anything for a pouch to work.",
   },
   {
     question: "Should I make myself throw up after swallowing a pouch?",
