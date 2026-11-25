@@ -39,6 +39,7 @@ const NOV_10_2026 = "2026-11-10";
 const NOV_11_2026 = "2026-11-11";
 const NOV_23_2026 = "2026-11-23";
 const NOV_24_2026 = "2026-11-24";
+const NOV_25_2026 = "2026-11-25";
 const NOV_16_2026 = "2026-11-16";
 const NOV_19_2026 = "2026-11-19";
 
@@ -117,6 +118,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/blou-vs-quit-genius", lastModified: OCT_2026, label: "Blou vs Quit Genius", group: "Quit apps compared" },
 
   { path: "/quit-zyn", lastModified: OCT_15_2026, label: "How to quit Zyn and nicotine pouches", group: "Nicotine pouches" },
+  { path: "/swallowed-a-zyn", lastModified: NOV_25_2026, label: "Swallowed a Zyn? What happens and what to do", group: "Nicotine pouches" },
   { path: "/zyn-withdrawal", lastModified: OCT_15_2026, label: "Zyn withdrawal: symptoms and timeline", group: "Nicotine pouches" },
   { path: "/are-zyns-bad-for-you", lastModified: OCT_15_2026, label: "Are Zyns bad for you?", group: "Nicotine pouches" },
   { path: "/zyn-vs-cigarettes", lastModified: NOV_16_2026, label: "Zyn vs cigarettes", group: "Nicotine pouches" },

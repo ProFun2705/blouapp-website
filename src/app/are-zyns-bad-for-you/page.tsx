@@ -528,6 +528,9 @@ export default function AreZynsBadForYouPage() {
         <ButtonLink href="/zyn-vs-cigarettes" variant="secondary">
           Zyn vs cigarettes →
         </ButtonLink>
+        <ButtonLink href="/swallowed-a-zyn" variant="secondary">
+          Swallowed a Zyn? →
+        </ButtonLink>
       </div>
     </div>
   );
