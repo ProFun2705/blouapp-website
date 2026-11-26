@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:43:45.710Z",
+  "generatedAt": "2026-11-26T10:12:11.885Z",
   "gscWindow": {
     "start": "2026-10-27",
     "end": "2026-11-23"
@@ -11,7 +11,7 @@
   "counts": {
     "tool": 12,
     "hub": 2,
-    "article": 54,
+    "article": 55,
     "guide": 56,
     "comparison": 7,
     "home": 1,
@@ -185,7 +185,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1266,
+      "words": 1271,
       "faqCount": 4,
       "appStoreCtas": 1,
       "internalLinksOut": [
@@ -292,6 +292,7 @@
         "/quit-vaping",
         "/vape-withdrawal-symptoms",
         "/quit-vaping-timeline",
+        "/nrt-for-vaping",
         "/vaping-and-smoking-together",
         "/i-smoked-one-cigarette",
         "/how-to-stop-a-relapse",
@@ -2621,7 +2622,7 @@
         "/tools/lung-recovery",
         "/quit-smoking-help"
       ],
-      "linkedFrom": 188,
+      "linkedFrom": 189,
       "primaryKeyword": "Blou quit smoking app",
       "secondaryKeywords": null,
       "intent": null,
@@ -4326,7 +4327,7 @@
         "/quit-smoking-help",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 10,
+      "linkedFrom": 11,
       "primaryKeyword": "quit smoking with nicotine gum",
       "secondaryKeywords": null,
       "intent": null,
@@ -4953,7 +4954,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1369,
+      "words": 1381,
       "faqCount": 6,
       "appStoreCtas": 3,
       "internalLinksOut": [
@@ -4965,12 +4966,13 @@
         "/quit-smoking-cold-turkey",
         "/vape-withdrawal-symptoms",
         "/quit-vaping-timeline",
+        "/nrt-for-vaping",
         "/guides/cravings",
         "/nrt-and-quit-smoking-app",
         "/vaping-and-smoking-together",
         "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 7,
+      "linkedFrom": 8,
       "primaryKeyword": "quit vaping",
       "secondaryKeywords": null,
       "intent": null,
@@ -5307,7 +5309,7 @@
         "/nrt-and-quit-smoking-app",
         "/how-to-quit-smoking"
       ],
-      "linkedFrom": 11,
+      "linkedFrom": 12,
       "primaryKeyword": "nicotine patch vs gum",
       "secondaryKeywords": null,
       "intent": null,
@@ -5370,7 +5372,7 @@
         "/i-smoked-one-cigarette",
         "/nrt-and-quit-smoking-app"
       ],
-      "linkedFrom": 6,
+      "linkedFrom": 7,
       "primaryKeyword": "vape and smoke",
       "secondaryKeywords": null,
       "intent": null,
@@ -5743,7 +5745,7 @@
         "/quit-smoking-medication",
         "/quit-smoking-with-nicotine-patch"
       ],
-      "linkedFrom": 11,
+      "linkedFrom": 12,
       "primaryKeyword": "combination NRT",
       "secondaryKeywords": null,
       "intent": null,
@@ -8463,6 +8465,62 @@
       "linearIssue": null,
       "notes": null,
       "suppressUntil": null,
+      "gsc": null,
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/nrt-for-vaping",
+      "section": "article",
+      "source": "src/app/nrt-for-vaping/page.tsx",
+      "status": "live",
+      "title": "Nicotine Replacement Therapy for Vaping: A Guide | Blou",
+      "description": "Can you use nicotine patches, gum or lozenges to quit vaping? What the FDA and NHS say, how patch plus gum works, and what to ask your pharmacist.",
+      "h1": "Nicotine replacement therapy for vaping",
+      "keywordsMeta": [
+        "nicotine replacement therapy for vaping",
+        "nicotine gum for quitting vaping",
+        "nicotine patch for vaping",
+        "NRT to quit vaping",
+        "quit vaping with nicotine patches"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1663,
+      "faqCount": 6,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-vaping",
+        "/go/app",
+        "/combination-nrt-quit-smoking",
+        "/nicotine-patch-vs-gum",
+        "/tools/nicotine-patch-plan",
+        "/quit-smoking-with-nicotine-gum",
+        "/quit-smoking-with-nicotine-lozenge",
+        "/vape-withdrawal-symptoms",
+        "/quit-vaping-timeline",
+        "/vaping-and-smoking-together"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "nicotine replacement therapy for vaping",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": "BLO-34",
+      "notes": null,
+      "suppressUntil": "2026-12-17",
       "gsc": null,
       "amplitude": null,
       "lastChecked": "2026-11-26",
@@ -11775,7 +11833,7 @@
         "/quit-smoking-help",
         "/nicotine-withdrawal-timeline"
       ],
-      "linkedFrom": 12,
+      "linkedFrom": 13,
       "primaryKeyword": "nicotine lozenge quit smoking",
       "secondaryKeywords": null,
       "intent": null,
@@ -12040,18 +12098,19 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1769,
+      "words": 1782,
       "faqCount": 6,
       "appStoreCtas": 2,
       "internalLinksOut": [
         "/",
         "/vape-withdrawal-symptoms",
+        "/nrt-for-vaping",
         "/go/app",
         "/smokers-lungs-vs-healthy-lungs",
         "/quit-vaping",
         "/vaping-and-smoking-together"
       ],
-      "linkedFrom": 4,
+      "linkedFrom": 5,
       "primaryKeyword": "quitting vaping timeline",
       "secondaryKeywords": null,
       "intent": null,
@@ -12569,7 +12628,7 @@
         "/quit-smoking-with-nicotine-patch",
         "/nicotine-patch-vs-gum"
       ],
-      "linkedFrom": 6,
+      "linkedFrom": 7,
       "primaryKeyword": "nicotine patch strength",
       "secondaryKeywords": null,
       "intent": null,
@@ -12721,18 +12780,19 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1799,
+      "words": 1811,
       "faqCount": 7,
       "appStoreCtas": 2,
       "internalLinksOut": [
         "/",
         "/quit-vaping-timeline",
+        "/nrt-for-vaping",
         "/nicotine-withdrawal-timeline",
         "/go/app",
         "/vaping-and-smoking-together",
         "/quit-vaping"
       ],
-      "linkedFrom": 4,
+      "linkedFrom": 5,
       "primaryKeyword": "vape withdrawal symptoms",
       "secondaryKeywords": null,
       "intent": null,
