@@ -297,6 +297,10 @@ export default function VapeWithdrawalSymptomsPage() {
           <Link className={linkClass} href="/quit-vaping-timeline">
             quit vaping timeline
           </Link>
+          . Patches and gum are covered in{" "}
+          <Link className={linkClass} href="/nrt-for-vaping">
+            nicotine replacement therapy for vaping
+          </Link>
           . For the cigarette version, see the{" "}
           <Link className={linkClass} href="/nicotine-withdrawal-timeline">
             nicotine withdrawal timeline

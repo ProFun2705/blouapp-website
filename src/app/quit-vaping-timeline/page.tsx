@@ -260,6 +260,10 @@ export default function QuitVapingTimelinePage() {
           <Link className={linkClass} href="/vape-withdrawal-symptoms">
             vape withdrawal symptoms
           </Link>
+          . If you want help with cravings, see{" "}
+          <Link className={linkClass} href="/nrt-for-vaping">
+            nicotine replacement therapy for vaping
+          </Link>
           .
         </p>
       </section>

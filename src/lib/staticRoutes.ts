@@ -40,6 +40,7 @@ const NOV_11_2026 = "2026-11-11";
 const NOV_23_2026 = "2026-11-23";
 const NOV_24_2026 = "2026-11-24";
 const NOV_25_2026 = "2026-11-25";
+const NOV_26_2026 = "2026-11-26";
 const NOV_16_2026 = "2026-11-16";
 const NOV_19_2026 = "2026-11-19";
 
@@ -101,6 +102,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/quit-vaping", lastModified: NOV_10_2026, label: "How to quit vaping", group: "Situations and health conditions" },
   { path: "/vape-withdrawal-symptoms", lastModified: OCT_15_2026, label: "Vape withdrawal symptoms", group: "Situations and health conditions" },
   { path: "/quit-vaping-timeline", lastModified: OCT_15_2026, label: "Quit vaping timeline", group: "Situations and health conditions" },
+  { path: "/nrt-for-vaping", lastModified: NOV_26_2026, label: "Nicotine replacement therapy for vaping", group: "Situations and health conditions" },
   { path: "/vaping-and-smoking-together", lastModified: OCT_2026, label: "Vaping and smoking together", group: "Situations and health conditions" },
 
   { path: "/i-smoked-one-cigarette", lastModified: OCT_2026, label: "I smoked one cigarette", group: "Slips and relapse" },

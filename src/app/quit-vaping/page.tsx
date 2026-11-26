@@ -276,6 +276,10 @@ export default function QuitVapingPage() {
           <Link className={LINK} href="/quit-vaping-timeline">
             quit vaping timeline
           </Link>
+          . Thinking about patches or gum? See{" "}
+          <Link className={LINK} href="/nrt-for-vaping">
+            nicotine replacement therapy for vaping
+          </Link>
           .
         </p>
       </section>
