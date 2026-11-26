@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-25T10:11:48.348Z",
+  "generatedAt": "2026-11-26T09:43:45.710Z",
   "gscWindow": {
-    "start": "2026-10-24",
-    "end": "2026-11-20"
+    "start": "2026-10-27",
+    "end": "2026-11-23"
   },
   "amplitudeWindow": {
-    "start": "2026-10-26",
-    "end": "2026-11-22"
+    "start": "2026-10-29",
+    "end": "2026-11-25"
   },
   "counts": {
     "tool": 12,
-    "article": 54,
     "hub": 2,
+    "article": 54,
     "guide": 56,
     "comparison": 7,
     "home": 1,
@@ -76,79 +76,79 @@
       "suppressUntil": "2026-11-18",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 794,
+        "impressions": 761,
         "ctr": 0,
-        "position": 50.5,
+        "position": 52,
         "prev": {
           "clicks": 0,
-          "impressions": 250,
+          "impressions": 349,
           "ctr": 0,
-          "position": 56
+          "position": 54.8
         },
         "topQueries": [
           {
             "query": "pack year calculator",
-            "impressions": 46,
+            "impressions": 49,
             "clicks": 0,
-            "position": 40.3
+            "position": 42.9
           },
           {
             "query": "pack years",
-            "impressions": 43,
+            "impressions": 39,
             "clicks": 0,
-            "position": 70
-          },
-          {
-            "query": "smoking pack years",
-            "impressions": 38,
-            "clicks": 0,
-            "position": 70.6
+            "position": 72.8
           },
           {
             "query": "how to work out pack years",
-            "impressions": 37,
+            "impressions": 36,
             "clicks": 0,
-            "position": 51.8
-          },
-          {
-            "query": "pack year history calculator",
-            "impressions": 37,
-            "clicks": 0,
-            "position": 35.8
-          },
-          {
-            "query": "pack years smoking calculator",
-            "impressions": 34,
-            "clicks": 0,
-            "position": 42.3
+            "position": 52.1
           },
           {
             "query": "pack year",
-            "impressions": 33,
+            "impressions": 36,
             "clicks": 0,
-            "position": 69.6
+            "position": 71.6
           },
           {
-            "query": "pack years of smoking",
-            "impressions": 31,
+            "query": "smoking pack years",
+            "impressions": 36,
             "clicks": 0,
-            "position": 75.5
+            "position": 71.3
+          },
+          {
+            "query": "pack year history calculator",
+            "impressions": 35,
+            "clicks": 0,
+            "position": 36.7
           },
           {
             "query": "how to calculate pack years",
-            "impressions": 30,
+            "impressions": 31,
             "clicks": 0,
-            "position": 58.3
+            "position": 59.5
+          },
+          {
+            "query": "pack years smoking calculator",
+            "impressions": 31,
+            "clicks": 0,
+            "position": 42
+          },
+          {
+            "query": "smoking pack years calculator",
+            "impressions": 29,
+            "clicks": 0,
+            "position": 41.1
           },
           {
             "query": "pack year history",
-            "impressions": 29,
+            "impressions": 28,
             "clicks": 0,
-            "position": 56.1
+            "position": 56.9
           }
         ]
       },
@@ -159,158 +159,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/quit-smoking-timeline",
-      "section": "article",
-      "source": "src/app/quit-smoking-timeline/page.tsx",
-      "status": "live",
-      "title": "Quit smoking timeline: hour by hour, year by year | Blou",
-      "description": "What happens after you quit smoking, from 20 minutes to 20 years, with WHO and NHS sources. Enter your quit date to see where you are now.",
-      "h1": "Quit smoking timeline: what happens after your last cigarette",
-      "keywordsMeta": [
-        "quit smoking timeline",
-        "stop smoking timeline",
-        "quitting cigarettes timeline",
-        "giving up smoking timeline",
-        "benefits of quitting smoking timeline",
-        "quit smoking timeline day by day"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebApplication",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1497,
-      "faqCount": 6,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/nicotine-withdrawal-timeline",
-        "/go/app",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-2-days",
-        "/guides/what-happens-after-3-days",
-        "/guides/what-happens-after-5-days",
-        "/guides/what-happens-after-1-week",
-        "/guides/what-happens-after-2-weeks",
-        "/guides/what-happens-after-3-weeks",
-        "/guides/what-happens-after-1-month",
-        "/guides/what-happens-after-2-months",
-        "/guides/what-happens-after-3-months",
-        "/guides/what-happens-after-6-months",
-        "/guides/what-happens-after-1-year",
-        "/guides/what-happens-after-5-years",
-        "/guides/what-happens-after-10-years",
-        "/i-smoked-one-cigarette",
-        "/can-lungs-heal-after-smoking",
-        "/how-to-quit-smoking",
-        "/zyn-vs-cigarettes"
-      ],
-      "linkedFrom": 115,
-      "primaryKeyword": "quit smoking timeline",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 1,
-        "impressions": 574,
-        "ctr": 0.0017,
-        "position": 54.7,
-        "prev": {
-          "clicks": 0,
-          "impressions": 151,
-          "ctr": 0,
-          "position": 63.4
-        },
-        "topQueries": [
-          {
-            "query": "quit smoking timeline",
-            "impressions": 91,
-            "clicks": 0,
-            "position": 77.2
-          },
-          {
-            "query": "stop smoking timeline",
-            "impressions": 53,
-            "clicks": 0,
-            "position": 80.6
-          },
-          {
-            "query": "quitting smoking timeline",
-            "impressions": 43,
-            "clicks": 0,
-            "position": 78.4
-          },
-          {
-            "query": "giving up smoking timeline",
-            "impressions": 21,
-            "clicks": 0,
-            "position": 87.8
-          },
-          {
-            "query": "quitting cigarettes timeline",
-            "impressions": 21,
-            "clicks": 0,
-            "position": 79.4
-          },
-          {
-            "query": "stop smoking timetable",
-            "impressions": 15,
-            "clicks": 0,
-            "position": 84.4
-          },
-          {
-            "query": "smoking cessation timeline",
-            "impressions": 13,
-            "clicks": 0,
-            "position": 78.2
-          },
-          {
-            "query": "not smoking timeline",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 83.3
-          },
-          {
-            "query": "no smoking timeline",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 68.3
-          },
-          {
-            "query": "smoking cessation benefits timetable",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 89.3
-          }
-        ]
-      },
-      "amplitude": {
-        "page": "/quit-smoking-timeline",
-        "views": 2,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -319,7 +168,7 @@
       "source": "src/app/guides/page.tsx",
       "status": "live",
       "title": "Quit smoking guides: milestones, symptoms & timelines | Blou",
-      "description": "Evidence-based quit smoking guides. Explore what happens to your body after 1 day, 1 week, 1 month, 1 year \u2014 plus symptom guides for cravings, cough, anxiety, and more.",
+      "description": "Evidence-based quit smoking guides. Explore what happens to your body after 1 day, 1 week, 1 month, 1 year — plus symptom guides for cravings, cough, anxiety, and more.",
       "h1": "Quit smoking guides & timelines",
       "keywordsMeta": [
         "quit smoking guide",
@@ -478,13 +327,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 532,
+        "impressions": 713,
         "ctr": 0,
-        "position": 34.1,
+        "position": 30.5,
         "prev": {
           "clicks": 0,
           "impressions": 11,
@@ -494,27 +343,33 @@
         "topQueries": [
           {
             "query": "how long does it take to quit smoking?",
-            "impressions": 27,
+            "impressions": 34,
             "clicks": 0,
-            "position": 8.8
-          },
-          {
-            "query": "how long does nicotine withdrawal last",
-            "impressions": 26,
-            "clicks": 0,
-            "position": 67.2
+            "position": 8.6
           },
           {
             "query": "nicotine withdrawal timeline",
-            "impressions": 23,
+            "impressions": 32,
             "clicks": 0,
-            "position": 62.1
+            "position": 65
+          },
+          {
+            "query": "how long does nicotine withdrawal last",
+            "impressions": 31,
+            "clicks": 0,
+            "position": 65.8
           },
           {
             "query": "how long does nicotine rush last",
-            "impressions": 17,
+            "impressions": 18,
             "clicks": 0,
             "position": 25.6
+          },
+          {
+            "query": "stop smoking benefits timeline",
+            "impressions": 14,
+            "clicks": 0,
+            "position": 19.1
           },
           {
             "query": "how long does it take to quit vaping",
@@ -523,34 +378,28 @@
             "position": 37.3
           },
           {
+            "query": "quitting vaping timeline",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 24.1
+          },
+          {
             "query": "how long for nicotine withdrawal",
             "impressions": 11,
             "clicks": 0,
             "position": 80.5
           },
           {
-            "query": "quitting vaping timeline",
-            "impressions": 11,
-            "clicks": 0,
-            "position": 27.4
-          },
-          {
             "query": "benefits of not smoking timeline",
-            "impressions": 8,
+            "impressions": 9,
             "clicks": 0,
-            "position": 19.3
+            "position": 17.7
           },
           {
-            "query": "stop smoking benefits timeline",
+            "query": "how long does cigarette withdrawal last?",
             "impressions": 8,
             "clicks": 0,
-            "position": 24
-          },
-          {
-            "query": "24 hours after quitting smoking",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 55
+            "position": 4.8
           }
         ]
       },
@@ -561,7 +410,158 @@
         "toolInputs": 0,
         "clickRate": 0.25
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/quit-smoking-timeline",
+      "section": "article",
+      "source": "src/app/quit-smoking-timeline/page.tsx",
+      "status": "live",
+      "title": "Quit smoking timeline: hour by hour, year by year | Blou",
+      "description": "What happens after you quit smoking, from 20 minutes to 20 years, with WHO and NHS sources. Enter your quit date to see where you are now.",
+      "h1": "Quit smoking timeline: what happens after your last cigarette",
+      "keywordsMeta": [
+        "quit smoking timeline",
+        "stop smoking timeline",
+        "quitting cigarettes timeline",
+        "giving up smoking timeline",
+        "benefits of quitting smoking timeline",
+        "quit smoking timeline day by day"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebApplication",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1497,
+      "faqCount": 6,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/nicotine-withdrawal-timeline",
+        "/go/app",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-2-days",
+        "/guides/what-happens-after-3-days",
+        "/guides/what-happens-after-5-days",
+        "/guides/what-happens-after-1-week",
+        "/guides/what-happens-after-2-weeks",
+        "/guides/what-happens-after-3-weeks",
+        "/guides/what-happens-after-1-month",
+        "/guides/what-happens-after-2-months",
+        "/guides/what-happens-after-3-months",
+        "/guides/what-happens-after-6-months",
+        "/guides/what-happens-after-1-year",
+        "/guides/what-happens-after-5-years",
+        "/guides/what-happens-after-10-years",
+        "/i-smoked-one-cigarette",
+        "/can-lungs-heal-after-smoking",
+        "/how-to-quit-smoking",
+        "/zyn-vs-cigarettes"
+      ],
+      "linkedFrom": 115,
+      "primaryKeyword": "quit smoking timeline",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 1,
+        "impressions": 603,
+        "ctr": 0.0017,
+        "position": 56.9,
+        "prev": {
+          "clicks": 0,
+          "impressions": 212,
+          "ctr": 0,
+          "position": 66
+        },
+        "topQueries": [
+          {
+            "query": "quit smoking timeline",
+            "impressions": 96,
+            "clicks": 0,
+            "position": 78.6
+          },
+          {
+            "query": "quitting smoking timeline",
+            "impressions": 57,
+            "clicks": 0,
+            "position": 82.3
+          },
+          {
+            "query": "stop smoking timeline",
+            "impressions": 54,
+            "clicks": 0,
+            "position": 80.1
+          },
+          {
+            "query": "quitting cigarettes timeline",
+            "impressions": 22,
+            "clicks": 0,
+            "position": 80.6
+          },
+          {
+            "query": "giving up smoking timeline",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 86.8
+          },
+          {
+            "query": "stop smoking timetable",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 84.4
+          },
+          {
+            "query": "smoking cessation timeline",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 75.9
+          },
+          {
+            "query": "no smoking timeline",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 67.3
+          },
+          {
+            "query": "not smoking timeline",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 84.2
+          },
+          {
+            "query": "stopped smoking timeline",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 92.2
+          }
+        ]
+      },
+      "amplitude": {
+        "page": "/quit-smoking-timeline",
+        "views": 2,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -569,7 +569,7 @@
       "section": "guide",
       "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "Diarrhea after quitting smoking: usually 5\u20137 days | Blou",
+      "title": "Diarrhea after quitting smoking: usually 5–7 days | Blou",
       "description": "Diarrhea after quitting smoking usually stops in 5 to 7 days. See why it happens, what helps, and when to call a doctor (blood, dehydration, or over 7 days).",
       "h1": "Diarrhea after quitting smoking: how long does it last?",
       "keywordsMeta": [
@@ -617,25 +617,37 @@
       "suppressUntil": "2026-12-18",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 1,
-        "impressions": 495,
-        "ctr": 0.002,
+        "impressions": 483,
+        "ctr": 0.0021,
         "position": 8.3,
         "prev": {
           "clicks": 2,
-          "impressions": 564,
-          "ctr": 0.0035,
-          "position": 8.6
+          "impressions": 605,
+          "ctr": 0.0033,
+          "position": 8.5
         },
         "topQueries": [
+          {
+            "query": "5 days ago",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2
+          },
           {
             "query": "and how long does that last",
             "impressions": 1,
             "clicks": 0,
             "position": 7
+          },
+          {
+            "query": "diareah",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2
           },
           {
             "query": "how long for diarrhea to stop",
@@ -646,7 +658,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "low-ctr"
       ]
@@ -702,31 +714,37 @@
       "suppressUntil": "2026-12-09",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
-        "clicks": 3,
-        "impressions": 374,
-        "ctr": 0.008,
-        "position": 22,
+        "clicks": 2,
+        "impressions": 418,
+        "ctr": 0.0048,
+        "position": 21.7,
         "prev": {
-          "clicks": 1,
-          "impressions": 110,
-          "ctr": 0.0091,
-          "position": 13.7
+          "clicks": 2,
+          "impressions": 139,
+          "ctr": 0.0144,
+          "position": 12.3
         },
         "topQueries": [
           {
             "query": "3 weeks smoke free",
-            "impressions": 48,
+            "impressions": 47,
             "clicks": 0,
-            "position": 21
+            "position": 20.9
           },
           {
             "query": "what happens to your body after quitting smoking?",
-            "impressions": 36,
+            "impressions": 44,
             "clicks": 0,
-            "position": 7.8
+            "position": 7.9
+          },
+          {
+            "query": "what happens to your body after a month of quitting smoking?",
+            "impressions": 37,
+            "clicks": 0,
+            "position": 8.8
           },
           {
             "query": "3 weeks not smoking",
@@ -735,46 +753,40 @@
             "position": 19.4
           },
           {
-            "query": "what happens to your body after a month of quitting smoking?",
-            "impressions": 22,
-            "clicks": 0,
-            "position": 8
-          },
-          {
-            "query": "3 weeks without nicotine",
-            "impressions": 10,
-            "clicks": 0,
-            "position": 7
-          },
-          {
-            "query": "3 weeks without smoking",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 8.2
-          },
-          {
             "query": "3 weeks no smoking",
             "impressions": 8,
             "clicks": 0,
-            "position": 18.5
-          },
-          {
-            "query": "3 weeks quit smoking",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 24
-          },
-          {
-            "query": "quit smoking timeline",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 56.5
+            "position": 26.4
           },
           {
             "query": "quitting smoking timeline",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 39.5
+          },
+          {
+            "query": "quit smoking timeline",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 49.7
+          },
+          {
+            "query": "3 weeks without smoking",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 9.7
+          },
+          {
+            "query": "smoking withdrawal timeline",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 77.3
+          },
+          {
+            "query": "3 weeks without nicotine",
             "impressions": 5,
             "clicks": 0,
-            "position": 47.2
+            "position": 9
           }
         ]
       },
@@ -785,9 +797,142 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
+      ]
+    },
+    {
+      "url": "/guides/what-happens-after-2-days",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "2 days without smoking: what happens to your body | Blou",
+      "description": "2 days without smoking: carbon monoxide is back to non-smoker levels, your lungs start clearing mucus, and withdrawal is near its peak. What helps today.",
+      "h1": "2 days without smoking: what happens to your body",
+      "keywordsMeta": [
+        "2 days without smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "after 2 days"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1189,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-3-days",
+        "/guides/cravings",
+        "/guides/irritability",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 5,
+      "primaryKeyword": "2 days without smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 281,
+        "ctr": 0,
+        "position": 8.3,
+        "prev": {
+          "clicks": 0,
+          "impressions": 42,
+          "ctr": 0,
+          "position": 19.1
+        },
+        "topQueries": [
+          {
+            "query": "2 days without smoking",
+            "impressions": 24,
+            "clicks": 0,
+            "position": 3.8
+          },
+          {
+            "query": "2 days smoke free",
+            "impressions": 22,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "2 days no smoking",
+            "impressions": 21,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "2 days of no smoking",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 17.3
+          },
+          {
+            "query": "2 days after quitting smoking",
+            "impressions": 15,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "2 days of not smoking",
+            "impressions": 15,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "quit smoking day 2",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 79.1
+          },
+          {
+            "query": "2 days not smoking",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 1
+          },
+          {
+            "query": "day 2 no smoking",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 24.4
+          },
+          {
+            "query": "day two no smoking",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 5.5
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": [
+        "low-ctr"
       ]
     },
     {
@@ -845,79 +990,79 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 316,
+        "impressions": 274,
         "ctr": 0,
-        "position": 63.1,
+        "position": 62.3,
         "prev": {
           "clicks": 0,
-          "impressions": 150,
+          "impressions": 198,
           "ctr": 0,
-          "position": 62.7
+          "position": 63
         },
         "topQueries": [
           {
             "query": "how to taper off zyn",
-            "impressions": 31,
+            "impressions": 27,
             "clicks": 0,
-            "position": 58.6
+            "position": 60.8
           },
           {
             "query": "how to quit zyn",
-            "impressions": 24,
+            "impressions": 20,
             "clicks": 0,
-            "position": 75.3
+            "position": 77.2
           },
           {
             "query": "zyn quit smoking",
             "impressions": 19,
             "clicks": 0,
-            "position": 60.6
+            "position": 61.9
           },
           {
             "query": "best way to quit zyn",
-            "impressions": 17,
+            "impressions": 15,
             "clicks": 0,
-            "position": 63.8
-          },
-          {
-            "query": "how to quit nicotine pouches",
-            "impressions": 14,
-            "clicks": 0,
-            "position": 84.6
+            "position": 60.8
           },
           {
             "query": "easiest way to quit zyn",
-            "impressions": 13,
+            "impressions": 11,
             "clicks": 0,
-            "position": 73.6
+            "position": 72.9
+          },
+          {
+            "query": "how to quit nicotine pouches",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 91
           },
           {
             "query": "how to quit zyn cold turkey",
-            "impressions": 13,
+            "impressions": 11,
             "clicks": 0,
-            "position": 68
+            "position": 67.6
           },
           {
             "query": "quitting zyn",
-            "impressions": 13,
+            "impressions": 11,
             "clicks": 0,
-            "position": 64.2
+            "position": 63.6
           },
           {
             "query": "best way to quit zyns",
-            "impressions": 12,
+            "impressions": 10,
             "clicks": 0,
-            "position": 61.2
+            "position": 59.6
           },
           {
             "query": "how to get off zyn",
-            "impressions": 12,
+            "impressions": 10,
             "clicks": 0,
-            "position": 58
+            "position": 57.9
           }
         ]
       },
@@ -928,7 +1073,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -975,25 +1120,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 2,
-        "impressions": 313,
-        "ctr": 0.0064,
-        "position": 6.2,
+        "impressions": 269,
+        "ctr": 0.0074,
+        "position": 6.1,
         "prev": {
           "clicks": 0,
-          "impressions": 148,
+          "impressions": 182,
           "ctr": 0,
           "position": 6.9
         },
         "topQueries": [
           {
             "query": "how much is a pack of cigarettes in indonesia",
-            "impressions": 22,
+            "impressions": 20,
             "clicks": 0,
-            "position": 5.9
+            "position": 5.8
           },
           {
             "query": "how much is 52 packs of cigarettes in indonesia",
@@ -1026,12 +1171,6 @@
             "position": 1
           },
           {
-            "query": "cigarette price indonesia",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 9
-          },
-          {
             "query": "cost of cigarettes in indonesia",
             "impressions": 1,
             "clicks": 0,
@@ -1044,148 +1183,21 @@
             "position": 9
           },
           {
-            "query": "how much do cigarettes cost in indonesia",
+            "query": "how much is one cigarette",
             "impressions": 1,
             "clicks": 0,
-            "position": 10
+            "position": 1
+          },
+          {
+            "query": "indonesia cigarettes price",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 9
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": [
-        "low-ctr"
-      ]
-    },
-    {
-      "url": "/guides/what-happens-after-2-days",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "2 days without smoking: what happens to your body | Blou",
-      "description": "2 days without smoking: carbon monoxide is back to non-smoker levels, your lungs start clearing mucus, and withdrawal is near its peak. What helps today.",
-      "h1": "2 days without smoking: what happens to your body",
-      "keywordsMeta": [
-        "2 days without smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "after 2 days"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1189,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-3-days",
-        "/guides/cravings",
-        "/guides/irritability",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 5,
-      "primaryKeyword": "2 days without smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 260,
-        "ctr": 0,
-        "position": 9.3,
-        "prev": {
-          "clicks": 0,
-          "impressions": 28,
-          "ctr": 0,
-          "position": 23.3
-        },
-        "topQueries": [
-          {
-            "query": "2 days without smoking",
-            "impressions": 22,
-            "clicks": 0,
-            "position": 4.1
-          },
-          {
-            "query": "2 days no smoking",
-            "impressions": 20,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "2 days smoke free",
-            "impressions": 20,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "2 days of no smoking",
-            "impressions": 14,
-            "clicks": 0,
-            "position": 19.6
-          },
-          {
-            "query": "2 days after quitting smoking",
-            "impressions": 13,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "quit smoking day 2",
-            "impressions": 11,
-            "clicks": 0,
-            "position": 79.1
-          },
-          {
-            "query": "2 days of not smoking",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "2 days not smoking",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 1
-          },
-          {
-            "query": "day 2 no smoking",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 24.4
-          },
-          {
-            "query": "day two no smoking",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 5.5
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "low-ctr"
       ]
@@ -1240,18 +1252,18 @@
       "suppressUntil": "2026-12-07",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 246,
+        "impressions": 251,
         "ctr": 0,
-        "position": 9.4,
+        "position": 8.7,
         "prev": {
           "clicks": 0,
-          "impressions": 44,
+          "impressions": 60,
           "ctr": 0,
-          "position": 13.1
+          "position": 13.7
         },
         "topQueries": [
           {
@@ -1261,22 +1273,28 @@
             "position": 6.8
           },
           {
+            "query": "is zyn better than cigarettes?",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 5.2
+          },
+          {
             "query": "are nicotine pouches cheaper than cigarettes over time?",
             "impressions": 12,
             "clicks": 0,
             "position": 6.6
           },
           {
-            "query": "is zyn better than cigarettes?",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 5
-          },
-          {
             "query": "is zyn safer than cigarettes?",
             "impressions": 11,
             "clicks": 0,
             "position": 1.9
+          },
+          {
+            "query": "is zyn healthier than smoking?",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 3.5
           },
           {
             "query": "zyn vs cigarettes",
@@ -1291,33 +1309,27 @@
             "position": 4
           },
           {
-            "query": "zyn\u3068\u565b\u307f\u30bf\u30d0\u30b3\u306e\u9055\u3044\u306f\u4f55\u3067\u3059\u304b\uff1f",
+            "query": "is zyn safer than smoking?",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 2.7
+          },
+          {
+            "query": "death row vs zyn",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 14.6
+          },
+          {
+            "query": "zynと噛みタバコの違いは何ですか？",
             "impressions": 5,
             "clicks": 0,
             "position": 5.6
-          },
-          {
-            "query": "zyn\u306f\u55ab\u7159\u3088\u308a\u3082\u826f\u3044\u3067\u3059\u304b\uff1f",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 6.8
-          },
-          {
-            "query": "zyn ve sigara kar\u015f\u0131la\u015ft\u0131rmas\u0131",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 4.3
-          },
-          {
-            "query": "zyn vs cigarettes nicotine content",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 10.3
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "low-ctr"
       ]
@@ -1373,18 +1385,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 4,
-        "impressions": 236,
-        "ctr": 0.0169,
-        "position": 7.9,
+        "impressions": 218,
+        "ctr": 0.0183,
+        "position": 8.1,
         "prev": {
           "clicks": 2,
-          "impressions": 245,
-          "ctr": 0.0082,
-          "position": 8.4
+          "impressions": 242,
+          "ctr": 0.0083,
+          "position": 7.5
         },
         "topQueries": [
           {
@@ -1418,6 +1430,12 @@
             "position": 84
           },
           {
+            "query": "leg pain after quitting smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 10
+          },
+          {
             "query": "muscle and joint pain after quitting smoking",
             "impressions": 1,
             "clicks": 0,
@@ -1430,16 +1448,16 @@
             "position": 17
           },
           {
+            "query": "smoking and joint inflammation",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 13
+          },
+          {
             "query": "stopped 6 weeks ago",
             "impressions": 1,
             "clicks": 0,
             "position": 3
-          },
-          {
-            "query": "tobacco joint pain",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 41
           }
         ]
       },
@@ -1450,7 +1468,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -1504,31 +1522,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
-        "clicks": 3,
-        "impressions": 191,
-        "ctr": 0.0157,
-        "position": 43.4,
+        "clicks": 2,
+        "impressions": 178,
+        "ctr": 0.0112,
+        "position": 44.7,
         "prev": {
-          "clicks": 2,
-          "impressions": 163,
-          "ctr": 0.0123,
-          "position": 45.6
+          "clicks": 3,
+          "impressions": 160,
+          "ctr": 0.0187,
+          "position": 47.8
         },
         "topQueries": [
           {
             "query": "the best quit smoking app",
             "impressions": 42,
             "clicks": 0,
-            "position": 65.3
-          },
-          {
-            "query": "quit smoking apps",
-            "impressions": 32,
-            "clicks": 0,
-            "position": 54.6
+            "position": 66.6
           },
           {
             "query": "pouchbuddy alternatives",
@@ -1537,16 +1549,22 @@
             "position": 6
           },
           {
-            "query": "best quit smoking app",
-            "impressions": 21,
+            "query": "quit smoking apps",
+            "impressions": 27,
             "clicks": 0,
-            "position": 61.1
+            "position": 56.9
+          },
+          {
+            "query": "best quit smoking app",
+            "impressions": 19,
+            "clicks": 0,
+            "position": 64.5
           },
           {
             "query": "smoking cessation apps",
             "impressions": 6,
             "clicks": 0,
-            "position": 67
+            "position": 67.2
           },
           {
             "query": "quit smoking app",
@@ -1587,8 +1605,136 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
+    },
+    {
+      "url": "/guides/what-happens-after-2-months",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "2 months without smoking: what happens to your body | Blou",
+      "description": "2 months without smoking: withdrawal is behind most people, breathing and circulation are improving, and mood often lifts. What has changed, what to watch.",
+      "h1": "2 months without smoking: what happens to your body",
+      "keywordsMeta": [
+        "2 months without smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "after 2 months"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1115,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/what-happens-after-1-month",
+        "/guides/what-happens-after-3-months",
+        "/guides/cough",
+        "/quit-smoking-without-gaining-weight",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 5,
+      "primaryKeyword": "2 months without smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 169,
+        "ctr": 0,
+        "position": 23.2,
+        "prev": null,
+        "topQueries": [
+          {
+            "query": "how long does it take to quit smoking?",
+            "impressions": 35,
+            "clicks": 0,
+            "position": 9.6
+          },
+          {
+            "query": "what happens to your body after quitting smoking?",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 9.2
+          },
+          {
+            "query": "how long does it take to quit smoking",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 30
+          },
+          {
+            "query": "how long for nicotine withdrawal",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 97
+          },
+          {
+            "query": "quitting smoking timeline 1 week",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 17.5
+          },
+          {
+            "query": "day 5 of not smoking",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 29.7
+          },
+          {
+            "query": "nicotine withdrawal symptoms timeline",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 63
+          },
+          {
+            "query": "what happens quit smoking",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 11
+          },
+          {
+            "query": "what happens when you quit smoking",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 50
+          },
+          {
+            "query": "how long does it take to detox from nicotine?",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 5
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": [
+        "page-2"
+      ]
     },
     {
       "url": "/zyn-withdrawal",
@@ -1645,84 +1791,90 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 160,
+        "impressions": 121,
         "ctr": 0,
-        "position": 41.7,
+        "position": 37.3,
         "prev": {
           "clicks": 0,
-          "impressions": 117,
+          "impressions": 158,
           "ctr": 0,
-          "position": 60.9
+          "position": 58.9
         },
         "topQueries": [
           {
             "query": "zyn withdrawal timeline",
-            "impressions": 14,
-            "clicks": 0,
-            "position": 58.9
-          },
-          {
-            "query": "quitting zyn",
-            "impressions": 7,
+            "impressions": 8,
             "clicks": 0,
             "position": 63.3
           },
           {
-            "query": "zyn withdrawal symptoms",
-            "impressions": 7,
+            "query": "quitting zyn",
+            "impressions": 5,
             "clicks": 0,
-            "position": 64.6
+            "position": 63.4
           },
           {
             "query": "how long does it take to quit zyn",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 67.2
-          },
-          {
-            "query": "how long to quit zyn",
-            "impressions": 6,
+            "impressions": 4,
             "clicks": 0,
             "position": 68.3
           },
           {
-            "query": "is quitting zyn hard",
-            "impressions": 6,
+            "query": "how long to quit zyn",
+            "impressions": 4,
             "clicks": 0,
-            "position": 67.8
+            "position": 68
+          },
+          {
+            "query": "is quitting zyn hard",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 66.8
           },
           {
             "query": "quit zyn cold turkey",
-            "impressions": 6,
+            "impressions": 4,
             "clicks": 0,
-            "position": 88
+            "position": 85.5
           },
           {
             "query": "quitting zyn cold turkey",
-            "impressions": 6,
+            "impressions": 4,
             "clicks": 0,
-            "position": 72.2
+            "position": 77
           },
           {
             "query": "zyn withdrawal",
-            "impressions": 6,
+            "impressions": 4,
             "clicks": 0,
-            "position": 62.5
+            "position": 58.5
           },
           {
             "query": "how long do zyn withdrawals last",
-            "impressions": 5,
+            "impressions": 3,
             "clicks": 0,
-            "position": 75.8
+            "position": 71.7
+          },
+          {
+            "query": "quitting zyns timeline",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 50
           }
         ]
       },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "amplitude": {
+        "page": "/zyn-withdrawal",
+        "views": 1,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -1769,37 +1921,37 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 115,
+        "impressions": 109,
         "ctr": 0,
-        "position": 29.4,
+        "position": 28.4,
         "prev": {
           "clicks": 0,
-          "impressions": 32,
+          "impressions": 42,
           "ctr": 0,
           "position": 36.5
         },
         "topQueries": [
           {
             "query": "quit smoking calculator",
-            "impressions": 22,
+            "impressions": 20,
             "clicks": 0,
-            "position": 39
+            "position": 43.3
           },
           {
             "query": "smoking calculator",
-            "impressions": 12,
+            "impressions": 9,
             "clicks": 0,
-            "position": 36.8
+            "position": 37.1
           },
           {
             "query": "how much does smoking cost",
-            "impressions": 9,
+            "impressions": 6,
             "clicks": 0,
-            "position": 82.7
+            "position": 82.8
           },
           {
             "query": "smoking cost calculator",
@@ -1814,16 +1966,22 @@
             "position": 39.3
           },
           {
+            "query": "cost of cigarettes",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 20.7
+          },
+          {
             "query": "cost of smoking",
             "impressions": 3,
             "clicks": 0,
             "position": 78
           },
           {
-            "query": "cost of cigarettes",
-            "impressions": 2,
+            "query": "how much do cigarettes cost uk",
+            "impressions": 3,
             "clicks": 0,
-            "position": 16.5
+            "position": 18.7
           },
           {
             "query": "pack year history calculator",
@@ -1836,12 +1994,6 @@
             "impressions": 1,
             "clicks": 0,
             "position": 17
-          },
-          {
-            "query": "cost of cigarettes in uk",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 21
           }
         ]
       },
@@ -1852,27 +2004,27 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
       ]
     },
     {
-      "url": "/guides/what-happens-after-2-months",
+      "url": "/guides/night-sweats",
       "section": "guide",
       "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "2 months without smoking: what happens to your body | Blou",
-      "description": "2 months without smoking: withdrawal is behind most people, breathing and circulation are improving, and mood often lifts. What has changed, what to watch.",
-      "h1": "2 months without smoking: what happens to your body",
+      "title": "How long do night sweats last after quitting smoking? | Blou",
+      "description": "Treat night sweats as context plus pattern: occasional early episodes that shrink as sleep returns often fit withdrawal. Fever, cachexia, months of drenching, or daytime sweats need clinicians—not guesses.",
+      "h1": "How long do night sweats last after quitting smoking?",
       "keywordsMeta": [
-        "2 months without smoking",
+        "night sweats after quitting smoking",
         "quit smoking",
         "nicotine withdrawal",
-        "after 2 months"
+        "night sweats"
       ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -1883,22 +2035,23 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1115,
-      "faqCount": 3,
+      "words": 941,
+      "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
         "/guides",
         "/go/app",
-        "/guides/what-happens-after-1-month",
-        "/guides/what-happens-after-3-months",
-        "/guides/cough",
-        "/quit-smoking-without-gaining-weight",
+        "/guides/insomnia",
+        "/guides/dreams-and-sleep",
+        "/quit-smoking-with-anxiety",
+        "/guides/what-happens-after-1-week",
+        "/how-to-stop-a-relapse",
         "/quit-smoking-timeline",
         "/tools"
       ],
-      "linkedFrom": 5,
-      "primaryKeyword": "2 months without smoking",
+      "linkedFrom": 2,
+      "primaryKeyword": "night sweats after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -1908,82 +2061,31 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
-        "clicks": 0,
-        "impressions": 112,
-        "ctr": 0,
-        "position": 24.4,
-        "prev": null,
+        "clicks": 1,
+        "impressions": 93,
+        "ctr": 0.0108,
+        "position": 9,
+        "prev": {
+          "clicks": 0,
+          "impressions": 93,
+          "ctr": 0,
+          "position": 9.8
+        },
         "topQueries": [
           {
-            "query": "how long does it take to quit smoking?",
-            "impressions": 26,
+            "query": "how long do night sweats last",
+            "impressions": 1,
             "clicks": 0,
-            "position": 9.7
-          },
-          {
-            "query": "what happens to your body after quitting smoking?",
-            "impressions": 10,
-            "clicks": 0,
-            "position": 9.2
-          },
-          {
-            "query": "how long for nicotine withdrawal",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 97
-          },
-          {
-            "query": "day 5 of not smoking",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 29.7
-          },
-          {
-            "query": "what happens quit smoking",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 11
-          },
-          {
-            "query": "how long does it take to quit smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 10.5
-          },
-          {
-            "query": "how many days to quit smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 10
-          },
-          {
-            "query": "quitting snus timeline",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 30
-          },
-          {
-            "query": "what happens when you quit smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 44.5
-          },
-          {
-            "query": "withdrawal smoking",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 39.5
+            "position": 1
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": [
-        "page-2"
-      ]
+      "lastChecked": "2026-11-26",
+      "issues": []
     },
     {
       "url": "/tools/money-saved",
@@ -2034,31 +2136,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 89,
+        "impressions": 79,
         "ctr": 0,
-        "position": 29,
+        "position": 30,
         "prev": {
           "clicks": 0,
-          "impressions": 101,
+          "impressions": 110,
           "ctr": 0,
-          "position": 21.7
+          "position": 22.7
         },
         "topQueries": [
           {
-            "query": "kalkulator oszcz\u0119dno\u015bci po rzuceniu palenia",
+            "query": "kalkulator oszczędności po rzuceniu palenia",
             "impressions": 5,
             "clicks": 0,
             "position": 68.4
-          },
-          {
-            "query": "smoking money",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 50.4
           },
           {
             "query": "money saved quitting smoking",
@@ -2067,13 +2163,19 @@
             "position": 74.5
           },
           {
+            "query": "quit smoking save money calculator",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 30.8
+          },
+          {
             "query": "quit smoking savings calculator",
             "impressions": 4,
             "clicks": 0,
             "position": 51.3
           },
           {
-            "query": "sluta r\u00f6ka spara pengar",
+            "query": "sluta röka spara pengar",
             "impressions": 4,
             "clicks": 0,
             "position": 71
@@ -2085,10 +2187,10 @@
             "position": 32.3
           },
           {
-            "query": "quit smoking save money calculator",
+            "query": "smoking money",
             "impressions": 3,
             "clicks": 0,
-            "position": 25
+            "position": 51.3
           },
           {
             "query": "smoking savings calculator",
@@ -2097,102 +2199,24 @@
             "position": 32.7
           },
           {
-            "query": "how much money can you save by not smoking",
+            "query": "how much money will i save if i quit smoking",
             "impressions": 2,
             "clicks": 0,
-            "position": 56
+            "position": 60.5
           },
           {
-            "query": "how much money would you save if you quit smoking",
-            "impressions": 2,
+            "query": "cigarette money",
+            "impressions": 1,
             "clicks": 0,
-            "position": 92
+            "position": 74
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
       ]
-    },
-    {
-      "url": "/guides/dreams-and-sleep",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "Vivid dreams after quitting smoking: why and how long | Blou",
-      "description": "Vivid dreams after quitting smoking often start in week 1 and ease within 2 to 4 weeks. Why they happen, patch and Chantix tips, and when to get help.",
-      "h1": "Vivid dreams after quitting smoking: why and how long they last",
-      "keywordsMeta": [
-        "vivid dreams after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "vivid dreams"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-10-30",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 1584,
-      "faqCount": 6,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/insomnia",
-        "/guides/cravings",
-        "/guides/caffeine-sensitivity",
-        "/quit-smoking-with-anxiety",
-        "/guides/what-happens-after-3-days",
-        "/guides/what-happens-after-1-week",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 8,
-      "primaryKeyword": "vivid dreams after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": "BLO-12",
-      "notes": null,
-      "suppressUntil": "2026-11-20",
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 84,
-        "ctr": 0,
-        "position": 8.5,
-        "prev": {
-          "clicks": 0,
-          "impressions": 365,
-          "ctr": 0,
-          "position": 8.4
-        },
-        "topQueries": []
-      },
-      "amplitude": {
-        "page": "/guides/dreams-and-sleep",
-        "views": 2,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-25",
-      "issues": []
     },
     {
       "url": "/guides/heart-palpitations",
@@ -2245,23 +2269,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 1,
-        "impressions": 81,
-        "ctr": 0.0123,
+        "impressions": 70,
+        "ctr": 0.0143,
         "position": 8.7,
         "prev": {
           "clicks": 0,
-          "impressions": 128,
+          "impressions": 119,
           "ctr": 0,
           "position": 8.9
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -2317,101 +2341,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 77,
+        "impressions": 59,
         "ctr": 0,
-        "position": 8.7,
+        "position": 8.6,
         "prev": {
           "clicks": 1,
-          "impressions": 153,
+          "impressions": 154,
           "ctr": 0.0065,
-          "position": 9.5
+          "position": 9.4
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/guides/night-sweats",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "How long do night sweats last after quitting smoking? | Blou",
-      "description": "Treat night sweats as context plus pattern: occasional early episodes that shrink as sleep returns often fit withdrawal. Fever, cachexia, months of drenching, or daytime sweats need clinicians\u2014not guesses.",
-      "h1": "How long do night sweats last after quitting smoking?",
-      "keywordsMeta": [
-        "night sweats after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "night sweats"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 941,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/insomnia",
-        "/guides/dreams-and-sleep",
-        "/quit-smoking-with-anxiety",
-        "/guides/what-happens-after-1-week",
-        "/how-to-stop-a-relapse",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 2,
-      "primaryKeyword": "night sweats after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 1,
-        "impressions": 76,
-        "ctr": 0.0132,
-        "position": 9,
-        "prev": {
-          "clicks": 0,
-          "impressions": 107,
-          "ctr": 0,
-          "position": 9.3
-        },
-        "topQueries": [
-          {
-            "query": "how long do night sweats last",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 1
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -2420,7 +2366,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "When do taste and smell return after quitting smoking?",
-      "description": "Taste and smell recovery is one of the fastest benefits of quitting. The main downside is increased appetite\u2014plan for it so it doesn\u2019t become a relapse trigger.",
+      "description": "Taste and smell recovery is one of the fastest benefits of quitting. The main downside is increased appetite—plan for it so it doesn’t become a relapse trigger.",
       "h1": "How long does it take for taste and smell to return after quitting smoking?",
       "keywordsMeta": [
         "taste and smell return after quitting smoking",
@@ -2465,31 +2411,160 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 69,
+        "impressions": 59,
         "ctr": 0,
         "position": 8.6,
         "prev": {
           "clicks": 0,
-          "impressions": 74,
+          "impressions": 78,
           "ctr": 0,
-          "position": 10.7
+          "position": 10.8
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
+    },
+    {
+      "url": "/guides/what-happens-after-1-month",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "1 month without smoking: what happens to your body | Blou",
+      "description": "Thirty days smoke-free is the transition from 'quitting' to 'being a non-smoker.' The story shifts from surviving symptoms to protecting progress.",
+      "h1": "1 month without smoking: what happens to your body",
+      "keywordsMeta": [
+        "1 month without smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "after 1 month"
+      ],
+      "published": "2026-03-03",
+      "modified": "2026-04-20",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 974,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/what-happens-after-3-weeks",
+        "/guides/what-happens-after-2-months",
+        "/guides/what-happens-after-3-months",
+        "/quit-smoking-without-gaining-weight",
+        "/guides/mood-swings",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 15,
+      "primaryKeyword": "1 month without smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 54,
+        "ctr": 0,
+        "position": 21.7,
+        "prev": null,
+        "topQueries": [
+          {
+            "query": "what happens to your body after a month of quitting smoking?",
+            "impressions": 14,
+            "clicks": 0,
+            "position": 8.9
+          },
+          {
+            "query": "quitting smoking timeline 1 week",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 28.7
+          },
+          {
+            "query": "what happens when you quit smoking timeline",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 24
+          },
+          {
+            "query": "timeline after stopping smoking",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 13.7
+          },
+          {
+            "query": "effects of giving up smoking timeline",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 11
+          },
+          {
+            "query": "no smoking timeline",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 21
+          },
+          {
+            "query": "not smoking timeline",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 23.5
+          },
+          {
+            "query": "timeline quit smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 19.5
+          },
+          {
+            "query": "timeline quitting smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 19.5
+          },
+          {
+            "query": "1 month no smoking",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 93
+          }
+        ]
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": [
+        "page-2"
+      ]
     },
     {
       "url": "/",
       "section": "home",
       "source": "src/app/page.tsx",
       "status": "live",
-      "title": "Blou \u2013 Quit Smoking App for iPhone: See Your Body Heal",
+      "title": "Blou – Quit Smoking App for iPhone: See Your Body Heal",
       "description": "Blou is a quit smoking app for iPhone that shows proof you're healing: a photo timeline, lung checks, SOS craving help, and every milestone visualized. Free guides, symptom timelines, and calculators.",
       "h1": "See your body heal after your last cigarette.",
       "keywordsMeta": [
@@ -2557,18 +2632,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 1,
-        "impressions": 53,
-        "ctr": 0.0189,
-        "position": 2.9,
+        "impressions": 51,
+        "ctr": 0.0196,
+        "position": 2.5,
         "prev": {
           "clicks": 1,
-          "impressions": 98,
-          "ctr": 0.0102,
-          "position": 6.4
+          "impressions": 96,
+          "ctr": 0.0104,
+          "position": 6.5
         },
         "topQueries": [
           {
@@ -2592,52 +2667,122 @@
         "toolInputs": 0,
         "clickRate": 0.0333
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/quit-smoking-help/new-york",
-      "section": "state",
-      "source": null,
+      "url": "/guides/dreams-and-sleep",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "Free help to quit smoking in New York | Blou",
-      "description": "New York State Quitline, free nicotine patches, and what smoking costs in New York: $5.35 state tax per pack. Sourced from CDC data.",
-      "h1": "Free help to quit smoking in New York",
+      "title": "Vivid dreams after quitting smoking: why and how long | Blou",
+      "description": "Vivid dreams after quitting smoking often start in week 1 and ease within 2 to 4 weeks. Why they happen, patch and Chantix tips, and when to get help.",
+      "h1": "Vivid dreams after quitting smoking: why and how long they last",
       "keywordsMeta": [
-        "quit smoking New York",
-        "free nicotine patches New York",
-        "New York quitline",
-        "cigarette tax New York",
-        "cigarette prices in New York"
+        "vivid dreams after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "vivid dreams"
       ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
+      "published": "2026-05-08",
+      "modified": "2026-10-30",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
+        "MedicalWebPage",
         "Article",
+        "WebPage",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 841,
-      "faqCount": 5,
+      "words": 1584,
+      "faqCount": 6,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/quit-smoking-help",
+        "/guides",
         "/go/app",
-        "/how-to-quit-smoking",
+        "/guides/insomnia",
+        "/guides/cravings",
+        "/guides/caffeine-sensitivity",
+        "/quit-smoking-with-anxiety",
+        "/guides/what-happens-after-3-days",
+        "/guides/what-happens-after-1-week",
         "/quit-smoking-timeline",
-        "/quit-smoking-help/new-hampshire",
-        "/quit-smoking-help/new-jersey",
-        "/quit-smoking-help/new-mexico",
-        "/quit-smoking-help/north-carolina",
-        "/quit-smoking-help/north-dakota",
-        "/quit-smoking-help/ohio"
+        "/tools"
       ],
-      "linkedFrom": 7,
-      "primaryKeyword": "quit smoking New York",
+      "linkedFrom": 8,
+      "primaryKeyword": "vivid dreams after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": "BLO-12",
+      "notes": null,
+      "suppressUntil": "2026-11-20",
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0,
+        "position": 8.6,
+        "prev": {
+          "clicks": 0,
+          "impressions": 367,
+          "ctr": 0,
+          "position": 8.4
+        },
+        "topQueries": []
+      },
+      "amplitude": {
+        "page": "/guides/dreams-and-sleep",
+        "views": 2,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/calculators/united-states",
+      "section": "tool",
+      "source": "src/lib/countryData.ts",
+      "status": "live",
+      "title": "Cost of smoking in the United States: calculator | Blou",
+      "description": "What smoking costs in the United States at the local pack price (8.5 USD), and what quitting saves from 1 day to 10 years.",
+      "h1": "Quit smoking money saved calculator (United States)",
+      "keywordsMeta": [
+        "quit smoking calculator United States",
+        "cigarette pack price United States",
+        "money saved quitting smoking",
+        "smoking cost calculator"
+      ],
+      "published": null,
+      "modified": null,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 619,
+      "faqCount": 4,
+      "appStoreCtas": 2,
+      "internalLinksOut": [
+        "/",
+        "/calculators",
+        "/go/app",
+        "/tools/money-saved",
+        "/how-to-quit-smoking"
+      ],
+      "linkedFrom": 3,
+      "primaryKeyword": "quit smoking calculator United States",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -2647,84 +2792,84 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 49,
+        "impressions": 47,
         "ctr": 0,
-        "position": 30.9,
+        "position": 41,
         "prev": {
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 30,
           "ctr": 0,
-          "position": 42.1
+          "position": 53.9
         },
         "topQueries": [
           {
-            "query": "nys quit smoking",
-            "impressions": 6,
+            "query": "smoking cost calculator",
+            "impressions": 7,
             "clicks": 0,
-            "position": 27
+            "position": 42.1
           },
           {
-            "query": "ny help quit smoking",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 30.4
-          },
-          {
-            "query": "nyc nicotine patch gum program",
+            "query": "quit smoking savings calculator",
             "impressions": 4,
             "clicks": 0,
-            "position": 29
+            "position": 67.3
           },
           {
-            "query": "ny quits",
+            "query": "stop smoking calculator",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 47
+          },
+          {
+            "query": "tobacco cost calculator",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 36.5
+          },
+          {
+            "query": "quit smoking calculator",
             "impressions": 3,
             "clicks": 0,
-            "position": 26.3
+            "position": 44.7
           },
           {
-            "query": "new york smokers quitline",
+            "query": "cigarette cost calculator",
             "impressions": 2,
             "clicks": 0,
-            "position": 52.5
+            "position": 42.5
           },
           {
-            "query": "ny quit smoking",
+            "query": "cost of smoking calculator",
             "impressions": 2,
             "clicks": 0,
-            "position": 24.5
+            "position": 47
           },
           {
-            "query": "ny quits smoking free patches",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 7
-          },
-          {
-            "query": "1-866-ny-quits",
+            "query": "cigarette savings calculator",
             "impressions": 1,
             "clicks": 0,
-            "position": 42
+            "position": 70
           },
           {
-            "query": "1866 ny quits",
+            "query": "i quit smoking calculator",
             "impressions": 1,
             "clicks": 0,
-            "position": 32
+            "position": 63
           },
           {
-            "query": "new york quits",
+            "query": "no smoking calculator",
             "impressions": 1,
             "clicks": 0,
-            "position": 10
+            "position": 55
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -2780,60 +2925,68 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 48,
+        "impressions": 47,
         "ctr": 0,
-        "position": 7.5,
+        "position": 7.2,
         "prev": {
           "clicks": 0,
-          "impressions": 123,
+          "impressions": 109,
           "ctr": 0,
-          "position": 33.7
+          "position": 32
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/calculators/united-states",
-      "section": "tool",
-      "source": "src/lib/countryData.ts",
+      "url": "/quit-smoking-help/new-york",
+      "section": "state",
+      "source": null,
       "status": "live",
-      "title": "Cost of smoking in the United States: calculator | Blou",
-      "description": "What smoking costs in the United States at the local pack price (8.5 USD), and what quitting saves from 1 day to 10 years.",
-      "h1": "Quit smoking money saved calculator (United States)",
+      "title": "Free help to quit smoking in New York | Blou",
+      "description": "New York State Quitline, free nicotine patches, and what smoking costs in New York: $5.35 state tax per pack. Sourced from CDC data.",
+      "h1": "Free help to quit smoking in New York",
       "keywordsMeta": [
-        "quit smoking calculator United States",
-        "cigarette pack price United States",
-        "money saved quitting smoking",
-        "smoking cost calculator"
+        "quit smoking New York",
+        "free nicotine patches New York",
+        "New York quitline",
+        "cigarette tax New York",
+        "cigarette prices in New York"
       ],
-      "published": null,
-      "modified": null,
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
+        "Article",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 619,
-      "faqCount": 4,
-      "appStoreCtas": 2,
+      "words": 841,
+      "faqCount": 5,
+      "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/calculators",
+        "/quit-smoking-help",
         "/go/app",
-        "/tools/money-saved",
-        "/how-to-quit-smoking"
+        "/how-to-quit-smoking",
+        "/quit-smoking-timeline",
+        "/quit-smoking-help/new-hampshire",
+        "/quit-smoking-help/new-jersey",
+        "/quit-smoking-help/new-mexico",
+        "/quit-smoking-help/north-carolina",
+        "/quit-smoking-help/north-dakota",
+        "/quit-smoking-help/ohio"
       ],
-      "linkedFrom": 3,
-      "primaryKeyword": "quit smoking calculator United States",
+      "linkedFrom": 7,
+      "primaryKeyword": "quit smoking New York",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -2843,84 +2996,84 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 47,
         "ctr": 0,
-        "position": 41.6,
+        "position": 30.5,
         "prev": {
           "clicks": 0,
-          "impressions": 33,
+          "impressions": 20,
           "ctr": 0,
-          "position": 53.5
+          "position": 35.5
         },
         "topQueries": [
           {
-            "query": "smoking cost calculator",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 42.1
-          },
-          {
-            "query": "tobacco cost calculator",
+            "query": "ny help quit smoking",
             "impressions": 5,
             "clicks": 0,
-            "position": 36.2
+            "position": 30.4
           },
           {
-            "query": "quit smoking savings calculator",
+            "query": "nyc nicotine patch gum program",
             "impressions": 4,
             "clicks": 0,
-            "position": 67.3
+            "position": 29
           },
           {
-            "query": "stop smoking calculator",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 47
-          },
-          {
-            "query": "quit smoking calculator",
+            "query": "ny quits",
             "impressions": 3,
             "clicks": 0,
-            "position": 44.7
+            "position": 26.3
           },
           {
-            "query": "cigarette cost calculator",
+            "query": "new york smokers quitline",
             "impressions": 2,
             "clicks": 0,
-            "position": 42.5
+            "position": 52.5
           },
           {
-            "query": "cost of smoking calculator",
+            "query": "ny quit smoking",
             "impressions": 2,
             "clicks": 0,
-            "position": 47
+            "position": 24.5
           },
           {
-            "query": "cigarette savings calculator",
-            "impressions": 1,
+            "query": "ny quits hotline",
+            "impressions": 2,
             "clicks": 0,
-            "position": 70
+            "position": 9
           },
           {
-            "query": "i quit smoking calculator",
-            "impressions": 1,
+            "query": "ny quits smoking free patches",
+            "impressions": 2,
             "clicks": 0,
-            "position": 63
+            "position": 7
           },
           {
-            "query": "no smoking calculator",
+            "query": "nys quit smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 37
+          },
+          {
+            "query": "nys smokers quitline",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 41
+          },
+          {
+            "query": "1-866-ny-quits",
             "impressions": 1,
             "clicks": 0,
-            "position": 55
+            "position": 42
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -2929,7 +3082,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does dizziness last after quitting smoking? | Blou",
-      "description": "Post-quit dizziness is usually benign and tied to nicotine withdrawal plus routine changes\u2014not brain damage from quitting. Hydration, slow position changes, and steady routines usually fix it fastest.",
+      "description": "Post-quit dizziness is usually benign and tied to nicotine withdrawal plus routine changes—not brain damage from quitting. Hydration, slow position changes, and steady routines usually fix it fastest.",
       "h1": "How long does dizziness last after quitting smoking?",
       "keywordsMeta": [
         "dizziness after quitting smoking",
@@ -2976,120 +3129,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 47,
+        "impressions": 45,
         "ctr": 0,
-        "position": 9.5,
+        "position": 9.6,
         "prev": {
           "clicks": 1,
-          "impressions": 90,
-          "ctr": 0.0111,
-          "position": 7.9
+          "impressions": 84,
+          "ctr": 0.0119,
+          "position": 8
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/nicotine-patch-side-effects",
-      "section": "article",
-      "source": "src/app/nicotine-patch-side-effects/page.tsx",
-      "status": "live",
-      "title": "Nicotine patch side effects: what\u2019s normal and not | Blou",
-      "description": "Nicotine patch side effects: skin rash, vivid dreams, the 21 mg dose, how long you can wear a patch, overdose signs and when to call a doctor.",
-      "h1": "Nicotine patch side effects: what\u2019s normal and when to call a doctor",
-      "keywordsMeta": [
-        "nicotine patch side effects",
-        "side effects of nicotine patch 21 mg",
-        "nicotine patch skin rash",
-        "how long can you wear a nicotine patch",
-        "nicotine patch vivid dreams"
-      ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 2584,
-      "faqCount": 7,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/quit-smoking-with-nicotine-patch",
-        "/tools/nicotine-patch-plan",
-        "/go/app",
-        "/nicotine-withdrawal-timeline",
-        "/combination-nrt-quit-smoking",
-        "/nicotine-patch-vs-gum",
-        "/chantix-side-effects",
-        "/how-to-quit-smoking",
-        "/zyn-vs-cigarettes"
-      ],
-      "linkedFrom": 4,
-      "primaryKeyword": "nicotine patch side effects",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 44,
-        "ctr": 0,
-        "position": 46.1,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "allergic reaction to nicotine",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 59.5
-          },
-          {
-            "query": "does nicotine patches have side effects",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 72
-          },
-          {
-            "query": "nicotine patch side effects",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 72.5
-          },
-          {
-            "query": "21 mg nicotine patch side effects",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 86
-          },
-          {
-            "query": "why does nicotine patch itch",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 48
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -3136,25 +3192,25 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 38,
+        "impressions": 36,
         "ctr": 0,
-        "position": 32.4,
+        "position": 30.9,
         "prev": {
           "clicks": 0,
-          "impressions": 52,
+          "impressions": 55,
           "ctr": 0,
-          "position": 46
+          "position": 45.8
         },
         "topQueries": [
           {
             "query": "quit smoking calculator",
-            "impressions": 10,
+            "impressions": 9,
             "clicks": 0,
-            "position": 33.6
+            "position": 34.6
           },
           {
             "query": "smoking calculator",
@@ -3169,6 +3225,12 @@
             "position": 35.7
           },
           {
+            "query": "cost cigarettes australia",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 6
+          },
+          {
             "query": "cost of smoking calculator",
             "impressions": 1,
             "clicks": 0,
@@ -3176,12 +3238,6 @@
           },
           {
             "query": "how much money can you save by not smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 65
-          },
-          {
-            "query": "how much money will i save if i quit smoking",
             "impressions": 1,
             "clicks": 0,
             "position": 65
@@ -3201,23 +3257,23 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/vape-withdrawal-symptoms",
+      "url": "/nicotine-patch-side-effects",
       "section": "article",
-      "source": "src/app/vape-withdrawal-symptoms/page.tsx",
+      "source": "src/app/nicotine-patch-side-effects/page.tsx",
       "status": "live",
-      "title": "Vape withdrawal symptoms: what to expect, how long | Blou",
-      "description": "Vape withdrawal symptoms explained: cravings, irritability, headaches, sleep and hunger changes. How long vape withdrawal lasts and what helps.",
-      "h1": "Vape withdrawal symptoms",
+      "title": "Nicotine patch side effects: what’s normal and not | Blou",
+      "description": "Nicotine patch side effects: skin rash, vivid dreams, the 21 mg dose, how long you can wear a patch, overdose signs and when to call a doctor.",
+      "h1": "Nicotine patch side effects: what’s normal and when to call a doctor",
       "keywordsMeta": [
-        "vape withdrawal symptoms",
-        "how long does vape withdrawal last",
-        "side effects of quitting vaping",
-        "nicotine withdrawal from vaping",
-        "quitting vaping symptoms"
+        "nicotine patch side effects",
+        "side effects of nicotine patch 21 mg",
+        "nicotine patch skin rash",
+        "how long can you wear a nicotine patch",
+        "nicotine patch vivid dreams"
       ],
       "published": "2026-10-15",
       "modified": "2026-10-15",
@@ -3230,19 +3286,23 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1799,
+      "words": 2584,
       "faqCount": 7,
-      "appStoreCtas": 2,
+      "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/quit-vaping-timeline",
-        "/nicotine-withdrawal-timeline",
+        "/quit-smoking-with-nicotine-patch",
+        "/tools/nicotine-patch-plan",
         "/go/app",
-        "/vaping-and-smoking-together",
-        "/quit-vaping"
+        "/nicotine-withdrawal-timeline",
+        "/combination-nrt-quit-smoking",
+        "/nicotine-patch-vs-gum",
+        "/chantix-side-effects",
+        "/how-to-quit-smoking",
+        "/zyn-vs-cigarettes"
       ],
       "linkedFrom": 4,
-      "primaryKeyword": "vape withdrawal symptoms",
+      "primaryKeyword": "nicotine patch side effects",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -3252,84 +3312,54 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 32,
+        "impressions": 36,
         "ctr": 0,
-        "position": 59.6,
+        "position": 43.5,
         "prev": {
           "clicks": 0,
-          "impressions": 151,
+          "impressions": 9,
           "ctr": 0,
-          "position": 63.1
+          "position": 52.6
         },
         "topQueries": [
           {
-            "query": "vaping withdrawal symptoms",
+            "query": "allergic reaction to nicotine",
             "impressions": 5,
             "clicks": 0,
-            "position": 71.8
+            "position": 60.2
           },
           {
-            "query": "how long does it take to quit vaping",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 75.3
-          },
-          {
-            "query": "vape withdrawal symptoms",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 66.5
-          },
-          {
-            "query": "vaping withdrawal timeline",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 69.8
-          },
-          {
-            "query": "nicotine withdrawal timeline",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 26.5
-          },
-          {
-            "query": "how long do nicotine withdrawals last",
+            "query": "21 mg nicotine patch side effects",
             "impressions": 1,
             "clicks": 0,
-            "position": 90
+            "position": 86
           },
           {
-            "query": "how long to quit vaping",
+            "query": "does nicotine patches have side effects",
             "impressions": 1,
             "clicks": 0,
-            "position": 62
+            "position": 69
           },
           {
-            "query": "nicotine withdrawal symptoms",
+            "query": "nicotine patch side effects",
             "impressions": 1,
             "clicks": 0,
-            "position": 85
+            "position": 72
           },
           {
-            "query": "nicotine withdrawal symptoms timeline",
+            "query": "why does nicotine patch itch",
             "impressions": 1,
             "clicks": 0,
-            "position": 87
-          },
-          {
-            "query": "smoking withdrawal symptoms",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 97
+            "position": 48
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -3383,13 +3413,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 25,
+        "impressions": 30,
         "ctr": 0,
-        "position": 70,
+        "position": 65.1,
         "prev": null,
         "topQueries": [
           {
@@ -3400,9 +3430,21 @@
           },
           {
             "query": "5 days without smoking",
-            "impressions": 2,
+            "impressions": 3,
             "clicks": 0,
             "position": 74
+          },
+          {
+            "query": "stoppen met roken dag 5",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 40
+          },
+          {
+            "query": "day 5 no smoking",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 69.5
           },
           {
             "query": "day 5 of not smoking",
@@ -3423,12 +3465,6 @@
             "position": 69
           },
           {
-            "query": "day 5 no smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 75
-          },
-          {
             "query": "day 5 of quitting smoking",
             "impressions": 1,
             "clicks": 0,
@@ -3445,17 +3481,11 @@
             "impressions": 1,
             "clicks": 0,
             "position": 56
-          },
-          {
-            "query": "day 5 without smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 82
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -3505,13 +3535,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 17,
+        "impressions": 20,
         "ctr": 0,
-        "position": 16.9,
+        "position": 17.8,
         "prev": {
           "clicks": 0,
           "impressions": 11,
@@ -3521,26 +3551,26 @@
         "topQueries": [
           {
             "query": "quit smoking calculator",
-            "impressions": 7,
+            "impressions": 8,
             "clicks": 0,
-            "position": 29.4
+            "position": 29.1
+          },
+          {
+            "query": "quit chewing tobacco calculator",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 26.5
           },
           {
             "query": "no smoking calculator",
             "impressions": 1,
             "clicks": 0,
             "position": 30
-          },
-          {
-            "query": "quit chewing tobacco calculator",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 13
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
       ]
@@ -3599,13 +3629,13 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 14,
+        "impressions": 15,
         "ctr": 0,
-        "position": 7.7,
+        "position": 7.8,
         "prev": {
           "clicks": 0,
           "impressions": 48,
@@ -3621,153 +3651,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/guides/increased-appetite",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "Increased appetite after quitting smoking: how long? | Blou",
-      "description": "Hunger after quitting is expected and manageable. The winning strategy is structure: planned snacks, protein/fiber, and replacing \u201chand-to-mouth\u201d smoking moments intentionally.",
-      "h1": "How long does increased appetite last after quitting smoking?",
-      "keywordsMeta": [
-        "increased appetite after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "increased appetite"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 812,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/quit-smoking-without-gaining-weight",
-        "/guides/cravings",
-        "/guides/what-happens-after-1-week",
-        "/tools/money-saved",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 6,
-      "primaryKeyword": "increased appetite after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 1,
-        "impressions": 11,
-        "ctr": 0.0909,
-        "position": 7.7,
-        "prev": {
-          "clicks": 0,
-          "impressions": 36,
-          "ctr": 0,
-          "position": 9.6
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/guides/muscle-aches",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "How long do muscle aches last after quitting smoking? | Blou",
-      "description": "Aches during quitting are usually short-lived and respond to sleep, hydration, and gentle movement. Persistent or systemic symptoms should not be blamed on withdrawal indefinitely.",
-      "h1": "How long do muscle aches last after quitting smoking?",
-      "keywordsMeta": [
-        "muscle aches after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "muscle aches"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 782,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/fatigue",
-        "/guides/insomnia",
-        "/quit-smoking-with-anxiety",
-        "/guides/what-happens-after-1-week",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 2,
-      "primaryKeyword": "muscle aches after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 9.3,
-        "prev": {
-          "clicks": 0,
-          "impressions": 11,
-          "ctr": 0,
-          "position": 9.8
-        },
-        "topQueries": []
-      },
-      "amplitude": {
-        "page": "/guides/muscle-aches",
-        "views": 1,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -3824,8 +3708,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 10,
@@ -3846,86 +3730,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/guides/what-happens-after-1-month",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "1 month without smoking: what happens to your body | Blou",
-      "description": "Thirty days smoke-free is the transition from 'quitting' to 'being a non-smoker.' The story shifts from surviving symptoms to protecting progress.",
-      "h1": "1 month without smoking: what happens to your body",
-      "keywordsMeta": [
-        "1 month without smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "after 1 month"
-      ],
-      "published": "2026-03-03",
-      "modified": "2026-04-20",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 974,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/what-happens-after-3-weeks",
-        "/guides/what-happens-after-2-months",
-        "/guides/what-happens-after-3-months",
-        "/quit-smoking-without-gaining-weight",
-        "/guides/mood-swings",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 15,
-      "primaryKeyword": "1 month without smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 31.1,
-        "prev": null,
-        "topQueries": [
-          {
-            "query": "what happens when you quit smoking timeline",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 24
-          },
-          {
-            "query": "timeline after quitting smoking",
-            "impressions": 1,
-            "clicks": 0,
-            "position": 19
-          }
-        ]
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4033,8 +3838,8 @@
       "suppressUntil": "2026-12-15",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 9,
@@ -4062,7 +3867,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
       ]
@@ -4119,26 +3924,20 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 9,
         "ctr": 0,
-        "position": 12.1,
+        "position": 11.7,
         "prev": {
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 5,
           "ctr": 0,
-          "position": 18.8
+          "position": 20.4
         },
         "topQueries": [
-          {
-            "query": "ndquits",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 26
-          },
           {
             "query": "north dakota quit smoking free patches",
             "impressions": 2,
@@ -4150,14 +3949,96 @@
             "impressions": 1,
             "clicks": 0,
             "position": 10
+          },
+          {
+            "query": "ndquits",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 25
           }
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "page-2"
       ]
+    },
+    {
+      "url": "/guides/muscle-aches",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "How long do muscle aches last after quitting smoking? | Blou",
+      "description": "Aches during quitting are usually short-lived and respond to sleep, hydration, and gentle movement. Persistent or systemic symptoms should not be blamed on withdrawal indefinitely.",
+      "h1": "How long do muscle aches last after quitting smoking?",
+      "keywordsMeta": [
+        "muscle aches after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "muscle aches"
+      ],
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 782,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/fatigue",
+        "/guides/insomnia",
+        "/quit-smoking-with-anxiety",
+        "/guides/what-happens-after-1-week",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 2,
+      "primaryKeyword": "muscle aches after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 9.5,
+        "prev": {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 9.6
+        },
+        "topQueries": []
+      },
+      "amplitude": {
+        "page": "/guides/muscle-aches",
+        "views": 1,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
+      "issues": []
     },
     {
       "url": "/are-zyns-bad-for-you",
@@ -4211,18 +4092,18 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 7,
         "ctr": 0,
-        "position": 32,
+        "position": 35,
         "prev": {
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 12,
           "ctr": 0,
-          "position": 22.9
+          "position": 21.9
         },
         "topQueries": [
           {
@@ -4246,7 +4127,156 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/quit-smoking-help/alabama",
+      "section": "state",
+      "source": null,
+      "status": "live",
+      "title": "Free help to quit smoking in Alabama | Blou",
+      "description": "Alabama Tobacco Quitline, free nicotine patches, and what smoking costs in Alabama: $0.68 state tax per pack. Sourced from CDC data.",
+      "h1": "Free help to quit smoking in Alabama",
+      "keywordsMeta": [
+        "quit smoking Alabama",
+        "free nicotine patches Alabama",
+        "Alabama quitline",
+        "cigarette tax Alabama",
+        "cigarette prices in Alabama"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 803,
+      "faqCount": 5,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/quit-smoking-help",
+        "/go/app",
+        "/how-to-quit-smoking",
+        "/quit-smoking-timeline",
+        "/quit-smoking-help/alaska",
+        "/quit-smoking-help/arizona",
+        "/quit-smoking-help/arkansas",
+        "/quit-smoking-help/west-virginia",
+        "/quit-smoking-help/wisconsin",
+        "/quit-smoking-help/wyoming"
+      ],
+      "linkedFrom": 7,
+      "primaryKeyword": "quit smoking Alabama",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 20.6,
+        "prev": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 38
+        },
+        "topQueries": []
+      },
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": [
+        "page-2"
+      ]
+    },
+    {
+      "url": "/guides/sore-gums",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "How long do sore gums last after quitting smoking? | Blou",
+      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a ‘get ahead of dental health’ moment, not a failure.",
+      "h1": "How long do sore gums last after quitting smoking?",
+      "keywordsMeta": [
+        "sore gums after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "sore gums"
+      ],
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 800,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/dry-mouth",
+        "/guides/mouth-ulcers",
+        "/guides/what-happens-after-1-week",
+        "/prepare-to-quit-smoking",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "sore gums after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": {
+        "window": {
+          "start": "2026-10-27",
+          "end": "2026-11-23"
+        },
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 8.3,
+        "prev": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 14.9
+        },
+        "topQueries": []
+      },
+      "amplitude": {
+        "page": "/guides/sore-gums",
+        "views": 2,
+        "appStoreClicks": 0,
+        "toolInputs": 0,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4307,18 +4337,18 @@
       "suppressUntil": "2026-12-14",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 6,
         "ctr": 0,
-        "position": 51.9,
+        "position": 41.5,
         "prev": {
           "clicks": 0,
-          "impressions": 20,
+          "impressions": 17,
           "ctr": 0,
-          "position": 37.1
+          "position": 44.9
         },
         "topQueries": [
           {
@@ -4336,26 +4366,27 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/quit-smoking-help/alabama",
-      "section": "state",
-      "source": null,
+      "url": "/blou-vs-quitstart",
+      "section": "comparison",
+      "source": "src/app/blou-vs-quitstart/page.tsx",
       "status": "live",
-      "title": "Free help to quit smoking in Alabama | Blou",
-      "description": "Alabama Tobacco Quitline, free nicotine patches, and what smoking costs in Alabama: $0.68 state tax per pack. Sourced from CDC data.",
-      "h1": "Free help to quit smoking in Alabama",
+      "title": "Blou vs quitSTART (2026): the CDC app compared | Blou",
+      "description": "Blou vs quitSTART, honestly compared: Blou is an iPhone subscription app that shows your recovery; quitSTART is a free, government-backed app.",
+      "h1": "Blou vs quitSTART",
       "keywordsMeta": [
-        "quit smoking Alabama",
-        "free nicotine patches Alabama",
-        "Alabama quitline",
-        "cigarette tax Alabama",
-        "cigarette prices in Alabama"
+        "blou vs quitstart",
+        "quitstart app review",
+        "CDC quit smoking app",
+        "quitstart vs blou",
+        "best free quit smoking app",
+        "quit smoking app comparison"
       ],
-      "published": "2026-10-15",
-      "modified": "2026-10-15",
+      "published": "2026-05-20",
+      "modified": "2026-10-13",
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -4364,24 +4395,20 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 803,
+      "words": 839,
       "faqCount": 5,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/quit-smoking-help",
+        "/best-quit-smoking-apps",
         "/go/app",
+        "/guides/what-happens-after-1-week",
         "/how-to-quit-smoking",
-        "/quit-smoking-timeline",
-        "/quit-smoking-help/alaska",
-        "/quit-smoking-help/arizona",
-        "/quit-smoking-help/arkansas",
-        "/quit-smoking-help/west-virginia",
-        "/quit-smoking-help/wisconsin",
-        "/quit-smoking-help/wyoming"
+        "/prepare-to-quit-smoking",
+        "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 7,
-      "primaryKeyword": "quit smoking Alabama",
+      "linkedFrom": 2,
+      "primaryKeyword": "blou vs quitstart",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -4391,40 +4418,38 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 7,
+        "impressions": 5,
         "ctr": 0,
-        "position": 20.6,
+        "position": 4.8,
         "prev": {
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 38
+          "position": 2.7
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": [
-        "page-2"
-      ]
+      "lastChecked": "2026-11-26",
+      "issues": []
     },
     {
-      "url": "/guides/sore-gums",
+      "url": "/guides/increased-appetite",
       "section": "guide",
       "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "How long do sore gums last after quitting smoking? | Blou",
-      "description": "Quitting is usually good for gums, but the transition can reveal existing gum disease that smoking had masked. Treat this as a \u2018get ahead of dental health\u2019 moment, not a failure.",
-      "h1": "How long do sore gums last after quitting smoking?",
+      "title": "Increased appetite after quitting smoking: how long? | Blou",
+      "description": "Hunger after quitting is expected and manageable. The winning strategy is structure: planned snacks, protein/fiber, and replacing “hand-to-mouth” smoking moments intentionally.",
+      "h1": "How long does increased appetite last after quitting smoking?",
       "keywordsMeta": [
-        "sore gums after quitting smoking",
+        "increased appetite after quitting smoking",
         "quit smoking",
         "nicotine withdrawal",
-        "sore gums"
+        "increased appetite"
       ],
       "published": "2026-05-08",
       "modified": "2026-05-08",
@@ -4438,22 +4463,22 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 800,
+      "words": 812,
       "faqCount": 3,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
         "/guides",
         "/go/app",
-        "/guides/dry-mouth",
-        "/guides/mouth-ulcers",
+        "/quit-smoking-without-gaining-weight",
+        "/guides/cravings",
         "/guides/what-happens-after-1-week",
-        "/prepare-to-quit-smoking",
+        "/tools/money-saved",
         "/quit-smoking-timeline",
         "/tools"
       ],
-      "linkedFrom": 4,
-      "primaryKeyword": "sore gums after quitting smoking",
+      "linkedFrom": 6,
+      "primaryKeyword": "increased appetite after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -4463,29 +4488,23 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 5,
         "ctr": 0,
-        "position": 8.3,
+        "position": 8.2,
         "prev": {
-          "clicks": 0,
-          "impressions": 12,
-          "ctr": 0,
-          "position": 16.3
+          "clicks": 1,
+          "impressions": 42,
+          "ctr": 0.0238,
+          "position": 9.3
         },
         "topQueries": []
       },
-      "amplitude": {
-        "page": "/guides/sore-gums",
-        "views": 2,
-        "appStoreClicks": 0,
-        "toolInputs": 0,
-        "clickRate": 0
-      },
-      "lastChecked": "2026-11-25",
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4536,8 +4555,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 4,
@@ -4547,152 +4566,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": []
-    },
-    {
-      "url": "/guides/caffeine-sensitivity",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "Caffeine sensitivity after quitting smoking | Blou",
-      "description": "Caffeine \u201chits harder\u201d after quitting for a real pharmacology reason. Adjusting coffee is one of the fastest ways to improve sleep, anxiety, and palpitations during quitting.",
-      "h1": "How long does caffeine sensitivity last after quitting smoking?",
-      "keywordsMeta": [
-        "caffeine sensitivity after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "caffeine sensitivity"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 836,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/dreams-and-sleep",
-        "/guides/insomnia",
-        "/quit-smoking-with-anxiety",
-        "/guides/heart-palpitations",
-        "/guides/nausea",
-        "/guides/what-happens-after-1-week",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 2,
-      "primaryKeyword": "caffeine sensitivity after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 10.3,
-        "prev": {
-          "clicks": 1,
-          "impressions": 38,
-          "ctr": 0.0263,
-          "position": 7.7
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": [
-        "page-2"
-      ]
-    },
-    {
-      "url": "/guides/restlessness",
-      "section": "guide",
-      "source": "src/lib/blouGuides.ts",
-      "status": "live",
-      "title": "How long does restlessness last after quitting smoking?",
-      "description": "Restlessness is your nervous system recalibrating without nicotine. The fastest relief usually comes from scheduled movement, earlier caffeine cutoff, and predictable daily structure.",
-      "h1": "How long does restlessness last after quitting smoking?",
-      "keywordsMeta": [
-        "restlessness after quitting smoking",
-        "quit smoking",
-        "nicotine withdrawal",
-        "restlessness"
-      ],
-      "published": "2026-05-08",
-      "modified": "2026-05-08",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "MedicalWebPage",
-        "Article",
-        "WebPage",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 767,
-      "faqCount": 3,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/guides",
-        "/go/app",
-        "/guides/insomnia",
-        "/quit-smoking-with-anxiety",
-        "/guides/cravings",
-        "/guides/what-happens-after-3-days",
-        "/how-to-stop-a-relapse",
-        "/quit-smoking-timeline",
-        "/tools"
-      ],
-      "linkedFrom": 4,
-      "primaryKeyword": "restlessness after quitting smoking",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 8.8,
-        "prev": {
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 8.2
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4762,8 +4636,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 4,
@@ -4784,7 +4658,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4834,8 +4708,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 3,
@@ -4845,7 +4719,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4896,8 +4770,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 3,
@@ -4907,7 +4781,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -4916,7 +4790,7 @@
       "source": "src/app/how-to-stop-a-relapse/page.tsx",
       "status": "live",
       "title": "How to stop a relapse and recover your quit | Blou",
-      "description": "Smoking again after a quit doesn\u2019t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
+      "description": "Smoking again after a quit doesn’t erase your progress forever. Re-set your plan with medication, support, cue changes, and shame-free accountability.",
       "h1": "How to stop a relapse and recover your quit",
       "keywordsMeta": [
         "quit smoking relapse recovery",
@@ -4959,8 +4833,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 3,
@@ -4968,83 +4842,15 @@
         "position": 8.3,
         "prev": {
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 15,
           "ctr": 0,
-          "position": 36.5
+          "position": 34.5
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
-    },
-    {
-      "url": "/quit-smoking-app-android",
-      "section": "landing",
-      "source": "src/app/quit-smoking-app-android/page.tsx",
-      "status": "live",
-      "title": "Quit smoking app for Android: options today | Blou",
-      "description": "Looking for a quit smoking app on Android? Solid cross-platform picks you can install today, plus an honest note: Blou is iPhone-only for now.",
-      "h1": "Quit smoking app for Android",
-      "keywordsMeta": [
-        "quit smoking app android",
-        "android quit smoking app",
-        "stop smoking app android",
-        "quit tracker android"
-      ],
-      "published": "2026-05-13",
-      "modified": "2026-10-13",
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "MobileApplication",
-        "Article",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "words": 590,
-      "faqCount": 4,
-      "appStoreCtas": 3,
-      "internalLinksOut": [
-        "/",
-        "/best-quit-smoking-apps",
-        "/go/app",
-        "/how-to-quit-smoking",
-        "/guides",
-        "/tools/money-saved",
-        "/quit-smoking-app-for-iphone"
-      ],
-      "linkedFrom": 3,
-      "primaryKeyword": "quit smoking app android",
-      "secondaryKeywords": null,
-      "intent": null,
-      "funnelStage": null,
-      "priority": null,
-      "linearIssue": null,
-      "notes": null,
-      "suppressUntil": null,
-      "gsc": {
-        "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
-        },
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 11.7,
-        "prev": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 16.3
-        },
-        "topQueries": []
-      },
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
-      "issues": [
-        "page-2"
-      ]
     },
     {
       "url": "/quit-smoking-help/colorado",
@@ -5098,8 +4904,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 3,
@@ -5116,7 +4922,7 @@
         ]
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5175,8 +4981,8 @@
       "suppressUntil": "2026-12-01",
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 3,
@@ -5191,7 +4997,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5238,8 +5044,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 2,
@@ -5254,49 +5060,53 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/blou-vs-quitstart",
-      "section": "comparison",
-      "source": "src/app/blou-vs-quitstart/page.tsx",
+      "url": "/guides/caffeine-sensitivity",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
       "status": "live",
-      "title": "Blou vs quitSTART (2026): the CDC app compared | Blou",
-      "description": "Blou vs quitSTART, honestly compared: Blou is an iPhone subscription app that shows your recovery; quitSTART is a free, government-backed app.",
-      "h1": "Blou vs quitSTART",
+      "title": "Caffeine sensitivity after quitting smoking | Blou",
+      "description": "Caffeine “hits harder” after quitting for a real pharmacology reason. Adjusting coffee is one of the fastest ways to improve sleep, anxiety, and palpitations during quitting.",
+      "h1": "How long does caffeine sensitivity last after quitting smoking?",
       "keywordsMeta": [
-        "blou vs quitstart",
-        "quitstart app review",
-        "CDC quit smoking app",
-        "quitstart vs blou",
-        "best free quit smoking app",
-        "quit smoking app comparison"
+        "caffeine sensitivity after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "caffeine sensitivity"
       ],
-      "published": "2026-05-20",
-      "modified": "2026-10-13",
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
+        "MedicalWebPage",
         "Article",
+        "WebPage",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 839,
-      "faqCount": 5,
+      "words": 836,
+      "faqCount": 3,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/best-quit-smoking-apps",
+        "/guides",
         "/go/app",
+        "/guides/dreams-and-sleep",
+        "/guides/insomnia",
+        "/quit-smoking-with-anxiety",
+        "/guides/heart-palpitations",
+        "/guides/nausea",
         "/guides/what-happens-after-1-week",
-        "/how-to-quit-smoking",
-        "/prepare-to-quit-smoking",
-        "/quit-smoking-app-for-iphone"
+        "/quit-smoking-timeline",
+        "/tools"
       ],
       "linkedFrom": 2,
-      "primaryKeyword": "blou vs quitstart",
+      "primaryKeyword": "caffeine sensitivity after quitting smoking",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
@@ -5306,87 +5116,89 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
-        "position": 5.5,
+        "position": 10,
         "prev": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 4.7
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.0263,
+          "position": 8
         },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
-      "url": "/how-long-does-nicotine-stay-in-your-system",
-      "section": "article",
-      "source": "src/app/how-long-does-nicotine-stay-in-your-system/page.tsx",
+      "url": "/quit-smoking-app-android",
+      "section": "landing",
+      "source": "src/app/quit-smoking-app-android/page.tsx",
       "status": "live",
-      "title": "How long does nicotine stay in your system? | Blou",
-      "description": "Nicotine's half-life is 0.5\u20133 hours and cotinine's is about 15\u201320 hours. See what tests look for, how fast levels fall, and when withdrawal eases.",
-      "h1": "How long does nicotine stay in your system?",
+      "title": "Quit smoking app for Android: options today | Blou",
+      "description": "Looking for a quit smoking app on Android? Solid cross-platform picks you can install today, plus an honest note: Blou is iPhone-only for now.",
+      "h1": "Quit smoking app for Android",
       "keywordsMeta": [
-        "how long does nicotine stay in your system",
-        "how long does it take nicotine to leave your system",
-        "how long does nicotine stay in blood",
-        "nicotine urine test how long",
-        "cotinine detection time"
+        "quit smoking app android",
+        "android quit smoking app",
+        "stop smoking app android",
+        "quit tracker android"
       ],
-      "published": "2026-05-20",
-      "modified": "2026-11-12",
+      "published": "2026-05-13",
+      "modified": "2026-10-13",
       "schemaTypes": [
         "Organization",
         "WebSite",
         "MobileApplication",
-        "MedicalWebPage",
         "Article",
         "BreadcrumbList",
         "FAQPage"
       ],
-      "words": 1554,
-      "faqCount": 8,
+      "words": 590,
+      "faqCount": 4,
       "appStoreCtas": 3,
       "internalLinksOut": [
         "/",
-        "/nicotine-withdrawal-timeline",
+        "/best-quit-smoking-apps",
         "/go/app",
-        "/guides/what-happens-after-1-day",
-        "/guides/what-happens-after-3-days",
-        "/quit-smoking-timeline",
-        "/zyn-withdrawal",
+        "/how-to-quit-smoking",
+        "/guides",
+        "/tools/money-saved",
         "/quit-smoking-app-for-iphone"
       ],
-      "linkedFrom": 4,
-      "primaryKeyword": "how long does nicotine stay in your system",
+      "linkedFrom": 3,
+      "primaryKeyword": "quit smoking app android",
       "secondaryKeywords": null,
       "intent": null,
       "funnelStage": null,
       "priority": null,
-      "linearIssue": "BLO-53",
+      "linearIssue": null,
       "notes": null,
-      "suppressUntil": "2026-12-03",
+      "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 46,
-        "prev": null,
+        "position": 4,
+        "prev": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 19
+        },
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5436,8 +5248,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 1,
@@ -5452,7 +5264,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -5506,8 +5318,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 1,
@@ -5517,7 +5329,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -5528,7 +5340,7 @@
       "source": "src/app/vaping-and-smoking-together/page.tsx",
       "status": "live",
       "title": "Vaping and smoking together: how to quit dual use | Blou",
-      "description": "If you vape and still smoke cigarettes, you are in \u201cdual use.\u201d A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
+      "description": "If you vape and still smoke cigarettes, you are in “dual use.” A simple way to pick one quit path, reduce risk, and use tracking so progress sticks.",
       "h1": "Vaping and smoking together",
       "keywordsMeta": [
         "vape and smoke",
@@ -5569,8 +5381,8 @@
       "suppressUntil": null,
       "gsc": {
         "window": {
-          "start": "2026-10-24",
-          "end": "2026-11-20"
+          "start": "2026-10-27",
+          "end": "2026-11-23"
         },
         "clicks": 0,
         "impressions": 1,
@@ -5585,7 +5397,7 @@
         "topQueries": []
       },
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -5627,7 +5439,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "orphan"
       ]
@@ -5682,7 +5494,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5728,7 +5540,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5775,7 +5587,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5839,7 +5651,7 @@
       "suppressUntil": "2026-12-10",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -5887,7 +5699,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -5942,7 +5754,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -5992,7 +5804,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -6048,7 +5860,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -6105,7 +5917,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6114,7 +5926,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does bad breath last after quitting smoking? | Blou",
-      "description": "Most people get better breath quickly after quitting. If you don\u2019t, it\u2019s usually a fixable oral-health or reflux issue\u2014not a reason to relapse.",
+      "description": "Most people get better breath quickly after quitting. If you don’t, it’s usually a fixable oral-health or reflux issue—not a reason to relapse.",
       "h1": "How long does bad breath last after quitting smoking?",
       "keywordsMeta": [
         "bad breath after quitting smoking",
@@ -6159,7 +5971,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6214,7 +6026,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6223,7 +6035,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does brain fog last after quitting smoking? | Blou",
-      "description": "Brain fog is a short-term effect of nicotine withdrawal, not a long-term trade-off. Thinking usually sharpens within 2\u20134 weeks and keeps improving.",
+      "description": "Brain fog is a short-term effect of nicotine withdrawal, not a long-term trade-off. Thinking usually sharpens within 2–4 weeks and keeps improving.",
       "h1": "How long does brain fog last after quitting smoking?",
       "keywordsMeta": [
         "brain fog after quitting smoking",
@@ -6267,7 +6079,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6276,7 +6088,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does chest tightness last after quitting smoking?",
-      "description": "Chest tightness is common enough in early quitting to be a known worry, but it is also a symptom you should not minimize if it\u2019s severe or worsening. The safest rule: expect gradual improvement\u2014escalate quickly for red flags.",
+      "description": "Chest tightness is common enough in early quitting to be a known worry, but it is also a symptom you should not minimize if it’s severe or worsening. The safest rule: expect gradual improvement—escalate quickly for red flags.",
       "h1": "How long does chest tightness last after quitting smoking?",
       "keywordsMeta": [
         "chest tightness after quitting smoking",
@@ -6322,7 +6134,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6331,7 +6143,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Can't concentrate after quitting smoking: what's happening",
-      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom\u2014nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
+      "description": "Poor concentration after quitting smoking is a direct withdrawal symptom—nicotine provided a real cognitive boost, and its absence is felt. This is temporary; attention and focus return within weeks.",
       "h1": "Can't concentrate after quitting smoking: what's happening",
       "keywordsMeta": [
         "can't concentrate after quitting smoking",
@@ -6383,7 +6195,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6392,7 +6204,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does constipation last after quitting smoking?",
-      "description": "Many quitters get constipated because nicotine used to stimulate bowel activity. The fix is usually simple\u2014hydration, fiber, and movement\u2014while the body recalibrates.",
+      "description": "Many quitters get constipated because nicotine used to stimulate bowel activity. The fix is usually simple—hydration, fiber, and movement—while the body recalibrates.",
       "h1": "How long does constipation last after quitting smoking?",
       "keywordsMeta": [
         "constipation after quitting smoking",
@@ -6446,7 +6258,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6455,7 +6267,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a cough last after quitting smoking? | Blou",
-      "description": "Most post-quit coughs are temporary and productive \u2014 the lungs are clearing years of mucus and debris. Duration is usually weeks, occasionally months.",
+      "description": "Most post-quit coughs are temporary and productive — the lungs are clearing years of mucus and debris. Duration is usually weeks, occasionally months.",
       "h1": "How long does a cough last after quitting smoking?",
       "keywordsMeta": [
         "cough after quitting smoking",
@@ -6499,7 +6311,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6554,7 +6366,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6609,7 +6421,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6618,7 +6430,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does dry mouth last after quitting smoking? | Blou",
-      "description": "Dry mouth is uncomfortable but fixable. Most relief comes from simple routines: water, sugar-free gum, and reducing late caffeine while your mouth\u2019s natural defenses rebound.",
+      "description": "Dry mouth is uncomfortable but fixable. Most relief comes from simple routines: water, sugar-free gum, and reducing late caffeine while your mouth’s natural defenses rebound.",
       "h1": "How long does dry mouth last after quitting smoking?",
       "keywordsMeta": [
         "dry mouth after quitting smoking",
@@ -6663,7 +6475,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6723,7 +6535,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6732,7 +6544,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "Flu-like symptoms when quitting smoking: what's normal",
-      "description": "Many quitters feel like they have a mild flu in the first week. This is a combination of nicotine withdrawal symptoms\u2014body aches, fatigue, headache, sore throat, and sometimes a productive cough\u2014not an actual infection. It passes.",
+      "description": "Many quitters feel like they have a mild flu in the first week. This is a combination of nicotine withdrawal symptoms—body aches, fatigue, headache, sore throat, and sometimes a productive cough—not an actual infection. It passes.",
       "h1": "Flu-like symptoms when quitting smoking: what's normal",
       "keywordsMeta": [
         "flu symptoms after quitting smoking",
@@ -6778,7 +6590,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6831,7 +6643,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6840,7 +6652,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do headaches last after quitting smoking? | Blou",
-      "description": "Quit headaches are common but short. They track the same 2\u201314 day withdrawal window as the rest of the acute symptoms.",
+      "description": "Quit headaches are common but short. They track the same 2–14 day withdrawal window as the rest of the acute symptoms.",
       "h1": "How long do headaches last after quitting smoking?",
       "keywordsMeta": [
         "headaches after quitting smoking",
@@ -6890,7 +6702,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -6944,7 +6756,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7000,7 +6812,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7054,7 +6866,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7115,7 +6927,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7169,7 +6981,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7178,7 +6990,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do mouth ulcers last after quitting smoking? | Blou",
-      "description": "Mouth ulcers are a common early-quit annoyance. Most resolve with gentle care, but persistent or unusual sores deserve a dentist\u2019s evaluation\u2014especially if you have a long smoking history.",
+      "description": "Mouth ulcers are a common early-quit annoyance. Most resolve with gentle care, but persistent or unusual sores deserve a dentist’s evaluation—especially if you have a long smoking history.",
       "h1": "How long do mouth ulcers last after quitting smoking?",
       "keywordsMeta": [
         "mouth ulcers after quitting smoking",
@@ -7223,7 +7035,62 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/guides/restlessness",
+      "section": "guide",
+      "source": "src/lib/blouGuides.ts",
+      "status": "live",
+      "title": "How long does restlessness last after quitting smoking?",
+      "description": "Restlessness is your nervous system recalibrating without nicotine. The fastest relief usually comes from scheduled movement, earlier caffeine cutoff, and predictable daily structure.",
+      "h1": "How long does restlessness last after quitting smoking?",
+      "keywordsMeta": [
+        "restlessness after quitting smoking",
+        "quit smoking",
+        "nicotine withdrawal",
+        "restlessness"
+      ],
+      "published": "2026-05-08",
+      "modified": "2026-05-08",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 767,
+      "faqCount": 3,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/guides",
+        "/go/app",
+        "/guides/insomnia",
+        "/quit-smoking-with-anxiety",
+        "/guides/cravings",
+        "/guides/what-happens-after-3-days",
+        "/how-to-stop-a-relapse",
+        "/quit-smoking-timeline",
+        "/tools"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "restlessness after quitting smoking",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": null,
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7276,7 +7143,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7285,7 +7152,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does sinus congestion last after quitting smoking?",
-      "description": "Sinus congestion after quitting is usually a short recovery/allergy overlap rather than a dangerous detox. Expect gradual improvement\u2014escalate if you see infection red flags.",
+      "description": "Sinus congestion after quitting is usually a short recovery/allergy overlap rather than a dangerous detox. Expect gradual improvement—escalate if you see infection red flags.",
       "h1": "How long does sinus congestion last after quitting smoking?",
       "keywordsMeta": [
         "sinus congestion after quitting smoking",
@@ -7330,7 +7197,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7383,7 +7250,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7392,7 +7259,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a skin rash last after quitting smoking?",
-      "description": "Don\u2019t assume every rash is withdrawal. Identify triggers (new lotions, detergents, NRT adhesives) and treat symptoms. Escalate quickly if it\u2019s severe, spreading fast, or associated with swelling or breathing symptoms.",
+      "description": "Don’t assume every rash is withdrawal. Identify triggers (new lotions, detergents, NRT adhesives) and treat symptoms. Escalate quickly if it’s severe, spreading fast, or associated with swelling or breathing symptoms.",
       "h1": "How long does a skin rash last after quitting smoking?",
       "keywordsMeta": [
         "skin rash after quitting smoking",
@@ -7437,7 +7304,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7497,7 +7364,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7506,7 +7373,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long does a sore throat last after quitting smoking?",
-      "description": "Your throat notices healing before it celebrates it\u2014irritated tissue plus productive cough reflexes can coexist. Hydration and gentle coughing hygiene usually shorten misery.",
+      "description": "Your throat notices healing before it celebrates it—irritated tissue plus productive cough reflexes can coexist. Hydration and gentle coughing hygiene usually shorten misery.",
       "h1": "How long does a sore throat last after quitting smoking?",
       "keywordsMeta": [
         "sore throat after quitting smoking",
@@ -7551,7 +7418,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7560,7 +7427,7 @@
       "source": "src/lib/blouGuides.ts",
       "status": "live",
       "title": "How long do sugar cravings last after quitting smoking?",
-      "description": "Sugar cravings are predictable and beatable. The goal is not perfection\u2014it\u2019s having planned alternatives so sweet cravings don\u2019t become a relapse trigger.",
+      "description": "Sugar cravings are predictable and beatable. The goal is not perfection—it’s having planned alternatives so sweet cravings don’t become a relapse trigger.",
       "h1": "How long do sugar cravings last after quitting smoking?",
       "keywordsMeta": [
         "sugar cravings after quitting smoking",
@@ -7606,7 +7473,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7661,7 +7528,7 @@
       "suppressUntil": "2026-11-27",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7716,7 +7583,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7770,7 +7637,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7823,7 +7690,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7876,7 +7743,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7930,7 +7797,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -7990,7 +7857,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8049,7 +7916,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8103,7 +7970,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8165,7 +8032,60 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
+      "issues": []
+    },
+    {
+      "url": "/how-long-does-nicotine-stay-in-your-system",
+      "section": "article",
+      "source": "src/app/how-long-does-nicotine-stay-in-your-system/page.tsx",
+      "status": "live",
+      "title": "How long does nicotine stay in your system? | Blou",
+      "description": "Nicotine's half-life is 0.5–3 hours and cotinine's is about 15–20 hours. See what tests look for, how fast levels fall, and when withdrawal eases.",
+      "h1": "How long does nicotine stay in your system?",
+      "keywordsMeta": [
+        "how long does nicotine stay in your system",
+        "how long does it take nicotine to leave your system",
+        "how long does nicotine stay in blood",
+        "nicotine urine test how long",
+        "cotinine detection time"
+      ],
+      "published": "2026-05-20",
+      "modified": "2026-11-12",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1554,
+      "faqCount": 8,
+      "appStoreCtas": 3,
+      "internalLinksOut": [
+        "/",
+        "/nicotine-withdrawal-timeline",
+        "/go/app",
+        "/guides/what-happens-after-1-day",
+        "/guides/what-happens-after-3-days",
+        "/quit-smoking-timeline",
+        "/zyn-withdrawal",
+        "/quit-smoking-app-for-iphone"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "how long does nicotine stay in your system",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": "BLO-53",
+      "notes": null,
+      "suppressUntil": "2026-12-03",
+      "gsc": null,
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8174,7 +8094,7 @@
       "source": "src/app/how-to-help-someone-quit-smoking/page.tsx",
       "status": "live",
       "title": "How to help someone quit smoking (without nagging) | Blou",
-      "description": "Practical support for partners and friends: what helps, what backfires, scripts for cravings, and how a quit app can be part of the system\u2014not a lecture.",
+      "description": "Practical support for partners and friends: what helps, what backfires, scripts for cravings, and how a quit app can be part of the system—not a lecture.",
       "h1": "How to help someone quit smoking",
       "keywordsMeta": [
         "how to help someone quit smoking",
@@ -8214,7 +8134,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8224,9 +8144,9 @@
       "section": "article",
       "source": "src/app/i-smoked-one-cigarette/page.tsx",
       "status": "live",
-      "title": "I smoked one cigarette\u2014what to do next | Blou",
+      "title": "I smoked one cigarette—what to do next | Blou",
       "description": "A slip is not the same as starting over. Here is what to do in the first hour, how to avoid an all-or-nothing spiral, and when to get extra help.",
-      "h1": "I smoked one cigarette\u2014what to do next",
+      "h1": "I smoked one cigarette—what to do next",
       "keywordsMeta": [
         "I smoked one cigarette",
         "smoked one cigarette after quitting",
@@ -8268,7 +8188,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8277,7 +8197,7 @@
       "source": "src/app/is-it-too-late-to-quit-smoking/page.tsx",
       "status": "live",
       "title": "Is it too late to quit smoking? Benefits at any age | Blou",
-      "description": "No\u2014quitting has meaningful benefits at any adult age. Here is what changes first, what to ask your clinician, and how tracking keeps momentum.",
+      "description": "No—quitting has meaningful benefits at any adult age. Here is what changes first, what to ask your clinician, and how tracking keeps momentum.",
       "h1": "Is it too late to quit smoking?",
       "keywordsMeta": [
         "is it too late to quit smoking",
@@ -8320,7 +8240,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8331,7 +8251,7 @@
       "source": "src/app/motivation-to-quit-smoking/page.tsx",
       "status": "live",
       "title": "Motivation to quit smoking: turn it into a plan | Blou",
-      "description": "Motivation spikes and fades\u2014use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
+      "description": "Motivation spikes and fades—use these prompts to lock a quit date, list reasons that survive cravings, and pair them with apps, quitlines, and medications.",
       "h1": "Motivation to quit smoking",
       "keywordsMeta": [
         "motivation to quit smoking",
@@ -8375,7 +8295,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8434,7 +8354,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8444,9 +8364,9 @@
       "section": "article",
       "source": "src/app/nicotine-withdrawal-timeline/page.tsx",
       "status": "live",
-      "title": "Nicotine withdrawal timeline: days 1\u201330 explained | Blou",
+      "title": "Nicotine withdrawal timeline: days 1–30 explained | Blou",
       "description": "A simple nicotine withdrawal timeline from day 1 to day 30: cravings, sleep, mood, and what helps, with links to day-by-day milestones and symptom guides.",
-      "h1": "Nicotine withdrawal timeline (days 1\u201330)",
+      "h1": "Nicotine withdrawal timeline (days 1–30)",
       "keywordsMeta": [
         "nicotine withdrawal timeline",
         "nicotine withdrawal symptoms timeline",
@@ -8494,7 +8414,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8545,7 +8465,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8614,7 +8534,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8652,7 +8572,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8713,7 +8633,7 @@
       "suppressUntil": "2026-11-23",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8763,7 +8683,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8774,7 +8694,7 @@
       "source": "src/app/quit-smoking-cold-turkey/page.tsx",
       "status": "live",
       "title": "Quit smoking cold turkey: when it works + safer plan | Blou",
-      "description": "Thinking about quitting smoking cold turkey? Here\u2019s when it works, when to add NRT/medication support, and a simple plan for days 1\u201314.",
+      "description": "Thinking about quitting smoking cold turkey? Here’s when it works, when to add NRT/medication support, and a simple plan for days 1–14.",
       "h1": "Quit smoking cold turkey",
       "keywordsMeta": [
         "quit smoking cold turkey",
@@ -8819,7 +8739,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -8876,7 +8796,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8931,7 +8851,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -8992,7 +8912,7 @@
         "toolInputs": 0,
         "clickRate": 0
       },
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9047,7 +8967,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9102,7 +9022,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9157,7 +9077,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9212,7 +9132,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9267,7 +9187,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9322,7 +9242,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9331,7 +9251,7 @@
       "source": null,
       "status": "live",
       "title": "Free help to quit smoking in Hawaii | Blou",
-      "description": "Hawai\u02bbi Tobacco Quitline, free nicotine patches, and what smoking costs in Hawaii: $3.20 state tax per pack. Sourced from CDC data.",
+      "description": "Hawaiʻi Tobacco Quitline, free nicotine patches, and what smoking costs in Hawaii: $3.20 state tax per pack. Sourced from CDC data.",
       "h1": "Free help to quit smoking in Hawaii",
       "keywordsMeta": [
         "quit smoking Hawaii",
@@ -9377,7 +9297,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9432,7 +9352,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9487,7 +9407,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9542,7 +9462,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9597,7 +9517,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9652,7 +9572,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9707,7 +9627,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9762,7 +9682,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9817,7 +9737,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9872,7 +9792,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9927,7 +9847,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -9982,7 +9902,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10037,7 +9957,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10092,7 +10012,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10147,7 +10067,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10202,7 +10122,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10257,7 +10177,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10312,7 +10232,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10367,7 +10287,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10422,7 +10342,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10477,7 +10397,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10532,7 +10452,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10587,7 +10507,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10642,7 +10562,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10697,7 +10617,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10752,7 +10672,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10807,7 +10727,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10862,7 +10782,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10917,7 +10837,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -10972,7 +10892,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11027,7 +10947,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11082,7 +11002,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11137,7 +11057,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11192,7 +11112,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11247,7 +11167,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11302,7 +11222,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11357,7 +11277,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11412,7 +11332,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11473,7 +11393,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11523,7 +11443,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -11575,7 +11495,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -11633,7 +11553,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11688,7 +11608,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11697,7 +11617,7 @@
       "source": "src/app/quit-smoking-with-bupropion/page.tsx",
       "status": "live",
       "title": "Wellbutrin for quitting smoking (bupropion) | Blou",
-      "description": "Wellbutrin for quitting smoking (bupropion): you need a prescription, start 1\u20132 weeks before your quit day, take it about 12 weeks. Side effects and the patch.",
+      "description": "Wellbutrin for quitting smoking (bupropion): you need a prescription, start 1–2 weeks before your quit day, take it about 12 weeks. Side effects and the patch.",
       "h1": "Wellbutrin for quitting smoking: how bupropion works",
       "keywordsMeta": [
         "wellbutrin for quitting smoking",
@@ -11749,7 +11669,7 @@
       "suppressUntil": "2026-11-26",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11806,7 +11726,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11866,7 +11786,7 @@
       "suppressUntil": "2026-12-02",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11928,7 +11848,7 @@
       "suppressUntil": "2026-11-24",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -11937,7 +11857,7 @@
       "source": "src/app/quit-smoking-with-varenicline/page.tsx",
       "status": "live",
       "title": "Quit smoking with varenicline (Chantix / Champix) | Blou",
-      "description": "What varenicline is for, how it fits a quit plan, side effects to discuss with a clinician, and how a quit app supports cravings and routines\u2014not dosing.",
+      "description": "What varenicline is for, how it fits a quit plan, side effects to discuss with a clinician, and how a quit app supports cravings and routines—not dosing.",
       "h1": "Quit smoking with varenicline (Chantix / Champix)",
       "keywordsMeta": [
         "varenicline quit smoking",
@@ -11980,7 +11900,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -12035,7 +11955,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -12046,7 +11966,7 @@
       "source": "src/app/quit-smoking-without-nrt/page.tsx",
       "status": "live",
       "title": "Quit smoking without NRT: what actually improves odds | Blou",
-      "description": "If you prefer not to use nicotine replacement, stack quitlines, cue planning, sleep, and a tracker app\u2014plus know when to reconsider NRT with a clinician.",
+      "description": "If you prefer not to use nicotine replacement, stack quitlines, cue planning, sleep, and a tracker app—plus know when to reconsider NRT with a clinician.",
       "h1": "Quit smoking without NRT",
       "keywordsMeta": [
         "quit smoking without NRT",
@@ -12089,7 +12009,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -12142,7 +12062,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12194,7 +12114,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12249,7 +12169,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12305,7 +12225,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12314,7 +12234,7 @@
       "source": "src/app/social-smoking/page.tsx",
       "status": "live",
       "title": "Social smoking: am I addicted if I smoke sometimes? | Blou",
-      "description": "\u201cOnly on weekends\u201d still exposes you to nicotine and smoke. How social patterns become dependence, what to watch, and how to quit without the label.",
+      "description": "“Only on weekends” still exposes you to nicotine and smoke. How social patterns become dependence, what to watch, and how to quit without the label.",
       "h1": "Social smoking: am I addicted?",
       "keywordsMeta": [
         "social smoking",
@@ -12357,7 +12277,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12407,7 +12327,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -12418,7 +12338,7 @@
       "source": "src/app/stress-smoking-quit-plan/page.tsx",
       "status": "live",
       "title": "Stress smoking: a quit plan that survives hard weeks | Blou",
-      "description": "If stress is your #1 smoking cue, you need a different default than \u201cwhite knuckle.\u201d Build micro-breaks, sleep protection, and a fast craving app loop.",
+      "description": "If stress is your #1 smoking cue, you need a different default than “white knuckle.” Build micro-breaks, sleep protection, and a fast craving app loop.",
       "h1": "Stress smoking: a quit plan",
       "keywordsMeta": [
         "stress smoking",
@@ -12460,7 +12380,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
@@ -12515,7 +12435,7 @@
       "suppressUntil": "2026-12-16",
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12553,7 +12473,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12562,7 +12482,7 @@
       "source": "src/app/tools/lung-recovery/page.tsx",
       "status": "live",
       "title": "Lung recovery timeline visualizer (free) | Blou",
-      "description": "Enter your smoke-free days and see which recovery milestones you've reached \u2014 based on NHS, CDC, and Surgeon General public guidance.",
+      "description": "Enter your smoke-free days and see which recovery milestones you've reached — based on NHS, CDC, and Surgeon General public guidance.",
       "h1": "Lung recovery timeline visualizer",
       "keywordsMeta": [
         "lung recovery timeline",
@@ -12607,7 +12527,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12660,7 +12580,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12710,8 +12630,14 @@
       "notes": null,
       "suppressUntil": null,
       "gsc": null,
-      "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "amplitude": {
+        "page": "/tools/nicotine-pouch-calculator",
+        "views": 1,
+        "appStoreClicks": 0,
+        "toolInputs": 1,
+        "clickRate": 0
+      },
+      "lastChecked": "2026-11-26",
       "issues": []
     },
     {
@@ -12720,7 +12646,7 @@
       "source": "src/app/trying-to-quit-smoking-again/page.tsx",
       "status": "live",
       "title": "Trying to quit smoking again: a smarter next attempt | Blou",
-      "description": "Multiple quit attempts are normal. Here\u2019s how to learn from the last one\u2014new quit date, cue fixes, medication review, and slip protocols.",
+      "description": "Multiple quit attempts are normal. Here’s how to learn from the last one—new quit date, cue fixes, medication review, and slip protocols.",
       "h1": "Trying to quit smoking again",
       "keywordsMeta": [
         "trying to quit smoking again",
@@ -12764,19 +12690,70 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]
+    },
+    {
+      "url": "/vape-withdrawal-symptoms",
+      "section": "article",
+      "source": "src/app/vape-withdrawal-symptoms/page.tsx",
+      "status": "live",
+      "title": "Vape withdrawal symptoms: what to expect, how long | Blou",
+      "description": "Vape withdrawal symptoms explained: cravings, irritability, headaches, sleep and hunger changes. How long vape withdrawal lasts and what helps.",
+      "h1": "Vape withdrawal symptoms",
+      "keywordsMeta": [
+        "vape withdrawal symptoms",
+        "how long does vape withdrawal last",
+        "side effects of quitting vaping",
+        "nicotine withdrawal from vaping",
+        "quitting vaping symptoms"
+      ],
+      "published": "2026-10-15",
+      "modified": "2026-10-15",
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "MobileApplication",
+        "MedicalWebPage",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "words": 1799,
+      "faqCount": 7,
+      "appStoreCtas": 2,
+      "internalLinksOut": [
+        "/",
+        "/quit-vaping-timeline",
+        "/nicotine-withdrawal-timeline",
+        "/go/app",
+        "/vaping-and-smoking-together",
+        "/quit-vaping"
+      ],
+      "linkedFrom": 4,
+      "primaryKeyword": "vape withdrawal symptoms",
+      "secondaryKeywords": null,
+      "intent": null,
+      "funnelStage": null,
+      "priority": null,
+      "linearIssue": null,
+      "notes": null,
+      "suppressUntil": null,
+      "gsc": null,
+      "amplitude": null,
+      "lastChecked": "2026-11-26",
+      "issues": []
     },
     {
       "url": "/why-cant-i-quit-smoking",
       "section": "article",
       "source": "src/app/why-cant-i-quit-smoking/page.tsx",
       "status": "live",
-      "title": "Why can\u2019t I quit smoking? The 3 usual reasons | Blou",
-      "description": "Nicotine dependence, cue triggers, and shame loops explain most \u201cI can\u2019t quit\u201d feelings. A practical reset: medication options, cue planning, and tracking.",
-      "h1": "Why can\u2019t I quit smoking?",
+      "title": "Why can’t I quit smoking? The 3 usual reasons | Blou",
+      "description": "Nicotine dependence, cue triggers, and shame loops explain most “I can’t quit” feelings. A practical reset: medication options, cue planning, and tracking.",
+      "h1": "Why can’t I quit smoking?",
       "keywordsMeta": [
         "why cant i quit smoking",
         "cant quit smoking",
@@ -12818,7 +12795,7 @@
       "suppressUntil": null,
       "gsc": null,
       "amplitude": null,
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "issues": [
         "thin"
       ]

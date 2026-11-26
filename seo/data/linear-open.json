@@ -1,6 +1,48 @@
 {
-  "fetchedAt": "2026-11-23T09:59:52.281Z",
+  "fetchedAt": "2026-11-26T09:44:41.357Z",
   "issues": [
+    {
+      "id": "BLO-69",
+      "title": "New page: /is-vaping-worse-than-smoking for \"is vaping worse than smoking\" (14,800 a month, LOW competition)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-69/new-page-is-vaping-worse-than-smoking-for-is-vaping-worse-than-smoking",
+      "state": "Backlog",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/is-vaping-worse-than-smoking",
+      "cluster": "is vaping worse than smoking",
+      "updatedAt": "2026-11-23T10:05:22.996Z"
+    },
+    {
+      "id": "BLO-68",
+      "title": "Refresh /tools/pack-year-calculator for \"pack year calculator\" (3,600 a month, 794 impressions, position 50)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-68/refresh-toolspack-year-calculator-for-pack-year-calculator-3600-a",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "refresh",
+        "source:research"
+      ],
+      "pageUrl": "/tools/pack-year-calculator",
+      "cluster": "pack year calculator",
+      "updatedAt": "2026-11-23T10:05:15.480Z"
+    },
+    {
+      "id": "BLO-67",
+      "title": "New page: /nicotine-pouch-side-effects for \"nicotine pouches side effects\" (4,400 a month, LOW competition)",
+      "url": "https://linear.app/blou-site-seo/issue/BLO-67/new-page-nicotine-pouch-side-effects-for-nicotine-pouches-side-effects",
+      "state": "Todo",
+      "priority": 3,
+      "labels": [
+        "new-content",
+        "source:research"
+      ],
+      "pageUrl": "/nicotine-pouch-side-effects",
+      "cluster": "nicotine pouches side effects",
+      "updatedAt": "2026-11-23T10:05:13.177Z"
+    },
     {
       "id": "BLO-66",
       "title": "Page-2 push for /guides/what-happens-after-2-months (position 19.7, split with the 3-weeks guide)",
@@ -368,34 +410,6 @@
       "updatedAt": "2026-10-27T15:41:19.864Z"
     },
     {
-      "id": "BLO-33",
-      "title": "New page: what happens if you swallow a Zyn (/swallowed-a-zyn)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-33/new-page-what-happens-if-you-swallow-a-zyn-swallowed-a-zyn",
-      "state": "Todo",
-      "priority": 3,
-      "labels": [
-        "new-content",
-        "source:research"
-      ],
-      "pageUrl": "/swallowed-a-zyn",
-      "cluster": "swallowed a zyn pouch",
-      "updatedAt": "2026-10-27T15:41:16.561Z"
-    },
-    {
-      "id": "BLO-32",
-      "title": "Refresh /quit-smoking-help for \"free nicotine patches\"",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-32/refresh-quit-smoking-help-for-free-nicotine-patches",
-      "state": "Todo",
-      "priority": 3,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-smoking-help",
-      "cluster": "free nicotine patches",
-      "updatedAt": "2026-10-27T15:41:13.756Z"
-    },
-    {
       "id": "BLO-31",
       "title": "Refresh /quit-smoking-with-varenicline for \"Chantix to quit smoking\"",
       "url": "https://linear.app/blou-site-seo/issue/BLO-31/refresh-quit-smoking-with-varenicline-for-chantix-to-quit-smoking",
@@ -408,20 +422,6 @@
       "pageUrl": "/quit-smoking-with-varenicline",
       "cluster": "chantix varenicline to quit smoking",
       "updatedAt": "2026-10-27T15:41:10.445Z"
-    },
-    {
-      "id": "BLO-30",
-      "title": "Refresh /quit-smoking-with-nicotine-gum (position 37, demand up 1.9x)",
-      "url": "https://linear.app/blou-site-seo/issue/BLO-30/refresh-quit-smoking-with-nicotine-gum-position-37-demand-up-19x",
-      "state": "Todo",
-      "priority": 3,
-      "labels": [
-        "refresh",
-        "source:research"
-      ],
-      "pageUrl": "/quit-smoking-with-nicotine-gum",
-      "cluster": "nicotine gum to quit smoking",
-      "updatedAt": "2026-10-27T15:41:07.757Z"
     },
     {
       "id": "BLO-27",

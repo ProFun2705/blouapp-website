@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-11-23T09:59:38.735Z",
+  "fetchedAt": "2026-11-26T09:43:31.242Z",
   "window": {
-    "start": "2026-10-26",
-    "end": "2026-11-22"
+    "start": "2026-10-29",
+    "end": "2026-11-25"
   },
   "pages": [
     {
@@ -182,6 +182,20 @@
     },
     {
       "page": "/quit-zyn",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 0,
+      "clickRate": 0
+    },
+    {
+      "page": "/tools/nicotine-pouch-calculator",
+      "views": 1,
+      "appStoreClicks": 0,
+      "toolInputs": 1,
+      "clickRate": 0
+    },
+    {
+      "page": "/zyn-withdrawal",
       "views": 1,
       "appStoreClicks": 0,
       "toolInputs": 0,
