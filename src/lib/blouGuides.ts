@@ -1714,7 +1714,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-05-08",
     dateModified: "2026-10-30",
     dateReviewed: "2026-10-30",
-    relatedSlugs: ["insomnia", "cravings", "caffeine-sensitivity", "anxiety", "what-happens-after-3-days", "what-happens-after-1-week"],
+    relatedSlugs: ["nicotine-withdrawal-symptoms", "insomnia", "cravings", "caffeine-sensitivity", "anxiety", "what-happens-after-3-days", "what-happens-after-1-week"],
     medicalConditionName: "Sleep disturbance",
   },
   {
@@ -2602,7 +2602,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
-    relatedSlugs: [
+    relatedSlugs: ["nicotine-withdrawal-symptoms", 
       "tingling-hands-and-feet",
       "headaches",
       "anxiety",
@@ -2800,7 +2800,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
-    relatedSlugs: [
+    relatedSlugs: ["nicotine-withdrawal-symptoms", 
       "constipation",
       "diarrhea",
       "headaches",
@@ -2900,7 +2900,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
-    relatedSlugs: [
+    relatedSlugs: ["nicotine-withdrawal-symptoms", 
       "anxiety",
       "insomnia",
       "shortness-of-breath",
@@ -2998,7 +2998,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-08",
     dateModified: "2026-05-08",
-    relatedSlugs: [
+    relatedSlugs: ["nicotine-withdrawal-symptoms", 
       "insomnia",
       "dreams-and-sleep",
       "anxiety",
@@ -3483,7 +3483,7 @@ export const blouGuides: BlouGuide[] = [
     datePublished: "2026-05-08",
     dateModified: "2026-11-20",
     dateReviewed: "2026-10-29",
-    relatedSlugs: ["constipation", "bloating-and-gas", "nausea", "cravings", "anxiety", "what-happens-after-3-days"],
+    relatedSlugs: ["nicotine-withdrawal-symptoms", "constipation", "bloating-and-gas", "nausea", "cravings", "anxiety", "what-happens-after-3-days"],
     medicalConditionName: "Diarrhea (post-cessation)",
   },
   {
@@ -5102,7 +5102,7 @@ export const blouGuides: BlouGuide[] = [
     ],
     datePublished: "2026-05-20",
     dateModified: "2026-05-20",
-    relatedSlugs: ["muscle-aches", "fatigue", "restlessness", "what-happens-after-3-months"],
+    relatedSlugs: ["nicotine-withdrawal-symptoms", "muscle-aches", "fatigue", "restlessness", "what-happens-after-3-months"],
     medicalConditionName: "Nicotine withdrawal",
   },
   {

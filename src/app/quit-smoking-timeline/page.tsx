@@ -200,6 +200,9 @@ export default function QuitSmokingTimelinePage() {
         <ButtonLink href="/nicotine-withdrawal-timeline" variant="secondary">
           Withdrawal timeline, days 1–30
         </ButtonLink>
+        <ButtonLink href="/nicotine-withdrawal-symptoms" variant="secondary">
+          Withdrawal symptoms
+        </ButtonLink>
         <ButtonLink href="/can-lungs-heal-after-smoking" variant="secondary">
           Can your lungs heal?
         </ButtonLink>

@@ -270,6 +270,7 @@ export default function NicotineWithdrawalTimelinePage() {
       <section id="related" className="scroll-mt-24">
         <RelatedGuides
           slugs={[
+            "nicotine-withdrawal-symptoms",
             "how-to-quit-smoking",
             "prepare-to-quit-smoking",
             "cravings",

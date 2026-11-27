@@ -67,7 +67,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/can-lungs-heal-after-smoking", lastModified: OCT_15_2026, label: "Can your lungs heal after smoking?", group: "Withdrawal and recovery" },
   { path: "/smokers-lungs-vs-healthy-lungs", lastModified: OCT_15_2026, label: "Smokers' lungs vs healthy lungs", group: "Withdrawal and recovery" },
   { path: "/nicotine-withdrawal-timeline", lastModified: OCT_2026, label: "Nicotine withdrawal timeline, days 1–30", group: "Withdrawal and recovery" },
-  { path: "/nicotine-withdrawal-symptoms", lastModified: OCT_2026, label: "Nicotine withdrawal symptoms", group: "Withdrawal and recovery" },
+  { path: "/nicotine-withdrawal-symptoms", lastModified: "2026-11-27", label: "Nicotine withdrawal symptoms", group: "Withdrawal and recovery" },
   { path: "/health-benefits-of-quitting-smoking", lastModified: OCT_2026, label: "Health benefits of quitting smoking", group: "Withdrawal and recovery" },
   { path: "/how-long-does-nicotine-stay-in-your-system", lastModified: "2026-11-12", label: "How long nicotine stays in your system", group: "Withdrawal and recovery" },
 

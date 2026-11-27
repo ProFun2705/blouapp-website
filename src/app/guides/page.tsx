@@ -110,7 +110,12 @@ export default function GuidesIndexPage() {
           Symptoms (how long & when to seek help)
         </h2>
         <p className="mt-2 text-sm leading-6 text-ink-muted">
-          Each guide lists typical duration, practical relief, and red flags.
+          Each guide lists typical duration, practical relief, and red flags. Not sure which one
+          fits? Start with the{" "}
+          <Link href="/nicotine-withdrawal-symptoms" className="font-medium text-accent-strong underline underline-offset-2">
+            nicotine withdrawal symptoms
+          </Link>{" "}
+          hub.
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
           {symptomGuides.map((guide) => (
