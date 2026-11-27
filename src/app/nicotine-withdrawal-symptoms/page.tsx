@@ -218,8 +218,8 @@ export default function NicotineWithdrawalSymptomsPage() {
         }
       >
         <p>
-          Something feels off since you quit. This page lists the common nicotine withdrawal
-          symptoms, how long they last, and what helps. Then it links to a guide for each one.
+          Something feels off since you quit. Here are the common nicotine withdrawal symptoms,
+          how long they last, and what helps. Each one links to its own guide.
         </p>
       </ArticleHeader>
 
@@ -238,7 +238,7 @@ export default function NicotineWithdrawalSymptomsPage() {
 
       <section id="quick-answer" className="scroll-mt-24">
         <QuickAnswerBox
-          answer="Common nicotine withdrawal symptoms are cravings, irritability, anxiety, low mood, trouble concentrating, poor sleep, restlessness, and a bigger appetite. They are usually worst in the first week and peak in the first 3 days. Most ease over the first month, and some people feel them for longer. Chest pain, severe shortness of breath, or thoughts of self-harm need urgent care."
+          answer="Common nicotine withdrawal symptoms are cravings, irritability, anxiety, low mood, trouble concentrating, poor sleep, restlessness, and a bigger appetite. They are usually worst in the first week and peak in the first 3 days. Most ease over the first month. Some last longer. Chest pain, severe breathlessness, or thoughts of self-harm need urgent care."
           facts={[
             "Peak: usually the first 3 days (National Cancer Institute).",
             "Common: cravings, irritability, anxiety, low mood, poor sleep, hunger.",
@@ -256,14 +256,14 @@ export default function NicotineWithdrawalSymptomsPage() {
           National Cancer Institute lists these as the common symptoms:
         </p>
         <ul className="list-disc space-y-1 pl-6">
-          <li>Nicotine cravings</li>
-          <li>Anger, frustration, and irritability</li>
-          <li>Trouble concentrating</li>
-          <li>Insomnia</li>
-          <li>Restlessness</li>
-          <li>Anxiety</li>
-          <li>Depression</li>
-          <li>Hunger or a bigger appetite</li>
+          <li>Nicotine cravings.</li>
+          <li>Anger, frustration, and irritability.</li>
+          <li>Trouble concentrating.</li>
+          <li>Insomnia.</li>
+          <li>Restlessness.</li>
+          <li>Anxiety.</li>
+          <li>Depression.</li>
+          <li>Hunger or a bigger appetite.</li>
         </ul>
         <p>
           Less common ones include headaches, fatigue, dizziness, coughing, mouth ulcers, and
@@ -288,19 +288,19 @@ export default function NicotineWithdrawalSymptomsPage() {
         </h2>
         <p>
           Symptoms are usually worst during the first week and peak in the first 3 days. After
-          that, they usually drop off over the first month. Everyone is different, and some
-          people have symptoms for several months (National Cancer Institute).
+          that, they usually drop off over the first month. Everyone is different. Some people
+          have symptoms for several months (National Cancer Institute).
         </p>
         <p>
-          Smokefree.gov puts it this way: the worst symptoms last only a few days to a couple of
-          weeks. Cravings come and go. They get farther apart over time, though you may still
-          get an occasional mild one months or years later (National Cancer Institute).
+          Smokefree.gov says the worst symptoms last only a few days to a couple of weeks.
+          Cravings come and go. They get farther apart over time. You may still get a mild one
+          months or years later (National Cancer Institute).
         </p>
         <p>
-          Anger and irritability peak within 1 week and may last 2 to 4 weeks. If you feel sad,
-          it usually starts in the first day, continues for a couple of weeks, and goes away
-          within a month. People with a history of depression often have stronger symptoms
-          (National Cancer Institute).
+          Anger and irritability peak within 1 week and may last 2 to 4 weeks. Feeling sad
+          usually starts in the first day, lasts a couple of weeks, and fades within a month.
+          People with a history of depression often have stronger symptoms (National Cancer
+          Institute).
         </p>
         <p>
           For a day-by-day view, use the{" "}
@@ -331,8 +331,8 @@ export default function NicotineWithdrawalSymptomsPage() {
             Every nicotine withdrawal symptom, with a guide for each
           </h2>
           <p>
-            Find what you feel and open the guide. Each one covers what it is like, how long it
-            tends to last, and when to get help.
+            Find what you feel and open the guide. Each one covers how long it tends to last and
+            when to get help.
           </p>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
@@ -353,7 +353,7 @@ export default function NicotineWithdrawalSymptomsPage() {
                       <Link className={LINK} href={`/guides/${slug}`}>
                         {blouGuideBySlug[slug]?.shortTitle ?? slug}
                       </Link>
-                      <span className="text-ink-muted"> · {line}</span>
+                      <span className="text-ink-muted"> · {line}.</span>
                     </li>
                   ))}
                 </ul>
@@ -387,8 +387,8 @@ export default function NicotineWithdrawalSymptomsPage() {
           What helps with nicotine withdrawal symptoms
         </h2>
         <p>
-          Smokefree.gov says quit smoking medications can help reduce withdrawal symptoms and make
-          quitting easier. Ask a clinician or pharmacist what fits you. Our{" "}
+          Smokefree.gov says quit smoking medications can help reduce withdrawal symptoms. Ask a
+          clinician or pharmacist what fits you. Our{" "}
           <Link className={LINK} href="/quit-smoking-medication">
             quit smoking medication guide
           </Link>{" "}
@@ -403,7 +403,7 @@ export default function NicotineWithdrawalSymptomsPage() {
           <li>Do physical activity you enjoy.</li>
         </ul>
         <p>
-          Cravings pass. Waiting one urge out and then the next is how the weeks add up. See{" "}
+          Cravings pass. Wait out one urge, then the next. That is how the weeks add up. See{" "}
           <Link className={LINK} href="/how-to-quit-smoking">
             how to quit smoking
           </Link>{" "}
