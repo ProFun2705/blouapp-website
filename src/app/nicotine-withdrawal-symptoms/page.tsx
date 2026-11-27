@@ -421,7 +421,7 @@ export default function NicotineWithdrawalSymptomsPage() {
         </h2>
         <p>Most withdrawal symptoms are uncomfortable but not dangerous. Some are not just withdrawal.</p>
         <ul className="list-disc space-y-1 pl-6">
-          <li>Crushing chest pain or pain that spreads to your arm or jaw: call your local emergency number.</li>
+          <li>Crushing chest pain: call your local emergency number.</li>
           <li>Severe shortness of breath: get urgent care.</li>
           <li>Thoughts of harming yourself: call your local emergency number or a crisis line right away.</li>
           <li>Low mood that does not lift, or a past history of depression: talk to a clinician. The National Cancer Institute links to the National Institute of Mental Health for help.</li>
